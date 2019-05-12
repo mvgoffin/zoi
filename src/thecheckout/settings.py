@@ -80,10 +80,22 @@ WSGI_APPLICATION = 'thecheckout.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
+if DEBUG:
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            }
+        }
+else:
+    DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'plntcheckout',
+        'USER': 'plnt_admin',
+        'PASSWORD': 'plntprotein444',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -134,8 +146,8 @@ STATIC_URL = '/static/'
 
 if DEBUG:
     MEDIA_URL = '/media/'
-    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static', 'static-only')
-    MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static', 'media')
+    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_root', 'static-only', 'static')
+    MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static', 'media_root')
     STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR), 'static', 'static'),
 )
 
