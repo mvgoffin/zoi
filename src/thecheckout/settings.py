@@ -92,7 +92,7 @@ else:
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'thecheckoutdb',
-        'USER': 'urban',
+        'USERNAME': 'thecheckout',
         'PASSWORD': 'mysql444',
         'HOST': 'localhost',
         'PORT': '',
