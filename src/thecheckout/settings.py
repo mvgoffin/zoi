@@ -26,7 +26,7 @@ SECRET_KEY = 'lzon%f2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 DEBUG = True
 
 # TEST on MOBILE MARCO VG MAC -> ALLOWED_HOSTS = ['192.168.0.158']
-ALLOWED_HOSTS = ['46.101.75.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
