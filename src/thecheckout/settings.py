@@ -91,8 +91,8 @@ else:
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'thecheckoutdb',
-        'USER': 'thecheckout',
+        'NAME': 'firstdb',
+        'USER': 'marco',
         'PASSWORD': 'mysql444',
         'HOST': 'localhost',
         'PORT': '3306',
