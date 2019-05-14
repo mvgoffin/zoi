@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'lzon%f2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # TEST on MOBILE MARCO VG MAC -> ALLOWED_HOSTS = ['192.168.0.158']
 ALLOWED_HOSTS = ['209.97.140.222']
@@ -90,10 +90,10 @@ if DEBUG:
 else:
     DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'plntcheckout',
-        'USER': 'plnt_admin',
-        'PASSWORD': 'plntprotein444',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'thecheckoutdb',
+        'USER': 'thecheckout',
+        'PASSWORD': 'mysql444',
         'HOST': 'localhost',
         'PORT': '',
     }
