@@ -13,7 +13,7 @@ stripe.api_key = stripe_private
 # Create your views here.  
 
 def checkout(request):
-    publishKey = settings.STRIPE_PUBLIC_KEY
+    publishKey = 'pk_live_dqYcQQrsiKP9wOLLJTWnvpPc'
     if request.method == 'POST':
         token = request.POST['stripeToken']
 
