@@ -32,6 +32,7 @@ urlpatterns = [
     path('checkout/', checkout_views.checkout, name='checkout'),
     path('success/', views.success, name='success'),
     path('register/', user_views.register, name='register'),
+    path('checkout_le/', checkout_views.checkout, name='checkout_le'),
     
 
 #web-push
