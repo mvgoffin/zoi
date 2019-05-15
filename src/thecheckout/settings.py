@@ -96,7 +96,7 @@ DATABASES = {
         'USER': 'thecheckout',
         'PASSWORD': 'mysql4444',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 
