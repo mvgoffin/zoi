@@ -27,7 +27,6 @@ DEBUG = True
 
 # TEST on MOBILE MARCO VG MAC -> ALLOWED_HOSTS = ['192.168.0.158']
 ALLOWED_HOSTS = ['209.97.140.222', '*']
-
 # Digital Ocean Droplet: 209.97.140.222
 
 # Application definition
@@ -96,7 +95,7 @@ DATABASES = {
         'USER': 'thecheckout',
         'PASSWORD': 'mysql4444',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '',
     }
 }
 
