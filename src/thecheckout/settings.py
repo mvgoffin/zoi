@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'thecheckout.wsgi.application'
 #else:
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycog2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'thecheckoutdb',
         'USER': 'thecheckout',
         'PASSWORD': 'mysql4444',
