@@ -153,9 +153,9 @@ if DEBUG:
 
 # Stripe Keys
 
-#test keys
-STRIPE_PUBLIC_KEY = 'pk_test_BDcILuPUX13SXoMVLNxOojyt'
-STRIPE_PRIVATE_KEY = 'sk_test_p2vTfVUyXWWQtDTAxpP5M3Av'
+#test keys Uncomment to go LIVE!
+#STRIPE_PUBLIC_KEY = 'pk_test_BDcILuPUX13SXoMVLNxOojyt'
+#STRIPE_PRIVATE_KEY = 'sk_test_p2vTfVUyXWWQtDTAxpP5M3Av'
 
 #live keys
 STRIPE_PUBLIC_KEY = 'pk_live_dqYcQQrsiKP9wOLLJTWnvpPc'
