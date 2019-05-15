@@ -94,7 +94,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'firstdb',
         'USER': 'marco',
-        'PASSWORD': 'mysql444',
+        'PASSWORD': 'plntprotein4444',
         'HOST': 'localhost',
         'PORT': '3306',
     }
