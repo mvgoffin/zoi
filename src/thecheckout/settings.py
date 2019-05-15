@@ -26,9 +26,9 @@ SECRET_KEY = 'lzon%f2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 DEBUG = True
 
 # TEST on MOBILE MARCO VG MAC -> ALLOWED_HOSTS = ['192.168.0.158']
-ALLOWED_HOSTS = ['10.0.1.30.']
+ALLOWED_HOSTS = ['10.0.1.30.','209.97.140.222']
 
-#Digital Ocean Droplet: 209.97.140.222
+# Digital Ocean Droplet: 209.97.140.222
 
 # Application definition
 
