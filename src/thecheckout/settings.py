@@ -26,7 +26,7 @@ SECRET_KEY = 'lzon%f2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 DEBUG = True
 
 # TEST on MOBILE MARCO VG MAC -> ALLOWED_HOSTS = ['192.168.0.158']
-ALLOWED_HOSTS = ['209.97.140.222']
+ALLOWED_HOSTS = ['209.97.140.222', '*']
 
 # Digital Ocean Droplet: 209.97.140.222
 
@@ -92,8 +92,8 @@ WSGI_APPLICATION = 'thecheckout.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'thecheckout',
-        'USER': 'thecheckout',
+        'NAME': 'userdb',
+        'USER': 'useradmin',
         'PASSWORD': 'mysql4444',
         'HOST': 'localhost',
         'PORT': '3306',
