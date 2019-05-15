@@ -25,6 +25,7 @@ from users import views as user_views
 #from thecheckout.views import home, send_push #web-push
 
 urlpatterns = [
+    path('', views.home),
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
     path('about/', views.about, name='about'),
