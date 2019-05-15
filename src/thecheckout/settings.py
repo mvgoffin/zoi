@@ -96,7 +96,7 @@ DATABASES = {
         'USER': 'marco',
         'PASSWORD': 'plntprotein4444',
         'HOST': 'localhost',
-        'PORT': '3306',
+        'PORT': '',
     }
 }
 
