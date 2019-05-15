@@ -16,6 +16,7 @@ def checkout(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
+        print_r(_POST)
 
         try:
             customer = stripe.Customer.create(
