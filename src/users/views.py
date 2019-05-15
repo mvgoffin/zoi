@@ -6,7 +6,7 @@ from users.models import Account
 from django.core.mail import EmailMessage
 from django.core.mail import send_mail
 from django.conf import settings
-from users.models import Account
+#from users.models import Account
 
 # Create your views here.
 def register(request):
@@ -17,8 +17,7 @@ def register(request):
     email = request.POST.get('email')
     address = request.POST.get('address')
     postcode = request.POST.get('postcode')
-    obj = Account.objects.create(name=name, phone=phone, email=email, address=address, postcode=postcode
-    )
+    obj = Account.objects.create(name=name, phone=phone, email=email, address=address, postcode=postcode)
 
     if form.is_valid():
 
