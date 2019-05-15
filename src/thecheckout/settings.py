@@ -155,7 +155,7 @@ if DEBUG:
 
 #test keys Uncomment to go LIVE!
 #STRIPE_PUBLIC_KEY = 'pk_test_BDcILuPUX13SXoMVLNxOojyt'
-#STRIPE_PRIVATE_KEY = 'sk_test_p2vTfVUyXWWQtDTAxpP5M3Av'
+#STRIPE_SECRET_KEY = 'sk_test_p2vTfVUyXWWQtDTAxpP5M3Av'
 
 #live keys
 STRIPE_PUBLIC_KEY = 'pk_live_dqYcQQrsiKP9wOLLJTWnvpPc'
