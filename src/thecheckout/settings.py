@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'thecheckout.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'thecheckout',
+        'NAME': 'thecheckoutdb',
         'USER': 'thecheckout',
         'PASSWORD': 'mysql4444',
         'HOST': 'localhost',
