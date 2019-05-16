@@ -45,8 +45,6 @@ def register_mx(request):
      #return render(request,template,context)
     return render(request, 'register_mx.html', {'form': form}) #this is render on HTML
 
-template = 'register_mx.html'
-    return render(request,template,context)
 
 #Register Lemon Box
 def register_le(request):
