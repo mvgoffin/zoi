@@ -9,7 +9,8 @@ from django.conf import settings
 #from users.models import Account
 
 # Create your views here.
-def register(request):
+#Register Mix Box
+def register_mx(request):
     form = AccountForm(request.POST)
 
     name = request.POST.get('name')
@@ -32,11 +33,73 @@ def register(request):
 
         form.save()
         
-        response = redirect('checkout')
+        response = redirect('checkout_mx')
         return response
     else:
         form = AccountForm()
-    return render(request, 'register.html', {'form': form}) #this is render on HTML
+    return render(request, 'register_mx.html', {'form': form}) #this is render on HTML
+
+
+#Register Lemon Box
+def register_le(request):
+    form = AccountForm(request.POST)
+
+    name = request.POST.get('name')
+    phone = request.POST.get('phone')
+    email = request.POST.get('email')
+    address = request.POST.get('address')
+    postcode = request.POST.get('postcode')
+    obj = Account.objects.create(name=name, phone=phone, email=email, address=address, postcode=postcode)
+
+    if form.is_valid():
+
+        send_mail(
+        'A new Account',
+        'From our servers, a new account has been created. Please check it out in the administration console details are as follows' +
+        ': name: {}, phone: {}, email: {}, address: {}, postcode: {}'.format(name, phone, email, address, postcode),
+        'hi@plntprotein.com',
+        ['marco@plntprotein.com'],
+        #fail_silently=False,
+        )
+
+        form.save()
+        
+        response = redirect('checkout_le')
+        return response
+    else:
+        form = AccountForm()
+    return render(request, 'register_le.html', {'form': form}) #this is render on HTML
+
+#Register hazelnut + cacao Box
+def register_hc(request):
+    form = AccountForm(request.POST)
+
+    name = request.POST.get('name')
+    phone = request.POST.get('phone')
+    email = request.POST.get('email')
+    address = request.POST.get('address')
+    postcode = request.POST.get('postcode')
+    obj = Account.objects.create(name=name, phone=phone, email=email, address=address, postcode=postcode)
+
+    if form.is_valid():
+
+        send_mail(
+        'A new Account',
+        'From our servers, a new account has been created. Please check it out in the administration console details are as follows' +
+        ': name: {}, phone: {}, email: {}, address: {}, postcode: {}'.format(name, phone, email, address, postcode),
+        'hi@plntprotein.com',
+        ['marco@plntprotein.com'],
+        #fail_silently=False,
+        )
+
+        form.save()
+        
+        response = redirect('checkout_hc')
+        return response
+    else:
+        form = AccountForm()
+    return render(request, 'register_hc.html', {'form': form}) #this is render on HTML
+
 
 
 #from users.forms import UserRegisterForm

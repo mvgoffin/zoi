@@ -29,13 +29,14 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
     path('about/', views.about, name='about'),
-    path('checkout_mx/', checkout_views.checkout_mx, name='checkout_mx'),
-    path('success/', views.success, name='success'),
-    path('register/', user_views.register, name='register'),
-    path('checkout_le/', checkout_views.checkout_le, name='checkout_le'),
-    path('checkout_hc/', checkout_views.checkout_hc, name='checkout_hc'),
+    path('register_mx/', user_views.register, name='register_mx'),
     path('register_le/', user_views.register, name='register_le'),
     path('register_hc/', user_views.register, name='register_hc'),
+    path('checkout_mx/', checkout_views.checkout_mx, name='checkout_mx'),
+    path('checkout_le/', checkout_views.checkout_le, name='checkout_le'),
+    path('checkout_hc/', checkout_views.checkout_hc, name='checkout_hc'),
+    path('success/', views.success, name='success'),
+    
     
 
 #web-push
