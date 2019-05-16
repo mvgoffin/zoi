@@ -13,7 +13,7 @@ stripe.api_key = stripe_secret
 # Create your views here.  
 
 # mix box. 
-def checkout(request):
+def checkout_mx(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
@@ -31,8 +31,10 @@ def checkout(request):
             pass
 
     context = {'publishKey': publishKey}
-    template = 'checkout.html'
+    template = 'checkout_mx.html'
     return render(request,template,context)
+
+
 
 # hazelnut + cacao box. 
 def checkout_hc(request):
@@ -55,6 +57,8 @@ def checkout_hc(request):
     context = {'publishKey': publishKey}
     template = 'checkout_hc.html'
     return render(request,template,context)
+
+
 
 # lemon box. 
 def checkout_le(request):
