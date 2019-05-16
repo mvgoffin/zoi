@@ -37,13 +37,13 @@ def register_mx(request):
         
         response = redirect('checkout_mx.html')
         return response
-    #else:
-        #form = AccountForm()
+    else:
+        form = AccountForm()
     
-    context = {'form': form}
-    template = 'register_mx.html'
-    return render(request,template,context)
-    #return render(request, 'register_mx.html', {'form': form}) #this is render on HTML
+     #context = {'form': form}
+     #template = 'register_mx.html'
+     #return render(request,template,context)
+    return render(request, 'register_mx.html', {'form': form}) #this is render on HTML
 
 template = 'register_mx.html'
     return render(request,template,context)
