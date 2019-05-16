@@ -3,6 +3,7 @@ from django.shortcuts import redirect
 
 from users.forms import AccountForm
 from users.models import Account
+
 from django.core.mail import EmailMessage
 from django.core.mail import send_mail
 from django.conf import settings
@@ -38,8 +39,14 @@ def register_mx(request):
         return response
     else:
         form = AccountForm()
-    return render(request, 'register_mx.html', {'form': form}) #this is render on HTML
+    
+    context = {'form': form}
+    template = 'register_mx.html'
+    return render(request,template,context)
+    #return render(request, 'register_mx.html', {'form': form}) #this is render on HTML
 
+template = 'register_mx.html'
+    return render(request,template,context)
 
 #Register Lemon Box
 def register_le(request):
