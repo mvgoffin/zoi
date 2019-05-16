@@ -1,7 +1,470 @@
 <!DOCTYPE html>
-<html>
-    <title>Thank you</title>
-    <body>
-        <p>Thank you for your order</p>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <link rel="icon" type="image/png" href="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cdd0ee1eb39314f06e36623/1557991137212/Favicon-solo.png">
+    <title>Thank You - PLNT PROTEIN</title>
+
+    <!--Page PACE Progress loading bar CSS--> 
+    <style>
+            .pace {
+              -webkit-pointer-events: none;
+              pointer-events: none;
+            
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              user-select: none;
+            
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+            
+              -webkit-transform: translate3d(0, -50px, 0);
+              -ms-transform: translate3d(0, -50px, 0);
+              transform: translate3d(0, -50px, 0);
+            
+              -webkit-transition: -webkit-transform .5s ease-out;
+              -ms-transition: -webkit-transform .5s ease-out;
+              transition: transform .5s ease-out;
+            }
+            
+            .pace.pace-active {
+              -webkit-transform: translate3d(0, 0, 0);
+              -ms-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+            }
+            
+            .pace .pace-progress {
+              display: block;
+              position: fixed;
+              z-index: 2000;
+              top: 0;
+              right: 100%;
+              width: 100%;
+              height: 4px;
+              background: #FFB833 ;
+            
+              pointer-events: none;
+            }
+            
+    </style>
+    
+    <!-- PLNT Progress Bar CSS -->
+    <style type="text/css">
+        .containerbar {
+          width:100%;
+        }
+        .progressbar{
+          counter-reset: step;    
+        }
+        
+        /**Payment number + text**/
+        .progressbar li {
+          list-style-type: none;
+          float: left;
+          width: 33%;
+          position: relative;
+          text-align: center;  
+          color: gray;
+          font-size: medium;
+        }
+
+        /**letra y font actia**/
+        .progressbar li.account {
+          color:gray;
+          font-size: medium;
+          font-weight: bold;
+        }
+
+        .progressbar li.box {
+          color:#22D59E;
+          font-size: medium;
+          font-weight: bold;
+          border: #22D59E;
+        }
+
+        /**pelota 1**/
+        .progressbar li.box::before {
+          line-height: 30px;
+          border: 4px solid #22D59E;
+        }
+
+        
+        /**all number cirle**/
+        .progressbar li:before {
+          content: counter(step);
+          counter-increment: step;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border: 4px solid gray;
+          display: block;
+          text-align: center;
+          margin: 0 auto 10px auto;
+          border-radius: 50%;
+          background-color: white;  
+          position: relative;
+          z-index: 100;
+        }
+        
+        /**whole line**/
+        .progressbar li:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          background-color: #22D59E;
+          top: 18px;
+          left: -50%;
+          z-index: 50;
+        }
+
+        /**barra antes del 1, none**/
+        .progressbar li:first-child:after {
+          content: none; 
+        }
+
+        /**barra despues del activo**/
+        .progressbar li.account:after {
+          border-color: #22D59E;
+        }
+
+        /**current line**/
+        .progressbar li.account + li:after {
+          background-color: gray;
+          height: 4px;
+        }
+        /**payment area**/
+        .progressbar li.account + li::before{
+          border: 4px solid gray;
+        }
+        
+    </style>
+
+
+    <!-- PLNT Form CSS -->
+    <style media="screen">
+      
+          @font-face {
+              font-family: 'Gotham';
+              src: url('fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
+              src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
+                url('fonts/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+                url('fonts/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+              font-weight: 700;
+              font-style: normal;
+            } 
+
+            .heading{
+              text-align: left;
+              font-weight: 800;
+              display:block
+            }
+
+            /*logo*/  
+
+            .header{
+              background-color: white;
+            }
+
+            .footer{
+              background-color: black;
+            }
+
+            .center{
+              display: block;
+              margin-left: auto!important;
+              margin-right: auto!important;
+              text-align:center;
+              background-color: white;
+            }
+            
+            /*logo*/ 
+    
+            #payment-logo {
+              width: 250px;
+              padding-top: 20px;
+              padding-bottom: 20px;
+              background-color: white;
+            }
+
+            /*logo*/
+    
+    
+            body, html {
+              height: 100%;
+              background-color: #FCF9F7;
+;
+              color: #000000;
+            }
+            
+            *, label {
+              font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              font-size: 16px;
+              font-variant: normal;
+              padding: 0;
+              margin: 0;
+              -webkit-font-smoothing: antialiased;
+            }
+          
+            .small{
+              
+              font-size: 10px;
+              color:gray;
+            }
+
+            button {
+              background: transparent;
+              display:block;
+              width:100%;
+              border: 1px solid #FFB833;
+              color: #302F30;
+              background: #FFB833;
+              padding: 15px 40px;
+              margin: .618em 0.01em;  
+              font-weight: 700;
+              font-style: normal;
+              animation-delay: 2400ms;
+              font-size: 18px;
+              letter-spacing: .01em;
+              text-transform: normal;
+              transition: background-color 170ms  ease-out,color 170ms ease-out;
+            }
+    
+
+            button:focus{
+              background-color: #64D7AE;
+              border: 1px solid #64D7AE;
+              color: #FFFFFF;
+            }
+
+            
+            button:hover {
+              opacity:0.8;
+            }
+            
+            form {
+              padding: 30px;
+              height: 120px;
+            }
+            
+            label {
+              font-weight: 500;
+              font-size: 14px;
+              display: block;
+              margin-bottom: 8px;
+            }
+            
+            ::placeholder{
+              color: #F2F2F2;
+              font-size: small;
+            }
+
+            a{
+              color: gray;
+              font-size: small;
+            }
+
+            #card-errors {
+              height: 20px;
+              padding: 4px 0;
+              color: #fa755a;
+            }
+            
+            .form-row {
+              width: 100%;
+              float: center;
+            }
+            
+            .wrapper {
+              width: 100%;
+              margin: 0 auto;
+              height: 100%;
+            }
+    
+            
+            
+            
+            /**
+             * The CSS shown here will not be introduced in the Quickstart guide, but shows
+             * how you can use CSS to style your Element's container.
+             */
+
+             .headline {
+              box-sizing: border-box;
+              width: 100%;
+              padding: 10px ;
+              border-top: 4px solid #FFB833;
+              border-bottom: white;
+              border-left: white;
+              border-right: white;
+              -webkit-appearance: none !important;
+            }
+
+             .form-control {
+                box-sizing: border-box;
+                margin-top: 5px;
+                width: 100%;
+                height: 40px;
+                padding: 10px 12px;
+                border: 1px solid #EDEDEB;
+                border-radius: 0px;
+                background-color: #EDEDEB;
+                /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
+                -webkit-transition: box-shadow 150ms ease;
+                transition: box-shadow 150ms ease;
+                -webkit-appearance: none !important;
+              }
+
+              .form-control:focus {
+                box-shadow: 0 1px 3px 0 #FFB833;
+                border: #FFB833;
+              }
+    
+            #payment-progressbar {
+              box-sizing: border-box;
+              display: block;
+              margin-left:  360px;
+              margin-right:  360px;
+              padding-bottom: 50px;
+              }
+    
+            #account-form {
+              box-sizing: border-box;
+              margin-left:  300px;
+              margin-right:  300px;
+              }
+    
+            @media only screen and (max-width: 768px) {
+            *, html, .wrapper, .row {
+                margin-left:0 !important;
+                margin-right:0 !important;
+                padding-left:1 !important;
+                padding-right:1 !important;
+            }
+    
+            
+}
+
+
+
+
+    
+    </style>
+    
+</head>
+
+    
+<body>
+    <!--HTML REGISTER HEADER SECTION--> 
+        <div class="header">
+        <a href='https://www.plntprotein.com'><img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cab8f9b4785d3d788a60406/1554747291795/1.+Logo_PLNT_Black-FINAL-1.png" id="payment-logo" class="center"></a>
+        <!-- OLD LOGO 
+        <a href='https://www.plntprotein.com'><img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cab8f9b4785d3d788a60406/1554747291795/1.+Logo_PLNT_Black-FINAL-1.png" id="payment-logo" class="center"></a>-->
+        </div>
+    
+<!--PLNT FORM ACCOUNT SECTION--> 
+<div class="wrapper">
+        <form action="https://www.plntprotein.com/">
+            {% csrf_token %}
+            <br>
+            <p class='heading'>Thank you for your order</p>
+            <br>
+            <div >
+                <label class="headline">
+            </div>
+        <!--Thank you Image-->
+            <img src="" id="stripe-logo" class="center">
+            
+            <div class="form-group">  
+              <button type="submit">GO BACK </button>
+            </div>
+            <p class="terms">
+                    By continuing, you agree to our <a href="www.plntprotein.com/terms-of-service">Terms of service</a> and <a href="www.plntprotein.com/privacy-policy">Privacy policy</a>.
+                    <style>
+                        .terms {
+                          text-align: center;
+                          font-size: 12px;
+                          color: gray;
+                        }
+                      </style>
+  
+              <br>
+              <br>
+  
+        <!--CHECKOUT FOOTER SECTION--> 
+        <div >
+            <br>
+              <label class="headline">
+          </div>
+  
+        <!--STRIPE SEAL TRUST-->
+        <p class='stripe-trust'>Secure Checkout <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cdc5c975d92b70001e3435f/1557945495356/lock-3.png" id="lock-logo"></P>
+          <a href='https://www.stripe.com/us' target="_blank"><img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cd5b18678ddf6000108e340/1557508486922/powered_by_stripe%403x.png" id="stripe-logo" class="center"></a><br>
+          
+          <style>
+          #stripe-logo {
+            width: 100px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+            background-color: transparent;
+          }
+          .stripe-trust {
+            padding-top:10px;
+            text-align:center;
+            font-size: 10px;
+            color: gray;
+            padding: 5px;
+          }
+  
+          #stripe-logo.center{
+            padding: 0px 0px 0px;
+          }
+  
+          #lock-logo {
+            width: 10px;
+          }
+  
+        </style>
+  
+          <!--<div class="footer"></div>-->
+            <!--Seal of Trust-->
+                <p class="trust">London, UK, NW2 2DT</p>
+                <p class="trust">© PLNT Protein Ltd 2019. All Rights Reserved</p>
+                <br>
+                <br> 
+                <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cdbba95633c16000186c61b/1557904023847/vsubadge_0.jpg" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
+                <br> 
+                <br>
+                <style>
+                  .footer-links{
+                    text-align:center;
+                    font-size: 12px;
+                    color: gray;
+                  }
+                  .trust {
+                    text-align:center;
+                    font-size: 12px;
+                    color: gray;
+                    font-weight: bold;
+                  }
+                  #vsu-trust {
+                    text-align:center;
+                  }
+                  </style>  
+  
+    </form>
+    
+  
+  </div>
+
+        
+
+
+
     </body>
-    </html>
+</html>
