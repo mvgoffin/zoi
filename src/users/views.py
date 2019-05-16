@@ -9,6 +9,7 @@ from django.conf import settings
 #from users.models import Account
 
 # Create your views here.
+
 #Register Mix Box
 def register_mx(request):
     form = AccountForm(request.POST)
@@ -33,7 +34,7 @@ def register_mx(request):
 
         form.save()
         
-        response = redirect('checkout_mx')
+        response = redirect('checkout_mx.html')
         return response
     else:
         form = AccountForm()
