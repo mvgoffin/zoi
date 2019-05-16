@@ -30,7 +30,7 @@ def checkout(request):
             pass
 
     context = {'publishKey': publishKey}
-    template = 'checkout.html'
+    template = 'checkout_hc.html'
     return render(request,template,context)
 
 
