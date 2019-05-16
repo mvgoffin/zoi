@@ -43,7 +43,7 @@ def register_mx(request):
      #context = {'form': form}
      #template = 'register_mx.html'
      #return render(request,template,context)
-    return render(request, 'register_mx', {'form': form}) #this is render on HTML
+    return render(request, 'register_mx.html', {'form': form}) #this is render on HTML
 
 
 #Register Lemon Box
@@ -74,7 +74,7 @@ def register_le(request):
         return response
     else:
         form = AccountForm()
-    return render(request, 'register_le', {'form': form}) #this is render on HTML
+    return render(request, 'register_le.html', {'form': form}) #this is render on HTML
 
 #Register hazelnut + cacao Box
 def register_hc(request):
@@ -104,7 +104,7 @@ def register_hc(request):
         return response
     else:
         form = AccountForm()
-    return render(request, 'register_hc', {'form': form}) #this is render on HTML
+    return render(request, 'register_hc.html', {'form': form}) #this is render on HTML
 
 
 
