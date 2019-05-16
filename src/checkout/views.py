@@ -35,7 +35,7 @@ def checkout(request):
     return render(request,template,context)
 
 # hazelnut + cacao box. 
-def checkout(request):
+def checkout(request, checkout_hc):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
@@ -57,7 +57,7 @@ def checkout(request):
     return render(request,template,context)
 
 # lemon box. 
-def checkout(request):
+def checkout(request, checkout_le):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
