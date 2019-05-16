@@ -12,6 +12,29 @@ stripe.api_key = stripe_secret
 
 # Create your views here.  
 
+# mix box. 
+def checkout(request):
+    publishKey = settings.STRIPE_PUBLIC_KEY
+    if request.method == 'POST':
+        token = request.POST['stripeToken']
+        #print_r(_POST)
+
+        try:
+            customer = stripe.Customer.create(
+                description="This is a Test",
+                source=token
+            )
+            response = redirect('success')
+            return response
+
+        except stripe.error.CardError as e:
+            pass
+
+    context = {'publishKey': publishKey}
+    template = 'checkout.html'
+    return render(request,template,context)
+
+# hazelnut + cacao box. 
 def checkout(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
@@ -31,6 +54,28 @@ def checkout(request):
 
     context = {'publishKey': publishKey}
     template = 'checkout_hc.html'
+    return render(request,template,context)
+
+# lemon box. 
+def checkout(request):
+    publishKey = settings.STRIPE_PUBLIC_KEY
+    if request.method == 'POST':
+        token = request.POST['stripeToken']
+        #print_r(_POST)
+
+        try:
+            customer = stripe.Customer.create(
+                description="This is a Test",
+                source=token
+            )
+            response = redirect('success')
+            return response
+
+        except stripe.error.CardError as e:
+            pass
+
+    context = {'publishKey': publishKey}
+    template = 'checkout_le.html'
     return render(request,template,context)
 
 
