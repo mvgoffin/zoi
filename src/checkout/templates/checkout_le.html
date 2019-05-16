@@ -6,6 +6,7 @@
     <meta name="viewport" content= "width=device-width, user-scalable=no">
     <script src="https://js.stripe.com/v3/"></script>
     <title>Checkout - PLNT Protein</title>
+    <link rel="icon" type="image/png" href="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cdd0ee1eb39314f06e36623/1557991137212/Favicon-solo.png">
 
 <!--CSS Page PACE Progress loading bar --> 
         <style>
@@ -468,8 +469,8 @@
 
         #payment-form {
           box-sizing: border-box;
-          margin-left:  280px;
-          margin-right:  280px;
+          margin-left:  300px;
+          margin-right:  300px;
           }
 
         @media only screen and (max-width: 768px) {
@@ -505,9 +506,9 @@
             
   <!--HTML PLNT PAYMENT FORM-->  
   <div  class="wrapper">
-    <form action="." method="post" id="payment-form">  
-            {% csrf_token %} <!--action (.) to remain on same page-->
+    <form action="." method="post" id="payment-form">   <!--action (.) to remain on same page-->
             <br>
+            {% csrf_token %}
             <p class='heading'>Add your payment details</p>
             <br>
             <div >
@@ -652,7 +653,7 @@
                     </div>
 
             <!--STRIPE SEAL TRUST-->
-            <p class='stripe-trust'>Secure Checkout</P>
+            <p class='stripe-trust'>Secure Checkout <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cdc5c975d92b70001e3435f/1557945495356/lock-3.png" id="lock-logo"></P>
               <a href='https://www.stripe.com/us' target="_blank"><img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cd5b18678ddf6000108e340/1557508486922/powered_by_stripe%403x.png" id="stripe-logo" class="center"></a><br>
               
               <style>
@@ -674,12 +675,20 @@
                 padding: 0px 0px 0px;
               }
 
+              #lock-logo {
+                width: 10px;
+              }
+
             </style>
 
             <!--<div class="footer"></div>-->
               <!--Seal of Trust-->
                   <p class="trust">London, UK, NW2 2DT</p>
                   <p class="trust">© PLNT Protein Ltd 2019. All Rights Reserved</p>
+                  <br>
+                  <br> 
+                  <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cdbba95633c16000186c61b/1557904023847/vsubadge_0.jpg" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
+                  <br> 
                   <br>
                   <style>
                     .footer-links{
@@ -693,6 +702,9 @@
                       color: gray;
                       font-weight: bold;
                     }
+                    #vsu-trust {
+                    text-align:center;
+                    } 
                     </style>  
     
 
