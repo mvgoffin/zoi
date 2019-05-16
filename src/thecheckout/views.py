@@ -1,8 +1,3 @@
-
-
-
-
-
 #WEB-PUSH VIEWS.PY
 from django.http.response import HttpResponse
 from django.views.decorators.http import require_GET
