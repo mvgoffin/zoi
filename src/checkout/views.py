@@ -24,28 +24,14 @@ def checkout_mx(request):
                 description="This is a Test",
                 source=token
             )
-            response = redirect('success')
-            return response
-
-        except stripe.error.CardError as e:
-            pass
-
-    context = {'publishKey': publishKey}
-    template = 'checkout_mx.html'
-    return render(request,template,context)
-
-def checkout_mx(request):
-    publishKey = settings.STRIPE_PUBLIC_KEY
-    if request.method == 'POST':
-        #token = request.POST['stripeToken']    #token deactivated
-
-        try:
-            Charge = stripe.Charge.create(      #added create Charge
+            #added charge section
+            charge = stripe.Charge.create(      #added create Charge
                 amount=10,
                 currency="gbp",
                 description="This is a Test",
                 source=customer                 #added source customer
             )
+            #added charge section
             response = redirect('success')
             return response
 
@@ -55,6 +41,32 @@ def checkout_mx(request):
     context = {'publishKey': publishKey}
     template = 'checkout_mx.html'
     return render(request,template,context)
+
+
+
+#def checkout_mx(request):
+#    publishKey = settings.STRIPE_PUBLIC_KEY
+#    if request.method == 'POST':
+#        #token = request.POST['stripeToken']    #token deactivated
+#        try:
+#            Charge = stripe.Charge.create(      #added create Charge
+#                amount=10,
+#                currency="gbp",
+#                description="This is a Test",
+#                source=customer                 #added source customer
+#            )
+#            response = redirect('success')
+#            return response
+#
+#       except stripe.error.CardError as e:
+#            pass
+#    context = {'publishKey': publishKey}
+#    template = 'checkout_mx.html'
+#    return render(request,template,context)
+
+
+
+
 
 
 # hazelnut + cacao box. 
@@ -78,6 +90,9 @@ def checkout_hc(request):
     context = {'publishKey': publishKey}
     template = 'checkout_hc.html'
     return render(request,template,context)
+
+
+
 
 
 
