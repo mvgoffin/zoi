@@ -25,6 +25,7 @@ def checkout_mx(request):
             )
             response = redirect('success')
             return response
+    context = {'publishKey': publishKey}
 
         #except stripe.error.CardError as e:
         #pass
@@ -37,9 +38,9 @@ def checkout_mx(request):
                 description="This is a Charge Test",
                 source=customer                 #added source customer
             )
-    context = {'publishKey': publishKey}
+    #context = {'publishKey': publishKey}
     template = 'checkout_mx.html'
-    return render(request,template,context)
+    return render(request,template)
 
 
 
