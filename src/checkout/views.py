@@ -17,35 +17,25 @@ def checkout_mx(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
-        #print_r(_POST)
 
         try:
             customer = stripe.Customer.create(
-                description="This is a Test",
+                description="This is a Customer Test",
                 source=token
             )
-            
+
         except stripe.error.CardError as e:
             pass
-    context = {'publishKey': publishKey}
-    template = 'checkout_mx.html'
-    return render(request,template,context)
 
-            #added charge section
-            try:                                    
-                charge = stripe.Charge.create(      #added create Charge
+        except charge = stripe.Charge.create(      #added create Charge
                     amount=10,
                     currency="gbp",
-                    description="This is a Test",
+                    description="This is a Charge Test",
                     source=customer                 #added source customer
                 )
-                #added charge section
                 response = redirect('success')
                 return response
-
-        #except stripe.error.CardError as e:
-        #   pass
-
+                #added charge section
     context = {'publishKey': publishKey}
     template = 'checkout_mx.html'
     return render(request,template,context)
