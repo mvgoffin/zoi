@@ -31,14 +31,14 @@ def checkout_mx(request):
             
     context = {'publishKey': publishKey}
 
-        except stripe.create.charge as e:
-            try:
-                charge = stripe.Charge.create(      #added create Charge
-                amount=10,
-                currency="gbp",
-                description="This is a Charge Test",
-                source=customer                 #added source customer
-            )
+    except stripe.create.charge as e:
+        try:
+            charge = stripe.Charge.create(      #added create Charge
+            amount=10,
+            currency="gbp",
+            description="This is a Charge Test",
+            source=customer                 #added source customer
+        )
     #context = {'publishKey': publishKey}
     template = 'checkout_mx.html'
     return render(request,template)
