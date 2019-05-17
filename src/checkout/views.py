@@ -23,7 +23,7 @@ def checkout_mx(request):
                 source=token
             )
         except:
-            charge = stripe.Charge.create(      #added create Charge
+            stripe.Charge.create(      #added create Charge
             amount=10,
             currency="gbp",
             description="This is a Charge Test",
