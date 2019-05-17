@@ -32,16 +32,16 @@ def checkout_mx(request):
     return render(request,template,context)
 
             #added charge section
-        try:                                    
-            charge = stripe.Charge.create(      #added create Charge
-                amount=10,
-                currency="gbp",
-                description="This is a Test",
-                source=customer                 #added source customer
-            )
-            #added charge section
-            response = redirect('success')
-            return response
+            try:                                    
+                charge = stripe.Charge.create(      #added create Charge
+                    amount=10,
+                    currency="gbp",
+                    description="This is a Test",
+                    source=customer                 #added source customer
+                )
+                #added charge section
+                response = redirect('success')
+                return response
 
         #except stripe.error.CardError as e:
         #   pass
