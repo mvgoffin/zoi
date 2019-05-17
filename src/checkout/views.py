@@ -37,7 +37,6 @@ def checkout_mx(request):
                 description="This is a Charge Test",
                 source=customer                 #added source customer
             )
-
     context = {'publishKey': publishKey}
     template = 'checkout_mx.html'
     return render(request,template,context)
