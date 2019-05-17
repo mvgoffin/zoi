@@ -26,7 +26,7 @@ def checkout_mx(request):
            pass
         else:
             charge = stripe.Charge.create(      #added create Charge
-            amount=10,
+            amount=100,
             currency="gbp",
             description="This is a Charge Test",
             customer=customer                #added source customer
