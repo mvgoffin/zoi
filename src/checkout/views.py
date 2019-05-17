@@ -25,6 +25,7 @@ def checkout_mx(request):
                 source=token
             )
             #added charge section
+        try:                                    #added try for customer
             charge = stripe.Charge.create(      #added create Charge
                 amount=10,
                 currency="gbp",
