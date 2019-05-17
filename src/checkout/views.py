@@ -20,15 +20,16 @@ def checkout_mx(request):
 
         try:
             customer = stripe.Customer.create(
-                description="This is a Customer Test",
+                description="This is a Test",
                 source=token
             )
             response = redirect('success')
             return response
-    context = {'publishKey': publishKey}
 
-        #except stripe.error.CardError as e:
-        #pass
+        except stripe.error.CardError as e:
+            pass
+            
+    context = {'publishKey': publishKey}
 
         except stripe.create.charge as e:
             try:
