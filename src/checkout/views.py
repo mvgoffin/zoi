@@ -32,8 +32,8 @@ def checkout_mx(request):
                 description="This is a Charge Test",
                 source=customer                 #added source customer
             )
-            response = redirect('success')
-            return response
+        response = redirect('success')
+        return response
 
         except stripe.error.CardError as e:
             pass
