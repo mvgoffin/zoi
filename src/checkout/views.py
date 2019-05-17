@@ -19,7 +19,7 @@ def checkout_mx(request):
         token = request.POST['stripeToken']
         try:
             customer = stripe.Customer.create(
-                description="This is a Test",
+                description="new customer",
                 source=token
             )
         except stripe.error.CardError as e:
@@ -28,7 +28,7 @@ def checkout_mx(request):
             charge = stripe.Charge.create(      #added create Charge
             amount=100,
             currency="gbp",
-            description="This is a Charge Test",
+            description="mix box",
             customer=customer                #added source customer
             )
             response = redirect('success')
@@ -39,52 +39,30 @@ def checkout_mx(request):
 
 
 
-#def checkout_mx(request):
-#    publishKey = settings.STRIPE_PUBLIC_KEY
-#    if request.method == 'POST':
-#        #token = request.POST['stripeToken']    #token deactivated
-#        try:
-#            Charge = stripe.Charge.create(      #added create Charge
-#                amount=10,
-#                currency="gbp",
-#                description="This is a Test",
-#                source=customer                 #added source customer
-#            )
-#            response = redirect('success')
-#            return response
-#
-#       except stripe.error.CardError as e:
-#            pass
-#    context = {'publishKey': publishKey}
-#    template = 'checkout_mx.html'
-#    return render(request,template,context)
-
-
-
-
-
-
 # hazelnut + cacao box. 
 def checkout_hc(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
-        #print_r(_POST)
-
         try:
             customer = stripe.Customer.create(
-                description="This is a Test",
+                description="new customer",
                 source=token
             )
-            response = redirect('success')
-            return response
-
         except stripe.error.CardError as e:
-            pass
-
+           pass
+        else:
+            charge = stripe.Charge.create(      #added create Charge
+            amount=100,
+            currency="gbp",
+            description="hazelnut + cacao box",
+            customer=customer                #added source customer
+            )
+            response = redirect('success')
+            return response    
     context = {'publishKey': publishKey}
     template = 'checkout_hc.html'
-    return render(request,template,context)
+    return render(request,template)
 
 
 
@@ -96,22 +74,25 @@ def checkout_le(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
-        #print_r(_POST)
-
         try:
             customer = stripe.Customer.create(
-                description="This is a Test",
+                description="new customer",
                 source=token
             )
-            response = redirect('success')
-            return response
-
         except stripe.error.CardError as e:
-            pass
-
+           pass
+        else:
+            charge = stripe.Charge.create(      #added create Charge
+            amount=100,
+            currency="gbp",
+            description="lemon box",
+            customer=customer                #added source customer
+            )
+            response = redirect('success')
+            return response    
     context = {'publishKey': publishKey}
     template = 'checkout_le.html'
-    return render(request,template,context)
+    return render(request,template)
 
 
 
