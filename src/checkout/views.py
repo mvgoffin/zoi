@@ -32,6 +32,7 @@ def checkout_mx(request):
                 description="This is a Charge Test",
                 source=customer                 #added source customer
             )
+            
         response = redirect('success')
         return response
 
