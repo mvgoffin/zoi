@@ -30,8 +30,7 @@ def checkout_mx(request):
             pass
             
     context = {'publishKey': publishKey}
-
-    except stripe.create.charge as e:
+       
         try:
             charge = stripe.Charge.create(      #added create Charge
             amount=10,
@@ -39,6 +38,7 @@ def checkout_mx(request):
             description="This is a Charge Test",
             source=customer                 #added source customer
         )
+        
     #context = {'publishKey': publishKey}
     template = 'checkout_mx.html'
     return render(request,template)
