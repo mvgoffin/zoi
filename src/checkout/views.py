@@ -23,6 +23,8 @@ def checkout_mx(request):
                 description="This is a Customer Test",
                 source=token
             )
+            response = redirect('success')
+            return response
 
         except stripe.create.charge as e:
             try:
