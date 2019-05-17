@@ -39,8 +39,8 @@ def checkout_mx(request):
                 #added charge section
 
     
-    context = {'publishKey': publishKey}
-    template = 'checkout_mx.html'
+        context = {'publishKey': publishKey}
+        template = 'checkout_mx.html'
     return render(request,template,context)
 
 
