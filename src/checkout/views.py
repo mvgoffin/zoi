@@ -25,6 +25,9 @@ def checkout_mx(request):
             )
             response = redirect('success')
             return response
+            
+        except stripe.error.CardError as e:
+        pass
 
         except stripe.create.charge as e:
             try:
@@ -34,10 +37,6 @@ def checkout_mx(request):
                 description="This is a Charge Test",
                 source=customer                 #added source customer
             )
-            pass
-
-        except stripe.error.CardError as e:
-        pass
 
     context = {'publishKey': publishKey}
     template = 'checkout_mx.html'
