@@ -37,8 +37,8 @@ def checkout_mx(request):
             return response
                 #added charge section
 
-        except stripe.error.CardError as e:
-            pass
+        #except stripe.error.CardError as e:
+            #pass
 
     context = {'publishKey': publishKey}
     template = 'checkout_mx.html'
