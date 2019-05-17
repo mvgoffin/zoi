@@ -23,8 +23,6 @@ def checkout_mx(request):
                 description="This is a Customer Test",
                 source=token
             )
-            response = redirect('success')
-            return response
 
         except stripe.create.charge as e:
             try:
@@ -36,7 +34,7 @@ def checkout_mx(request):
             )
 
             response = redirect('success')
-            return response
+            return response]
 
         #except stripe.error.CardError as e:
         #    pass
