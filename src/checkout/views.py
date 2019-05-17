@@ -34,6 +34,27 @@ def checkout_mx(request):
     template = 'checkout_mx.html'
     return render(request,template,context)
 
+def checkout_mx(request):
+    publishKey = settings.STRIPE_PUBLIC_KEY
+    if request.method == 'POST':
+        #token = request.POST['stripeToken']    #token deactivated
+
+        try:
+            Charge = stripe.Charge.create(      #added create Charge
+                amount=10,
+                currency="gbp",
+                description="This is a Test",
+                source=customer                 #added source customer
+            )
+            response = redirect('success')
+            return response
+
+        except stripe.error.CardError as e:
+            pass
+
+    context = {'publishKey': publishKey}
+    template = 'checkout_mx.html'
+    return render(request,template,context)
 
 
 # hazelnut + cacao box. 
