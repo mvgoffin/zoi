@@ -23,11 +23,10 @@ def checkout_mx(request):
                 description="This is a Customer Test",
                 source=token
             )
-        except stripe.error.CardError as e:
-            pass
-
-        else: 
-            charge = stripe.Charge.create(      #added create Charge
+        
+        except stripe.create.charge as e:
+            try:
+                charge = stripe.Charge.create(      #added create Charge
                 amount=10,
                 currency="gbp",
                 description="This is a Charge Test",
@@ -35,10 +34,9 @@ def checkout_mx(request):
             )
             response = redirect('success')
             return response
-                #added charge section
 
-        #except stripe.error.CardError as e:
-            #pass
+        except stripe.error.CardError as e:
+            pass
 
     context = {'publishKey': publishKey}
     template = 'checkout_mx.html'
