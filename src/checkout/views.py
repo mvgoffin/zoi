@@ -27,7 +27,6 @@ def checkout_mx(request):
         except stripe.error.CardError as e:
             pass
 
-        except 
             try: 
                 charge = stripe.Charge.create(      #added create Charge
                     amount=10,
