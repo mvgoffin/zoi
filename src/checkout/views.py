@@ -24,8 +24,8 @@ def checkout_mx(request):
                 description="This is a Test",
                 source=token
             )
-            response = redirect('success')
-            except stripe.error.CardError as e:
+            
+        except stripe.error.CardError as e:
             pass
 
             #added charge section
