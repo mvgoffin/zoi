@@ -53,7 +53,7 @@ def checkout_hc(request):
            pass
         else:
             charge = stripe.Charge.create(      #added create Charge
-            amount=2500,
+            amount=100,
             currency="gbp",
             description="hazelnut + cacao box",
             customer=customer                #added source customer
