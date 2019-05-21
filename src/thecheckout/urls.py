@@ -21,7 +21,6 @@ from django.urls import path, include
 from profiles import views
 from checkout import views as checkout_views
 from users import views as user_views
-from access import views as access_views
 
 #from thecheckout.views import home, send_push #web-push
 
