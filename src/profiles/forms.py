@@ -1,5 +1,4 @@
-from django import forms
-from profiles.models import Account 
+from django import forms 
 from profiles.models import Access
 from django.forms import TextInput, NumberInput, EmailInput
 
