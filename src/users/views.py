@@ -3,8 +3,8 @@ from django.shortcuts import redirect
 
 from users.forms import AccountForm
 from users.models import Account
-from users.forms import Access
-from users.forms import AccessForm
+#from users.forms import Access
+#from users.forms import AccessForm
 
 from django.core.mail import EmailMessage
 from django.core.mail import send_mail
@@ -108,34 +108,13 @@ def register_hc(request):
         form = AccountForm()
     return render(request, 'register_hc.html', {'form': form}) #this is render on HTML
 
-def home(request):
-    form = AccessForm(request.POST)
+#def home(request):
+#    form = AccessForm(request.POST)
+#
+ #   email = request.POST.get('email')
+ #   obj = Account.objects.create(email=email)
 
-    email = request.POST.get('email')
-    obj = Account.objects.create(email=email)
-
-    if form.is_valid():
-
-        send_mail(
-        'A new LEAD',
-        'From our servers, a new LEAD has been created.' +
-        ': email: {}'.format(email),
-        'hi@plntprotein.com',
-        ['marco@plntprotein.com'],
-        #fail_silently=False,
-        )
-
-        form.save()
-        
-        response = redirect('code_granted')
-        return response
-    else:
-        form = AccessForm()
-    
-     #context = {'form': form}
-     #template = 'register_mx.html'
-     #return render(request,template,context)
-    return render(request, 'home.html', {'form': form}) #this is render on HTML
+ 
 
 
 #from users.forms import UserRegisterForm
