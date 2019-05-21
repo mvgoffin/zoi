@@ -108,7 +108,7 @@ def register_hc(request):
         form = AccountForm()
     return render(request, 'register_hc.html', {'form': form}) #this is render on HTML
 
-def access_code(request):
+def home(request):
     form = AccessForm(request.POST)
 
     email = request.POST.get('email')
