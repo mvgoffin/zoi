@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'stripe',
     'users',
     'webpush',
-    'access',
 ]
 
 MIDDLEWARE = [
