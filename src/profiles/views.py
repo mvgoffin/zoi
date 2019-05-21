@@ -1,4 +1,12 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
+
+from profiles.forms import Access
+from profiles.forms import AccessForm
+
+from django.core.mail import EmailMessage
+from django.core.mail import send_mail
+from django.conf import settings
 
 # Create your views here.
 #def home(request):
