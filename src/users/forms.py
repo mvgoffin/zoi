@@ -24,7 +24,7 @@ class AccountForm(forms.ModelForm):
 class AccessForm(forms.ModelForm):
     class Meta:
         model = Access
-        fields = ('email')
+        fields = ('email',)
         widgets = {
             'email': EmailInput(attrs={'class': 'form-control', }),
         }
