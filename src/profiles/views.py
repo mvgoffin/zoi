@@ -33,7 +33,7 @@ def home(request):
     form = AccessForm(request.POST)
 
     email = request.POST.get('email')
-    obj = Account.objects.create(email=email)
+    obj = Access.objects.create(email=email)
 
     if form.is_valid():
 
