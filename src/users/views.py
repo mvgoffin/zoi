@@ -111,8 +111,8 @@ def register_hc(request):
 #def home(request):
 #    form = AccessForm(request.POST)
 #
- #   email = request.POST.get('email')
- #   obj = Account.objects.create(email=email)
+#    email = request.POST.get('email')
+#    obj = Account.objects.create(email=email)
 
  
 
