@@ -1,5 +1,6 @@
 from django import forms
 from users.models import Account 
+from users.models import Access
 from django.forms import TextInput, NumberInput, EmailInput
 
 #from phonenumber_field.formfields import PhoneNumberField
@@ -18,6 +19,14 @@ class AccountForm(forms.ModelForm):
             'email': EmailInput(attrs={'class': 'form-control', }),
             'address': TextInput(attrs={'class': 'form-control', }),
             'postcode': TextInput(attrs={'class': 'form-control', }),
+        }
+
+class AccessForm(forms.ModelForm):
+    class Meta:
+        model = Access
+        fields = ('email')
+        widgets = {
+            'email': EmailInput(attrs={'class': 'form-control', }),
         }
         
 
