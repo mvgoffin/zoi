@@ -21,6 +21,7 @@ from django.urls import path, include
 from profiles import views
 from checkout import views as checkout_views
 from users import views as user_views
+from access import views as access_views
 
 #from thecheckout.views import home, send_push #web-push
 
@@ -36,7 +37,7 @@ urlpatterns = [
     path('checkout_le/', checkout_views.checkout_le, name='checkout_le'),
     path('checkout_hc/', checkout_views.checkout_hc, name='checkout_hc'),
     path('success/', views.success, name='success'),
-    path('access_code/', user_views.access_code, name='access_code'),
+    path('access_code/', access_views.access_code, name='access_code'),
     path('code_granted/', views.code_granted, name='code_granted'),
     
     
