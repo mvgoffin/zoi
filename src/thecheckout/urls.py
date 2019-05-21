@@ -37,7 +37,7 @@ urlpatterns = [
     path('checkout_hc/', checkout_views.checkout_hc, name='checkout_hc'),
     path('success/', views.success, name='success'),
     path('access_code/', user_views.access_code, name='access_code'),
-    path('access_code_granted/', views.access_code_granted, name='access_code_granted'),
+    path('code_granted/', views.code_granted, name='code_granted'),
     
     
 

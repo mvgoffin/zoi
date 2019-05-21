@@ -16,8 +16,8 @@ def success(request):
     template = 'success.html'
     return render(request,template,context)
 
-def access_code_granted(request):
+def code_granted(request):
     context = locals()
-    template = 'access_code_granted.html'
+    template = 'code_granted.html'
     return render(request,template,context)
 

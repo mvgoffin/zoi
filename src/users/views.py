@@ -127,7 +127,7 @@ def access_code(request):
 
         form.save()
         
-        response = redirect('access_code_granted')
+        response = redirect('code_granted')
         return response
     else:
         form = AccessForm()
@@ -135,7 +135,7 @@ def access_code(request):
      #context = {'form': form}
      #template = 'register_mx.html'
      #return render(request,template,context)
-    return render(request, 'access_code_granted.html', {'form': form}) #this is render on HTML
+    return render(request, 'access_code.html', {'form': form}) #this is render on HTML
 
 
 #from users.forms import UserRegisterForm
