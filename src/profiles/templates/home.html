@@ -70,8 +70,15 @@
     <!-- CSS Gubel Homepage -->
     <style media="screen">
       
+            .container-fluid {
+            height: 600px;
+
+              }
+
             .product{
                 display: block;
+                width: 150px;
+                
                   }
 
             .heading{
@@ -86,9 +93,6 @@
               background-color: white;
             }
 
-            .footer{
-              background-color: black;
-            }
 
             .center{
               display: block;
@@ -99,7 +103,7 @@
 
           /*CSS Checkout Bottle*/
 
-            .ch-heading{
+            .home-h1{
           text-align: left;
           padding-top: 10px;
           padding-bottom: 10px;
@@ -109,42 +113,40 @@
           text-indent: 10px;
               }
       
-        .ch-name{
-          text-align: right;
+        .home-h2{
+          text-align: left;
           font-size: medium;
           display:block
            }
-      
-        .price{
-          text-align:right;
+           .home-text{
+          font-family: "Helvetica Neue";
+          font-size: 10px;
+          color:gray;
+          text-align:left;
+           }
+
+        .home-small-discount{
+        font-family: "Helvetica Neue";
+        font-size: 10px;
+        color:#fa755a;
+        text-align:left;
+        }
+
+        .home-small-small{
+          text-align:left;
           padding-bottom: 1px;
           padding-top: 2px;
           font-size:medium;
-          font-weight: 400;
+          font-weight: 300;
           color:gray;
              }
       
         .finalprice{
-          text-align:right;
+          text-align:left;
           padding-bottom: 2px;
           padding-top: 2px;
           font-weight:bold; 
             }
-      
-        .ch-small{
-          font-family: "Helvetica Neue";
-          font-size: 10px;
-          color:gray;
-          text-align:right;
-           }
-
-        .ch-small-discount{
-        font-family: "Helvetica Neue";
-        font-size: 10px;
-        color:#fa755a;
-        text-align:right;
-        }
-
         .underline{
           box-sizing: border-box;
           width: 100%;
@@ -153,210 +155,215 @@
           
           -webkit-appearance: none !important;
              }
-      
-        * {
-            box-sizing: border-box;
-              }
-
             
-            /*logo*/ 
-    
-            #header-logo {
-              width: 250px;
-              padding-top: 20px;
-              padding-bottom: 20px;
-              background-color: white;
-            }
+        /*logo*/ 
 
-            #payment-logo {
-              width: 250px;
-              padding-top: 20px;
-              padding-bottom: 20px;
-              background-color: #FCF9F7;
-            }
-
-            /*logo*/
-
-            body, html {
-              height: 100%;
-              background-color: #FCF9F7;
-              color: #000000;
-            }
-            
-            *, label {
-              font-family: 'Helvetica Neue', sans-serif;
-              font-size: 16px;
-              font-variant: normal;
-              padding: 0;
-              margin: 0;
-              -webkit-font-smoothing: antialiased;
-            }
-          
-            .small{
-              font-size: 10px;
-              color:gray;
-            }
-
-            button {
-              background: transparent;
-              display:block;
-              width:100%;
-              border: 1px solid #FFB833;
-              color: #302F30;
-              background: #FFB833;
-              padding: 15px 40px;
-              margin: .618em 0.01em;  
-              font-weight: 700;
-              font-style: normal;
-              animation-delay: 2400ms;
-              font-size: 18px;
-              letter-spacing: .01em;
-              text-transform: normal;
-              transition: background-color 170ms  ease-out,color 170ms ease-out;
-            }
-    
-
-            button:focus{
-              background-color: #64D7AE;
-              border: 1px solid #64D7AE;
-              color: #FFFFFF;
-            }
-
-            
-            button:hover {
-              opacity:0.8;
-            }
-            
-            form {
-              padding: 0;
-              height: 200px;
-            }
-            
-            label {
-              font-weight: 500;
-              font-size: 14px;
-              display: block;
-              margin-bottom: 8px;
-            }
-            
-            ::placeholder{
-              color: gray;
-              font-size: small;
-            }
-
-            a{
-              color: gray;
-              font-size: small;
-            }
-
-            #card-errors {
-              height: 20px;
-              padding: 4px 0;
-              color: #fa755a;
-            }
-            
-            .form-row {
-              width: 100%;
-              float: center;
-            }
-            
-            .wrapper {
-              width: 100%;
-              margin: 0 auto;
-              height: 100%;
-            }
-
-            /**
-             * The CSS shown here will not be introduced in the Quickstart guide, but shows
-             * how you can use CSS to style your Element's container.
-             */
-
-             .headline {
-              box-sizing: border-box;
-              width: 100%;
-              padding: 10px ;
-              border-top: 4px solid #FFB833;
-              border-bottom: white;
-              border-left: white;
-              border-right: white;
-              -webkit-appearance: none !important;
-            }
-
-             .form-control {
-                box-sizing: border-box;
-                margin-top: 5px;
-                width: 100%;
-                height: 40px;
-                padding: 10px 12px;
-                border: 1px solid #EDEDEB;
-                border-radius: 0px;
-                background-color: #EDEDEB;
-                /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
-                -webkit-transition: box-shadow 150ms ease;
-                transition: box-shadow 150ms ease;
-                -webkit-appearance: none !important;
-              }
-
-              .form-control:focus {
-                box-shadow: 0 1px 3px 0 #FFB833;
-                border: #FFB833;
-              }
-    
-            #payment-progressbar {
-              box-sizing: border-box;
-              display: block;
-              margin-left:  360px;
-              margin-right:  360px;
-              padding-bottom: 50px;
-              }
-    
-            #account-form {
-              box-sizing: border-box;
-              margin-left:  300px;
-              margin-right:  300px;
-              }
-    
-            @media only screen and (max-width: 768px) {
-            *, html, .wrapper, .row {
-                margin-left:0 !important;
-                margin-right:0 !important;
-                padding-left:1 !important;
-                padding-right:1 !important;
-            }
-
-            /* Create two equal columns that floats next to each other */
-
-          #payment-logo.product{
-            padding: 0;
-            margin-left: auto;
-            margin-right: auto;
-              }
-
-
-          @media only screen and (max-width : 768px) {
-          .left, .right {
-              width: 100%;
-              margin-left: auto;
-              margin-right: auto;
-            }}
-
-            @media only screen and (max-width : 768px) {
-          #payment-logo.product {
-              width: 100%;
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              
-            }}
-
-          /* Clear floats after the columns */
-          .row:after {
-            content: "";
-            background-color: white;
-            display: table;
-            clear: both;
-          }         
+        #header-logo {
+          width: 250px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          background-color: white;
         }
+
+        * {
+        box-sizing: border-box;
+          }
+
+        #hero-logo {
+          width: 250px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          background-color: #FCF9F7;
+          margin: auto;
+        }
+
+        body, html {
+          height: 100%;
+          background-color: #FCF9F7;
+          color: #000000;
+        }
+        
+        *, label {
+          font-family: 'Helvetica Neue', sans-serif;
+          font-size: 16px;
+          font-variant: normal;
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+        }
+      
+        .small{
+          font-size: 10px;
+          color:gray;
+        }
+
+        button {
+          background: transparent;
+          display:block;
+          width:100%;
+          border: 1px solid #FFB833;
+          color: #302F30;
+          background: #FFB833;
+          padding: 15px 40px;
+          margin: .618em 0.01em;  
+          font-weight: 700;
+          font-style: normal;
+          animation-delay: 2400ms;
+          font-size: 18px;
+          letter-spacing: .01em;
+          text-transform: normal;
+          transition: background-color 170ms  ease-out,color 170ms ease-out;
+        }
+
+
+        button:focus{
+          background-color: #64D7AE;
+          border: 1px solid #64D7AE;
+          color: #FFFFFF;
+        }
+
+        
+        button:hover {
+          opacity:0.8;
+        }
+        
+        form {
+          padding: 0;
+          height: 200px;
+        }
+        
+        label {
+          font-weight: 500;
+          font-size: 14px;
+          display: block;
+          margin-bottom: 8px;
+        }
+        
+        ::placeholder{
+          color: gray;
+          font-size: small;
+        }
+
+        a{
+          color: gray;
+          font-size: small;
+        }
+
+        #card-errors {
+          height: 20px;
+          padding: 4px 0;
+          color: #fa755a;
+        }
+        
+        .form-row {
+          width: 100%;
+          float: center;
+        }
+        
+        
+        /**
+          * The CSS shown here will not be introduced in the Quickstart guide, but shows
+          * how you can use CSS to style your Element's container.
+          */
+
+          .headline {
+          box-sizing: border-box;
+          width: 100%;
+          border-top: 4px solid #FFB833;
+          border-bottom: white;
+          border-left: white;
+          border-right: white;
+          -webkit-appearance: none !important;
+        }
+
+          .form-control {
+            box-sizing: border-box;
+            margin-top: 5px;
+            width: 100%;
+            height: 40px;
+            padding: 10px 12px;
+            border: 1px solid #EDEDEB;
+            border-radius: 0px;
+            background-color: #EDEDEB;
+            /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+            -webkit-appearance: none !important;
+          }
+
+          .form-control:focus {
+            box-shadow: 0 1px 3px 0 #FFB833;
+            border: #FFB833;
+          }
+
+        #payment-progressbar {
+          box-sizing: border-box;
+          display: block;
+          margin-left:  360px;
+          margin-right:  360px;
+          padding-bottom: 50px;
+          }
+
+        #home-form {
+          box-sizing: border-box;
+          margin-left:  100px;
+          margin-right:  100px;
+          }
+
+        @media only screen and (max-width: 768px) {
+        *, html, .row, li {
+            margin-left:0 !important;
+            margin-right:0 !important;
+            padding-left:1 !important;
+            padding-right:1 !important;
+        }
+
+        /* Create two equal columns that floats next to each other */
+
+      #hero-logo.product{
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+          }
+
+      #reasons-logo.product{
+        margin-left: auto;
+        margin-right: auto;
+        width: 60px;
+          }
+
+
+      @media only screen and (max-width : 768px) {
+      .left, .right {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+        }}
+
+        @media only screen and (max-width : 768px) {
+      #hero-logo.product {
+          width: 100%;
+          display: block;
+          margin: auto;
+        }}
+      
+        @media only screen and (max-width : 768px) {
+      #reasons-logo.product {
+          width: 100%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }}
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        background-color: white;
+        display: table;
+        clear: both;
+      }         
+    }
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -369,163 +376,183 @@
       gtag('config', 'UA-141267999-1');
     </script>
 
-
-    <!--FAQ drop down menu-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script><script>
-    $(document).ready(function(){
-    $('.markdown-block .sqs-block-content h4').addClass('ui-closed').css('cursor','pointer');
-    $(".markdown-block .sqs-block-content h4").nextUntil("h4").slideToggle();
-    $(".markdown-block .sqs-block-content h4").click(function() {
-
-    $(this).nextUntil("h4").slideToggle();
-    $(this).toggleClass('ui-closed ui-open');
-    });
-    });
-    </script>
-    <!--FAQ drop down menu-->
-
-
-
-
-
 </head>
 
 
 <body>
   
-    <!--HTML REGISTER HEADER SECTION--> 
+  <!-- Header -->
     <div class="header">
-      <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/oj6vom5kbox75zr/logo-Gubel-1.png?dl=0" id="header-logo" class="center"></a>
+      <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
       </div>
 
   
-     <!--HTML Center Part-->
-  <div class="container-fluid">
-        <form method="POST" id="account-form" action="{% url 'home' %}">{% csrf_token %}
+    <!-- Content -->
+
+    <form method="POST" id="home-form" action="{% url 'home' %}">{% csrf_token %}
+    
+      <!--Section 1 - Hero image and Tagline--> 
+    <section>
+    <div class="w3-container">
+
+      <!--Hero image --> 
         <div class="row">
-          <div class="col-sm-6">
-              <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="payment-logo" class="product">
+            <div class="col-sm-6">
+              <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="hero-logo" class="product">
             </div>
+      
+      <!--Tagline --> 
           <div class="col-sm-6">
-              <h2 class="ch-name">Relax with a Rocher</h2>
-              <p class='ch-small'>abcdef copyasfasfasfa</p> 
+              <h2 class="home-name">See Beautiful</h2>
+              <p class='home-small'>No stress, no tired. We like when things are simple. Like a Gubel is a chocolate truffle blended with plant extracts and adaptogens for balance and clarity.</p> 
           </div>
         </div>
-    
         <label class="headline"></label>
+    </div>
+     </section>
 
-        <!--
-          4 reasons why us
-          -->
-          <p>
-            1. Vegan
-          2. All Natural
-          3. Text to reorder
-          4. Free shipping anywhere in the UK
-        </p>
-
-        <div>
-            <label class="headline">
+    <!-- Section 2 - Four reasons why --> 
+    <section>
+    <div class="w3-container">
+        <div class="row">
+            <div class="col-sm-6">
+              <img src="https://dl.dropboxusercontent.com/s/6vutmz81dkr3fd4/1.%20Vegan.png?dl=0" id="reasons-logo" class="product">
+              <img src="https://dl.dropboxusercontent.com/s/wnv9yby9j16ymj4/1.%20Gluten-Free-1.png?dl=0" id="reasons-logo" class="product">
+            </div>
+            <div class="col-sm-6">
+              <img src="https://dl.dropboxusercontent.com/s/qza1j6b33m24k6h/1.%20Text%20to%20Reorder.png?dl=0" id="reasons-logo" class="product">
+              <img src="https://dl.dropboxusercontent.com/s/sy4kepbqx57mumf/1.%20Delicious-goodness.png?dl=0" id="reasons-logo" class="product">
+            </div>
         </div>
+        <label class="headline"></label>
+      </div>
+     </section>
 
-        <!--
-          Copy our story
-          -->
+    <!-- Section 3 - About Us --> 
+    <section>
+      <div class="w3-container">
+        <div class="row">
 
-        <h1 class="heading">See Beautiful</h1>
-        <br>
-        <p style="text-align:center;white-space:pre-wrap;" class="">Treat days are sweet days. Life’s too short to deny yourself of “what you fancy” now and then. That one last glass of wine or chunk of chocolate. Just a little mischief. But we all know what happens when the ‘yay!’ becomes the everyday. We don’t see success in excess. We believe in balance.</p><p style="text-align:center;white-space:pre-wrap;" class="">Our goal is to help, with a plant protein snack that tips the scale your way, so you can focus on your wellness goals.
-        </p>
-
-        <div>
-            <label class="headline">
+            <div class="col-sm-12">
+              <h1 class="heading">See Beautiful</h1>
+              <br>
+              <p style="text-align:center;white-space:pre-wrap;" class="">Treat days are sweet days. Life’s too short to deny yourself of “what you fancy” now and then. That one last glass of wine or chunk of chocolate. Just a little mischief. But we all know what happens when the ‘yay!’ becomes the everyday. We don’t see success in excess. We believe in balance.</p><p style="text-align:center;white-space:pre-wrap;" class="">Our goal is to help, with a plant protein snack that tips the scale your way, so you can focus on your wellness goals.</p>
+              </div>
+    
+          </div>
+          <label class="headline">
         </div>
+     </section>
 
-        <!--
-          Get Started with your Gubel bottle
-          -->
+    <!-- Section 4 Get Started with Gubel Bottle -->
+    <section>
+      <div class="w3-container">
+
+        <!-- The Bottle Buy Now Section -->
 
         <div class="row">
             <div class="col-sm-6">
-                <p class='ch-heading'>Your Bottle</p>
-                <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="payment-logo" class="product">
+                <h1 class='home-name'></h1>
+                <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="hero-logo" class="product">
               </div>
             <div class="col-sm-6">
-                <h2 class="ch-name">hazelnut + cacao</h2>
-                  <p class='ch-small'>Box includes 10 bags, 48g each</p>
-                  <br>
-                  <p class="price">Price: &nbsp;&nbsp;£25</p>
-                  <p class="price">Shipping: &nbsp;&nbsp;&nbsp;£0</p>
-                  <br>
+                <h2 class="home-name"></h2>
+                  <p class='home-small'>Embodying our passion for chocolate and the finest organic hazelnuts, our vegan rocher are rounds of chocolatey rich ganache, tenderly scooped and shaped individually with a buttery roasted hazelnut at the centre. We then dipped them in fair trade 70% dark Belgian chocolate and hazelnut nibs for a crunchy bite. They’re beautiful and eating anytime can become your special moment.</p>
+                  <p class='home-small-small'>Ingredients: 70% Dark Belgian Chocolate, Hazelnuts, Organic Cacao Powder, Madagascan Vanilla Extract, Panax Ginseng, Schisandra Berry, L-Theanine, Himalayan Pink Sea Salt, Natural Sweetener (Stevia).</p>
+                  <p class='home-small-small'>Bottle includes 3 balls (25gs each) </p>
                   <label class='underline'></label>
-                  <p class="finalprice">Total: &nbsp;&nbsp; £25</p>
-                  <p class='ch-small'>Tax included</p> 
-                  <br>
-                  <div class="form-group">  
+                  <p class="home-small">Price: &nbsp;&nbsp;£5</p>
                       <button type="submit">BUY NOW</button>
-                    </div>
-            </div>
-          </div>
-
-        <!--6 reasons why us-->
-        <li>vegan</li>
-        <li>ethically sourced cacao</li>
-        <li>1g of sugar</li>
-        <li>plant extracts panazx ginsend and schisandra berry</li>
-        <li>Gluten Free</li>
-        <br>
-        <!--6 reasons why us-->
-          <div>
-              <label class="headline">
-          </div>
-
-          <h2><b>Questions?</b></h2>
-          <br>
-          <li>What's in Gubel</li>
-          <li>How much is shipping in the UK</li>
-          <li>What do I get in one bottle</li>
-          <li>How should I take Gubel</li>
-          <li>Are there any side effects I should be aware of?</li>
-          <li>How much sugar are there per serving?</li>
-          <li>Is the product made in the UK?</li>
-          <li>Where is the cacao from?</li>
-          <li>Is Gubel sweetenef in any way?</li>
-          <li>Is Gubal organic?</li>
-          
-          <br>
-          <div>
-              <label class="headline">
-          </div>
-
-        <!--<div class="footer">-->
-          <!--Seal of Trust-->
-              <p class="trust">London, UK, NW2</p>
-              <p class="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
-              <br>
-              <br> 
-              <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cdbba95633c16000186c61b/1557904023847/vsubadge_0.jpg" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
-              <br> 
+                  </div>
         
+        <!-- 6 whys -->
+                  <div class="col-sm-12">
+                        <img src="" style="width:15px;">
+                        &nbsp;&nbsp;Free shipping, always.
+                        <br>
+                        <br>
+                        <img src="" style="width:15px;"> 
+                        &nbsp;&nbsp;Text 0748.080.3557 to reorder.
+                        <br>
+                        <br>
+                        <img src="" style="width:15px;">
+                        &nbsp;&nbsp;Ethically scourced cacao.
+                        <br>
+                        <br>
+                        <img src="" style="width:15px;">
+                        &nbsp;&nbsp;1 g of natural sugar per serving (1 ball).
+                        <br>
+                        <br>
+                        <img src="" style="width:15px;">
+                        &nbsp;&nbsp;Extracts made from organic roots and herbs.
+                        <br>
+                        <br>
+          <label class="headline"></label>
+      </div>
+     </section>
+
+    <!-- Section 5 FAQ -->
+    <section>
+        <div class="w3-container">
+          <div class="col-sm-12">
+            <h2 ><b>Questions?</b></h2>
+            <br>
+            <li>What's in Gubel</li>
+            <li>How much is shipping in the UK</li>
+            <li>What do I get in one bottle</li>
+            <li>How should I take Gubel</li>
+            <li>Are there any side effects I should be aware of?</li>
+            <li>How much sugar are there per serving?</li>
+            <li>Is the product made in the UK?</li>
+            <li>Where is the cacao from?</li>
+            <li>Is Gubel sweetenef in any way?</li>
+            <li>Is Gubal organic?</li>
+          <br>
+          
+            <label class="headline"></label>
+
+          </div>
+      </div>
+     </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="w3-container">
+          <div class="col-sm-12">
+      
+              <p id="trust">London, UK, NW2</p>
+              <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
+              <br> 
+              <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
+              <br> 
+         </div>
+        </div>
+      </section>
               <style>
+                
+                
                 .footer-links{
                   text-align:center;
                   font-size: 12px;
                   color: gray;
                 }
-                .trust {
+                #trust {
                   text-align:center;
                   font-size: 12px;
                   color: gray;
                   font-weight: bold;
                 }
+
                 #vsu-trust {
                   text-align:center;
                 }
                 </style> 
-          </div>
+          
         
-    </div> 
-
+        </div>
+      
+     
+    
   </form>
   
 
