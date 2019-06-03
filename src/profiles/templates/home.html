@@ -8,13 +8,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content= "width=device-width, user-scalable=no">
-    <link rel="icon" type="image/png" href="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ce1343088a0fe0001dbb4c6/1558262832998/Favicon-3.png">
-    <title>GUBEL</title>
+    <meta name="description" content="Gubel is a wellness brand that formulates chocolates with a blend of powerful adaptogens, to help you feel good and more balanced in an increasingly stressful world.">
+    <!--favicon<link rel="icon" type="image/png" href="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ce1343088a0fe0001dbb4c6/1558262832998/Favicon-3.png">-->
+    <title>
+      
+
+      GUBEL
+    
+
+    </title>
     <!--Host Images: dl.dropboxusercontent.com -->
 
-
-
-    <!--Page PACE Progress loading bar CSS--> 
+    <!--CSS Page PACE Progress loading bar--> 
     <style>
             .pace {
               -webkit-pointer-events: none;
@@ -59,21 +64,9 @@
             
     </style>
     
-
-    <!-- PLNT Form CSS -->
+    <!-- CSS Gubel Form -->
     <style media="screen">
       
-          @font-face {
-              font-family: 'Gotham';
-              src: url('fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
-              src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-                url('fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
-                url('fonts/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-                url('fonts/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
-              font-weight: 700;
-              font-style: normal;
-            } 
-
             .heading{
               text-align: center;
               font-weight: 800;
@@ -100,6 +93,13 @@
             
             /*logo*/ 
     
+            #header-logo {
+              width: 250px;
+              padding-top: 20px;
+              padding-bottom: 20px;
+              background-color: white;
+            }
+
             #payment-logo {
               width: 250px;
               padding-top: 20px;
@@ -118,7 +118,7 @@
             }
             
             *, label {
-              font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              font-family: 'Helvetica Neue', sans-serif;
               font-size: 16px;
               font-variant: normal;
               padding: 0;
@@ -271,23 +271,46 @@
     
     </style>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267999-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141267999-1');
+    </script>
+
+
 </head>
 
 
 <body>
-        <!--HTML REGISTER HEADER SECTION--> 
-        <div class="header">
-          <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/3pbn1b6btj2rp4x/logo-Gubel-1.png?dl=0" id="payment-logo" class="center"></a>
-          </div>
- 
-    
+  
+    <!--HTML REGISTER HEADER SECTION--> 
+    <div class="header">
+      <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/3pbn1b6btj2rp4x/logo-Gubel-1.png?dl=0" id="header-logo" class="center"></a>
+      </div>
+
   <!--PLNT FORM ACCOUNT SECTION--> 
   <div class="wrapper">
       <form method="POST" id="account-form" action="{% url 'home' %}">{% csrf_token %}
           <br>
           <br>
-          <p class='heading'>Enter your email and we'll send a discount code and notify when we launch  💁‍♀️️</p>
+          <h1 class="heading">See Beautiful
+          </h1>
           <br>
+          <br>
+          <p style="text-align:center;white-space:pre-wrap;" class="">Treat days are sweet days. Life’s too short to deny yourself of “what you fancy” now and then. That one last glass of wine or chunk of chocolate. Just a little mischief. But we all know what happens when the ‘yay!’ becomes the everyday. We don’t see success in excess. We believe in balance.</p><p style="text-align:center;white-space:pre-wrap;" class="">Our goal is to help, with a plant protein snack that tips the scale your way, so you can focus on your wellness goals.
+          </p>
+          <br>
+          <br>
+
+          
+
+          <br>
+          <br>
+
           <div >
               <label class="headline">
           </div>
