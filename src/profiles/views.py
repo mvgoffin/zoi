@@ -1,11 +1,10 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
 
-from profiles.forms import Access
-from profiles.forms import AccessForm
-
-from django.core.mail import EmailMessage
-from django.core.mail import send_mail
+#from profiles.forms import Access (diabling PLNT PROTEIN IG landing page)
+#from profiles.forms import AccessForm (diabling PLNT PROTEIN IG landing page)
+#from django.core.mail import EmailMessage (diabling PLNT PROTEIN IG landing page)
+#from django.core.mail import send_mail (diabling PLNT PROTEIN IG landing page)
 from django.conf import settings
 
 # Create your views here.
