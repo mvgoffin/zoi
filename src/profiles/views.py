@@ -9,10 +9,11 @@ from django.core.mail import send_mail
 from django.conf import settings
 
 # Create your views here.
-#def home(request):
-#    context = locals()
-#    template = 'home.html'
-#    return render(request,template,context)
+#Enabling Gubel Homepage
+def home(request):
+    context = locals()
+    template = 'home.html'
+    return render(request,template,context)
 
 def about(request):
     context = locals()
@@ -24,37 +25,38 @@ def success(request):
     template = 'success.html'
     return render(request,template,context)
 
-def code_granted(request):
-    context = locals()
-    template = 'code_granted.html'
-    return render(request,template,context)
+#def code_granted(request):
+#    context = locals()
+#    template = 'code_granted.html'
+#    return render(request,template,context)
 
-def home(request):
-    form = AccessForm(request.POST)
+#Disabling Home PLNT PROTEIN Landing Page
+#def home(request):
+#    form = AccessForm(request.POST)
 
-    email = request.POST.get('email')
-    obj = Access.objects.create(email=email)
+#    email = request.POST.get('email')
+#    obj = Access.objects.create(email=email)
 
-    if form.is_valid():
+#    if form.is_valid():
 
-        send_mail(
-        'A new LEAD',
-        'From our servers, a new LEAD has been created.' +
-        ': email: {}'.format(email),
-        'hi@plntprotein.com',
-        ['marco@plntprotein.com'],
+#        send_mail(
+#        'A new LEAD',
+#        'From our servers, a new LEAD has been created.' +
+#        ': email: {}'.format(email),
+#        'hi@plntprotein.com',
+#        ['marco@plntprotein.com'],
         #fail_silently=False,
-        )
+#        )
 
-        form.save()
+#        form.save()
         
-        response = redirect('code_granted')
-        return response
-    else:
-        form = AccessForm()
+#        response = redirect('code_granted')
+#        return response
+#    else:
+#        form = AccessForm()
     
      #context = {'form': form}
      #template = 'register_mx.html'
      #return render(request,template,context)
-    return render(request, 'home.html', {'form': form}) #this is render on HTML
+#    return render(request, 'home.html', {'form': form}) #this is render on HTML
 
