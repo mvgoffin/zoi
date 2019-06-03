@@ -1,7 +1,4 @@
-<!-- Hi there, curious developer!
-  -->
-
-
+<!-- Hi there, curious developer!-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content= "width=device-width, user-scalable=no">
     <meta name="description" content="Gubel is a wellness brand that formulates chocolates with a blend of powerful adaptogens, to help you feel good and more balanced in an increasingly stressful world.">
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <!--favicon<link rel="icon" type="image/png" href="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ce1343088a0fe0001dbb4c6/1558262832998/Favicon-3.png">-->
     <title>
       
@@ -64,9 +67,13 @@
             
     </style>
     
-    <!-- CSS Gubel Form -->
+    <!-- CSS Gubel Homepage -->
     <style media="screen">
       
+            .product{
+                display: block;
+                  }
+
             .heading{
               text-align: center;
               font-weight: 800;
@@ -85,18 +92,79 @@
 
             .center{
               display: block;
-              margin-left: auto!important;
-              margin-right: auto!important;
+              margin: auto!important;
               text-align:center;
               background-color: white;
             }
+
+          /*CSS Checkout Bottle*/
+
+            .ch-heading{
+          text-align: left;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid gray;
+          font-weight: 700;
+          display:block;
+          text-indent: 10px;
+              }
+      
+        .ch-name{
+          text-align: right;
+          font-size: medium;
+          display:block
+           }
+      
+        .price{
+          text-align:right;
+          padding-bottom: 1px;
+          padding-top: 2px;
+          font-size:medium;
+          font-weight: 400;
+          color:gray;
+             }
+      
+        .finalprice{
+          text-align:right;
+          padding-bottom: 2px;
+          padding-top: 2px;
+          font-weight:bold; 
+            }
+      
+        .ch-small{
+          font-family: "Helvetica Neue";
+          font-size: 10px;
+          color:gray;
+          text-align:right;
+           }
+
+        .ch-small-discount{
+        font-family: "Helvetica Neue";
+        font-size: 10px;
+        color:#fa755a;
+        text-align:right;
+        }
+
+        .underline{
+          box-sizing: border-box;
+          width: 100%;
+          padding: 0.5px;
+          border-top: 1px solid gray;
+          
+          -webkit-appearance: none !important;
+             }
+      
+        * {
+            box-sizing: border-box;
+              }
+
             
             /*logo*/ 
     
             #header-logo {
               width: 250px;
-              padding-top: 20px;
-              padding-bottom: 20px;
+              padding-top: 30px;
+              padding-bottom: 30px;
               background-color: white;
             }
 
@@ -108,12 +176,10 @@
             }
 
             /*logo*/
-    
-    
+
             body, html {
               height: 100%;
               background-color: #FCF9F7;
-;
               color: #000000;
             }
             
@@ -127,7 +193,6 @@
             }
           
             .small{
-              
               font-size: 10px;
               color:gray;
             }
@@ -163,8 +228,8 @@
             }
             
             form {
-              padding: 30px;
-              height: 120px;
+              padding: 0;
+              height: 200px;
             }
             
             label {
@@ -200,10 +265,7 @@
               margin: 0 auto;
               height: 100%;
             }
-    
-            
-            
-            
+
             /**
              * The CSS shown here will not be introduced in the Quickstart guide, but shows
              * how you can use CSS to style your Element's container.
@@ -261,14 +323,40 @@
                 padding-left:1 !important;
                 padding-right:1 !important;
             }
-    
-            
-}
+
+            /* Create two equal columns that floats next to each other */
+
+          #payment-logo.product{
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+              }
 
 
+          @media only screen and (max-width : 768px) {
+          .left, .right {
+              width: 100%;
+              margin-left: auto;
+              margin-right: auto;
+            }}
 
+            @media only screen and (max-width : 768px) {
+          #payment-logo.product {
+              width: 100%;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              
+            }}
 
-    
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            background-color: white;
+            display: table;
+            clear: both;
+          }         
+        }
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -282,6 +370,24 @@
     </script>
 
 
+    <!--FAQ drop down menu-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script><script>
+    $(document).ready(function(){
+    $('.markdown-block .sqs-block-content h4').addClass('ui-closed').css('cursor','pointer');
+    $(".markdown-block .sqs-block-content h4").nextUntil("h4").slideToggle();
+    $(".markdown-block .sqs-block-content h4").click(function() {
+
+    $(this).nextUntil("h4").slideToggle();
+    $(this).toggleClass('ui-closed ui-open');
+    });
+    });
+    </script>
+    <!--FAQ drop down menu-->
+
+
+
+
+
 </head>
 
 
@@ -292,46 +398,114 @@
       <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/oj6vom5kbox75zr/logo-Gubel-1.png?dl=0" id="header-logo" class="center"></a>
       </div>
 
-  <!--PLNT FORM ACCOUNT SECTION--> 
-  <div class="wrapper">
-      <form method="POST" id="account-form" action="{% url 'home' %}">{% csrf_token %}
-          <br>
-          <br>
-          <h1 class="heading">See Beautiful
-          </h1>
-          <br>
-          <br>
-          <p style="text-align:center;white-space:pre-wrap;" class="">Treat days are sweet days. Life’s too short to deny yourself of “what you fancy” now and then. That one last glass of wine or chunk of chocolate. Just a little mischief. But we all know what happens when the ‘yay!’ becomes the everyday. We don’t see success in excess. We believe in balance.</p><p style="text-align:center;white-space:pre-wrap;" class="">Our goal is to help, with a plant protein snack that tips the scale your way, so you can focus on your wellness goals.
-          </p>
-          <br>
-          <br>
+  
+     <!--HTML Center Part-->
+  <div class="container-fluid">
+        <form method="POST" id="account-form" action="{% url 'home' %}">{% csrf_token %}
+        <div class="row">
+          <div class="col-sm-6">
+              <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="payment-logo" class="product">
+            </div>
+          <div class="col-sm-6">
+              <h2 class="ch-name">Relax with a Rocher</h2>
+              <p class='ch-small'>abcdef copyasfasfasfa</p> 
+          </div>
+        </div>
+    
+        <label class="headline"></label>
 
-          
+        <!--
+          4 reasons why us
+          -->
+          <p>
+            1. Vegan
+          2. All Natural
+          3. Text to reorder
+          4. Free shipping anywhere in the UK
+        </p>
 
-          <br>
-          <br>
+        <div>
+            <label class="headline">
+        </div>
 
-          <div >
+        <!--
+          Copy our story
+          -->
+
+        <h1 class="heading">See Beautiful</h1>
+        <br>
+        <p style="text-align:center;white-space:pre-wrap;" class="">Treat days are sweet days. Life’s too short to deny yourself of “what you fancy” now and then. That one last glass of wine or chunk of chocolate. Just a little mischief. But we all know what happens when the ‘yay!’ becomes the everyday. We don’t see success in excess. We believe in balance.</p><p style="text-align:center;white-space:pre-wrap;" class="">Our goal is to help, with a plant protein snack that tips the scale your way, so you can focus on your wellness goals.
+        </p>
+
+        <div>
+            <label class="headline">
+        </div>
+
+        <!--
+          Get Started with your Gubel bottle
+          -->
+
+        <div class="row">
+            <div class="col-sm-6">
+                <p class='ch-heading'>Your Bottle</p>
+                <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="payment-logo" class="product">
+              </div>
+            <div class="col-sm-6">
+                <h2 class="ch-name">hazelnut + cacao</h2>
+                  <p class='ch-small'>Box includes 10 bags, 48g each</p>
+                  <br>
+                  <p class="price">Price: &nbsp;&nbsp;£25</p>
+                  <p class="price">Shipping: &nbsp;&nbsp;&nbsp;£0</p>
+                  <br>
+                  <label class='underline'></label>
+                  <p class="finalprice">Total: &nbsp;&nbsp; £25</p>
+                  <p class='ch-small'>Tax included</p> 
+                  <br>
+                  <div class="form-group">  
+                      <button type="submit">BUY NOW</button>
+                    </div>
+            </div>
+          </div>
+
+        <!--6 reasons why us-->
+        <li>vegan</li>
+        <li>ethically sourced cacao</li>
+        <li>1g of sugar</li>
+        <li>plant extracts panazx ginsend and schisandra berry</li>
+        <li>Gluten Free</li>
+        <br>
+        <!--6 reasons why us-->
+          <div>
               <label class="headline">
           </div>
-          <label for="id_email"></label>
-          <input type="email" name="email" class="form-control" maxlength="100" placeholder="email" id="id_email">
-          <br>
-          <br>
-          <div class="form-group">  
-            <button type="submit">GET MY CODE</button>
-          </div>
-            <br>
-            <br>
 
-        <!--<div class="footer"></div>-->
+          <h2><b>Questions?</b></h2>
+          <br>
+          <li>What's in Gubel</li>
+          <li>How much is shipping in the UK</li>
+          <li>What do I get in one bottle</li>
+          <li>How should I take Gubel</li>
+          <li>Are there any side effects I should be aware of?</li>
+          <li>How much sugar are there per serving?</li>
+          <li>Is the product made in the UK?</li>
+          <li>Where is the cacao from?</li>
+          <li>Is Gubel sweetenef in any way?</li>
+          <li>Is Gubal organic?</li>
+          
+          <br>
+          <div>
+              <label class="headline">
+          </div>
+
+        <!--<div class="footer">-->
           <!--Seal of Trust-->
               <p class="trust">London, UK, NW2</p>
-              <p class="trust">© PLNT Protein Ltd 2019. All Rights Reserved</p>
+              <p class="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
               <br>
               <br> 
               <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cdbba95633c16000186c61b/1557904023847/vsubadge_0.jpg" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
               <br> 
+        
               <style>
                 .footer-links{
                   text-align:center;
@@ -347,7 +521,10 @@
                 #vsu-trust {
                   text-align:center;
                 }
-                </style>  
+                </style> 
+          </div>
+        
+    </div> 
 
   </form>
   
