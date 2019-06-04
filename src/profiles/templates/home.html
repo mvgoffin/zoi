@@ -79,11 +79,6 @@
               background-color: white;
             }
 
-            .product{
-                display: block;
-                width: 150px;
-                
-                  }
 
             .heading{
               padding-top: 30px;
@@ -93,7 +88,16 @@
               display:block
             }
 
-            /*logo*/  
+            .heading-5{
+              padding-top: 30px;
+              padding-bottom: 15px;
+              margin:auto;
+              text-align: center;
+              font-weight: 800;
+              display:block
+            }
+
+            
 
             .header{
               background-color: white;
@@ -181,7 +185,7 @@
           -webkit-appearance: none !important;
              }
             
-        /*logo*/ 
+       
 
         #header-logo {
           width: 250px;
@@ -203,6 +207,13 @@
         }
 
         #hero-2-logo {
+          width: 100%;
+          height: 100%;
+          background-color: #FCF9F7;
+          margin: auto;
+        }
+
+        #reason {
           width: 100%;
           height: 100%;
           background-color: #FCF9F7;
@@ -373,7 +384,7 @@
         .col-sm-12-5{
           padding-left:  100px;
           padding-right:  100px;
-          background:#FCF9F7;
+          background: white;
         }
 
         .col-sm-6{
@@ -385,6 +396,12 @@
           padding-left:  100px;
           padding-right:  100px;
         }
+
+        .col-xs-3{
+          padding:50px ;
+        }
+
+
 
         @media only screen and (max-width: 768px) {
         .row, .row-3, li, .col-sm-6, .col-sm-12, .col-md-12-f {
@@ -405,7 +422,8 @@
         
         
 
-        /* Create two equal columns that floats next to each other */
+        
+
 
       #hero-logo.product{
         padding: 0;
@@ -413,13 +431,26 @@
         margin-right: auto;
           }
 
-   
+      @media only screen and (max-width : 768px) {
+      #hero-logo.product {
+          width: 100%;
+          display: block;
+          margin: auto;
+        }}
+      
 
-      #reasons-logo.product{
-        padding: 0;
-        margin:0;
-        width: 60px;
-          }
+      
+
+    
+          
+
+      @media only screen and (max-width : 768px) {
+      #reasons-logo.product {
+          width: 100px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }}
 
 
       @media only screen and (max-width : 768px) {
@@ -429,20 +460,6 @@
           margin-right: auto;
         }}
 
-        @media only screen and (max-width : 768px) {
-      #hero-logo.product {
-          width: 100%;
-          display: block;
-          margin: auto;
-        }}
-      
-        @media only screen and (max-width : 768px) {
-      #reasons-logo.product {
-          width: 100%;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }}
 
       /* Clear floats after the columns */
       .row:after {
@@ -504,7 +521,7 @@
         <div class="w3-container">
     
           <!--Hero image --> 
-            
+
                 <div class="col-sm-12-hero-2">
                   <img src="https://dl.dropboxusercontent.com/s/taos6p3285eaprq/IMG-dipping-2.png?dl=0" id="hero-2-logo" class="product">
                 </div>
@@ -516,25 +533,30 @@
                   <p class='home-small-1'>No stress, no tired. We like when things are simple. Like a Gubel is a chocolate truffle blended with plant extracts and adaptogens for balance and clarity.</p> 
               </div>
             </div>
+            <!--<label class="headline"></label>-->
         </div>
          </section>
 
-    <!-- Section 2 - Four reasons why --> 
+    <!-- Section 2 - Four reasons why   -->
     <section>
     <div class="w3-container">
         <div class="row">
-            <div class="col-sm-6">
-              <img src="https://dl.dropboxusercontent.com/s/6vutmz81dkr3fd4/1.%20Vegan.png?dl=0" id="reasons-logo" class="product">
-              <img src="https://dl.dropboxusercontent.com/s/wnv9yby9j16ymj4/1.%20Gluten-Free-1.png?dl=0" id="reasons-logo" class="product">
+            <div class="col-xs-3">
+              <img src="https://dl.dropboxusercontent.com/s/f6jkko3ii68sgs1/icons-vegan.png?dl=0" id="reason" class="product">
             </div>
-            <div class="col-sm-6">
-              <img src="https://dl.dropboxusercontent.com/s/qza1j6b33m24k6h/1.%20Text%20to%20Reorder.png?dl=0" id="reasons-logo" class="product">
-              <img src="https://dl.dropboxusercontent.com/s/sy4kepbqx57mumf/1.%20Delicious-goodness.png?dl=0" id="reasons-logo" class="product">
+            <div class="col-xs-3">
+              <img src="https://dl.dropboxusercontent.com/s/70mp10vw9d6ckn7/icons-1g-nat-sugar.png?dl=0"id="reason" class="product">
+            </div>
+            <div class="col-xs-3">
+                <img src="https://dl.dropboxusercontent.com/s/qm4mrjk2g34at3a/icons-text.png?dl=0" id="reason" class="product">
+            </div>
+            <div class="col-xs-3">
+                  <img src="https://dl.dropboxusercontent.com/s/kgixzb30iqnumu8/icons-gf.png?dl=0" id="reason" class="product">
             </div>
         </div>
-        
+        <!--<label class="headline"></label>-->
       </div>
-     </section>
+     </section> 
 
     <!-- Section 3 - About Us --> 
     <section>
@@ -544,7 +566,8 @@
             <div class="col-sm-12-3">
               <br>
               <h1 class="heading">One bite at a time</h1>
-              <p style="text-align:center;white-space:pre-wrap;" class="">Treat days are sweet days. Life’s too short to deny yourself of “what you fancy” now and then. That one last glass of wine or chunk of chocolate. Just a little mischief. But we all know what happens when the ‘yay!’ becomes the everyday. We don’t see success in excess. We believe in balance.</p><p style="text-align:center;white-space:pre-wrap;" class="">Our goal is to help, with a healthy chocolate truffle that tips the scale your way, so you can focus on your wellness goals.</p>
+              <p style="text-align:center;white-space:pre-wrap;" class="home-small-1">Treat days are sweet days. Life’s too short to deny yourself of “what you fancy” now and then. That one last glass of wine or chunk of chocolate. Just a little mischief. But we all know what happens when the ‘yay!’ becomes the everyday. We don’t see success in excess. We believe in balance.</p>
+              <p style="text-align:center;white-space:pre-wrap;" class="home-small-1">Our goal is to help, with a healthy chocolate truffle that tips the scale your way, so you can focus on your wellness goals.</p>
               <br>
             </div>
     
@@ -573,7 +596,7 @@
                   <p class='home-small-small'>Bottle includes 3 balls (25gs each) </p>
                   <label class='underline'></label>
                   <p class="home-small">Price: &nbsp;&nbsp;£5</p>
-                      <button type="submit">BUY NOW</button>  
+                      <button type="submit">BUY NOW</button> 
                   <p class="make-impact">Choosing Gubel, you directly support cacao farmer groups through the <a href="https://www.cocoahorizons.org/"target="_blank"><u class='make-impact'>Cocoa Horizons Foundation,</u></a> by training young farmers and empowering women farmers to excel in their craft.</p>        
                   </div>
         
@@ -611,24 +634,121 @@
     <!-- Section 5 FAQ -->
     <section>
         <div class="w3-container">
-            <label class="headline"></label>
+            
           <div class="col-sm-12-5">
-              <h1 class="heading">Questions?</h1>
-            <br>
-            <li>What's in Gubel</li>
-            <li>How much is shipping in the UK</li>
-            <li>What do I get in one bottle</li>
-            <li>How should I take Gubel</li>
-            <li>Are there any side effects I should be aware of?</li>
-            <li>How much sugar are there per serving?</li>
-            <li>Is the product made in the UK?</li>
-            <li>Where is the cacao from?</li>
-            <li>Is Gubel sweetenef in any way?</li>
-            <li>Is Gubal organic?</li>
+              <h1 class="heading-5">Questions?</h1>
+    <input type="button" value="What's in Gubel" class="accordion"></input>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <input type="button" value="How much is shipping in the UK" class="accordion"></input>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <input type="button" value="What do I get in one bottle" class="accordion"></input>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <input type="button" value="How should I take Gubel" class="accordion"></input>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <input type="button" value="Are there any side effects I should be aware of?" class="accordion"></input>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <input type="button" value="How much sugar are there per serving?" class="accordion"></input>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <input type="button" value="Is the product made in the UK?" class="accordion"></input>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <input type="button" value="Where is the cacao from?" class="accordion"></input>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <input type="button" value="Is Gubel sweetened in any way?" class="accordion"></input>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <input type="button" value="How do I know my payment is secure?" class="accordion"></input>
+    <div class="panel">
+      <p>Our proprietary text-based order system has been developed to ensure the highest level of security with every order. When you confirm your payment information via our checkout website, your information will be transmitted via secure Transport Layer Security (TLS) encryption to ensure safe transmission of your personal information. That information is further encrypted and stored with our credit card processor. Our processors are PCI DSS - Level 1 Service Provider.
+          If you have more questions, please visit our FAQ page below.</p>
           <br>
-          </div>
-      </div>
-     </section>
+          <br>
+    </div>
+    
+        <style>
+        /* Style the buttons that are used to open and close the accordion panel */
+        .accordion {
+              background-color: transparent;
+              color: black;
+              font-weight: 700; 
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
+
+            .active, .accordion:hover {
+              background-color:whitesmoke;
+              border-left-color:  #FFB833;
+            }
+
+            .panel {
+              padding: 0 18px;
+              background-color: white;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+            }
+
+            .accordion:after {
+              content: '\02795'; /* Unicode character for "plus" sign (+) */
+              font-size: 13px;
+              color: #777;
+              float: right;
+              margin-left: 5px;
+            }
+
+            .active:after {
+              content: "\2796"; /* Unicode character for "minus" sign (-) */
+            }
+        </style>
+
+      <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              } 
+            });
+          }
+          </script>
+    </section>
 
     <!-- Footer -->
     <section>
