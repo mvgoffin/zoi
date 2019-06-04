@@ -76,7 +76,7 @@
               }
 
             .row-3 {
-              background-color: white;
+              background-color: #FCF9F7;
             }
 
 
@@ -146,6 +146,7 @@
         color: black;
         text-align:center;
         padding-bottom: 30px;
+        line-height: 25px;
         }
 
         .home-small{
@@ -153,6 +154,7 @@
         font-weight: 400;
         color: black;
         text-align:left;
+        line-height: 25px;
         }
 
         .home-small-small{
@@ -162,19 +164,13 @@
           font-size:small;
           font-weight: 300;
           color:gray;
+          line-height: 1.4;
              }
       
         .make-impact {
           color:#64D7AE;
           font-size: 10px;
         }
-
-        .finalprice{
-          text-align:left;
-          padding-bottom: 2px;
-          padding-top: 2px;
-          font-weight:bold; 
-            }
 
         .underline{
           box-sizing: border-box;
@@ -184,8 +180,6 @@
           
           -webkit-appearance: none !important;
              }
-            
-       
 
         #header-logo {
           width: 250px;
@@ -209,8 +203,13 @@
         #hero-2-logo {
           width: 100%;
           height: 100%;
-          background-color: #FCF9F7;
+          background-color: transparent;
+          border-style: solid;
+          border-color:#FCF9F7;
+          border-width: 10px;
           margin: auto;
+          margin: 10px;
+        
         }
 
         #reason {
@@ -226,7 +225,7 @@
 
         body, html {
           height: 100%;
-          background-color: #FCF9F7;
+          background-color: white;
           color: #000000;
         }
         
@@ -325,6 +324,17 @@
           -webkit-appearance: none !important;
         }
 
+        .headline-thin {
+          box-sizing: border-box;
+          margin: 0;
+          width: 100%;
+          border-top: 1px solid lightgray;
+          border-bottom: white;
+          border-left: white;
+          border-right: white;
+          -webkit-appearance: none !important;
+        }
+
           .form-control {
             box-sizing: border-box;
             margin-top: 5px;
@@ -364,6 +374,12 @@
         padding-right:  200px;
         }
 
+        .col-md-3{
+        padding: 10px;
+        background-color: black;
+        
+        }
+
         .col-md-12-f{
         padding-left:  0;
         padding-right:  0;
@@ -378,7 +394,7 @@
         .col-sm-12-3{
           padding-left:  100px;
           padding-right:  100px;
-          background: white;
+          background: #FCF9F7;
         }
 
         .col-sm-12-5{
@@ -404,7 +420,7 @@
 
 
         @media only screen and (max-width: 768px) {
-        .row, .row-3, li, .col-sm-6, .col-sm-12, .col-md-12-f {
+        .row, .row-3, li, .col-sm-6, .col-sm-12, .col-md-12-f, .accordion, .panel {
             margin-left:0 !important;
             margin-right:0 !important;
             padding-left: 10px !important;
@@ -419,12 +435,6 @@
           padding-right: 0 !important;
         }
 
-        
-        
-
-        
-
-
       #hero-logo.product{
         padding: 0;
         margin-left: auto;
@@ -438,20 +448,7 @@
           margin: auto;
         }}
       
-
       
-
-    
-          
-
-      @media only screen and (max-width : 768px) {
-      #reasons-logo.product {
-          width: 100px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }}
-
 
       @media only screen and (max-width : 768px) {
       .left, .right {
@@ -529,9 +526,10 @@
           
           <!--Tagline --> 
               <div class="col-sm-12">
-                  <h1 class="heading">See Beautiful</h1>
-                  <p class='home-small-1'>No stress, no tired. We like when things are simple. Like a Gubel is a chocolate truffle blended with plant extracts and adaptogens for balance and clarity.</p> 
-              </div>
+                  <h1 class="heading">We wrap a feeling</h1>
+                  <p class='home-small-1'>•	A special recipe with special benefits. Gubel is a rich chocolate hazelnut truffle blended with plant extracts and adaptogens to feel good and more balanced.</p> 
+                  <label class="headline-thin"></label>
+                </div>
             </div>
             <!--<label class="headline"></label>-->
         </div>
@@ -566,8 +564,7 @@
             <div class="col-sm-12-3">
               <br>
               <h1 class="heading">One bite at a time</h1>
-              <p style="text-align:center;white-space:pre-wrap;" class="home-small-1">Treat days are sweet days. Life’s too short to deny yourself of “what you fancy” now and then. That one last glass of wine or chunk of chocolate. Just a little mischief. But we all know what happens when the ‘yay!’ becomes the everyday. We don’t see success in excess. We believe in balance.</p>
-              <p style="text-align:center;white-space:pre-wrap;" class="home-small-1">Our goal is to help, with a healthy chocolate truffle that tips the scale your way, so you can focus on your wellness goals.</p>
+              <p style="text-align:center;white-space:pre-wrap;" class="home-small-1">We believe in balance, not success in excess. But life’s too short to deny yourself all the time. Treat days truly are sweet days. You know, that one last glass of wine or chunk of chocolate. But we all know what happens when the ‘yay!’ becomes the everyday. That’s why we formulated Gubel: with only 1g of sugar, each truffle is your moment to reset, rebalance and dream. </p>
               <br>
             </div>
     
@@ -588,6 +585,8 @@
             <div class="col-sm-6">
                 <h1 class='home-heading'></h1>
                 <img src="https://dl.dropboxusercontent.com/s/whdsdzeqouv84z0/IMG-final5.png?dl=0" id="hero-2-logo" class="product">
+                <br>
+                <img src="https://dl.dropboxusercontent.com/s/jk72u2qqayiho6s/IMG-wrapping-2.png?dl=0" id="hero-2-logo" class="product">
               </div>
             <div class="col-sm-6">
                 <h2 class="home-heading"></h2>
@@ -634,57 +633,69 @@
     <!-- Section 5 FAQ -->
     <section>
         <div class="w3-container">
-            
+            <label class="headline"></label>
           <div class="col-sm-12-5">
               <h1 class="heading-5">Questions?</h1>
     <input type="button" value="What's in Gubel" class="accordion"></input>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p class='home-small'>Gubel is made with fair trade cacao, hazelnuts and our blend recipe of plant extracts and adaptogens. When together they provide good benefits and support to your wellness goals.
+
+      <p class='home-small'>Our proprietary blend combines:
+          <li>L-theanine is an amino acid found in green tea that help eases stress and brightens mood.</li>
+          <li>Schisandra Berry is a plant used as food and medicine, that helps promote balance and boost immune system.</li>
+          <li>Panax Ginseng is a root that is used to cope with stress and as a general tonic for improving well-being.</li>
+          </p>
+    </div>
+    
+    <input type="button" value="How does it work" class="accordion"></input>
+    <div class="panel">
+        <p class='home-small'>Buy your bottle of Gubel first. When you run out, simply text us on 07480803557 to re order a new box of truffles. We use 100% recyable packaging and we are trying our best to create a simple and easy model that tackles plastic pollution.</p>
+        <p class='home-small'>Remember to save this number. We're available anytime you want a new order of have questions.</p>
+    </div>
+
+    <input type="button" value="Is your packaging recyclable?" class="accordion"></input>
+    <div class="panel">
+        <p class='home-small'>Yes, all our packaging is 100% recyclable ♻️</p>
     </div>
     
     <input type="button" value="How much is shipping in the UK" class="accordion"></input>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+        <p class='home-small'>£0 💁</p>
     </div>
     
     <input type="button" value="What do I get in one bottle" class="accordion"></input>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+        <p class='home-small'>When you buy your bottle, you’ll get 3 truffles. From there you can reorder in boxes of 24 truffles by texting us on 07480803557.</p>
     </div>
     
     <input type="button" value="How should I take Gubel" class="accordion"></input>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+        <p class='home-small'>Enjoy Gubel anytime of the day.</p>
     </div>
     
     <input type="button" value="Are there any side effects I should be aware of?" class="accordion"></input>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+        <p class='home-small'>Because of our blend of plant extracts and adaptogens, we recommend keeping our products out of reach of children. Also, if you are pregnant is best to avoid our truffles.</p>
     </div>
     
     <input type="button" value="How much sugar are there per serving?" class="accordion"></input>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p class='home-small'>1g</p>
     </div>
     
     <input type="button" value="Is the product made in the UK?" class="accordion"></input>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+        <p class='home-small'>Yes, we make our products in our kitchen in East London</p>
     </div>
     
     <input type="button" value="Where is the cacao from?" class="accordion"></input>
     <div class="panel">
-      <p>Lorem ipsum...</p>
-    </div>
-    
-    <input type="button" value="Is Gubel sweetened in any way?" class="accordion"></input>
-    <div class="panel">
-      <p>Lorem ipsum...</p>
+        <p class='home-small'>We use fair trade cacao from West Africa. By choosing Gubel, you directly impact cacao farmers in education and training.</p>
     </div>
     
     <input type="button" value="How do I know my payment is secure?" class="accordion"></input>
     <div class="panel">
-      <p>Our proprietary text-based order system has been developed to ensure the highest level of security with every order. When you confirm your payment information via our checkout website, your information will be transmitted via secure Transport Layer Security (TLS) encryption to ensure safe transmission of your personal information. That information is further encrypted and stored with our credit card processor. Our processors are PCI DSS - Level 1 Service Provider.
+        <p class='home-small'>Our proprietary text-based order system has been developed to ensure the highest level of security with every order. When you confirm your payment information via our checkout website, your information will be transmitted via secure Transport Layer Security (TLS) encryption to ensure safe transmission of your personal information. That information is further encrypted and stored with our credit card processor. Our processors are PCI DSS - Level 1 Service Provider.
           If you have more questions, please visit our FAQ page below.</p>
           <br>
           <br>
@@ -753,7 +764,7 @@
     <!-- Footer -->
     <section>
         <div class="w3-container">
-          <div class="col-md-12-f">
+          <div class="col-md-3">
               <br>
               <p id="trust">London, UK, NW2</p>
               <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
@@ -761,18 +772,42 @@
               <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
               <br> 
          </div>
+         <div class="col-md-3">
+            <br>
+            <p id="trust">London, UK, NW2</p>
+            <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
+            <br> 
+            <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
+            <br> 
+       </div>
+       <div class="col-md-3">
+          <br>
+          <p id="trust">London, UK, NW2</p>
+          <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
+          <br> 
+          <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
+          <br> 
+     </div>
+     <div class="col-md-3">
+        <br>
+        <p id="trust">London, UK, NW2</p>
+        <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
+        <br> 
+        <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
+        <br> 
+   </div>
         </div>
       </section>
               <style>
                 
                 
                 .footer-links{
-                  text-align:center;
+                  text-align:left;
                   font-size: 12px;
                   color: white;
                 }
                 #trust {
-                  text-align:center;
+                  text-align:left;
                   font-size: 12px;
                   color: white;
                   font-weight: bold;
