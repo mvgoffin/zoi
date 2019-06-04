@@ -75,6 +75,10 @@
 
               }
 
+            .row-3 {
+              background-color: white;
+            }
+
             .product{
                 display: block;
                 width: 150px;
@@ -82,6 +86,8 @@
                   }
 
             .heading{
+              padding-top: 30px;
+              padding-bottom: 15px;
               text-align: center;
               font-weight: 800;
               display:block
@@ -98,7 +104,6 @@
               display: block;
               margin: auto!important;
               text-align:center;
-              background-color: white;
             }
 
           /*CSS Checkout Bottle*/
@@ -118,17 +123,31 @@
           font-size: medium;
           display:block
            }
-           .home-text{
+
+        .home-text{
           font-family: "Helvetica Neue";
           font-size: 10px;
           color:gray;
           text-align:left;
            }
 
-        .home-small-discount{
+        .home-heading-1{
+          text-align: center;
+
+        }
+
+        .home-small-1{
         font-family: "Helvetica Neue";
-        font-size: 10px;
-        color:#fa755a;
+        font-weight: 400;
+        color: black;
+        text-align:center;
+        padding-bottom: 30px;
+        }
+
+        .home-small{
+        font-family: "Helvetica Neue";
+        font-weight: 400;
+        color: black;
         text-align:left;
         }
 
@@ -136,17 +155,23 @@
           text-align:left;
           padding-bottom: 1px;
           padding-top: 2px;
-          font-size:medium;
+          font-size:small;
           font-weight: 300;
           color:gray;
              }
       
+        .make-impact {
+          color:#64D7AE;
+          font-size: 10px;
+        }
+
         .finalprice{
           text-align:left;
           padding-bottom: 2px;
           padding-top: 2px;
           font-weight:bold; 
             }
+
         .underline{
           box-sizing: border-box;
           width: 100%;
@@ -175,6 +200,17 @@
           padding-bottom: 20px;
           background-color: #FCF9F7;
           margin: auto;
+        }
+
+        #hero-2-logo {
+          width: 100%;
+          height: 100%;
+          background-color: #FCF9F7;
+          margin: auto;
+        }
+
+        .col-sm-12-hero-2{
+          padding:0;
         }
 
         body, html {
@@ -269,6 +305,7 @@
 
           .headline {
           box-sizing: border-box;
+          margin: 0;
           width: 100%;
           border-top: 4px solid #FFB833;
           border-bottom: white;
@@ -307,17 +344,66 @@
 
         #home-form {
           box-sizing: border-box;
-          margin-left:  100px;
-          margin-right:  100px;
+          margin-left:  auto;
+          margin-right:  auto;
           }
+        
+        .col-md-12{
+        padding-left:  200px;
+        padding-right:  200px;
+        }
+
+        .col-md-12-f{
+        padding-left:  0;
+        padding-right:  0;
+        background-color: black;
+        }
+
+        .col-sm-12{
+          padding-left:  100px;
+          padding-right:  100px;
+          
+        }
+        .col-sm-12-3{
+          padding-left:  100px;
+          padding-right:  100px;
+          background: white;
+        }
+
+        .col-sm-12-5{
+          padding-left:  100px;
+          padding-right:  100px;
+          background:#FCF9F7;
+        }
+
+        .col-sm-6{
+          padding-left:  100px;
+          padding-right:  100px;
+        }
+
+        .col-sm-6-4{
+          padding-left:  100px;
+          padding-right:  100px;
+        }
 
         @media only screen and (max-width: 768px) {
-        *, html, .row, li {
+        .row, .row-3, li, .col-sm-6, .col-sm-12, .col-md-12-f {
             margin-left:0 !important;
             margin-right:0 !important;
-            padding-left:1 !important;
-            padding-right:1 !important;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
         }
+        }
+        @media only screen and (max-width: 768px) {
+        *, .html {
+          margin-left:0 !important;
+          margin-right:0 !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+
+        
+        
 
         /* Create two equal columns that floats next to each other */
 
@@ -327,9 +413,11 @@
         margin-right: auto;
           }
 
+   
+
       #reasons-logo.product{
-        margin-left: auto;
-        margin-right: auto;
+        padding: 0;
+        margin:0;
         width: 60px;
           }
 
@@ -391,25 +479,45 @@
 
     <form method="POST" id="home-form" action="{% url 'home' %}">{% csrf_token %}
     
-      <!--Section 1 - Hero image and Tagline--> 
+      <!--Section 1 - Hero image and Tagline 
     <section>
-    <div class="w3-container">
+    <div class="w3-container">-->
 
-      <!--Hero image --> 
+      <!--Hero image 
         <div class="row">
             <div class="col-sm-6">
               <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="hero-logo" class="product">
-            </div>
+            </div>--> 
       
-      <!--Tagline --> 
+      <!--Tagline 
           <div class="col-sm-6">
-              <h2 class="home-name">See Beautiful</h2>
+              <h2 class="home-heading">See Beautiful</h2>
               <p class='home-small'>No stress, no tired. We like when things are simple. Like a Gubel is a chocolate truffle blended with plant extracts and adaptogens for balance and clarity.</p> 
           </div>
         </div>
         <label class="headline"></label>
     </div>
-     </section>
+     </section>--> 
+
+     <!--Section 1.2 - Hero image and Tagline--> 
+     <section>
+        <div class="w3-container">
+    
+          <!--Hero image --> 
+            
+                <div class="col-sm-12-hero-2">
+                  <img src="https://dl.dropboxusercontent.com/s/taos6p3285eaprq/IMG-dipping-2.png?dl=0" id="hero-2-logo" class="product">
+                </div>
+                <div class="row">
+          
+          <!--Tagline --> 
+              <div class="col-sm-12">
+                  <h1 class="heading">See Beautiful</h1>
+                  <p class='home-small-1'>No stress, no tired. We like when things are simple. Like a Gubel is a chocolate truffle blended with plant extracts and adaptogens for balance and clarity.</p> 
+              </div>
+            </div>
+        </div>
+         </section>
 
     <!-- Section 2 - Four reasons why --> 
     <section>
@@ -424,23 +532,24 @@
               <img src="https://dl.dropboxusercontent.com/s/sy4kepbqx57mumf/1.%20Delicious-goodness.png?dl=0" id="reasons-logo" class="product">
             </div>
         </div>
-        <label class="headline"></label>
+        
       </div>
      </section>
 
     <!-- Section 3 - About Us --> 
     <section>
       <div class="w3-container">
-        <div class="row">
+        <div class="row-3">
 
-            <div class="col-sm-12">
-              <h1 class="heading">See Beautiful</h1>
+            <div class="col-sm-12-3">
               <br>
-              <p style="text-align:center;white-space:pre-wrap;" class="">Treat days are sweet days. Life’s too short to deny yourself of “what you fancy” now and then. That one last glass of wine or chunk of chocolate. Just a little mischief. But we all know what happens when the ‘yay!’ becomes the everyday. We don’t see success in excess. We believe in balance.</p><p style="text-align:center;white-space:pre-wrap;" class="">Our goal is to help, with a plant protein snack that tips the scale your way, so you can focus on your wellness goals.</p>
-              </div>
+              <h1 class="heading">One bite at a time</h1>
+              <p style="text-align:center;white-space:pre-wrap;" class="">Treat days are sweet days. Life’s too short to deny yourself of “what you fancy” now and then. That one last glass of wine or chunk of chocolate. Just a little mischief. But we all know what happens when the ‘yay!’ becomes the everyday. We don’t see success in excess. We believe in balance.</p><p style="text-align:center;white-space:pre-wrap;" class="">Our goal is to help, with a healthy chocolate truffle that tips the scale your way, so you can focus on your wellness goals.</p>
+              <br>
+            </div>
     
           </div>
-          <label class="headline">
+          <!--<label class="headline"></label>-->
         </div>
      </section>
 
@@ -451,22 +560,25 @@
         <!-- The Bottle Buy Now Section -->
 
         <div class="row">
+          <br>
+          <br>
             <div class="col-sm-6">
-                <h1 class='home-name'></h1>
-                <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="hero-logo" class="product">
+                <h1 class='home-heading'></h1>
+                <img src="https://dl.dropboxusercontent.com/s/whdsdzeqouv84z0/IMG-final5.png?dl=0" id="hero-2-logo" class="product">
               </div>
             <div class="col-sm-6">
-                <h2 class="home-name"></h2>
+                <h2 class="home-heading"></h2>
                   <p class='home-small'>Embodying our passion for chocolate and the finest organic hazelnuts, our vegan rocher are rounds of chocolatey rich ganache, tenderly scooped and shaped individually with a buttery roasted hazelnut at the centre. We then dipped them in fair trade 70% dark Belgian chocolate and hazelnut nibs for a crunchy bite. They’re beautiful and eating anytime can become your special moment.</p>
                   <p class='home-small-small'>Ingredients: 70% Dark Belgian Chocolate, Hazelnuts, Organic Cacao Powder, Madagascan Vanilla Extract, Panax Ginseng, Schisandra Berry, L-Theanine, Himalayan Pink Sea Salt, Natural Sweetener (Stevia).</p>
                   <p class='home-small-small'>Bottle includes 3 balls (25gs each) </p>
                   <label class='underline'></label>
                   <p class="home-small">Price: &nbsp;&nbsp;£5</p>
-                      <button type="submit">BUY NOW</button>
+                      <button type="submit">BUY NOW</button>  
+                  <p class="make-impact">Choosing Gubel, you directly support cacao farmer groups through the <a href="https://www.cocoahorizons.org/"target="_blank"><u class='make-impact'>Cocoa Horizons Foundation,</u></a> by training young farmers and empowering women farmers to excel in their craft.</p>        
                   </div>
         
         <!-- 6 whys -->
-                  <div class="col-sm-12">
+                  <div class="col-sm-6">
                         <img src="" style="width:15px;">
                         &nbsp;&nbsp;Free shipping, always.
                         <br>
@@ -479,6 +591,8 @@
                         &nbsp;&nbsp;Ethically scourced cacao.
                         <br>
                         <br>
+                        </div>
+                    <div class="col-sm-6">
                         <img src="" style="width:15px;">
                         &nbsp;&nbsp;1 g of natural sugar per serving (1 ball).
                         <br>
@@ -487,15 +601,19 @@
                         &nbsp;&nbsp;Extracts made from organic roots and herbs.
                         <br>
                         <br>
-          <label class="headline"></label>
-      </div>
+                        <img src="" style="width:15px;">
+                        &nbsp;&nbsp;Made in the UK.
+                        <br>
+                        <br>
+                    </div>             
      </section>
 
     <!-- Section 5 FAQ -->
     <section>
         <div class="w3-container">
-          <div class="col-sm-12">
-            <h2 ><b>Questions?</b></h2>
+            <label class="headline"></label>
+          <div class="col-sm-12-5">
+              <h1 class="heading">Questions?</h1>
             <br>
             <li>What's in Gubel</li>
             <li>How much is shipping in the UK</li>
@@ -508,9 +626,6 @@
             <li>Is Gubel sweetenef in any way?</li>
             <li>Is Gubal organic?</li>
           <br>
-          
-            <label class="headline"></label>
-
           </div>
       </div>
      </section>
@@ -518,8 +633,8 @@
     <!-- Footer -->
     <section>
         <div class="w3-container">
-          <div class="col-sm-12">
-      
+          <div class="col-md-12-f">
+              <br>
               <p id="trust">London, UK, NW2</p>
               <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
               <br> 
@@ -534,12 +649,12 @@
                 .footer-links{
                   text-align:center;
                   font-size: 12px;
-                  color: gray;
+                  color: white;
                 }
                 #trust {
                   text-align:center;
                   font-size: 12px;
-                  color: gray;
+                  color: white;
                   font-weight: bold;
                 }
 
