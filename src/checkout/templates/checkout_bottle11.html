@@ -391,7 +391,7 @@
         }
 
         @media only screen and (max-width: 768px) {
-        .row, .row-3, li, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .containerbar {
+        .row, .row-3, li, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-12, .accordion, .panel, .containerbar {
             margin-left:0 !important;
             margin-right:0 !important;
             padding-left: 10px !important;
@@ -533,7 +533,132 @@
         border: 4px solid gray;
       }
       
-  </style>
+      </style>
+
+  <!--CSS CHECKOUT CSS -->
+    <style>
+ 
+      .product{
+        display: block;
+          }
+    
+      .header{
+            background-color: white;
+               }
+
+      .footer{
+            background-color: black;
+               }
+
+      .ch-heading{
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid gray;
+        font-weight: 700;
+        display:block;
+        text-indent: 10px;
+            }
+    
+      .ch-name{
+        text-align: right;
+        font-size: medium;
+        display:block
+         }
+    
+      .price{
+        text-align:right;
+        padding-bottom: 1px;
+        padding-top: 2px;
+        font-size:medium;
+        font-weight: 400;
+        color:gray;
+           }
+    
+      .finalprice{
+        text-align:right;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        font-weight:bold; 
+          }
+    
+      .ch-small{
+        font-family: "Helvetica Neue";
+        font-size: 10px;
+        color:gray;
+        text-align:right;
+         }
+
+      .ch-small-discount{
+      font-family: "Helvetica Neue";
+      font-size: 10px;
+      color:#fa755a;
+      text-align:right;
+      }
+
+    
+      .underline{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.5px;
+        border-top: 1px solid gray;
+        
+        -webkit-appearance: none !important;
+           }
+    
+      * {
+          box-sizing: border-box;
+            }
+    
+        /* Create two equal columns that floats next to each other */
+        .left {
+          float: left;
+          width: 50%;
+          background-color: transparent;
+          padding: 10px;
+          height: 200px;
+          padding: 0;
+           }
+
+        .right {
+          float: right;
+          width: 50%;
+          background-color: transparent;
+          padding: 10px;
+          height: 200px;
+          padding: 0;
+            }
+
+        #payment-logo.product{
+          padding: 0;
+          margin-left: auto;
+          margin-right: auto;
+            }
+
+        @media only screen and (max-width : 768px) {
+        .left, .right {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+          }}
+
+          @media only screen and (max-width : 768px) {
+        #payment-logo.product {
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+          }}
+    
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          background-color: white;
+          display: table;
+          clear: both;
+        }
+      </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267999-1"></script>
@@ -558,27 +683,10 @@
   
     <!-- Content -->
 
-    <form method="POST" id="register-form" action="{% url 'home' %}">{% csrf_token %}
+    <!--<form action="." method="post" id="payment-form">-->   <!--action (.) to remain on same page-->
+      <!--<br>
+      {% csrf_token %}-->
     
-      <!--Section 1 - Hero image and Tagline 
-    <section>
-    <div class="w3-container">-->
-
-      <!--Hero image 
-        <div class="row">
-            <div class="col-sm-6">
-              <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="hero-logo" class="product">
-            </div>--> 
-      
-      <!--Tagline 
-          <div class="col-sm-6">
-              <h2 class="home-heading">See Beautiful</h2>
-              <p class='home-small'>No stress, no tired. We like when things are simple. Like a Gubel is a chocolate truffle blended with plant extracts and adaptogens for balance and clarity.</p> 
-          </div>
-        </div>
-        <label class="headline"></label>
-    </div>
-     </section>--> 
 
       <!--PLNT Progress Bar -->
   <div class="containerbar">
@@ -598,62 +706,150 @@
   <section>
     <div class="w3-container">
         <div class="row">
-        <div class="col-sm-12">
-      <!--<form method="POST" id="account-form" action="{% url 'register_mx' %}">{% csrf_token %}-->
+          <div class="col-sm-12">
+        <form action="." method="post" id="payment-form">   <!--action (.) to remain on same page-->
           <br>
-          <p class='sub-heading'>Add your account details</p>
+          {% csrf_token %}
+          <p class='heading'>Add your payment details</p>
           <br>
           <div >
               <label class="headline">
           </div>
+         
+          <!--HTML PLNT CHECKOUT SECTION-->
+          <div class="row">
+              <p class='ch-heading'>YOUR FIRST BOX</p>
+              <div class="col-sm-6">
+                <br>
+                <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ce004dc2a36f400019e9654/1558185229761/HC-Checkout.jpg" id="payment-logo" class="product">
+                <br>
+              </div>
+              <div class="col-sm-6">
+                <br>
+                <br>
+                <h2 class="ch-name">hazelnut + cacao</h2>
+                <p class='ch-small'>Box includes 10 bags, 48g each</p>
+                <br>
+                <p class="price">Price: &nbsp;&nbsp;£25</p>
+                <p class="price">Shipping: &nbsp;&nbsp;&nbsp;£0</p>
+                <br>
+                <label class='underline'></label>
+                <p class="finalprice">Total: &nbsp;&nbsp; £25</p>
+                <p class='ch-small'>Tax included</p> 
+                <p class='ch-small-discount'>Have a discount code?</p>
+                <p class='ch-small-discount'>After payment, text it on 0748.080.3557 to activate discount</p>
+                <div class='shipping-status'>
+                <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
+                  </div>
+                    <!--Estimated Delivery Date SCRIPT + STYLE-->
+                            <!--SCRIPT-->
+                              <script>
+                                var months = ["Jan", "Febr", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                                n =  new Date();
+                                n.setDate(n.getDate() + 4);
+                                y = n.getFullYear();
+                                m = n.getMonth();
+                                d = n.getDate() + 4;
+                                document.getElementById("date").innerHTML = d + " " + months[m] + " " + y;
+                              </script>
+                            <!--STYLE-->
+                              <style>
+                                .shipping-status{
+                                  text-align:right;
+                                }
+
+                                .text-date{
+                                  color:gray;
+                                  display:inline-block;
+                                  font-size: 10px;
+                                  font-weight: bold;
+                                  text-align:right;
+                                }
+                                .date{
+                                  color:#22D59E;
+                                  display:inline-block;
+                                  font-size: 10px;
+                                  font-weight: bold;
+                                }
+
+                                .status{
+                                  background-color: #22D59E;
+                                  border-radius: 50%;
+                                  width: 20px;
+                                  height: 20px;
+                                  text-align:right;
+                                }
+
+                                @-webkit-keyframes pulse {
+                                    0%{transform:scale(.1);opacity: 0;}
+                                    50%{ opacity: .4;}
+                                    100%{transform: scale(1.6); opacity: 0;}
+                                  }
+
+                                  #status {
+                                    position:absolute;
+                                    -webkit-animation: pulse 2s infinite;
+                                  }
+                                  #status:nth-child(2) {
+                                    position:absolute;
+                                    -webkit-animation: pulse 2s infinite .3s;
+                                  }
+                                  #status:nth-child(3) {
+                                    position:absolute;
+                                    -webkit-animation: pulse 2s infinite .6s;
+                                  }
+                              </style> 
+              </div>
+            </div>
+            <br>
+                
+          
+      
+
+          <!--HTML PLNT Name + Credit Card Request-->
+      
+                <div class="col-md-12">
+          
+                    <br> 
+                    <br>
+                    <br>
+                    <label for="card-name">Name on card</label>
+                    <input type="text" name="card-name" class="form-control" id="card-name" placeholder="" required="">
+                  
+                  <br>
+                  <br>
+
+                  <div class="form-row">
+                  <label for="card-element"> Credit or debit card</label>
+                  <div id="card-element" class="StripeElement StripeElement--empty">
+                  
+                    <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: #ffffff !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame5" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-3be8d1395c8852a04a24872fe60ed45f.html#style[base][color]=%2332325d&amp;style[base][fontFamily]=%22Helvetica+Neue%22%2C+Helvetica%2C+sans-serif&amp;style[base][fontSmoothing]=antialiased&amp;style[base][fontSize]=16px&amp;style[base][::placeholder][color]=%23F2F2F2&amp;style[invalid][color]=%23fa755a&amp;style[invalid][iconColor]=%23fa755a&amp;componentName=card&amp;wait=false&amp;rtl=false&amp;keyMode=test&amp;origin=https%3A%2F%2Fstripe.com&amp;referrer=https%3A%2F%2Fstripe.com%2Fdocs%2Fstripe-js%2Felements%2Fquickstart&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; height: 19.2px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: #ffffff !important; pointer-events: none !important; font-size: 16px !important;">
+                      </div>
+                  </div>
             
-          <label for="id_phone">Phone Number</label>
-          <small class='small'>We take reorders and offer customer service exclusively via text message ―it's quick, easy and you can reach us anytime.</small>
-          <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" required="" id="id_phone" placeholder="🇬🇧 +44">
-          <br> 
-          <br>
-
-          <label for="id_name">Full Name</label>
-          <input type="text" name="name" class="form-control" maxlength="100" required="" id="id_name">
-          <br>
-          <br>
+                  <!-- Used to display form errors. -->
+                  <div id="card-errors" role="alert" ></div>
+                </div>
+                <button>PAY NOW</button>
+            
+                <!--Three Promises-->
+                <br>
+                      <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ccf1cc290e5120001ee56a8/1557077186583/Check-icon-2.png" style="width:15px;">
+                      &nbsp;&nbsp;Free shipping, always.
+                      <br>
+                      <br>
+                      <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cab8eff15fcc0efd220e49f/1554747135592/0.+footer-sms-new.png" style="width:15px;"> 
+                      &nbsp;&nbsp;Text to reorder your next boxes.
+                      <br>
+                      <br>
+                      <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ccf25ae05748e000196ab52/1557079471105/cardless-payments-2.png" style="width:15px;">
+                      &nbsp;&nbsp;Cardless payments after this order.
+                <br>
+                <br>
+              </div> 
           
-          <label for="id_email">Email</label>
-          <small class='small'>For your order updates, new deals and offers.</small>
-          <input type="email" name="email" class="form-control" maxlength="100" required="" id="id_email">
-          <br>
-          <br>
-          
-          <label for="id_address">Shipping Address</label>
-          <small class='small'> We only ship to the UK. For orders outside of the UK, please send us an email to hi@plntprotein.com to handle your case. </small>
-          <input type="text" name="address" class="form-control" maxlength="100" required="" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
-          <br>
-          <br>
-          
-          <label for="id_postcode">Postcode</label><input type="text" name="postcode" class="form-control" maxlength="7" required="" id="id_postcode"placeholder="NW1 6DB">
-          <br>
-          <br>
-          
-          
-          <div class="form-group">  
-            <button type="submit">NEXT</button>
           </div>
-          <p class="terms">
-              By continuing, you agree to our Terms of service, privacy policy and sms policy.
-                  <style>
-                      .terms {
-                        text-align: center;
-                        font-size: 12px;
-                        color: gray;
-                        padding-bottom: 15px;
-                      }
-                    </style>
-
-            <br>
-            <br>
-
-      </div>
-      </div>
+        </div>   
       </div>
     </section>
 
