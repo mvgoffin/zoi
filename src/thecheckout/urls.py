@@ -40,9 +40,9 @@ urlpatterns = [
     #path('checkout_mx/', checkout_views.checkout_mx, name='checkout_mx'),
     #path('checkout_le/', checkout_views.checkout_le, name='checkout_le'),
     #path('checkout_hc/', checkout_views.checkout_hc, name='checkout_hc'),
-    path('terms-of-service/', views.terms-of-service, name='termsofservice'),
-    path('privacy-policy/', views.privacy-policy, name='privacypolicy'),
-    path('sms-policy/', views.sms-policy, name='smspolicy'),
+    path('terms-of-service/', views.termsofservice, name='terms-of-service'),
+    path('privacy-policy/', views.privacypolicy, name='privacy-policy'),
+    path('sms-policy/', views.smspolicy, name='sms-policy'),
     path('success/', views.success, name='success'),
     #path('code_granted/', views.code_granted, name='code_granted'),
     
