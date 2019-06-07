@@ -72,9 +72,9 @@
       
             .container-fluid {
             height: 600px;
-
               }
 
+            
             .row-3 {
               background-color: #FCF9F7;
             }
@@ -82,18 +82,19 @@
 
             .heading{
               padding-top: 30px;
-              padding-bottom: 15px;
+              padding-bottom: 20px;
               text-align: center;
-              font-weight: 800;
-              display:block
+              font-weight: 600;
+              display:block;
+              margin: 0;
             }
 
             .heading-5{
               padding-top: 30px;
-              padding-bottom: 15px;
+              padding-bottom: 20px;
               margin:auto;
               text-align: center;
-              font-weight: 800;
+              font-weight: 600;
               display:block
             }
 
@@ -101,6 +102,9 @@
 
             .header{
               background-color: white;
+              /**border-bottom-style: solid;
+              border-bottom-color: #000000;
+              border-bottom-width: thin;**/
             }
 
 
@@ -129,7 +133,7 @@
            }
 
         .home-text{
-          font-family: "Helvetica Neue";
+          
           font-size: 10px;
           color:gray;
           text-align:left;
@@ -141,7 +145,6 @@
         }
 
         .home-small-1{
-        font-family: "Helvetica Neue";
         font-weight: 400;
         color: black;
         text-align:center;
@@ -150,12 +153,26 @@
         }
 
         .home-small{
-        font-family: "Helvetica Neue";
         font-weight: 400;
         color: black;
         text-align:left;
         line-height: 25px;
         font-size: medium;
+        }
+
+        .home-HIW-title{
+          font-weight: 600;
+          color: black;
+          text-align:center;
+          line-height: 25px;
+          font-size: medium;
+        }
+
+        .home-HIW-body{
+          font-weight: 400;
+          color: black;
+          line-height: 25px;
+          font-size: medium;
         }
 
         .home-small-small{
@@ -167,10 +184,20 @@
           color:gray;
           line-height: 1.4;
              }
+
+        .HIW-make-impact {
+          text-align:center;
+          padding-bottom: 5px;
+          font-size:small;
+          font-weight: 300;
+          color:#64D7AE;
+          line-height: 1.4;
+          }
       
         .make-impact {
           color:#64D7AE;
-          font-size: 10px;
+          font-size: small;
+          font-weight: 300;
         }
 
         .underline{
@@ -183,7 +210,7 @@
              }
 
         #header-logo {
-          width: 250px;
+          width: 200px;
           padding-top: 20px;
           padding-bottom: 20px;
           background-color: white;
@@ -194,10 +221,11 @@
           }
 
         #hero-logo {
-          width: 250px;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          background-color: #FCF9F7;
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border-style: solid;
+          border-color:#FCF9F7;
           margin: auto;
         }
 
@@ -214,8 +242,8 @@
         }
 
         #reason {
-          width: 100%;
-          height: 100%;
+          width: 50%;
+          height: 50%;
           background-color: #FCF9F7;
           margin: auto;
         }
@@ -231,7 +259,7 @@
         }
         
         *, label {
-          font-family: 'Helvetica Neue', sans-serif;
+          font-family: 'Proxima Nova', sans-serif;
           font-size: 16px;
           font-variant: normal;
           box-sizing: border-box;
@@ -371,27 +399,27 @@
           }
         
         .col-md-12{
-        padding-left:  200px;
-        padding-right:  200px;
-        }
+          padding-left:  200px;
+          padding-right:  200px;
+          }
 
         .col-md-3{
-        padding: 10px;
-        background-color: black;
-        
-        }
+          padding: 25px;
+          background-color: #FCF9F7;
+          height: 120px;
+          }
 
         .col-md-12-f{
-        padding-left:  0;
-        padding-right:  0;
-        background-color: black;
-        }
+          padding-left:  0;
+          padding-right:  0;
+          background-color: #FCF9F7;
+          }
 
         .col-sm-12{
           padding-left:  200px;
           padding-right:  200px;
-          
-        }
+          }
+
         .col-sm-12-3{
           padding-left:  200px;
           padding-right:  200px;
@@ -414,20 +442,23 @@
           padding-right:  100px;
         }
 
-        .col-xs-3{
-          padding:50px ;
+        .col-xs-4 {
+          padding-bottom: 10px;
+          padding-left: 30px;
+          padding-right: 30px;
+          margin: 0px;
+          text-align: center;
         }
 
-
-
         @media only screen and (max-width: 768px) {
-        .row, .row-3, li, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel {
+        .row, .row-3, li, .col-xs-1, .col-xs-4, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel {
             margin-left:0 !important;
             margin-right:0 !important;
             padding-left: 10px !important;
             padding-right: 10px !important;
         }
         }
+
         @media only screen and (max-width: 768px) {
         *, .html {
           margin-left:0 !important;
@@ -436,27 +467,27 @@
           padding-right: 0 !important;
         }
 
-      #hero-logo.product{
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-          }
-
-      @media only screen and (max-width : 768px) {
-      #hero-logo.product {
-          width: 100%;
-          display: block;
-          margin: auto;
-        }}
-      
-      
-
-      @media only screen and (max-width : 768px) {
-      .left, .right {
-          width: 100%;
+        #hero-logo.product{
+          padding: 0;
           margin-left: auto;
           margin-right: auto;
-        }}
+        }
+
+        @media only screen and (max-width : 768px) {
+        #hero-logo.product, #reason {
+            width: 100%;
+            display: block;
+            margin: auto;
+          }}
+      
+      
+
+        @media only screen and (max-width : 768px) {
+        .left, .right {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+          }}
 
 
       /* Clear floats after the columns */
@@ -494,34 +525,14 @@
 
     <form method="POST" id="home-form" action="{% url 'register_bottle' %}">{% csrf_token %}
     
-      <!--Section 1 - Hero image and Tagline 
-    <section>
-    <div class="w3-container">-->
-
-      <!--Hero image 
-        <div class="row">
-            <div class="col-sm-6">
-              <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="hero-logo" class="product">
-            </div>--> 
-      
-      <!--Tagline 
-          <div class="col-sm-6">
-              <h2 class="home-heading">See Beautiful</h2>
-              <p class='home-small'>No stress, no tired. We like when things are simple. Like a Gubel is a chocolate truffle blended with plant extracts and adaptogens for balance and clarity.</p> 
-          </div>
-        </div>
-        <label class="headline"></label>
-    </div>
-     </section>--> 
-
-     <!--Section 1.2 - Hero image and Tagline--> 
+     <!--Section 1 - Hero image and Tagline--> 
      <section>
         <div class="w3-container">
     
           <!--Hero image --> 
 
                 <div class="col-sm-12-hero-2">
-                  <img src="https://dl.dropboxusercontent.com/s/taos6p3285eaprq/IMG-dipping-2.png?dl=0" id="hero-2-logo" class="product">
+                  <img src="https://dl.dropboxusercontent.com/s/taos6p3285eaprq/IMG-dipping-2.png?dl=0" id="hero-logo" class="product">
                 </div>
                 <div class="row">
           
@@ -529,7 +540,7 @@
               <div class="col-sm-12">
                   <h1 class="heading">We wrap a feeling</h1>
                   <p class='home-small-1'>A special recipe with special benefits. Gubel is a rich chocolate hazelnut truffle blended with plant extracts and adaptogens to feel good and more balanced.</p> 
-                  <label class="headline-thin"></label>
+                  
                 </div>
             </div>
             <!--<label class="headline"></label>-->
@@ -540,19 +551,31 @@
     <section>
     <div class="w3-container">
         <div class="row">
-            <div class="col-xs-3">
-              <img src="https://dl.dropboxusercontent.com/s/f6jkko3ii68sgs1/icons-vegan.png?dl=0" id="reason" class="product">
+
+            
+            <div class="col-xs-4">
+              <img src="https://dl.dropboxusercontent.com/s/6hraov52sg4di59/1-start.png?dl=0" id="reason">
+              <p class='home-HIW-title'><b>Start</b></p>
+              <p class='home-HIW-body'>Select our assortment of 5 truffles.</p>
             </div>
-            <div class="col-xs-3">
-              <img src="https://dl.dropboxusercontent.com/s/70mp10vw9d6ckn7/icons-1g-nat-sugar.png?dl=0"id="reason" class="product">
+
+            <div class="col-xs-4">
+              <img src="https://dl.dropboxusercontent.com/s/eob0vqq847bems7/2-text.png?dl=0"id="reason">
+              <p class='home-HIW-title'><b>Text</b></p>
+              <p class='home-HIW-body'>To reorder simply text MORE on 0748.080.3557.</p>
             </div>
-            <div class="col-xs-3">
-                <img src="https://dl.dropboxusercontent.com/s/qm4mrjk2g34at3a/icons-text.png?dl=0" id="reason" class="product">
+            
+            <div class="col-xs-4">
+                <img src="https://dl.dropboxusercontent.com/s/50fon6gjzjz5eb9/3-deliver.png?dl=0" id="reason">
+                <p class='home-HIW-title'><b>Receive</b></p>
+                <p class='home-HIW-body'>Receive a new box (20 truffles) to your door.</p>
             </div>
-            <div class="col-xs-3">
-                  <img src="https://dl.dropboxusercontent.com/s/kgixzb30iqnumu8/icons-gf.png?dl=0" id="reason" class="product">
-            </div>
+
+            <p class='HIW-make-impact'>Our model minimises single plastic waste. Keep your bottle to carry your truffles wherever you go. Did you lose it? Just text us and we'll sort it out.</p>
+          
         </div>
+
+        <br>
         <!--<label class="headline"></label>-->
       </div>
      </section> 
@@ -597,38 +620,41 @@
                   <label class='underline'></label>
                   <p class="home-small">Price: &nbsp;&nbsp;£5</p>
                       <button type="submit">BUY NOW</button> 
-                  <p class="make-impact">Choosing Gubel, you directly support cacao farmer groups through the <a href="https://www.cocoahorizons.org/"target="_blank"><u class='make-impact'>Cocoa Horizons Foundation,</u></a> by training young farmers and empowering women farmers to excel in their craft.</p>        
+                  <p class="make-impact">Choosing Gubel, you directly support cacao farmer groups through the Cocoa Horizons Foundation, who train young farmers and empower women farmers to excel in their craft.</p>        
                   </div>
+          </div>
         
         <!-- 6 whys -->
+        <div class="row">
                   <div class="col-sm-6">
-                        <img src="" style="width:15px;">
+                        <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
                         &nbsp;&nbsp;Free shipping, always.
                         <br>
                         <br>
-                        <img src="" style="width:15px;"> 
+                        <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;"> 
                         &nbsp;&nbsp;Text 0748.080.3557 to reorder.
                         <br>
                         <br>
-                        <img src="" style="width:15px;">
+                        <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
                         &nbsp;&nbsp;Ethically scourced cacao.
                         <br>
                         <br>
                         </div>
                     <div class="col-sm-6">
-                        <img src="" style="width:15px;">
-                        &nbsp;&nbsp;1 g of natural sugar per serving (1 ball).
+                        <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
+                        &nbsp;&nbsp;1 g of sugar per serving.
                         <br>
                         <br>
-                        <img src="" style="width:15px;">
+                        <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
                         &nbsp;&nbsp;Extracts made from organic roots and herbs.
                         <br>
                         <br>
-                        <img src="" style="width:15px;">
+                        <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
                         &nbsp;&nbsp;Made in the UK.
                         <br>
                         <br>
-                    </div>             
+                    </div>   
+          </div>          
      </section>
 
     <!-- Section 5 FAQ -->
@@ -766,52 +792,45 @@
     <section>
         <div class="w3-container">
           <div class="col-md-3">
+              <br> 
               <br>
-              <p id="trust">London, UK, NW2</p>
-              <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
-              <br> 
-              <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
-              <br> 
+              <img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" style="width:100px;">   
+              
          </div>
          <div class="col-md-3">
             <br>
-            <p id="trust">London, UK, NW2</p>
-            <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
-            <br> 
-            <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
-            <br> 
+            <a href='sms:+447480803557'><p id="trust">0748.080.3557</p></a>
+            <a href='https://www.instagram.com/gubel_uk'><p id="trust">@gubel_UK</p></a>
+           <a href='mailto:hi@gubel.co.uk'><p id="trust">hi@gubel.co.uk</p></a>
+             
        </div>
        <div class="col-md-3">
           <br>
-          <p id="trust">London, UK, NW2</p>
-          <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
-          <br> 
-          <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
-          <br> 
+          <a href='https://www.gubel.co.uk/terms-of-service'><p id="trust">Terms of Service</p></a>
+          <a href='https://www.gubel.co.uk/privacy-policy'><p id="trust">Privacy Policy</p></a>
+          <a href='https://www.gubel.co.uk/sms-policy'><p id="trust">SMS policy</p></a>
+          
      </div>
      <div class="col-md-3">
         <br>
         <p id="trust">London, UK, NW2</p>
         <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
-        <br> 
-        <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
-        <br> 
+        
    </div>
         </div>
       </section>
               <style>
                 
-                
                 .footer-links{
                   text-align:left;
                   font-size: 12px;
-                  color: white;
+                  color: black;
                 }
                 #trust {
                   text-align:left;
                   font-size: 12px;
-                  color: white;
-                  font-weight: bold;
+                  color: black;
+                  
                 }
 
                 #vsu-trust {
