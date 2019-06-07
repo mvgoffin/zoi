@@ -557,30 +557,10 @@
   
     <!-- Content -->
 
-    <!--S<form method="POST" id="register-form" action="{% url 'checkout_bottle' %}">{% csrf_token %}-->
-    
-      <!--Section 1 - Hero image and Tagline 
-    <section>
-    <div class="w3-container">-->
-
-      <!--Hero image 
-        <div class="row">
-            <div class="col-sm-6">
-              <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="hero-logo" class="product">
-            </div>--> 
-      
-      <!--Tagline 
-          <div class="col-sm-6">
-              <h2 class="home-heading">See Beautiful</h2>
-              <p class='home-small'>No stress, no tired. We like when things are simple. Like a Gubel is a chocolate truffle blended with plant extracts and adaptogens for balance and clarity.</p> 
-          </div>
-        </div>
-        <label class="headline"></label>
-    </div>
-     </section>--> 
+    <form method="POST" id="register-form" action="{% url 'checkout_bottle' %}">{% csrf_token %}
 
       <!--PLNT Progress Bar -->
-  <div class="containerbar">
+    <div class="containerbar">
       <br>
       <br>
             <b><ul class="progressbar" id="register-progressbar">
@@ -590,12 +570,12 @@
                </ul></b>
         <br>
         <br>  
-  </div>  
+      </div>  
 
 
    <!-- Section 1 - Create Account Form   -->
-  <section>
-    <div class="w3-container">
+    <section>
+      <div class="w3-container">
         <div class="row">
         <div class="col-sm-12">
           <form method="POST" id="account-form" action="{% url 'register_bottle' %}">{% csrf_token %}
@@ -650,6 +630,7 @@
 
             <br>
             <br>
+                
 
       </div>
       </div>
@@ -713,14 +694,12 @@
                 }
                 </style> 
           
+            </div>
         
-        </div>
-      
-     
-    
-  </form>
-  
+          </form>
 
+      </form>
+      
 </div>
 
   
