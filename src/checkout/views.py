@@ -26,9 +26,9 @@ def checkout_bottle(request):
            pass
         else:
             charge = stripe.Charge.create(      #added create Charge
-            amount=100,
+            amount=500,
             currency="gbp",
-            description="bottle",
+            description="jar",
             customer=customer                #added source customer
             )
             response = redirect('success')
