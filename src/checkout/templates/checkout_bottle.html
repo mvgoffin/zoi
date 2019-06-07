@@ -89,7 +89,7 @@
             }
 
             .sub-heading{
-              padding-bottom: 10px;
+              margin: 0px;
               text-align: left;
               font-weight: 800;
               display:block
@@ -323,7 +323,6 @@
 
           .headline {
           box-sizing: border-box;
-          padding-bottom: 10px;
           margin: 0;
           width: 100%;
           border-top: 4px solid #FFB833;
@@ -380,20 +379,20 @@
           }
         
         .col-sm-12{
-          padding-left:  200px;
-          padding-right:  200px;
+          padding-left:  350px;
+          padding-right:  350px;
           background: #FCF9F7;
         }
 
         /**Footer**/
           .col-md-3{
-          padding: 25px;
-          background-color: #FCF9F7;
+          padding: 20px;
+          background-color: black;
           height: 120px;
           }
 
         @media only screen and (max-width: 768px) {
-        .row, .row-3, li, .col-sm-6, .col-sm-12, .col-xs-12, .col-md-12, .accordion, .panel, .containerbar {
+        .row, .row-3, li, .col-sm-6, .col-sm-12, .col-xs-12, .col-md-12, .col-md-3, .accordion, .panel, .containerbar {
             margin-left:0 !important;
             margin-right:0 !important;
             padding-left: 10px !important;
@@ -724,16 +723,7 @@
        * The CSS shown here will not be introduced in the Quickstart guide, but shows
        * how you can use CSS to style your Element's container.
        */
-       .headline {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 10px ;
-        border-top: 4px solid #FFB833;
-        border-bottom: white;
-        border-left: white;
-        border-right: white;
-        -webkit-appearance: none !important;
-      }
+       
       
       .form-control {
         box-sizing: border-box;
@@ -848,7 +838,7 @@
       <br>
       <br>
             <b><ul class="progressbar" id="register-progressbar">
-               <li class="box">Box</li>
+               <li class="box">Assortment</li>
                  <li class="account">Account</li>
                  <li class='payment'>Payment</li>           
                </ul></b>
@@ -871,26 +861,24 @@
          
           <!--HTML PLNT CHECKOUT SECTION-->
           <div class="row">
-              <p class='ch-heading'>YOUR FIRST BOX</p>
+              
               <div class="col-sm-6">
-                <br>
-                <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ce004dc2a36f400019e9654/1558185229761/HC-Checkout.jpg" id="payment-logo" class="product">
-                <br>
-              </div>
+                  <h1 class='home-heading'></h1>
+                  <img src="https://dl.dropboxusercontent.com/s/whdsdzeqouv84z0/IMG-final5.png?dl=0" id="hero-2-logo" class="product">
+                </div>
               <div class="col-sm-6">
+                
+                <h2 class="ch-name">Assortment</h2>
+                <p class='ch-small'>Includes 5 Truffles + Reusable Carrier</p>
                 <br>
-                <br>
-                <h2 class="ch-name">hazelnut + cacao</h2>
-                <p class='ch-small'>Box includes 10 bags, 48g each</p>
-                <br>
-                <p class="price">Price: &nbsp;&nbsp;£25</p>
+                <p class="price">Price: &nbsp;&nbsp;£5</p>
                 <p class="price">Shipping: &nbsp;&nbsp;&nbsp;£0</p>
                 <br>
                 <label class='underline'></label>
-                <p class="finalprice">Total: &nbsp;&nbsp; £25</p>
+                <p class="finalprice">Total: &nbsp;&nbsp; £5</p>
                 <p class='ch-small'>Tax included</p> 
-                <p class='ch-small-discount'>Have a discount code?</p>
-                <p class='ch-small-discount'>After payment, text it on 0748.080.3557 to activate discount</p>
+                <!--<p class='ch-small-discount'>Have a discount code?</p>
+                <p class='ch-small-discount'>After payment, text it on 0748.080.3557 to activate discount</p>-->
                 <div class='shipping-status'>
                 <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
                   </div>
@@ -987,15 +975,15 @@
             
                 <!--Three Promises-->
                 <br>
-                      <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ccf1cc290e5120001ee56a8/1557077186583/Check-icon-2.png" style="width:15px;">
+                      <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
                       &nbsp;&nbsp;Free shipping, always.
                       <br>
                       <br>
-                      <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cab8eff15fcc0efd220e49f/1554747135592/0.+footer-sms-new.png" style="width:15px;"> 
+                      <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;"> 
                       &nbsp;&nbsp;Text to reorder your next boxes.
                       <br>
                       <br>
-                      <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ccf25ae05748e000196ab52/1557079471105/cardless-payments-2.png" style="width:15px;">
+                      <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
                       &nbsp;&nbsp;Cardless payments after this order.
                 <br>
                 <br>
@@ -1005,32 +993,28 @@
         </div>   
       </div>
     </section>
+    <label class="headline">
 
      <!-- Footer -->
-     <section>
+    <section>
         <div class="w3-container">
           <div class="col-md-3">
-              <br> 
-              <br>
-              <img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" style="width:100px;">   
+              <img src="https://dl.dropboxusercontent.com/s/19vxqsnogv5o4mp/Gubel_logo-white.png?dl=0" src="blank.gif" style="width:100px">   
               
          </div>
          <div class="col-md-3">
-            <br>
             <a href='sms:+447480803557'><p id="trust">0748.080.3557</p></a>
             <a href='https://www.instagram.com/gubel_uk'><p id="trust">@gubel_UK</p></a>
            <a href='mailto:hi@gubel.co.uk'><p id="trust">hi@gubel.co.uk</p></a>
              
        </div>
        <div class="col-md-3">
-          <br>
           <a href='https://www.gubel.co.uk/terms-of-service'><p id="trust">Terms of Service</p></a>
           <a href='https://www.gubel.co.uk/privacy-policy'><p id="trust">Privacy Policy</p></a>
           <a href='https://www.gubel.co.uk/sms-policy'><p id="trust">SMS policy</p></a>
           
      </div>
      <div class="col-md-3">
-        <br>
         <p id="trust">London, UK, NW2</p>
         <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
         
@@ -1042,13 +1026,12 @@
                 .footer-links{
                   text-align:left;
                   font-size: 12px;
-                  color: black;
+                  color: white;
                 }
                 #trust {
                   text-align:left;
                   font-size: 12px;
-                  color: black;
-                  
+                  color: white;
                 }
 
                 #vsu-trust {
