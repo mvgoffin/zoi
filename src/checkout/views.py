@@ -12,6 +12,33 @@ stripe.api_key = stripe_secret
 
 # Create your views here.  
 
+# bottle. 
+def checkout_bottle(request):
+    publishKey = settings.STRIPE_PUBLIC_KEY
+    if request.method == 'POST':
+        token = request.POST['stripeToken']
+        try:
+            customer = stripe.Customer.create(
+                description="new customer",
+                source=token
+            )
+        except stripe.error.CardError as e:
+           pass
+        else:
+            charge = stripe.Charge.create(      #added create Charge
+            amount=100,
+            currency="gbp",
+            description="bottle",
+            customer=customer                #added source customer
+            )
+            response = redirect('success')
+            return response    
+    context = {'publishKey': publishKey}
+    template = 'checkout_bottle.html'
+    return render(request,template)
+
+
+
 # mix box. 
 def checkout_mx(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
