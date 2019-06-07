@@ -1,13 +1,28 @@
+<!-- Hi there, curious developer!-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content= "width=device-width, user-scalable=no">
-    <link rel="icon" type="image/png" href="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ce1343088a0fe0001dbb4c6/1558262832998/Favicon-3.png">
-    <title>Account - PLNT Protein</title>
+    <meta name="description" content="Gubel is a wellness brand that formulates chocolates with a blend of powerful adaptogens, to help you feel good and more balanced in an increasingly stressful world.">
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <!--Page PACE Progress loading bar CSS--> 
+    <!--favicon<link rel="icon" type="image/png" href="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ce1343088a0fe0001dbb4c6/1558262832998/Favicon-3.png">-->
+    <title>
+      
+
+      GUBEL
+    
+
+    </title>
+    <!--Host Images: dl.dropboxusercontent.com -->
+
+    <!--CSS Page PACE Progress loading bar--> 
     <style>
             .pace {
               -webkit-pointer-events: none;
@@ -52,448 +67,763 @@
             
     </style>
     
-    <!-- PLNT Progress Bar CSS -->
-    <style type="text/css">
-        .containerbar {
-          width:100%;
-        }
-        .progressbar{
-          counter-reset: step;    
-        }
-        
-        /**Payment number + text**/
-        .progressbar li {
-          list-style-type: none;
-          float: left;
-          width: 33%;
-          position: relative;
-          text-align: center;  
-          color: gray;
-          font-size: medium;
-        }
-
-        /**letra y font actia**/
-        .progressbar li.account {
-          color:gray;
-          font-size: medium;
-          font-weight: bold;
-        }
-
-        .progressbar li.box {
-          color:#22D59E;
-          font-size: medium;
-          font-weight: bold;
-          border: #22D59E;
-        }
-
-        /**pelota 1**/
-        .progressbar li.box::before {
-          line-height: 30px;
-          border: 4px solid #22D59E;
-        }
-
-        
-        /**all number cirle**/
-        .progressbar li:before {
-          content: counter(step);
-          counter-increment: step;
-          width: 30px;
-          height: 30px;
-          line-height: 30px;
-          border: 4px solid gray;
-          display: block;
-          text-align: center;
-          margin: 0 auto 10px auto;
-          border-radius: 50%;
-          background-color: white;  
-          position: relative;
-          z-index: 100;
-        }
-        
-        /**whole line**/
-        .progressbar li:after {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 4px;
-          background-color: #22D59E;
-          top: 18px;
-          left: -50%;
-          z-index: 50;
-        }
-
-        /**barra antes del 1, none**/
-        .progressbar li:first-child:after {
-          content: none; 
-        }
-
-        /**barra despues del activo**/
-        .progressbar li.account:after {
-          border-color: #22D59E;
-        }
-
-        /**current line**/
-        .progressbar li.account + li:after {
-          background-color: gray;
-          height: 4px;
-        }
-        /**payment area**/
-        .progressbar li.account + li::before{
-          border: 4px solid gray;
-        }
-        
-    </style>
-
-
-    <!-- PLNT Form CSS -->
+    <!-- CSS Gubel Homepage -->
     <style media="screen">
       
-          @font-face {
-              font-family: 'Gotham';
-              src: url('fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
-              src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-                url('fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
-                url('fonts/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-                url('fonts/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
-              font-weight: 700;
-              font-style: normal;
-            } 
+            .container-fluid {
+            height: 600px;
+
+              }
+
+            .row-3 {
+              background-color: #FCF9F7;
+            }
+
 
             .heading{
-              text-align: left;
+              padding-top: 30px;
+              padding-bottom: 15px;
+              text-align: center;
               font-weight: 800;
               display:block
             }
 
-            /*logo*/  
+            .heading-5{
+              padding-top: 30px;
+              padding-bottom: 15px;
+              margin:auto;
+              text-align: center;
+              font-weight: 800;
+              display:block
+            }
+
+            
 
             .header{
               background-color: white;
             }
 
-            .footer{
-              background-color: black;
-            }
 
             .center{
               display: block;
-              margin-left: auto!important;
-              margin-right: auto!important;
+              margin: auto!important;
               text-align:center;
-              background-color: white;
-            }
-            
-            /*logo*/ 
-    
-            #payment-logo {
-              width: 250px;
-              padding-top: 20px;
-              padding-bottom: 20px;
-              background-color: white;
             }
 
-            /*logo*/
-    
-    
-            body, html {
-              height: 100%;
-              background-color: #FCF9F7;
-;
-              color: #000000;
-            }
-            
-            *, label {
-              font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-              font-size: 16px;
-              font-variant: normal;
-              padding: 0;
-              margin: 0;
-              -webkit-font-smoothing: antialiased;
-            }
+          /*CSS Checkout Bottle*/
+
+            .home-h1{
+          text-align: left;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid gray;
+          font-weight: 700;
+          display:block;
+          text-indent: 10px;
+              }
+      
+        .home-h2{
+          text-align: left;
+          font-size: medium;
+          display:block
+           }
+
+        .home-text{
+          font-family: "Helvetica Neue";
+          font-size: 10px;
+          color:gray;
+          text-align:left;
+           }
+
+        .home-heading-1{
+          text-align: center;
+
+        }
+
+        .home-small-1{
+        font-family: "Helvetica Neue";
+        font-weight: 400;
+        color: black;
+        text-align:center;
+        padding-bottom: 30px;
+        line-height: 25px;
+        }
+
+        .home-small{
+        font-family: "Helvetica Neue";
+        font-weight: 400;
+        color: black;
+        text-align:left;
+        line-height: 25px;
+        font-size: medium;
+        }
+
+        .home-small-small{
+          text-align:left;
+          padding-bottom: 1px;
+          padding-top: 2px;
+          font-size:small;
+          font-weight: 300;
+          color:gray;
+          line-height: 1.4;
+             }
+      
+        .make-impact {
+          color:#64D7AE;
+          font-size: 10px;
+        }
+
+        .underline{
+          box-sizing: border-box;
+          width: 100%;
+          padding: 0.5px;
+          border-top: 1px solid gray;
           
-            .small{
-              
-              font-size: 10px;
-              color:gray;
-            }
+          -webkit-appearance: none !important;
+             }
 
-            button {
-              background: transparent;
-              display:block;
-              width:100%;
-              border: 1px solid #FFB833;
-              color: #302F30;
-              background: #FFB833;
-              padding: 15px 40px;
-              margin: .618em 0.01em;  
-              font-weight: 700;
-              font-style: normal;
-              animation-delay: 2400ms;
-              font-size: 18px;
-              letter-spacing: .01em;
-              text-transform: normal;
-              transition: background-color 170ms  ease-out,color 170ms ease-out;
-            }
-    
+        #header-logo {
+          width: 250px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          background-color: white;
+        }
 
-            button:focus{
-              background-color: #64D7AE;
-              border: 1px solid #64D7AE;
-              color: #FFFFFF;
-            }
+        * {
+        box-sizing: border-box;
+          }
 
-            
-            button:hover {
-              opacity:0.8;
-            }
-            
-            form {
-              padding: 30px;
-              height: 120px;
-            }
-            
-            label {
-              font-weight: 500;
-              font-size: 14px;
-              display: block;
-              margin-bottom: 8px;
-            }
-            
-            ::placeholder{
-              color: #F2F2F2;
-              font-size: small;
-            }
+        #hero-logo {
+          width: 250px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          background-color: #FCF9F7;
+          margin: auto;
+        }
 
-            a{
-              color: gray;
-              font-size: small;
-            }
+        #hero-2-logo {
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border-style: solid;
+          border-color:#FCF9F7;
+          border-width: 10px;
+          margin: auto;
+          margin: 10px;
+        
+        }
 
-            #card-errors {
-              height: 20px;
-              padding: 4px 0;
-              color: #fa755a;
-            }
-            
-            .form-row {
-              width: 100%;
-              float: center;
-            }
-            
-            .wrapper {
-              width: 100%;
-              margin: 0 auto;
-              height: 100%;
-            }
-    
-            
-            
-            
-            /**
-             * The CSS shown here will not be introduced in the Quickstart guide, but shows
-             * how you can use CSS to style your Element's container.
-             */
+        #reason {
+          width: 100%;
+          height: 100%;
+          background-color: #FCF9F7;
+          margin: auto;
+        }
 
-             .headline {
-              box-sizing: border-box;
-              width: 100%;
-              padding: 10px ;
-              border-top: 4px solid #FFB833;
-              border-bottom: white;
-              border-left: white;
-              border-right: white;
-              -webkit-appearance: none !important;
-            }
+        .col-sm-12-hero-2{
+          padding:0;
+        }
 
-             .form-control {
-                box-sizing: border-box;
-                margin-top: 5px;
-                width: 100%;
-                height: 40px;
-                padding: 10px 12px;
-                border: 1px solid #EDEDEB;
-                border-radius: 0px;
-                background-color: #EDEDEB;
-                /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
-                -webkit-transition: box-shadow 150ms ease;
-                transition: box-shadow 150ms ease;
-                -webkit-appearance: none !important;
-              }
+        body, html {
+          height: 100%;
+          background-color: white;
+          color: #000000;
+        }
+        
+        *, label {
+          font-family: 'Helvetica Neue', sans-serif;
+          font-size: 16px;
+          font-variant: normal;
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+        }
+      
+        .small{
+          font-size: 10px;
+          color:gray;
+        }
 
-              .form-control:focus {
-                box-shadow: 0 1px 3px 0 #FFB833;
-                border: #FFB833;
-              }
-    
-            #payment-progressbar {
-              box-sizing: border-box;
-              display: block;
-              margin-left:  360px;
-              margin-right:  360px;
-              padding-bottom: 50px;
-              }
-    
-            #account-form {
-              box-sizing: border-box;
-              margin-left:  300px;
-              margin-right:  300px;
-              }
-    
-            @media only screen and (max-width: 768px) {
-            *, html, .wrapper, .row {
-                margin-left:0 !important;
-                margin-right:0 !important;
-                padding-left:1 !important;
-                padding-right:1 !important;
-            }
-    
-            
-}
+        button {
+          background: transparent;
+          display:block;
+          width:100%;
+          border: 1px solid #FFB833;
+          color: #302F30;
+          background: #FFB833;
+          padding: 15px 40px;
+          margin: .618em 0.01em;  
+          font-weight: 700;
+          font-style: normal;
+          animation-delay: 2400ms;
+          font-size: 18px;
+          letter-spacing: .01em;
+          text-transform: normal;
+          transition: background-color 170ms  ease-out,color 170ms ease-out;
+        }
 
 
+        button:focus{
+          background-color: #64D7AE;
+          border: 1px solid #64D7AE;
+          color: #FFFFFF;
+        }
+
+        
+        button:hover {
+          opacity:0.8;
+        }
+        
+        form {
+          padding: 0;
+          height: 200px;
+        }
+        
+        label {
+          font-weight: 500;
+          font-size: 14px;
+          display: block;
+          margin-bottom: 8px;
+        }
+        
+        ::placeholder{
+          color: gray;
+          font-size: small;
+        }
+
+        a{
+          color: gray;
+          font-size: small;
+        }
+
+        #card-errors {
+          height: 20px;
+          padding: 4px 0;
+          color: #fa755a;
+        }
+        
+        .form-row {
+          width: 100%;
+          float: center;
+        }
+        
+        
+        /**
+          * The CSS shown here will not be introduced in the Quickstart guide, but shows
+          * how you can use CSS to style your Element's container.
+          */
+
+          .headline {
+          box-sizing: border-box;
+          margin: 0;
+          width: 100%;
+          border-top: 4px solid #FFB833;
+          border-bottom: white;
+          border-left: white;
+          border-right: white;
+          -webkit-appearance: none !important;
+        }
+
+        .headline-thin {
+          box-sizing: border-box;
+          margin: 0;
+          width: 100%;
+          border-top: 1px solid lightgray;
+          border-bottom: white;
+          border-left: white;
+          border-right: white;
+          -webkit-appearance: none !important;
+        }
+
+          .form-control {
+            box-sizing: border-box;
+            margin-top: 5px;
+            width: 100%;
+            height: 40px;
+            padding: 10px 12px;
+            border: 1px solid #EDEDEB;
+            border-radius: 0px;
+            background-color: #EDEDEB;
+            /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+            -webkit-appearance: none !important;
+          }
+
+          .form-control:focus {
+            box-shadow: 0 1px 3px 0 #FFB833;
+            border: #FFB833;
+          }
+
+        #payment-progressbar {
+          box-sizing: border-box;
+          display: block;
+          margin-left:  360px;
+          margin-right:  360px;
+          padding-bottom: 50px;
+          }
+
+        #home-form {
+          box-sizing: border-box;
+          margin-left:  auto;
+          margin-right:  auto;
+          }
+        
+        .col-md-12{
+        padding-left:  200px;
+        padding-right:  200px;
+        }
+
+        .col-md-3{
+        padding: 10px;
+        background-color: black;
+        
+        }
+
+        .col-md-12-f{
+        padding-left:  0;
+        padding-right:  0;
+        background-color: black;
+        }
+
+        .col-sm-12{
+          padding-left:  200px;
+          padding-right:  200px;
+          
+        }
+        .col-sm-12-3{
+          padding-left:  200px;
+          padding-right:  200px;
+          background: #FCF9F7;
+        }
+
+        .col-sm-12-5{
+          padding-left:  200px;
+          padding-right:  200px;
+          background: white;
+        }
+
+        .col-sm-6{
+          padding-left:  100px;
+          padding-right:  100px;
+        }
+
+        .col-sm-6-4{
+          padding-left:  100px;
+          padding-right:  100px;
+        }
+
+        .col-xs-3{
+          padding:50px ;
+        }
 
 
-    
+
+        @media only screen and (max-width: 768px) {
+        .row, .row-3, li, .col-sm-6, .col-sm-12, .col-md-12-f, .accordion, .panel {
+            margin-left:0 !important;
+            margin-right:0 !important;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+        }
+        @media only screen and (max-width: 768px) {
+        *, .html {
+          margin-left:0 !important;
+          margin-right:0 !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+
+      #hero-logo.product{
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+          }
+
+      @media only screen and (max-width : 768px) {
+      #hero-logo.product {
+          width: 100%;
+          display: block;
+          margin: auto;
+        }}
+      
+      
+
+      @media only screen and (max-width : 768px) {
+      .left, .right {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+        }}
+
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        background-color: white;
+        display: table;
+        clear: both;
+      }         
+    }
     </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267999-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141267999-1');
+    </script>
 
 </head>
 
 
 <body>
+  
+  <!-- Header -->
+    <div class="header">
+      <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
+      </div>
 
-  <!--HTML REGISTER HEADER SECTION--> 
-  <div class="header">
-    <a href='https://www.plntprotein.com'><img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cab8f9b4785d3d788a60406/1554747291795/1.+Logo_PLNT_Black-FINAL-1.png" id="payment-logo" class="center"></a>
-    <!-- OLD LOGO 
-    <a href='https://www.plntprotein.com'><img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cab8f9b4785d3d788a60406/1554747291795/1.+Logo_PLNT_Black-FINAL-1.png" id="payment-logo" class="center"></a>-->
-  </div>
+  
+    <!-- Content -->
 
-  <!--PLNT Progress Bar -->
-  <div class="containerbar">
-      <br>
-      <br>
-            <b><ul class="progressbar" id="payment-progressbar">
-               <li class="box">Box</li>
-                 <li class="account">Account</li>
-                 <li class='payment'>Payment</li>           
-               </ul></b>
-  </div>  
+    <form method="POST" id="home-form" action="{% url 'home' %}">{% csrf_token %}
     
-  <!--PLNT FORM ACCOUNT SECTION--> 
-  <div class="wrapper">
-      <form method="POST" id="account-form" action="{% url 'register_mx' %}">{% csrf_token %}
-          <br>
-          <p class='heading'>Add your account details</p>
-          <br>
-          <div >
-              <label class="headline">
+      <!--Section 1 - Hero image and Tagline 
+    <section>
+    <div class="w3-container">-->
+
+      <!--Hero image 
+        <div class="row">
+            <div class="col-sm-6">
+              <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="hero-logo" class="product">
+            </div>--> 
+      
+      <!--Tagline 
+          <div class="col-sm-6">
+              <h2 class="home-heading">See Beautiful</h2>
+              <p class='home-small'>No stress, no tired. We like when things are simple. Like a Gubel is a chocolate truffle blended with plant extracts and adaptogens for balance and clarity.</p> 
           </div>
-            
-          <label for="id_phone">Phone Number</label>
-          <small class='small'>We take reorders and offer customer service exclusively via text message ―it's quick, easy and you can reach us anytime.</small>
-          <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" required="" id="id_phone" placeholder="🇬🇧 +44">
-          <br> 
-          <br>
-
-          <label for="id_name">Full Name</label>
-          <input type="text" name="name" class="form-control" maxlength="100" required="" id="id_name">
-          <br>
-          <br>
-          
-          <label for="id_email">Email</label>
-          <small class='small'>For your order updates, new deals and offers.</small>
-          <input type="email" name="email" class="form-control" maxlength="100" required="" id="id_email">
-          <br>
-          <br>
-          
-          <label for="id_address">Shipping Address</label>
-          <small class='small'> We only ship to the UK. For orders outside of the UK, please send us an email to hi@plntprotein.com to handle your case. </small>
-          <input type="text" name="address" class="form-control" maxlength="100" required="" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
-          <br>
-          <br>
-          
-          <label for="id_postcode">Postcode</label><input type="text" name="postcode" class="form-control" maxlength="7" required="" id="id_postcode"placeholder="NW1 6DB">
-          <br>
-          <br>
-          
-          
-          <div class="form-group">  
-            <button type="submit">NEXT</button>
-          </div>
-          <p class="terms">
-              By continuing, you agree to our Terms of service, privacy policy and sms policy.
-                  <style>
-                      .terms {
-                        text-align: center;
-                        font-size: 12px;
-                        color: gray;
-                      }
-                    </style>
-
-            <br>
-            <br>
-
-      <!--CHECKOUT FOOTER SECTION--> 
-      <div >
-          <br>
-            <label class="headline">
         </div>
+        <label class="headline"></label>
+    </div>
+     </section>--> 
 
-      <!--STRIPE SEAL TRUST-->
-      <p class='stripe-trust'>Secure Checkout <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cdc5c975d92b70001e3435f/1557945495356/lock-3.png" id="lock-logo"></P>
-        <a href='https://www.stripe.com/us' target="_blank"><img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cd5b18678ddf6000108e340/1557508486922/powered_by_stripe%403x.png" id="stripe-logo" class="center"></a><br>
+     <!--Section 1.2 - Hero image and Tagline--> 
+     <section>
+        <div class="w3-container">
+    
+          <!--Hero image --> 
+
+                <div class="col-sm-12-hero-2">
+                  <img src="https://dl.dropboxusercontent.com/s/taos6p3285eaprq/IMG-dipping-2.png?dl=0" id="hero-2-logo" class="product">
+                </div>
+                <div class="row">
+          
+          <!--Tagline --> 
+              <div class="col-sm-12">
+                  <h1 class="heading">We wrap a feeling</h1>
+                  <p class='home-small-1'>A special recipe with special benefits. Gubel is a rich chocolate hazelnut truffle blended with plant extracts and adaptogens to feel good and more balanced.</p> 
+                  <label class="headline-thin"></label>
+                </div>
+            </div>
+            <!--<label class="headline"></label>-->
+        </div>
+         </section>
+
+    <!-- Section 2 - Four reasons why   -->
+    <section>
+    <div class="w3-container">
+        <div class="row">
+            <div class="col-xs-3">
+              <img src="https://dl.dropboxusercontent.com/s/f6jkko3ii68sgs1/icons-vegan.png?dl=0" id="reason" class="product">
+            </div>
+            <div class="col-xs-3">
+              <img src="https://dl.dropboxusercontent.com/s/70mp10vw9d6ckn7/icons-1g-nat-sugar.png?dl=0"id="reason" class="product">
+            </div>
+            <div class="col-xs-3">
+                <img src="https://dl.dropboxusercontent.com/s/qm4mrjk2g34at3a/icons-text.png?dl=0" id="reason" class="product">
+            </div>
+            <div class="col-xs-3">
+                  <img src="https://dl.dropboxusercontent.com/s/kgixzb30iqnumu8/icons-gf.png?dl=0" id="reason" class="product">
+            </div>
+        </div>
+        <!--<label class="headline"></label>-->
+      </div>
+     </section> 
+
+    <!-- Section 3 - About Us --> 
+    <section>
+      <div class="w3-container">
+        <div class="row-3">
+
+            <div class="col-sm-12-3">
+              <br>
+              <h1 class="heading">One bite at a time</h1>
+              <p style="text-align:center;white-space:pre-wrap;" class="home-small-1">We believe in balance, not success in excess. But life’s too short to deny yourself all the time. Treat days truly are sweet days. You know, that one last glass of wine or chunk of chocolate. But we all know what happens when the ‘yay!’ becomes the everyday. That’s why we formulated Gubel: with only 1g of sugar, each truffle is your moment to reset, rebalance and dream. </p>
+              <br>
+            </div>
+    
+          </div>
+          <!--<label class="headline"></label>-->
+        </div>
+     </section>
+
+    <!-- Section 4 Get Started with Gubel Bottle -->
+    <section>
+      <div class="w3-container">
+
+        <!-- The Bottle Buy Now Section -->
+
+        <div class="row">
+          <br>
+          <br>
+            <div class="col-sm-6">
+                <h1 class='home-heading'></h1>
+                <img src="https://dl.dropboxusercontent.com/s/whdsdzeqouv84z0/IMG-final5.png?dl=0" id="hero-2-logo" class="product">
+                <br>
+                <img src="https://dl.dropboxusercontent.com/s/jk72u2qqayiho6s/IMG-wrapping-2.png?dl=0" id="hero-2-logo" class="product">
+              </div>
+            <div class="col-sm-6">
+                <h2 class="home-heading"></h2>
+                  <p class='home-small'>Embodying our passion for chocolate and the finest organic hazelnuts, our vegan rocher are rounds of chocolatey rich ganache, tenderly scooped and shaped individually with a buttery roasted hazelnut at the centre. We then dipped them in fair trade 70% dark Belgian chocolate and hazelnut nibs for a crunchy bite. They’re beautiful and eating anytime can become your special moment.</p>
+                  <p class='home-small-small'>Ingredients: 70% Dark Belgian Chocolate, Hazelnuts, Organic Cacao Powder, Madagascan Vanilla Extract, Panax Ginseng, Schisandra Berry, L-Theanine, Himalayan Pink Sea Salt, Natural Sweetener (Stevia).</p>
+                  <p class='home-small-small'>Bottle includes 3 balls (25gs each) </p>
+                  <label class='underline'></label>
+                  <p class="home-small">Price: &nbsp;&nbsp;£5</p>
+                      <button type="submit">BUY NOW</button> 
+                  <p class="make-impact">Choosing Gubel, you directly support cacao farmer groups through the <a href="https://www.cocoahorizons.org/"target="_blank"><u class='make-impact'>Cocoa Horizons Foundation,</u></a> by training young farmers and empowering women farmers to excel in their craft.</p>        
+                  </div>
         
+        <!-- 6 whys -->
+                  <div class="col-sm-6">
+                        <img src="" style="width:15px;">
+                        &nbsp;&nbsp;Free shipping, always.
+                        <br>
+                        <br>
+                        <img src="" style="width:15px;"> 
+                        &nbsp;&nbsp;Text 0748.080.3557 to reorder.
+                        <br>
+                        <br>
+                        <img src="" style="width:15px;">
+                        &nbsp;&nbsp;Ethically scourced cacao.
+                        <br>
+                        <br>
+                        </div>
+                    <div class="col-sm-6">
+                        <img src="" style="width:15px;">
+                        &nbsp;&nbsp;1 g of natural sugar per serving (1 ball).
+                        <br>
+                        <br>
+                        <img src="" style="width:15px;">
+                        &nbsp;&nbsp;Extracts made from organic roots and herbs.
+                        <br>
+                        <br>
+                        <img src="" style="width:15px;">
+                        &nbsp;&nbsp;Made in the UK.
+                        <br>
+                        <br>
+                    </div>             
+     </section>
+
+    <!-- Section 5 FAQ -->
+    <section>
+        <div class="w3-container">
+            <label class="headline"></label>
+          <div class="col-sm-12-5">
+              <h1 class="heading-5">Questions?</h1>
+    <input type="button" value="What's in Gubel?" class="accordion"></input>
+    <div class="panel">
+      <p class='home-small'>Gubel is made with fair trade cacao, hazelnuts and our blend recipe of plant extracts and adaptogens. When together they provide good benefits and support to your wellness goals.
+
+      <p class='home-small'>Our proprietary blend combines:
+          <li>L-theanine is an amino acid found in green tea that help eases stress and brightens mood.</li>
+          <li>Schisandra Berry is a plant used as food and medicine, that helps promote balance and boost immune system.</li>
+          <li>Panax Ginseng is a root that is used to cope with stress and as a general tonic for improving well-being.</li>
+          </p>
+    </div>
+    
+    <input type="button" value="How does it work?" class="accordion"></input>
+    <div class="panel">
+        <p class='home-small'>Buy your bottle of Gubel first. When you run out, simply text us on 07480803557 to re order a new box of truffles. We use 100% recyable packaging and we are trying our best to create a simple and easy model that tackles plastic pollution.</p>
+        <p class='home-small'>Remember to save this number. We're available anytime you want a new order of have questions.</p>
+    </div>
+
+    <input type="button" value="Is your packaging recyclable?" class="accordion"></input>
+    <div class="panel">
+        <p class='home-small'>Yes, all our packaging is 100% recyclable ♻️</p>
+    </div>
+    
+    <input type="button" value="How much is shipping in the UK?" class="accordion"></input>
+    <div class="panel">
+        <p class='home-small'>£0 💁</p>
+    </div>
+    
+    <input type="button" value="What do I get in one bottle?" class="accordion"></input>
+    <div class="panel">
+        <p class='home-small'>When you buy your bottle, you’ll get 3 truffles. From there you can reorder in boxes of 24 truffles by texting us on 07480803557.</p>
+    </div>
+    
+    <input type="button" value="How should I take Gubel?" class="accordion"></input>
+    <div class="panel">
+        <p class='home-small'>Enjoy Gubel anytime of the day.</p>
+    </div>
+    
+    <input type="button" value="Are there any side effects I should be aware of?" class="accordion"></input>
+    <div class="panel">
+        <p class='home-small'>Because of our blend of plant extracts and adaptogens, we recommend keeping our products out of reach of children. Also, if you are pregnant is best to avoid our truffles.</p>
+    </div>
+    
+    <input type="button" value="How much sugar are there per serving?" class="accordion"></input>
+    <div class="panel">
+      <p class='home-small'>1g</p>
+    </div>
+    
+    <input type="button" value="Is the product made in the UK?" class="accordion"></input>
+    <div class="panel">
+        <p class='home-small'>Yes, we make our products in our kitchen in East London</p>
+    </div>
+    
+    <input type="button" value="Where is the cacao from?" class="accordion"></input>
+    <div class="panel">
+        <p class='home-small'>We use fair trade cacao from West Africa. By choosing Gubel, you directly impact cacao farmers in education and training.</p>
+    </div>
+    
+    <input type="button" value="How do I know my payment is secure?" class="accordion"></input>
+    <div class="panel">
+        <p class='home-small'>Our proprietary text-based order system has been developed to ensure the highest level of security with every order. When you confirm your payment information via our checkout website, your information will be transmitted via secure Transport Layer Security (TLS) encryption to ensure safe transmission of your personal information. That information is further encrypted and stored with our credit card processor. Our processors are PCI DSS - Level 1 Service Provider.
+          If you have more questions, please visit our FAQ page below.</p>
+          <br>
+          <br>
+    </div>
+    
         <style>
-        #stripe-logo {
-          width: 100px;
-          padding-top: 10px;
-          padding-bottom: 30px;
-          background-color: transparent;
-        }
-        .stripe-trust {
-          padding-top:10px;
-          text-align:center;
-          font-size: 10px;
-          color: gray;
-          padding: 5px;
-        }
+        /* Style the buttons that are used to open and close the accordion panel */
+        .accordion {
+              background-color: transparent;
+              color: black;
+              font-weight: 700; 
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
 
-        #stripe-logo.center{
-          padding: 0px 0px 0px;
-        }
+            .active, .accordion:hover {
+              background-color:whitesmoke;
+              border-left-color:  #FFB833;
+            }
 
-        #lock-logo {
-          width: 10px;
-        }
+            .panel {
+              padding: 0 18px;
+              background-color: white;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+            }
 
-      </style>
+            .accordion:after {
+              content: '\02795'; /* Unicode character for "plus" sign (+) */
+              font-size: 13px;
+              color: #777;
+              float: right;
+              margin-left: 5px;
+            }
 
-        <!--<div class="footer"></div>-->
-          <!--Seal of Trust-->
-              <p class="trust">London, UK, NW2 2DT</p>
-              <p class="trust">© PLNT Protein Ltd 2019. All Rights Reserved</p>
+            .active:after {
+              content: "\2796"; /* Unicode character for "minus" sign (-) */
+            }
+        </style>
+
+      <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              } 
+            });
+          }
+          </script>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="w3-container">
+          <div class="col-md-3">
               <br>
+              <p id="trust">London, UK, NW2</p>
+              <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
               <br> 
-              <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cdbba95633c16000186c61b/1557904023847/vsubadge_0.jpg" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
+              <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
               <br> 
-              <br>
+         </div>
+         <div class="col-md-3">
+            <br>
+            <p id="trust">London, UK, NW2</p>
+            <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
+            <br> 
+            <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
+            <br> 
+       </div>
+       <div class="col-md-3">
+          <br>
+          <p id="trust">London, UK, NW2</p>
+          <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
+          <br> 
+          <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
+          <br> 
+     </div>
+     <div class="col-md-3">
+        <br>
+        <p id="trust">London, UK, NW2</p>
+        <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
+        <br> 
+        <img src="" alt="1-Logo-PLNT-Black-FINAL-1" alt="VSULogo" class="center" style="width:60px;">   
+        <br> 
+   </div>
+        </div>
+      </section>
               <style>
+                
+                
                 .footer-links{
-                  text-align:center;
+                  text-align:left;
                   font-size: 12px;
-                  color: gray;
+                  color: white;
                 }
-                .trust {
-                  text-align:center;
+                #trust {
+                  text-align:left;
                   font-size: 12px;
-                  color: gray;
+                  color: white;
                   font-weight: bold;
                 }
+
                 #vsu-trust {
                   text-align:center;
                 }
-                </style>  
-
+                </style> 
+          
+        
+        </div>
+      
+     
+    
   </form>
   
 
