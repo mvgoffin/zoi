@@ -24,6 +24,21 @@ def success(request):
     template = 'success.html'
     return render(request,template,context)
 
+def termsofservice(request):
+    context = locals()
+    template = 'terms-of-service.html'
+    return render(request,template,context)
+
+def privacypolicy(request):
+    context = locals()
+    template = 'privacy-policy.html'
+    return render(request,template,context)
+
+def smspolicy(request):
+    context = locals()
+    template = 'sms-policy.html'
+    return render(request,template,context)
+
 #def code_granted(request):
 #    context = locals()
 #    template = 'code_granted.html'
