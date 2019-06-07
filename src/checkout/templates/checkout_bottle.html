@@ -1,12 +1,12 @@
+<!-- Hi there, curious developer!-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content= "width=device-width, user-scalable=no">
-    <link rel="icon" type="image/png" href="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ce1343088a0fe0001dbb4c6/1558262832998/Favicon-3.png">
-    <title>Account - PLNT Protein</title>
-
+    <meta name="description" content="Gubel is a wellness brand that formulates chocolates with a blend of powerful adaptogens, to help you feel good and more balanced in an increasingly stressful world.">
+    
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -16,12 +16,13 @@
     <title>
       
 
-        GUBEL | Account - Bottle
-      
-  
-      </title>
+      GUBEL
+    
 
-    <!--Page PACE Progress loading bar CSS--> 
+    </title>
+    <!--Host Images: dl.dropboxusercontent.com -->
+
+    <!--CSS Page PACE Progress loading bar--> 
     <style>
             .pace {
               -webkit-pointer-events: none;
@@ -66,128 +67,48 @@
             
     </style>
     
-    <!-- PLNT Progress Bar CSS -->
-    <style type="text/css">
-        .containerbar {
-          width:100%;
-        }
-        .progressbar{
-          counter-reset: step;    
-        }
-        
-        /**Payment number + text**/
-        .progressbar li {
-          list-style-type: none;
-          float: left;
-          width: 33%;
-          position: relative;
-          text-align: center;  
-          color: gray;
-          font-size: medium;
-        }
-
-        /**letra y font actia**/
-        .progressbar li.account {
-          color:gray;
-          font-size: medium;
-          font-weight: bold;
-        }
-
-        .progressbar li.box {
-          color:#22D59E;
-          font-size: medium;
-          font-weight: bold;
-          border: #22D59E;
-        }
-
-        /**pelota 1**/
-        .progressbar li.box::before {
-          line-height: 20px;
-          border: 4px solid #22D59E;
-        }
-
-        
-        /**all number cirle**/
-        .progressbar li:before {
-          content: counter(step);
-          counter-increment: step;
-          width: 30px;
-          height: 30px;
-          line-height: 20px;
-          border: 4px solid gray;
-          display: block;
-          text-align: center;
-          margin: 0 auto 10px auto;
-          border-radius: 50%;
-          background-color: white;  
-          position: relative;
-          z-index: 100;
-        }
-        
-        /**whole line**TURNED TOP to 14px***/ 
-        .progressbar li:after {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 4px;
-          background-color: #22D59E;
-          top: 14px;
-          left: -50%;
-          z-index: 50;
-        }
-
-        /**barra antes del 1, none**/
-        .progressbar li:first-child:after {
-          content: none; 
-        }
-
-        /**barra despues del activo**/
-        .progressbar li.account:after {
-          border-color: #22D59E;
-        }
-
-        /**current line**/
-        .progressbar li.account + li:after {
-          background-color: gray;
-          height: 4px;
-        }
-        /**payment area**/
-        .progressbar li.account + li::before{
-          border: 4px solid gray;
-        }
-        
-    </style>
-
-
-    <!-- PLNT Form CSS -->
+    <!-- CSS Gubel Homepage -->
     <style media="screen">
       
-          @font-face {
-              font-family: 'Gotham';
-              src: url('fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
-              src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-                url('fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
-                url('fonts/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-                url('fonts/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
-              font-weight: 700;
-              font-style: normal;
-            } 
+            .container-fluid {
+            height: 600px;
+              }
+
+            .row {
+              background-color: #FCF9F7;
+            }
+
 
             .heading{
+              padding-top: 30px;
+              padding-bottom: 15px;
+              text-align: center;
+              font-weight: 800;
+              display:block
+            }
+
+            .sub-heading{
+              padding-bottom: 10px;
               text-align: left;
               font-weight: 800;
               display:block
             }
 
-            /*logo*/  
+            .heading-5{
+              padding-top: 30px;
+              padding-bottom: 15px;
+              margin:auto;
+              text-align: center;
+              font-weight: 800;
+              display:block
+            }
+
+            
 
             .header{
               background-color: white;
             }
 
-            .footer{
-              background-color: black;
-            }
 
             .center{
               display: block;
@@ -195,184 +116,288 @@
               text-align:center;
             }
 
-            
-            /*logo*/ 
-    
-            #header-logo {
-              width: 250px;
-              padding-top: 20px;
-              padding-bottom: 20px;
-              background-color: white;
-            }
+          /*CSS Checkout Bottle*/
 
-            
+            .home-h1{
+          text-align: left;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid gray;
+          font-weight: 700;
+          display:block;
+          text-indent: 10px;
+              }
+      
+        .home-h2{
+          text-align: left;
+          font-size: medium;
+          display:block
+           }
 
-            /*logo*/
-    
-    
-            body, html {
+        .home-text{
+          font-family: "Helvetica Neue";
+          font-size: 10px;
+          color:gray;
+          text-align:left;
+           }
+
+        .home-heading-1{
+          text-align: center;
+
+        }
+
+        .home-small-1{
+        font-family: "Helvetica Neue";
+        font-weight: 400;
+        color: black;
+        text-align:center;
+        padding-bottom: 30px;
+        line-height: 25px;
+        }
+
+        .home-small{
+        font-family: "Helvetica Neue";
+        font-weight: 400;
+        color: black;
+        text-align:left;
+        line-height: 25px;
+        font-size: medium;
+        }
+
+        .home-small-small{
+          text-align:left;
+          padding-bottom: 1px;
+          padding-top: 2px;
+          font-size:small;
+          font-weight: 300;
+          color:gray;
+          line-height: 1.4;
+             }
+      
+        .make-impact {
+          color:#64D7AE;
+          font-size: 10px;
+        }
+
+        .underline{
+          box-sizing: border-box;
+          width: 100%;
+          padding: 0.5px;
+          border-top: 1px solid gray;
+          
+          -webkit-appearance: none !important;
+             }
+
+        #header-logo {
+          width: 250px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          background-color: white;
+        }
+
+        * {
+        box-sizing: border-box;
+          }
+
+        #hero-logo {
+          width: 250px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          background-color: #FCF9F7;
+          margin: auto;
+        }
+
+        #hero-2-logo {
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border-style: solid;
+          border-color:#FCF9F7;
+          border-width: 10px;
+          margin: auto;
+          margin: 10px;
+        
+        }
+
+        #reason {
+          width: 100%;
+          height: 100%;
+          background-color: #FCF9F7;
+          margin: auto;
+        }
+
+        .col-sm-12-hero-2{
+          padding:0;
+        }
+
+        body, html {
           height: 100%;
           background-color: white;
           color: #000000;
         }
-            
-            *, label {
-              font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-              font-size: 16px;
-              font-variant: normal;
-              padding: 0;
-              margin: 0;
-              -webkit-font-smoothing: antialiased;
-            }
-          
-            .small{
-              
-              font-size: 10px;
-              color:gray;
-            }
+        
+        *, label {
+          font-family: 'Helvetica Neue', sans-serif;
+          font-size: 16px;
+          font-variant: normal;
+          box-sizing: border-box;
+          padding-top: 0px;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+        }
+      
+        .small{
+          font-size: 10px;
+          color:gray;
+        }
 
-            button {
-              background: transparent;
-              display:block;
-              width:100%;
-              border: 1px solid #FFB833;
-              color: #302F30;
-              background: #FFB833;
-              padding: 15px 40px;
-              margin: .618em 0.01em;  
-              font-weight: 700;
-              font-style: normal;
-              animation-delay: 2400ms;
-              font-size: 18px;
-              letter-spacing: .01em;
-              text-transform: normal;
-              transition: background-color 170ms  ease-out,color 170ms ease-out;
-            }
-    
+        button {
+          background: transparent;
+          display:block;
+          width:100%;
+          border: 1px solid #FFB833;
+          color: #302F30;
+          background: #FFB833;
+          padding: 15px 40px;
+          margin: .618em 0.01em;  
+          font-weight: 700;
+          font-style: normal;
+          animation-delay: 2400ms;
+          font-size: 18px;
+          letter-spacing: .01em;
+          text-transform: normal;
+          transition: background-color 170ms  ease-out,color 170ms ease-out;
+        }
 
-            button:focus{
-              background-color: #64D7AE;
-              border: 1px solid #64D7AE;
-              color: #FFFFFF;
-            }
 
-            
-            button:hover {
-              opacity:0.8;
-            }
-            
-            form {
-              padding: 30px;
-              height: 120px;
-            }
-            
-            label {
-              font-weight: 500;
-              font-size: 14px;
-              display: block;
-              margin-bottom: 8px;
-            }
-            
-            ::placeholder{
-              color: #F2F2F2;
-              font-size: small;
-            }
+        button:focus{
+          background-color: #64D7AE;
+          border: 1px solid #64D7AE;
+          color: #FFFFFF;
+        }
 
-            a{
-              color: gray;
-              font-size: small;
-            }
+        
+        button:hover {
+          opacity:0.8;
+        }
+        
+        form {
+          padding: 0;
+          height: 200px;
+        }
+        
+        label {
+          font-weight: 500;
+          font-size: 14px;
+          display: block;
+          margin-bottom: 8px;
+        }
+        
+        ::placeholder{
+          color: gray;
+          font-size: small;
+        }
 
-            #card-errors {
-              height: 20px;
-              padding: 4px 0;
-              color: #fa755a;
-            }
-            
-            .form-row {
-              width: 100%;
-              float: center;
-            }
-            
-            .wrapper {
-              width: 100%;
-              margin: 0 auto;
-              height: 100%;
-            }
-    
-            
-            
-            
-            /**
-             * The CSS shown here will not be introduced in the Quickstart guide, but shows
-             * how you can use CSS to style your Element's container.
-             */
+        a{
+          color: gray;
+          font-size: small;
+        }
 
-             .headline {
-              box-sizing: border-box;
-              width: 100%;
-              padding: 10px ;
-              border-top: 4px solid #FFB833;
-              border-bottom: white;
-              border-left: white;
-              border-right: white;
-              -webkit-appearance: none !important;
-            }
+        #card-errors {
+          height: 20px;
+          padding: 4px 0;
+          color: #fa755a;
+        }
+        
+        .form-row {
+          width: 100%;
+          float: center;
+        }
+        
+        
+        /**
+          * The CSS shown here will not be introduced in the Quickstart guide, but shows
+          * how you can use CSS to style your Element's container.
+          */
 
-             .form-control {
-                box-sizing: border-box;
-                margin-top: 5px;
-                width: 100%;
-                height: 40px;
-                padding: 10px 12px;
-                border: 1px solid #EDEDEB;
-                border-radius: 0px;
-                background-color: #EDEDEB;
-                /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
-                -webkit-transition: box-shadow 150ms ease;
-                transition: box-shadow 150ms ease;
-                -webkit-appearance: none !important;
-              }
+          .headline {
+          box-sizing: border-box;
+          padding-bottom: 10px;
+          margin: 0;
+          width: 100%;
+          border-top: 4px solid #FFB833;
+          border-bottom: white;
+          border-left: white;
+          border-right: white;
+          -webkit-appearance: none !important;
+        }
 
-              .form-control:focus {
-                box-shadow: 0 1px 3px 0 #FFB833;
-                border: #FFB833;
-              }
-    
-              .col-md-3{
-              padding: 10px;
-              background-color: black;
-              }
+        .headline-thin {
+          box-sizing: border-box;
+          margin: 0;
+          width: 100%;
+          border-top: 1px solid lightgray;
+          border-bottom: white;
+          border-left: white;
+          border-right: white;
+          -webkit-appearance: none !important;
+        }
 
-              .col-sm-12-3{
+          .form-control {
+            box-sizing: border-box;
+            margin-top: 5px;
+            width: 100%;
+            height: 40px;
+            padding: 10px 12px;
+            border: 1px solid #EDEDEB;
+            border-radius: 0px;
+            background-color: #EDEDEB;
+            /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+            -webkit-appearance: none !important;
+          }
+
+          .form-control:focus {
+            box-shadow: 0 1px 3px 0 #FFB833;
+            border: #FFB833;
+          }
+
+        #register-progressbar {
+          box-sizing: border-box;
+          display: block;
+          margin-left:  360px;
+          margin-right:  360px;
+          padding-bottom: 50px;
+          }
+
+        #register-form {
+          box-sizing: border-box;
+          margin-left:  auto;
+          margin-right:  auto;
+          }
+        
+        .col-sm-12{
           padding-left:  200px;
           padding-right:  200px;
           background: #FCF9F7;
         }
 
-            #payment-progressbar {
-              box-sizing: border-box;
-              display: block;
-              margin-left:  360px;
-              margin-right:  360px;
-              padding-bottom: 50px;
-              }
-    /**from 300px to auto**-CHANGE**/
-            #account-form {
-              box-sizing: border-box;
-              margin-left:  auto;
-              margin-right:  auto;
-              }
-    
-              @media only screen and (max-width: 768px) {
-        .row, .row-3, li, .col-sm-6, .col-sm-12, .col-md-12-f, .accordion, .panel {
+        /**Footer**/
+        .col-md-3{
+        padding: 10px;
+        background-color: black;
+        
+        }
+
+        @media only screen and (max-width: 768px) {
+        .row, .row-3, li, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .containerbar {
             margin-left:0 !important;
             margin-right:0 !important;
             padding-left: 10px !important;
             padding-right: 10px !important;
         }
         }
-
         @media only screen and (max-width: 768px) {
         *, .html {
           margin-left:0 !important;
@@ -380,50 +405,203 @@
           padding-left: 0 !important;
           padding-right: 0 !important;
         }
-    
-            
-}
+
+      #hero-logo.product{
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+          }
+
+      @media only screen and (max-width : 768px) {
+      #hero-logo.product {
+          width: 100%;
+          display: block;
+          margin: auto;
+        }}
+      
+      
+
+      @media only screen and (max-width : 768px) {
+      .left, .right {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+        }}
 
 
-
-
-    
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        background-color: white;
+        display: table;
+        clear: both;
+      }         
+    }
     </style>
+
+    <!-- PLNT Progress Bar CSS -->
+    <style type="text/css">
+      .containerbar {
+        width:100%;
+        background: #FCF9F7;
+        
+      }
+
+      .progressbar{
+        counter-reset: step;    
+        padding: 20px;
+      }
+      
+      /**register number + text**/
+      .progressbar li {
+        list-style-type: none;
+        float: left;
+        width: 33%;
+        position: relative;
+        text-align: center;  
+        color: gray;
+        font-size: medium;
+      }
+
+      /**letra y font actia**/
+      .progressbar li.account {
+        color:gray;
+        font-size: medium;
+        font-weight: bold;
+      }
+
+      .progressbar li.box {
+        color:#22D59E;
+        font-size: medium;
+        font-weight: bold;
+        border: #22D59E;
+      }
+
+      /**pelota 1**/
+      .progressbar li.box::before {
+        line-height: 20px;
+        border: 4px solid #22D59E;
+      }
+
+      
+      /**all number cirle**/
+      .progressbar li:before {
+        content: counter(step);
+        counter-increment: step;
+        width: 30px;
+        height: 30px;
+        line-height: 20px;
+        border: 4px solid gray;
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        border-radius: 50%;
+        background-color: white;  
+        position: relative;
+        z-index: 100;
+      }
+      
+      /**whole line**TURNED TOP to 14px***/ 
+      .progressbar li:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #22D59E;
+        top: 14px;
+        left: -50%;
+        z-index: 50;
+      }
+
+      /**barra antes del 1, none**/
+      .progressbar li:first-child:after {
+        content: none; 
+      }
+
+      /**barra despues del activo**/
+      .progressbar li.account:after {
+        border-color: #22D59E;
+      }
+
+      /**current line**/
+      .progressbar li.account + li:after {
+        background-color: gray;
+        height: 4px;
+      }
+      /**register area**/
+      .progressbar li.account + li::before{
+        border: 4px solid gray;
+      }
+      
+  </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267999-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141267999-1');
+    </script>
 
 </head>
 
 
 <body>
-
+  
   <!-- Header -->
-  <div class="header">
+    <div class="header">
       <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
       </div>
 
-  <!-- Content -->
+  
+    <!-- Content -->
 
-  <form method="POST" id="account-form" action="{% url 'home' %}">{% csrf_token %}
+    <form method="POST" id="register-form" action="{% url 'home' %}">{% csrf_token %}
+    
+      <!--Section 1 - Hero image and Tagline 
+    <section>
+    <div class="w3-container">-->
 
+      <!--Hero image 
+        <div class="row">
+            <div class="col-sm-6">
+              <img src="https://dl.dropboxusercontent.com/s/tl3ft388465pf7o/IMG_9407.jpg?dl=0" id="hero-logo" class="product">
+            </div>--> 
+      
+      <!--Tagline 
+          <div class="col-sm-6">
+              <h2 class="home-heading">See Beautiful</h2>
+              <p class='home-small'>No stress, no tired. We like when things are simple. Like a Gubel is a chocolate truffle blended with plant extracts and adaptogens for balance and clarity.</p> 
+          </div>
+        </div>
+        <label class="headline"></label>
+    </div>
+     </section>--> 
 
-  <!--PLNT Progress Bar -->
+      <!--PLNT Progress Bar -->
   <div class="containerbar">
       <br>
       <br>
-            <b><ul class="progressbar" id="payment-progressbar">
-               <li class="box">Bottle</li>
+            <b><ul class="progressbar" id="register-progressbar">
+               <li class="box">Box</li>
                  <li class="account">Account</li>
                  <li class='payment'>Payment</li>           
                </ul></b>
+        <br>
+        <br>  
   </div>  
-    
-  <!-- Section 1 - Create Account Form   -->
+
+
+   <!-- Section 1 - Create Account Form   -->
   <section>
     <div class="w3-container">
         <div class="row">
-        <div class="col-sm-12-3">
+        <div class="col-sm-12">
       <!--<form method="POST" id="account-form" action="{% url 'register_mx' %}">{% csrf_token %}-->
           <br>
-          <p class='heading'>Add your account details</p>
+          <p class='sub-heading'>Add your account details</p>
           <br>
           <div >
               <label class="headline">
@@ -467,6 +645,7 @@
                         text-align: center;
                         font-size: 12px;
                         color: gray;
+                        padding-bottom: 15px;
                       }
                     </style>
 
@@ -478,7 +657,7 @@
       </div>
     </section>
 
-      <!-- Footer -->
+    <!-- Footer -->
     <section>
         <div class="w3-container">
           <div class="col-md-3">
@@ -534,9 +713,13 @@
                   text-align:center;
                 }
                 </style> 
-
-
-    </form>
+          
+        
+        </div>
+      
+     
+    
+  </form>
   
 
 </div>

@@ -13,6 +13,41 @@ from django.conf import settings
 
 # Create your views here.
 
+#Register Gubel Bottle
+def register_bottle(request):
+    form = AccountForm(request.POST)
+
+    name = request.POST.get('name')
+    phone = request.POST.get('phone')
+    email = request.POST.get('email')
+    address = request.POST.get('address')
+    postcode = request.POST.get('postcode')
+    obj = Account.objects.create(name=name, phone=phone, email=email, address=address, postcode=postcode)
+
+    if form.is_valid():
+
+        send_mail(
+        'A New Account',
+        'From our servers, a new account has been created. Please check it out in the administration console details are as follows' +
+        ': name: {}, phone: {}, email: {}, address: {}, postcode: {}'.format(name, phone, email, address, postcode),
+        'hi@gubel.co.uk',
+        ['marco@gubel.co.uk'],
+        #fail_silently=False,
+        )
+
+        form.save()
+        
+        response = redirect('checkout_bottle')
+        return response
+    else:
+        form = AccountForm()
+    
+     #context = {'form': form}
+     #template = 'register_mx.html'
+     #return render(request,template,context)
+    return render(request, 'register_bottle.html', {'form': form}) #this is render on HTML
+
+
 #Register Mix Box
 def register_mx(request):
     form = AccountForm(request.POST)
