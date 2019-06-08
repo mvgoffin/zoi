@@ -1,13 +1,28 @@
+<!-- Hi there, curious developer!-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content= "width=device-width, user-scalable=no">
-    <link rel="icon" type="image/png" href="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ce1343088a0fe0001dbb4c6/1558262832998/Favicon-3.png">
-    <title>Thank You - PLNT PROTEIN</title>
+    <meta name="description" content="Gubel is a wellness brand that formulates chocolates with a blend of powerful adaptogens, to help you feel good and more balanced in an increasingly stressful world.">
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <!--Page PACE Progress loading bar CSS--> 
+    <!--favicon<link rel="icon" type="image/png" href="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5ce1343088a0fe0001dbb4c6/1558262832998/Favicon-3.png">-->
+    <title>
+      
+
+      GUBEL
+    
+
+    </title>
+    <!--Host Images: dl.dropboxusercontent.com -->
+
+    <!--CSS Page PACE Progress loading bar--> 
     <style>
             .pace {
               -webkit-pointer-events: none;
@@ -52,407 +67,545 @@
             
     </style>
     
-    <!-- PLNT Progress Bar CSS -->
-    <style type="text/css">
-        .containerbar {
-          width:100%;
-        }
-        .progressbar{
-          counter-reset: step;    
-        }
-        
-        /**Payment number + text**/
-        .progressbar li {
-          list-style-type: none;
-          float: left;
-          width: 33%;
-          position: relative;
-          text-align: center;  
-          color: gray;
-          font-size: medium;
-        }
-
-        /**letra y font actia**/
-        .progressbar li.account {
-          color:gray;
-          font-size: medium;
-          font-weight: bold;
-        }
-
-        .progressbar li.box {
-          color:#22D59E;
-          font-size: medium;
-          font-weight: bold;
-          border: #22D59E;
-        }
-
-        /**pelota 1**/
-        .progressbar li.box::before {
-          line-height: 30px;
-          border: 4px solid #22D59E;
-        }
-
-        
-        /**all number cirle**/
-        .progressbar li:before {
-          content: counter(step);
-          counter-increment: step;
-          width: 30px;
-          height: 30px;
-          line-height: 30px;
-          border: 4px solid gray;
-          display: block;
-          text-align: center;
-          margin: 0 auto 10px auto;
-          border-radius: 50%;
-          background-color: white;  
-          position: relative;
-          z-index: 100;
-        }
-        
-        /**whole line**/
-        .progressbar li:after {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 4px;
-          background-color: #22D59E;
-          top: 18px;
-          left: -50%;
-          z-index: 50;
-        }
-
-        /**barra antes del 1, none**/
-        .progressbar li:first-child:after {
-          content: none; 
-        }
-
-        /**barra despues del activo**/
-        .progressbar li.account:after {
-          border-color: #22D59E;
-        }
-
-        /**current line**/
-        .progressbar li.account + li:after {
-          background-color: gray;
-          height: 4px;
-        }
-        /**payment area**/
-        .progressbar li.account + li::before{
-          border: 4px solid gray;
-        }
-        
-    </style>
-
-
-    <!-- PLNT Form CSS -->
+    <!-- CSS Gubel Homepage -->
     <style media="screen">
       
-          @font-face {
-              font-family: 'Gotham';
-              src: url('fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
-              src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-                url('fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
-                url('fonts/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-                url('fonts/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
-              font-weight: 700;
-              font-style: normal;
-            } 
+            .container-fluid {
+            height: 600px;
+              }
+
+            
+            .row-3 {
+              background-color: #FCF9F7;
+            }
+
 
             .heading{
-              text-align: left;
-              font-weight: 800;
+              padding-top: 30px;
+              padding-bottom: 20px;
+              text-align: center;
+              font-weight: 600;
+              display:block;
+              margin: 0;
+            }
+
+            .heading-5{
+              padding-top: 30px;
+              padding-bottom: 20px;
+              margin:auto;
+              text-align: center;
+              font-weight: 600;
               display:block
             }
 
-            /*logo*/  
+            
 
             .header{
               background-color: white;
+              /**border-bottom-style: solid;
+              border-bottom-color: #000000;
+              border-bottom-width: thin;**/
             }
 
-            .footer{
-              background-color: black;
-            }
 
             .center{
               display: block;
-              margin-left: auto!important;
-              margin-right: auto!important;
+              margin: auto!important;
               text-align:center;
-              background-color: white;
-            }
-            
-            /*logo*/ 
-    
-            #payment-logo {
-              width: 250px;
-              padding-top: 20px;
-              padding-bottom: 20px;
-              background-color: white;
             }
 
-            /*logo*/
-    
-    
-            body, html {
-              height: 100%;
-              background-color: #FCF9F7;
-;
-              color: #000000;
-            }
-            
-            *, label {
-              font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-              font-size: 16px;
-              font-variant: normal;
-              padding: 0;
-              margin: 0;
-              -webkit-font-smoothing: antialiased;
-            }
+          /*CSS Checkout Bottle*/
+
+            .home-h1{
+          text-align: left;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid gray;
+          font-weight: 700;
+          display:block;
+          text-indent: 10px;
+              }
+      
+        .home-h2{
+          text-align: left;
+          font-size: medium;
+          display:block
+           }
+
+        .home-text{
           
-            .small{
-              
-              font-size: 10px;
-              color:gray;
-            }
+          font-size: 10px;
+          color:gray;
+          text-align:left;
+           }
 
-            button {
-              background: transparent;
-              display:block;
-              width:100%;
-              border: 1px solid #FFB833;
-              color: #302F30;
-              background: #FFB833;
-              padding: 15px 40px;
-              margin: .618em 0.01em;  
-              font-weight: 700;
-              font-style: normal;
-              animation-delay: 2400ms;
-              font-size: 18px;
-              letter-spacing: .01em;
-              text-transform: normal;
-              transition: background-color 170ms  ease-out,color 170ms ease-out;
-            }
-    
+        .home-heading-1{
+          text-align: center;
 
-            button:focus{
-              background-color: #64D7AE;
-              border: 1px solid #64D7AE;
-              color: #FFFFFF;
-            }
+        }
 
-            
-            button:hover {
-              opacity:0.8;
-            }
-            
-            form {
-              padding: 30px;
-              height: 120px;
-            }
-            
-            label {
-              font-weight: 500;
-              font-size: 14px;
-              display: block;
-              margin-bottom: 8px;
-            }
-            
-            ::placeholder{
-              color: #F2F2F2;
-              font-size: small;
-            }
+        .TOS-small{
+        font-weight: 400;
+        color: black;
+        text-align:left;
+        padding-bottom: 30px;
+        line-height: 25px;
+        }
 
-            a{
-              color: gray;
-              font-size: small;
-            }
+        .home-small{
+        font-weight: 400;
+        color: black;
+        text-align:left;
+        line-height: 25px;
+        font-size: medium;
+        }
 
-            #card-errors {
-              height: 20px;
-              padding: 4px 0;
-              color: #fa755a;
-            }
-            
-            .form-row {
-              width: 100%;
-              float: center;
-            }
-            
-            .wrapper {
-              width: 100%;
-              margin: 0 auto;
-              height: 100%;
-            }
-    
-            
-            
-            
-            /**
-             * The CSS shown here will not be introduced in the Quickstart guide, but shows
-             * how you can use CSS to style your Element's container.
-             */
+        .home-HIW-title{
+          font-weight: 600;
+          color: black;
+          text-align:center;
+          line-height: 25px;
+          font-size: medium;
+        }
 
-             .headline {
-              box-sizing: border-box;
-              width: 100%;
-              padding: 10px ;
-              border-top: 4px solid #FFB833;
-              border-bottom: white;
-              border-left: white;
-              border-right: white;
-              -webkit-appearance: none !important;
-            }
+        .home-HIW-body{
+          font-weight: 400;
+          color: black;
+          line-height: 25px;
+          font-size: medium;
+        }
 
-             .form-control {
-                box-sizing: border-box;
-                margin-top: 5px;
-                width: 100%;
-                height: 40px;
-                padding: 10px 12px;
-                border: 1px solid #EDEDEB;
-                border-radius: 0px;
-                background-color: #EDEDEB;
-                /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
-                -webkit-transition: box-shadow 150ms ease;
-                transition: box-shadow 150ms ease;
-                -webkit-appearance: none !important;
-              }
+        .home-small-small{
+          text-align:left;
+          padding-bottom: 1px;
+          padding-top: 2px;
+          font-size:small;
+          font-weight: 300;
+          color:gray;
+          line-height: 1.4;
+             }
 
-              .form-control:focus {
-                box-shadow: 0 1px 3px 0 #FFB833;
-                border: #FFB833;
-              }
-    
-            #payment-progressbar {
-              box-sizing: border-box;
-              display: block;
-              margin-left:  360px;
-              margin-right:  360px;
-              padding-bottom: 50px;
-              }
-    
-            #success-form {
-              box-sizing: border-box;
-              margin-left:  300px;
-              margin-right:  300px;
-              }
-    
-            @media only screen and (max-width: 768px) {
-            *, html, .wrapper, .row {
-                margin-left:0 !important;
-                margin-right:0 !important;
-                padding-left:1 !important;
-                padding-right:1 !important;
-            }
-    
-            
-}
+        .HIW-make-impact {
+          text-align:center;
+          padding-bottom: 5px;
+          font-size:small;
+          font-weight: 300;
+          color:#64D7AE;
+          line-height: 1.4;
+          }
+      
+        .make-impact {
+          color:#64D7AE;
+          font-size: small;
+          font-weight: 300;
+        }
+
+        .underline{
+          box-sizing: border-box;
+          width: 100%;
+          padding: 0.5px;
+          border-top: 1px solid gray;
+          
+          -webkit-appearance: none !important;
+             }
+
+        #header-logo {
+          width: 200px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          background-color: white;
+        }
+
+        * {
+        box-sizing: border-box;
+          }
+
+        #hero-logo {
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border-style: solid;
+          border-color:#FCF9F7;
+          margin: auto;
+        }
+
+        #hero-2-logo {
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border-style: solid;
+          border-color:#FCF9F7;
+          border-width: 10px;
+          margin: auto;
+          margin: 10px;
+        
+        }
+
+        #reason {
+          width: 50%;
+          height: 50%;
+          background-color: #FCF9F7;
+          margin: auto;
+        }
+
+        .col-sm-12-hero-2{
+          padding:0;
+        }
+
+        body, html {
+          height: 100%;
+          background-color: white;
+          color: #000000;
+        }
+        
+        *, label {
+          font-family: 'Proxima Nova', sans-serif;
+          font-size: 16px;
+          font-variant: normal;
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+        }
+      
+        .small{
+          font-size: 10px;
+          color:gray;
+        }
+
+        button {
+          background: transparent;
+          display:block;
+          width:100%;
+          border: 1px solid #FFB833;
+          color: #302F30;
+          background: #FFB833;
+          padding: 15px 40px;
+          margin: .618em 0.01em;  
+          font-weight: 700;
+          font-style: normal;
+          animation-delay: 2400ms;
+          font-size: 18px;
+          letter-spacing: .01em;
+          text-transform: normal;
+          transition: background-color 170ms  ease-out,color 170ms ease-out;
+        }
 
 
+        button:focus{
+          background-color: #64D7AE;
+          border: 1px solid #64D7AE;
+          color: #FFFFFF;
+        }
+
+        
+        button:hover {
+          opacity:0.8;
+        }
+        
+        form {
+          padding: 0;
+          height: 200px;
+        }
+        
+        label {
+          font-weight: 500;
+          font-size: 14px;
+          display: block;
+          margin-bottom: 8px;
+        }
+        
+        ::placeholder{
+          color: gray;
+          font-size: small;
+        }
+
+        a{
+          color: gray;
+          font-size: small;
+        }
+
+        #card-errors {
+          height: 20px;
+          padding: 4px 0;
+          color: #fa755a;
+        }
+        
+        .form-row {
+          width: 100%;
+          float: center;
+        }
+        
+        
+        /**
+          * The CSS shown here will not be introduced in the Quickstart guide, but shows
+          * how you can use CSS to style your Element's container.
+          */
+
+          .headline {
+          box-sizing: border-box;
+          margin: 0;
+          width: 100%;
+          border-top: 4px solid #FFB833;
+          border-bottom: white;
+          border-left: white;
+          border-right: white;
+          -webkit-appearance: none !important;
+        }
+
+        .headline-thin {
+          box-sizing: border-box;
+          margin: 0;
+          width: 100%;
+          border-top: 1px solid lightgray;
+          border-bottom: white;
+          border-left: white;
+          border-right: white;
+          -webkit-appearance: none !important;
+        }
+
+          .form-control {
+            box-sizing: border-box;
+            margin-top: 5px;
+            width: 100%;
+            height: 40px;
+            padding: 10px 12px;
+            border: 1px solid #EDEDEB;
+            border-radius: 0px;
+            background-color: #EDEDEB;
+            /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+            -webkit-appearance: none !important;
+          }
+
+          .form-control:focus {
+            box-shadow: 0 1px 3px 0 #FFB833;
+            border: #FFB833;
+          }
+
+        #payment-progressbar {
+          box-sizing: border-box;
+          display: block;
+          margin-left:  360px;
+          margin-right:  360px;
+          padding-bottom: 50px;
+          }
+
+        #home-form {
+          box-sizing: border-box;
+          margin-left:  auto;
+          margin-right:  auto;
+          }
+        
+        .col-md-12{
+          padding-left:  200px;
+          padding-right:  200px;
+          }
+
+        .col-md-3{
+          padding: 20px;
+          background-color: black;
+          height: 120px;
+          }
+
+        .col-md-12-f{
+          padding-left:  0;
+          padding-right:  0;
+          background-color: black;
+          }
+
+        .col-sm-12{
+          padding-left:  350px;
+          padding-right:  350px;
+          background-color:#FCF9F7;
+          }
+
+        .col-sm-12-3{
+          padding-left:  200px;
+          padding-right:  200px;
+          background: #FCF9F7;
+        }
+
+        .col-sm-12-5{
+          padding-left:  200px;
+          padding-right:  200px;
+          background: white;
+        }
+
+        .col-sm-6{
+          padding-left:  100px;
+          padding-right:  100px;
+        }
+
+        .col-sm-6-4{
+          padding-left:  100px;
+          padding-right:  100px;
+        }
+
+        .col-xs-4 {
+          padding-bottom: 10px;
+          padding-left: 30px;
+          padding-right: 30px;
+          margin: 0px;
+          text-align: center;
+        }
+
+        @media only screen and (max-width: 768px) {
+        .row, .row-3, li, .col-xs-1, .col-xs-4, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel {
+            margin-left:0 !important;
+            margin-right:0 !important;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+            font-family: 'Proxima Nova', sans-serif;
+        }
+        }
+
+        @media only screen and (max-width: 768px) {
+        *, .html {
+          margin-left:0 !important;
+          margin-right:0 !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          font-family: 'Proxima Nova', sans-serif;
+        }
+
+        #hero-logo.product{
+          padding: 0;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        @media only screen and (max-width : 768px) {
+        #hero-logo.product, #reason {
+            width: 100%;
+            display: block;
+            margin: auto;
+          }}
+      
+      
+
+        @media only screen and (max-width : 768px) {
+        .left, .right {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+          }}
 
 
-    
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        background-color: white;
+        display: table;
+        clear: both;
+      }         
+    }
     </style>
-    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267999-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141267999-1');
+    </script>
+
 </head>
 
     
 <body>
-    <!--HTML REGISTER HEADER SECTION--> 
-        <div class="header">
-        <a href='https://www.plntprotein.com'><img src="https://dl.dropboxusercontent.com/s/3pbn1b6btj2rp4x/logo-Gubel-1.png?dl=0" id="payment-logo" class="center"></a>
-        <!-- OLD LOGO 
-        <a href='https://www.plntprotein.com'><img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cab8f9b4785d3d788a60406/1554747291795/1.+Logo_PLNT_Black-FINAL-1.png" id="payment-logo" class="center"></a>-->
+    <!-- Header -->
+    <div class="header">
+        <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
         </div>
-    
+  
+    <!-- Content -->
+
+    <form action="https://www.gubel.co.uk" id="home-form">
+
 <!--PLNT FORM ACCOUNT SECTION--> 
 <div class="wrapper">
-        <form action="https://www.plntprotein.com/" id="success-form">
-            <br>
-            <p class='heading'>Thanks for your orderr</p>
-            <br>
+
+    <div class="col-sm-12">
+        
+            <h1 class='heading'>Thanks for your order</h1>
             <div >
                 <label class="headline">
             </div>
         <!--Thank you Image-->
-            <div class='center'>
-            <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cd6a722e5e5f0d283a16783/1557571367201/PLNT_LS_4946.jpg" id="success-logo" class="center">
-            </div>
-            <br>
-            <p><h1><b>Welcome to PLNT Protein</b></h1></p>
             <br>
             <p>We’re processing your order now and we’ll email tracking info as soon as it hits the post.</p>
             <br>
             <p>In the meantime, text <b>Hi</b> on <b>0748.080.3557</b> to activate your new account, save our number and discover all the great stuff you can expect from your account.</p>
             <br>
-            <p>Text us anytime you want to resupply with a new fresh box or have questions 🙋</p>
+            <p>Text us anytime you want to reorder a new fresh box of chocolates or have questions 🙋</p>
             <br>
             <p>Thanks Xx</p>
             <br>
-
             <div class="form-group">  
               <button type="submit">RETURN HOMEPAGE</button>
             </div>
-  
-        <!--CHECKOUT FOOTER SECTION--> 
-        <div >
             <br>
-              <label class="headline">
-          </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
   
-          <style>
-          #success-logo {
-            text-align: center;
-            width: 100%;
-            background-color: #EDEDEB;
-            margin-left: 0px 0px;
-            margin-right: 0px 0px;
-          }
-          .stripe-trust {
-            padding-top:10px;
-            text-align:center;
-            font-size: 10px;
-            color: gray;
-            padding: 5px;
-          }
-  
-          #stripe-logo.center{
-            padding: 0px 0px 0px;
-          }
-  
-          #lock-logo {
-            width: 10px;
-          }
-  
-        </style>
-  
-          <!--<div class="footer"></div>-->
-            <!--Seal of Trust-->
-                <p class="trust">London, UK, NW2 2DT</p>
-                <p class="trust">© PLNT Protein Ltd 2019. All Rights Reserved</p>
-                <br>
-                <br> 
-                <img src="https://static1.squarespace.com/static/5bd9e4cada02bc21c601c67e/t/5cdbba95633c16000186c61b/1557904023847/vsubadge_0.jpg" alt="VSULogo" class="center" style="width:60px;">   
-                <br> 
-                <br>
-                <style>
-                  .footer-links{
-                    text-align:center;
-                    font-size: 12px;
-                    color: gray;
-                  }
-                  .trust {
-                    text-align:center;
-                    font-size: 12px;
-                    color: gray;
-                    font-weight: bold;
-                  }
-                  #vsu-trust {
-                    text-align:center;
-                  }
-                  </style>  
+    <!-- Footer -->
+    <section>
+        <div class="w3-container">
+          <div class="col-md-3">
+              <img src="https://dl.dropboxusercontent.com/s/19vxqsnogv5o4mp/Gubel_logo-white.png?dl=0" src="blank.gif" style="width:100px">   
+              
+         </div>
+         <div class="col-md-3">
+            <a href='sms:+447480803557'><p id="trust">0748.080.3557</p></a>
+            <a href='https://www.instagram.com/gubel_uk'><p id="trust">@gubel_UK</p></a>
+           <a href='mailto:hi@gubel.co.uk'><p id="trust">hi@gubel.co.uk</p></a>
+             
+       </div>
+       <div class="col-md-3">
+          <a href='https://www.gubel.co.uk/terms-of-service'><p id="trust">Terms of Service</p></a>
+          <a href='https://www.gubel.co.uk/privacy-policy'><p id="trust">Privacy Policy</p></a>
+          <a href='https://www.gubel.co.uk/sms-policy'><p id="trust">SMS Policy</p></a>
+          
+     </div>
+     <div class="col-md-3">
+        <p id="trust">London, UK, NW2</p>
+        <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p>
+        
+   </div>
+        </div>
+      </section>
+              <style>
+                
+                .footer-links{
+                  text-align:left;
+                  font-size: 12px;
+                  color: white;
+                }
+                #trust {
+                  text-align:left;
+                  font-size: 12px;
+                  color: white;
+                }
+
+                #vsu-trust {
+                  text-align:center;
+                }
+                </style>  
   
     </form>
     
