@@ -13,7 +13,7 @@ stripe.api_key = stripe_secret
 # Create your views here.  
 
 # bottle. 
-def checkout_bottle(request):
+def checkout_jar(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
@@ -34,7 +34,7 @@ def checkout_bottle(request):
             response = redirect('success')
             return response    
     context = {'publishKey': publishKey}
-    template = 'checkout_bottle.html'
+    template = 'checkout_jar.html'
     return render(request,template)
 
 
