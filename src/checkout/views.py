@@ -12,7 +12,7 @@ stripe.api_key = stripe_secret
 
 # Create your views here.  
 
-# bottle. 
+# Gold Jar. 
 def checkout_jar(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
@@ -37,6 +37,31 @@ def checkout_jar(request):
     template = 'checkout_jar.html'
     return render(request,template)
 
+
+# Box. 
+def checkout_box(request):
+    publishKey = settings.STRIPE_PUBLIC_KEY
+    if request.method == 'POST':
+        token = request.POST['stripeToken']
+        try:
+            customer = stripe.Customer.create(
+                description="new customer",
+                source=token
+            )
+        except stripe.error.CardError as e:
+           pass
+        else:
+            charge = stripe.Charge.create(      #added create Charge
+            amount=2000,
+            currency="gbp",
+            description="Box",
+            customer=customer                #added source customer
+            )
+            response = redirect('success')
+            return response    
+    context = {'publishKey': publishKey}
+    template = 'checkout_box.html'
+    return render(request,template)
 
 
 # mix box. 
