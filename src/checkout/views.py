@@ -26,7 +26,7 @@ def checkout_jar(request):
            pass
         else:
             charge = stripe.Charge.create(      #added create Charge
-            amount=500,
+            amount=700,
             currency="gbp",
             description="jar",
             customer=customer                #added source customer
