@@ -19,7 +19,7 @@
     <link href="assets/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:801px)">
         
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     
@@ -730,14 +730,35 @@
             <div class="col-sm-6">
                 <h1 class='home-heading'></h1>
                 <img src="https://dl.dropboxusercontent.com/s/0d3dzbn58spv34y/gold-jar-3.png?dl=0" id="hero-2-logo" class="product">
-                <!--<img src="https://dl.dropboxusercontent.com/s/whdsdzeqouv84z0/IMG-final5.png?dl=0" id="hero-2-logo" class="product">
-                <br>
-                <img src="https://dl.dropboxusercontent.com/s/jk72u2qqayiho6s/IMG-wrapping-2.png?dl=0" id="hero-2-logo" class="product">-->
+                
+                
+                
+              
               </div>
             <div class="col-sm-6">
                 <h2 class="home-heading">Gold Jar</h2>
                   <p class='home-small'>Embodying our passion for chocolate and the finest hazelnuts, our vegan truffles are rounds of chocolatey rich ganache made with hazelnuts, cashews and infused with cacao and L-theanine that we tenderly scoop and shape individually. We then dip them in fair trade 70% dark Belgian chocolate and hazelnut nibs for a crunchy bite. They’re beautiful and eating anytime can become your special moment.</p>
                   <p class='home-small-small'>Ingredients: 70% Dark Belgian Chocolate, Hazelnuts, Cashews, Organic Cacao Powder, Madagascan Vanilla Extract, Schisandra Berry, L-Theanine, Himalayan Pink Sea Salt, Natural Sweetener (Stevia).</p>
+                  <p class='home-small-small'>Nutrition Facts: 3 servings per container. Serving size: 2 pieces (21g). Amount Per Serving: Calories 110. Total Fat: 13g (15% Daily Value*). Saturated Fat: 2g (5% DV). Trans Fat: 0g (0% DV). Sodium: 38mg (2% DV). Total Carbohydrate: 3g (1% DV). Dietary Fibre: 2g (7% DV). Total Sugars: 1g, includes 0g Added Sugars (0% DV). Protein: 4g (7% DV)> *The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</p>
+                  
+                  <a href="#" data-featherlight="#modal-example">Show me!</a>
+                  <div id="modal-example" class="modal">Now I can fill my div with lots of cool modal stuff</div>
+
+                  <style>
+                  .modal { 
+                    display: none; 
+                }
+
+                </style>
+
+                <script>
+                $.featherlight.prototype.afterContent = function () {
+                    var caption = this.$currentTarget.find('img').attr('title');
+                    this.$instance.find('.caption').remove();
+                    $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
+                }
+                </script>
+
                   <p class='home-small'>Includes 6 chocolate truffles </p>
                   <label class='underline'></label>
                   <p class="home-small">Price: &nbsp;&nbsp;£7</p>
@@ -780,7 +801,7 @@
           
      </section>
 
-<!-- Section 6 - See Beautiful   -->
+<!-- Section 6 - See Beautiful   
 <section>
         
   <div class="w3-container">
@@ -791,24 +812,24 @@
       
 
         <div class="col-sm-3">
-          <img src="https://dl.dropboxusercontent.com/s/zhk6205hgngeabd/1-start-4.png?dl=0" id="hero-2-logo" class="product">
+          <img src="https://dl.dropboxusercontent.com/s/3ykut26mpnx037e/see-beautiful-4.png?dl=0" id="hero-2-logo" class="product">
           </div>
 
         <div class="col-sm-3">
-          <img src="https://dl.dropboxusercontent.com/s/zhk6205hgngeabd/1-start-4.png?dl=0" id="hero-2-logo" class="product">
+          <img src="https://dl.dropboxusercontent.com/s/roqr1e4m86fjqsq/see-beautiful-3.png?dl=0" id="hero-2-logo" class="product">
           </div>
         
         <div class="col-sm-3">
-          <img src="https://dl.dropboxusercontent.com/s/zhk6205hgngeabd/1-start-4.png?dl=0" id="hero-2-logo" class="product">
+          <img src="https://dl.dropboxusercontent.com/s/e7i2d568wvclt6r/see-beautiful-7.png?dl=0" id="hero-2-logo" class="product">
             </div>
 
         <div class="col-sm-3">
-          <img src="https://dl.dropboxusercontent.com/s/zhk6205hgngeabd/1-start-4.png?dl=0" id="hero-2-logo" class="product">
+          <img src="https://dl.dropboxusercontent.com/s/iycbj21whhtt5qc/see-beautiful-2.png?dl=0" id="hero-2-logo" class="product">
           </div>
 
       </div>
 
-    <br>
+    <br>-->
 
     <!-- Section 5 FAQ -->
     <section>
