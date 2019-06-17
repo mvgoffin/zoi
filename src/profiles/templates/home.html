@@ -948,6 +948,7 @@
               outline: none;
               font-size: 15px;
               transition: 0.4s;
+              border-radius: 0px;
             }
 
             .active, .accordion:hover {
@@ -955,6 +956,7 @@
               border-left-width: 10px;
               border-left-style: solid;
               border-left-color: #FFB833 ;
+              border-radius: 0px;
             }
 
             .panel {
@@ -964,6 +966,8 @@
               max-height: 0;
               overflow: hidden;
               transition: max-height 0.2s ease-out;
+              border-radius: 0px;
+
             }
 
             .accordion:after {
@@ -972,10 +976,12 @@
               color: #EDEDEB;
               float: right;
               margin-left: 5px;
+              border-radius: 0px;
             }
 
             .active:after {
               content: "\2796"; /* Unicode character for "minus" sign (-) */
+              border-radius: 0px;
             }
         </style>
 
