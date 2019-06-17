@@ -741,22 +741,14 @@
                   <p class='home-small-small'>Ingredients: 70% Dark Belgian Chocolate, Hazelnuts, Cashews, Organic Cacao Powder, Madagascan Vanilla Extract, Schisandra Berry, L-Theanine, Himalayan Pink Sea Salt, Natural Sweetener (Stevia).</p>
                   <p class='home-small-small'>Nutrition Facts: 3 servings per container. Serving size: 2 pieces (21g). Amount Per Serving: Calories 110. Total Fat: 13g (15% Daily Value*). Saturated Fat: 2g (5% DV). Trans Fat: 0g (0% DV). Sodium: 38mg (2% DV). Total Carbohydrate: 3g (1% DV). Dietary Fibre: 2g (7% DV). Total Sugars: 1g, includes 0g Added Sugars (0% DV). Protein: 4g (7% DV)> *The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</p>
                   
-                  <a href="#" data-featherlight="#modal-example">Show me!</a>
-                  <div id="modal-example" class="modal">Now I can fill my div with lots of cool modal stuff</div>
+                  <img class="lightbox" src="http://placehold.it/350x150"/>
 
                   <style>
-                  .modal { 
-                    display: none; 
-                }
-
+                  
                 </style>
 
                 <script>
-                $.featherlight.prototype.afterContent = function () {
-                    var caption = this.$currentTarget.find('img').attr('title');
-                    this.$instance.find('.caption').remove();
-                    $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
-                }
+                $('.lightbox').featherlight({targetAttr:'src',type:'image'})
                 </script>
 
                   <p class='home-small'>Includes 6 chocolate truffles </p>
