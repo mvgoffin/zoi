@@ -12,8 +12,8 @@ stripe.api_key = stripe_secret
 
 # Create your views here.  
 
-# Gold Jar. 
-def checkout_jar(request):
+# Gubel Bottle. 
+def checkout_bottle(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
@@ -28,13 +28,13 @@ def checkout_jar(request):
             charge = stripe.Charge.create(      #added create Charge
             amount=700,
             currency="gbp",
-            description="jar",
+            description="bottle",
             customer=customer                #added source customer
             )
             response = redirect('success')
             return response    
     context = {'publishKey': publishKey}
-    template = 'checkout_jar.html'
+    template = 'checkout_bottle.html'
     return render(request,template)
 
 
