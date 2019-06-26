@@ -13,8 +13,8 @@ from django.conf import settings
 
 # Create your views here.
 
-#Register Gubel Jar
-def register_jar(request):
+#Register Gubel Bottle
+def register_bottle(request):
     form = AccountForm(request.POST)
 
     name = request.POST.get('name')
@@ -37,12 +37,12 @@ def register_jar(request):
 
         form.save()
         
-        response = redirect('checkout_jar')
+        response = redirect('checkout_bottle')
         return response
     else:
         form = AccountForm()
     
-    return render(request, 'register_jar.html', {'form': form}) #this is render on HTML
+    return render(request, 'register_bottle.html', {'form': form}) #this is render on HTML
 
 
 #Reorder Gubel
