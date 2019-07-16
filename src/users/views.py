@@ -45,7 +45,7 @@ def register_bottle(request):
     return render(request, 'register_bottle.html', {'form': form}) #this is render on HTML
 
 
-#Reorder Gubel
+#Reorder Gubel Box
 def register_box(request):
     form = AccountForm(request.POST)
 
