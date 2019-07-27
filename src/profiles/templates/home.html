@@ -223,7 +223,8 @@
             
 
             .header{
-              background-color: white;
+              background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(252,249,247,1));
+              z-index: 99;
               /**border-bottom-style: solid;
               border-bottom-color: #000000;
               border-bottom-width: thin;**/
@@ -349,7 +350,7 @@
           width: 200px;
           padding-top: 20px;
           padding-bottom: 20px;
-          background-color: white;
+          /**background-color: white;**/
         }
 
         * {
@@ -689,9 +690,9 @@
 <body>
   
   <!-- Header -->
-    <div class="header">
+    <div class="header" id="header">
       <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
-      </div>
+      </div>  
 
       <style>
       /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -712,7 +713,7 @@
       window.onscroll = function() {myFunction()};
 
       // Get the header
-      var header = document.getElementById("myHeader");
+      var header = document.getElementById("header");
 
       // Get the offset position of the navbar
       var sticky = header.offsetTop;
