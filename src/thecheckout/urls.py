@@ -17,7 +17,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-from dajaxice.core import dajaxice_autodiscover, dajaxice_config
 
 from profiles import views
 from checkout import views as checkout_views
