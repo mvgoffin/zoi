@@ -83,17 +83,17 @@ def checkout_sca(request):
         try:
             intent = stripe.PaymentIntent.create(
                 payment_method = data['payment_method_id'],
-                amount = 1099,
+                amount = 100,
                 currency = 'gbp',
                 confirmation_method = 'manual',
                 confirm = True,
             )
-            else 'payment_intent_id' in data:
-            intent = stripe.PaymentIntent.confirm(data['payment_intent_id'])
         except stripe.error.CardError as e:
+            pass
+        else 'payment_intent_id' in data:
+            intent = stripe.PaymentIntent.confirm(data['payment_intent_id'])
      # Display error on client
-             return json.dumps({'error': e.user_message}), 200
-
+            return json.dumps({'error': e.user_message}), 200
     return generate_payment_response(intent)
 
 def generate_payment_response(intent):
