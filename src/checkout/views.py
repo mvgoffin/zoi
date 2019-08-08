@@ -75,8 +75,10 @@ def checkout_box(request):
 # Gubel SCA.
 
 def checkout_sca(request):
-    #data = request.get_json()
-   # intent = None
+    data = request.get_json()
+    intent = None
+    try:
+
         if request.method == 'POST' and 'payment_method_id' in data:
       # Create the PaymentIntent
         #try:
@@ -87,12 +89,12 @@ def checkout_sca(request):
                 confirmation_method = 'manual',
                 confirm = True,
             )
-        
         elif 'payment_intent_id' in data:
             intent = stripe.PaymentIntent.confirm(data['payment_intent_id'])
     except stripe.error.CardError as e:
+            pass
      # Display error on client
-        return json.dumps({'error': e.user_message}), 200
+            return json.dumps({'error': e.user_message}), 200
     return generate_payment_response(intent)
 
 def generate_payment_response(intent):
