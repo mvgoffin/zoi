@@ -75,7 +75,8 @@ def checkout_box(request):
 # Gubel SCA.
 
 def checkout_sca(request):
-    #data = request.get_json()
+    received_json_data=json.loads(request.body)
+    data = request.get_json()
     intent = None
     try:
 
