@@ -73,11 +73,12 @@ def checkout_box(request):
 
 
 
+
 # Gubel SCA.
 
 def checkout_sca(request):
-    received_json_data=json.loads(request.body)
-    data = json.loads(myResponse.content.decode(chardet.detect(myResponse.content)["encoding"]))
+    data=json.loads(request.body)
+    
     intent = None
     try:
 
