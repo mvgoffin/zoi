@@ -72,31 +72,51 @@ def checkout_box(request):
 
 
 # Gubel SCA.
-def checkout_sca(request):
-    publishKey = settings.STRIPE_PUBLIC_KEY
-    if request.method == 'POST':
-        token = request.POST['stripeToken']
-        try:
-            customer = stripe.Customer.create(
-                description="new customer",
-                source=token
-            )
-        except stripe.error.CardError as e:
-           pass
-        else:
-            charge = stripe.Charge.create(      #added create Charge
-            amount=985,
-            currency="gbp",
-            description="Gubel Box",
-            customer=customer                #added source customer
-            )
-            response = redirect('success')
-            return response    
-    context = {'publishKey': publishKey}
-    template = 'checkout_box.html'
-    return render(request,template)
 
 
+
+#@app.route('/ajax/confirm_payment', methods=['POST'])
+
+#def checkout_sca(request):
+
+def checkout_sca(methods=['POST']):
+  data = request.get_json()
+  intent = None
+
+  try:
+    if 'payment_method_id' in data:
+      # Create the PaymentIntent
+      intent = stripe.PaymentIntent.create(
+        payment_method = data['payment_method_id'],
+        amount = 1099,
+        currency = 'gbp',
+        confirmation_method = 'manual',
+        confirm = True,
+      )
+    elif 'payment_intent_id' in data:
+      intent = stripe.PaymentIntent.confirm(data['payment_intent_id'])
+  except stripe.error.CardError as e:
+    # Display error on client
+    return json.dumps({'error': e.user_message}), 200
+
+  return generate_payment_response(intent)
+
+def generate_payment_response(intent):
+  # Note that if your API version is before 2019-02-11, 'requires_action'
+  # appears as 'requires_source_action'.
+  if intent.status == 'requires_action' and intent.next_action.type == 'use_stripe_sdk':
+    # Tell the client to handle the action
+    return json.dumps({
+      'requires_action': True,
+      'payment_intent_client_secret': intent.client_secret,
+    }), 200
+  elif intent.status == 'succeeded':
+    # The payment didn’t need any additional actions and completed!
+    # Handle post-payment fulfillment
+    return json.dumps({'success': True}), 200
+  else:
+    # Invalid status
+    return json.dumps({'error': 'Invalid PaymentIntent status'}), 500
 
 
 
