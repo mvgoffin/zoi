@@ -3,6 +3,9 @@ from django.conf import settings
 from django.shortcuts import render
 from django.shortcuts import redirect
 
+from django.http import JsonResponse
+import json
+
 import stripe
 
 stripe_pub = settings.STRIPE_PUBLIC_KEY
@@ -66,7 +69,7 @@ def checkout_box(request):
 
 # Gubel SCA.
 # AJAX endpoint when `/ajax/confirm_payment` is called from client
-@app.route('/ajax/confirm_payment', methods=['POST'])
+@views.route('/ajax/confirm_payment', methods=['POST'])
 def confirm_payment():
   data = request.get_json()
   intent = None
