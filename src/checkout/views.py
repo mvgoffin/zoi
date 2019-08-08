@@ -8,6 +8,7 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
 
 import requests
+import json
 
 import stripe
 
@@ -75,7 +76,7 @@ def checkout_box(request):
 # Gubel SCA.
 
 def checkout_sca(request):
-    #data = request.body.decode('utf-8') 
+    data = request.body.decode('utf-8') 
     received_json_data = json.loads(request.body.decode("utf-8"))
     intent = None
     try:
