@@ -76,8 +76,8 @@ def checkout_box(request):
 # Gubel SCA.
 
 def checkout_sca(request):
-    data = request.GET.get('payment_method_id'):
-    intent = None
+   # data = request.GET.get('payment_method_id'):
+    #intent = None
     try:
 
         if request.method == 'POST' and 'payment_method_id' in data:
