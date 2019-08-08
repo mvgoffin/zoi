@@ -76,7 +76,7 @@ def checkout_box(request):
 # Gubel SCA.
 
 def checkout_sca(request):
-    data = request.GET.get('checkout_sca'):
+    data = request.body.decode('utf-8')
     intent = None
     try:
 
