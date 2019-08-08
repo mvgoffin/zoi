@@ -63,6 +63,30 @@ def checkout_box(request):
     template = 'checkout_box.html'
     return render(request,template)
 
+# Gubel SCA. 
+def checkout_sca(request):
+    publishKey = settings.STRIPE_PUBLIC_KEY
+    if request.method == 'POST':
+        token = request.POST['stripeToken']
+        try:
+            customer = stripe.Customer.create(
+                description="new customer",
+                source=token
+            )
+        except stripe.error.CardError as e:
+           pass
+        else:
+            charge = stripe.Charge.create(      #added create Charge
+            amount=785,
+            currency="gbp",
+            description="Gubel SCA",
+            customer=customer                #added source customer
+            )
+            response = redirect('success')
+            return response    
+    context = {'publishKey': publishKey}
+    template = 'checkout_sca.html'
+    return render(request,template)
 
 # mix box. 
 def checkout_mx(request):

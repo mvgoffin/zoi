@@ -38,6 +38,7 @@ urlpatterns = [
     #path('access_code/', user_views.access_code, name='access_code'),
     path('checkout_bottle/', checkout_views.checkout_bottle, name='checkout_bottle'),
     path('checkout_box/', checkout_views.checkout_box, name='checkout_box'),
+    path('checkout_sca/', checkout_views.checkout_sca, name='checkout_sca'),
     #path('checkout_box/', checkout_views.checkout_box, name='checkout_box'),
     #path('checkout_mx/', checkout_views.checkout_mx, name='checkout_mx'),
     #path('checkout_le/', checkout_views.checkout_le, name='checkout_le'),
