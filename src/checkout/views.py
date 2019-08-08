@@ -4,7 +4,10 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 
 from django.http import JsonResponse
+
+from urls import views
 import json
+
 
 import stripe
 
