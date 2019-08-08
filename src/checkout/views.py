@@ -2,7 +2,7 @@ from django.http import HttpResponseRedirect
 from django.conf import settings
 from django.shortcuts import render
 from django.shortcuts import redirect
-
+from thecheckout import urls
 
 from django.http import JsonResponse
 #from flask import jsonify
@@ -75,11 +75,11 @@ def checkout_box(request):
 
 
 
-#@app.route('/ajax/confirm_payment', methods=['POST'])
+@urls.route('checkout_sca', methods=['POST'])
 
 #def checkout_sca(request):
 
-def checkout_sca(methods=['POST']):
+def checkout_sca():
   data = request.get_json()
   intent = None
 
