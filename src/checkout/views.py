@@ -9,6 +9,7 @@ from django.views.decorators.http import require_http_methods
 
 import json
 import requests
+import chardet
 
 import stripe
 
@@ -76,7 +77,7 @@ def checkout_box(request):
 
 def checkout_sca(request):
     received_json_data=json.loads(request.body)
-    data = json.loads(myResponse.content.decode('utf-8'))
+    data = json.loads(myResponse.content.decode(chardet.detect(myResponse.content)["encoding"]))
     intent = None
     try:
 
