@@ -77,7 +77,7 @@ def checkout_sca(request):
            pass
         else:
             charge = stripe.Charge.create(      #added create Charge
-            amount=785,
+            amount=100,
             currency="gbp",
             description="Gubel SCA",
             customer=customer                #added source customer
