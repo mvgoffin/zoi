@@ -5,7 +5,7 @@ from django.shortcuts import redirect
 
 
 from django.http import JsonResponse
-from flask import jsonify
+#from flask import jsonify
 
 import json
 
