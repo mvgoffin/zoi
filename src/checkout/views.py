@@ -2,7 +2,7 @@ from django.http import HttpResponseRedirect
 from django.conf import settings
 from django.shortcuts import render
 from django.shortcuts import redirect
-from  import apps
+
 
 from django.http import JsonResponse
 from flask import jsonify
