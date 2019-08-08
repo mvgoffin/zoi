@@ -71,25 +71,35 @@ def checkout_box(request):
     return render(request,template)
 
 
+publishKey = settings.STRIPE_PUBLIC_KEY
+    if request.method == 'POST':
+        token = request.POST['stripeToken']
+        try:
+            customer = stripe.Customer.create(
+                description="new customer",
+                source=token
+            )
+        except stripe.error.CardError as e:
+           pass
+
 # Gubel SCA.
 
 def checkout_sca(request):
-    #publishKey = settings.STRIPE_PUBLIC_KEY
     data = request.get_json()
     intent = None
 
-  try:
     if request.method == 'POST' and 'payment_method_id' in data:
       # Create the PaymentIntent
-      intent = stripe.PaymentIntent.create(
-        payment_method = data['payment_method_id'],
-        amount = 1099,
-        currency = 'gbp',
-        confirmation_method = 'manual',
-        confirm = True,
-      )
+      try:
+            intent = stripe.PaymentIntent.create(
+                payment_method = data['payment_method_id'],
+                amount = 1099,
+                currency = 'gbp',
+                confirmation_method = 'manual',
+                confirm = True,
+            )
     elif 'payment_intent_id' in data:
-      intent = stripe.PaymentIntent.confirm(data['payment_intent_id'])
+            intent = stripe.PaymentIntent.confirm(data['payment_intent_id'])
   except stripe.error.CardError as e:
     # Display error on client
     return json.dumps({'error': e.user_message}), 200
