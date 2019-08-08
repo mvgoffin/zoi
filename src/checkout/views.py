@@ -73,15 +73,10 @@ def checkout_box(request):
 
 # Gubel SCA.
 
-
-
-@urls.route('checkout_sca', methods=['POST'])
-
-#def checkout_sca(request):
-
-def checkout_sca():
-  data = request.get_json()
-  intent = None
+def checkout_sca(request):
+    #publishKey = settings.STRIPE_PUBLIC_KEY
+    data = request.get_json()
+    intent = None
 
   try:
     if 'payment_method_id' in data:
