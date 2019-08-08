@@ -77,7 +77,7 @@ def checkout_box(request):
 
 def checkout_sca(request):
     data = request.body.decode('utf-8') 
-    received_json_data = json.loads(request.body.decode("utf-8"))
+    #received_json_data = json.loads(request.body.decode("utf-8"))
     intent = None
     try:
 
