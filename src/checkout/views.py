@@ -5,7 +5,6 @@ from django.shortcuts import redirect
 from thecheckout import urls
 
 from django.http import JsonResponse
-#from flask import jsonify
 
 import json
 
@@ -71,16 +70,6 @@ def checkout_box(request):
     return render(request,template)
 
 
-publishKey = settings.STRIPE_PUBLIC_KEY
-    if request.method == 'POST':
-        token = request.POST['stripeToken']
-        try:
-            customer = stripe.Customer.create(
-                description="new customer",
-                source=token
-            )
-        except stripe.error.CardError as e:
-           pass
 
 # Gubel SCA.
 
