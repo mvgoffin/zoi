@@ -66,7 +66,7 @@ def checkout_box(request):
 
 # Gubel SCA.
 # AJAX endpoint when `/ajax/confirm_payment` is called from client
-@app.route('/ajax/confirm_payment', methods=['POST'])
+@app.route('/checkout_sca', methods=['POST'])
 def confirm_payment():
   data = request.get_json()
   intent = None
@@ -116,30 +116,7 @@ def generate_payment_response(intent):
 
 
 
-# Gubel SCA. 
-def checkout_sca(request):
-    publishKey = settings.STRIPE_PUBLIC_KEY
-    if request.method == 'POST':
-        token = request.POST['stripeToken']
-        try:
-            customer = stripe.Customer.create(
-                description="new customer",
-                source=token
-            )
-        except stripe.error.CardError as e:
-           pass
-        else:
-            charge = stripe.Charge.create(      #added create Charge
-            amount=100,
-            currency="gbp",
-            description="Gubel SCA",
-            customer=customer                #added source customer
-            )
-            response = redirect('success')
-            return response    
-    context = {'publishKey': publishKey}
-    template = 'checkout_sca.html'
-    return render(request,template)
+
 
 # mix box. 
 def checkout_mx(request):
