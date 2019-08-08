@@ -1165,7 +1165,7 @@
               // Show error in payment form
             } else {
               // Otherwise send paymentMethod.id to your server (see Step 2)
-              fetch('/confirm_payment', {
+              fetch('/ajax/confirm_payment', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ payment_method_id: result.paymentMethod.id })
