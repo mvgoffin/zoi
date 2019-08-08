@@ -5,6 +5,7 @@ from django.shortcuts import redirect
 from thecheckout import urls
 
 from django.http import JsonResponse
+from django.views.decorators.http import require_http_methods
 
 import json
 
@@ -87,7 +88,7 @@ def checkout_sca(request):
                 confirmation_method = 'manual',
                 confirm = True,
             )
-        else 'payment_intent_id' in data:
+        elif 'payment_intent_id' in data:
             intent = stripe.PaymentIntent.confirm(data['payment_intent_id'])
         except stripe.error.CardError as e:
      # Display error on client
