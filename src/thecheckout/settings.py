@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'stripe',
     'users',
     'webpush',
+    'dajaxice',
+    'dajax',
 ]
 
 MIDDLEWARE = [
