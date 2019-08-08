@@ -90,7 +90,7 @@ def checkout_sca(request):
             )
         except stripe.error.CardError as e:
             pass
-        elif 'payment_intent_id' in data:
+          elif 'payment_intent_id' in data:
             intent = stripe.PaymentIntent.confirm(data['payment_intent_id'])
      # Display error on client
             return json.dumps({'error': e.user_message}), 200
