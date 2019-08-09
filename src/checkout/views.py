@@ -85,8 +85,8 @@ def checkout_sca():
             amount=100,
             currency='gbp',
             )
-        except stripe.error.CardError as e:
-            pass
+        #except stripe.error.CardError as e:
+        #    pass
         else:
         charges = stripe.Charge.list(
             payment_intent = '{{PAYMENT_INTENT_ID}}',
