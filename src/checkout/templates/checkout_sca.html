@@ -959,7 +959,7 @@
                   <!-- Used to display form errors. -->
                   <div id="card-errors" role="alert" ></div>
                 </div>
-                <button>BUY NOW</button>
+                <button data-secret="{{ client_secret }}">BUY NOW</button>
                 <p class="terms">
                   All transactions are secure and encrypted <img src="https://dl.dropboxusercontent.com/s/6j0heupqgzuw85v/lock-3.png?dl=0" style="width:15px;"></p>
                       <style>
@@ -971,7 +971,7 @@
                           }
                         </style>
                 
-                
+               
 
 
                 <!--Three Promises
@@ -1156,28 +1156,24 @@
 //SCA 
         var cardholderName = document.getElementById('cardholder-name');
         var cardButton = document.getElementById('card-button');
+        var clientSecret = cardButton.dataset.secret;
 
         cardButton.addEventListener('click', function(ev) {
-          stripe.createPaymentMethod('card', cardElement, {
-            billing_details: {name: cardholderName.value}
-          }).then(function(result) {
+          stripe.handleCardPayment(
+            clientSecret, cardElement, {
+              payment_method_data: {
+                billing_details: {name: cardholderName.value}
+              }
+            }
+          ).then(function(result) {
             if (result.error) {
-              // Show error in payment form
+              // Display error.message in your UI.
             } else {
-              // Otherwise send paymentMethod.id to your server (see Step 2)
-              fetch('checkout_sca', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ payment_method_id: result.paymentMethod.id })
-              }).then(function(result) {
-                // Handle server response (see Step 3)
-                result.json().then(function(json) {
-                  handleServerResponse(json);
-                })
-              });
+              // The payment has succeeded. Display a success message.
             }
           });
         });
+
 
 
 
