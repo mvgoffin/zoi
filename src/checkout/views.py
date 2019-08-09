@@ -90,7 +90,8 @@ def checkout_sca(request):
     context = {'publishKey': publishKey}
     template = 'checkout_sca.html'
     #client_secret=intent.client_secret
-    return render(request,template, client_secret=intent.client_secret)
+    #return render(request,template, client_secret=intent.client_secret)
+    return render(request,template)
 
 
 
