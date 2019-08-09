@@ -79,6 +79,7 @@ def checkout_box(request):
 
 def checkout_sca(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
+    intent = None
     if request.method == 'POST':
          intent = stripe.PaymentIntent.create(
             amount=100,
