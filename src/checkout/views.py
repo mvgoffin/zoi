@@ -93,7 +93,7 @@ def checkout_sca():
             # Limit the number of objects to return (the default is 10)
         #    limit = 3,
         #    )
-    return render_template('checkout_sca.html', client_secret=intent.client_secret)
+        return render_template('checkout_sca.html', client_secret=intent.client_secret)
 
 
 
