@@ -77,7 +77,7 @@ def checkout_box(request):
 
 
 
-def checkout_sca():
+def checkout_sca(requests):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
          intent = stripe.PaymentIntent.create(
@@ -86,7 +86,7 @@ def checkout_sca():
             )
         #except stripe.error.CardError as e:
         #    pass
-        #return render_template('checkout_sca.html', client_secret=intent.client_secret)
+    return render_template('checkout_sca.html', client_secret=intent.client_secret)
 
 
 
