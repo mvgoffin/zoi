@@ -87,12 +87,12 @@ def checkout_sca():
             )
         #except stripe.error.CardError as e:
         #    pass
-        else:
-        charges = stripe.Charge.list(
-            payment_intent = '{{PAYMENT_INTENT_ID}}',
+        #else:
+        #charges = stripe.Charge.list(
+        #    payment_intent = '{{PAYMENT_INTENT_ID}}',
             # Limit the number of objects to return (the default is 10)
-            limit = 3,
-            )
+        #    limit = 3,
+        #    )
   return render_template('checkout_sca.html', client_secret=intent.client_secret)
 
 
