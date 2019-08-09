@@ -78,16 +78,16 @@ def checkout_box(request):
 
 
 def checkout_sca():
-    #publishKey = settings.STRIPE_PUBLIC_KEY
-    #if request.method == 'POST':
-    #     try:
+    publishKey = settings.STRIPE_PUBLIC_KEY
+    if request.method == 'POST':
+         try:
             intent = stripe.PaymentIntent.create(
             amount=100,
             currency='gbp',
             )
-    #    except stripe.error.CardError as e:
-    #        pass
-    #    else:
+        except stripe.error.CardError as e:
+            pass
+        else:
         charges = stripe.Charge.list(
             payment_intent = '{{PAYMENT_INTENT_ID}}',
             # Limit the number of objects to return (the default is 10)
