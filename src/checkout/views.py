@@ -86,7 +86,7 @@ def checkout_sca():
             )
         #except stripe.error.CardError as e:
         #    pass
-        return render_template('checkout_sca.html', client_secret=intent.client_secret)
+        #return render_template('checkout_sca.html', client_secret=intent.client_secret)
 
 
 
