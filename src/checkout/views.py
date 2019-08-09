@@ -85,6 +85,8 @@ def checkout_sca(request):
             amount=100,
             currency='gbp',
             )
+            response = redirect('success')
+            return response
         #except stripe.error.CardError as e:
         #    pass
     context = {'publishKey': publishKey}
