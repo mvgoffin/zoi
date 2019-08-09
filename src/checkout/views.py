@@ -80,7 +80,7 @@ def checkout_sca(request):
     #intent =  null
     
     #try:
-        if request.method == 'POST' and 'payment_method_id' in data:
+    if request.method == 'POST' and 'payment_method_id' in data:
       # Create the PaymentIntent
         try:
             intent = stripe.PaymentIntent.create(
