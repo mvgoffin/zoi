@@ -90,8 +90,8 @@ def checkout_sca(request):
                 confirmation_method = 'manual',
                 confirm = True,
             )
-            elif 'payment_intent_id' in data:
-            intent = stripe.PaymentIntent.confirm(data['payment_intent_id'])
+            #elif 'payment_intent_id' in data:
+            #intent = stripe.PaymentIntent.confirm(data['payment_intent_id'])
         except stripe.error.CardError as e:
             pass
      # Display error on client
