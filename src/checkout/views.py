@@ -77,7 +77,7 @@ def checkout_box(request):
 
 def checkout_sca(request):
     data = request.body.decode('utf-8') #received_json_data = json.loads(data)
-    #intent = None
+    intent =  null
     
     try:
         if request.method == 'POST' and 'payment_method_id' in data:
