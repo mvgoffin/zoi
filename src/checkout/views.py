@@ -77,7 +77,7 @@ def checkout_box(request):
 
 
 
-def checkout_sca(requests):
+def checkout_sca(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
          intent = stripe.PaymentIntent.create(
