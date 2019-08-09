@@ -79,13 +79,13 @@ def checkout_box(request):
 
 def checkout_sca():
     #publishKey = settings.STRIPE_PUBLIC_KEY
-    #if request.method == 'POST':
+    if request.method == 'POST':
     #     try:
             intent = stripe.PaymentIntent.create(
             amount=100,
             currency='gbp',
             )
-            
+
         #except stripe.error.CardError as e:
         #    pass
         #else:
