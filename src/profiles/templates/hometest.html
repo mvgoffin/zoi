@@ -824,7 +824,7 @@
             <br>
             <br>
               
-                <form method="POST" action="{% url 'register_bottle' %}">{% csrf_token %}
+                <div method="POST" action="{% url 'register_bottle' %}">{% csrf_token %}
                   <div class="col-sm-6">
                   <h1 class='home-heading'></h1>
                   <img src="https://dl.dropboxusercontent.com/s/hyqcm2xxz7opj7g/Bottle-Gubel.jpg?dl=0" id="product-image" class="product">
@@ -835,11 +835,11 @@
                   <p class="product-small">Price: &nbsp;&nbsp;£5</p>
                   <button type="submit">BUY NOW</button> 
                   </div>
-                  </form>
+                </div>
                 
                 
              
-                <form method="POST" action="{% url 'register_box' %}">{% csrf_token %}
+                <div method="POST" action="{% url 'register_box' %}">{% csrf_token %}
                     <div class="col-sm-6">
                     <h1 class='home-heading'></h1>
                     <img src="https://dl.dropboxusercontent.com/s/hyqcm2xxz7opj7g/Bottle-Gubel.jpg?dl=0" id="product-image" class="product">
@@ -850,7 +850,7 @@
                     <p class="product-small">Price: &nbsp;&nbsp;£5</p>
                     <button type="submit">BUY NOW</button> 
                     </div>
-                    </form>
+                  </div>
                   
                 </div>
               </div>
