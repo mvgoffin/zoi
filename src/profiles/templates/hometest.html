@@ -106,7 +106,7 @@
               background-color: white;
               }
 
-
+            
             .heading{
               font-family: 'titling-gothic-fb', sans-serif;
               padding-top: 30px;
@@ -817,29 +817,15 @@
             
               <br>
             </div>
-          </div>
+      </div>
 
-        <div class="w3-container">
+      </div>
+        
           <div class="row">
             <br>
             <br>
-              
-                <div method="POST" action="{% url 'register_bottle' %}">{% csrf_token %}
-                  <div class="col-sm-6">
-                  <h1 class='home-heading'></h1>
-                  <img src="https://dl.dropboxusercontent.com/s/hyqcm2xxz7opj7g/Bottle-Gubel.jpg?dl=0" id="product-image" class="product">
-                  <br>
-                  <p class='product-title'>calm</p>
-                  <p class="product-small-2">7 chocolates (1-Week Supply)</p>
-                  <label class='underline'></label>
-                  <p class="product-small">Price: &nbsp;&nbsp;£5</p>
-                  <button type="submit">BUY NOW</button> 
-                  </div>
-                </div>
-                
-                
-             
-                <div method="POST" action="{% url 'register_box' %}">{% csrf_token %}
+            
+                <form method="POST" action="{% url 'register_bottle' %}">{% csrf_token %}
                     <div class="col-sm-6">
                     <h1 class='home-heading'></h1>
                     <img src="https://dl.dropboxusercontent.com/s/hyqcm2xxz7opj7g/Bottle-Gubel.jpg?dl=0" id="product-image" class="product">
@@ -850,19 +836,41 @@
                     <p class="product-small">Price: &nbsp;&nbsp;£5</p>
                     <button type="submit">BUY NOW</button> 
                     </div>
-                  </div>
-                  
-                </div>
-              </div>
-           
-            
+                  </form>
               
-
-            
+                  <form method="POST" action="{% url 'register_box' %}">{% csrf_token %}
+                      <div class="col-sm-6">
+                      <h1 class='home-heading'></h1>
+                      <img src="https://dl.dropboxusercontent.com/s/hyqcm2xxz7opj7g/Bottle-Gubel.jpg?dl=0" id="product-image" class="product">
+                      <br>
+                      <p class='product-title'>calm</p>
+                      <p class="product-small-2">7 chocolates (1-Week Supply)</p>
+                      <label class='underline'></label>
+                      <p class="product-small">Price: &nbsp;&nbsp;£5</p>
+                      <button type="submit">BUY NOW</button> 
+                    </div>
+                    </form>
+        </div>
+              
+          
           <label class="headline"></label>
         </div>
      </section>
 
+
+     <style>
+  
+#form1 {
+  
+  display: inline-block;
+  min-width:auto;
+}
+#form2 {
+  
+  display: inline-block;
+  min-width:auto;
+}
+     </style>
     <!-- Section 4 Get Started with Gubel Bottle 
     <section>
       <div class="w3-container">
