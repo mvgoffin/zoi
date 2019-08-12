@@ -119,8 +119,8 @@
 
             .heading-5{
               font-family: 'titling-gothic-fb', sans-serif;
-              padding-top: 30px;
-              padding-bottom: 20px;
+              padding-top: 100px;
+              padding-bottom: 50px;
               margin:auto;
               text-align: center;
               font-weight: 400;
@@ -602,8 +602,8 @@
 
         .col-sm-4 {
           padding-bottom: 10px;
-          padding-left: 30px;
-          padding-right: 30px;
+          padding-left: 50px;
+          padding-right: 50px;
           margin: 0px;
           text-align: center;
         }
@@ -702,8 +702,7 @@
               <div class="row">
             <div class="col-sm-3">
                   <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0" style="width:15px;">
-                  <p>Vegan, gluten free and palm oil free.</p>
-                  
+                  <p>Vegan, gluten free and palm oil free.</p> 
             </div>
              <div class="col-sm-3">
                   <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0"  style="width:15px;">
@@ -725,71 +724,62 @@
         </div>
       </section>
 
-    <!-- Section 2 - How it Workds   
-    <section>
-        
-      <div class="w3-container">
-          <div class="row">
-              <div class="col-md-12">
-          <h1 class="heading-5">How it works?</h1>
-              </div>
-          
 
-            <div class="col-sm-4">
-              <img src="https://dl.dropboxusercontent.com/s/zhk6205hgngeabd/1-start-4.png?dl=0" id="reason">
-              <p class='home-HIW-title'>Start</p>
-              <p class='home-HIW-body'>Get started with a Gubel bottle that includes 6 chocolates.</p>
-            </div>
-
-            <div class="col-sm-4">
-              <img src="https://dl.dropboxusercontent.com/s/eob0vqq847bems7/2-text.png?dl=0"id="reason">
-              <p class='home-HIW-title'>Reorder</p>
-              <p class='home-HIW-body'>Text GUBEL on 0748.080.3557 to reorder more by the box of 9 chocolates. It's easy and quick.</p>
-            </div>
-            
-            <div class="col-sm-4">
-                <img src="https://dl.dropboxusercontent.com/s/50fon6gjzjz5eb9/3-deliver.png?dl=0" id="reason">
-                <p class='home-HIW-title'>Enjoy</p>
-                <p class='home-HIW-body'>Unpack creamy, crunchy, functional chocolates. Add in your bottle wherever you go.</p>
-            </div>
-
-            <p class='HIW-make-impact'>With your reusable bottle, we're building a simple and sustainable model that reduces single use plastic waste<img src="https://dl.dropboxusercontent.com/s/fqs79mo84fp7wht/green-round-recycle-symbol-3.png?dl=0" style="width:15px;"></p>
-          
-          </div>
-
-        <br>
-          /**<--<label class="headline"></label>
-      </div>
-     </section> -->
 
     <!-- Section 3 - About Us --> 
     <section>
       <div class="w3-container">
         <div class="row">
-
             <div class="col-sm-12-3">
               <br>
-              <h1 class="heading">Choose a blend that is right for you &nbsp;&nbsp;</h1><!--<img src="https://dl.dropboxusercontent.com/s/9u9f1kyxnc6djm6/calming%20indulgence.png?dl=0" style="width:30px">-->
-              <!--<p style="text-align:center;white-space:pre-wrap;" class="home-small-1">We're an ethical chocolate brand based in London, founded out of a passion for making chocolate and the calming benefits from green tea extracts to deliver a different kind of chocolate experience.</p>-->
-              <!--<p style="text-align:center;white-space:pre-wrap;" class="home-small-1">We created Gubel as an undeniably delicious treat that also delivers functional benefits, because we all know how stressful 2019 is. That's why we infused theanine, a plant extract naturally found in tea, to help promote feelings of calmness, relaxation and increase creativity.</p>
-              <p style="text-align:center;white-space:pre-wrap;" class="home-small-1">It’s how you wish that afternoon pick-me-up would make you feel.</p>-->
-             
-            
+              <h1 class="heading">Choose a blend that is right for you &nbsp;&nbsp;</h1> 
               <br>
             </div>
-      </div>
-
+        </div>
       </div>
       
       <div class="container">
           <div class="row">
                 <div class="col-md-6">
                 <form method="POST" action="{% url 'register_bottle' %}">{% csrf_token %}
+
+                  
+                    <div id='mycarousel' class='carousel slide' data-ride='carousel'>
+                    <ol class='carousel-indicators'>
+                      <li data-target='#mycarousel' data-slide-to='0' class='active'></li>
+                      <li data-target='#mycarousel' data-slide-to='1'></li>
+                      <li data-target='#mycarousel' data-slide-to='2'></li>
+                    </ol>
+
+                    <div class='carousel-inner'>
+                      <div class='item-active'>
+                        <img src="https://dl.dropboxusercontent.com/s/loxfho4eweskaid/see-beautiful-18.png?dl=0" id="product-image" class="product">
+                      </div>
+                      <div class='item'>
+                        <img src="https://dl.dropboxusercontent.com/s/mkxa484fvcovh7l/see-beautiful-14.png?dl=0" id="product-image" class="product">
+                      </div>
+                      <div class='item'>
+                        <img src="https://dl.dropboxusercontent.com/s/hlp7tclne17hg80/see-beautiful-15.png?dl=0" id="product-image" class="product">
+                      </div>
+                    </div>
+
+                    <a class='left carousel-control' href='#mycarousel' role='button' data-slide='prev'>
+                    <span class='glyphicon glyphicon-chevron-left'></span>
+                    </a>
+                    <a class='right carousel-control' href='#mycarousel' role='button' data-slide='next'>
+                    <span class='glyphicon glyphicon-chevron-right'></span>
+                    </a>
+
+
+                    </div>
                     
-                    <h1 class='home-heading'></h1>
-                    <a href='https://www.gubel.com/calm'><img src="https://dl.dropboxusercontent.com/s/hyqcm2xxz7opj7g/Bottle-Gubel.jpg?dl=0" id="product-image" class="product"></a>
+                
+  
+                  
+            
+                  
                     <br>
-                    <p class='product-title'>calm</p>
+                    <a href='https://www.gubel.com/calm'><p class='product-title'>calm</p></a>
                     <p class="product-small-2">7 chocolates (1-Week Supply)</p>
                     <label class='underline'></label>
                     <p class="product-small">Price: &nbsp;&nbsp;£5</p>
@@ -800,10 +790,38 @@
                 <div class="col-md-6">
                 <form method="POST" action="{% url 'register_box' %}">{% csrf_token %}
                       
-                      <h1 class='home-heading'></h1>
-                      <a href='https://www.gubel.com/skincare'><img src="https://dl.dropboxusercontent.com/s/hyqcm2xxz7opj7g/Bottle-Gubel.jpg?dl=0" id="product-image" class="product"></a>
+                      
+                    <div id='mycarousel' class='carousel slide' data-ride='carousel'>
+                        <ol class='carousel-indicators'>
+                          <li data-target='#mycarousel' data-slide-to='0' class='active'></li>
+                          <li data-target='#mycarousel' data-slide-to='1'></li>
+                          <li data-target='#mycarousel' data-slide-to='2'></li>
+                        </ol>
+    
+                        <div class='carousel-inner'>
+                            <div class='item-active'>
+                              <img src="https://dl.dropboxusercontent.com/s/loxfho4eweskaid/see-beautiful-18.png?dl=0" id="product-image" class="product">
+                            </div>
+                            <div class='item'>
+                              <img src="https://dl.dropboxusercontent.com/s/mkxa484fvcovh7l/see-beautiful-14.png?dl=0" id="product-image" class="product">
+                            </div>
+                            <div class='item'>
+                              <img src="https://dl.dropboxusercontent.com/s/hlp7tclne17hg80/see-beautiful-15.png?dl=0" id="product-image" class="product">
+                            </div>
+                          </div>
+
+                          <a class='left carousel-control' href='#mycarousel' role='button' data-slide='prev'>
+                              <span class='glyphicon glyphicon-chevron-left'></span>
+                              </a>
+                              <a class='right carousel-control' href='#mycarousel' role='button' data-slide='next'>
+                              <span class='glyphicon glyphicon-chevron-right'></span>
+                              </a>
+                              
+                      </div>
+
+
                       <br>
-                      <p class='product-title'>calm</p>
+                      <a href='https://www.gubel.com/skincare'><p class='product-title'>skincare</p></a>
                       <p class="product-small-2">7 chocolates (1-Week Supply)</p>
                       <label class='underline'></label>
                       <p class="product-small">Price: &nbsp;&nbsp;£5</p>
@@ -812,11 +830,37 @@
                   </div>
           </div>         
         </div>
+
      </section>
 
 
      
+<!--Section What people are saying-->
+    <section>
+    <div class="w3-container">
+          <div class="row">
+              <div class="col-dm-12">
+                  <h1 class="heading-5">What people are saying</h1>
+                </div>
+              
+            <div class="col-sm-4">
+              <p class="product-small"><i>"So good!...and I already ate more than the daily suggestion"</i></p>
+              <p class="product-small-2">Melissa C</p>
+            </div>
 
+            <div class="col-sm-4">
+                <p class="product-small"><i>"These are so good, I’m Gubel number 1 fan."</i></p>
+                <p class="product-small-2">Camila T</p>
+              </div>
+            
+              <div class="col-sm-4">
+                  <p class="product-small"><i>"Super super good, to eat chocolate and have nice skin? Sign me up!"</i></p>
+                  <p class="product-small-2">Ioana T</p>
+                </div>
+
+          </div>
+      </div>    
+    </section>
 
      
     
