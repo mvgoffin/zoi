@@ -818,13 +818,14 @@
               <br>
             </div>
           </div>
-      
+
+        <div class="w3-container">
           <div class="row">
             <br>
             <br>
-              <div class="col-sm-6">
-                  <form method="POST" action="{% url 'register_bottle' %}">{% csrf_token %}
-
+              
+                <form method="POST" action="{% url 'register_bottle' %}">{% csrf_token %}
+                  <div class="col-sm-6">
                   <h1 class='home-heading'></h1>
                   <img src="https://dl.dropboxusercontent.com/s/hyqcm2xxz7opj7g/Bottle-Gubel.jpg?dl=0" id="product-image" class="product">
                   <br>
@@ -833,12 +834,13 @@
                   <label class='underline'></label>
                   <p class="product-small">Price: &nbsp;&nbsp;£5</p>
                   <button type="submit">BUY NOW</button> 
+                  </div>
                   </form>
-                </div>
                 
-              <div class="col-sm-6">
-                  <form method="POST" action="{% url 'register_box' %}">{% csrf_token %}
-                    
+                
+             
+                <form method="POST" action="{% url 'register_box' %}">{% csrf_token %}
+                    <div class="col-sm-6">
                     <h1 class='home-heading'></h1>
                     <img src="https://dl.dropboxusercontent.com/s/hyqcm2xxz7opj7g/Bottle-Gubel.jpg?dl=0" id="product-image" class="product">
                     <br>
@@ -847,11 +849,16 @@
                     <label class='underline'></label>
                     <p class="product-small">Price: &nbsp;&nbsp;£5</p>
                     <button type="submit">BUY NOW</button> 
+                    </div>
                     </form>
                   
                 </div>
+              </div>
+           
+            
+              
 
-            </div>
+            
           <label class="headline"></label>
         </div>
      </section>
