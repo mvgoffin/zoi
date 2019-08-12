@@ -39,6 +39,11 @@ def smspolicy(request):
     template = 'sms-policy.html'
     return render(request,template,context)
 
+def hometest(request):
+    context = locals()
+    template = 'hometest.html'
+    return render(request,template,context)
+
 #def code_granted(request):
 #    context = locals()
 #    template = 'code_granted.html'
