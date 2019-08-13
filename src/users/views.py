@@ -14,7 +14,7 @@ from django.conf import settings
 # Create your views here.
 
 #Register Gubel Bottle
-def register_bottle(request):
+def register_calm_bottle(request):
     form = AccountForm(request.POST)
 
     name = request.POST.get('name')
@@ -37,16 +37,16 @@ def register_bottle(request):
 
         form.save()
         
-        response = redirect('checkout_bottle')
+        response = redirect('checkout_calm_bottle')
         return response
     else:
         form = AccountForm()
     
-    return render(request, 'register_bottle.html', {'form': form}) #this is render on HTML
+    return render(request, 'register_calm_bottle.html', {'form': form}) #this is render on HTML
 
 
 #Reorder Gubel Box
-def register_box(request):
+def register_skincare_bottle(request):
     form = AccountForm(request.POST)
 
     name = request.POST.get('name')
@@ -69,12 +69,12 @@ def register_box(request):
 
         form.save()
         
-        response = redirect('checkout_box')
+        response = redirect('checkout_skincare_bottle')
         return response
     else:
         form = AccountForm()
 
-    return render(request, 'register_box.html', {'form': form}) #this is render on HTML
+    return render(request, 'register_skincare_bottle.html', {'form': form}) #this is render on HTML
 
 
 
