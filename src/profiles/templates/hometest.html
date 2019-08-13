@@ -833,18 +833,16 @@
             <div class="w3-container">
 
                 <div class="row">
-                      <div class="col-md-6">
-                          <br>
+                      <div class="col-md-6">                         
                           <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product">
                           <br>
                       </div>
                         
-                      <div class="col-md-6 vertical-center">    
-                          <br>
-                          <form class='about'>
+                      <div class="col-md-6 vertical-center">                
+                          <form method="POST" action="{% url 'about' %}">{% csrf_token %} 
                           <a href='https://www.gubel.co.uk/about'></a><p class='about-title'>Why Chocolate? Why Gubel?</p></a>
                           <p class="about-text">Chocolate is a real, wholefood with natural healthful benefits like flavonoids and antioxidants. We though about blending this delicious snack as a protective carrier with plant extracts to deliver extra benefits.</p>
-                          <a href='https://www.gubel.co.uk/about'><button type="submit">LEARN MORE</button> </a>
+                          <button type="submit">LEARN MORE</button>
                           </form>
                     
 
