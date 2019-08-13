@@ -20,7 +20,7 @@ stripe.api_key = stripe_secret
 # Create your views here.  
 
 # Gubel Bottle. 
-def checkout_bottle(request):
+def checkout_calm_bottle(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
@@ -41,12 +41,12 @@ def checkout_bottle(request):
             response = redirect('success')
             return response    
     context = {'publishKey': publishKey}
-    template = 'checkout_bottle.html'
+    template = 'checkout_calm_bottle.html'
     return render(request,template)
 
 
 # Box. 
-def checkout_box(request):
+def checkout_skincare_bottle(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
@@ -67,7 +67,7 @@ def checkout_box(request):
             response = redirect('success')
             return response    
     context = {'publishKey': publishKey}
-    template = 'checkout_box.html'
+    template = 'checkout_skincare_bottle.html'
     return render(request,template)
 
 
