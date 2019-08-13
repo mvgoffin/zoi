@@ -215,6 +215,7 @@
         }
         
         .product-title{
+        margin-top: 10px;
         font-weight: 600;
         color: black;
         text-align: center;
@@ -235,6 +236,23 @@
         font-weight: 400;
         color: black;
         text-align:center;
+        line-height: 25px;
+        font-size: medium;
+        }
+
+        .about-title{
+        margin-top: 10px;
+        font-weight: 600;
+        color: black;
+        text-align: left;
+        line-height: 25px;
+        font-size: large;
+        }
+
+        .about-text{
+        font-weight: 400;
+        color: black;
+        text-align:left;
         line-height: 25px;
         font-size: medium;
         }
@@ -330,6 +348,13 @@
             font-weight: 600;
         }*/
 
+        #icon {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 15%;
+        }
+
         #hero-1-logo {
           width: 100%;
           background-color: transparent;
@@ -359,17 +384,6 @@
           margin: 0px;
         }
 
-
-        .icon {
-          text-align: center;
-          width: 100%;
-          height: 100%;
-          background-color: transparent;
-          border-style: solid;
-          /**border-color:#FCF9F7;
-          border-width: 10px;**/
-        }
-
         #product-image {
           width: 100%;
           height: 100%;
@@ -379,15 +393,6 @@
           border-width: 10px;**/
           margin: auto;
           margin: 0px;
-        }
-
-        #hero-3-logo {
-          width: 100%;
-          background-color: transparent;
-          border-style: solid;
-          border-color:#FCF9F7;
-          border-width: 10px;
-          display: block;
         }
 
         #reason {
@@ -456,7 +461,6 @@
           border-width: 1px;
         }
 
-        
         button:hover {
           border-color: black;
           border-width: 1px;
@@ -489,6 +493,8 @@
           width: 100%;
           float: center;
         }
+
+    
         
         
         /**
@@ -609,12 +615,20 @@
         }
 
         @media only screen and (max-width: 768px) {
-        .home-small-1, .heading, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-sm-4, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
+        form, .vertical-center, .home-small-1, .heading, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
             margin-left:0 !important;
             margin-right:0 !important;
             padding-left: 10px !important;
             padding-right: 10px !important;
         }
+        }
+        
+        @media only screen and (max-width: 768px) {
+          #icon {
+          display: block;
+          margin: auto;
+          width: 100%;
+          }
         }
 
         @media only screen and (max-width: 768px) {
@@ -695,30 +709,44 @@
               <div class="col-sm-12">
                   <h1 class="heading">We make chocolates differently</h1><!--<img src="https://dl.dropboxusercontent.com/s/kyt0sv1j4n3sdeo/delicious%20feeling.png?dl=0" style="width:30px"></h1>-->
                   <p class='home-small-1'>A daily dose of beneficial plant extracts in every chocolate so you can feel good every single day </p> 
-                  
+              </div>
                   <!-- 6 whys--> 
-              </div>
-              <div class="w3-container">
-              <div class="row">
-            <div class="col-sm-3">
-                  <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0" style="width:15px;">
-                  <p>Vegan, gluten free and palm oil free.</p> 
-            </div>
-             <div class="col-sm-3">
-                  <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0"  style="width:15px;">
-                  <p>Vegan, gluten free and palm oil free.</p>
-             </div>
-              <div class="col-sm-3">
-                  <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0" style="width:15px;">
-                  <p>Vegan, gluten free and palm oil free.</p>
-              </div>
-              <div class="col-sm-3">
-                  <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0" style="width:15px;">
-                  <p>Vegan, gluten free and palm oil free.</p>  
-            </div>
-            </div>
-            </div>
+                  <div class="w3-container">
+                      <div class="row">
+                          
+                        <div class="col-sm-3">
+                            <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0"id="icon">
+                            <br>
+                            <p class="center">test</p> 
+                          </div>
+            
+                        <div class="col-sm-3">
+                            <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0" id="icon">
+                            <br>
+                            <p class="center">test</p> 
+                          </div>
+                          
+                        
+                        <div class="col-sm-3">
+                            <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0" id="icon">
+                            <br>
+                            <p class="center">test</p> 
+                          </div>
+                            
+            
+                        <div class="col-sm-3">
+                            <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0" id="icon">
+                            <br>
+                            <p class="center">test</p> 
+                          </div>
+                          
+            
+                      </div>
+                  </div>  
+            
               
+           
+                 
     
             </div>
         </div>
@@ -727,378 +755,178 @@
 
 
 
-    <!-- Section 3 - About Us --> 
-    <section>
-      <div class="w3-container">
-        <div class="row">
-            <div class="col-sm-12-3">
-              <br>
-              <h1 class="heading">Choose a blend that is right for you &nbsp;&nbsp;</h1> 
-              <br>
-            </div>
-        </div>
-      </div>
-      
-      <div class="container">
+     <!-- Section 3 - About Us --> 
+     <section>
+        <div class="w3-container">
           <div class="row">
-                <div class="col-md-6">
-                <form method="POST" action="{% url 'register_bottle' %}">{% csrf_token %}
-
-                    <a href='https://www.gubel.co.uk/calm_bottle'><img src="https://dl.dropboxusercontent.com/s/loxfho4eweskaid/see-beautiful-18.png?dl=0" id="product-image" class="product"></a>
-
-                    <br>
-                    <a href='https://www.gubel.co.uk/calm_bottle'><p class='product-title'>calm</p></a>
-                    <p class="product-small-2">7 chocolates (1-Week Supply)</p>
-                    <label class='underline'></label>
-                    <p class="product-small">Price: &nbsp;&nbsp;£5</p>
-                    <button type="submit">BUY NOW</button> 
-                </form>
-                </div>
-                  
-                <div class="col-md-6">
-                <form method="POST" action="{% url 'register_box' %}">{% csrf_token %}
-                      
-                      <a href='https://www.gubel.co.uk/skincare_bottle'><img src="https://dl.dropboxusercontent.com/s/loxfho4eweskaid/see-beautiful-18.png?dl=0" id="product-image" class="product"></a>
-
+              <div class="col-sm-12-3">
+                <br>
+                <h1 class="heading">Choose a blend that is right for you &nbsp;&nbsp;</h1> 
+                <br>
+              </div>
+          </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                  <div class="col-md-6">
+                  <form method="POST" action="{% url 'register_bottle' %}">{% csrf_token %}
+                      <a href='https://www.gubel.co.uk/calm_bottle'><img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product"></a>
                       <br>
-                      <a href='https://www.gubel.co.uk/skincare_bottle'><p class='product-title'>skincare</p></a>
+                      <a href='https://www.gubel.co.uk/calm_bottle'><p class='product-title'>calm</p></a>
                       <p class="product-small-2">7 chocolates (1-Week Supply)</p>
                       <label class='underline'></label>
                       <p class="product-small">Price: &nbsp;&nbsp;£5</p>
                       <button type="submit">BUY NOW</button> 
-                    </form>
+                  </form>
                   </div>
-          </div>         
-        </div>
+                    
+                  <div class="col-md-6">
+                  <form method="POST" action="{% url 'register_box' %}">{% csrf_token %}               
+                        <a href='https://www.gubel.co.uk/skincare_bottle'><img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product"></a>
+                        <br>
+                        <a href='https://www.gubel.co.uk/skincare_bottle'><p class='product-title'>skincare</p></a>
+                        <p class="product-small-2">7 chocolates (1-Week Supply)</p>
+                        <label class='underline'></label>
+                        <p class="product-small">Price: &nbsp;&nbsp;£5</p>
+                        <button type="submit">BUY NOW</button> 
+                      </form>
+                    </div>
+            </div>         
+          </div>
 
-     </section>
+      </section>
 
 
      
-<!--Section What people are saying-->
-    <section>
-    <div class="w3-container">
-          <div class="row">
-              <div class="col-dm-12">
-                  <h1 class="heading-5">What people are saying</h1>
-                </div>
-              
-            <div class="col-sm-4">
-              <p class="product-small"><i>"So good!...and I already ate more than the daily suggestion"</i></p>
-              <p class="product-small-2">Melissa C</p>
-            </div>
-
-            <div class="col-sm-4">
-                <p class="product-small"><i>"These are so good, I’m Gubel number 1 fan."</i></p>
-                <p class="product-small-2">Camila T</p>
-              </div>
-            
-              <div class="col-sm-4">
-                  <p class="product-small"><i>"Super super good, to eat chocolate and have nice skin? Sign me up!"</i></p>
-                  <p class="product-small-2">Ioana T</p>
-                </div>
-
-          </div>
-      </div>    
-    </section>
-
-     
-    
-
-<!--Section 6 - See Beautiful-->
-    <section>
-            
-    <div class="w3-container">
-          <div class="row">
-              <div class="col-dm-12">
-                  <h1 class="heading-5">#gubelmoment</h1>
-                </div>
-              
-            <div class="col-sm-3">
-              <img src="https://dl.dropboxusercontent.com/s/lrg5jiln4pmbmml/see-beautiful-20.png?dl=0" id="hero-3-logo">
-              </div>
-
-            <div class="col-sm-3">
-              <img src="https://dl.dropboxusercontent.com/s/aqyswc1b0oltx25/see-beautiful-8.png?dl=0" id="hero-3-logo">
-              </div>
-            
-            <div class="col-sm-3">
-              <img src="https://dl.dropboxusercontent.com/s/lj2xhhc6cq4y9tu/see-beautiful-19.png?dl=0" id="hero-3-logo">
-                </div>
-
-            <div class="col-sm-3">
-              <img src="https://dl.dropboxusercontent.com/s/3ykut26mpnx037e/see-beautiful-4.png?dl=0" id="hero-3-logo">
-              </div>
-
-          </div>
-      </div>    
-    </section>
-
-<br>
-
-    <!-- Section 5 FAQ -->
-    <section>
+     <!--Section What people are saying-->
+     <section>
         <div class="w3-container">
-            <div class="row">
-            <!--<label class="headline"></label>-->
-          <div class="col-sm-12-5">
-              <h1 class="heading-5">Questions?</h1>
-    <!--<input type="button" value="What's in Gubel?" class="accordion"></input>
-    <div class="panel">
-      <p class='home-small'>2Gubel is an ethical chocolate brand based in London, founded out of a passion for making chocolate and the calming benefits from green tea extracts to deliver a different kind of chocolate experience. We look to make delicious, luxurious and indulgent truffles, using the finest and functional ingredients. Our product is vegan and free from gluten and palm oil.</p>
-      <p class='home-small'>We support a healthier and cleaner environment. That’s why we have a simple and sustainable model that minimises our single use plastic footprint. When you ran out of Gubel, simply reorder by the box, texting our number 07480803557, and reuse your Bottle to carry your new chocolate truffles for convenience, portability and sustainability 🌱. </p> 
-      </div>-->
+              <div class="row">
+                  <div class="col-dm-12">
+                      <h1 class="heading-5">What people are saying</h1>
+                    </div>
+                  
+                <div class="col-sm-4">
+                  <p class="product-small"><i>"So good!...and I already ate more than the daily suggestion"</i></p>
+                  <p class="product-small-2">Melissa C</p>
+                </div>
 
-    <input type="button" value="What's in Gubel?" class="accordion"></input>
-    <div class="panel">
-      <p class='home-small'>Gubel's main ingredients are powerful plant-based compounds that help your body and mind mantain a balanced neutral state: </p>
-      <li>L-theanine: To increase blood flow to the brain and heightens cognition, alertness and mood. Each chocolate contains 20mg.</li>
-      <li>Cacao: Gubel's most abundant ingredient both for its flavor and effect. Helps increase Theanine effectiveness due to caffeine.</li>
-      <li>Hazelnuts: To add flavour, crunch and a rich source of vitamins and minerals like vitamin E, manganese and copper, and healthy fats such as omega-6 and omega-9.</li> 
-      <br>
-      <p class='home-small'>Learn more about the healthy benefits from Theanine by clicking on the link below. 
-          <a href='https://www.ncbi.nlm.nih.gov/pubmed/18296328' target=""><p id="trust">&nbsp;L-theanine, a natural constituent in tea, and its effect on mental state.</p></a></p>  
-    </div>
-
-    <input type="button" value="Where is the cocoa from?" class="accordion"></input>
-    <div class="panel">
-        <p class='home-small'>We use fair trade cocoa from West Africa. The cocoa beans for our chocolate are bought as much as possible directly from farmer groups. This way, the farmers earn a better price for their crop yields and can improve their livelihoods.</p>
-    </div>
-
-    <!--<input type="button" value="How much sugar is there per serving?" class="accordion"></input>
-    <div class="panel">
-      <p class='home-small'>Only 2g derived from natural ingredients. There is no added sugar.</p>
-    </div>-->
-
-    <!--<input type="button" value="What is theanine?" class="accordion"></input>
-    <div class="panel">
-      <p class='home-small'>Theanine is an aminoacid found on green tea that helps people feel relaxed yet alert. Theanine can help promote a state of ‘alert relaxation’ by increasing alpha waves in the brain. It can encourage concentration, alertness and learning, whilst leaving you feeling relaxed and calm, without any drowsiness.</p>
-      <p class='home-small'>Learn more about the healthy benefits from Theanine by clicking on the link below. 
-        <a href='https://www.ncbi.nlm.nih.gov/pubmed/18296328'><p id="trust">&nbsp;L-theanine, a natural constituent in tea, and its effect on mental state.</p></a></p>
-    </div>-->
-    
-    <input type="button" value="How does it work?" class="accordion"></input>
-    <div class="panel">
-        <p class='home-small'>It's simple.</p> 
-        <p class='home-small'>Start with your bottle and create your account with your phone number, shipping address and payment information. We take reorders exclusively via text messages -simply text <b>GUBEL</b> or <b>MORE</b> on <b>0748.080.3557</b> to order a box of 9 truffles to your address on file. You'll pay by confirming the order via text. There's no need to login, download an app or draw your card, it's very simple and quick.</p>
-        <a href="#" data-featherlight="#texttoorder"class='home-small-lightbox'><u><i><b>See Example</b></i></u></a>
-                  <div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1554472144065_8906"><div class="sqs-block-content"> <div style="display:none;">
-                    <div id="texttoorder">
-                      <br>
-                      <img src="https://dl.dropboxusercontent.com/s/q0bsezw8b2mi4ei/t2o-example2.png?dl=0" alt="Nutri-Fact-GUBEL" style="width:200px;height:31.598 pxpx;">
-                      <br>
-                      <br>
-                      <p class='sub-heading'>Text to reorder</p>
-                      <p class='home-small-lightbox'>It's quick easy and you can reach us anytime.</p>
-                      <br>
-                      <br>
+                <div class="col-sm-4">
+                    <p class="product-small"><i>"These are so good, I’m Gubel number 1 fan."</i></p>
+                    <p class="product-small-2">Camila T</p>
                   </div>
-                  </div></div></div>
-                  <style>
-                  .texttoorder{
-                    border-style: solid;
-                    border-color: black;
-                    background-color: #FCF9F7;
+                
+                  <div class="col-sm-4">
+                      <p class="product-small"><i>"Super super good, to eat chocolate and have nice skin? Sign me up!"</i></p>
+                      <p class="product-small-2">Ioana T</p>
+                    </div>
 
+              </div>
+          </div>    
+      </section>
+
+
+
+     <!--Why Gubel-->
+     <section>
+            <div class="w3-container">
+
+                <div class="row">
+                      <div class="col-md-6">
+                          <br>
+                          <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product">
+                          <br>
+                      </div>
+                        
+                      <div class="col-md-6 vertical-center">    
+                          <br>
+                          <form class='about'>
+                          <a href='https://www.gubel.co.uk/about'></a><p class='about-title'>Why Chocolate? Why Gubel?</p></a>
+                          <p class="about-text">Chocolate is a real, wholefood with natural healthful benefits like flavonoids and antioxidants. We though about blending this delicious snack as a protective carrier with plant extracts to deliver extra benefits.</p>
+                          <a href='https://www.gubel.co.uk/about'><button type="submit">LEARN MORE</button> </a>
+                          </form>
+                    
+
+                          
+                        </div>
+                </div>         
+              
+                <style>
+                .vertical-center {
+                    margin-top: 100px;  /* Fallback for browsers do NOT support vh unit */
+                    margin-bottom: 100px;  /* These two lines are counted as one :-)       */
+                    display: flex;
+                    align-items: center;
                   }
-                  </style>
-        <p class='home-small'>Remember to save our number. We're available anytime you want a new order or have questions.</p>
-        <p class='home-small'>You can also contact us at <b>hi@gubel.co.uk</b>></p>
-    </div>
-
-    <input type="button" value="For reorders, what's the price per box?" class="accordion"></input>
-    <div class="panel">
-        <p class='home-small'>£7 p/box and includes:
-            <li>9 chocolate truffles.</li>
-            <li>24/7 customer service via text.</li>
-          </p>
-          </div>
-
-    <input type="button" value="Is your packaging recyclable?" class="accordion"></input>
-    <div class="panel">
-        <p class='home-small'>Yes, all our packaging is 100% recyclable and the bottle reusable ♻️ </p>
-    </div>
-    
-    <input type="button" value="How much is shipping in the UK?" class="accordion"></input>
-    <div class="panel">
-        <p class='home-small'>£2.85 in the UK. For international orders, please send an email to hi@gubel.co.uk to handle your case 🙋</p>
-    </div>
-
-    <input type="button" value="Do you deliver outside the UK?" class="accordion"></input>
-    <div class="panel">
-        <p class='home-small'>If you want to place an order from outside of the UK, please send us an email to <b>hi@gubel.co.uk</b> and we’ll handle your case.</p>
-    </div>
-
-    <input type="button" value="Is the product made in the UK?" class="accordion"></input>
-    <div class="panel">
-        <p class='home-small'>Yes, we individually make and wrap our chocolate truffles in our kitchen in London.</p>
-    </div>
-    
-    <input type="button" value="How should I take Gubel?" class="accordion"></input>
-    <div class="panel">
-        <p class='home-small'>We recommend 1, 2 or 3 chocolates per day to mantain benefits from theanine. You can enjoy Gubel any time of the day. Due to caffeine content, we don't recommend at bedtime</p>
-    </div>
-    
-    <input type="button" value="Are there any side effects I should be aware of?" class="accordion"></input>
-    <div class="panel">
-        <p class='home-small'>Because of our blend of plant extracts, is best to avoid our chocolates if you are pregnant or breast feeding.</p>
-    </div>
-    
-    <input type="button" value="How do I know my payment is secure?" class="accordion"></input>
-    <div class="panel">
-        <p class='home-small'>Our text-based order system has been developed to ensure the highest level of security with every order. When you confirm your payment information via our checkout website, your information will be transmitted via secure Transport Layer Security (TLS) encryption to ensure safe transmission of your personal information. That information is further encrypted and stored with our credit card processor. Our processors are PCI DSS - Level 1 Service Provider.</p>
-    </div>
-    
-        <style>
-        /* Style the buttons that are used to open and close the accordion panel */
-        .accordion {
-              background-color: transparent;
-              color: black;
-              font-family: 'titling-gothic-fb', sans-serif;
-              font-weight: 400; 
-              cursor: pointer;
-              padding: 18px;
-              width: 100%;
-              border: none;
-              text-align: left;
-              outline: none;
-              font-size: 15px;
-              transition: 0.4s;
-              border-radius: 0px;
-            }
-
-            .active, .accordion:hover {
-              background-color:#EDEDEB;
-              border-left-width: 10px;
-              border-left-style: solid;
-              border-left-color: #FFB833 ;
-              border-radius: 0px;
-            }
-
-            .panel {
-              padding: 0px 10px;
-              margin: 0px;
-              background-color: #FCF9F7;
-              max-height: 0;
-              overflow: hidden;
-              transition: max-height 0.2s ease-out;
-              border-radius: 0px;
-
-            }
-
-            .accordion:after {
-              content: '\02795'; /* Unicode character for "plus" sign (+) */
-              font-size: 13px;
-              color: #EDEDEB;
-              float: right;
-              margin-left: 5px;
-              border-radius: 0px;
-            }
-
-            .active:after {
-              content: "\2796"; /* Unicode character for "minus" sign (-) */
-              border-radius: 0px;
-            }
-        </style>
-
-      <script>
-          var acc = document.getElementsByClassName("accordion");
-          var i;
-          
-          for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              var panel = this.nextElementSibling;
-              if (panel.style.maxHeight){
-                panel.style.maxHeight = null;
-              } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-              } 
-            });
-          }
-          </script>
-
-            </div>
-    </section>
+                </style>
       
-    <!--Footer image 
-    <div class="col-sm-12-hero-2">
-        <img src="https://dl.dropboxusercontent.com/s/lqb6kpkisab0930/IMG-hazelnut-roasted-5.png?dl=0" id="hero-logo" class="product">
-      </div>--> 
-      
+      </section>
 
-    <!-- Footer -->
-    <section>
+
+
+     <!-- Footer -->
+     <section>
         <div class="w3-container">
             <div class="row">
           <div class="col-md-3">
-            <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/19vxqsnogv5o4mp/Gubel_logo-white.png?dl=0" src="blank.gif" style="width:100px"></a>  
-         </div>
+            <p><a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/19vxqsnogv5o4mp/Gubel_logo-white.png?dl=0" src="blank.gif" style="width:100px"></a></p>
+            <img src="https://dl.dropboxusercontent.com/s/6utcleyzpvluwtn/madeUK-ppp.png?dl=0" src="blank.gif" style="width:65px">
+            <p id="trust">© Gubel Ltd 2019. All Rights Reserved. London, UK, NW2 2DT</p>         
+          </div>
          
-         <div class="col-md-3">
-            <p class="heading-f">CHAT</p></a>
-            <a href='sms:+447480803557'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
-            <a href='https://www.instagram.com/gubel.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@gubel.UK</p></a>
-            <a href='mailto:hi@gubel.co.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@gubel.co.uk</p></a>
-             
+        <div class="col-md-3">
+            <p class="heading-f">PRODUCTS</p></a>
+            <a href='https://www.gubel.co.uk/calm_bottle'><p id="trust">calm</p></a>
+            <a href='https://www.gubel.co.uk/skincare_bottle'><p id="trust">skincare</p></a>
+          </div>
 
-        
-
-       </div>
-       <div class="col-md-3">
+        <div class="col-md-3">
           <p class="heading-f">INFORMATION</p></a>
+          <a href='https://www.gubel.co.uk/about'><p id="trust">About</p></a>
           <a href='https://www.gubel.co.uk/terms-of-service'><p id="trust">Terms of Service</p></a>
           <a href='https://www.gubel.co.uk/privacy-policy'><p id="trust">Privacy Policy</p></a>
-          <a href='https://www.gubel.co.uk/sms-policy'><p id="trust">SMS Policy</p></a>
-          
-     </div>
-     <div class="col-md-3">
-        <p id="trust">London, UK, NW2</p>
-        <p id="trust">© Gubel Innova Ltd 2019. All Rights Reserved</p> 
-        <p id="trust-tc">*This product is not intended to diagnose, treat, cure or prevent any disease.</p>
-   </div>
-  </div>
+          <a href='https://www.gubel.co.uk/sms-policy'><p id="trust">SMS Policy</p></a>  
+         </div>
 
-  <style>
-                
-    .footer-links{
-      text-align:left;
-      font-size: 12px;
-      color: white;
-    }
-    #trust {
-      text-align:left;
-      font-size: 12px;
-      color: white;
-      margin: 0;
-    }
+        <div class="col-md-3">
+          <p class="heading-f">CHAT</p></a>
+          <a href='sms:+447480803557'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
+          <a href='https://www.instagram.com/gubel.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@gubel.UK</p></a>
+          <a href='mailto:hi@gubel.co.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@gubel.co.uk</p></a>
+         </div>
 
-    #trust-tc{
-      text-align:left;
-      font-size: 12px;
-      color: white;
-      margin: 0;
-      border-style: solid;
-      border-width: thin;
-      border-color: white;
-      }
+              <style>         
+                .footer-links{
+                  text-align:left;
+                  font-size: 12px;
+                  color: white;
+                }
+                #trust {
+                  text-align:left;
+                  font-size: 12px;
+                  color: white;
+                  margin: 0;
+                }
 
-    #vsu-trust {
-      text-align:center;
-    }
-    </style> 
+                #trust-tc{
+                  text-align:left;
+                  font-size: 12px;
+                  color: white;
+                  margin: 0;
+                  border-style: solid;
+                  border-width: thin;
+                  border-color: white;
+                  }
+
+                #vsu-trust {
+                  text-align:center;
+                }
+                </style> 
 
 
-</section>
+      </section>
         
-        </div>
-      
-     
-    
-  </form>
-  
-
-</div>
 
   
 
