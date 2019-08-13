@@ -29,6 +29,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
     path('about/', views.about, name='about'),
+    path('calm_bottle/', user_views.calm_bottle, name='calm-bottle'),
+    path('skincare_bottle/', user_views.skincare_bottle, name='skincare-bottle'),
     path('register_bottle/', user_views.register_bottle, name='register_bottle'),
     path('register_box/', user_views.register_box, name='register_box'),
     #path('register_box/', user_views.register_box, name='register_box'),

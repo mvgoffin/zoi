@@ -44,6 +44,16 @@ def hometest(request):
     template = 'hometest.html'
     return render(request,template,context)
 
+def calm_bottle(request):
+    context = locals()
+    template = 'calm_bottle.html'
+    return render(request,template,context)
+
+def skincare_bottle(request):
+    context = locals()
+    template = 'skincare_bottle.html'
+    return render(request,template,context)
+
 #def code_granted(request):
 #    context = locals()
 #    template = 'code_granted.html'
