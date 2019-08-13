@@ -151,6 +151,26 @@
               border-bottom-width: thin;**/
             }
 
+            .announcement {
+              display: inline-block;
+              text-align: center;
+              width: 100%;
+              background: black;
+              color: white;
+              font-family: 'titling-gothic-fb', sans-serif;
+              margin: 0;
+              padding: 0;
+              vertical-align: middle;
+              font-size: 0.8em;
+            }
+
+            .announcement a { 
+              color: #ccc; 
+            }
+
+            .announcement a:hover {
+              color: gray;
+            }
 
             .center{
               display: block;
@@ -160,16 +180,16 @@
 
           /*CSS Checkout Bottle*/
 
-            .home-h1{
-          text-align: left;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          border-bottom: 1px solid gray;
-          font-weight: 700;
-          display:block;
-          text-indent: 10px;
-              }
-      
+          .home-h1{
+              text-align: left;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              border-bottom: 1px solid gray;
+              font-weight: 700;
+              display:block;
+              text-indent: 10px;
+                  }
+          
         .home-h2{
           text-align: left;
           font-size: medium;
@@ -615,7 +635,7 @@
         }
 
         @media only screen and (max-width: 768px) {
-        form, .vertical-center, .home-small-1, .heading, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
+        form, .announcement, .vertical-center, .home-small-1, .heading, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
             margin-left:0 !important;
             margin-right:0 !important;
             padding-left: 10px !important;
@@ -688,9 +708,15 @@
 <body>
   
   <!-- Header -->
-    <div class="header" id="header">
-      <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
+   
+  
+  <div class="announcement">
+        <p>New Customers Receive 20% Off in our 2 Week Bundle!</p>
       </div>  
+    
+      <div class="header" id="header">
+        <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
+        </div>  
     
   
     <!-- Content -->
@@ -717,27 +743,27 @@
                         <div class="col-sm-3">
                             <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0"id="icon">
                             <br>
-                            <p class="center">test</p> 
+                            <p class="center">Vegan friendly</p> 
                           </div>
             
                         <div class="col-sm-3">
                             <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0" id="icon">
                             <br>
-                            <p class="center">test</p> 
+                            <p class="center">Free from gluten, dairy and palm oil</p> 
                           </div>
                           
                         
                         <div class="col-sm-3">
                             <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0" id="icon">
                             <br>
-                            <p class="center">test</p> 
+                            <p class="center">Ethical sourced cacao</p> 
                           </div>
                             
             
                         <div class="col-sm-3">
                             <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0" id="icon">
                             <br>
-                            <p class="center">test</p> 
+                            <p class="center">Text to reorder -quick and easy.</p> 
                           </div>
                           
             
@@ -761,7 +787,7 @@
           <div class="row">
               <div class="col-sm-12-3">
                 <br>
-                <h1 class="heading">Choose a blend that is right for you</h1> 
+                <h1 class="heading">Choose a bundle that is right for you</h1> 
                 <br>
               </div>
           </div>
@@ -774,9 +800,9 @@
                       <a href='https://www.gubel.co.uk/calm_bottle'><img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product"></a>
                       <br>
                       <a href='https://www.gubel.co.uk/calm_bottle'><p class='product-title'>calm</p></a>
-                      <p class="product-small-2">7 chocolates (1-Week Supply)</p>
+                      <p class="product-small-2">14 chocolates (2-Weeks Supply)</p>
                       <label class='underline'></label>
-                      <p class="product-small">Price: &nbsp;&nbsp;£5</p>
+                      <p class="product-small">Price: &nbsp;&nbsp;£7.49</p>
                       <button type="submit">BUY NOW</button> 
                   </form>
                   </div>
@@ -786,9 +812,9 @@
                         <a href='https://www.gubel.co.uk/skincare_bottle'><img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product"></a>
                         <br>
                         <a href='https://www.gubel.co.uk/skincare_bottle'><p class='product-title'>skincare</p></a>
-                        <p class="product-small-2">7 chocolates (1-Week Supply)</p>
+                        <p class="product-small-2">14 chocolates (2-Weeks Supply)</p>
                         <label class='underline'></label>
-                        <p class="product-small">Price: &nbsp;&nbsp;£5</p>
+                        <p class="product-small">Price: &nbsp;&nbsp;£7.49</p>
                         <button type="submit">BUY NOW</button> 
                       </form>
                     </div>
