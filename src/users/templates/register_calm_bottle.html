@@ -79,6 +79,7 @@
 
             .row {
               background-color: #FCF9F7;
+              size: auto;
             }
 
 
@@ -295,11 +296,6 @@
           border-width: 1px;
         }
         
-        form {
-          padding: 0;
-          height: 200px;
-        }
-        
         label {
           font-weight: 500;
           font-size: 14px;
@@ -396,20 +392,33 @@
           background: #FCF9F7;
         }
 
+        .product-page.row{
+          background-color: red;
+        }
+
         /**Footer**/
         .col-md-3{
           padding: 20px;
           background-color: black;
           }
 
-        @media only screen and (max-width: 768px) {
-          .home-small-1, .heading, .col-sm-4, .row-3, li, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .containerbar {
+          @media only screen and (max-width: 768px) {
+        .row, .vertical-center, .home-small-1, .heading, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
             margin-left:0 !important;
             margin-right:0 !important;
             padding-left: 10px !important;
             padding-right: 10px !important;
         }
         }
+        
+        @media only screen and (max-width: 768px) {
+          #icon {
+          display: block;
+          margin: auto;
+          width: 100%;
+          }
+        }
+
         @media only screen and (max-width: 768px) {
         *, .html {
           margin-left:0 !important;
@@ -417,29 +426,28 @@
           padding-left: 0 !important;
           padding-right: 0 !important;
         }
-
-      #hero-logo.product{
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-          }
-
-      @media only screen and (max-width : 768px) {
-      #hero-logo.product {
-          width: 100%;
-          display: block;
-          margin: auto;
-        }}
-      
-      
-
-      @media only screen and (max-width : 768px) {
-      .left, .right {
-          width: 100%;
+    
+        #hero-logo.product{
+          padding: 0;
           margin-left: auto;
           margin-right: auto;
-        }}
+        }
 
+        @media only screen and (max-width : 768px) {
+        #hero-logo.product, #values {
+            width: 100%;
+            display: block;
+            margin: auto;
+          }}
+      
+      
+
+        @media only screen and (max-width : 768px) {
+        .left, .right {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+          }}
 
       /* Clear floats after the columns */
       .row:after {
@@ -573,7 +581,7 @@
   
     <!-- Content -->
 
-    <form method="POST" id="register-form" action="{% url 'register_calm_bottle' %}">{% csrf_token %}
+    
 
       <!--PLNT Progress Bar -->
     <div class="containerbar">
@@ -591,75 +599,89 @@
     </div>
 
 
-   <!-- Section 1 - Create Account Form   -->
+    <!--Section 1 - Product information--> 
     <section>
-      <div class="w3-container">
-        <div class="row">
-        <div class="col-sm-12">
-          
-          <br>
-          <p class='sub-heading'>Create your account</p>
-          <br>
-          <div >
-              <label class="headline">
-          </div>
-          <br>
-          <label for="id_phone">Phone Number</label>
-          <small class='small'>We take reorders and offer customer service exclusively via text message ―it's quick, easy and you can reach us anytime.</small>
-          <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" required="" id="id_phone" placeholder="🇬🇧 +44">
-          <br> 
-          
-
-          <label for="id_name">Full Name</label>
-          <input type="text" name="name" class="form-control" maxlength="100" required="" id="id_name">
-          <br>
-          
-          
-          <label for="id_email">Email</label>
-          <small class='small'>For your order updates, new deals and offers.</small>
-          <input type="email" name="email" class="form-control" maxlength="100" required="" id="id_email">
-          <br>
-          
-          
-          <label for="id_address">Shipping Address</label>
-          <small class='small'> We only ship to the UK. For orders outside of the UK, please send us an email to hi@gubel.co.uk to handle your case. </small>
-          <input type="text" name="address" class="form-control" maxlength="100" required="" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
-          <br>
-          
-          
-          <label for="id_postcode">Postcode</label><input type="text" name="postcode" class="form-control" maxlength="7" required="" id="id_postcode"placeholder="NW1 6DB">
-          <br>
-          
-          
-          
-          <div class="form-group">  
-            <button type="submit">NEXT</button>
-          </div>
-          <p class="terms">
-              By continuing, you agree to our Terms of service, Privacy policy and SMS policy.
-                  <style>
-                      .terms {
-                        text-align: center;
-                        font-size: 12px;
-                        color: gray;
-                        padding-bottom: 15px;
-                      }
-                    </style>
-
+        <div class="w3-container">
+  
+          <!-- The Bottle Buy Now Section -->
+  
+          <div class="row" >
+              <form method="POST" id="register-form" action="{% url 'checkout_calm_bottle' %}">{% csrf_token %}
             <br>
             <br>
+              <div class="col-sm-6">
+                  <h1 class='home-heading'></h1>
+                  <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="hero-2-logo" class="product">
+                  
+                  
+                  
                 
+                </div>
+              <div class="col-sm-6">
+                  
+                  <br>
+                  <p class='sub-heading'>Create your account</p>
+                  <br>
+                  <div >
+                      <label class="headline">
+                  </div>
+                  <br>
+                  <label for="id_phone">Phone Number</label>
+                  <small class='small'>We take reorders and offer customer service exclusively via text message ―it's quick, easy and you can reach us anytime.</small>
+                  <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" required="" id="id_phone" placeholder="🇬🇧 +44">
+                  <br> 
+                  
+        
+                  <label for="id_name">Full Name</label>
+                  <input type="text" name="name" class="form-control" maxlength="100" required="" id="id_name">
+                  <br>
+                  
+                  
+                  <label for="id_email">Email</label>
+                  <small class='small'>For your order updates, new deals and offers.</small>
+                  <input type="email" name="email" class="form-control" maxlength="100" required="" id="id_email">
+                  <br>
+                  
+                  
+                  <label for="id_address">Shipping Address</label>
+                  <small class='small'> We only ship to the UK. For orders outside of the UK, please send us an email to hi@gubel.co.uk to handle your case. </small>
+                  <input type="text" name="address" class="form-control" maxlength="100" required="" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
+                  <br>
+                  
+                  
+                  <label for="id_postcode">Postcode</label><input type="text" name="postcode" class="form-control" maxlength="7" required="" id="id_postcode"placeholder="NW1 6DB">
+                  <br>
+                  
+                  
+                  
+                  <div class="form-group">  
+                    <button type="submit">NEXT</button>
+                  </div>
+                  <p class="terms">
+                      By continuing, you agree to our Terms of service, Privacy policy and SMS policy.
+                          <style>
+                              .terms {
+                                text-align: center;
+                                font-size: 12px;
+                                color: gray;
+                                padding-bottom: 15px;
+                              }
+                            </style>
+        
+                    <br>
+                    <br>
 
-      </div>
-      </div>
-      </div>
-    </section>
-    
-
+                    </div>
+                  </form>
+            </div>
+            
+          </div>
+        </section>
 
     <!-- Footer -->
     <section>
-        <div class="w3-container">
+        
+      <div class="w3-container">
             <div class="row" id='footer'>
           <div class="col-md-3">
             <p><a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/19vxqsnogv5o4mp/Gubel_logo-white.png?dl=0" src="blank.gif" style="width:100px"></a></p>
@@ -725,9 +747,9 @@
 
         </section>
         
-          </form>
+          
 
-      </form>
+  
       
 </div>
 
