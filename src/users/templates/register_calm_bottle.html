@@ -513,8 +513,8 @@
             <h1 class='heading'>Your cart</h1>
             <label class="headline"></label>
     
-              <form method="POST" id="register-form" action="{% url 'register_calm_bottle' %}">{% csrf_token %}
-                    <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
+              
+                <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
                        
                         <h1 class="home-heading">calm</h1>
                         <p class="home-heading"><b>INDULGENT RELIEF</b></p>
@@ -602,13 +602,13 @@
       
                       </div>  
                           
-                    </div>
-                </form>
+                  </div>
 
                 <div class="col-sm-1" id='divider' style="padding-top:30px">
                 </div>
                 
-                  <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
+                <form method="POST" id="register-form" action="{% url 'register_calm_bottle' %}">{% csrf_token %}
+                <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
                   
                   
                  
@@ -666,7 +666,8 @@
                     
                     <br>
   
-                </div>
+                  </div>
+                 </form>
 
             </div>
             

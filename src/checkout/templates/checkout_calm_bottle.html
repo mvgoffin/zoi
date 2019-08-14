@@ -6,21 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content= "width=device-width, user-scalable=no">
     <meta name="description" content="Gubel is a line of functional chocolate truffles that contain a velvety ganache infused with plant extracts to help people ease stress and feel more balanced in increasingly stressful times.">
-    <script src="https://js.stripe.com/v3/"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xdp3ien.css">
-
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
 
     <!--favicon-->
     <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/u5xin0z8jwunsn8/Gubel-favicon.png?dl=0">
     <title>
       
 
-      GUBEL
+      calm | GUBEL
     
 
     </title>
@@ -71,23 +70,28 @@
             
     </style>
     
-    <!-- CSS Gubel Homepage -->
+    <!-- CSS Gubel Register -->
     <style media="screen">
-      
+
+          .home-heading{
+            text-align: left;
+            font-family: 'titling-gothic-fb', sans-serif;
+          }
+
+
             .container-fluid {
             height: 600px;
               }
 
             .row {
               background-color: #FCF9F7;
+              size: auto;
             }
 
 
             .heading{
               font-family: 'titling-gothic-fb', sans-serif;
-              padding-top: 30px;
-              padding-bottom: 15px;
-              text-align: center;
+              text-align: left;
               font-weight: 400;
               display:block
             }
@@ -96,28 +100,9 @@
               font-family: 'titling-gothic-fb', sans-serif;
               margin: 0px;
               text-align: left;
-              font-weight: 400;
+              font-size: large;
               display:block
             }
-
-            .heading-5{
-              font-family: 'titling-gothic-fb', sans-serif;
-              padding-top: 30px;
-              padding-bottom: 15px;
-              margin:auto;
-              text-align: center;
-              font-weight: 400;
-              display:block
-            }
-
-            .heading-f{
-              font-family: 'titling-gothic-fb', sans-serif;
-              color: white;
-              margin-bottom:10px;
-              text-align: left;
-            }
-
-            
 
             .header{
               background-color: white;
@@ -132,75 +117,16 @@
 
           /*CSS Checkout Bottle*/
 
-            .home-h1{
-          text-align: left;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          border-bottom: 1px solid gray;
-          font-weight: 700;
-          display:block;
-          text-indent: 10px;
-              }
-      
-        .home-h2{
-          text-align: left;
-          font-size: medium;
-          display:block
-           }
-
-        .home-text{
-          font-family: "Helvetica Neue";
-          font-size: 10px;
-          color:gray;
-          text-align:left;
-           }
-
-        .home-heading{
-          text-align: left;
-          font-family: 'titling-gothic-fb', sans-serif;
-        }
-
-        .home-small-1{
-        font-family: "Helvetica Neue";
-        font-weight: 400;
-        color: black;
-        text-align:center;
-        padding-bottom: 30px;
-        line-height: 25px;
-        }
-
-        .home-small{
-        font-family: "Helvetica Neue";
-        font-weight: 400;
-        color: black;
-        text-align:left;
-        line-height: 25px;
-        font-size: medium;
-        }
-
-        .home-small-small{
-          text-align:left;
-          padding-bottom: 1px;
-          padding-top: 2px;
-          font-size:small;
-          font-weight: 300;
-          color:gray;
-          line-height: 1.4;
-             }
-      
-        .make-impact {
-          color:#64D7AE;
-          font-size: 10px;
-        }
-
-        .underline{
-          box-sizing: border-box;
-          width: 100%;
-          padding: 0.5px;
-          border-top: 1px solid gray;
-          
-          -webkit-appearance: none !important;
-             }
+        .hr{ 
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 0.5px;
+            border-color:gray;
+        } 
 
         #header-logo {
           width: 200px;
@@ -221,16 +147,10 @@
           margin: auto;
         }
 
-        #hero-2-logo {
-          width: 100%;
-          height: 100%;
-          background-color: transparent;
-          border-style: solid;
-          border-color:#FCF9F7;
-          border-width: 10px;
-          margin: auto;
-          margin: 10px;
-        
+        #photo-item {
+          display:block;
+          margin:auto;
+          text-align: left;
         }
 
         #reason {
@@ -261,16 +181,55 @@
         }
       
         .small{
-          font-size: 10px;
-          color:gray;
+          display: inline-block;
+          font-weight: 400;
+          color: black;
+          text-align:left;
+          line-height: 25px;
+          font-size: medium;
+          margin: 0px;
+        }
+
+        button {
+          background: transparent;
+          display:block;
+          width:100%;
+          border: 1px solid #FFB833;
+          color: black;
+          background: #FFB833;
+          padding: 15px 40px;
+          margin: .618em 0.01em;  
+          font-family: 'titling-gothic-fb', sans-serif;
+          font-weight:700;
+          font-style: normal;
+          animation-delay: 2400ms;
+          font-size: 18px;
+          letter-spacing: .01em;
+          text-transform: normal;
+          transition: background-color 170ms  ease-out,color 170ms ease-out;
+        }
+
+
+        button:focus{
+          background-color: #64D7AE;
+          border: 1px solid #64D7AE;
+          color: #FFFFFF;
+          border-color: black;
+          border-width: 1px;
         }
 
         
+        button:hover {
+          border-color: black;
+          border-width: 1px;
+        }
+        
         label {
-          font-weight: 500;
+          font-weight: 600;
           font-size: 14px;
           display: block;
           margin-bottom: 8px;
+
         }
         
         ::placeholder{
@@ -328,9 +287,9 @@
             width: 100%;
             height: 40px;
             padding: 10px 12px;
-            border: 1px solid #EDEDEB;
+            border: 1px solid black;
             border-radius: 0px;
-            background-color: #EDEDEB;
+            background-color: white;
             /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
             -webkit-transition: box-shadow 150ms ease;
             transition: box-shadow 150ms ease;
@@ -338,8 +297,8 @@
           }
 
           .form-control:focus {
-            box-shadow: 0 1px 3px 0 #FFB833;
-            border: #FFB833;
+            box-shadow: 0 1px 3px 0 #FCF9F7;
+            border: 2px solid black;
           }
 
         #register-progressbar {
@@ -350,11 +309,10 @@
           padding-bottom: 50px;
           }
 
-        #payment-form {
+        #register-form {
           box-sizing: border-box;
           margin-left:  auto;
           margin-right:  auto;
-          padding: 0;
           }
         
         .col-sm-12{
@@ -364,19 +322,26 @@
         }
 
         /**Footer**/
-          .col-md-3{
+        .col-md-3{
           padding: 20px;
           background-color: black;
           }
+          .col-sm-6{
+            padding: 0px;
+          }
+          .col-sm-5{
+            padding: 0px;
+          }
 
-        @media only screen and (max-width: 990px) {
-          .home-small-1, .heading, .col-sm-4, li, .col-sm-6, .col-sm-12, .col-xs-12, .col-md-12, .col-md-3, .accordion, .panel, .containerbar {
+          @media only screen and (max-width: 990px) {
+        .row, .vertical-center, .home-small-1, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
             margin-left:0 !important;
             margin-right:0 !important;
             padding-left: 10px !important;
             padding-right: 10px !important;
         }
         }
+
         @media only screen and (max-width: 990px) {
         *, .html {
           margin-left:0 !important;
@@ -384,29 +349,6 @@
           padding-left: 0 !important;
           padding-right: 0 !important;
         }
-
-      #hero-logo.product{
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-          }
-
-      @media only screen and (max-width : 990px) {
-      #hero-logo.product {
-          width: 100%;
-          display: block;
-          margin: auto;
-        }}
-      
-      
-
-      @media only screen and (max-width : 990px) {
-      .left, .right {
-          width: 100%;
-          margin-left: auto;
-          margin-right: auto;
-        }}
-
 
       /* Clear floats after the columns */
       .row:after {
@@ -418,371 +360,88 @@
     }
     </style>
 
-    <!--CSS PLNT Progress Bar CSS -->
-    <style type="text/css">
-      .containerbar {
-        width:100%;
-        background: #FCF9F7;
-      }
-      .progressbar{
-        counter-reset: step; 
-        padding: 20px;   
-      }
-      
-      /**box + account text**/
-      .progressbar li{
-        list-style-type: none;
-        float: left;
-        width: 33%;
-        position: relative;
-        text-align: center;  
-        color: #22D59E;
-        font-size: medium;
-        font-family: 'titling-gothic-fb', sans-serif;
-        font-weight:400;
-      }
-      /**payment circle**/
-      .progressbar li.payment::before{
-        width: 30px;
-        height: 30px;
-        line-height: 20px;
-        border: 4px solid #808080;
-
-      }
-      
-      /**all number cirle**/
-      .progressbar li:before {
-        content: counter(step);
-        counter-increment: step;
-        width: 30px;
-        height: 30px;
-        line-height: 20px;
-        border: 4px solid #22D59E;
-        display: block;
-        text-align: center;
-        margin: 0 auto 10px auto;
-        border-radius: 50%;
-        background-color: white;  
-        position: relative;
-        z-index: 100;
-      }
-      
-      /**whole line**/
-      .progressbar li:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background-color: #22D59E;
-        top: 14px;
-        left: -50%;
-        z-index: 50;
+      <!--CSS PLNT Progress Bar CSS -->
+      <style type="text/css">
+        .containerbar {
+          width:100%;
+          background: #FCF9F7;
+        }
+        .progressbar{
+          counter-reset: step; 
+          padding: 20px;   
+        }
         
+        /**box + account text**/
+        .progressbar li{
+          list-style-type: none;
+          float: left;
+          width: 33%;
+          position: relative;
+          text-align: center;  
+          color: #22D59E;
+          font-size: medium;
+          font-family: 'titling-gothic-fb', sans-serif;
+          font-weight:400;
+        }
+        /**payment circle**/
+        .progressbar li.payment::before{
+          width: 30px;
+          height: 30px;
+          line-height: 20px;
+          border: 4px solid #808080;
+  
+        }
         
-      }
-      .progressbar li:first-child:after {
-        content: none;  
-
-      }
-      .progressbar li.payment {
-        color: gray;
-        font-size: medium;
-      }
-
-      .progressbar li.payment:after {
-        border-color: #22D59E;
-
-      }
-      /**current line**/
-      .progressbar li.payment + li:after {
-        background-color: #22D59E;
-        height: 4px;
-      
-      }
-      
-    </style>
-
-  <!--CSS CHECKOUT CSS -->
-    <style>
- 
-      .product{
-        display: block;
-          }
-    
-      .header{
-            background-color: white;
-               }
-
-      .footer{
-            background-color: black;
-               }
-
-      .ch-heading{
-        text-align: left;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid gray;
-        font-weight: 700;
-        display:block;
-        text-indent: 10px;
-            }
-    
-      .ch-name{
-        text-align: right;
-        font-size: medium;
-        display:block
-         }
-    
-      .price{
-        text-align:right;
-        font-size:medium;
-        font-weight: 400;
-        color:gray;
-           }
-    
-      .finalprice{
-        text-align:right;
+        /**all number cirle**/
+        .progressbar li:before {
+          content: counter(step);
+          counter-increment: step;
+          width: 30px;
+          height: 30px;
+          line-height: 20px;
+          border: 4px solid #22D59E;
+          display: block;
+          text-align: center;
+          margin: 0 auto 10px auto;
+          border-radius: 50%;
+          background-color: white;  
+          position: relative;
+          z-index: 100;
+        }
         
-        font-weight:bold; 
-          }
-    
-      .ch-small{
-        font-size: 10px;
-        color:gray;
-        text-align:right;
-         }
-
-      .ch-small-discount{
-      font-size: 10px;
-      color:#fa755a;
-      text-align:right;
-      }
-
-    
-      .underline{
-        box-sizing: border-box;
-        width: 100%;
-        padding: 0.5px;
-        border-top: 1px solid gray;
-        
-        -webkit-appearance: none !important;
-           }
-    
-      * {
-          box-sizing: border-box;
-            }
-    
-        
-
-        
-
-       
-
+        /**whole line**/
+        .progressbar li:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          background-color: #22D59E;
+          top: 14px;
+          left: -50%;
+          z-index: 50;
           
-    
-        
-      </style>
-
-  <!--CSS PLNT Form CSS -->
-  <style media="screen">
-        
-      
-      
-      .heading{
-            text-align: left;
-            font-weight: 800;
-            display:block
-          }
-
-      *, label {
-        font-family: 'Open sans', sans-serif;
-        font-size: 16px;
-        font-variant: normal;
-        padding: 0;
-        margin: 0;
-        -webkit-font-smoothing: antialiased;
+          
         }
-
-      button {
-        background: transparent;
-        display:block;
-        width:100%;
-        border: 1px solid #FFB833;
-        color: black;
-        background: #FFB833;
-        padding: 15px 40px;
-        margin: .618em 0.01em;  
-        font-family: 'titling-gothic-fb', sans-serif;
-        font-weight:700;
-        font-style: normal;
-        animation-delay: 2400ms;
-        font-size: 18px;
-        letter-spacing: .01em;
-        text-transform: normal;
-        transition: background-color 170ms  ease-out,color 170ms ease-out;
-      }
-
-      button:focus{
-            background-color: #64D7AE;
-            border: 1px solid #64D7AE;
-            color: #FFFFFF;
-            border-color: black;
-            border-width: 1px; 
-          }
-
-      button:hover {
-        border-color: black;
-        border-width: 1px; 
-      }
-      
-      form {
-        padding: 30px;
-        height: 120px;
-      }
-      
-      label {
-        font-weight: 500;
-        font-size: 14px;
-        display: block;
-        margin-bottom: 8px;
-      }
-      
-      #card-errors {
-        height: 20px;
-        padding: 4px 0;
-        color: #fa755a;
-      }
-      
-      .form-row {
-        width: 100%;
-        float: center;
-      }
-      
-      .token {
-        color: #32325d;
-        font-family: 'Source Code Pro', monospace;
-        font-weight: 500;
-      }
-      
-      .wrapper {
-        width: 100%;
-        margin: 0 auto;
-        height: 100%;
-        background: transparent;
-      }
-
-      .promises {
-        font-size:medium;
-        font-weight: 400;
-      }
-
-      #stripe-token-handler {
-        position: absolute;
-        top: 0;
-        left: 25%;
-        right: 25%;
-        padding: 20px 30px;
-        border-radius: 0 0 4px 4px;
-        box-sizing: border-box;
-        box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1),
-          0 15px 35px rgba(50, 50, 93, 0.15),
-          0 5px 15px rgba(0, 0, 0, 0.1);
-        -webkit-transition: all 500ms ease-in-out;
-        transition: all 500ms ease-in-out;
-        transform: translateY(0);
-        opacity: 1;
-        background-color: white;
-      }
-      
-      #stripe-token-handler.is-hidden {
-        opacity: 0;
-        transform: translateY(-80px);
-      }
-      
-      /**
-       * The CSS shown here will not be introduced in the Quickstart guide, but shows
-       * how you can use CSS to style your Element's container.
-       */
-       
-      
-      .form-control {
-        box-sizing: border-box;
-        width: 100%;
-        height: 40px;
-        padding: 10px 12px;
-        border: 1px solid #EDEDEB;
-        border-radius: 0px;
-        background-color: #EDEDEB;
-        /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
-        -webkit-transition: box-shadow 150ms ease;
-        transition: box-shadow 150ms ease;
-        -webkit-appearance: none !important;
-      }
-
-      .form-control:focus {
-        box-shadow: 0 1px 3px 0 #FFB833;
-        border: #FFB833;
-      }
-
-       .StripeElement {
-        box-sizing: border-box;
-        width: 100%;
-        height: 40px;
-        padding: 10px 12px;
-        /**border: 1px solid transparent;**/
-        /**border: 1px solid black;**/
-        border-radius: 0px;
-        background-color: #EDEDEB;
-        /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
-        /**-webkit-transition: box-shadow 150ms ease;**/
-        /**transition: box-shadow 150ms ease;**/
-      }
-      
-      .StripeElement--focus {
-        box-shadow: 0 1px 3px 0 #FFB833;
-        border: #FFB833;
-      }
-      
-      .StripeElement--invalid {
-        border-color: #fa755a;
-      }
-      
-      .StripeElement--webkit-autofill {
-        background-color: #EDEDEB !important;
-      }
-
-      /*logo*/  
-      .center{
-        display: block;
-        margin-left: auto!important;
-        margin-right: auto!important;
-        text-align:center;
-      }
-
-
-      /*logo*/ 
-
-      #payment-logo {
-        width: 250px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        background-color: white;
-      }
-      
-
-      #payment-progressbar {
-        box-sizing: border-box;
-        display: block;
-        margin-left:  360px;
-        margin-right:  360px;
-        padding-bottom: 50px;
-        background-color: transparent;
+        .progressbar li:first-child:after {
+          content: none;  
+  
         }
-
-     
-
-      
-
+        .progressbar li.payment {
+          color: gray;
+          font-size: medium;
+        }
+  
+        .progressbar li.payment:after {
+          border-color: #22D59E;
+  
+        }
+        /**current line**/
+        .progressbar li.payment + li:after {
+          background-color: #22D59E;
+          height: 4px;
+        
+        }
+        
       </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -808,9 +467,6 @@
   
     <!-- Content -->
 
-    <form action="." method="post" id="payment-form">   <!--action (.) to remain on same page-->
-      
-      {% csrf_token %}
     
 
       <!--PLNT Progress Bar -->
@@ -828,236 +484,265 @@
   </div>  
 </div>
 
-   <!-- Section 1 - Create Account Form   -->
-  <section>
-    <div class="w3-container">
-        <div class="row">
-          <div class="col-sm-12">
-        
-          <p class='sub-heading'>Add your payment details</p>
-          <br>
-          <div >
-              <label class="headline">
-          </div>
-         
-          <!--HTML PLNT CHECKOUT SECTION-->
-          <div class="row">
-              
-              <div class="col-sm-6">
-                  <h1 class='home-heading'>Gubel Bottle</h1>
-                  <img src="https://dl.dropboxusercontent.com/s/hyqcm2xxz7opj7g/Bottle-Gubel.jpg?dl=0" id="hero-2-logo" class="product">
-                </div>
-              <div class="col-sm-6">
 
-                <br>
-                <h2 class="sub-heading"></h2>
-                <br>
-                <p class='ch-heading'>Includes 6 Truffles + Re-usable Bottle</p>
-                <br>
-                <p class="price">Price: &nbsp;&nbsp;£5.00</p>
-                <p class="price">UK Shipping: &nbsp;&nbsp;&nbsp;£2.85</p>
-                <br>
-                <label class='underline'></label>
-                <p class="finalprice">Total: &nbsp;&nbsp; £7.85</p>
-                <p class='ch-small'>Tax included. Orders outside the UK, please us an email to hi@gubel.co.uk. Thanks.</p> 
-                <!--<p class='ch-small-discount'>Have a discount code?</p>
-                <p class='ch-small-discount'>After payment, text it on 0748.080.3557 to activate discount</p>-->
-                <div class='shipping-status'>
-                <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
-                  </div>
-                    <!--Estimated Delivery Date SCRIPT + STYLE-->
-                            <!--SCRIPT-->
-                              <script>
-                                var months = ["Jan", "Febr", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-                                n =  new Date();
-                                n.setDate(n.getDate() + 5);
-                                y = n.getFullYear();
-                                m = n.getMonth();
-                                d = n.getDate();
-                                document.getElementById("date").innerHTML = d + " " + months[m] + " " + y;
-                              </script>
-                            <!--STYLE-->
-                              <style>
-                                .shipping-status{
-                                  text-align:right;
-                                }
-
-                                .text-date{
-                                  color:gray;
-                                  display:inline-block;
-                                  font-size: 10px;
-                                  font-weight: bold;
-                                  text-align:right;
-                                }
-                                .date{
-                                  color:#22D59E;
-                                  display:inline-block;
-                                  font-size: 10px;
-                                  font-weight: bold;
-                                }
-
-                                .status{
-                                  background-color: #22D59E;
-                                  border-radius: 50%;
-                                  width: 20px;
-                                  height: 20px;
-                                  text-align:right;
-                                }
-
-                                @-webkit-keyframes pulse {
-                                    0%{transform:scale(.1);opacity: 0;}
-                                    50%{ opacity: .4;}
-                                    100%{transform: scale(1.6); opacity: 0;}
-                                  }
-
-                                  #status {
-                                    position:absolute;
-                                    -webkit-animation: pulse 2s infinite;
-                                  }
-                                  #status:nth-child(2) {
-                                    position:absolute;
-                                    -webkit-animation: pulse 2s infinite .3s;
-                                  }
-                                  #status:nth-child(3) {
-                                    position:absolute;
-                                    -webkit-animation: pulse 2s infinite .6s;
-                                  }
-                              </style> 
-                              
-              </div>
-            </div>
-            <br>
-                
-          
-      
-
-          <!--HTML PLNT Name + Credit Card Request-->
-      
-                <div class="col-xs-12">
-          
-                    <br> 
-                    <br>
-                    <br>
-                    <label for="card-name">Name on card</label>
-                    <input type="text" name="card-name" class="form-control" id="card-name" placeholder="" required="">
-                  
-                  <br>
-                  <br>
-
-                  <div class="form-row">
-                  <label for="card-element"> Credit or debit card</label>
-                  <div id="card-element" class="StripeElement StripeElement--empty">
-                  
-                    <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: #ffffff !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame5" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-3be8d1395c8852a04a24872fe60ed45f.html#style[base][color]=%2332325d&amp;style[base][fontFamily]=%22Helvetica+Neue%22%2C+Helvetica%2C+sans-serif&amp;style[base][fontSmoothing]=antialiased&amp;style[base][fontSize]=16px&amp;style[base][::placeholder][color]=%23F2F2F2&amp;style[invalid][color]=%23fa755a&amp;style[invalid][iconColor]=%23fa755a&amp;componentName=card&amp;wait=false&amp;rtl=false&amp;keyMode=test&amp;origin=https%3A%2F%2Fstripe.com&amp;referrer=https%3A%2F%2Fstripe.com%2Fdocs%2Fstripe-js%2Felements%2Fquickstart&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; height: 19.2px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: #ffffff !important; pointer-events: none !important; font-size: 16px !important;">
-                      </div>
-                  </div>
+    <!--Section 1 - Product information--> 
+    <section>
+        <div class="w3-container">
+  
+          <!-- The Bottle Buy Now Section -->
+  
+          <div class="row" style="padding-left:100px;padding-right:100px;">
             
-                  <!-- Used to display form errors. -->
-                  <div id="card-errors" role="alert" ></div>
+            
+          
+            <h1 class='heading'>Your cart</h1>
+            <label class="headline"></label>
+    
+              <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
+                       
+                        <h1 class="home-heading">calm</h1>
+                        <p class="home-heading"><b>INDULGENT RELIEF</b></p>
+                        <br>
+                        
+                        <div class="col-sm-6 center">
+                            <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" style="width:195px;">
+                          </div>
+      
+                        <div class='col-sm-6' style="padding: 0px">
+                          <br>
+                          <p class="small" style="font-weight: bold; font-size:large">2-Week Bundle</p>
+                          <p class='small' style='color:gray'>1 Bottle container (7 chocolates) + 
+                          <p class='small' style='color:gray'>1 Week Eco-Refill (7 chocolates)</p>
+                          <label class='hr'></label>
+                          <p class="price" style="text-align:left;">Subtotal<span style="float:right;">£7.00</span></p>
+                          <p class="price" style="text-align:left;">UK Shipping<span style="float:right;">£2.85</span></p>
+                          <label class='hr'></label>
+                          <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£9.85</b></span></p>
+                          
+                          <!--<p class='ch-small-discount'>Have a discount code?</p>
+                          <p class='ch-small-discount'>After payment, text it on 0748.080.3557 to activate discount</p>-->
+                          <div class='shipping-status'>
+                          <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
+                            </div>
+                              <!--Estimated Delivery Date SCRIPT + STYLE-->
+                                      <!--SCRIPT-->
+                                        <script>
+                                          var months = ["Jan", "Febr", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                                          n =  new Date();
+                                          n.setDate(n.getDate() + 5);
+                                          y = n.getFullYear();
+                                          m = n.getMonth();
+                                          d = n.getDate();
+                                          document.getElementById("date").innerHTML = d + " " + months[m] + " " + y;
+                                        </script>
+                                      <!--STYLE-->
+                                        <style>
+                                          .shipping-status{
+                                            text-align:right;
+                                          }
+      
+                                          .text-date{
+                                            color:gray;
+                                            display:inline-block;
+                                            font-size: 10px;
+                                            font-weight: bold;
+                                            text-align:right;
+                                          }
+                                          .date{
+                                            color:#22D59E;
+                                            display:inline-block;
+                                            font-size: 10px;
+                                            font-weight: bold;
+                                          }
+      
+                                          .status{
+                                            background-color: #22D59E;
+                                            border-radius: 50%;
+                                            width: 20px;
+                                            height: 20px;
+                                            text-align:right;
+                                          }
+      
+                                          @-webkit-keyframes pulse {
+                                              0%{transform:scale(.1);opacity: 0;}
+                                              50%{ opacity: .4;}
+                                              100%{transform: scale(1.6); opacity: 0;}
+                                            }
+      
+                                            #status {
+                                              position:absolute;
+                                              -webkit-animation: pulse 2s infinite;
+                                            }
+                                            #status:nth-child(2) {
+                                              position:absolute;
+                                              -webkit-animation: pulse 2s infinite .3s;
+                                            }
+                                            #status:nth-child(3) {
+                                              position:absolute;
+                                              -webkit-animation: pulse 2s infinite .6s;
+                                            }
+                                        </style> 
+                        
+      
+                      </div>  
+                          
                 </div>
-                <button>BUY NOW</button>
-                <p class="terms">
-                  All transactions are secure and encrypted <img src="https://dl.dropboxusercontent.com/s/6j0heupqgzuw85v/lock-3.png?dl=0" style="width:15px;"></p>
-                      <style>
-                          .terms {
-                            text-align: center;
-                            font-size: 12px;
-                            color: gray;
-                            padding-bottom: 15px;
-                          }
-                        </style>
-                <!--Three Promises
-                <br>
-                      <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
-                      &nbsp;&nbsp;Free shipping, always.
-                      <br>
-                      <br>
-                      <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;"> 
-                      &nbsp;&nbsp;Text to reorder your next boxes.
-                      <br>
-                      <br>
-                      <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
-                      &nbsp;&nbsp;Cardless payments after this order.-->
+                
+
+              <div class="col-sm-1" id='divider' style="padding-top:30px">
+                </div>
+
+
+            <form action="." method="post" id="payment-form"> {% csrf_token %} 
+              <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
+                  
+                  
+                  <br> 
+                  <br>
+                  <br>
+                  <label class="home-heading" for="card-name"><b>Name on card</b></label>
+                  <input type="text" name="card-name" class="form-control" id="card-name" placeholder="" required="">
+                
                 <br>
                 <br>
-              </div> 
+
+                <div class="form-row">
+                <label class="home-heading" for="card-element"><b>Credit or debit card</b></label>
+                <div id="card-element" class="form-control">
+                
+                  <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: #ffffff !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame5" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-3be8d1395c8852a04a24872fe60ed45f.html#style[base][color]=%2332325d&amp;style[base][fontFamily]=%22Helvetica+Neue%22%2C+Helvetica%2C+sans-serif&amp;style[base][fontSmoothing]=antialiased&amp;style[base][fontSize]=16px&amp;style[base][::placeholder][color]=%23F2F2F2&amp;style[invalid][color]=%23fa755a&amp;style[invalid][iconColor]=%23fa755a&amp;componentName=card&amp;wait=false&amp;rtl=false&amp;keyMode=test&amp;origin=https%3A%2F%2Fstripe.com&amp;referrer=https%3A%2F%2Fstripe.com%2Fdocs%2Fstripe-js%2Felements%2Fquickstart&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; height: 19.2px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: #ffffff !important; pointer-events: none !important; font-size: 16px !important;">
+                    </div>
+                </div>
+          
+                <!-- Used to display form errors. -->
+                <div id="card-errors" role="alert" ></div>
+              </div>
+              <button>BUY NOW</button>
+              <p class="terms">
+                  All transactions are secure and encrypted</p>
+                  <div class="center">
+                      <img src="https://dl.dropboxusercontent.com/s/9f37h9fmt7myj56/SSL-Secure-Connection.jpg?dl=0" style="width:100px;">&nbsp;<img src="https://dl.dropboxusercontent.com/s/lr1h3uim6wf7z9x/Major-Credit-Card-Logo-PNG-Image.png?dl=0" style="width:150px;">
+                    </div>
+                <style>
+                    .terms {
+                      text-align: center;
+                      font-size: 12px;
+                      color: gray;
+                      padding-bottom: 15px;
+                    }
+                    .center{
+                      margin: auto;
+                    }
+                  </style>
+              <!--Three Promises
+              <br>
+                    <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
+                    &nbsp;&nbsp;Free shipping, always.
+                    <br>
+                    <br>
+                    <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;"> 
+                    &nbsp;&nbsp;Text to reorder your next boxes.
+                    <br>
+                    <br>
+                    <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
+                    &nbsp;&nbsp;Cardless payments after this order.-->
+              <br>
+              <br>
+  
+                </div>
+                </form>
+
+            </div>
+            
+          </div>
+        </section>
+
+          
+   
+          
+           
+      
+        
+
           
           </div>
         </div>   
       </div>
-    </section>
+              </section>
     
 
      <!-- Footer -->
-     <section>
+    <section>
+        
         <div class="w3-container">
-            <div class="row" id='footer'>
+              <div class="row" id='footer'>
+            <div class="col-md-3">
+              <p><a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/19vxqsnogv5o4mp/Gubel_logo-white.png?dl=0" src="blank.gif" style="width:100px"></a></p>
+              <img src="https://dl.dropboxusercontent.com/s/6utcleyzpvluwtn/madeUK-ppp.png?dl=0" src="blank.gif" style="width:65px">
+              <p id="trust">© Gubel Ltd 2019. All Rights Reserved. London, NW2 2DT</p>         
+            </div>
+           
           <div class="col-md-3">
-            <p><a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/19vxqsnogv5o4mp/Gubel_logo-white.png?dl=0" src="blank.gif" style="width:100px"></a></p>
-            <img src="https://dl.dropboxusercontent.com/s/6utcleyzpvluwtn/madeUK-ppp.png?dl=0" src="blank.gif" style="width:65px">
-            <p id="trust">© Gubel Ltd 2019. All Rights Reserved. London, NW2 2DT</p>         
-          </div>
-         
-        <div class="col-md-3">
-            <p class="heading-f">PRODUCTS</p></a>
-            <a href='https://www.gubel.co.uk/calm_bottle'><p id="trust">calm</p></a>
-            <a href='https://www.gubel.co.uk/skincare_bottle'><p id="trust">skincare</p></a>
-          </div>
-
-        <div class="col-md-3">
-          <p class="heading-f">INFORMATION</p></a>
-          <a href='https://www.gubel.co.uk/about'><p id="trust">About</p></a>
-          <a href='https://www.gubel.co.uk/terms-of-service'><p id="trust">Terms of Service</p></a>
-          <a href='https://www.gubel.co.uk/privacy-policy'><p id="trust">Privacy Policy</p></a>
-          <a href='https://www.gubel.co.uk/sms-policy'><p id="trust">SMS Policy</p></a>  
-         </div>
-
-        <div class="col-md-3">
-          <p class="heading-f">CONTACT</p></a>
-          <a href='sms:+447480803557'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
-          <a href='https://www.instagram.com/gubel.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@gubel.UK</p></a>
-          <a href='mailto:hi@gubel.co.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@gubel.co.uk</p></a>
-         </div>
-
-              <style>         
-                
-                #footer {
-                  background-color: #000000;
-                  padding: 25px;
-                }
-                .footer-links{
-                  text-align:left;
-                  font-size: 12px;
-                  color: white;
-                }
-                #trust {
-                  text-align:left;
-                  font-size: 14px;
-                  color: white;
-                  margin: 0;
-                }
-
-                #trust-tc{
-                  text-align:left;
-                  font-size: 12px;
-                  color: white;
-                  margin: 0;
-                  border-style: solid;
-                  border-width: thin;
-                  border-color: white;
+              <p class="heading-f">PRODUCTS</p></a>
+              <a href='https://www.gubel.co.uk/calm_bottle'><p id="trust">calm</p></a>
+              <a href='https://www.gubel.co.uk/skincare_bottle'><p id="trust">skincare</p></a>
+            </div>
+  
+          <div class="col-md-3">
+            <p class="heading-f">INFORMATION</p></a>
+            <a href='https://www.gubel.co.uk/about'><p id="trust">About</p></a>
+            <a href='https://www.gubel.co.uk/terms-of-service'><p id="trust">Terms of Service</p></a>
+            <a href='https://www.gubel.co.uk/privacy-policy'><p id="trust">Privacy Policy</p></a>
+            <a href='https://www.gubel.co.uk/sms-policy'><p id="trust">SMS Policy</p></a>  
+           </div>
+  
+          <div class="col-md-3">
+            <p class="heading-f">CONTACT</p></a>
+            <a href='sms:+447480803557'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
+            <a href='https://www.instagram.com/gubel.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@gubel.UK</p></a>
+            <a href='mailto:hi@gubel.co.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@gubel.co.uk</p></a>
+           </div>
+  
+                <style>         
+                  
+                  #footer {
+                    background-color: #000000;
+                    padding: 25px;
+  
                   }
-
-                #vsu-trust {
-                  text-align:center;
-                }
-                </style> 
-
-
-        </section>
-      
+                  .footer-links{
+                    text-align:left;
+                    font-size: 12px;
+                    color: white;
+                  }
+                  #trust {
+                    text-align:left;
+                    font-size: 14px;
+                    color: white;
+                    margin: 0;
+                  }
+  
+                  #trust-tc{
+                    text-align:left;
+                    font-size: 12px;
+                    color: white;
+                    margin: 0;
+                    border-style: solid;
+                    border-width: thin;
+                    border-color: white;
+                    }
+  
+                  #vsu-trust {
+                    text-align:center;
+                  }
+                  </style> 
+  
+  
+          </section>
+          
      
     
-  </form>
+
   
 
 </div>
