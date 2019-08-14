@@ -72,7 +72,13 @@
     
     <!-- CSS Gubel Register -->
     <style media="screen">
-      
+
+          .home-heading{
+            text-align: left;
+            font-family: 'titling-gothic-fb', sans-serif;
+          }
+
+
             .container-fluid {
             height: 600px;
               }
@@ -87,7 +93,7 @@
               font-family: 'titling-gothic-fb', sans-serif;
               padding-top: 30px;
               padding-bottom: 15px;
-              text-align: center;
+              text-align: left;
               font-weight: 400;
               display:block
             }
@@ -96,7 +102,7 @@
               font-family: 'titling-gothic-fb', sans-serif;
               margin: 0px;
               text-align: left;
-              font-weight: 400;
+              font-size: large;
               display:block
             }
 
@@ -132,64 +138,6 @@
 
           /*CSS Checkout Bottle*/
 
-            .home-h1{
-          text-align: left;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          border-bottom: 1px solid gray;
-          font-weight: 700;
-          display:block;
-          text-indent: 10px;
-              }
-      
-        .home-h2{
-          text-align: left;
-          font-size: medium;
-          display:block
-           }
-
-        .home-text{
-          font-size: 10px;
-          color:gray;
-          text-align:left;
-           }
-
-        .home-heading-1{
-          text-align: left;
-          font-family: 'titling-gothic-fb', sans-serif;
-        }
-
-        .home-small-1{
-        font-weight: 400;
-        color: black;
-        text-align:center;
-        padding-bottom: 30px;
-        line-height: 25px;
-        }
-
-        .home-small{
-        font-weight: 400;
-        color: black;
-        text-align:left;
-        line-height: 25px;
-        font-size: medium;
-        }
-
-        .home-small-small{
-          text-align:left;
-          padding-bottom: 1px;
-          padding-top: 2px;
-          font-size:small;
-          font-weight: 300;
-          color:gray;
-          line-height: 1.4;
-             }
-      
-        .make-impact {
-          color:#64D7AE;
-          font-size: 10px;
-        }
-
         .underline{
           box-sizing: border-box;
           width: 100%;
@@ -218,16 +166,16 @@
           margin: auto;
         }
 
-        #hero-2-logo {
+        #photo-item {
           width: 100%;
           height: 100%;
           background-color: transparent;
           border-style: solid;
           border-color:#FCF9F7;
           border-width: 10px;
-          margin: auto;
-          margin: 10px;
-        
+          display: block;
+          margin: 0px;
+          text-align:left;
         }
 
         #reason {
@@ -258,8 +206,9 @@
         }
       
         .small{
-          font-size: small;
-          color:gray;
+          font-size:small;
+          color:black;
+          text-align: left;
         }
 
         button {
@@ -297,10 +246,11 @@
         }
         
         label {
-          font-weight: 500;
+          font-weight: 600;
           font-size: 14px;
           display: block;
           margin-bottom: 8px;
+
         }
         
         ::placeholder{
@@ -434,11 +384,17 @@
         }
 
         @media only screen and (max-width : 990px) {
-        #hero-logo.product, #values {
-            width: 100%;
-            display: block;
-            margin: auto;
-          }}
+        #photo-item {
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border-style: solid;
+          border-color:#FCF9F7;
+          border-width: 10px;
+          display: block;
+          margin: 0px;
+          text-align:center;
+        }}
       
       
 
@@ -589,8 +545,8 @@
       <br>
       <br>
             <b><ul class="progressbar" id="register-progressbar">
-               <li class="box">Bottle</li>
-                 <li class="account">Account</li>
+               <li class="box">Bundle</li>
+                 <li class="account">Shipping</li>
                  <li class='payment'>Payment</li>           
                </ul></b>
         <br>
@@ -605,74 +561,168 @@
   
           <!-- The Bottle Buy Now Section -->
   
-          <div class="row" >
-            <form method="POST" id="register-form" action="{% url 'register_calm_bottle' %}">{% csrf_token %}
-            <br>
-            <br>
-              <div class="col-sm-6">
-                  <h1 class='home-heading'></h1>
-                  <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="hero-2-logo" class="product">
+          <div class="row" style="padding-left:50px;padding-right:50px;">
+            
+            
+          
+            <p class='sub-heading'>Create an account to complete your first purchase.</p>
+            <label class="headline"></label>
+
+            <div class="col-sm-6" id='shipping-register-form' style="padding-top:30px">
                   
                   
-                  
+                 
+                <br>
+                <label for="id_phone">Phone Number</label>
+                <small class='small'>We take reorders and offer customer service exclusively via text message ―it's quick, easy and you can reach us anytime.</small>
+                <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" required="" id="id_phone" placeholder="🇬🇧 +44">
+                <br> 
                 
+      
+                <label for="id_name">Full Name</label>
+                <input type="text" name="name" class="form-control" maxlength="100" required="" id="id_name">
+                <br>
+                
+                
+                <label for="id_email">Email</label>
+                <small class='small'>For your order updates, new deals and offers.</small>
+                <input type="email" name="email" class="form-control" maxlength="100" required="" id="id_email">
+                <br>
+                
+                
+                <label for="id_address">Shipping Address</label>
+                <small class='small'> We only ship to the UK. For orders outside of the UK, please send us an email to hi@gubel.co.uk to handle your case. </small>
+                <input type="text" name="address" class="form-control" maxlength="100" required="" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
+                <br>
+                
+                
+                <label for="id_postcode">Postcode</label><input type="text" name="postcode" class="form-control" maxlength="7" required="" id="id_postcode"placeholder="NW1 6DB">
+                <br>
+                
+                
+                
+                <div class="form-group">  
+                  <button type="submit">NEXT</button>
                 </div>
-              <div class="col-sm-6">
-                  
+                <p class="terms">
+                    By continuing, you agree to our Terms of service, Privacy policy and SMS policy.
+                        <style>
+                            .terms {
+                              text-align: center;
+                              font-size: 12px;
+                              color: gray;
+                              padding-bottom: 15px;
+                            }
+                          </style>
+      
                   <br>
-                  <p class='sub-heading'>Create your account</p>
                   <br>
-                  <div >
-                      <label class="headline">
+
                   </div>
-                  <br>
-                  <label for="id_phone">Phone Number</label>
-                  <small class='small'>We take reorders and offer customer service exclusively via text message ―it's quick, easy and you can reach us anytime.</small>
-                  <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" required="" id="id_phone" placeholder="🇬🇧 +44">
-                  <br> 
-                  
-        
-                  <label for="id_name">Full Name</label>
-                  <input type="text" name="name" class="form-control" maxlength="100" required="" id="id_name">
-                  <br>
-                  
-                  
-                  <label for="id_email">Email</label>
-                  <small class='small'>For your order updates, new deals and offers.</small>
-                  <input type="email" name="email" class="form-control" maxlength="100" required="" id="id_email">
-                  <br>
-                  
-                  
-                  <label for="id_address">Shipping Address</label>
-                  <small class='small'> We only ship to the UK. For orders outside of the UK, please send us an email to hi@gubel.co.uk to handle your case. </small>
-                  <input type="text" name="address" class="form-control" maxlength="100" required="" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
-                  <br>
-                  
-                  
-                  <label for="id_postcode">Postcode</label><input type="text" name="postcode" class="form-control" maxlength="7" required="" id="id_postcode"placeholder="NW1 6DB">
-                  <br>
-                  
-                  
-                  
-                  <div class="form-group">  
-                    <button type="submit">NEXT</button>
-                  </div>
-                  <p class="terms">
-                      By continuing, you agree to our Terms of service, Privacy policy and SMS policy.
-                          <style>
-                              .terms {
-                                text-align: center;
-                                font-size: 12px;
-                                color: gray;
-                                padding-bottom: 15px;
+
+                
+                
+                  <form method="POST" id="register-form" action="{% url 'register_calm_bottle' %}">{% csrf_token %}
+                    <div class="col-sm-6 vertical-center" id='cart-list-wrapper' style="padding-top:30px">
+                       
+                       <style>
+                            @media only screen and (max-width: 990px) {
+                            .row { display: flex; flex-flow: column; }
+                            .vertical-center  { order: 1; }
                               }
                             </style>
-        
-                    <br>
-                    <br>
 
+
+                        <h1 class="home-heading">calm</h1>
+                        <p class="home-heading"><b>INDULGENT RELIEF</b></p>
+                        <br>
+                        
+                        <div class='col-sm-6' style="padding: 0px"> 
+                          <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="photo-item" class="product" style="width:210px;">
+                          </div>
+      
+                        <div class='col-sm-6' style="padding: 0px">
+                          <br>
+                          <p class="small" style="font-weight: bold; font-size:large">2-Week Bundle</p>
+                          <br>
+                          <p class='small'>1 Bottle container (7 chocolates) + 1 Week Ecorefill (7 chocolates)</p>
+                          <br>
+                          <p class="price" style="text-align:left;">Subtotal<span style="float:right;">£7.49</span></p>
+                          <p class="price" style="text-align:left;">UK Shipping<span style="float:right;">£2.85</span></p>
+                          <br>
+                          <label class='underline'></label>
+                          <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£10.34</b></span></p>
+                          
+                          <!--<p class='ch-small-discount'>Have a discount code?</p>
+                          <p class='ch-small-discount'>After payment, text it on 0748.080.3557 to activate discount</p>-->
+                          <div class='shipping-status'>
+                          <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
+                            </div>
+                              <!--Estimated Delivery Date SCRIPT + STYLE-->
+                                      <!--SCRIPT-->
+                                        <script>
+                                          var months = ["Jan", "Febr", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                                          n =  new Date();
+                                          n.setDate(n.getDate() + 5);
+                                          y = n.getFullYear();
+                                          m = n.getMonth();
+                                          d = n.getDate();
+                                          document.getElementById("date").innerHTML = d + " " + months[m] + " " + y;
+                                        </script>
+                                      <!--STYLE-->
+                                        <style>
+                                          .shipping-status{
+                                            text-align:right;
+                                          }
+      
+                                          .text-date{
+                                            color:gray;
+                                            display:inline-block;
+                                            font-size: 10px;
+                                            font-weight: bold;
+                                            text-align:right;
+                                          }
+                                          .date{
+                                            color:#22D59E;
+                                            display:inline-block;
+                                            font-size: 10px;
+                                            font-weight: bold;
+                                          }
+      
+                                          .status{
+                                            background-color: #22D59E;
+                                            border-radius: 50%;
+                                            width: 20px;
+                                            height: 20px;
+                                            text-align:right;
+                                          }
+      
+                                          @-webkit-keyframes pulse {
+                                              0%{transform:scale(.1);opacity: 0;}
+                                              50%{ opacity: .4;}
+                                              100%{transform: scale(1.6); opacity: 0;}
+                                            }
+      
+                                            #status {
+                                              position:absolute;
+                                              -webkit-animation: pulse 2s infinite;
+                                            }
+                                            #status:nth-child(2) {
+                                              position:absolute;
+                                              -webkit-animation: pulse 2s infinite .3s;
+                                            }
+                                            #status:nth-child(3) {
+                                              position:absolute;
+                                              -webkit-animation: pulse 2s infinite .6s;
+                                            }
+                                        </style> 
+                        
+      
+                      </div>  
+                          
                     </div>
                   </form>
+
             </div>
             
           </div>
