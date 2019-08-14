@@ -494,168 +494,160 @@
   
           <div class="row" style="padding-left:100px;padding-right:100px;">
             
-            
-        <form action="." method="post" id="payment-form"> 
-                
-                {% csrf_token %} 
-
-            <h1 class='heading'>Your cart</h1>
-            <label class="headline"></label>
-    
-              <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
-                       
-                        <h1 class="home-heading">calm</h1>
-                        <p class="home-heading"><b>INDULGENT RELIEF</b></p>
-                        <br>
-                        
-                        <div class="col-sm-6 center">
-                            <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" style="width:195px;">
-                          </div>
-      
-                        <div class='col-sm-6' style="padding: 0px">
-                          <br>
-                          <p class="small" style="font-weight: bold; font-size:large">2-Week Bundle</p>
-                          <p class='small' style='color:gray'>1 Bottle container (7 chocolates) + 
-                          <p class='small' style='color:gray'>1 Week Eco-Refill (7 chocolates)</p>
-                          <label class='hr'></label>
-                          <p class="price" style="text-align:left;">Subtotal<span style="float:right;">£7.00</span></p>
-                          <p class="price" style="text-align:left;">UK Shipping<span style="float:right;">£2.85</span></p>
-                          <label class='hr'></label>
-                          <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£9.85</b></span></p>
+        
+                <h1 class='heading'>Your cart</h1>
+                <label class="headline"></label>
+        
+                  <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
                           
-                          <!--<p class='ch-small-discount'>Have a discount code?</p>
-                          <p class='ch-small-discount'>After payment, text it on 0748.080.3557 to activate discount</p>-->
-                          <div class='shipping-status'>
-                          <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
-                            </div>
-                              <!--Estimated Delivery Date SCRIPT + STYLE-->
-                                      <!--SCRIPT-->
-                                        <script>
-                                          var months = ["Jan", "Febr", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-                                          n =  new Date();
-                                          n.setDate(n.getDate() + 5);
-                                          y = n.getFullYear();
-                                          m = n.getMonth();
-                                          d = n.getDate();
-                                          document.getElementById("date").innerHTML = d + " " + months[m] + " " + y;
-                                        </script>
-                                      <!--STYLE-->
-                                        <style>
-                                          .shipping-status{
-                                            text-align:right;
-                                          }
-      
-                                          .text-date{
-                                            color:gray;
-                                            display:inline-block;
-                                            font-size: 10px;
-                                            font-weight: bold;
-                                            text-align:right;
-                                          }
-                                          .date{
-                                            color:#22D59E;
-                                            display:inline-block;
-                                            font-size: 10px;
-                                            font-weight: bold;
-                                          }
-      
-                                          .status{
-                                            background-color: #22D59E;
-                                            border-radius: 50%;
-                                            width: 20px;
-                                            height: 20px;
-                                            text-align:right;
-                                          }
-      
-                                          @-webkit-keyframes pulse {
-                                              0%{transform:scale(.1);opacity: 0;}
-                                              50%{ opacity: .4;}
-                                              100%{transform: scale(1.6); opacity: 0;}
-                                            }
-      
-                                            #status {
-                                              position:absolute;
-                                              -webkit-animation: pulse 2s infinite;
-                                            }
-                                            #status:nth-child(2) {
-                                              position:absolute;
-                                              -webkit-animation: pulse 2s infinite .3s;
-                                            }
-                                            #status:nth-child(3) {
-                                              position:absolute;
-                                              -webkit-animation: pulse 2s infinite .6s;
-                                            }
-                                        </style> 
-                        
-      
-                      </div>  
-                          
-                </div>
-                
-
-              <div class="col-sm-1" id='divider' style="padding-top:30px">
-                </div>
-
-
-            
-              <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
-                  
-                  
-                  <br> 
-                  <br>
-                  <br>
-                  <label class="home-heading" for="card-name"><b>Name on card</b></label>
-                  <input type="text" name="card-name" class="form-control" id="card-name" placeholder="" required="">
-                
-                <br>
-                <br>
-
-                <div class="form-row">
-                <label class="home-heading" for="card-element"><b>Credit or debit card</b></label>
-                <div id="card-element" class="form-control">
-                
-                  <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: #ffffff !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame5" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-3be8d1395c8852a04a24872fe60ed45f.html#style[base][color]=%2332325d&amp;style[base][fontFamily]=%22Helvetica+Neue%22%2C+Helvetica%2C+sans-serif&amp;style[base][fontSmoothing]=antialiased&amp;style[base][fontSize]=16px&amp;style[base][::placeholder][color]=%23F2F2F2&amp;style[invalid][color]=%23fa755a&amp;style[invalid][iconColor]=%23fa755a&amp;componentName=card&amp;wait=false&amp;rtl=false&amp;keyMode=test&amp;origin=https%3A%2F%2Fstripe.com&amp;referrer=https%3A%2F%2Fstripe.com%2Fdocs%2Fstripe-js%2Felements%2Fquickstart&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; height: 19.2px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: #ffffff !important; pointer-events: none !important; font-size: 16px !important;">
-                    </div>
-                </div>
+                            <h1 class="home-heading">calm</h1>
+                            <p class="home-heading"><b>INDULGENT RELIEF</b></p>
+                            <br>
+                            
+                            <div class="col-sm-6 center">
+                                <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" style="width:195px;">
+                              </div>
           
-                <!-- Used to display form errors. -->
-                <div id="card-errors" role="alert" ></div>
-              </div>
-              <button>BUY NOW</button>
-              <p class="terms">
-                  All transactions are secure and encrypted</p>
-                  <div class="center">
-                      <img src="https://dl.dropboxusercontent.com/s/9f37h9fmt7myj56/SSL-Secure-Connection.jpg?dl=0" style="width:100px;">&nbsp;<img src="https://dl.dropboxusercontent.com/s/lr1h3uim6wf7z9x/Major-Credit-Card-Logo-PNG-Image.png?dl=0" style="width:150px;">
+                            <div class='col-sm-6' style="padding: 0px">
+                              <br>
+                              <p class="small" style="font-weight: bold; font-size:large">2-Week Bundle</p>
+                              <p class='small' style='color:gray'>1 Bottle container (7 chocolates) + 
+                              <p class='small' style='color:gray'>1 Week Eco-Refill (7 chocolates)</p>
+                              <label class='hr'></label>
+                              <p class="price" style="text-align:left;">Subtotal<span style="float:right;">£7.00</span></p>
+                              <p class="price" style="text-align:left;">UK Shipping<span style="float:right;">£2.85</span></p>
+                              <label class='hr'></label>
+                              <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£9.85</b></span></p>
+                              
+                              <!--<p class='ch-small-discount'>Have a discount code?</p>
+                              <p class='ch-small-discount'>After payment, text it on 0748.080.3557 to activate discount</p>-->
+                              <div class='shipping-status'>
+                              <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
+                                </div>
+                                  <!--Estimated Delivery Date SCRIPT + STYLE-->
+                                          <!--SCRIPT-->
+                                            <script>
+                                              var months = ["Jan", "Febr", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                                              n =  new Date();
+                                              n.setDate(n.getDate() + 5);
+                                              y = n.getFullYear();
+                                              m = n.getMonth();
+                                              d = n.getDate();
+                                              document.getElementById("date").innerHTML = d + " " + months[m] + " " + y;
+                                            </script>
+                                          <!--STYLE-->
+                                            <style>
+                                              .shipping-status{
+                                                text-align:right;
+                                              }
+          
+                                              .text-date{
+                                                color:gray;
+                                                display:inline-block;
+                                                font-size: 10px;
+                                                font-weight: bold;
+                                                text-align:right;
+                                              }
+                                              .date{
+                                                color:#22D59E;
+                                                display:inline-block;
+                                                font-size: 10px;
+                                                font-weight: bold;
+                                              }
+          
+                                              .status{
+                                                background-color: #22D59E;
+                                                border-radius: 50%;
+                                                width: 20px;
+                                                height: 20px;
+                                                text-align:right;
+                                              }
+          
+                                              @-webkit-keyframes pulse {
+                                                  0%{transform:scale(.1);opacity: 0;}
+                                                  50%{ opacity: .4;}
+                                                  100%{transform: scale(1.6); opacity: 0;}
+                                                }
+          
+                                                #status {
+                                                  position:absolute;
+                                                  -webkit-animation: pulse 2s infinite;
+                                                }
+                                                #status:nth-child(2) {
+                                                  position:absolute;
+                                                  -webkit-animation: pulse 2s infinite .3s;
+                                                }
+                                                #status:nth-child(3) {
+                                                  position:absolute;
+                                                  -webkit-animation: pulse 2s infinite .6s;
+                                                }
+                                            </style> 
+                            
+          
+                          </div>  
+                              
                     </div>
-                <style>
-                    .terms {
-                      text-align: center;
-                      font-size: 12px;
-                      color: gray;
-                      padding-bottom: 15px;
-                    }
-                    .center{
-                      margin: auto;
-                    }
-                  </style>
-              <!--Three Promises
-              <br>
-                    <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
-                    &nbsp;&nbsp;Free shipping, always.
+                
+
+                <div class="col-sm-1" id='divider' style="padding-top:30px">
+                  </div>
+
+
+                <form action="." method="post" id="payment-form">   {% csrf_token %} 
+                  <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
+                      
+                      
                     <br>
+                      <label class="home-heading" for="card-name"><b>Name on card</b></label>
+                      <input type="text" name="card-name" class="form-control" id="card-name" placeholder="" required="">
                     <br>
-                    <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;"> 
-                    &nbsp;&nbsp;Text to reorder your next boxes.
-                    <br>
-                    <br>
-                    <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
-                    &nbsp;&nbsp;Cardless payments after this order.-->
-              <br>
-              <br>
-  
-                </div>
-           
-              </form>
+        
+                    <div class="form-row">
+                    <label class="home-heading" for="card-element"><b>Credit or debit card</b></label>
+                    <div id="card-element" class="form-control">
+                    
+                      <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: #ffffff !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame5" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-3be8d1395c8852a04a24872fe60ed45f.html#style[base][color]=%2332325d&amp;style[base][fontFamily]=%22Helvetica+Neue%22%2C+Helvetica%2C+sans-serif&amp;style[base][fontSmoothing]=antialiased&amp;style[base][fontSize]=16px&amp;style[base][::placeholder][color]=%23F2F2F2&amp;style[invalid][color]=%23fa755a&amp;style[invalid][iconColor]=%23fa755a&amp;componentName=card&amp;wait=false&amp;rtl=false&amp;keyMode=test&amp;origin=https%3A%2F%2Fstripe.com&amp;referrer=https%3A%2F%2Fstripe.com%2Fdocs%2Fstripe-js%2Felements%2Fquickstart&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; height: 19.2px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: #ffffff !important; pointer-events: none !important; font-size: 16px !important;">
+                        </div>
+                    </div>
+              
+                    <!-- Used to display form errors. -->
+                    <div id="card-errors" role="alert" ></div>
+                  </div>
+                  <button>BUY NOW</button>
+                  <p class="terms">
+                      All transactions are secure and encrypted</p>
+                      <div class="center">
+                          <img src="https://dl.dropboxusercontent.com/s/9f37h9fmt7myj56/SSL-Secure-Connection.jpg?dl=0" style="width:100px;">&nbsp;<img src="https://dl.dropboxusercontent.com/s/lr1h3uim6wf7z9x/Major-Credit-Card-Logo-PNG-Image.png?dl=0" style="width:150px;">
+                        </div>
+                    <style>
+                        .terms {
+                          text-align: center;
+                          font-size: 12px;
+                          color: gray;
+                          padding-bottom: 15px;
+                        }
+                        .center{
+                          margin: auto;
+                        }
+                      </style>
+                  <!--Three Promises
+                  <br>
+                        <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
+                        &nbsp;&nbsp;Free shipping, always.
+                        <br>
+                        <br>
+                        <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;"> 
+                        &nbsp;&nbsp;Text to reorder your next boxes.
+                        <br>
+                        <br>
+                        <img src="https://dl.dropboxusercontent.com/s/czf3nl4ioquj2gq/Check-icon-2.png?dl=0" style="width:15px;">
+                        &nbsp;&nbsp;Cardless payments after this order.-->
+                  <br>
+                  <br>
+      
+                    </div>
+                  </form>
+
             </div>
             
           </div>
