@@ -217,13 +217,27 @@
         }
         
         .product-title{
+        font-family: 'titling-gothic-fb', sans-serif;
         margin-top: 10px;
-        font-weight: 600;
+        font-weight: 400;
         color: black;
         text-align: center;
         line-height: 25px;
         font-size: large;
+        text-decoration: none;
         }
+
+        .product-title:hover{
+        font-family: 'titling-gothic-fb', sans-serif;
+        margin-top: 10px;
+        font-weight: 400;
+        color: gray;
+        text-align: center;
+        line-height: 25px;
+        font-size: large;
+        text-decoration: none;
+        }
+
 
         .product-subtitle{
         display: inline-block;
@@ -311,14 +325,16 @@
           font-style: italic;
         }
 
-        .underline{
-          box-sizing: border-box;
-          width: 100%;
-          padding: 0.5px;
-          border-top: 1px solid gray;
-          
-          -webkit-appearance: none !important;
-             }
+        .hr{ 
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 0.5px;
+            border-color:gray;
+        } 
 
         #header-logo {
           width: 200px;
@@ -777,8 +793,8 @@
                       <br>
                       <a href='https://www.gubel.co.uk/calm_bottle'><p class='product-title'>calm</p></a>
                       <p class="product-small-2">14 chocolates (2-Week Supply)</p>
-                      <label class='underline'></label>
-                      <p class="product-small">Price: &nbsp;&nbsp;£7.49</p>
+                      <label class='hr'></label>
+                      <p class="product-small"><b>£7.00</b></p>
                       <button type="submit">BUY NOW</button> 
                   </form>
                   </div>
@@ -789,8 +805,8 @@
                         <br>
                         <a href='https://www.gubel.co.uk/skincare_bottle'><p class='product-title'>skincare</p></a>
                         <p class="product-small-2">14 chocolates (2-Week Supply)</p>
-                        <label class='underline'></label>
-                        <p class="product-small">Price: &nbsp;&nbsp;£7.49</p>
+                        <label class='hr'></label>
+                        <p class="product-small"><b>£7.00</b></p>
                         <button type="submit">BUY NOW</button> 
                       </form>
                     </div>
@@ -840,14 +856,13 @@
                           <br>
                       </div>
                         
-                      <div class="col-md-6 vertical-center">                
+                      <div class="col-md-6 vertical-center" style="padding-left:100px;padding-right:100px;">                
                           <form method="POST" action="{% url 'about' %}">{% csrf_token %} 
                           <a href='https://www.gubel.co.uk/about'></a><p class='about-title'>Why Chocolate? Why Gubel?</p></a>
                           <p class="about-text">Chocolate is a real, wholefood with natural healthful benefits like flavonoids and antioxidants. We though about blending this delicious snack as a protective carrier with plant extracts to deliver extra benefits.</p>
+                          <br>
                           <button type="submit">LEARN MORE</button>
                           </form>
-                    
-
                           
                         </div>
                 </div>         
