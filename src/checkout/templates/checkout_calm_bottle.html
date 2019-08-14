@@ -494,7 +494,10 @@
           <div class="row" style="padding-left:100px;padding-right:100px;">
             
             
-          
+        <form action="." method="post" id="payment-form"> 
+                
+                {% csrf_token %} 
+
             <h1 class='heading'>Your cart</h1>
             <label class="headline"></label>
     
@@ -593,9 +596,7 @@
                 </div>
 
 
-            <form action="." method="post" id="payment-form"> 
-                <br>  
-              {% csrf_token %} 
+            
               <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
                   
                   
@@ -652,8 +653,8 @@
               <br>
   
                 </div>
-            </form>
-
+           
+              </form>
             </div>
             
           </div>
