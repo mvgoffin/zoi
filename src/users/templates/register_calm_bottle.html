@@ -565,64 +565,10 @@
             
             
           
-            <p class='sub-heading'>Create an account to complete your first purchase.</p>
+            <p class='sub-heading'>Your cart</p>
             <label class="headline"></label>
-
-            <div class="col-sm-6" id='shipping-register-form' style="padding-top:30px">
-                  
-                  
-                 
-                <br>
-                <label for="id_phone">Phone Number</label>
-                <small class='small'>We take reorders and offer customer service exclusively via text message ―it's quick, easy and you can reach us anytime.</small>
-                <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" required="" id="id_phone" placeholder="🇬🇧 +44">
-                <br> 
-                
-      
-                <label for="id_name">Full Name</label>
-                <input type="text" name="name" class="form-control" maxlength="100" required="" id="id_name">
-                <br>
-                
-                
-                <label for="id_email">Email</label>
-                <small class='small'>For your order updates, new deals and offers.</small>
-                <input type="email" name="email" class="form-control" maxlength="100" required="" id="id_email">
-                <br>
-                
-                
-                <label for="id_address">Shipping Address</label>
-                <small class='small'> We only ship to the UK. For orders outside of the UK, please send us an email to hi@gubel.co.uk to handle your case. </small>
-                <input type="text" name="address" class="form-control" maxlength="100" required="" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
-                <br>
-                
-                
-                <label for="id_postcode">Postcode</label><input type="text" name="postcode" class="form-control" maxlength="7" required="" id="id_postcode"placeholder="NW1 6DB">
-                <br>
-                
-                
-                
-                <div class="form-group">  
-                  <button type="submit">NEXT</button>
-                </div>
-                <p class="terms">
-                    By continuing, you agree to our Terms of service, Privacy policy and SMS policy.
-                        <style>
-                            .terms {
-                              text-align: center;
-                              font-size: 12px;
-                              color: gray;
-                              padding-bottom: 15px;
-                            }
-                          </style>
-      
-                  <br>
-                  <br>
-
-                  </div>
-
-                
-                
-                  <form method="POST" id="register-form" action="{% url 'register_calm_bottle' %}">{% csrf_token %}
+    
+              <form method="POST" id="register-form" action="{% url 'register_calm_bottle' %}">{% csrf_token %}
                     <div class="col-sm-6 vertical-center" id='cart-list-wrapper' style="padding-top:30px">
                        
                        <style>
@@ -721,8 +667,60 @@
                       </div>  
                           
                     </div>
-                  </form>
+                </form>
 
+                <div class="col-sm-6" id='shipping-register-form' style="padding-top:30px">
+                  
+                  
+                 
+                  <br>
+                  <label for="id_phone">Phone Number</label>
+                  <small class='small'>We take reorders and offer customer service exclusively via text message ―it's quick, easy and you can reach us anytime.</small>
+                  <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" required="" id="id_phone" placeholder="🇬🇧 +44">
+                  <br> 
+                  
+        
+                  <label for="id_name">Full Name</label>
+                  <input type="text" name="name" class="form-control" maxlength="100" required="" id="id_name">
+                  <br>
+                  
+                  
+                  <label for="id_email">Email</label>
+                  <small class='small'>For your order updates, new deals and offers.</small>
+                  <input type="email" name="email" class="form-control" maxlength="100" required="" id="id_email">
+                  <br>
+                  
+                  
+                  <label for="id_address">Shipping Address</label>
+                  <small class='small'> We only ship to the UK. For orders outside of the UK, please send us an email to hi@gubel.co.uk to handle your case. </small>
+                  <input type="text" name="address" class="form-control" maxlength="100" required="" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
+                  <br>
+                  
+                  
+                  <label for="id_postcode">Postcode</label><input type="text" name="postcode" class="form-control" maxlength="7" required="" id="id_postcode"placeholder="NW1 6DB">
+                  <br>
+                  
+                  
+                  
+                  <div class="form-group">  
+                    <button type="submit">NEXT</button>
+                  </div>
+                  <p class="terms">
+                      By continuing, you agree to our Terms of service, Privacy policy and SMS policy.
+                          <style>
+                              .terms {
+                                text-align: center;
+                                font-size: 12px;
+                                color: gray;
+                                padding-bottom: 15px;
+                              }
+                            </style>
+        
+                    <br>
+                    <br>
+  
+                </div>
+                
             </div>
             
           </div>
