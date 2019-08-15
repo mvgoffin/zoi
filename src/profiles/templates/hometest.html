@@ -109,8 +109,8 @@
             
             .heading{
               font-family: 'titling-gothic-fb', sans-serif;
-              padding-top: 30px;
-              padding-bottom: 20px;
+              padding-top: 75px;
+              padding-bottom: 50px;
               text-align: center;
               font-weight: 400;
               display:block;
@@ -120,7 +120,7 @@
             .heading-5{
               font-family: 'titling-gothic-fb', sans-serif;
               padding-top: 100px;
-              padding-bottom: 50px;
+              padding-bottom: 100px;
               margin:auto;
               text-align: center;
               font-weight: 400;
@@ -152,7 +152,18 @@
             }**/
 
 
-      
+            #four-whys {
+                  background-color:transparent;
+                  padding: 25px;
+                }
+
+            #bundles {
+              background-color:#FCF9F7;
+            }
+
+            #whygubel {
+              background-color:#FCF9F7;
+            }
 
             .center{
               display: block;
@@ -160,7 +171,7 @@
               text-align:center;
             }
 
-          /*CSS Checkout Bottle*/
+          
 
           .home-h1{
               text-align: left;
@@ -190,12 +201,16 @@
           font-family: 'titling-gothic-fb', sans-serif;
         }
 
-        .home-small-1{
+        .home-hero-text {
+          font-weight: 400;
+          color: black;
+          text-align:center;
+        }
+
+        .home-text-bundle{
         font-weight: 400;
         color: black;
         text-align:center;
-        padding-bottom: 30px;
-        line-height: 25px;
         }
 
         .home-small-2{
@@ -211,7 +226,7 @@
         display: inline-block;
         font-weight: 400;
         color: black;
-        text-align:left;
+        text-align:center;
         line-height: 25px;
         font-size: medium;
         }
@@ -246,6 +261,15 @@
         text-align:left;
         line-height: 25px;
         font-size: medium;
+        }
+
+        .product-small-real-value{
+        font-weight: 400;
+        color: red;
+        text-align:center;
+        line-height: 25px;
+        font-size: medium;
+        text-decoration: line-through;
         }
 
         .product-small{
@@ -370,7 +394,7 @@
           display: block;
           margin-left: auto;
           margin-right: auto;
-          width: 15%;
+          width: 100%;
         }
 
         #hero-1-logo {
@@ -595,7 +619,7 @@
         .col-sm-12{
           padding-left:  200px;
           padding-right:  200px;
-          background-color: #FCF9F7;
+          background-color: transparent;
           }
 
         .col-sm-12-3{
@@ -726,36 +750,35 @@
           <!--Tagline --> 
               <div class="col-sm-12">
                   <h1 class="heading">We make chocolates differently</h1><!--<img src="https://dl.dropboxusercontent.com/s/kyt0sv1j4n3sdeo/delicious%20feeling.png?dl=0" style="width:30px"></h1>-->
-                  <p class='home-small-1'>A daily dose of beneficial plant extracts in every chocolate so you can feel good every single day </p> 
+                  <p class='home-hero-text'>A daily dose of plant extracts benefits in every chocolate so you can feel good every single day.</p> 
               </div>
                   <!-- 6 whys--> 
                   <div class="w3-container">
-                      <div class="row">
+                      <div class="row" id='four-whys'>
                           
                         <div class="col-sm-3">
                             <img src="https://dl.dropboxusercontent.com/s/ubd8ltfxhvobx8w/1.%20vegan%20friendly.png?dl=0"id="icon">
-                            <br>
-                            <p class="center">Vegan friendly</p> 
+                            
+                            <p class="center"><b>Vegan friendly</b></p> 
                           </div>
             
                         <div class="col-sm-3">
                             <img src="https://dl.dropboxusercontent.com/s/gzmihtkou8qfsok/2.%20free-from.png?dl=0" id="icon">
-                            <br>
-                            <p class="center">Free from gluten, dairy and palm oil</p> 
+                            
+                            <p class="center"><b>Free from gluten, dairy and palm oil</b></p> 
                           </div>
                           
                         
                         <div class="col-sm-3">
                             <img src="https://dl.dropboxusercontent.com/s/uszg83cqtc4bbvr/3.%20Ethical%20sourced%20cocoa.png?dl=0" id="icon">
-                            <br>
-                            <p class="center">Ethically sourced cocoa</p> 
+                            
+                            <p class="center"><b>Ethically sourced cocoa</b></p> 
                           </div>
                             
             
                         <div class="col-sm-3">
                             <img src="https://dl.dropboxusercontent.com/s/99cvzu54csx5ohz/4.%20text-to-reorder.png?dl=0" id="icon">
-                            <br>
-                            <p class="center">Text us to reorder -it's quick and easy.</p> 
+                            <p class="center"><b>Text us to reorder -it's quick and easy.</b></p> 
                           </div>
                           
             
@@ -774,18 +797,20 @@
 
 
      <!-- Section 3 - About Us --> 
-     <section>
+     <section id='bundles'>
         <div class="w3-container">
           <div class="row">
               <div class="col-sm-12-3">
                 <br>
                 <h1 class="heading">Choose a bundle that is right for you</h1> 
+                <p class='home-text-bundle'>Easily incorporate the health benefits from plants and the goodness of chocolates into your daily routine with Gubel!</p>
+                <p class='home-text-bundle'>We have two delicious chocolate recipes: calm, infused with L-theanine and a sweet roasted hazlenut, and skincare, infused with plant-based collagen and rose extracts. That's what we call better chocolates!</p> 
                 <br>
               </div>
           </div>
         </div>
         
-        <div class="container">
+        <div class="container" >
             <div class="row">
                   <div class="col-md-6">
                   <form method="POST" action="{% url 'register_calm_bottle' %}">{% csrf_token %}
@@ -794,7 +819,8 @@
                       <a href='https://www.gubel.co.uk/calm_bottle'><p class='product-title'>calm</p></a>
                       <p class="product-small-2">14 chocolates (2-Week Supply)</p>
                       <label class='hr'></label>
-                      <p class="product-small"><b>£7.00</b></p>
+                      <p class="product-small-real-value"><b>£10.00 Price</b></p>
+                      <p class="product-small"><b>£7.00 New Customers</b></p>
                       <button type="submit">BUY NOW</button> 
                   </form>
                   </div>
@@ -806,7 +832,8 @@
                         <a href='https://www.gubel.co.uk/skincare_bottle'><p class='product-title'>skincare</p></a>
                         <p class="product-small-2">14 chocolates (2-Week Supply)</p>
                         <label class='hr'></label>
-                        <p class="product-small"><b>£7.00</b></p>
+                        <p class="product-small-real-value"><b>£10.00 Price</b></p>
+                      <p class="product-small"><b>£7.00 New Customers</b></p>
                         <button type="submit">BUY NOW</button> 
                       </form>
                     </div>
@@ -822,7 +849,7 @@
         <div class="w3-container">
               <div class="row">
                   <div class="col-dm-12">
-                      <h1 class="heading-5">What people are saying</h1>
+                      <h1 class="heading">What people are saying</h1>
                     </div>
                   
                 <div class="col-sm-4">
@@ -850,8 +877,8 @@
      <section>
             <div class="w3-container">
 
-                <div class="row">
-                      <div class="col-md-6">                         
+                <div class="row" id='whygubel'>
+                      <div class="col-md-6" style="padding:0px;">                         
                           <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product">
                           <br>
                       </div>
