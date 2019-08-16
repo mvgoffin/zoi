@@ -745,7 +745,7 @@
 
 <body>
   
-  <!--Mobile Bubble Menu Body-->
+  <!--Mobile Bubble Menu Body
   <nav>
       <div class="hamburger">
         <div class="line"></div>
@@ -785,10 +785,12 @@
 
     .landing{
       height: 90vh;
+      
     }
 
 
     @media screen and (max-width: 768px){
+      
       
       .line{
         width: 30px;
@@ -853,25 +855,25 @@
     const navLinks = document.querySelector(".nav-links");
     const links = document.querySelectorAll(".nav-links li");
 
-
     hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
-      links.forEach(link =>{
-        link.classList.toggle('fade');
-      });
-    });
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+    link.classList.toggle("fade");
+  });
+});
     
 
     </script>
-    </nav>
+    </nav>-->
 
 
   <!-- Header -->
-  <section class="landing">
+  <div class="header" id="header">
+    <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
+    </div>  
 
-      <div class="header" id="header">
-        <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
-        </div>  
+  <!--<section class="landing">-->
+    
     
   
     <!-- Content -->
@@ -1112,7 +1114,7 @@
         </section>
         
 
-    </section>
+      <!--</section>-->
 
 </body>
 
