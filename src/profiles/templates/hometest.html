@@ -383,8 +383,10 @@
         }
 
         * {
-        box-sizing: border-box;
-          }
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
 
         #hero-logo {
           width: 100%;
@@ -754,7 +756,7 @@
         <li><a href="www.gubel.co.uk/calm_bottle">calm</a></li>
         <li><a href="www.gubel.co.uk/skincare_bottle">skincare</a></li>
       </ul>
-  </nav>
+  
     
     
 
@@ -778,23 +780,15 @@
     .nav-links li a{
       color: white;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 24px;
     }
 
     .landing{
       height: 90vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
-    .landing h1{
-      margin: 100px;
-      font-size: 50px;
-      color:lightcoral;
-    }
 
-    @media screen and (max-width: 990px){
+    @media screen and (max-width: 768px){
       
       .line{
         width: 30px;
@@ -811,7 +805,7 @@
         position: absolute;
         cursor: pointer;
         right: 5%;
-        top: 20%;
+        top: 50%;
         transform: translate(-5%, -50%);
         z-index: 2;
       }
@@ -822,31 +816,29 @@
         height: 100vh;
         width: 100%;
         flex-direction: column;
-        clip-path: circle(1500px at 90% -10%);
-        -webkit-clip-path: circle(1500px at 90% -10%);
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
         transition: all 1s ease-out;
         pointer-events: none;
+        /**z-index: 1;**/
       }
 
       .nav-links.open{
-        clip-path: circle(1500px at 90% -10%);
-        -webkit-clip-path: circle(1500px at 90% -10%);
+        clip-path: circle(1500px at 90% -20%);
+        -webkit-clip-path: circle(1500px at 90% -20%);
         pointer-events: all;
       }
 
-      .landing{
-        flex-direction: column;
-      }
       .nav-links li{
         opacity: 0;
       }
       .nav-links li a{
         font-size: 25px;
       }
-      .nav-links li:nth-child(1){
+      .nav-links li:nth-child(1) {
         transition: all 0.5x ease 0.2x;
       }
-      .nav-links li:nth-child(2){
+      .nav-links li:nth-child(2) {
         transition: all 0.5x ease 0.4x;
       }
       li.fade{
@@ -857,13 +849,13 @@
     </style>
 
     <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const links = document.querySelector('nav-links li');
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
 
 
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
       links.forEach(link =>{
         link.classList.toggle('fade');
       });
@@ -871,11 +863,12 @@
     
 
     </script>
-</nav>
+    </nav>
 
 
   <!-- Header -->
   <section class="landing">
+
       <div class="header" id="header">
         <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
         </div>  
@@ -941,8 +934,6 @@
 
       </section>
 
-
-
      <!-- Section 3 - About Us --> 
      <section id='bundles'>
         <div class="w3-container">
@@ -991,8 +982,6 @@
 
       </section>
 
-
-     
      <!--Section What people are saying-->
      <section>
         <div class="w3-container">
@@ -1019,8 +1008,6 @@
               </div>
           </div>    
       </section>
-
-
 
      <!--Why Gubel-->
      <section>
@@ -1125,7 +1112,7 @@
         </section>
         
 
-</section>  
+    </section>
 
 </body>
 
