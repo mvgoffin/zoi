@@ -29,7 +29,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
     path('about/', views.about, name='about'),
-    path('navbar/', views.about, name='navbar'),
+    path('navbar/', views.navbar, name='navbar'),
     path('calm_bottle/', views.calm_bottle, name='calm-bottle'),
     path('skincare_bottle/', views.skincare_bottle, name='skincare-bottle'),
     path('register_calm_bottle/', user_views.register_calm_bottle, name='register_calm_bottle'),
