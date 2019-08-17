@@ -797,26 +797,18 @@
     background-color:white;
     overflow: hidden;
     height: 63;
+    margin:0;
   }
 
   .navbar a{
-    float:left;
-    display: block;
-    color:darkgray;
-    text-align: center;
+    float:right;
     padding: 14px 16px;
-    text-decoration: none;
-    font-size:17px;
+    margin-right: 10px;
   }
 
   .navbar ul{
     padding: 8px 0 0 0;
     list-style: none;
-  }
-
-  .navbar a:hover{
-    background-color: #ffb833;
-    color: black;
   }
 
   .side-nav{
@@ -825,9 +817,8 @@
     position: fixed;
     z-index: 1;
     top:0;
-    left:0;
-    background-color: #FFB833;
-    
+    right:0;
+    background-color: #F5F0EE;
     overflow-x: hidden;
     padding-top:60px;
     transition: 0.5s;
@@ -835,21 +826,25 @@
 
   .side-nav a{
     padding: 10px 10px 10px 30px;
+    margin-right: 10px;
     text-decoration: none;
-    font-size:22px;
+    font-family: 'titling-gothic-fb', sans-serif;
+    font-size:30px;
     color:black;
+    text-align: right;
     display: block;
+    top:0;
+    right: 0;
     transition: 0.3s;
-  }
-
-  .side-nav a:hover{
-    color: white;
   }
 
   .side-nav .btn-close{
     position:absolute;
+    padding: 10 10 10 10;
+    color: black;
     top:0;
-    font-size: 36px;
+    right: 0;
+    font-size: 50px;
   }
 
   #main {
@@ -859,8 +854,24 @@
     width: 100%;
   }
 
-  @media(max-width: 750px){
-    .navbar-nav{display:none;}
+  @media only screen and (max-width: 990px) {
+    .navbar a{
+    float:right;
+    padding-right: 10px !important;
+  }
+
+  .center {
+    float:left;
+    padding-left: 10px !important;
+  }
+
+  .side-nav .btn-close{
+    padding-right: 10px !important;
+  }
+
+  .side-nav a{
+    padding-right: 10px !important;
+  }
   }
 
   
