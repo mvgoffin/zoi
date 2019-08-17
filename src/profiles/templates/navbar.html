@@ -760,10 +760,10 @@
           </a>
         </span>
 
-        <ul class="navbar-nav">
+        <!--<ul class="navbar-nav">
             <li><a href='#'>calm</a></li>
             <li><a href='#'>skincare</a></li>
-        </ul>
+        </ul>-->
 
       </nav>
 
@@ -794,6 +794,14 @@
       </script>
 
       <style>
+
+      body{
+        overflow-x: hidden;
+        opacity: 0.9;
+        
+      }
+
+
       .navbar{
         background-color:#64D7AE;
         overflow: hidden;
@@ -838,21 +846,19 @@
         padding: 10px 10px 10px 30px;
         text-decoration: none;
         font-size:22px;
-        color:aliceblue;
+        color:black;
         display: block;
         transition: 0.3s;
       }
 
       .side-nav a:hover{
-        color: #64D7AE;
+        color: white;
       }
 
       .side-nav .btn-close{
-        position: absolute;
+        position:absolute;
         top:0;
-        right:22px;
         font-size: 36px;
-        margin-left: 50px;
       }
 
       #main {
@@ -861,6 +867,11 @@
         overflow: hidden;
         width: 100%;
       }
+
+      @media(max-width: 990px){
+        .navbar-nav{display-none}
+      }
+
       
       </style>
      
