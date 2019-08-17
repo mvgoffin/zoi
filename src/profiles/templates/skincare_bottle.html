@@ -691,10 +691,144 @@
 
 <body>
   
-  <!-- Header -->
-    <div class="header" id="header">
-      <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
-      </div>  
+ <!--Navigation Bar-->
+ <section>
+    <div class="row">
+        <div class="col-md-4">
+          </div>
+        <div class="col-md-4"> 
+            <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
+            </div>
+        <div class="col-md-4">
+        <nav class='navbar'>
+            <span class="open-slide">
+              <a href="#" onclick='openSlideMenu()'>
+                <svg width="30" height='30'>
+                  <path d='M0,5 30,5' stroke='#000' 
+                  stroke-width='5'/>
+                  <path d='M0,14 30,14' stroke='#000' 
+                  stroke-width='5'/>
+                  <path d='M0,23 30,23' stroke='#000' 
+                  stroke-width='5'/>
+                </svg>
+              </a>
+            </span>
+          </nav>
+  
+          <div id="side-menu" class="side-nav">
+              <a href='#' class='btn-close' onclick='closeSlideMenu()'>&times;</a>
+              <a href='/calm_bottle'>calm</a>
+              <a href='/skincare_bottle'>skincare</a>
+          </div>
+  
+          <script>
+            function openSlideMenu(){
+                document.getElementById('side-menu').style.width
+                = '100%';
+                document.getElementById('main').style.marginLeft
+                = '100%';
+            }
+  
+            function closeSlideMenu(){
+                  document.getElementById('side-menu').style.width
+                  = '0';
+                  document.getElementById('main').style.marginLeft
+                  = '0';
+            }
+          </script>
+  
+          <style>
+  
+          body{
+            overflow-x: hidden;
+          }
+  
+  
+          .navbar{
+            background-color:white;
+            overflow: hidden;
+            height: 63;
+            margin:0;
+          }
+  
+          .navbar a{
+            float:right;
+            padding: 20px 16px;
+            margin-right: 10px;
+          }
+  
+          .navbar ul{
+            padding: 8px 0 0 0;
+            list-style: none;
+          }
+  
+          .side-nav{
+            height:100%;
+            width:0;
+            position: fixed;
+            z-index: 1;
+            top:0;
+            right:0;
+            background-color: white;
+            overflow-x: hidden;
+            padding-top:60px;
+            transition: 0.5s;
+          }
+  
+          .side-nav a{
+            padding: 10px 10px 10px 30px;
+            margin-right: 10px;
+            text-decoration: none;
+            font-family: 'titling-gothic-fb', sans-serif;
+            font-size:30px;
+            color:black;
+            text-align: right;
+            display: block;
+            top:0;
+            right: 0;
+            transition: 0.3s;
+          }
+  
+          .side-nav .btn-close{
+            position:absolute;
+            padding: 0px 20px 20px 0px;
+            color: black;
+            top:0;
+            right: 0;
+            font-size: 50px;
+          }
+  
+          #main {
+            transition: margin-left 0.5s;
+            padding:20px;
+            overflow: hidden;
+            width: 100%;
+          }
+  
+          @media only screen and (max-width: 990px) {
+            .navbar a{
+            float:right;
+            padding-right: 10px !important;
+          }
+  
+          .center {
+            float:left;
+            padding-left: 10px !important;
+          }
+  
+          .side-nav .btn-close{
+            padding-right: 10px !important;
+          }
+  
+          .side-nav a{
+            padding-right: 10px !important;
+          }
+          }
+  
+          
+          </style>
+          </div>
+    </section> 
     
   
      <!-- Content -->
