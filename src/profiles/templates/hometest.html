@@ -745,151 +745,6 @@
 
 <body>
   
-  <!--Mobile Bubble Menu Body
-  <nav>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <ul class="nav-links">
-        <li><a href='/calm_bottle'>calm</a></li>
-        <li><a href='/skincare_bottle'>skincare</a></li>
-      </ul>
-  
-    
-    
-
-    <style>
-    nav{
-      height: 10vh;
-      background: #000000;
-    }
-
-    .nav-links{
-      display: flex;
-      list-style: none;
-      width: 50%;
-      background: black;
-      height: 100%;
-      justify-content: space-around;
-      align-items: center;
-      margin-left: auto; /**not working**/
-    }
-
-    .nav-links li a{
-      color: white;
-      text-decoration: none;
-      font-size: 24px;
-    }
-
-    .landing{
-      height: 90vh;
-      
-    }
-
-
-    @media screen and (max-width: 768px){
-      
-      
-      .line{
-        width: 30px;
-        height: 3px;
-        background: white;
-        margin:5px;
-      }
-
-      nav{
-        position: relative;
-      }
-      
-      .hamburger{
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-      }
-
-      .nav-links{
-        position: fixed;
-        background:black;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(10px at 90% -20%);
-        -webkit-clip-path: circle(10px at 90% -20%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-        
-      }
-
-      .nav-links.open{
-        clip-path: circle(1500px at 90% -20%);
-        -webkit-clip-path: circle(1500px at 90% -20%);
-        pointer-events: all;
-      }
-
-      .nav-links li{
-        opacity: 0;
-      }
-      .nav-links li a{
-        font-size: 25px;
-      }
-      .nav-links li:nth-child(1) {
-        transition: all 0.5x ease 0.2x;
-      }
-      .nav-links li:nth-child(2) {
-        transition: all 0.5x ease 0.4x;
-      }
-      li.fade{
-        opacity: 1;
-      }
-    }
-
-    </style>
-
-    <script>
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
-    const links = document.querySelectorAll(".nav-links li");
-
-    hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
-    link.classList.toggle("fade");
-  });
-});
-    
-
-    </script>
-    </nav>-->
-
-  <!--<nav class='navbar fixed-top navbar-dark bg-dark'>
-
-  <button class='navbar-toggler' data-toggle='collapse' data-target='#collapse_target'>
-    <span class='navbar-toggler-icon'></span>
-  </button>
-
-  <div class='collapse navbar-collapse' is='collapse_target'>
-  
-  <a class="navbar-brand"><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center">
-  </a>
-  <ul class='navbar-nav'>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle='dropdown' data-target='dropdown_target' href="/calm_bottle">calm</a>
-      
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/skincare_bottle">skincare</a>
-    </li>
-  </ul>
-</div>
-
-</nav>-->
-
-
 <!--real mobile menu-->
 <nav class='navbar'>
     <span class="open-slide">
@@ -905,21 +760,14 @@
       </a>
     </span>
 
-    <!--<ul class="navbar-nav">
-        <li><a href='#'>calm</a></li>
-        <li><a href='#'>skincare</a></li>
-    </ul>-->
+    <img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center">
 
   </nav>
 
   <div id="side-menu" class="side-nav">
       <a href='#' class='btn-close' onclick='closeSlideMenu()'>&times;</a>
-      <a href='calm_bottle.html'>calm</a>
-      <a href='skincare_bottle.html'>skincare</a>
-  </div>
-
-  <div id="main">
-      <h1>responside side menu</h1>
+      <a href='/calm_bottle'>calm</a>
+      <a href='/skincare_bottle'>skincare</a>
   </div>
 
   <script>
@@ -946,7 +794,7 @@
 
 
   .navbar{
-    background-color:#64D7AE;
+    background-color:white;
     overflow: hidden;
     height: 63;
   }
@@ -1011,8 +859,8 @@
     width: 100%;
   }
 
-  @media(max-width: 990px){
-    .navbar-nav{display-none}
+  @media(max-width: 750px){
+    .navbar-nav{display:none;}
   }
 
   
