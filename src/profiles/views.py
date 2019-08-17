@@ -54,6 +54,11 @@ def skincare_bottle(request):
     template = 'skincare_bottle.html'
     return render(request,template,context)
 
+def navbar(request):
+    context = locals()
+    template = 'navbar.html'
+    return render(request,template,context)
+
 #def code_granted(request):
 #    context = locals()
 #    template = 'code_granted.html'
