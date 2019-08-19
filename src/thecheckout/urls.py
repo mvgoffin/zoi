@@ -56,8 +56,8 @@ urlpatterns = [
     path('hometest/', views.hometest, name='hometest'),
     #path('code_granted/', views.code_granted, name='code_granted'),
     
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+#if settings.DEBUG:
+#    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 #web-push
     #path('', home),
