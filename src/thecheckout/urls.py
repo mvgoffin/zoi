@@ -26,6 +26,7 @@ from users import views as user_views
 
 urlpatterns = [
     path('', views.home),
+    path('home/', views.home, name='home'),
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
     path('about/', views.about, name='about'),
@@ -55,7 +56,8 @@ urlpatterns = [
     path('hometest/', views.hometest, name='hometest'),
     #path('code_granted/', views.code_granted, name='code_granted'),
     
-    
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 #web-push
     #path('', home),

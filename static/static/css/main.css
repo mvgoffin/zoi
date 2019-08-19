@@ -1,3 +1,16 @@
 
 h1 {color: green
 }
+
+.why-icon{
+    margin-top: 10px;
+    font-weight: 600;
+    color: red;
+    text-align: center;
+    line-height: 25px;
+    font-size: large;
+  }
+
+  p{
+      color: RED;
+  }
