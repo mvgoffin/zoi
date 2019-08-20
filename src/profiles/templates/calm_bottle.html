@@ -96,9 +96,9 @@
               padding-right: 55px;
             }
             
-            .container-fluid {
-              height: 600px;
-              }
+            #faq-section{
+              background-color: #FCF9F7;
+            }
 
               .heading{
               font-family: 'titling-gothic-fb', sans-serif;
@@ -376,12 +376,12 @@
           background: transparent;
           display:block;
           width:100%;
-          border: 1px solid #FFee86;
+          border: 1px solid black;
           color: black;
           background: #FFee86;
           padding: 15px 40px;
           margin: .618em 0.01em;  
-          font-family: 'titling-gothic-fb', sans-serif;
+          font-family: 'soleil', sans-serif;
           font-weight:700;
           font-style: normal;
           animation-delay: 2400ms;
@@ -392,13 +392,13 @@
         }
 
 
-        button:focus{
+        /*button:focus{
           background-color: #64D7AE;
           border: 1px solid #64D7AE;
           color: #FFFFFF;
           border-color: black;
           border-width: 1px;
-        }
+        }*/
 
         button:hover {
           border-color: black;
@@ -928,14 +928,14 @@
 
 
      <!-- Section 4 - FAQs -->
-        <div class="w3-container">
+        <div class="w3-container" id="faq-section">
             <div class="row">
               <h1 class="heading-5">FAQs</h1>
             </div>
         </div>
 
-        <div class="w3-container">
-            <div class="row">
+        <div class="w3-container" id="faq-section">
+            <div class="row" id="faq-section">
             
     <input type="button" value="What are the benefits of taking calm?" class="accordion"></input>
     <div class="panel">
@@ -1021,17 +1021,17 @@
             }
 
             .active, .accordion:hover {
-              background-color:#EDEDEB;
+              background-color:#FCF9F7;
               border-left-width: 10px;
               border-left-style: solid;
-              border-left-color: black ;
+              border-left-color: #FFee86 ;
               border-radius: 0px;
             }
 
             .panel {
               padding: 0px 10px;
               margin: 0px;
-              background-color: white;
+              background-color: #FCF9F7;
               max-height: 0;
               overflow: hidden;
               transition: max-height 0.2s ease-out;
@@ -1076,7 +1076,7 @@
           </div>  
 
     <!-- Section 5 - Discalimer -->
-        <div class="w3-container">
+        <div class="w3-container" id="faq-section">
             <div class="row-disclaimer">
                <p style="text-align:center; color:gray">These statements are based on information we've analysed from independent research and do not constitute a health claim. Our products are not intended to diagnose, treat, cure or prevent any disease.</p>
             </div>

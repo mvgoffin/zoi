@@ -100,17 +100,23 @@
               padding-left: 55px;
               padding-right: 55px;
             }
+        
 
             #why-set-desktop{
               padding-top: 35px;
+              padding-bottom: 35px;
               padding-left: 250px;
               padding-right: 250px;
             }
 
-            .container-fluid {
-              height: 600px;
-              }
-            
+            #shop-section{
+              background-color:#FCF9F7;
+            }
+
+            #why-gubel{
+            background-color: #FCF9F7;
+            }
+
             .heading{
               font-family: 'titling-gothic-fb', sans-serif;
               padding-top: 75px;
@@ -220,6 +226,7 @@
           line-height:normal;
           padding-left:170px;
           padding-right: 170px;
+          margin: 0px;
         }
 
         .home-text-bundle{
@@ -481,7 +488,7 @@
           background: transparent;
           display:block;
           width:100%;
-          border: 1px solid #ffee86;
+          border: 1px solid black;
           color: black;
           background: #ffee86;
           padding: 15px 40px;
@@ -505,10 +512,12 @@
           border-width: 1px;
         }
 
-        button:hover {
+        /*button:hover {
           border-color: black;
+          background: #64D7AE;
+
           border-width: 1px;
-        }
+        }*/
         
         ::placeholder{
           color: gray;
@@ -966,10 +975,10 @@
 
             </div>
 
-<div class="headline-middle"></div>
+<!--<div class="headline-middle"></div>-->
 
      <!-- Section 5 - Shop -header --> 
-        <div class="w3-container"> 
+        <div class="w3-container" id='shop-section'> 
           <div class="ro">  
             <h1 class="heading">Choose a bundle that is right for you</h1>
             <p class='home-hero-text'></p> 
@@ -979,8 +988,8 @@
           
 
       <!-- Section 6 - Shop any bundle --> 
-        <div class="w3-container" >
-          <div class="row">
+        <div class="w3-container" id='shop-section'>
+          <div class="row" id='shop-section'>
                   <div class="col-md-6">
                   <form method="POST" action="{% url 'register_calm_bottle' %}">{% csrf_token %}
                       <a href='https://www.gubel.co.uk/calm_bottle'><img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product"></a>
@@ -1005,6 +1014,8 @@
                       <p class="product-small"><b>£7.00 (New Customer Purchase)</b></p>
                         <button type="submit">CHECKOUT&nbsp;&nbsp;→</button> 
                       </form>
+                      <br>
+                      <br>
                     </div>
                   </div>
           </div>
@@ -1041,7 +1052,7 @@
 
      <!--Why Gubel-->
     
-    <div class="w3-container">
+    <div class="w3-container" id="why-gubel" >
                 <div class="row">
                       <div class="col-md-6" style="padding:0px;">                         
                           <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product">
