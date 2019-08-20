@@ -107,11 +107,6 @@
               padding-right: 250px;
             }
 
-            #why-set-mobile{
-            display: none;
-            }
-
-
             .container-fluid {
               height: 600px;
               }
@@ -657,8 +652,8 @@
         form, .landing, .home-hero-text, .vertical-center, .home-text-bundle, .home-small-1, .heading, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
             margin-left:0 !important;
             margin-right:0 !important;
-            padding-left: 10px !important;
-            padding-right: 10px !important;
+            padding-left: 15px !important;
+            padding-right: 15px !important;
         }
         }
         
@@ -671,14 +666,10 @@
 
           #why-set-desktop{
             display:none;
-            /*display:flex;
+            display:flex;
             margin: auto;
-            padding-left: 10px !important;
-            padding-right: 10px !important;*/
-          }
-
-          .headline-middle{
-            display: none;
+            padding-left: 15px !important;
+            padding-right: 15px !important;
           }
 
         }
@@ -696,13 +687,12 @@
           margin-left: auto;
           margin-right: auto;
         }
-
-        @media only screen and (max-width : 990px) {
+        
         #hero-logo.product, #reason {
             width: 100%;
             display: block;
             margin: auto;
-          }}
+          }
 
     }
     </style>
@@ -820,7 +810,7 @@
             background-color: black;
             overflow-x: hidden;
             padding-top:60px;
-            transition: 0.01s;
+            transition: 0.3s;
           }
 
           .side-nav a{
@@ -834,7 +824,7 @@
             display: block;
             top:0;
             right: 0;
-            transition: 0.01s;
+            transition: 0.1s;
           }
 
           .side-nav .btn-close{
@@ -962,6 +952,18 @@
                             <br>
                             </div>                           
               </div>
+
+              <style type="text/css"> 
+                #why-set-mobile {display: none;} 
+              
+                /* Smartphone Portrait and Landscape */ 
+                @media only screen and (max-width: 990px) {
+                    #why-set-mobile {display: inline;}
+                    #why-set-desktop {display: none;}
+                    .headline-middle {display: none;}
+                }
+              </style>
+
             </div>
 
 <div class="headline-middle"></div>
@@ -971,7 +973,7 @@
           <div class="ro">  
             <h1 class="heading">Choose a bundle that is right for you</h1>
             <p class='home-hero-text'></p> 
-            <p class='home-hero-text'>Whether is calm, infused with L-theanine and crunchy hazlenuts, or skincare, dark chocolate infused with plant-based collagen and rose extracts, you're getting better chocolates for better days.</p>
+            <p class='home-hero-text'>Whether is calm, infused with L-theanine and crunchy hazlenuts, or skincare, dark chocolate infused with plant-based collagen and rose extracts, you're getting uncomplicated, healthy, delicious chocolates to help you feel and look your best.</p>
           </div>
         </div>
           
@@ -986,9 +988,9 @@
                       <a href='https://www.gubel.co.uk/calm_bottle'><p class='product-title'>calm</p></a>
                       <p class="product-small-2">14 chocolates (2-Week Bundle)</p>
                       <label class='hr'></label>
-                      <p class="product-small-real-value"><b>£10.00</b></p>
+                      <p class="product-small-real-value"><b>£10.00 (Bundle Price)</b></p>
                       <p class="product-small"><b>£7.00 (New Customer Purchase)</b></p>
-                      <button type="submit">CHECKOUT</button> 
+                      <button type="submit">CHECKOUT&nbsp;&nbsp;→</button> 
                   </form>
                   </div>
                     
@@ -999,9 +1001,9 @@
                         <a href='https://www.gubel.co.uk/skincare_bottle'><p class='product-title'>skincare</p></a>
                         <p class="product-small-2">14 chocolates (2-Week Bundle)</p>
                         <label class='hr'></label>
-                        <p class="product-small-real-value"><b>£10.00</b></p>
+                        <p class="product-small-real-value"><b>£10.00 (Bundle Price)</b></p>
                       <p class="product-small"><b>£7.00 (New Customer Purchase)</b></p>
-                        <button type="submit">CHECKOUT</button> 
+                        <button type="submit">CHECKOUT&nbsp;&nbsp;→</button> 
                       </form>
                     </div>
                   </div>
