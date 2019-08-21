@@ -81,7 +81,7 @@
               right: 100%;
               width: 100%;
               height: 4px;
-              background: #FFdd44 ;
+              background: #ffdd44;
             
               pointer-events: none;
             }
@@ -95,14 +95,18 @@
               padding-left: 55px;
               padding-right: 55px;
             }
-
-            .row2{
-          
-              
-            }
             
             #faq-section{
               background-color: #FCF9F7;
+            }
+
+            #disclaimer{
+              background-color: #FCF9F7;
+              padding-top: 50px;
+              padding-bottom: 50px;
+              padding-right: 275px;
+              padding-left: 275px;
+
             }
 
               .heading{
@@ -161,8 +165,6 @@
 
         .product-small{
         display: inline-block;
-        padding-bottom: 10px;
-        margin: 0px;
         font-weight: 400;
         color: black;
         text-align:left;
@@ -672,9 +674,9 @@
       <script>
         function openSlideMenu(){
             document.getElementById('side-menu').style.width
-            = '100%';
+            = '500px';
             document.getElementById('main').style.marginLeft
-            = '100%';
+            = '500px';
         }
 
         function closeSlideMenu(){
@@ -689,6 +691,7 @@
 
       body{
         overflow-x: hidden;
+        
       }
 
 
@@ -717,10 +720,15 @@
         z-index: 1;
         top:0;
         right:0;
-        background-color: #FFdd44;
+
+        box-sizing: border-box;
+        border-top: 4px solid black;
+        -webkit-appearance: none !important;
+
+        background-color: white;
         overflow-x: hidden;
         padding-top:60px;
-        transition: 0.3s;
+        transition: 0.9s;
       }
 
       .side-nav a{
@@ -842,10 +850,10 @@
                     </div>
                     </div></div></div>
                     <br>
-                    <p class='product-small'><b>2-Week Starter Bundle includes:</b></p>
+                    <p class='product-small'><b>2-Week Bundle includes:</b></p>
                     <p class='product-small' style='color:gray'>1 Bottle container (7 chocolates) + 1 Week Eco-Refill (7 chocolates)</p>
                     <label class='hr'></label>
-                    <p class="price" style="text-align:left;"><b>£7.00  <span style="color: black; font-size:small;">(New Customer Purchase)</span></b></p>
+                    <p class="price" style="text-align:left;"><b>£7.00  <span style="color: gray; font-size:small;">(VAT Included)</span></b></p>
                         <button type="submit">CHECKOUT&nbsp;&nbsp;→</button>  
                       <br>
                       <br>
@@ -862,8 +870,15 @@
     <!--Section 2 - Ingredients-->
         <div class="w3-container">
 
-            <div class="row2">
+            <div class="row" id='better-chocolates'>
                   
+
+                <div class="col-md-6"> 
+                    <form>                        
+                      <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product">
+                    </form>
+                  </div>
+
                   <div class="col-sm-6 vertical-center">  
                       <form>             
                       <h1 class="product-heading">MEET THE ALL-STAR CAST</h1>
@@ -872,14 +887,7 @@
                       <p><li><b>L-theanine:</b> To increase blood flow to the brain and heighten cognition, alertness and mood. Each chocolate contains 100mg.</li></p>
                       <p><li><b>Hazelnuts:</b> To add flavour and crunchiness. A rich source of vitamins and minerals (vitamin E, manganese and copper) and healthy fats such as omega-6 and omega-9.</li></p>
                     </form>
-                    </div>
-
-                    <div class="col-md-6"> 
-                      <form>                        
-                        <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product">
-                        <br>
-                      </form>
-                    </div>
+                  </div>
                       
             </div>         
           
@@ -892,33 +900,34 @@
               }
             </style>
         </div>
+        <br>
+        <br>
+        
         
 
 
      <!--Section 3 - Science-->
 
      <div class="w3-container" >
-
         <div class="row2">
-
-                <div class="col-md-6">
-                <form >
-                    <img src="https://dl.dropboxusercontent.com/s/1cuotr7y6bgz311/woman-calmness-blue-sky.jpg?dl=0" id="product-image" class="product">
-                </form>
-                </div>
-                
+              
                 <div class="col-sm-6 vertical-center">  
                     <form >            
                         <h1 class="product-heading">BETTER CHOCOLATES</h1>
-                      
                       <p class="product-small">Your natural route to enjoy the benefits of L-theanine, a nootropic naturally found in green tea and scientifically shown to improve blood flow to the brain, reducing cortisol and boosting calm concentration.</p>
                       <p class="product-small">Gubel calm chocolates are a safe, natural and delicious way to tap into increased productivity and free-flowing inspiration.</p>
                       <p class="product-small">It’s how you wish that afternoon pick-me-up would make you feel.</p>
                     </form>
                   </div>
-            </div>
-        </div>
-                    
+
+                  <div class="col-md-6">
+                      <form >
+                          <img src="https://dl.dropboxusercontent.com/s/1cuotr7y6bgz311/woman-calmness-blue-sky.jpg?dl=0" id="product-image" class="product">
+                      </form>
+                      </div>
+
+           </div>
+             
             <style>
             .vertical-center {
                 margin-top: 100px;  /* Fallback for browsers do NOT support vh unit */
@@ -926,7 +935,10 @@
                 display: flex;
                 align-items: center;
               }
-          
+              .row2 { 
+                display: flex; 
+              }
+
             @media only screen and (max-width: 768px) {
             .row2 { display: flex; flex-flow: column; }
             .vertical-center  { order: 1; }
@@ -934,8 +946,10 @@
           }
 
         </style>
+         <br>
+         <br>
         </div>
-      </div> 
+  
 
 
      <!-- Section 4 - FAQs -->
@@ -943,10 +957,13 @@
             <div class="row">
               <h1 class="heading-5">FAQs</h1>
             </div>
-        </div>
+            <br>
+            <br>
+        
+          </div>
 
         <div class="w3-container" id="faq-section">
-            <div class="row" id="faq-section">
+            <div class="row">
             
     <input type="button" value="What are the benefits of taking calm?" class="accordion"></input>
     <div class="panel">
@@ -1011,8 +1028,6 @@
         <p class='product-small'>Because of our blend of plant extracts, is best to avoid our chocolates if you are pregnant or breast feeding.</p>
     </div>
     
-    <br>
-    <br>
         <style>
         /* Style the buttons that are used to open and close the accordion panel */
         .accordion {
@@ -1021,7 +1036,7 @@
               font-family: 'titling-gothic-fb', sans-serif;
               font-weight: 400; 
               cursor: pointer;
-              padding: 18px;
+              padding: 20px;
               width: 100%;
               border: none;
               text-align: left;
@@ -1087,8 +1102,8 @@
           </div>  
 
     <!-- Section 5 - Discalimer -->
-        <div class="w3-container" id="faq-section">
-            <div class="row-disclaimer">
+        <div class="w3-container">
+            <div class="row" id='disclaimer'>
                <p style="text-align:center; color:gray">These statements are based on information we've analysed from independent research and do not constitute a health claim. Our products are not intended to diagnose, treat, cure or prevent any disease.</p>
             </div>
           </div>
