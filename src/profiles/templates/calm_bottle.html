@@ -98,6 +98,8 @@
             
             #faq-section{
               background-color: #FCF9F7;
+              padding-left: 50px;
+              padding-right: 50px;
             }
 
             #disclaimer{
@@ -319,13 +321,13 @@
           display: block;
         }
 
-        #hero-2-logo {
+        #product-image {
           width: 100%;
           height: 100%;
           background-color: transparent;
           border-style: solid;
-          border-color:#FCF9F7;
-          border-width: 10px;
+          border-color:transparent;
+          border-width: 5px;
           margin: auto;
           margin: 0px;
         }
@@ -626,7 +628,7 @@
 
 
 <body>
-  
+
     <div class="headline"></div>
 
     <!--Section 1: Navigation Bar-->
@@ -725,7 +727,7 @@
         border-top: 5px solid black;
         -webkit-appearance: none !important;
 
-        background-color: white;
+        background-color: black;
         overflow-x: hidden;
         padding-top:60px;
         transition: 0.9s;
@@ -737,7 +739,7 @@
         text-decoration: none;
         font-family: 'titling-gothic-fb', sans-serif;
         font-size:30px;
-        color:black;
+        color:white;
         text-align: right;
         display: block;
         top:0;
@@ -748,7 +750,7 @@
       .side-nav .btn-close{
         position:absolute;
         padding: 0px 60px 20px 0px;
-        color: black;
+        color: white;
         top:0;
         right: 0;
         font-size: 60px;
@@ -817,7 +819,7 @@
             <br>
               <div class="col-sm-6">
                   <h1 class='product-heading'></h1>
-                  <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="hero-2-logo" class="product">
+                  <img src="https://dl.dropboxusercontent.com/s/aubo6t3yff3sawj/calm-bottle-container.png?dl=0" id="product-image" class="product">
                   
                 </div>
               <div class="col-sm-6" id="product-box">
@@ -875,7 +877,7 @@
 
                 <div class="col-md-6"> 
                     <form>                        
-                      <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product">
+                      <img src="https://dl.dropboxusercontent.com/s/ig0aj68y6p7ktxl/calm-ingredients.png?dl=0" id="product-image" class="product">
                     </form>
                   </div>
 
@@ -893,11 +895,22 @@
           
             <style>
             .vertical-center {
-                margin-top: 100px;  /* Fallback for browsers do NOT support vh unit */
-                margin-bottom: 100px;  /* These two lines are counted as one :-)       */
+                margin-top: 50px;  /* Fallback for browsers do NOT support vh unit */
+                margin-bottom: 10px;  /* These two lines are counted as one :-)       */
                 display: flex;
                 align-items: center;
               }
+            .row2 { 
+                display: flex; 
+                padding-left: 55px;
+                padding-right: 55px;
+                margin: -15px;
+              }
+
+            @media only screen and (max-width: 768px) {
+              .row2 { display: flex; flex-flow: column; }
+              .vertical-center  { order: 1; }
+             }
             </style>
         </div>
         <br>
@@ -913,7 +926,7 @@
               
                 <div class="col-sm-6 vertical-center">  
                     <form >            
-                        <h1 class="product-heading">BETTER CHOCOLATES</h1>
+                        <h1 class="product-heading">BETTER CONCENTRATION</h1>
                       <p class="product-small">Your natural route to enjoy the benefits of L-theanine, a nootropic naturally found in green tea and scientifically shown to improve blood flow to the brain, reducing cortisol and boosting calm concentration.</p>
                       <p class="product-small">Gubel calm chocolates are a safe, natural and delicious way to tap into increased productivity and free-flowing inspiration.</p>
                       <p class="product-small">It’s how you wish that afternoon pick-me-up would make you feel.</p>
@@ -922,33 +935,12 @@
 
                   <div class="col-md-6">
                       <form >
-                          <img src="https://dl.dropboxusercontent.com/s/1cuotr7y6bgz311/woman-calmness-blue-sky.jpg?dl=0" id="product-image" class="product">
+                          <img src="https://dl.dropboxusercontent.com/s/d1wze7wijbpht6v/calm-lifestyle-1.png?dl=0" id="product-image" class="product">
                       </form>
                       </div>
 
            </div>
              
-            <style>
-            .vertical-center {
-                margin-top: 100px;  /* Fallback for browsers do NOT support vh unit */
-                margin-bottom: 100px;  /* These two lines are counted as one :-)       */
-                display: flex;
-                align-items: center;
-              }
-              .row2 { 
-                display: flex; 
-                padding-left: 55px;
-                padding-right: 55px;
-                margin: -15px;
-              }
-
-            @media only screen and (max-width: 768px) {
-            .row2 { display: flex; flex-flow: column; }
-            .vertical-center  { order: 1; }
-            
-          }
-
-        </style>
          <br>
          <br>
         </div>
