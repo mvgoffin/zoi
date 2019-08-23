@@ -672,6 +672,14 @@
           width: 100%;
           }
 
+          #hero-image{
+            width: 150%;
+            border-style: solid;
+            border-color:#FCF9F7;
+            margin: auto;
+            display: block;
+          }
+
           #why-set-desktop{
             display:none;
             display:flex;
@@ -901,7 +909,7 @@
   <!--Section 2 - Hero image-->
     <div class='w3-container'>
       <div class="row">
-          <img src="https://dl.dropboxusercontent.com/s/mcc003eznz6qxij/hero-wrapped-2.png?dl=0" id="hero-image" class="product">
+          <img src="https://dl.dropboxusercontent.com/s/6oi51nyrefkqg6e/hero-1.png?dl=0" id="hero-image" class="product">
       </div>
     </div>
 
@@ -909,8 +917,8 @@
   <!--Section 3 - What is Gubel-->
       <div class="w3-container">   
         <div class="row">
-            <h1 class="heading">We make chocolates differently</h1>
-            <p class='home-hero-text'>Easily incorporate the health benefits from plants and the goodness of chocolates into your routine with Gubel! A daily dose of healthy plant extracts in each chocolate so you can feel good every day.</p> 
+            <h1 class="heading">We make better chocolates</h1>
+            <p class='home-hero-text'>Easily incorporate the health benefits from plants and the goodness of chocolates into your daily routine with Gubel! A dose of healthy plant extracts in each chocolate so you can feel good every day.</p> 
        </div>
       </div>
   
@@ -986,7 +994,7 @@
           <div class="ro">  
             <h1 class="heading">Choose a starter bundle that is right for you</h1>
             <p class='home-hero-text'></p> 
-            <p class='home-hero-text'>We have two delicious flavours: calm, infused with L-theanine and hazelnuts, and skincare, infused with plant-based collagen and rose extracts. Uncomplicated, healthy, delicious chocolates with a daily dose of plant extracts to help you feel and look your best.</p>
+            <p class='home-hero-text'>We have two delicious functional chocolates, each with a unique flavour: calm, infused with L-theanine and hazelnuts, and skincare, infused with plant-based collagen and rose extracts. Uncomplicated, healthy chocolates with a daily dose of plant extracts designed to enhance your wellbeing.</p>
           </div>
         </div>
           
@@ -996,10 +1004,10 @@
           <div class="row" id='shop-section'>
                   <div class="col-md-6">
                   <form method="POST" action="{% url 'register_calm_bottle' %}">{% csrf_token %}
-                      <a href='https://www.gubel.co.uk/calm_bottle'><img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product"></a>
+                      <a href='https://www.gubel.co.uk/calm_bottle'><img src="https://dl.dropboxusercontent.com/s/aubo6t3yff3sawj/calm-bottle-container.png?dl=0" id="product-image" class="product"></a>
                       <br>
                       <a href='https://www.gubel.co.uk/calm_bottle'><p class='product-title'>calm</p></a>
-                      <p class="product-small-2">14 chocolates (2-Week Starter Bundle)</p>
+                      <p class="product-small">2-Week Starter Bundle (14 chocolates)</p>
                       <label class='hr'></label>
                       <p class="product-small-real-value"><b>£10.00 (Bundle Price)</b></p>
                       <p class="product-small"><b>£7.00 (New Customer Purchase)</b></p>
@@ -1009,10 +1017,10 @@
                     
                   <div class="col-md-6">
                   <form method="POST" action="{% url 'register_skincare_bottle' %}">{% csrf_token %}               
-                        <a href='https://www.gubel.co.uk/skincare_bottle'><img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product"></a>
+                        <a href='https://www.gubel.co.uk/skincare_bottle'><img src="https://dl.dropboxusercontent.com/s/jzl2ikz5cjkab7t/skincare-bottle-container2.png?dl=0" id="product-image" class="product"></a>
                         <br>
                         <a href='https://www.gubel.co.uk/skincare_bottle'><p class='product-title'>skincare</p></a>
-                        <p class="product-small-2">14 chocolates (2-Week Starter Bundle)</p>
+                        <p class="product-small">2-Week Starter Bundle (14 chocolates)</p>
                         <label class='hr'></label>
                         <p class="product-small-real-value"><b>£10.00 (Bundle Price)</b></p>
                       <p class="product-small"><b>£7.00 (New Customer Purchase)</b></p>
@@ -1030,25 +1038,25 @@
      
      <div class="w3-container">  
        <div class="ro"> 
-        <h1 class="heading">From Gubel lovers</h1>
+        <h1 class="heading">What Gubel lovers are saying</h1>
       </div>
       </div>
 
         <div class="w3-container"> 
             <div class="row">
                 <div class="col-sm-4">
-                  <p class="product-small"><i>"So good!...and I already ate more than the daily suggestion"</i></p>
-                  <p class="product-small-2">Melissa C</p>
+                  <p class="product-small"><i>"So good!...and I already ate more than the daily suggestion :)"</i></p>
+                  <a href='https://www.instagram.com/belenmel21/' target="_blank" class="product-small-2">@belenmel21</a>
                 </div>
 
                 <div class="col-sm-4">
-                    <p class="product-small"><i>"These are so good, I’m Gubel number 1 fan."</i></p>
-                    <p class="product-small-2">Camila T</p>
+                    <p class="product-small"><i>"These are so delish, I’m Gubel number 1 fan."</i></p>
+                    <a href='https://www.instagram.com/cami_latoro/' target="_blank" class="product-small-2">@cami_latoro</a>
                   </div>
                 
                   <div class="col-sm-4">
                       <p class="product-small"><i>"Super super good, to eat chocolate and have nice skin? Sign me up!"</i></p>
-                      <p class="product-small-2">Ioana T</p>
+                      <a href='https://www.instagram.com/ioana__tanase/' target="_blank" class="product-small-2">@ioana__tanase</a>
                     </div>
                 </div>  
           </div>    
@@ -1059,7 +1067,7 @@
     <div class="w3-container" id="why-gubel" >
                 <div class="row">
                       <div class="col-md-6" style="padding:0px;">                         
-                          <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" id="product-image" class="product">
+                          <img src="https://dl.dropboxusercontent.com/s/4ozp8ax9fjudfn2/why-chocolate.png?dl=0" id="product-image" class="product">
                           <br>
                       </div>
                         

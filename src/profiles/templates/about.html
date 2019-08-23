@@ -102,6 +102,8 @@
 
             #team-section{
               background-color: #FCF9F7;
+              padding-left:170px;
+              padding-right: 170px;
             }
 
             .heading{
@@ -609,7 +611,7 @@
         }
 
         @media only screen and (max-width: 990px) {
-        form, .vertical-center, .home-about-text, .heading, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-sm-12-4, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
+        form, .vertical-center, .home-about-text, #team-section, .heading, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-sm-12-4, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
             margin-left:0 !important;
             margin-right:0 !important;
             padding-left: 15px !important;
@@ -619,12 +621,19 @@
         
         @media only screen and (max-width: 990px) {
           #icon {
-          display: block;
-          margin: auto;
-          width: 100%;
+            display: block;
+            margin: auto;
+            width: 100%;
+          }
+        
+          #hero-image{
+            width: 150%;
+            border-style: solid;
+            border-color:#FCF9F7;
+            margin: auto;
+            display: block;
           }
         }
-
         @media only screen and (max-width: 990px) {
         *, .html {
           margin-left:0 !important;
@@ -637,11 +646,17 @@
 
         @media only screen and (max-width : 990px) {
         #values {
-            width: 75%;
+            width: 100%;
             display: block;
             margin: auto;
-          }}
+          }
       
+          #team {
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+        }
 
 
       /* Clear floats after the columns */
@@ -850,7 +865,7 @@
   <!--Section 2 - Hero image-->
     <div class='w3-container'>
       <div class="row">
-          <img src="https://dl.dropboxusercontent.com/s/mcc003eznz6qxij/hero-wrapped-2.png?dl=0" id="hero-image" class="product">
+          <img src="https://dl.dropboxusercontent.com/s/uvsd3jmkkfsbmbc/about-1.jpg?dl=0" id="hero-image" class="product">
       </div>
     </div>
 
@@ -924,7 +939,7 @@
               </div>
               
 
-    <!-- Section 4 - Our Team --> 
+    <!-- Section 4 - Our Team -->
      
         <div class="w3-container" id='team-section'>
             <div class="row">
@@ -942,31 +957,26 @@
                 
             <div class="w3-container" id='team-section'>
               <div class="row">
-              <div class="col-sm-3">
+              <div class="col-sm-4">
                 <img src="https://dl.dropboxusercontent.com/s/0ki1sbu8by0y9k9/Micha.png?dl=0" style="background-color: #FCF9F7" id="team">
                 <p class='values-title'>Michele</p>
-                <p class='values-text'>Responsible for all things marketing, sales and customer service.</p>
+                <p class='values-text'>Marketing and customer service.</p>
                 </div>
 
-                <div class="col-sm-3">
-                <img src="https://dl.dropboxusercontent.com/s/y29l4j6uhs6h2im/Gigi-3.png?dl=0" style="background-color: #FCF9F7" id="team">
-                <p class='values-title'>Gigi</p>
-                <p class='values-text'>Our customer-success hero, takes orders and answers to questions.</p>
-                </div>
-                
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <img src="https://dl.dropboxusercontent.com/s/dpovnvvbl0sybpg/Marco.png?dl=0" style="background-color: #FCF9F7" id="team">
                     <p class='values-title'>Marco</p>
-                    <p class='values-text'>Day-to-day operations and customer service.</p>
+                    <p class='values-text'>Operations and customer service.</p>
                 </div>
               
-                <div class="col-sm-3">
-                    <img src="https://dl.dropboxusercontent.com/s/dpovnvvbl0sybpg/Marco.png?dl=0" style="background-color: #FCF9F7" id="team">
+                <div class="col-sm-4">
+                    <img src="https://dl.dropboxusercontent.com/s/vt00f3tcedzw3ts/JJ.png?dl=0" style="background-color: #FCF9F7" id="team">
                     <p class='values-title'>JJ (MD)</p>
-                    <p class='values-text'>Advises team for all things food nutrients and benefits.</p>
+                    <p class='values-text'>Advisor for all things product development.</p>
                 </div>
               </div>
             </div>
+            
                       
                 <div class="w3-container" id='team-section'>
                     <div class="row">
@@ -977,13 +987,14 @@
                           <li>text us on <b>0748.080.3557</b> or</li> 
                           <li>send us an email at <b>hi@gubel.co.uk</b></li>
                           <br>
-                        <p>We're available 24/7.</p>
+                        <p>We're always available and happy to help.</p>
                         <br>
                         <br> 
                         </div>
                     </div>
                 </div>
           
+                
 
 
           <!-- Footer -->
@@ -1011,7 +1022,7 @@
           <div class="col-md-3">
                 <p class="heading-f">CONTACT</p></a>
                 <a href='sms:+447480803557'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
-                <a href='https://www.instagram.com/gubel.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@gubel.UK</p></a>
+                <a href='https://www.instagram.com/gubel.uk' target="_blank"><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@gubel.UK</p></a>
                 <a href='mailto:hi@gubel.co.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@gubel.co.uk</p></a>
              </div>
   
