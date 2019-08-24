@@ -35,7 +35,7 @@ def checkout_calm_bottle(request):
             charge = stripe.Charge.create(      #added create Charge
             amount=100,
             currency="gbp",
-            description="Gubel Bottle",
+            description="calm bundle",
             customer=customer                #added source customer
             )
             response = redirect('success')
@@ -61,7 +61,7 @@ def checkout_skincare_bottle(request):
             charge = stripe.Charge.create(      #added create Charge
             amount=100,
             currency="gbp",
-            description="Gubel Box",
+            description="skincare bundle",
             customer=customer                #added source customer
             )
             response = redirect('success')
