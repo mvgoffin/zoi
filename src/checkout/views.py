@@ -19,7 +19,7 @@ stripe.api_key = stripe_secret
 
 # Create your views here.  
 
-# Gubel Bottle. 
+# calm Starter Bundle. 
 def checkout_calm_bottle(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
@@ -45,7 +45,7 @@ def checkout_calm_bottle(request):
     return render(request,template)
 
 
-# Box. 
+# skincare starter bundle. 
 def checkout_skincare_bottle(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
