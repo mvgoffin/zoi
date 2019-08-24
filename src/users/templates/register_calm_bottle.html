@@ -73,6 +73,11 @@
     <!-- CSS Gubel Register -->
     <style media="screen">
 
+          .row{
+              padding-left: 55px;
+              padding-right: 55px;
+            }
+
           .home-heading{
             text-align: left;
             font-family: 'titling-gothic-fb', sans-serif;
@@ -83,17 +88,24 @@
             height: 600px;
               }
 
-            .row {
-              background-color: #F5F0EE;
-              size: auto;
+            #headerow{
+              padding-left: 55px;
+              padding-right: 55px;
+              background: #FCF9F7;
             }
 
+            /*side menu background is row2*/
+            .row2 {
+              background-color: black;
+            }
+            /*side menu background is row2*/
 
             .heading{
               font-family: 'titling-gothic-fb', sans-serif;
               text-align: left;
               font-weight: 400;
-              display:block
+              display:block;
+              margin: 25px;
             }
 
             .sub-heading{
@@ -116,11 +128,22 @@
             }
 
 
-            .center{
-              display: block;
-              margin: auto!important;
-              text-align:center;
-            }
+            .center { 
+            float:left;
+            padding-top: 25px !important;
+            padding-left: 20px !important;
+            display: block;
+            margin-left:10px;
+            margin: auto!important;
+            text-align:center;
+            size:20px;
+          }
+
+          #product-img {
+          width: 80%;
+          background-color: #FCF9F7;
+          margin: auto;
+        }
 
           /*CSS Checkout Bundle*/
 
@@ -136,7 +159,7 @@
         } 
 
         #header-logo {
-          width: 200px;
+          width: 150px;
           padding-top: 20px;
           padding-bottom: 20px;
           background-color: white;
@@ -146,45 +169,21 @@
         box-sizing: border-box;
           }
 
-        #hero-logo {
-          width: 250px;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          background-color: #FCF9F7;
-          margin: auto;
-        }
-
-        #photo-item {
-          display:block;
-          margin:auto;
-          text-align: left;
-        }
-
-        #reason {
-          width: 100%;
-          height: 100%;
-          background-color: #FCF9F7;
-          margin: auto;
-        }
-
-        .col-sm-12-hero-2{
-          padding:0;
-        }
-
         body, html {
           height: 100%;
           background-color: white;
           color: #000000;
         }
         
-        *, label {
-          font-family: 'Open sans', sans-serif;
+        * {
+          font-family: 'soleil', sans-serif;
           font-size: 16px;
           font-variant: normal;
           box-sizing: border-box;
-          padding-top: 0px;
+          padding: 0;
           margin: 0;
           -webkit-font-smoothing: antialiased;
+          box-sizing: border-box;
         }
       
         .small{
@@ -201,12 +200,12 @@
           background: transparent;
           display:block;
           width:100%;
-          border: 1px solid #FFB833;
+          border: 1px solid #ffdd44;
           color: black;
-          background: #FFB833;
+          background: #FFdd44;
           padding: 15px 40px;
           margin: .618em 0.01em;  
-          font-family: 'titling-gothic-fb', sans-serif;
+          font-family: 'soleil', sans-serif;
           font-weight:700;
           font-style: normal;
           animation-delay: 2400ms;
@@ -225,18 +224,16 @@
           border-width: 1px;
         }
 
-        
         button:hover {
           border-color: black;
           border-width: 1px;
         }
         
         label {
-          font-weight: 600;
+          font-weight: 500;
           font-size: 14px;
           display: block;
           margin-bottom: 8px;
-
         }
         
         ::placeholder{
@@ -255,22 +252,27 @@
           color: #fa755a;
         }
         
-        .form-row {
-          width: 100%;
-          float: center;
-        }
-        
-        
         /**
           * The CSS shown here will not be introduced in the Quickstart guide, but shows
           * how you can use CSS to style your Element's container.
           */
 
-          .headline {
+        .headline {
           box-sizing: border-box;
           margin: 0;
           width: 100%;
-          border-top: 4px solid #FFB833;
+          border-top: 5px solid black;
+          border-bottom: white;
+          border-left: white;
+          border-right: white;
+          -webkit-appearance: none !important;
+        }
+
+        .cart-headline {
+          box-sizing: border-box;
+          margin: 0;
+          width: 100%;
+          border-top: 5px solid #ffdd44;;
           border-bottom: white;
           border-left: white;
           border-right: white;
@@ -322,11 +324,10 @@
           margin-right:  auto;
           }
         
-        .col-sm-12{
-          padding-left:  350px;
-          padding-right:  350px;
-          background: #FCF9F7;
-        }
+          .col-md-12{
+          padding-left:  200px;
+          padding-right:  200px;
+          }
 
         /**Footer**/
         .col-md-3{
@@ -356,6 +357,18 @@
           padding-left: 0 !important;
           padding-right: 0 !important;
         }
+        @media only screen and (max-width: 990px) {
+        #product-img {
+            width: 100%;
+            display: block;
+            margin: auto;
+          }
+
+        #security-badge{
+          margin: auto;
+          display: block;
+          }
+        }
 
       /* Clear floats after the columns */
       .row:after {
@@ -367,8 +380,9 @@
     }
     </style>
 
-    <!-- PLNT Progress Bar CSS -->
+    <!-- Gubel Progress Bar CSS -->
     <style type="text/css">
+    
       .containerbar {
         width:100%;
         background: #FCF9F7;
@@ -480,180 +494,182 @@
 
 
 <body>
+
+    <div class="headline"></div>
   
 <!--Section 1: Navigation Bar-->
     
-<header class='header' id="topbar">
-    <style>
-      #topbar {
-        /*position: fixed;*/
-        top: 0;
-        width: 100%;
-        z-index: 2;
-        background-color:white;
+    <header class='header' id="topbar">
+        <style>
+          #topbar {
+            /*position: fixed;*/
+            top: 0;
+            width: 100%;
+            z-index: 2;
+            background-color:white;
+          }
+          </style>
+
+  <div class="row">
+    <div class="col-md-4"> 
+        <a href="https://www.gubel.co.uk"><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
+        </div>
+        
+    <div class="col-md-4" id="center-navbar">
+      </div>
+        
+    <div class="col-md-4">
+      <nav class="navbar">
+          <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <svg width="25" height="25">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="4"></path>
+                <path d="M0,14 30,14" stroke="#000" stroke-width="4"></path>
+                <path d="M0,23 30,23" stroke="#000" stroke-width="4"></path>
+              </svg>
+            </a>
+          </span>
+        </nav>
+
+      <div id="side-menu" class="side-nav">
+        <div class="row2">
+          <a href="#" class="btn-close" onclick="closeSlideMenu()">×</a>
+          <a href="/calm_bottle">calm</a>
+          <a href="/skincare_bottle">skincare</a>
+        </div>
+      </div>
+
+      <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.width
+            = '500px';
+            document.getElementById('main').style.marginLeft
+            = '500px';
+        }
+
+        function closeSlideMenu(){
+              document.getElementById('side-menu').style.width
+              = '0';
+              document.getElementById('main').style.marginLeft
+              = '0';
+        }
+      </script>
+
+      <style>
+
+      body{
+        overflow-x: hidden;
+        
       }
+
+
+      .navbar{
+        background-color:white;
+        overflow: hidden;
+        height: 63;
+        margin:0;
+      }
+
+      .navbar a{
+        float:right;
+        padding: 20px 15px;
+        margin-right: 10px;
+      }
+
+      .navbar ul{
+        padding: 8px 0 0 0;
+        list-style: none;
+      }
+
+      .side-nav{
+        height:100%;
+        width:0;
+        position: fixed;
+        z-index: 200;
+        top:0;
+        right:0;
+
+        box-sizing: border-box;
+        border-top: 5px solid black;
+        -webkit-appearance: none !important;
+
+        background-color: black;
+        overflow-x: hidden;
+        padding-top:60px;
+        transition: 0.9s;
+      }
+
+      .side-nav a{
+        padding: 10px 10px 10px 30px;
+        margin-right: 10px;
+        text-decoration: none;
+        font-family: 'titling-gothic-fb', sans-serif;
+        font-size:30px;
+        color:white;
+        text-align: right;
+        display: block;
+        top:0;
+        right: 0;
+        transition: 0.7s;
+      }
+
+      .side-nav .btn-close{
+        position:absolute;
+        padding: 0px 60px 20px 0px;
+        color: white;
+        top:0;
+        right: 0;
+        font-size: 60px;
+      }
+
+      #main {
+        transition: margin-left 0.5s;
+        padding:20px;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 990px) {
+        .navbar a{
+        float:right;
+        padding-right: 20px !important;
+      }
+
+      .center { /*mbile*/
+        float:left;
+        padding-top: 25px !important;
+        padding-left: 20px !important;
+        display: block;
+        margin-left:10px;
+        margin: auto!important;
+        text-align:center;
+        size:20px;
+      }
+
+      .side-nav .btn-close{
+        padding-right: 10px !important;
+      }
+
+      .side-nav a{
+        padding-right: 10px !important;
+      }
+
+      #center-navbar{
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      }
+
+      
       </style>
-
-<div class="row">
-<div class="col-md-4"> 
-    <a href="https://www.gubel.co.uk"><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
-    </div>
-    
-<div class="col-md-4" id="center-navbar">
-  </div>
-    
-<div class="col-md-4">
-  <nav class="navbar">
-      <span class="open-slide">
-        <a href="#" onclick="openSlideMenu()">
-          <svg width="25" height="25">
-            <path d="M0,5 30,5" stroke="#000" stroke-width="4"></path>
-            <path d="M0,14 30,14" stroke="#000" stroke-width="4"></path>
-            <path d="M0,23 30,23" stroke="#000" stroke-width="4"></path>
-          </svg>
-        </a>
-      </span>
-    </nav>
-
-  <div id="side-menu" class="side-nav">
-    <div class="row">
-      <a href="#" class="btn-close" onclick="closeSlideMenu()">×</a>
-      <a href="/calm_bottle">calm</a>
-      <a href="/skincare_bottle">skincare</a>
-    </div>
-  </div>
-
-  <script>
-    function openSlideMenu(){
-        document.getElementById('side-menu').style.width
-        = '500px';
-        document.getElementById('main').style.marginLeft
-        = '500px';
-    }
-
-    function closeSlideMenu(){
-          document.getElementById('side-menu').style.width
-          = '0';
-          document.getElementById('main').style.marginLeft
-          = '0';
-    }
-  </script>
-
-  <style>
-
-  body{
-    overflow-x: hidden;
-    
-  }
+      </div>
 
 
-  .navbar{
-    background-color:white;
-    overflow: hidden;
-    height: 63;
-    margin:0;
-  }
-
-  .navbar a{
-    float:right;
-    padding: 20px 15px;
-    margin-right: 10px;
-  }
-
-  .navbar ul{
-    padding: 8px 0 0 0;
-    list-style: none;
-  }
-
-  .side-nav{
-    height:100%;
-    width:0;
-    position: fixed;
-    z-index: 1;
-    top:0;
-    right:0;
-
-    box-sizing: border-box;
-    border-top: 5px solid black;
-    -webkit-appearance: none !important;
-
-    background-color: black;
-    overflow-x: hidden;
-    padding-top:60px;
-    transition: 0.9s;
-  }
-
-  .side-nav a{
-    padding: 10px 10px 10px 30px;
-    margin-right: 10px;
-    text-decoration: none;
-    font-family: 'titling-gothic-fb', sans-serif;
-    font-size:30px;
-    color:white;
-    text-align: right;
-    display: block;
-    top:0;
-    right: 0;
-    transition: 0.7s;
-  }
-
-  .side-nav .btn-close{
-    position:absolute;
-    padding: 0px 60px 20px 0px;
-    color: white;
-    top:0;
-    right: 0;
-    font-size: 60px;
-  }
-
-  #main {
-    transition: margin-left 0.5s;
-    padding:20px;
-    overflow: hidden;
-    width: 100%;
-  }
-
-  @media only screen and (max-width: 990px) {
-    .navbar a{
-    float:right;
-    padding-right: 20px !important;
-  }
-
-  .center { /*mbile*/
-    float:left;
-    padding-top: 25px !important;
-    padding-left: 20px !important;
-    display: block;
-    margin-left:10px;
-    margin: auto!important;
-    text-align:center;
-    size:20px;
-  }
-
-  .side-nav .btn-close{
-    padding-right: 10px !important;
-  }
-
-  .side-nav a{
-    padding-right: 10px !important;
-  }
-
-  #center-navbar{
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  }
 
   
-  </style>
+  
   </div>
-
-
-
-
-
-</div>
-</header>
+  </header>
 
   
     <!-- Content -->
@@ -665,11 +681,11 @@
         <div class="row">
       <br>
       <br>
-            <b><ul class="progressbar" id="register-progressbar">
+            <ul class="progressbar" id="register-progressbar">
                <li class="box">Bundle</li>
                  <li class="account">Shipping</li>
                  <li class='payment'>Payment</li>           
-               </ul></b>
+               </ul>
         <br>
         <br>  
       </div>  
@@ -682,12 +698,12 @@
   
           <!-- The Bundle Buy Now Section -->
   
-          <div class="row" style="padding-left:100px;padding-right:100px;">
+          <div class="row" style="padding-left:100px;padding-right:100px;background: #FCF9F7">
             
             
           
             <h1 class='heading'>Your cart</h1>
-            <label class="headline"></label>
+            <label class="cart-headline"></label>
     
               
                 <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
@@ -696,13 +712,13 @@
                         <p class="home-heading"><b>INDULGENT RELIEF</b></p>
                         <br>
                         
-                        <div class="col-sm-6 center">
-                            <img src="https://dl.dropboxusercontent.com/s/o2d7he68g32s4kv/see%20beautiful.%20yellow%20over%20black%20and%20white.jpg?dl=0" style="width:195px;">
+                        <div class="col-sm-6" >
+                            <img src="https://dl.dropboxusercontent.com/s/aubo6t3yff3sawj/calm-bottle-container.png?dl=0" id="product-img">
                           </div>
       
                         <div class='col-sm-6' style="padding: 0px">
                           <br>
-                          <p class="small" style="font-weight: bold; font-size:large">2-Week Bundle</p>
+                          <p class="small" style="font-weight: bold; font-size:large">2-Week Starter Bundle</p>
                           <p class='small' style='color:gray'>1 Bottle container (7 chocolates) + 
                           <p class='small' style='color:gray'>1 Week Eco-Refill (7 chocolates)</p>
                           <label class='hr'></label>
@@ -827,8 +843,8 @@
                           
                   <p class="terms">
                       All transactions are secure and encrypted</p>
-                      <div class="center">
-                          <img src="https://dl.dropboxusercontent.com/s/9f37h9fmt7myj56/SSL-Secure-Connection.jpg?dl=0" style="width:100px;">&nbsp;<img src="https://dl.dropboxusercontent.com/s/lr1h3uim6wf7z9x/Major-Credit-Card-Logo-PNG-Image.png?dl=0" style="width:150px;">
+                      <div class="row">
+                          <img src="https://dl.dropboxusercontent.com/s/2atkn101dofni9e/payment-security-support.png?dl=0" id='security-badge' style="width:250px;">
                         </div>
                     <style>
                         .terms {
@@ -837,9 +853,12 @@
                           color: gray;
                           padding-bottom: 15px;
                         }
-                        .center{
+
+                        #security-badge{
                           margin: auto;
+                          display: block;
                         }
+                  
                       </style>
                     
                     <br>
@@ -848,7 +867,12 @@
                  </form>
 
             </div>
-            
+
+            <!--Seperation between Registration Form and Footer-->
+            <div class="two-spacer" style="background: #FCF9F7">
+            <br>
+            <br>
+          </div>
           </div>
         </section>
 
@@ -876,7 +900,7 @@
           <div class="col-md-3">
                 <p class="heading-f">CONTACT</p></a>
                 <a href='sms:+447480803557'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
-                <a href='https://www.instagram.com/gubel.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@gubel.UK</p></a>
+                <a href='https://www.instagram.com/gubel.uk' target="_blank"><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@gubel.UK</p></a>
                 <a href='mailto:hi@gubel.co.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@gubel.co.uk</p></a>
              </div>
   
