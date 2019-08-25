@@ -33,7 +33,7 @@ def checkout_calm_bottle(request):
            pass
         else:
             charge = stripe.Charge.create(      #added create Charge
-            amount=100,
+            amount=985,
             currency="gbp",
             description="calm bundle",
             customer=customer                #added source customer
@@ -59,7 +59,7 @@ def checkout_skincare_bottle(request):
            pass
         else:
             charge = stripe.Charge.create(      #added create Charge
-            amount=100,
+            amount=985,
             currency="gbp",
             description="skincare bundle",
             customer=customer                #added source customer
