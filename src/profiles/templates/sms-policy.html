@@ -610,7 +610,7 @@
             }
     
             @media only screen and (max-width: 990px) {
-            form, .vertical-center, .home-about-text, #team-section, .heading, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-sm-12-4, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
+            .row, .vertical-center, .home-about-text, #team-section, .heading, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-sm-12-4, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
                 margin-left:0 !important;
                 margin-right:0 !important;
                 padding-left: 15px !important;
@@ -864,13 +864,11 @@
 
   
     <!-- Content -->
-
-    <form id="home-form">{% csrf_token %}
     
      <!--Section 1 -Terms of service --> 
      <section>
         <div class="w3-container">
-            <div class="row" style="background: #FCF9F7;">
+            <div class="row" style="background: #FCF9F7;padding-top: 71px;">
                 <h1 class="heading">SMS Policy</h1>
                 
                 <p class='TOS-small'></p>When you enter your phone number for us pertaining to GUBEL (“we”, “us” or “our”), you agree to receive text messages from us and agree to the associated terms of service. these messages will be used for important notifications, security confirmations, customer service, order updates and other relevant notifications or promotions regarding your orders. this is a recurring subscription. 
@@ -973,11 +971,7 @@
   
           </div>
         </footer>
-          
-      
-     
-    
-  </form>
+
   
 
 </div>
