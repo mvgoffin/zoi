@@ -272,15 +272,15 @@
         }
 
         .cart-headline {
-          box-sizing: border-box;
-          margin: 0;
-          width: 100%;
-          border-top: 5px solid #ffdd44;;
-          border-bottom: white;
-          border-left: white;
-          border-right: white;
-          -webkit-appearance: none !important;
-        }
+                box-sizing: border-box;
+                margin: 0;
+                width: 100%;
+                border-top: 5px solid #ffdd44;;
+                border-bottom: white;
+                border-left: white;
+                border-right: white;
+                -webkit-appearance: none !important;
+              }
 
         .headline-thin {
           box-sizing: border-box;
@@ -345,7 +345,7 @@
           }
 
           @media only screen and (max-width: 990px) {
-        .home-small-1, .col-sm-4, li, .heading, .cart-headline, #register-form, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
+        .home-small-1, .col-sm-4, li, .heading, #register-form, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
             margin-left:0 !important;
             margin-right:0 !important;
             padding-left: 15px !important;
@@ -706,7 +706,9 @@
             
           
             <h1 class='heading'>Your cart</h1>
-            <label class="cart-headline"></label>
+            <div class='col-sm-12'>
+                <label class="cart-headline">
+            </div>
     
               
                 <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
