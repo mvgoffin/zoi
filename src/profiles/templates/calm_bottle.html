@@ -370,7 +370,38 @@
           margin: 0px;
         }
 
-        button {
+        input {
+          background: transparent;
+          display:block;
+          width:100%;
+          border: 1px solid #ffdd44;
+          color: black;
+          background: #FFdd44;
+          padding: 15px 40px;
+          margin: .618em 0.01em;  
+          font-family: 'soleil', sans-serif;
+          font-weight:700;
+          font-style: normal;
+          animation-delay: 2400ms;
+          font-size: 18px;
+          letter-spacing: .01em;
+          text-transform: normal;
+          transition: background-color 170ms  ease-out,color 170ms ease-out;
+        }
+        input:focus{
+          background-color: #64D7AE;
+          border: 1px solid #64D7AE;
+          color: #FFFFFF;
+          border-color: black;
+          border-width: 1px;
+        }
+
+        input:hover {
+          border-color: black;
+          border-width: 1px;
+        }
+
+        /*button {
           background: transparent;
           display:block;
           width:100%;
@@ -402,6 +433,7 @@
           border-color: black;
           border-width: 1px;
         }
+        */
         
         label {
           font-weight: 500;
@@ -832,7 +864,11 @@
                     <p class='product-small' style='color:gray'>1 Bottle container (7 chocolates) + 1 Week Eco-Refill (7 chocolates)</p>
                     <label class='hr'></label>
                     <p class="price" style="text-align:left;"><b>£7.00  <span style="color: gray; font-size:small;">(VAT Included)</span></b></p>
-                        <button type="submit">CHECKOUT&nbsp;&nbsp;→</button>  
+                        <!--<button type="submit">CHECKOUT&nbsp;&nbsp;→</button>-->
+                        <br>
+                        <a href="http://www.gubel.co.uk/register_calm_bottle/">
+                          <input type="button" value="CHECKOUT >" />
+                       </a> 
                       <br>
                       <br>
                     </div>
