@@ -768,9 +768,36 @@
             <br>
               <div class="col-md-6" id='product-info-left'>
                   <h1 class='product-heading'></h1>
-                  <img src="https://dl.dropboxusercontent.com/s/aubo6t3yff3sawj/calm-bottle-container.png?dl=0" id="product-image" class="product">
-                  
+                    <img src="https://dl.dropboxusercontent.com/s/aubo6t3yff3sawj/calm-bottle-container.png?dl=0" id="product-image" class="product-slide">
+                    <img src="https://dl.dropboxusercontent.com/s/aubo6t3yff3sawj/calm-bottle-container.png?dl=0" id="product-image" class="product-slide">
+                    <img src="https://dl.dropboxusercontent.com/s/aubo6t3yff3sawj/calm-bottle-container.png?dl=0" id="product-image" class="product-slide">
+                
+
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
                 </div>
+
+                <script>
+                var slideIndex = 1;
+                    showDivs(slideIndex);
+
+                    function plusDivs(n) {
+                      showDivs(slideIndex += n);
+                    }
+
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("product-slide");
+                      if (n > x.length) {slideIndex = 1} 
+                      if (n < 1) {slideIndex = x.length} ;
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none"; 
+                      }
+                      x[slideIndex-1].style.display = "block"; 
+                    }
+                  </script>
+             
               <div class="col-md-6" id='product-info-right'>
                   <h1 class="product-heading">calm</h1>
                   <p class="product-heading"><b>INDULGENT RELIEF</b></p>
