@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'stripe',
     'users',
     'webpush',
-    'djangosecure',
+    #'djangosecure',
 ]
 
 MIDDLEWARE = [
