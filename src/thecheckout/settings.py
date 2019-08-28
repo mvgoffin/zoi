@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'stripe',
     'users',
     'webpush',
-    #'djangosecure',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +54,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    #'djangosecure.middleware.SecurityMiddleware',
 ]
 
 ROOT_URLCONF = 'thecheckout.urls'
