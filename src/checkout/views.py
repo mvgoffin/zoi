@@ -71,6 +71,32 @@ def checkout_skincare_bottle(request):
     return render(request,template)
 
 
+# calm + skincare starter bundle. 
+def checkout_calm_skincare_bottle(request):
+    publishKey = settings.STRIPE_PUBLIC_KEY
+    if request.method == 'POST':
+        token = request.POST['stripeToken']
+        try:
+            customer = stripe.Customer.create(
+                description="new customer",
+                source=token
+            )
+        except stripe.error.CardError as e:
+           pass
+        else:
+            charge = stripe.Charge.create(      #added create Charge
+            amount=1685,
+            currency="gbp",
+            description="skincare bundle",
+            customer=customer                #added source customer
+            )
+            response = redirect('success')
+            return response    
+    context = {'publishKey': publishKey}
+    template = 'checkout_calm_skincare_bottle.html'
+    return render(request,template)
+
+
 
 
 # Gubel SCA.

@@ -13,7 +13,7 @@ from django.conf import settings
 
 # Create your views here.
 
-#Register Gubel Bottle
+#Register CALM Gubel Bottle
 def register_calm_bottle(request):
     form = AccountForm(request.POST)
 
@@ -45,7 +45,7 @@ def register_calm_bottle(request):
     return render(request, 'register_calm_bottle.html', {'form': form}) #this is render on HTML
 
 
-#Reorder Gubel Box
+#Reorder SKINCARE Gubel Box
 def register_skincare_bottle(request):
     form = AccountForm(request.POST)
 
@@ -75,6 +75,38 @@ def register_skincare_bottle(request):
         form = AccountForm()
 
     return render(request, 'register_skincare_bottle.html', {'form': form}) #this is render on HTML
+
+
+#Reorder CALM+SKINCARE Gubel Box
+def register_calm_skincare_bottle(request):
+    form = AccountForm(request.POST)
+
+    name = request.POST.get('name')
+    phone = request.POST.get('phone')
+    email = request.POST.get('email')
+    address = request.POST.get('address')
+    postcode = request.POST.get('postcode')
+    obj = Account.objects.create(name=name, phone=phone, email=email, address=address, postcode=postcode)
+
+    if form.is_valid():
+
+        send_mail(
+        'A New Account',
+        'From our servers, a new account has been created. Please check it out in the administration console details are as follows' +
+        ': name: {}, phone: {}, email: {}, address: {}, postcode: {}'.format(name, phone, email, address, postcode),
+        'hi@gubel.co.uk',
+        ['marco@gubel.co.uk'],
+        #fail_silently=False,
+        )
+
+        form.save()
+        
+        response = redirect('checkout_calm_skincare_bottle')
+        return response
+    else:
+        form = AccountForm()
+
+    return render(request, 'register_calm_skincare_bottle.html', {'form': form}) #this is render on HTML
 
 
 

@@ -35,8 +35,10 @@ urlpatterns = [
     path('skincare_bottle/', views.skincare_bottle, name='skincare-bottle'),
     path('register_calm_bottle/', user_views.register_calm_bottle, name='register_calm_bottle'),
     path('register_skincare_bottle/', user_views.register_skincare_bottle, name='register_skincare_bottle'),
+    path('register_calm_skincare_bottle/', user_views.register_calm_skincare_bottle, name='register_calm_skincare_bottle'),
     path('checkout_calm_bottle/', checkout_views.checkout_calm_bottle, name='checkout_calm_bottle'),
     path('checkout_skincare_bottle/', checkout_views.checkout_skincare_bottle, name='checkout_skincare_bottle'),
+    path('checkout_calm_skincare_bottle/', checkout_views.checkout_calm_skincare_bottle, name='checkout_calm_skincare_bottle'),
     #path('register_box/', user_views.register_box, name='register_box'),
     #path('register_mx/', user_views.register_mx, name='register_mx'),
     #path('register_le/', user_views.register_le, name='register_le'),
@@ -53,7 +55,7 @@ urlpatterns = [
     path('privacy-policy/', views.privacypolicy, name='privacy-policy'),
     path('sms-policy/', views.smspolicy, name='sms-policy'),
     path('success/', views.success, name='success'),
-    path('hometest/', views.hometest, name='hometest'),
+    #path('hometest/', views.hometest, name='hometest'),
     #path('code_granted/', views.code_granted, name='code_granted'),
     
 #if settings.DEBUG:
