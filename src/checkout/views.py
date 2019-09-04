@@ -87,7 +87,7 @@ def checkout_calm_skincare_bottle(request):
             charge = stripe.Charge.create(      #added create Charge
             amount=1685,
             currency="gbp",
-            description="skincare bundle",
+            description="calm + skincare bundle",
             customer=customer                #added source customer
             )
             response = redirect('success')
