@@ -44,14 +44,14 @@ def hometest(request):
     template = 'hometest.html'
     return render(request,template,context)
 
-def calm_bottle(request):
+def calm_jar(request):
     context = locals()
-    template = 'calm_bottle.html'
+    template = 'calm_jar.html'
     return render(request,template,context)
 
-def skincare_bottle(request):
+def skincare_jar(request):
     context = locals()
-    template = 'skincare_bottle.html'
+    template = 'skincare_jar.html'
     return render(request,template,context)
 
 def navbar(request):

@@ -13,8 +13,8 @@ from django.conf import settings
 
 # Create your views here.
 
-#Register CALM Gubel Bottle
-def register_calm_bottle(request):
+#Register CALM Gubel
+def register_calm_jar(request):
     form = AccountForm(request.POST)
 
     name = request.POST.get('name')
@@ -37,16 +37,16 @@ def register_calm_bottle(request):
 
         form.save()
         
-        response = redirect('checkout_calm_bottle')
+        response = redirect('checkout_calm_jar')
         return response
     else:
         form = AccountForm()
     
-    return render(request, 'register_calm_bottle.html', {'form': form}) #this is render on HTML
+    return render(request, 'register_calm_jar.html', {'form': form}) #this is render on HTML
 
 
-#Reorder SKINCARE Gubel Box
-def register_skincare_bottle(request):
+#Reorder SKINCARE Gubel
+def register_skincare_jar(request):
     form = AccountForm(request.POST)
 
     name = request.POST.get('name')
@@ -69,16 +69,16 @@ def register_skincare_bottle(request):
 
         form.save()
         
-        response = redirect('checkout_skincare_bottle')
+        response = redirect('checkout_skincare_jar')
         return response
     else:
         form = AccountForm()
 
-    return render(request, 'register_skincare_bottle.html', {'form': form}) #this is render on HTML
+    return render(request, 'register_skincare_jar.html', {'form': form}) #this is render on HTML
 
 
-#Reorder CALM+SKINCARE Gubel Box
-def register_calm_skincare_bottle(request):
+#Reorder CALM+SKINCARE Gubel
+def register_calm_skincare_jar(request):
     form = AccountForm(request.POST)
 
     name = request.POST.get('name')
@@ -101,12 +101,12 @@ def register_calm_skincare_bottle(request):
 
         form.save()
         
-        response = redirect('checkout_calm_skincare_bottle')
+        response = redirect('checkout_calm_skincare_jar')
         return response
     else:
         form = AccountForm()
 
-    return render(request, 'register_calm_skincare_bottle.html', {'form': form}) #this is render on HTML
+    return render(request, 'register_calm_skincare_jar.html', {'form': form}) #this is render on HTML
 
 
 

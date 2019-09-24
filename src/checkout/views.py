@@ -20,7 +20,7 @@ stripe.api_key = stripe_secret
 # Create your views here.  
 
 # calm Starter Bundle. 
-def checkout_calm_bottle(request):
+def checkout_calm_jar(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
@@ -41,12 +41,12 @@ def checkout_calm_bottle(request):
             response = redirect('success')
             return response    
     context = {'publishKey': publishKey}
-    template = 'checkout_calm_bottle.html'
+    template = 'checkout_calm_jar.html'
     return render(request,template)
 
 
 # skincare starter bundle. 
-def checkout_skincare_bottle(request):
+def checkout_skincare_jar(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
@@ -67,12 +67,12 @@ def checkout_skincare_bottle(request):
             response = redirect('success')
             return response    
     context = {'publishKey': publishKey}
-    template = 'checkout_skincare_bottle.html'
+    template = 'checkout_skincare_jar.html'
     return render(request,template)
 
 
 # calm + skincare starter bundle. 
-def checkout_calm_skincare_bottle(request):
+def checkout_calm_skincare_jar(request):
     publishKey = settings.STRIPE_PUBLIC_KEY
     if request.method == 'POST':
         token = request.POST['stripeToken']
@@ -93,7 +93,7 @@ def checkout_calm_skincare_bottle(request):
             response = redirect('success')
             return response    
     context = {'publishKey': publishKey}
-    template = 'checkout_calm_skincare_bottle.html'
+    template = 'checkout_calm_skincare_jar.html'
     return render(request,template)
 
 
