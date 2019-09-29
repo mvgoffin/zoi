@@ -96,7 +96,30 @@ def checkout_calm_skincare_jar(request):
     template = 'checkout_calm_skincare_jar.html'
     return render(request,template)
 
-
+# refill. 
+def refill(request):
+    publishKey = settings.STRIPE_PUBLIC_KEY
+    if request.method == 'POST':
+        token = request.POST['stripeToken']
+        try:
+            customer = stripe.Customer.create(
+                description="new customer",
+                source=token
+            )
+        except stripe.error.CardError as e:
+           pass
+        else:
+            charge = stripe.Charge.create(      #added create Charge
+            amount=0,
+            currency="gbp",
+            description="New Account - Text Ordering",
+            customer=customer                #added source customer
+            )
+            response = redirect('success')
+            return response    
+    context = {'publishKey': publishKey}
+    template = 'refill.html'
+    return render(request,template)
 
 
 # Gubel SCA.

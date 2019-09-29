@@ -39,6 +39,7 @@ urlpatterns = [
     path('checkout_calm_jar/', checkout_views.checkout_calm_jar, name='checkout_calm_jar'),
     path('checkout_skincare_jar/', checkout_views.checkout_skincare_jar, name='checkout_skincare_jar'),
     path('checkout_calm_skincare_jar/', checkout_views.checkout_calm_skincare_jar, name='checkout_calm_skincare_jar'),
+    path('refill/', checkout_views.refill, name='refill'),
     #path('register_box/', user_views.register_box, name='register_box'),
     #path('register_mx/', user_views.register_mx, name='register_mx'),
     #path('register_le/', user_views.register_le, name='register_le'),
