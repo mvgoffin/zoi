@@ -24,7 +24,7 @@ def success(request):
     template = 'success.html'
     return render(request,template,context)
 
-def success-account(request):
+def successaccount(request):
     context = locals()
     template = 'success-account.html'
     return render(request,template,context)
