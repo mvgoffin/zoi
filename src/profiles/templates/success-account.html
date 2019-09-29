@@ -1,0 +1,1141 @@
+<!-- Hi there, curious developer!-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content= "width=device-width, user-scalable=no">
+        <meta name="description" content="Gubel is a line of functional chocolates infused with plant extracts to help people feel better">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/xdp3ien.css">
+        <!--<link rel="stylesheet" type="text/css" href="static/static/css/main.css"/>-->
+    
+        <!--Mobile Bubble Menu-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        
+        
+    
+        <!-- smart phone css  -->
+        <link href="assets/phone.css" rel="stylesheet" type="text/css" media="all and (min-width: 0px) and (max-width: 480px)" />
+    
+        <!-- Tablet -->
+        <link href="assets/tablet.css" rel="stylesheet" type="text/css" media="all and (min-width: 481px) and (max-width: 800px)" />
+    
+        <!-- Desktop -->
+        <link href="assets/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:801px)">
+            
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+        <!--lightbox-->
+        <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+        <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    
+    
+        <!--favicon-->
+          <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/u5xin0z8jwunsn8/Gubel-favicon.png?dl=0">
+        <title>
+          
+    
+          GUBEL
+        
+    
+        </title>
+        <!--Host Images: dl.dropboxusercontent.com -->
+    
+        <!--Font -->
+        <link rel="stylesheet" href="style.css" />
+        
+        <!--CSS Page PACE Progress loading bar--> 
+        <style>
+                .pace {
+                  -webkit-pointer-events: none;
+                  pointer-events: none;
+                
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  user-select: none;
+                
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                
+                  -webkit-transform: translate3d(0, -50px, 0);
+                  -ms-transform: translate3d(0, -50px, 0);
+                  transform: translate3d(0, -50px, 0);
+                
+                  -webkit-transition: -webkit-transform .5s ease-out;
+                  -ms-transition: -webkit-transform .5s ease-out;
+                  transition: transform .5s ease-out;
+                }
+                
+                .pace.pace-active {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  -ms-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+                
+                .pace .pace-progress {
+                  display: block;
+                  position: fixed;
+                  z-index: 2000;
+                  top: 0;
+                  right: 100%;
+                  width: 100%;
+                  height: 4px;
+                  background: #FFB833 ;
+                
+                  pointer-events: none;
+                }
+                
+        </style>
+        
+        <!-- CSS Gubel Homepage -->
+        <style media="screen">
+                .product-heading{
+                  text-align: left;
+                  font-family: 'titling-gothic-fb', sans-serif;
+                }
+
+                .row{
+                  padding-left: 55px;
+                  padding-right: 55px;
+                }
+                
+                p{
+                  margin:0px;
+                }
+    
+                #why-set-desktop{
+                  padding-top: 35px;
+                  padding-bottom: 35px;
+                  padding-left: 250px;
+                  padding-right: 250px;
+                }
+    
+                #shop-section{
+                  background-color:#FCF9F7;
+                }
+    
+                #why-gubel{
+                background-color: #FCF9F7;
+                }
+    
+                .heading{
+                  font-family: 'titling-gothic-fb', sans-serif;
+                  padding-top: 75px;
+                  padding-bottom: 75px;
+                  text-align: center;
+                  font-weight: 400;
+                  display:block;
+                  margin: 0;
+                }
+    
+                .heading-5{
+                  font-family: 'titling-gothic-fb', sans-serif;
+                  padding-top: 100px;
+                  padding-bottom: 100px;
+                  margin:auto;
+                  text-align: center;
+                  font-weight: 400;
+                  display:block
+                }
+    
+                .heading-f{
+                  font-family: 'titling-gothic-fb', sans-serif;
+                  color: white;
+                  margin-bottom:10px;
+                  text-align: left;
+                }
+    
+                .sub-heading{
+                  font-family: 'titling-gothic-fb', sans-serif;
+                  margin: 0px;
+                  text-align: left;
+                  font-weight: 400;
+                  display:block
+                }
+                
+    
+                /**.header{
+                  border-bottom-style: solid;
+                  background-image: linear-gradient(to top, rgba(252,249,247,0), rgba(252,249,247,1));
+                  z-index: 99;
+                  border-bottom-color: #000000;
+                  border-bottom-width: thin;
+                }**/
+    
+                .center { /*mbile*/
+                float:left;
+                padding-top: 25px !important;
+                padding-left: 20px !important;
+                display: block;
+                margin-left:10px;
+                margin: auto!important;
+                text-align:center;
+                size:20px;
+              }
+    
+                #four-whys {
+                      background-color:transparent;
+                     
+                    }
+    
+                #bundles {
+                  background-color:#F5F0EE;
+                }
+                
+                .why-icon{
+                  margin-top: 10px;
+                  font-weight: 400;
+                  color: black;
+                  text-align: center;
+                  font-size: medium;
+                }
+    
+              
+    
+              .home-h1{
+                  text-align: left;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  border-bottom: 1px solid gray;
+                  font-weight: 700;
+                  display:block;
+                  text-indent: 10px;
+                      }
+              
+            .home-h2{
+              text-align: left;
+              font-size: medium;
+              display:block
+               }
+    
+            .home-text{
+              
+              font-size: 10px;
+              color:gray;
+              text-align:left;
+               }
+    
+            .home-heading{
+              text-align: left;
+              font-family: 'titling-gothic-fb', sans-serif;
+            }
+    
+            .home-hero-text {
+              font-weight: 400;
+              padding-bottom: 10px;
+              margin: 0px;
+              color: black;
+              text-align:center;
+              line-height:normal;
+              padding-left:170px;
+              padding-right: 170px;
+            }
+    
+            .home-text-bundle{
+            font-weight: 400;
+            color: black;
+            text-align:center;
+            }
+    
+            .home-small-2{
+            display: inline-block;
+            font-weight: 400;
+            color: gray;
+            text-align:left;
+            line-height: 25px;
+            font-size: small;
+            }
+    
+            .home-small{
+            display: inline-block;
+            font-weight: 400;
+            color: black;
+            text-align:center;
+            line-height: 25px;
+            font-size: medium;
+            }
+            
+            .product-title{
+            font-family: 'titling-gothic-fb', sans-serif;
+            margin-top: 10px;
+            font-weight: 400;
+            color: black;
+            text-align: center;
+            line-height: 25px;
+            font-size: large;
+            text-decoration: none;
+            }
+    
+            .product-title:hover{
+            font-family: 'titling-gothic-fb', sans-serif;
+            margin-top: 10px;
+            font-weight: 400;
+            color: gray;
+            text-align: center;
+            line-height: 25px;
+            font-size: large;
+            text-decoration: none;
+            }
+    
+    
+            .product-subtitle{
+            display: inline-block;
+            font-weight: 400;
+            color: black;
+            text-align:left;
+            line-height: 25px;
+            font-size: medium;
+            }
+    
+            .product-small-real-value{
+            font-weight: 400;
+            color: gray;
+            text-align:center;
+            line-height: 25px;
+            font-size: medium;
+            text-decoration: line-through;
+            }
+    
+            .product-small{
+            font-weight: 400;
+            color: black;
+            text-align:center;
+            line-height: 25px;
+            font-size: medium;
+            }
+    
+            .about-title{
+            margin-top: 10px;
+            font-weight: 600;
+            color: black;
+            text-align: left;
+            line-height: 25px;
+            font-size: large;
+            }
+    
+            .about-text{
+            font-weight: 400;
+            color: black;
+            text-align:left;
+            line-height: 25px;
+            font-size: medium;
+            }
+    
+            .product-small-2{
+            font-weight: 600;
+            color: gray;
+            text-align:center;
+            line-height: 25px;
+            font-size: small;
+            }
+    
+            .home-HIW-title{
+              font-family: 'titling-gothic-fb', sans-serif;
+              font-weight: 600;
+              color: black;
+              text-align:center;
+              line-height: 25px;
+              font-size:larger;
+            }
+    
+            .home-HIW-body{
+              font-weight: 400;
+              color: black;
+              line-height: 25px;
+              font-size: medium;
+            }
+    
+            .home-small-lightbox{
+              text-align:left;
+              padding-bottom: 1px;
+              padding-top: 2px;
+              font-size:smaller;
+              font-weight: 300;
+              color:gray;
+              line-height: 1.4;
+                 }
+    
+    
+            .HIW-make-impact {
+              text-align:center;
+              padding-bottom: 5px;
+              font-size:small;
+              font-weight: 600;
+              color:#64D7AE;
+              line-height: 1.4;
+              font-style: italic;
+              }
+          
+    
+            .hr{ 
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                border-style: inset;
+                border-width: 0.5px;
+                border-color:gray;
+            } 
+    
+            #header-logo {
+              width: 150px;
+              padding-top: 20px;
+              padding-bottom: 20px;
+              background-color: white;
+            }
+    
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+    
+            #hero-image {
+              width: 100%;
+              height: 100%;
+              background-color: transparent;
+              border-style: solid;
+              border-color:#FCF9F7;
+              margin: auto;
+            }
+    
+            #icon {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 100%;
+            }
+    
+            #hero-1-logo {
+              width: 100%;
+              background-color: transparent;
+              border-style: solid;
+              border-color:#FCF9F7;
+              border-width: 10px;
+              display: block;
+            }
+    
+            #hero-3-logo {
+              width: 100%;
+              background-color: transparent;
+              border-style: solid;
+              border-color:#FCF9F7;
+              border-width: 10px;
+              display: block;
+            }
+    
+            #hero-2-logo {
+              width: 100%;
+              height: 100%;
+              background-color: transparent;
+              border-style: solid;
+              border-color:#FCF9F7;
+              border-width: 10px;
+              margin: auto;
+              margin: 0px;
+            }
+    
+            #product-image {
+              width: 100%;
+              height: 100%;
+              padding: 35px;
+              background-color: transparent;
+              border-style: solid;
+              /**border-color:#FCF9F7;
+              border-width: 10px;**/
+              margin: auto;
+              margin: 0px;
+            }
+    
+            #reason {
+              width: 50%;
+              height: 50%;
+              background-color: #FCF9F7;
+              margin: auto;
+            }
+    
+            .col-sm-12-hero-2{
+              padding:0;
+            }
+    
+            .col-sm-3{
+              padding: 0px;
+              margin: 0px;
+            }
+            
+    
+            body, html {
+              height: 100%;
+              background-color: white;
+              color: #000000;
+            }
+            
+            * {
+              font-family: 'Avenir', sans-serif;
+              font-size: 16px;
+              font-variant: normal;
+              box-sizing: border-box;
+              padding: 0;
+              margin: 0;
+              -webkit-font-smoothing: antialiased;
+            }
+          
+            .small{
+              font-size: 10px;
+              color:gray;
+            }
+    
+            button {
+              background: transparent;
+              display:block;
+              width:100%;
+              border: 1px solid #ffdd44;
+              color: black;
+              background: #ffdd44;
+              padding: 15px 40px;
+              margin: .618em 0.01em;  
+              font-family: 'soleil', sans-serif;
+              font-weight: 900;
+              font-style: normal;
+              animation-delay: 2400ms;
+              font-size: 18px;
+              letter-spacing: .01em;
+              text-transform: normal;
+              transition: background-color 170ms  ease-out,color 170ms ease-out;
+            }
+    
+    
+            button:focus{
+              background-color: #64D7AE;
+              border: 1px solid #64D7AE;
+              color: #FFFFFF;
+              border-color: black;
+              border-width: 1px;
+            }
+    
+            button:hover {
+              border-color: black;
+              border-width: 1px;
+            }
+            
+            ::placeholder{
+              color: gray;
+              font-size: small;
+            }
+    
+            a{
+              color: gray;
+              font-size: small;
+            }
+    
+            #card-errors {
+              height: 20px;
+              padding: 4px 0;
+              color: #fa755a;
+            }
+            
+            .form-row {
+              width: 100%;
+              float: center;
+            }
+    
+        
+            
+            
+            /**
+              * The CSS shown here will not be introduced in the Quickstart guide, but shows
+              * how you can use CSS to style your Element's container.
+              */
+    
+              .headline {
+              box-sizing: border-box;
+              margin: 0;
+              width: 100%;
+              border-top: 5px solid black;
+              border-bottom: white;
+              border-left: white;
+              border-right: white;
+              -webkit-appearance: none !important;
+            }
+
+            .cart-headline {
+                box-sizing: border-box;
+                margin: 0;
+                width: 100%;
+                border-top: 5px solid #ffdd44;;
+                border-bottom: white;
+                border-left: white;
+                border-right: white;
+                -webkit-appearance: none !important;
+              }
+    
+            .headline-middle {
+              box-sizing: border-box;
+              padding-top: 25px;
+              margin: auto;
+              width: 5%;
+              border-bottom: 5px solid black;
+              -webkit-appearance: none !important;
+            }
+    
+              .form-control {
+                box-sizing: border-box;
+                margin-top: 5px;
+                width: 100%;
+                height: 40px;
+                padding: 10px 12px;
+                border: 1px solid #EDEDEB;
+                border-radius: 0px;
+                background-color: #EDEDEB;
+                /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
+                -webkit-transition: box-shadow 150ms ease;
+                transition: box-shadow 150ms ease;
+                -webkit-appearance: none !important;
+              }
+    
+              .form-control:focus {
+                box-shadow: 0 1px 3px 0 #FFB833;
+                border: #FFB833;
+              }
+    
+            #payment-progressbar {
+              box-sizing: border-box;
+              display: block;
+              margin-left:  360px;
+              margin-right:  360px;
+              padding-bottom: 50px;
+              }
+    
+            #home-form {
+              box-sizing: border-box;
+              margin-left:  auto;
+              margin-right:  auto;
+              background: #FCF9F7;
+              }
+    
+            .col-md-3{
+              padding: 20px;
+              background-color: black;
+              }
+    
+            .col-md-12-f{
+              padding-left:  0;
+              padding-right:  0;
+              background-color: #FCF9F7;
+              }
+    
+            .col-sm-12{
+              padding-left:  225px;
+              padding-right:  225px;
+              background-color: #FCF9F7;
+              }
+    
+            .col-sm-6{
+              padding-left:  100px;
+              padding-right:  100px;
+              margin-left: auto;
+              margin-right: auto;
+    
+            }
+    
+            .col-sm-6-4{
+              padding-left:  100px;
+              padding-right:  100px;
+            }
+    
+            .col-sm-4 {
+              padding-bottom: 10px;
+              padding-left: 50px;
+              padding-right: 50px;
+              margin: 0px;
+              text-align: center;
+            }
+            
+            .return-homepage {
+              padding-top: 25px;
+              padding-bottom: 25px;
+              padding-left: 500px;
+              padding-right: 500px;
+            }
+
+
+            .vertical-center {
+                margin-top: 50px;  /* Fallback for browsers do NOT support vh unit */
+                margin-bottom: 10px;  /* These two lines are counted as one :-)       */
+                display: flex;
+                align-items: center;
+              }
+            .row2 { 
+                display: flex; 
+                padding-left: 55px;
+                padding-right: 55px;
+                margin: -15px;
+              }
+
+            @media only screen and (max-width: 768px) {
+              .row2 { display: flex; flex-flow: column; }
+              .vertical-center  { order: 1; }
+            }
+
+            @media only screen and (max-width: 990px) {
+            form, .landing, .return-homepage, .home-hero-text, .vertical-center, .home-text-bundle, .home-small-1, .heading, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
+                margin-left:0 !important;
+                margin-right:0 !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+            }
+            
+            @media only screen and (max-width: 990px) {
+              #icon {
+              display: block;
+              margin: auto;
+              width: 100%;
+              }
+    
+              #hero-image{
+                width: 100%;
+                background-position: center bottom;
+                border-style: solid;
+                border-color:#FCF9F7;
+                margin: auto;
+                display: block;
+              }
+    
+              #why-set-desktop{
+                display:none;
+                display:flex;
+                margin: auto;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+              }
+    
+            }
+    
+            @media only screen and (max-width: 990px) {
+            *, .html {
+              margin-left:0 !important;
+              margin-right:0 !important;
+              padding-left: 0 !important;
+              padding-right: 0 !important;
+            }
+        
+            #hero-logo.product{
+              padding: 0;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            
+            #hero-logo.product, #reason {
+                width: 100%;
+                display: block;
+                margin: auto;
+              }
+    
+        }
+        </style>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267999-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+    
+          gtag('config', 'UA-141267999-1');
+        </script>
+    
+    </head>
+
+    
+<body>
+  
+    <div class="headline"></div>
+
+    <!--Section 1: Navigation Bar-->
+    
+      <header class='header' id="topbar">
+              <style>
+                #topbar {
+                  position: fixed;
+                  top: 0;
+                  width: 100%;
+                  z-index: 2;
+                  background-color:white;
+                }
+                </style>
+  
+        <div class='row'>
+          <div class="col-md-4"> 
+              <a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
+              </div>
+              
+          <div class="col-md-4" id='center-navbar'>
+            </div>
+              
+          <div class="col-md-4">
+            <nav class='navbar'>
+                <span class="open-slide">
+                  <a href="#" onclick='openSlideMenu()'>
+                    <svg width="25" height='25'>
+                      <path d='M0,5 30,5' stroke='#000' 
+                      stroke-width='4'/>
+                      <path d='M0,14 30,14' stroke='#000' 
+                      stroke-width='4'/>
+                      <path d='M0,23 30,23' stroke='#000' 
+                      stroke-width='4'/>
+                    </svg>
+                  </a>
+                </span>
+              </nav>
+  
+            <div id="side-menu" class="side-nav">
+              <div class="row">
+                <a href='#' class='btn-close' onclick='closeSlideMenu()'>&times;</a>
+                <a href='/calm_jar'>calm</a>
+                <a href='/skincare_jar'>skincare</a>
+                <a href='/register_calm_skincare_jar'>calm + skincare</a>
+              </div>
+            </div>
+  
+            <script>
+              function openSlideMenu(){
+                  document.getElementById('side-menu').style.width
+                  = '500px';
+                  document.getElementById('main').style.marginLeft
+                  = '500px';
+              }
+  
+              function closeSlideMenu(){
+                    document.getElementById('side-menu').style.width
+                    = '0';
+                    document.getElementById('main').style.marginLeft
+                    = '0';
+              }
+            </script>
+  
+            <style>
+  
+            body{
+              overflow-x: hidden;
+            }
+  
+  
+            .navbar{
+              background-color:white;
+              overflow: hidden;
+              height: 63;
+              margin:0;
+            }
+  
+            .navbar a{
+              float:right;
+              padding: 20px 15px;
+              margin-right: 10px;
+            }
+  
+            .navbar ul{
+              padding: 8px 0 0 0;
+              list-style: none;
+            }
+  
+            .side-nav{
+              height:100%;
+              width:0;
+              position: fixed;
+              z-index: 1;
+              top:0;
+              right:0;
+  
+              box-sizing: border-box;
+              border-top: 5px solid black;
+              -webkit-appearance: none !important;
+  
+              background-color: black;
+              overflow-x: hidden;
+              padding-top:60px;
+              transition: 0.7s;
+            }
+  
+            .side-nav a{
+              padding: 10px 10px 10px 30px;
+              margin-right: 10px;
+              text-decoration: none;
+              font-family: 'titling-gothic-fb', sans-serif;
+              font-size:30px;
+              color:white;
+              text-align: right;
+              display: block;
+              top:0;
+              right: 0;
+              transition: 0.1s;
+            }
+  
+            .side-nav .btn-close{
+              position:absolute;
+              padding: 0px 60px 20px 0px;
+              color: white;
+              top:0;
+              right: 0;
+              font-size: 60px;
+            }
+  
+            #main {
+              transition: margin-left 0.5s;
+              padding:20px;
+              overflow: hidden;
+              width: 100%;
+            }
+  
+            @media only screen and (max-width: 990px) {
+              .navbar a{
+              float:right;
+              padding-right: 20px !important;
+            }
+  
+            .center { /*mbile*/
+              float:left;
+              padding-top: 25px !important;
+              padding-left: 20px !important;
+              display: block;
+              margin-left:10px;
+              margin: auto!important;
+              text-align:center;
+              size:20px;
+            }
+  
+            .side-nav .btn-close{
+              padding-right: 10px !important;
+            }
+  
+            .side-nav a{
+              padding-right: 10px !important;
+            }
+  
+            #center-navbar{
+              padding: 0 !important;
+              margin: 0 !important;
+            }
+            }
+  
+            
+            </style>
+            </div>
+  
+  
+  
+        
+        
+        </div>
+        </header>
+
+
+
+<!--PLNT FORM ACCOUNT SECTION--> 
+<div class="w3-container">
+
+    <div class="col-sm-12">
+        
+            <h1 class='heading'>Your Account is Complete</h1>
+            <div >
+                <label class="cart-headline">
+            </div>
+        <!--Thank you Image-->
+            <br>
+            <p>Welcome to Gubel! Text us on <b>0748.080.3557</b> to reorder, save our number and discover all the great stuff you can expect.</p>
+            
+
+            <br>
+            <br>
+          </div>     
+  </div>
+  
+ 
+
+
+
+   <!--Section 2 - NATURAL INGREDIENTS ONLY-->
+   <div class="w3-container">
+
+    <div class="row" id='better-chocolates'>
+          
+
+        <div class="col-md-6"> 
+            <form>                        
+              <img src="https://dl.dropboxusercontent.com/s/gy9kxu2myy3kl90/success-natural-ingredients.png?dl=0" id="product-image" class="product">
+            </form>
+          </div>
+
+          <div class="col-sm-6 vertical-center">  
+              <form>             
+              <h1 class="product-heading">NATURAL INGREDIENTS</h1>
+              <br>
+              <p>We are dedicated to exploring new ways for you to experience chocolate in a way that can delivery additional benefits into your daily rituals and discover the incredible benefits from natural, high quality plant extracts.</p>
+            </form>
+          </div>
+              
+    </div>         
+</div>
+
+<br>
+<br>
+
+
+
+
+<!--Section 3 - SUSTAINABLY DELIEVERED-->
+
+<div class="w3-container" >
+<div class="row2">
+      
+        <div class="col-sm-6 vertical-center">  
+            <form >            
+              <h1 class="product-heading">SUSTAINABLY DELIEVERED, EACH MONTH</h1>
+              <br>
+              <p>If you already have a Gubel Jar, make use of our circular packaging model. You can refill your existing jar with our plastic-free biodegradable paper pouches, made from 45% - 60% renewable wood pulp starch  🌱 </p>
+              <p>Each pouch contains 30 chocolates for only £19.99 + £2.85 shipping.</p>
+ 
+              
+            </form>
+          </div>
+
+          <div class="col-md-6">
+              <form >
+                  <img src="https://dl.dropboxusercontent.com/s/cj2pwvoqggi9x2x/success-biodegradable-packaging-all.png?dl=0" id="product-image" class="product">
+              </form>
+              </div>
+
+   </div>
+     
+ <br>
+ <br>
+</div>
+
+
+
+  <!--Section 2 - TEXT TO REORDER-->
+  <div class="w3-container">
+
+    <div class="row" id='text' style="background: #FCF9F7">
+          
+
+        <div class="col-md-6"> 
+            <form>                        
+              <img src="https://dl.dropboxusercontent.com/s/ybq0ljwd2lja6oq/success-text-to-reorder.png?dl=0" id="product-image" class="product">
+            </form>
+          </div>
+
+          <div class="col-sm-6 vertical-center">  
+              <form>             
+              <h1 class="product-heading">LET'S CHAT</h1>
+              <br>
+              <p>Do you want to reorder new mnonthly pouches? Do you want to change delivery address? Just send us a text on <b>0748.080.3557</b> and we'll be happy to help with these and other questions. Text soon! 😘</p>
+        
+            </form>
+          </div>
+
+          
+          <div class="return-homepage">  
+            <form action="https://www.gubel.co.uk" id="home-form">
+              <button type="submit">RETURN HOMEPAGE</button>
+            </form>
+           </div>      
+          
+    </div>         
+  
+</div>
+
+
+
+   <!-- Footer -->
+    
+<footer class="w3-container" id='footer'>
+    <style>
+      #footer{
+        padding: 0px;
+      }
+      </style>
+
+      <div class="row" id='footer'>
+          <div class="col-md-3">
+            <p><a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/19vxqsnogv5o4mp/Gubel_logo-white.png?dl=0" src="blank.gif" style="width:100px"></a></p>
+            <img src="https://dl.dropboxusercontent.com/s/6utcleyzpvluwtn/madeUK-ppp.png?dl=0" src="blank.gif" style="width:65px">
+            <p id="trust">© Gubel Ltd 2019. All Rights Reserved. London, NW2 2DT</p>         
+          </div>
+         
+        <div class="col-md-3">
+            <p class="heading-f">PRODUCTS</p></a>
+            <a href='https://www.gubel.co.uk/calm_jar'><p id="trust">calm</p></a>
+            <a href='https://www.gubel.co.uk/skincare_jar'><p id="trust">skincare</p></a>
+            <a href='https://www.gubel.co.uk/register_calm_skincare_jar'><p id="trust">calm + skincare</p></a>
+          </div>
+
+        <div class="col-md-3">
+              <p class="heading-f">CONTACT</p></a>
+              <a href='sms:+447480803557'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
+              <a href='https://www.instagram.com/gubel.uk' target="_blank"><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@gubel.UK</p></a>
+              <a href='mailto:hi@gubel.co.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@gubel.co.uk</p></a>
+           </div>
+
+        <div class="col-md-3">
+          <p class="heading-f">INFORMATION</p></a>
+          <a href='https://www.gubel.co.uk/about'><p id="trust">About</p></a>
+          <a href='https://www.gubel.co.uk/terms-of-service'><p id="trust">Terms of Service</p></a>
+          <a href='https://www.gubel.co.uk/privacy-policy'><p id="trust">Privacy Policy</p></a>
+          <a href='https://www.gubel.co.uk/sms-policy'><p id="trust">SMS Policy</p></a>  
+         </div>
+
+              <style>         
+                
+                #footer {
+                  background-color: #000000;
+                  padding: 25px;
+
+                }
+                .footer-links{
+                  text-align:left;
+                  font-size: 12px;
+                  color: white;
+                }
+                #trust {
+                  text-align:left;
+                  color: white;
+                  margin: 0;
+                }
+
+                #trust-tc{
+                  text-align:left;
+                  font-size: 12px;
+                  color: white;
+                  margin: 0;
+                  border-style: solid;
+                  border-width: thin;
+                  border-color: white;
+                  }
+
+                #vsu-trust {
+                  text-align:center;
+                }
+                </style> 
+
+        </div>
+      </footer>
+  
+    </form>
+    
+  
+  </div>
+
+        
+
+
+
+    </body>
+</html>

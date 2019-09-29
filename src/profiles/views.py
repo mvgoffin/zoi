@@ -24,6 +24,11 @@ def success(request):
     template = 'success.html'
     return render(request,template,context)
 
+def success-account(request):
+    context = locals()
+    template = 'success-account.html'
+    return render(request,template,context)
+
 def termsofservice(request):
     context = locals()
     template = 'terms-of-service.html'
