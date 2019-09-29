@@ -115,7 +115,7 @@ def refill(request):
             description="New Account - Text Ordering",
             customer=customer                #added source customer
             )
-            response = redirect('success')
+            response = redirect('success-account')
             return response    
     context = {'publishKey': publishKey}
     template = 'refill.html'
