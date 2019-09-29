@@ -110,7 +110,7 @@ def refill(request):
            pass
         else:
             charge = stripe.Charge.create(      #added create Charge
-            amount=0,
+            amount=100,
             currency="gbp",
             description="New Account - Text Ordering",
             customer=customer                #added source customer
