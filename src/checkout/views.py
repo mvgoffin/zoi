@@ -112,7 +112,7 @@ def refill(request):
             charge = stripe.Charge.create(   #added create Charge
             amount=30,
             currency="gbp",
-            description="New Account Pre-Authorisation"
+            description="Pre-Authorisation New Account"
             customer=customer                #added source customer
             #capture = false                  #avoid manual refund
             )
