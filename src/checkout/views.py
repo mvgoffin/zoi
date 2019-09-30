@@ -109,11 +109,12 @@ def refill(request):
         except stripe.error.CardError as e:
            pass
         else:
-            charge = stripe.Charge.create(      #added create Charge
+            charge = stripe.Charge.create(   #added create Charge
             amount=100,
             currency="gbp",
             description="New Account - Text Ordering",
             customer=customer                #added source customer
+            capture = false                  #avoid manual refund
             )
             response = redirect('success-account')
             return response    
