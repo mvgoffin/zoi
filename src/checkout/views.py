@@ -110,11 +110,11 @@ def refill(request):
            pass
         else:
             charge = stripe.Charge.create(   #added create Charge
-            amount=100,
+            amount=00,
             currency="gbp",
             description="New Account - Text Ordering",
             customer=customer                #added source customer
-            capture = false                  #avoid manual refund
+            #capture = false                  #avoid manual refund
             )
             response = redirect('success-account')
             return response    
