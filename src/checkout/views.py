@@ -109,8 +109,13 @@ def refill(request):
         except stripe.error.CardError as e:
            pass
         else:
+<<<<<<< HEAD
             charge = stripe.Charge.create(   #added create Charge
             amount=30,
+=======
+            charge = stripe.Charge.create(      #added create Charge
+            amount=0,
+>>>>>>> parent of 87da292... updated
             currency="gbp",
             description="Pre-Authorisation New Account",
             customer=customer                #added source customer
