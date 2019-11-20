@@ -115,6 +115,9 @@ def refill(request):
 =======
             charge = stripe.Charge.create(      #added create Charge
             amount=0,
+<<<<<<< HEAD
+>>>>>>> parent of 87da292... updated
+=======
 >>>>>>> parent of 87da292... updated
             currency="gbp",
             description="Pre-Authorisation New Account",
