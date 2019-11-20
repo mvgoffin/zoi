@@ -44,9 +44,9 @@ INSTALLED_APPS = [
     'checkout',
     'stripe',
     'users',
-    'webpush',
 ]
 #'phonenumber_field', erase from above installed apps
+#webpush gone
 
 MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
