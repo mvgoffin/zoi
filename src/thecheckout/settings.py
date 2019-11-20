@@ -40,13 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'phonenumber_field',
     'profiles',
     'checkout',
     'stripe',
     'users',
     'webpush',
 ]
+#'phonenumber_field', erase from above installed apps
 
 MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
