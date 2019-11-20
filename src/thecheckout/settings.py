@@ -24,6 +24,7 @@ SECRET_KEY = 'lzon%f2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# True - Env // False - production
 
 # TEST on MOBILE MARCO VG MAC -> ALLOWED_HOSTS = ['192.168.0.158']
 ALLOWED_HOSTS = ['206.189.224.30', '*']
@@ -147,9 +148,9 @@ STATIC_URL = '/static/'
 
 if DEBUG:
     MEDIA_URL = '/media/'
+    STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR), 'static', 'static'),
     STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_root', 'static-only', 'static')
     MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static', 'media_root')
-    STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR), 'static', 'static'),
 )
 
 # Stripe Keys
