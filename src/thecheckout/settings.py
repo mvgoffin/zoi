@@ -29,7 +29,8 @@ DEBUG = False
 # True - Env // False - production
 
 # TEST on MOBILE MARCO VG MAC -> ALLOWED_HOSTS = ['192.168.0.158']
-ALLOWED_HOSTS = ['206.189.224.30', '*']
+ALLOWED_HOSTS = ['159.65.110.251', '*']
+# Digital Ocean Droplet for thecheckout 3.0: 159.65.110.251
 # Digital Ocean Droplet for thecheckout: 206.189.224.30 
 # Digital Ocean Droplet for Droplet: 209.97.140.222
 
