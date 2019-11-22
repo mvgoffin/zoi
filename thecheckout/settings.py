@@ -53,10 +53,6 @@ INSTALLED_APPS = [
 #'phonenumber_field', erase from above installed apps
 #webpush gone
 
-#Coding with Mitch add AUTH_USER_MODEL
-
-AUTH_USER_MODEL = 'account.Account'
-
 MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.security.SecurityMiddleware',
