@@ -25,14 +25,15 @@ SECRET_KEY = 'lzonf2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 # SECURITY 'lzon%f2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 # True - Env // False - production
 
 # TEST on MOBILE MARCO VG MAC -> ALLOWED_HOSTS = ['192.168.0.158']
-ALLOWED_HOSTS = ['159.65.110.251', '*']
+ALLOWED_HOSTS = ['134.209.17.228', 'localhost']
 # Digital Ocean Droplet for thecheckout 3.0: 159.65.110.251
 # Digital Ocean Droplet for thecheckout: 206.189.224.30 
 # Digital Ocean Droplet for Droplet: 209.97.140.222
+# Droplet 4.0: 134.209.17.228
 
 # Application definition
 
@@ -52,6 +53,10 @@ INSTALLED_APPS = [
 #'phonenumber_field', erase from above installed apps
 #webpush gone
 
+#Coding with Mitch add AUTH_USER_MODEL
+
+AUTH_USER_MODEL = 'account.Account'
+
 MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -67,7 +72,7 @@ ROOT_URLCONF = 'thecheckout.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
