@@ -18,69 +18,69 @@ def home(request):
 
 #PAYG+ Product Views
 
-def paygplus(request):
+def payg_plus(request):
     context = locals()
-    template = 'paygplus.html'
+    template = 'payg_plus.html'
     return render(request,template,context)
 
 #Checkout Account Views
 
 def checkout_account_0(request):
     context = locals()
-    template = 'checkout-account-0.html'
+    template = 'checkout_account_0.html'
     return render(request,template,context)
 
 def checkout_account_3(request):
     context = locals()
-    template = 'checkout-account-3.html'
+    template = 'checkout_account_3.html'
     return render(request,template,context)
 
 def checkout_account_6(request):
     context = locals()
-    template = 'checkout-account-6.html'
+    template = 'checkout_account_6.html'
     return render(request,template,context)
 
 def checkout_account_10(request):
     context = locals()
-    template = 'checkout-account-10.html'
+    template = 'checkout_account_10.html'
     return render(request,template,context)
 
 def checkout_account_20(request):
     context = locals()
-    template = 'checkout-account-20.html'
+    template = 'checkout_account_20.html'
     return render(request,template,context)
 
 #Checkout Payment Views
 
 def checkout_payment_0(request):
     context = locals()
-    template = 'checkout-payment-0.html'
+    template = 'checkout_payment_0.html'
     return render(request,template,context)
 
 def checkout_payment_3(request):
     context = locals()
-    template = 'checkout-payment-3.html'
+    template = 'checkout_payment_3.html'
     return render(request,template,context)
 
 def checkout_payment_6(request):
     context = locals()
-    template = 'checkout-payment-6.html'
+    template = 'checkout_payment_6.html'
     return render(request,template,context)
 
 def checkout_payment_10(request):
     context = locals()
-    template = 'checkout-payment-10.html'
+    template = 'checkout_payment_10.html'
     return render(request,template,context)
 
 def checkout_payment_20(request):
     context = locals()
-    template = 'checkout-payment-20.html'
+    template = 'checkout_payment_20.html'
     return render(request,template,context)
 
 #Checkout Payment Views
 def payg_plus_success(request):
     context = locals()
-    template = 'payg-plus-success.html'
+    template = 'payg_plus_Success.html'
     return render(request,template,context)
 
 #------------PROJECT LIVING PLANTS AND GUBEL-----------------#
