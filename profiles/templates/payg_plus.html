@@ -60,8 +60,8 @@
         }
 
         .row{
-          padding-left: 55px;
-          padding-right: 55px;
+          padding-left: 150px;
+          padding-right: 150px;
         }
 
         .heading{
@@ -338,19 +338,7 @@
     <!--Section 1: Navigation Bar-->
     <header class='header' id="topbar">
       
-        <p class='announcement'>test</p>
-        <style>
-        .announcement{
-          color: black;
-          font-weight: bold;
-          background-color:midnightblue;
-          text-align: center;
-          margin: 0px;
-          padding: 3px;
-        }
-        </style>
-
-      <div class='row'>
+      <div class=''>
         <div class="col-md-4"> 
             <a href='https://www.marcofortelefonicauk.com'><img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="header-logo" class="center"></a>
             </div>
@@ -375,7 +363,7 @@
             </nav>
 
           <div id="side-menu" class="side-nav">
-            <div class="row">
+            <div class='row'>
               <a href='#' class='btn-close' onclick='closeSlideMenu()'>&times;</a>
               <a href='/calm_jar'>test 1</a>
               <a href='/skincare_jar'>test 2</a>
@@ -404,7 +392,7 @@
       </div>
 
       <style>
-          #topbar {
+        #topbar {
             position: fixed;
             top: 0;
             width: 100%;
@@ -412,107 +400,106 @@
             background-color:white;
           }
 
-          body{
+        body{
         overflow-x: hidden;
-      }
+         }
 
+        .navbar{
+          background-color:white;
+          overflow: hidden;
+          height: 63;
+          margin:0;
+        }
 
-      .navbar{
-        background-color:white;
-        overflow: hidden;
-        height: 63;
-        margin:0;
-      }
-
-      .navbar a{
-        float:right;
-        padding: 20px 15px;
-        margin-right: 10px;
-      }
-
-      .navbar ul{
-        padding: 8px 0 0 0;
-        list-style: none;
-      }
-
-      .side-nav{
-        height:100%;
-        width:0;
-        position: fixed;
-        z-index: 1;
-        top:0;
-        right:0;
-
-        box-sizing: border-box;
-        border-top: 5px solid black;
-        -webkit-appearance: none !important;
-
-        background-color: black;
-        overflow-x: hidden;
-        padding-top:60px;
-        transition: 0.7s;
-      }
-
-      .side-nav a{
-        padding: 10px 10px 10px 30px;
-        margin-right: 10px;
-        text-decoration: none;
-        font-family: 'Avenir', sans-serif;
-        font-size:30px;
-        color:white;
-        text-align: right;
-        display: block;
-        top:0;
-        right: 0;
-        transition: 0.1s;
-      }
-
-      .side-nav .btn-close{
-        position:absolute;
-        padding: 0px 60px 20px 0px;
-        color: white;
-        top:0;
-        right: 0;
-        font-size: 60px;
-      }
-
-      #main {
-        transition: margin-left 0.5s;
-        padding:20px;
-        overflow: hidden;
-        width: 100%;
-      }
-
-      @media only screen and (max-width: 990px) {
         .navbar a{
-        float:right;
-        padding-right: 20px !important;
-            }
+            float:right;
+            padding: 20px 15px;
+            margin-right: 10px;
+        }
 
-        .center { /*mbile*/
-          float:left;
-          padding-top: 25px !important;
-          padding-left: 20px !important;
-          display: block;
-          margin-left:10px;
-          margin: auto!important;
-          text-align:center;
-          size:20px;
-            }
+        .navbar ul{
+            padding: 8px 0 0 0;
+            list-style: none;
+        }
 
-        .side-nav .btn-close{
-          padding-right: 10px !important;
-            }
+        .side-nav{
+            height:100%;
+            width:0;
+            position: fixed;
+            z-index: 1;
+            top:0;
+            right:0;
+
+            box-sizing: border-box;
+            border-top: 0px solid black;
+            -webkit-appearance: none !important;
+
+            background-color: black;
+            overflow-x: hidden;
+            padding-top:70px;
+            transition: 0.7s;
+        }
 
         .side-nav a{
-          padding-right: 10px !important;
-             }
+            padding: 10px 10px 10px 30px;
+            margin-right: 10px;
+            text-decoration: none;
+            font-family: 'Avenir', sans-serif;
+            font-size:30px;
+            color:white;
+            text-align: right;
+            display: block;
+            top:0;
+            right: 0;
+            transition: 0.1s;
+        }
 
-        #center-navbar{
-          padding: 0 !important;
-          margin: 0 !important;
-           }
-      }
+        .side-nav .btn-close{
+            position:absolute;
+            padding: 0px 20px 0px 0px;
+            color: white;
+            top:0;
+            right: 0;
+            font-size: 60px;
+        }
+
+        #main {
+            transition: margin-left 0.5s;
+            padding:20px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 990px) {
+            .navbar a{
+            float:right;
+            padding-right: 20px !important;
+                }
+
+            .center { /*mbile*/
+              float:left;
+              padding-top: 25px !important;
+              padding-left: 20px !important;
+              display: block;
+              margin-left:10px;
+              margin: auto!important;
+              text-align:center;
+              size:20px;
+                }
+
+            .side-nav .btn-close{
+              padding-right: 10px !important;
+                }
+
+            .side-nav a{
+              padding-right: 10px !important;
+                }
+
+            #center-navbar{
+              padding: 0 !important;
+              margin: 0 !important;
+              }
+          }
           </style>
 
       </header>
@@ -520,7 +507,7 @@
     
     <!--Section 2: Pay-as-you-go Banner-->
     <div class='w3-container'>
-        <div class="row" style="padding-top:71px;">
+        <div style="padding-top:71px;">
             <img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="hero-image" class="product">
         </div>
       </div>
