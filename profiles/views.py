@@ -8,12 +8,34 @@ from django.shortcuts import redirect
 from django.conf import settings
 
 # Create your views here.
-#Enabling Gubel Homepage
+#Project PAYG+
+
 def home(request):
     context = locals()
     template = 'home.html'
     return render(request,template,context)
 
+def payg_plus(request):
+    context = locals()
+    template = 'payg_plus.html'
+    return render(request,template,context)
+
+def payg_plus_account(request):
+    context = locals()
+    template = 'payg_plus_account.html'
+    return render(request,template,context)
+
+def payg_plus_payment(request):
+    context = locals()
+    template = 'payg_plus_payment.html'
+    return render(request,template,context)
+
+def payg_plus_success(request):
+    context = locals()
+    template = 'payg_plus_success.html'
+    return render(request,template,context)
+
+#------------PROJECT LIVING PLANTS AND GUBEL-----------------#
 def about(request):
     context = locals()
     template = 'about.html'
