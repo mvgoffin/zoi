@@ -713,8 +713,8 @@
                 <div class="col-sm-1" id='divider' style="padding-top:30px">
                 </div>
                 
-                <!--<form method="POST" id="register-form" action=".">{% csrf_token %}-->
-                    <form method="POST" action="{% url 'checkout_payment_0' %}">{% csrf_token %}
+                
+                <form method="POST" action="{% url 'checkout_payment_0' %}">{% csrf_token %}
                 <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
                   
                   
@@ -727,23 +727,23 @@
                   
         
                   <label class="home-heading" for="id_name"><b>Full Name</b></label>
-                  <input type="text" name="name" class="form-control" maxlength="100" required="" id="id_name">
+                  <input type="text" name="name" class="form-control" maxlength="100"  id="id_name">
                   <br>
                   
                   
                   <label class="home-heading" for="id_email"><b>Email</b></label>
                   <small class='small'>For order updates, new deals and offers.</small>
-                  <input type="email" name="email" class="form-control" maxlength="100" required="" id="id_email">
+                  <input type="email" name="email" class="form-control" maxlength="100" id="id_email">
                   <br>
                   
                   
                   <label class="home-heading" for="id_address"><b>Shipping Address</b></label>
                   <small class='small'> We only ship to the UK. For orders outside of the UK, please send us an email to hi@gubel.co.uk to handle your case. </small>
-                  <input type="text" name="address" class="form-control" maxlength="100" required="" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
+                  <input type="text" name="address" class="form-control" maxlength="100" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
                   <br>
                   
                   
-                  <label class="home-heading" for="id_postcode"><b>Postcode</b></label><input type="text" name="postcode" class="form-control" maxlength="7" required="" id="id_postcode"placeholder="NW1 6DB">
+                  <label class="home-heading" for="id_postcode"><b>Postcode</b></label><input type="text" name="postcode" class="form-control" maxlength="7" id="id_postcode"placeholder="NW1 6DB">
                   <br>
                   
                   
