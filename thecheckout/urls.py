@@ -56,7 +56,7 @@ urlpatterns = [
     path('privacy-policy/', views.privacypolicy, name='privacy-policy'),
     path('sms-policy/', views.smspolicy, name='sms-policy'),
     path('success/', views.success, name='success'),
-    path('success-account/', views.successaccount, name='success-account'),
+    #path('success-account/', views.successaccount, name='success-account'),
     #path('hometest/', views.hometest, name='hometest'),
     #path('code_granted/', views.code_granted, name='code_granted'),
     
