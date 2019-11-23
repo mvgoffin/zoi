@@ -415,12 +415,11 @@
 
     <div class="headline"></div>
   
-<!--Section 1: Navigation Bar-->
-    
+    <!--Section 1: Navigation Bar-->
     <header class='header' id="topbar">
         <div class="row">
           <div class="col-md-4"> 
-              <a href="https://www.gubel.co.uk"><img src="https://dl.dropboxusercontent.com/s/0lyusnny5savb38/Gubel_logo.png?dl=0" id="header-logo" class="center"></a>
+              <a href="https://www.gubel.co.uk"><img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="header-logo" class="center"></a>
               </div>
               
           <div class="col-md-4" id="center-navbar">
@@ -578,14 +577,9 @@
             </div>
 
           </div>
-    </header>
+      </header>
 
-  
-    <!-- Content -->
-
-    
-
-      <!--PLNT Progress Bar -->
+    <!--Checkout Progress Bar -->
     <div class="containerbar">
         <div class="row" style="padding-top:71px;">
       <br>
@@ -598,51 +592,42 @@
         <br>
         <br>  
       </div>  
-    </div>
+      </div>
 
-
-    <!--Section 1 - Product information--> 
+    <!--Section 1: Account Registration--> 
     <section>
         <div class="w3-container">
   
-          <!-- The Bundle Register Section -->
+          <!--Checkout Section-->
   
           <div class="row" style="padding-left:100px;padding-right:100px;background: #FCF9F7">
             
-            
-          
             <h1 class='heading'>Your cart</h1>
             <div class='col-sm-12'>
                 <label class="cart-headline">
             </div>
     
-              
+                <!--Checkout Big Bundle Selected-->
                 <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
-                       
-                        <h1 class="home-heading">skincare</h1>
-                        <p class="home-heading"><b>BEAUTY FROM WITHIN</b></p>
-                        <br>
+                    <h1 class="home-heading">Calls & Texts</h1>
+                    <p class="home-heading"><b>all you can talk</b></p>
+                    <br>
                         
                         <div class="col-sm-6" >
-                            <img src="https://dl.dropboxusercontent.com/s/bnvhq5oj08rdh6o/skincare-bundle-container.png?dl=0" id="product-img">
+                            <img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="product-img">
                           </div>
       
                           <div class='col-sm-6' style="padding: 0px">
                             <br>
-                            <p class="small" style="font-weight: bold; font-size:large">2-Week Starter Bundle (14 chocolates)</p>
-                            <!--<p class='small' style='color:gray'>1 Jar (7 chocolates) + 
-                            <p class='small' style='color:gray'>1 Week Eco-Refill (7 chocolates)</p>-->
+                            <p class="small" style="font-weight: bold; font-size:large">Description of the bundle</p>
                             <label class='hr'></label>
                             <p class="price" style="text-align:left;">1x Jar (7 chocolates)<span style="float:right;">£5.50</span></p>
                             <p class="price" style="text-align:left;">1x Week Eco-Refill (7 chocolates)<span style="float:right;">£4.50</span></p>
-                            <!--<p class="price" style="text-align:left;color:#64D7AE;font-weight: bold;">New Customer Purchase<span style="float:right;">-£3.00</span></p>-->
                             <label class='hr'></label>
                             <p class="price" style="text-align:left;font-weight: bold">Subtotal<span style="float:right;">£10.00</span></p>
                             <p class="price" style="text-align:left;">UK Shipping<span style="float:right;display: inline;color:#64D7AE;font-weight: bold;">FREE</span></p>
                             <label class='hr'></label>
                             <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£10.00</b></span></p>
-                            <!--<p class='ch-small-discount'>Have a discount code?</p>
-                            <p class='ch-small-discount'>After payment, text it on 0748.080.3557 to activate discount</p>-->
                             <div class='shipping-status'>
                             <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
                               </div>
@@ -710,50 +695,36 @@
                           
                   </div>
 
-                <div class="col-sm-1" id='divider' style="padding-top:30px">
-                </div>
+                <!--Checkout Divider-->
+                <div class="col-sm-1" id='divider' style="padding-top:30px"></div>
                 
-                
+                <!--Checkout Account Form-->
                 <form method="POST" action="{% url 'checkout_payment_0' %}">{% csrf_token %}
                 <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
                   
-                  
-                 
                   <br>
                   <label class="home-heading" for="id_phone"><b>Phone Number</b></label>
                   <small class='small'>For customer service and take reorders.</small>
                   <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" id="id_phone" placeholder="🇬🇧 +44">
                   <br> 
-                  
-        
                   <label class="home-heading" for="id_name"><b>Full Name</b></label>
                   <input type="text" name="name" class="form-control" maxlength="100"  id="id_name">
                   <br>
-                  
-                  
                   <label class="home-heading" for="id_email"><b>Email</b></label>
                   <small class='small'>For order updates, new deals and offers.</small>
                   <input type="email" name="email" class="form-control" maxlength="100" id="id_email">
                   <br>
-                  
-                  
                   <label class="home-heading" for="id_address"><b>Shipping Address</b></label>
                   <small class='small'> We only ship to the UK. For orders outside of the UK, please send us an email to hi@gubel.co.uk to handle your case. </small>
                   <input type="text" name="address" class="form-control" maxlength="100" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
                   <br>
-                  
-                  
                   <label class="home-heading" for="id_postcode"><b>Postcode</b></label><input type="text" name="postcode" class="form-control" maxlength="7" id="id_postcode"placeholder="NW1 6DB">
                   <br>
-                  
-                  
-                  
                   <div class="form-group">  
                     <button type="submit">NEXT</button>
                   </div>
                   <p class="terms">
-                      By continuing, you agree to our Terms of service, Privacy policy and SMS policy.
-                          
+                      By continuing, you agree to our Terms of service, Privacy policy and SMS policy.      
                   <p class="terms">
                       All transactions are secure and encrypted</p>
                       <div class="row">
@@ -774,9 +745,6 @@
                   
                       </style>
                     </p>
-
-               
-  
                   </div>
                  </form>
 
@@ -800,7 +768,7 @@
   
         <div class="row" id='footer'>
             <div class="col-md-3">
-              <p><a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/19vxqsnogv5o4mp/Gubel_logo-white.png?dl=0" src="blank.gif" style="width:100px"></a></p>
+              <p><a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" src="blank.gif" style="width:100px"></a></p>
               <img src="https://dl.dropboxusercontent.com/s/6utcleyzpvluwtn/madeUK-ppp.png?dl=0" src="blank.gif" style="width:65px">
               <p id="trust">© Gubel Ltd 2019. All Rights Reserved. London, NW2 2DT</p>         
             </div>
