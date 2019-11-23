@@ -8,31 +8,79 @@ from django.shortcuts import redirect
 from django.conf import settings
 
 # Create your views here.
-#Project PAYG+
+
+#Marco for Telefonica Views
 
 def home(request):
     context = locals()
     template = 'home.html'
     return render(request,template,context)
 
+#PAYG+ Product Views
+
 def payg_plus(request):
     context = locals()
-    template = 'payg_plus.html'
+    template = 'payg-plus.html'
     return render(request,template,context)
 
-def payg_plus_account(request):
+#Checkout Account Views
+
+def checkout_account_0(request):
     context = locals()
-    template = 'payg_plus_account.html'
+    template = 'checkout-account-0.html'
     return render(request,template,context)
 
-def payg_plus_payment(request):
+def checkout_account_3(request):
     context = locals()
-    template = 'payg_plus_payment.html'
+    template = 'checkout-account-3.html'
     return render(request,template,context)
 
+def checkout_account_6(request):
+    context = locals()
+    template = 'checkout-account-6.html'
+    return render(request,template,context)
+
+def checkout_account_10(request):
+    context = locals()
+    template = 'checkout-account-10.html'
+    return render(request,template,context)
+
+def checkout_account_20(request):
+    context = locals()
+    template = 'checkout-account-20.html'
+    return render(request,template,context)
+
+#Checkout Payment Views
+
+def checkout_payment_0(request):
+    context = locals()
+    template = 'checkout-payment-0.html'
+    return render(request,template,context)
+
+def checkout_payment_3(request):
+    context = locals()
+    template = 'checkout-payment-3.html'
+    return render(request,template,context)
+
+def checkout_payment_6(request):
+    context = locals()
+    template = 'checkout-payment-6.html'
+    return render(request,template,context)
+
+def checkout_payment_10(request):
+    context = locals()
+    template = 'checkout-payment-10.html'
+    return render(request,template,context)
+
+def checkout_payment_20(request):
+    context = locals()
+    template = 'checkout-payment-20.html'
+    return render(request,template,context)
+
+#Checkout Payment Views
 def payg_plus_success(request):
     context = locals()
-    template = 'payg_plus_success.html'
+    template = 'payg-plus-success.html'
     return render(request,template,context)
 
 #------------PROJECT LIVING PLANTS AND GUBEL-----------------#
