@@ -18,9 +18,9 @@ def home(request):
 
 #PAYG+ Product Views
 
-def payg_plus(request):
+def paygplus(request):
     context = locals()
-    template = 'payg-plus.html'
+    template = 'paygplus.html'
     return render(request,template,context)
 
 #Checkout Account Views
