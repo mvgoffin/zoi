@@ -80,7 +80,7 @@ def checkout_payment_20(request):
 #Checkout Payment Views
 def payg_plus_success(request):
     context = locals()
-    template = 'payg_plus_Success.html'
+    template = 'payg_plus_success.html'
     return render(request,template,context)
 
 #------------PROJECT LIVING PLANTS AND GUBEL-----------------#
