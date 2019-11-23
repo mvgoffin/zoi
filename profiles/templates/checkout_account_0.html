@@ -713,7 +713,8 @@
                 <div class="col-sm-1" id='divider' style="padding-top:30px">
                 </div>
                 
-                <form method="POST" id="register-form" action=".">{% csrf_token %}
+                <!--<form method="POST" id="register-form" action=".">{% csrf_token %}-->
+                    <form method="POST" action="{% url 'checkout_payment_0' %}">{% csrf_token %}
                 <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
                   
                   
