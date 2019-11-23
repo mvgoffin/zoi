@@ -642,14 +642,14 @@
 
 
     <!--Section 6: Why choose PAY-GO plus template 2 -->
- 
-    <div class="w3-container">  
-        <div class="ro"> 
-         <h1 class="heading">Why payg+ reasons</h1>
-       </div>
-       </div>
- 
-         <div class="w3-container"> 
+      <!--(title)-->
+      <div class="w3-container">  
+          <div class="ro"> 
+          <h1 class="heading">Why payg+ reasons</h1>
+        </div>
+        </div>
+      <!--(reasons)-->
+      <div class="w3-container"> 
              <div class="row">
                  <div class="col-sm-4">
                    <p class="product-text"><i>Reason 1</i></p>
@@ -663,71 +663,10 @@
                        <p class="product-text"><i>Reason 3</i></p>
                      </div>
                  </div>  
-           </div>   
+        </div>   
 
 
-    <!--Section 6: Why choose PAY-GO plus template 3-->
-      <!--reason1-->
-      <div class="w3-container" id="why-gubel">
-          <div class="row">
-                <div class="col-md-6">                         
-                    <img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="product-image" class="product">
-                    <br>
-                </div>
-                  
-                <div class="col-sm-6 vertical-center">                
-                    <form method="POST" action="{% url 'checkout_account_0' %}">{% csrf_token %} 
-                    <a href='https://www.gubel.co.uk/about'></a><p class='section-heading'>Why payg+</p></a>
-                    <p class="section-text">reason 1</p>
-                    <br>
-                    <button type="submit"></button>
-                    </form>
-                    
-                  </div>
-          </div> 
-        </div> 
-
-      <!--reason2-->
-      <div class="w3-container" >
-          <div class="row2">
-                  
-                <div class="col-sm-6 vertical-center">                
-                  <form>
-                    <p class='section-heading'>Why payg+ reason 2</p></a>
-                    <p class="section-text">description</p>
-                  </form>
-                  </div>
-    
-                  <div class="col-md-6">                         
-                    <img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="product-image" class="product">
-                    <br>
-                  </div>
-    
-                  <style>
-                    .vertical-center {
-                      margin-top: 100px;
-                      margin-bottom: 100px;
-                      display: flex;
-                      align-items: center;
-                    }
-                    .row2 { 
-                    display: flex; 
-                    background: white;
-                    padding-left: 55px;
-                    padding-right: 55px;
-                    margin: -15px;
-                  }
-                    
-                  @media only screen and (max-width: 768px) {
-                            .row2 { display: flex; flex-flow: column; }
-                            .vertical-center  { order: 1; }
-                          }
-                    </style>
-    
-          </div> 
-          
-        </div>  
-      
+  
     
     <!-- Section 7: FAQS -->
       <!--(eader)) -->
