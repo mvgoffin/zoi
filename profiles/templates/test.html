@@ -773,74 +773,76 @@
             <p class='product-small'>Your SIM will arrive between 2 to 3 days to your address.</p>
             </div>
 
-        <style>
-        /* Style the buttons that are used to open and close the accordion panel */
-        .accordion {
-              background-color: transparent;
-              font-family: 'Avenir', sans-serif;
-              font-weight: 800; 
-              cursor: pointer;
-              padding: 20px;
-              width: 100%;
-              border: none;
-              text-align: left;
-              outline: none;
-              font-size: 15px;
-              transition: 0.4s;
-              border-radius: 0px;
-            }
-
-            .active, .accordion:hover {
-              background-color:#EFEFEF;
-              border-left-width: 10px;
-              border-left-style: solid;
-              border-left-color: #589AD2 ;
-              border-radius: 0px;
-            }
-
-            .panel {
-              padding: 0px 10px;
-              margin: 0px;
-              background-color: #FCF9F7;
-              max-height: 0;
-              overflow: hidden;
-              transition: max-height 0.2s ease-out;
-              border-radius: 0px;
-
-            }
-
-            .accordion:after {
-              content: '\02795'; /* Unicode character for "plus" sign (+) */
-              font-size: 13px;
-              color: #EDEDEB;
-              float: right;
-              margin-left: 5px;
-              border-radius: 0px;
-            }
-
-            .active:after {
-              content: "\2796"; /* Unicode character for "minus" sign (-) */
-              border-radius: 0px;
-            }
-        </style>
-
-      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-          var acc = document.getElementsByClassName("accordion");
-          var i;
-          
-          for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              var panel = this.nextElementSibling;
-              if (panel.style.maxHeight){
-                panel.style.maxHeight = null;
-              } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-              } 
-            });
-          }
-          </script>
-
+            <style>
+                    /* Style the buttons that are used to open and close the accordion panel */
+                    .accordion {
+                          background-color: transparent;
+                          color: black;
+                          font-family: 'titling-gothic-fb', sans-serif;
+                          font-weight: 400; 
+                          cursor: pointer;
+                          padding: 20px;
+                          width: 100%;
+                          border: none;
+                          text-align: left;
+                          outline: none;
+                          font-size: 15px;
+                          transition: 0.4s;
+                          border-radius: 0px;
+                        }
+            
+                        .active, .accordion:hover {
+                          background-color:#FCF9F7;
+                          border-left-width: 10px;
+                          border-left-style: solid;
+                          border-left-color: #FFdd44 ;
+                          border-radius: 0px;
+                        }
+            
+                        .panel {
+                          padding: 0px 10px;
+                          margin: 0px;
+                          background-color: #FCF9F7;
+                          max-height: 0;
+                          overflow: hidden;
+                          transition: max-height 0.2s ease-out;
+                          border-radius: 0px;
+            
+                        }
+            
+                        .accordion:after {
+                          content: '\02795'; /* Unicode character for "plus" sign (+) */
+                          font-size: 13px;
+                          color: #EDEDEB;
+                          float: right;
+                          margin-left: 5px;
+                          border-radius: 0px;
+                        }
+            
+                        .active:after {
+                          content: "\2796"; /* Unicode character for "minus" sign (-) */
+                          border-radius: 0px;
+                        }
+                    </style>
+            
+                  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+                      var acc = document.getElementsByClassName("accordion");
+                      var i;
+                      
+                      for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function() {
+                          this.classList.toggle("active");
+                          var panel = this.nextElementSibling;
+                          if (panel.style.maxHeight){
+                            panel.style.maxHeight = null;
+                          } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                          } 
+                        });
+                      }
+                      </script>
+            
+                
     
             </div>  
           </div>  
