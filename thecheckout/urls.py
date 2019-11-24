@@ -67,6 +67,7 @@ urlpatterns = [
     path('checkout_payment_10/', views.checkout_payment_10, name='checkout_payment_10'),
     path('checkout_payment_20/', views.checkout_payment_20, name='checkout_payment_20'),
     path('payg_plus_success/', views.payg_plus_success, name='payg_plus_success'),
+    path('test/', views.test, name='test'),
     #path('hometest/', views.hometest, name='hometest'),
     #path('code_granted/', views.code_granted, name='code_granted'),
     

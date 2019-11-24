@@ -83,6 +83,11 @@ def payg_plus_success(request):
     template = 'payg_plus_success.html'
     return render(request,template,context)
 
+def test(request):
+    context = locals()
+    template = 'test.html'
+    return render(request,template,context)
+
 #------------PROJECT LIVING PLANTS AND GUBEL-----------------#
 def about(request):
     context = locals()
