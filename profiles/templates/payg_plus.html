@@ -22,10 +22,10 @@
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!--favicon-->
-    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/qisifwsj19ji6xf/FAVICON.gif?dl=0">
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/n7vjp3exjhsmzqx/Favicon.png?dl=0">
     
     <title>
-      Marco for Telefonica UK
+      Pay-as-you-go Plus
     </title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -55,8 +55,8 @@
 
         body, html {
           height: 100%;
-          background-color: white;
-          color: #000000;
+          background-color: #F8F8F8;
+          color: #1E2671;
         }
 
         .row{
@@ -66,23 +66,21 @@
 
         .heading{
           font-family: 'Avenir', sans-serif;
-          padding-top: 75px;
-          padding-bottom: 75px;
-          text-align: center;
-          font-weight: 400;
+          padding-top: 35px;
+          padding-bottom: 35px;
+          text-align: left;
+          font-weight: 800;
           display:block;
           margin: 0;
         }
 
         .page-text {
           font-weight: 400;
-          padding-bottom: 10px;
           margin: 0px;
-          color: black;
-          text-align:center;
+          text-align:left;
           line-height:normal;
-          padding-left:170px;
-          padding-right: 170px;
+          
+          
         }
 
         .section-heading{
@@ -120,20 +118,27 @@
         .product-title{
         font-family: 'Avenir', sans-serif;
         margin-top: 10px;
-        font-weight: 400;
-        color: black;
-        text-align: center;
+        font-weight: 800;
+        text-align: left;
         line-height: 25px;
         font-size: large;
         text-decoration: none;
         }
 
         .product-text{
-        font-weight: 400;
-        color: black;
-        text-align:center;
+        text-align:left;
+        margin-bottom: 0px;
+        font-size:small;
+        }
+
+        .product-price{
+        font-family: 'Avenir', sans-serif;
+        margin-top: 10px;
+        font-weight: 800;
+        text-align: left;
         line-height: 25px;
-        font-size: medium;
+        font-size: large;
+        text-decoration: none;
         }
 
         .headline {
@@ -166,10 +171,11 @@
         }
 
         #header-logo {
-        width: 150px;
+        width: 50px;
         padding-top: 20px;
         padding-bottom: 20px;
-        background-color: white;
+        padding-left: 10px;
+        /**background-color: white;**/
         }
 
         #hero-image {
@@ -205,18 +211,19 @@
 
         button {
           background: transparent;
+          border-radius: 4px;
           display:block;
           width:100%;
-          border: 1px solid #ffdd44;
-          color: black;
-          background: #ffdd44;
-          padding: 15px 40px;
+          border: 1px solid transparent;
+          color: white;
+          background: #589AD2;
+          padding: 10px 20px;
           margin: .618em 0.01em;  
           font-family: 'Avenir', sans-serif;
-          font-weight: 900;
+          font-weight: 800;
           font-style: normal;
           animation-delay: 2400ms;
-          font-size: 18px;
+          font-size: medium;
           letter-spacing: .01em;
           text-transform: normal;
           transition: background-color 170ms  ease-out,color 170ms ease-out;
@@ -226,12 +233,12 @@
           background-color: #64D7AE;
           border: 1px solid #64D7AE;
           color: #FFFFFF;
-          border-color: black;
+          border-color: transparent;
           border-width: 1px;
         }
 
         button:hover {
-          border-color: black;
+          border-color: transparent;
           border-width: 1px;
         }
         
@@ -253,14 +260,22 @@
   
   /**Bootstrap Columns and Sections**/
     
-        .col-sm-3{
-        padding: 0px;
-        margin: 0px;
+        .col-sm-3 {
+          border-radius: 16px;
+          box-shadow: 0 1px 5px 0 #e6ebf1;
+          -webkit-transition: box-shadow 150ms ease;
+          transition: box-shadow 150ms ease;
         }
   
         .col-md-3{
         padding: 20px;
         background-color: black;
+        }
+
+        /**
+        .col-sm-3{
+        padding: 0px;
+        margin: 0px;
         }
 
         .col-sm-6{
@@ -269,6 +284,7 @@
           margin-left: auto;
           margin-right: auto;
         }
+        **/
 
         .col-sm-4 {
           padding-bottom: 10px;
@@ -340,7 +356,7 @@
       
       <div class=''>
         <div class="col-md-4"> 
-            <a href='https://www.marcofortelefonicauk.com'><img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="header-logo" class="center"></a>
+            <a href='https://www.marcofortelefonicauk.com'><img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" id="header-logo" class="center"></a>
             </div>
             
         <div class="col-md-4" id='center-navbar'>
@@ -351,11 +367,11 @@
               <span class="open-slide">
                 <a href="#" onclick='openSlideMenu()'>
                   <svg width="25" height='25'>
-                    <path d='M0,5 30,5' stroke='#000' 
+                    <path d='M0,5 30,5' stroke='#FFFFFF' 
                     stroke-width='4'/>
-                    <path d='M0,14 30,14' stroke='#000' 
+                    <path d='M0,14 30,14' stroke='#FFFFFF' 
                     stroke-width='4'/>
-                    <path d='M0,23 30,23' stroke='#000' 
+                    <path d='M0,23 30,23' stroke='#FFFFFF' 
                     stroke-width='4'/>
                   </svg>
                 </a>
@@ -367,7 +383,7 @@
               <a href='#' class='btn-close' onclick='closeSlideMenu()'>&times;</a>
               <a href='/home'>Home</a>
               <a href='https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0' target="_blank">Unlock Value Report</a>
-              <a href='/payg_plus'>Test PAYG+</a>
+              <a href='/payg_plus'>Visit PAYG+</a>
             </div>
           </div>
 
@@ -398,7 +414,7 @@
             top: 0;
             width: 100%;
             z-index: 2;
-            background-color:white;
+            background-color:#1E2671;
           }
 
         body{
@@ -406,7 +422,6 @@
          }
 
         .navbar{
-          background-color:white;
           overflow: hidden;
           height: 63;
           margin:0;
@@ -435,19 +450,21 @@
             border-top: 0px solid black;
             -webkit-appearance: none !important;
 
-            background-color: black;
+            background-color: #F8F8F8
+;
             overflow-x: hidden;
             padding-top:70px;
             transition: 0.0s;
         }
 
         .side-nav a{
-            padding: 10px 10px 10px 30px;
+            padding: 10px 20px 10px 30px;
             margin-right: 10px;
             text-decoration: none;
             font-family: 'Avenir', sans-serif;
             font-size:30px;
-            color:white;
+            font-weight: bold;
+            color:#1E2671;
             text-align: right;
             display: block;
             top:0;
@@ -458,7 +475,7 @@
         .side-nav .btn-close{
             position:absolute;
             padding: 0px 20px 0px 0px;
-            color: white;
+            color: #1E2671;
             top:0;
             right: 0;
             font-size: 60px;
@@ -517,8 +534,8 @@
     <!--Section 3: What is Pay-as-you-go Plus-->
     <div class="w3-container">   
         <div class="row">
-            <h1 class="heading">abc</h1>
-            <p class='page-text'>abc abc</p> 
+            <h1 class="heading">Start with a Bundle that suits you</h1>
+            <p class='page-text'>Whether you're into data or calls, there's a Bundle for everyone. All Big Bundles include Priority, so you can enjoy the full experience.</p> 
        </div>
       </div>
 
@@ -526,31 +543,58 @@
     <!-- Section 5: Shop Pay-as-you-go PLUS-->
       <div class="w3-container" id='shop-section'>
           <div class="row" id='shop-section'>
-                  <div class="col-md-6">
+                  <!--Calls&Text-->
+                  <div class="col-sm-3">
                   <form method="POST" action="{% url 'checkout_account_0' %}">{% csrf_token %}
-                      <img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="product-image" class="product"></a>
+                      <p class='product-title'>6GB data</p></a>
+                      <p class="product-text">Includes data rollover</p>
+                      <p class="product-text">4G ready</p>
+                      <p class="product-text">Unlimited minutes</p>
+                      <p class="product-text">Unlimited texts</p>
                       <br>
-                      <p class='product-title'>prod 1</p></a>
-                      <p class="product-text">description</p>
-                      <p class="product-text">2-Week Starter Bundle (14 chocolates)</p>
-                      <p class="product-text"><b>£10 + Free Shipping</b></p>
-                      <button type="submit">CHECKOUT ></button> 
+                      <p class="product-text">Our sims fit all devices</p>    
+                      <p class="product-price"><b>£10 + Free Shipping</b></p>
+                      <button type="submit">Select</button> 
+                      <br>
                   </form>
                   </div>
-                    
-                  <div class="col-md-6">
-                  <form method="POST" action="{% url 'checkout_account_0' %}">{% csrf_token %}               
-                        <img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="product-image" class="product"></a>
-                        <br>
-                        <p class='product-title'>prod 2</p></a>
-                        <p class="product-text">description</p>
-                        <p class="product-text">2-Week Starter Bundle (14 chocolates)</p>
-                        <p class="product-text"><b>£10 + Free Shipping</b></p>
-                        <button type="submit">CHECKOUT ></button> 
+
+                  <!--divider-->
+                  <div class="col-md-1"></div>
+
+                  <!--Calls&Text-->
+                  <div class="col-sm-3">
+                      <form method="POST" action="{% url 'checkout_account_0' %}">{% csrf_token %}
+                          <p class='product-title'>6GB data</p></a>
+                          <p class="product-text">Includes data rollover</p>
+                          <p class="product-text">4G ready</p>
+                          <p class="product-text">Unlimited minutes</p>
+                          <p class="product-text">Unlimited texts</p>
+                          <br>
+                          <p class="product-text">Our sims fit all devices</p>    
+                          <p class="product-price"><b>£10 + Free Shipping</b></p>
+                          <button type="submit">Select</button> 
+                          <br>
                       </form>
-                      <br>
-                      <br>
                     </div>
+
+                  <!--divider-->
+                  <div class="col-md-1"></div>
+
+                  <!--Calls&Text-->
+                  <div class="col-sm-3">
+                      <form method="POST" action="{% url 'checkout_account_0' %}">{% csrf_token %}
+                          <p class='product-title'>6GB data</p></a>
+                          <p class="product-text">Includes data rollover</p>
+                          <p class="product-text">4G ready</p>
+                          <p class="product-text">Unlimited minutes</p>
+                          <p class="product-text">Unlimited texts</p>
+                          <br>
+                          <p class="product-text">Our sims fit all devices</p>    
+                          <p class="product-price"><b>£10 + Free Shipping</b></p>
+                          <button type="submit">Select</button> 
+                          <br>
+                      </form>
                   </div>
           </div>
 
