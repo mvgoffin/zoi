@@ -139,6 +139,7 @@
 
         .product-price{
         font-family: 'Avenir', sans-serif;
+        font-size:x-large;
         margin-top: 10px;
         font-weight: 800;
         text-align: left;
@@ -279,8 +280,7 @@
   
   /**Bootstrap Columns and Sections**/
         
-        .col-sm-3 {
-          border-radius: 16px;
+        .col-sm { /**Product offer**/
           background: #EFEFEF;
           box-shadow: 0 1px 5px 0 #D1D1D1;
           -webkit-transition: box-shadow 150ms ease;
@@ -288,18 +288,8 @@
           margin:10px;
           padding: 10px;
         }
-
-        .col-sm-4 {
-          border-radius: 16px;
-          background: #EFEFEF;
-          box-shadow: 0 1px 5px 0 #D1D1D1;
-          -webkit-transition: box-shadow 150ms ease;
-          transition: box-shadow 150ms ease;
-          margin:10px;
-          padding: 10px;
-        }
-
-        .col-sm {
+        
+        .col-md { /**Why Choose PAYG+**/
           border-radius: 16px;
           background: #EFEFEF;
           box-shadow: 0 1px 5px 0 #D1D1D1;
@@ -339,8 +329,8 @@
 
     @media only screen and (max-width: 990px) {
       .col-sm, .col-sm-3 {
-        margin-left:15px !important;
-        margin-right:15px !important;
+        margin-left:20px !important;
+        margin-right:20px !important;
         padding-left: 0px !important;
         padding-right: 0px !important;
       }
@@ -606,7 +596,7 @@
                       <p class="product-text">Unlimited texts</p>
                       <br>
                       <p class="product-text">Our sims fit all devices</p>    
-                      <p class="product-price"><b>£15 + Free Shipping</b></p>
+                      <p class="product-price">£15 + Free Shipping</p>
                       <button type="submit">Select</button> 
                       <br>
                   </form>
@@ -622,7 +612,7 @@
                           <p class="product-text">Unlimited texts</p>
                           <br>
                           <p class="product-text">Our sims fit all devices</p>    
-                          <p class="product-price"><b>£5 + Free Shipping</b></p>
+                          <p class="product-price">£5 + Free Shipping</p>
                           <button type="submit">Select</button> 
                           <br>
                       </form>
@@ -638,7 +628,7 @@
                           <p class="product-text">Unlimited texts</p>
                           <br>
                           <p class="product-text">Our sims fit all devices</p>    
-                          <p class="product-price"><b>£10 + Free Shipping</b></p>
+                          <p class="product-price">£10 + Free Shipping</p>
                           <button type="submit">Select</button> 
                           <br>
                       </form>
@@ -658,7 +648,7 @@
                           <p class="product-text">Unlimited texts</p>
                           <br>
                           <p class="product-text">Our sims fit all devices</p>    
-                          <p class="product-price"><b>£20 + Free Shipping</b></p>
+                          <p class="product-price">£20 + Free Shipping</p>
                           <button type="submit">Select</button> 
                           <br>
                       </form>
@@ -674,7 +664,7 @@
                             <p class="product-text">Unlimited texts</p>
                             <br>
                             <p class="product-text">Our sims fit all devices</p>    
-                            <p class="product-price"><b>£30 + Free Shipping</b></p>
+                            <p class="product-price">£30 + Free Shipping</p>
                             <button type="submit">Select</button> 
                             <br>
                           </form>
@@ -688,23 +678,35 @@
 
     <!--Section 6: Why choose PAY-GO plus template 2 -->
       <!--(title)-->
-      <div class="w3-container">  
-          <div class="ro"> 
-          <h1 class="heading">Why payg+ reasons</h1>
-        </div>
+      <div class="w3-container"> 
+        <br> 
+          <div class="row"> 
+              <h1 class="heading">Why choose Pay-as-you-go +</h1>
+            </div>
         </div>
       <!--(reasons)-->
       <div class="w3-container"> 
              <div class="row">
-                 <div class="col-lg-4">
-                   <p class="product-text"><i>Reason 1</i></p>
+                 <div class="col-md">
+                    <form method="POST" action="{% url 'checkout_account_20' %}">{% csrf_token %}
+                        <p class='product-title'>20GB data</p></a>
+                        <p class="product-text">Includes data rollover</p>
+                        <p class="product-text">4G ready</p>
+                        <p class="product-text">Unlimited minutes</p>
+                        <p class="product-text">Unlimited texts</p>
+                        <br>
+                        <p class="product-text">Our sims fit all devices</p>    
+                        <p class="product-price">£30 + Free Shipping</p>
+                        <button type="submit">Select</button> 
+                        <br>
+                      </form>
                  </div>
  
-                 <div class="col-lg-4">
+                 <div class="col-md">
                      <p class="product-text"><i>Reason 2</i></p>                   
                    </div>
                  
-                   <div class="col-lg-4">
+                   <div class="col-md">
                        <p class="product-text"><i>Reason 3</i></p>
                      </div>
                  </div>  
