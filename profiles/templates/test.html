@@ -389,7 +389,195 @@
   </head>
 
   <body>
-test
+
+    <!--Section 1: Navigation Bar-->
+    
+    <style> 
+            @media only screen and (max-width: 990px) {
+                .navbar {display: none;}
+            }
+          </style>
+          
+         
+          
+        
+          <header class='header' id="topbar">
+            <div class="w3-container">
+              <div class='row' style='padding: 0px;' id='topbar-desktop'>
+                <div class="col-lg-1"> 
+                    <a href='https://www.marcofortelefonicauk.com'><img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" id="header-logo" class="center"></a>
+                    </div>
+                    
+                <div class="col-lg-10" id='center-navbar'>
+                  </div>
+                    
+                <div class="col-lg-1">
+                  <nav class='navbar'>
+                      <span class="open-slide" style="text-align: right;">
+                        <a href="#" onclick='openSlideMenu()'>
+                          <svg width="25" height='25'>
+                            <path d='M0,5 30,5' stroke='#FFFFFF' 
+                            stroke-width='4'/>
+                            <path d='M0,14 30,14' stroke='#FFFFFF' 
+                            stroke-width='4'/>
+                            <path d='M0,23 30,23' stroke='#FFFFFF' 
+                            stroke-width='4'/>
+                          </svg>
+                        </a>
+                      </span>
+                    </nav>
+      
+                  <div id="side-menu" class="side-nav">
+                    <div class=''>
+                      <a href='#' class='btn-close' onclick='closeSlideMenu()'>&times;</a>
+                      <a href='/home'>Home</a>
+                      <a href='https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0' target="_blank">Unlock Value Report</a>
+                      <a href='/payg_plus'>Visit PAYG+</a>
+                    </div>
+                  </div>
+      
+                  <script>
+                    function openSlideMenu(){
+                        document.getElementById('side-menu').style.width
+                        = '1500px';
+                        document.getElementById('main').style.marginLeft
+                        = '1500px';
+                    }
+      
+                    function closeSlideMenu(){
+                          document.getElementById('side-menu').style.width
+                          = '0';
+                          document.getElementById('main').style.marginLeft
+                          = '0';
+                    }
+                  </script>
+      
+                  </div>
+              
+                </div>
+              </div>
+            <style>
+      
+              #topbar {
+                  position:absolute;
+                  top: 0;
+                  width: 100%;
+                  z-index: 2;
+                  background-color:#1E2671;
+                }
+      
+              body{
+              overflow-x: hidden;
+               }
+      
+              .navbar{
+                overflow: hidden;
+                height: 63;
+                margin:0;
+              }
+      
+              .navbar a{
+                  float:right;
+                  padding: 20px 15px;
+                  margin-right: 10px;
+              }
+      
+              .navbar ul{
+                  padding: 8px 0 0 0;
+                  list-style: none;
+              }
+      
+              .side-nav{
+                  height:100%;
+                  width:0;
+                  position: fixed;
+                  z-index: 1;
+                  top:0;
+                  right:0;
+      
+                  box-sizing: border-box;
+                  border-top: 0px solid black;
+                  -webkit-appearance: none !important;
+      
+                  background-color: #F8F8F8;
+                  overflow-x: hidden;
+                  padding-top:70px;
+                  transition: 0.0s;
+              }
+      
+              .side-nav a{
+                  padding: 10px 20px 10px 30px;
+                  margin-right: 10px;
+                  text-decoration: none;
+                  font-family: 'Avenir', sans-serif;
+                  font-size:30px;
+                  font-weight: bold;
+                  color:#1E2671;
+                  text-align: right;
+                  display: block;
+                  top:0;
+                  right: 0;
+                  transition: 0.1s;
+              }
+      
+              .side-nav .btn-close{
+                  position:absolute;
+                  padding: 0px 20px 0px 0px;
+                  color: #1E2671;
+                  top:0;
+                  right: 0;
+                  font-size: 60px;
+              }
+      
+              #main {
+                  transition: margin-left 0.5s;
+                  padding:20px;
+                  overflow: hidden;
+                  width: 100%;
+              }
+      
+              @media only screen and (max-width: 990px) {
+                  .navbar a{
+                  float:right;
+                  padding-right: 20px !important;
+                      }
+                  
+                  .center { /*mbile*/
+                    float:left;
+                    padding-top: 25px !important;
+                    padding-left: 20px !important;
+                    display: block;
+                    margin-left:10px;
+                    margin: auto!important;
+                    text-align:center;
+                    size:20px;
+                      }
+      
+                  .side-nav .btn-close{
+                    padding-right: 10px !important;
+                      }
+      
+                  .side-nav a{
+                    padding-right: 10px !important;
+                      }
+      
+                  #center-navbar{
+                    padding: 0 !important;
+                    margin: 0 !important;
+                    }
+      
+                  .navbar {
+                      display: none;
+                    }
+                }
+                </style>
+      
+            </header>
+
+            
+            
+
+
     </body>
 
   </html>   
