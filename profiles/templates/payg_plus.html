@@ -262,9 +262,11 @@
     
         .col-sm-3 {
           border-radius: 16px;
-          box-shadow: 0 1px 5px 0 #e6ebf1;
+          background: #EFEFEF;
+          box-shadow: 0 1px 5px 0 #D1D1D1;
           -webkit-transition: box-shadow 150ms ease;
           transition: box-shadow 150ms ease;
+          margin:5px;
         }
   
         .col-md-3{
@@ -293,6 +295,15 @@
           margin: 0px;
           text-align: center;
         }
+
+    @media only screen and (max-width: 990px) {
+      .col-sm-3 {
+        margin-left:15px !important;
+        margin-right:15px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+    }
 
     @media only screen and (max-width: 990px) {
                 form, .page-text, .vertical-center, .home-small-1, .heading, .col-sm-4, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content {
@@ -534,16 +545,17 @@
     <!--Section 3: What is Pay-as-you-go Plus-->
     <div class="w3-container">   
         <div class="row">
-            <h1 class="heading">Start with a Bundle that suits you</h1>
-            <p class='page-text'>Whether you're into data or calls, there's a Bundle for everyone. All Big Bundles include Priority, so you can enjoy the full experience.</p> 
-       </div>
+            <h1 class="heading">Start with a Big Bundle that suits you</h1>
+            <p class='page-text'>Whether you're looking for data or just mins, there's a Big Bundle for everyone. All Big Bundles include Priority, so you can enjoy the full experience.</p> 
+            <br>
+          </div>
       </div>
 
 
     <!-- Section 5: Shop Pay-as-you-go PLUS-->
       <div class="w3-container" id='shop-section'>
           <div class="row" id='shop-section'>
-                  <!--Calls&Text-->
+                  <!--6GB-->
                   <div class="col-sm-3">
                   <form method="POST" action="{% url 'checkout_account_0' %}">{% csrf_token %}
                       <p class='product-title'>6GB data</p></a>
@@ -553,8 +565,21 @@
                       <p class="product-text">Unlimited texts</p>
                       <br>
                       <p class="product-text">Our sims fit all devices</p>    
-                      <p class="product-price"><b>£10 + Free Shipping</b></p>
-                      <button type="submit">Select</button> 
+                      <p class="product-price"><b>£15 + Free Shipping</b></p>
+                      <a href="#" data-featherlight="#nutri-facts-gubel"class='home-small-lightbox'>View Ingredients and Nutrition Facts</a>
+                            <div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1554472144065_8906"><div class="sqs-block-content"> <div style="display:none;">
+                              <div id="nutri-facts-gubel">
+                                <br>
+                                <img src="https://dl.dropboxusercontent.com/s/xwqbtr241uhytx7/skincare-nutri-facts.png?dl=0" alt="skincare-nutri-facts" style="width:200px;height:31.598 pxpx;">
+                                <br>
+                                <br>
+                                <p class='sub-heading'>INGREDIENTS</p>
+                                <p class='home-small'>Dark Belgian Chocolate (cocoa butter, cocoa mass, sugar, emulsifier; soy lecithin, vanilla extract, Rose Extract, Phytoceramides (Wheat Lipidic Extract) (70mg), Himalayan Pink Salt.</p>
+                                <br>
+                                <br>
+                            </div>
+                            </div></div></div>
+                      <button type="submit">Checkout</button> 
                       <br>
                   </form>
                   </div>
@@ -573,7 +598,7 @@
                           <br>
                           <p class="product-text">Our sims fit all devices</p>    
                           <p class="product-price"><b>£10 + Free Shipping</b></p>
-                          <button type="submit">Select</button> 
+                          <button type="submit"></button> 
                           <br>
                       </form>
                     </div>
@@ -581,7 +606,7 @@
                   <!--divider-->
                   <div class="col-md-1"></div>
 
-                  <!--Calls&Text-->
+                  <!--3GB-->
                   <div class="col-sm-3">
                       <form method="POST" action="{% url 'checkout_account_0' %}">{% csrf_token %}
                           <p class='product-title'>6GB data</p></a>
@@ -596,6 +621,45 @@
                           <br>
                       </form>
                   </div>
+
+                  <!--10GB-->
+                  <div class="col-sm-3">
+                      <form method="POST" action="{% url 'checkout_account_0' %}">{% csrf_token %}
+                          <p class='product-title'>6GB data</p></a>
+                          <p class="product-text">Includes data rollover</p>
+                          <p class="product-text">4G ready</p>
+                          <p class="product-text">Unlimited minutes</p>
+                          <p class="product-text">Unlimited texts</p>
+                          <br>
+                          <p class="product-text">Our sims fit all devices</p>    
+                          <p class="product-price"><b>£10 + Free Shipping</b></p>
+                          <button type="submit">Select</button> 
+                          <br>
+                      </form>
+                      </div>
+    
+                    <!--divider-->
+                    <div class="col-md-1"></div>
+    
+                    <!--20GB-->
+                    <div class="col-sm-3">
+                        <form method="POST" action="{% url 'checkout_account_0' %}">{% csrf_token %}
+                            <p class='product-title'>6GB data</p></a>
+                            <p class="product-text">Includes data rollover</p>
+                            <p class="product-text">4G ready</p>
+                            <p class="product-text">Unlimited minutes</p>
+                            <p class="product-text">Unlimited texts</p>
+                            <br>
+                            <p class="product-text">Our sims fit all devices</p>    
+                            <p class="product-price"><b>£10 + Free Shipping</b></p>
+                            <button type="submit">Select</button> 
+                            <br>
+                          </form>
+                      </div>
+    
+                      
+
+
           </div>
 
 
