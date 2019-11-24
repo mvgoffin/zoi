@@ -14,7 +14,7 @@
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -386,7 +386,7 @@
                     margin: auto;
                   }
       }
-</style>
+      </style>
 
   </head>
 
@@ -394,65 +394,74 @@
 
 
     <!--Section 1: Navigation Bar-->
+    
+    <style> 
+      @media only screen and (max-width: 990px) {
+          .navbar {display: none;}
+      }
+    </style>
+    
+   
+    
+  
     <header class='header' id="topbar">
-      
-      <div class=''>
-        <div class="col-md-4"> 
-            <a href='https://www.marcofortelefonicauk.com'><img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" id="header-logo" class="center"></a>
+      <div class="w3-container">
+        <div class='row' style='padding: 0px;' id='topbar-desktop'>
+          <div class="col-lg-1"> 
+              <a href='https://www.marcofortelefonicauk.com'><img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" id="header-logo" class="center"></a>
+              </div>
+              
+          <div class="col-lg-10" id='center-navbar'>
             </div>
-            
-        <div class="col-md-4" id='center-navbar'>
-          </div>
-            
-        <div class="col-md-4">
-          <nav class='navbar'>
-              <span class="open-slide">
-                <a href="#" onclick='openSlideMenu()'>
-                  <svg width="25" height='25'>
-                    <path d='M0,5 30,5' stroke='#FFFFFF' 
-                    stroke-width='4'/>
-                    <path d='M0,14 30,14' stroke='#FFFFFF' 
-                    stroke-width='4'/>
-                    <path d='M0,23 30,23' stroke='#FFFFFF' 
-                    stroke-width='4'/>
-                  </svg>
-                </a>
-              </span>
-            </nav>
+              
+          <div class="col-lg-1">
+            <nav class='navbar'>
+                <span class="open-slide" style="text-align: right;">
+                  <a href="#" onclick='openSlideMenu()'>
+                    <svg width="25" height='25'>
+                      <path d='M0,5 30,5' stroke='#FFFFFF' 
+                      stroke-width='4'/>
+                      <path d='M0,14 30,14' stroke='#FFFFFF' 
+                      stroke-width='4'/>
+                      <path d='M0,23 30,23' stroke='#FFFFFF' 
+                      stroke-width='4'/>
+                    </svg>
+                  </a>
+                </span>
+              </nav>
 
-          <div id="side-menu" class="side-nav">
-            <div class=''>
-              <a href='#' class='btn-close' onclick='closeSlideMenu()'>&times;</a>
-              <a href='/home'>Home</a>
-              <a href='https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0' target="_blank">Unlock Value Report</a>
-              <a href='/payg_plus'>Visit PAYG+</a>
+            <div id="side-menu" class="side-nav">
+              <div class=''>
+                <a href='#' class='btn-close' onclick='closeSlideMenu()'>&times;</a>
+                <a href='/home'>Home</a>
+                <a href='https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0' target="_blank">Unlock Value Report</a>
+                <a href='/payg_plus'>Visit PAYG+</a>
+              </div>
             </div>
-          </div>
 
-          <script>
-            function openSlideMenu(){
-                document.getElementById('side-menu').style.width
-                = '1500px';
-                document.getElementById('main').style.marginLeft
-                = '1500px';
-            }
-
-            function closeSlideMenu(){
+            <script>
+              function openSlideMenu(){
                   document.getElementById('side-menu').style.width
-                  = '0';
+                  = '1500px';
                   document.getElementById('main').style.marginLeft
-                  = '0';
-            }
-          </script>
+                  = '1500px';
+              }
 
+              function closeSlideMenu(){
+                    document.getElementById('side-menu').style.width
+                    = '0';
+                    document.getElementById('main').style.marginLeft
+                    = '0';
+              }
+            </script>
+
+            </div>
           </div>
-      
-      </div>
-
+        </div>
       <style>
 
         #topbar {
-            position: fixed;
+            position:absolute;
             top: 0;
             width: 100%;
             z-index: 2;
@@ -492,8 +501,7 @@
             border-top: 0px solid black;
             -webkit-appearance: none !important;
 
-            background-color: #F8F8F8
-;
+            background-color: #F8F8F8;
             overflow-x: hidden;
             padding-top:70px;
             transition: 0.0s;
@@ -535,7 +543,7 @@
             float:right;
             padding-right: 20px !important;
                 }
-
+            
             .center { /*mbile*/
               float:left;
               padding-top: 25px !important;
@@ -558,6 +566,10 @@
             #center-navbar{
               padding: 0 !important;
               margin: 0 !important;
+              }
+
+            .navbar {
+                display: none;
               }
           }
           </style>
@@ -688,18 +700,7 @@
       <div class="w3-container"> 
              <div class="row">
                  <div class="col-md">
-                    <form method="POST" action="{% url 'checkout_account_20' %}">{% csrf_token %}
-                        <p class='product-title'>20GB data</p></a>
-                        <p class="product-text">Includes data rollover</p>
-                        <p class="product-text">4G ready</p>
-                        <p class="product-text">Unlimited minutes</p>
-                        <p class="product-text">Unlimited texts</p>
-                        <br>
-                        <p class="product-text">Our sims fit all devices</p>    
-                        <p class="product-price">£30 + Free Shipping</p>
-                        <button type="submit">Select</button> 
-                        <br>
-                      </form>
+                   <p class="product-text"><i>Reason 1</i></p>
                  </div>
  
                  <div class="col-md">
