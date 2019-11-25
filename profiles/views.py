@@ -37,7 +37,8 @@ def payg_plus_nc(request):
 
 #(10 pages) Checkout Account Views
 
-#Existing Customers
+#Existing Customers Account and Payment Pages
+#Existing Customers Account 
 def checkout_ec_account_0(request):
     context = locals()
     template = 'checkout_ec_account_0.html'
@@ -63,38 +64,7 @@ def checkout_ec_account_20(request):
     template = 'checkout_ec_account_20.html'
     return render(request,template,context)
 
-#New Customers
-def checkout_nc_account_0(request):
-    context = locals()
-    template = 'checkout_nc_account_0.html'
-    return render(request,template,context)
-
-def checkout_nc_account_3(request):
-    context = locals()
-    template = 'checkout_nc_account_3.html'
-    return render(request,template,context)
-
-def checkout_nc_account_6(request):
-    context = locals()
-    template = 'checkout_nc_account_6.html'
-    return render(request,template,context)
-
-def checkout_nc_account_10(request):
-    context = locals()
-    template = 'checkout_nc_account_10.html'
-    return render(request,template,context)
-
-def checkout_nc_account_20(request):
-    context = locals()
-    template = 'checkout_nc_account_20.html'
-    return render(request,template,context)
-
-
-
-
-#(10 pages) Checkout Payment Views
-
-#Exiting Customers
+#Exiting Customers Payment
 def checkout_ec_payment_0(request):
     context = locals()
     template = 'checkout_ec_payment_0.html'
@@ -121,7 +91,34 @@ def checkout_ec_payment_20(request):
     return render(request,template,context)
 
 
-#New Customers
+
+#New Customers Account and Payment Pages
+def checkout_nc_account_0(request):
+    context = locals()
+    template = 'checkout_nc_account_0.html'
+    return render(request,template,context)
+
+def checkout_nc_account_3(request):
+    context = locals()
+    template = 'checkout_nc_account_3.html'
+    return render(request,template,context)
+
+def checkout_nc_account_6(request):
+    context = locals()
+    template = 'checkout_nc_account_6.html'
+    return render(request,template,context)
+
+def checkout_nc_account_10(request):
+    context = locals()
+    template = 'checkout_nc_account_10.html'
+    return render(request,template,context)
+
+def checkout_nc_account_20(request):
+    context = locals()
+    template = 'checkout_nc_account_20.html'
+    return render(request,template,context)
+
+#Payments
 def checkout_nc_payment_0(request):
     context = locals()
     template = 'checkout_nc_payment_0.html'
