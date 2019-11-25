@@ -88,7 +88,7 @@
         .why-text {
           font-weight: 400;
           margin: 0px;
-          text-align:center;
+          text-align:left;
           line-height:normal;
         }
 
@@ -124,20 +124,20 @@
           font-size: medium;
         }
 
-        .product-title{
+        .customer-title{
         font-family: 'Avenir', sans-serif;
         padding-top: 30px;
         padding-bottom: 10px;
         margin: 0px;
         font-weight: 800;
-        text-align: left;
+        text-align: center;
         line-height: 25px;
         font-size:x-large;
         text-decoration: none;
         }
 
-        .product-text{
-        text-align:left;
+        .customer-text{
+        text-align:center;
         margin-bottom: 0px;
         font-size:small;
         }
@@ -184,6 +184,22 @@
 
     
     /**ids**/
+        #new-customer-container {
+          background-image:url(https://dl.dropboxusercontent.com/s/0alnwf1lxe2s3jo/banner.png?dl=0);
+          box-shadow: 0 1px 10px 0 #D1D1D1;
+          -webkit-transition: box-shadow 150ms ease;
+          transition: box-shadow 150ms ease;
+          border-radius: 5px;
+          margin:10px;
+          padding: 20px;
+          text-align: center;
+        }
+
+        #new-customer-image {
+          max-width: 100%;
+          padding: 20px;
+        }
+        
         #why-set-desktop{ 
         padding-top: 35px;
         padding-bottom: 35px;
@@ -238,7 +254,7 @@
           width:100%;
           border: 1px solid transparent;
           color: white;
-          background: #589AD2;
+          background: #3498CD;
           padding: 10px 20px;
           margin: .618em 0.01em;  
           font-family: 'Avenir', sans-serif;
@@ -283,12 +299,6 @@
   /**Bootstrap Columns and Sections**/
         
         .col-sm { /**Product offer**/
-          background: #EFEFEF;
-          box-shadow: 0 1px 5px 0 #D1D1D1;
-          -webkit-transition: box-shadow 150ms ease;
-          transition: box-shadow 150ms ease;
-          margin:10px;
-          padding: 20px;
         }
         
         .col-md { /**Why Choose PAYG+**/
@@ -326,7 +336,7 @@
         **/
 
     @media only screen and (max-width: 990px) {
-      .col-sm, .col-sm-3, .col-md, .col-md-4, .centered{
+      .col-sm, .col-sm-3, .col-md, .col-md-4, .centered, #icon {
         margin-left:20px !important;
         margin-right:20px !important;
         padding-left: 0px !important;
@@ -335,7 +345,7 @@
     }
 
     @media only screen and (max-width: 990px) {
-                form, .page-text, .vertical-center, .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle {
+                form, .page-text, .vertical-center, .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #new-customer-container  {
                 margin-left:0 !important;
                 margin-right:0 !important;
                 padding-left: 15px !important;
@@ -408,7 +418,7 @@
           <div class="col-lg-10" id='center-navbar'>
             </div>
               
-          <div class="col-lg-1">
+          <!--<div class="col-lg-1">
             <nav class='navbar'>
                 <span class="open-slide" style="text-align: right;">
                   <a href="#" onclick='openSlideMenu()'>
@@ -448,8 +458,7 @@
                     = '0';
               }
             </script>
-
-            </div>
+            </div>-->
         
           </div>
         </div>
@@ -460,7 +469,7 @@
             top: 0;
             width: 100%;
             z-index: 2;
-            background-color:#1E2671;
+            background-color:#000031;
           }
 
         body{
@@ -588,7 +597,6 @@
               <img src="https://dl.dropboxusercontent.com/s/bcb14s1v13jk7ph/banner-m-1.png?dl=0" id="hero-image" class="product">
             </div>
       </div>
-
         <style>
         /* For width larger than 990px: */
           .mob {
@@ -617,7 +625,7 @@
             font-size: 50px;
             font-weight: 800;
             margin: 0;
-            color:#589AD2;
+            color:#3498CD;
             text-align: left;
           }
 
@@ -635,8 +643,8 @@
     <!--Section 3: What is Pay-as-you-go Plus-->
     <div class="w3-container">   
         <div class="row">
-            <h3 class="heading">Start with a Big Bundle that suits you best</h3>
-            <p class='page-text'>Whether you're looking for data or just mins, there's a Big Bundle for everyone. All Big Bundles include Priority, so you can enjoy the full experience.</p> 
+            <h3 class="heading">Pay As You Go Plus</h3>
+            <p class="customer-text">Choose a Pay As You Go Plus sim for your phone. More flexibility and time. If you already have a Pay As You Go, you can upgrade to Plus to enjoy more flexibility</p>
             <br>
             <br>
           </div>
@@ -648,15 +656,9 @@
           <div class="row">
                   <!--6GB-->
                   <div class="col-sm">
-                  <form method="POST" action="{% url 'payg_plus_nc' %}">{% csrf_token %}
-                      <p class='product-title'>New Customer<span class="dot" style='float:right;'>RECOMMENDED</span></p>
-                      <p class="product-text">Includes data rollover</p>
-                      <p class="product-text">4G ready</p>
-                      <p class="product-text">Unlimited minutes</p>
-                      <p class="product-text">Unlimited texts</p>
+                  <form method="POST" id='new-customer-container' action="{% url 'payg_plus_nc' %}">{% csrf_token %}
+                      <img src="https://dl.dropboxusercontent.com/s/6e7bpfgnry0v6zh/new%20customer-1.png?dl=0" id='new-customer-image' style="width:400px">  
                       <br>
-                      <p class="product-text">Our sims fit all devices</p>    
-                      <p class="product-price">£15 + Free Shipping</p>
                       <button type="submit">Select</button> 
                       <br>
                   </form>
@@ -664,17 +666,11 @@
 
                   <!--Calls&Text-->
                   <div class="col-sm">
-                      <form method="POST" action="{% url 'payg_plus_ec' %}">{% csrf_token %}
-                          <p class='product-title'>Existing Customer</p>
-                          <br>
-                          <p class="product-text">4G ready</p>
-                          <p class="product-text">Unlimited minutes</p>
-                          <p class="product-text">Unlimited texts</p>
-                          <br>
-                          <p class="product-text">Our sims fit all devices</p>    
-                          <p class="product-price">£5 + Free Shipping</p>
-                          <button type="submit">Select</button> 
-                          <br>
+                      <form method="POST" id='new-customer-container' action="{% url 'payg_plus_ec' %}">{% csrf_token %}
+                      <img src="https://dl.dropboxusercontent.com/s/0f6ptdu1a4qrom5/existing%20customer-1.png?dl=0" id='new-customer-image' style="width:400px">  
+                      <br>
+                      <button type="submit">Select</button> 
+                      <br>
                       </form>
                       </div>
             </div>
@@ -688,7 +684,7 @@
       <div class="w3-container"> 
         <br> 
           <div class="row"> 
-              <h3 class="heading">Why choose Pay-as-you-go +</h3>
+              <h3 class="heading">Why choose Pay As You Go +</h3>
             </div>
         </div>
       <!--(reasons)-->
@@ -697,19 +693,22 @@
                  <div class="col-md">
                   <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="icon" style="width:50px">
                   <br>
-                  <p class="why-text"><b>Cardless payments after this Big bundle</b></p>
+                  <p class="why-text"><b>Cardless payments</b></p>
+                  <p class="why-text">Never waste time topping up again. Just text to buy your favourite Big Bundle and Bolt ons.</p>
                  </div>
  
                  <div class="col-md">
                   <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="icon" style="width:50px">
                   <br>
-                  <p class="why-text"><b>24/7 customer service</b></p>                  
+                  <p class="why-text"><b>24/7 customer service</b></p>  
+                  <p class="why-text">Need to update you payment info? Have a question about your sim? Just text us and we're happy to help.</p>                
                    </div>
                    
                  <div class="col-md">
                   <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="icon" style="width:50px">
                   <br>
-                  <p class="why-text"><b>No contracts, flexible sim</b></p>
+                  <p class="why-text"><b>Flexible sim</b></p>
+                  <p class="why-text">No need to sign contracts when you upgrade to Pay As You Go Plus.</p>
                      </div>
                  </div> 
         </div>  
@@ -782,7 +781,7 @@
             background-color:#EFEFEF;
             border-left-width: 10px;
             border-left-style: solid;
-            border-left-color: #589AD2 ;
+            border-left-color: #3498CD ;
             border-radius: 0px;
           }
 
@@ -863,7 +862,7 @@
                 <style>         
                   
                   #footer {
-                    background-image: linear-gradient(to bottom, #1E2671, #589AD2);
+                    background-image: linear-gradient(to bottom, #1E2671, #3498CD);
                     padding: 25px;
                   }
 
