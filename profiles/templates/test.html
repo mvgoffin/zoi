@@ -14,12 +14,8 @@
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!--lightbox-->
     <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
@@ -68,6 +64,17 @@
           padding-right: 150px;
         }
 
+        .heading-ec{
+          color:white;
+          font-family: 'Avenir', sans-serif;
+          padding-top: 35px;
+          padding-bottom: 15px;
+          text-align: left;
+          font-weight: 800;
+          display:block;
+          margin: 0;
+        }
+
         .heading{
           font-family: 'Avenir', sans-serif;
           padding-top: 35px;
@@ -88,7 +95,7 @@
         .why-text {
           font-weight: 400;
           margin: 0px;
-          text-align:center;
+          text-align:left;
           line-height:normal;
         }
 
@@ -184,6 +191,15 @@
 
     
     /**ids**/
+        #banner-intro-payg {
+          background: #EFEFEF;
+        }
+
+        #banner-title-ec {
+          background-image: linear-gradient(to bottom, #1E2671, #589AD2);
+          padding-top:89px;
+        }
+
         #why-set-desktop{ 
         padding-top: 35px;
         padding-bottom: 35px;
@@ -274,11 +290,7 @@
           font-size: small;
         }
 
-        #card-errors {
-          height: 20px;
-          padding: 4px 0;
-          color: #fa755a;
-        }
+  
   
   /**Bootstrap Columns and Sections**/
         
@@ -335,7 +347,7 @@
     }
 
     @media only screen and (max-width: 990px) {
-                form, .page-text, .vertical-center, .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle {
+                form, .page-text, .vertical-center, .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #banner-intro-ec{
                 margin-left:0 !important;
                 margin-right:0 !important;
                 padding-left: 15px !important;
@@ -389,9 +401,9 @@
   </head>
 
   <body>
-
-<!--Section 1: Navigation Bar-->
-    <style> 
+        <!--Section 1: Navigation Bar-->
+    
+        <style> 
             @media only screen and (max-width: 990px) {
                 .navbar {display: none;}
             }
@@ -406,7 +418,7 @@
                 <div class="col-lg-10" id='center-navbar'>
                   </div>
                     
-                <div class="col-lg-1">
+                <!--<div class="col-lg-1">
                   <nav class='navbar'>
                       <span class="open-slide" style="text-align: right;">
                         <a href="#" onclick='openSlideMenu()'>
@@ -447,7 +459,7 @@
                     }
                   </script>
       
-                  </div>
+                  </div>-->
               
                 </div>
               </div>
@@ -458,7 +470,7 @@
                   top: 0;
                   width: 100%;
                   z-index: 2;
-                  background-color:#1E2671;
+                  background-color:#000031;
                 }
       
               body{
@@ -568,298 +580,15 @@
                 </style>
       
             </header>
-
-    
-    
-<!--Section 2: Pay-as-you-go Banner-->
-      <div class='w3-container'>
-            <div style="padding-top:71px;">
-                <img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="hero-image" class="product">
-            </div>
-          </div>
-        
-
-    
-<!--Section 3: What is Pay-as-you-go Plus-->
-    <div class="w3-container">   
-                <div class="row">
-                    <h3 class="heading">Start with a Big Bundle that suits you best</h3>
-                    <p class='page-text'>Whether you're looking for data or just mins, there's a Big Bundle for everyone. All Big Bundles include Priority, so you can enjoy the full experience.</p> 
-                    <br>
-                    <br>
-                </div>
-            </div>
-
-
-
-<!-- Section 4: Shop Pay-as-you-go Plus-->
-    <div class="w3-container">
-            <div class="row">
-                    <!--6GB-->
-                    <div class="col-sm">
-                    <form method="POST" action="{% url 'checkout_account_6' %}">{% csrf_token %}
-                        <p class='product-title'>6GB data<span class="dot" style='float:right;'>RECOMMENDED</span></p>
-                        <p class="product-text">Includes data rollover</p>
-                        <p class="product-text">4G ready</p>
-                        <p class="product-text">Unlimited minutes</p>
-                        <p class="product-text">Unlimited texts</p>
-                        <br>
-                        <p class="product-text">Our sims fit all devices</p>    
-                        <p class="product-price">£15 + Free Shipping</p>
-                        <button type="submit">Select</button> 
-                        <br>
-                    </form>
-                    </div>
-  
-                    <!--Calls&Text-->
-                    <div class="col-sm">
-                        <form method="POST" action="{% url 'checkout_account_0' %}">{% csrf_token %}
-                            <p class='product-title'>Calls & Texts</p>
-                            <br>
-                            <p class="product-text">4G ready</p>
-                            <p class="product-text">Unlimited minutes</p>
-                            <p class="product-text">Unlimited texts</p>
-                            <br>
-                            <p class="product-text">Our sims fit all devices</p>    
-                            <p class="product-price">£5 + Free Shipping</p>
-                            <button type="submit">Select</button> 
-                            <br>
-                        </form>
-                        </div>
-  
-                    <!--3GB-->
-                    <div class="col-sm">
-                        <form method="POST" action="{% url 'checkout_account_3' %}">{% csrf_token %}
-                            <p class='product-title'>3GB data</p></a>
-                            <p class="product-text">Includes data rollover</p>
-                            <p class="product-text">4G ready</p>
-                            <p class="product-text">Unlimited minutes</p>
-                            <p class="product-text">Unlimited texts</p>
-                            <br>
-                            <p class="product-text">Our sims fit all devices</p>    
-                            <p class="product-price">£10 + Free Shipping</p>
-                            <button type="submit">Select</button> 
-                            <br>
-                        </form>
-                    </div>
-              </div>
-        </div>
-  
-        <div class="w3-container">
-            <div class="row">
-                    <!--10GB-->
-                    <div class="col-sm">
-                        <form method="POST" action="{% url 'checkout_account_10' %}">{% csrf_token %}
-                            <p class='product-title'>10GB data</p></a>
-                            <p class="product-text">Includes data rollover</p>
-                            <p class="product-text">4G ready</p>
-                            <p class="product-text">Unlimited minutes</p>
-                            <p class="product-text">Unlimited texts</p>
-                            <br>
-                            <p class="product-text">Our sims fit all devices</p>    
-                            <p class="product-price">£20 + Free Shipping</p>
-                            <button type="submit">Select</button> 
-                            <br>
-                        </form>
-                        </div>
       
-                      <!--20GB-->
-                     <div class="col-sm">
-                          <form method="POST" action="{% url 'checkout_account_20' %}">{% csrf_token %}
-                              <p class='product-title'>20GB data</p></a>
-                              <p class="product-text">Includes data rollover</p>
-                              <p class="product-text">4G ready</p>
-                              <p class="product-text">Unlimited minutes</p>
-                              <p class="product-text">Unlimited texts</p>
-                              <br>
-                              <p class="product-text">Our sims fit all devices</p>    
-                              <p class="product-price">£30 + Free Shipping</p>
-                              <button type="submit">Select</button> 
-                              <br>
-                            </form>
-                        </div>
-                      <!--Extra Column-->
-                     <div class="col-sm" style="background: transparent;box-shadow: 0 1px 5px 0 #F8F8F8;;-webkit-transition: box-shadow 150ms ease;">
-                      </div>
-              </div>
-          </div>
-  
-          <br>
-          <div class="headline-middle"></div>
-            
-
-
-<!--Section 5: Why choose PAY-GO plus template-->
-      <!--(title)-->
-      <div class="w3-container"> 
-            <br> 
-              <div class="row"> 
-                  <h3 class="heading">Why choose Pay-as-you-go +</h3>
-                </div>
-            </div>
-          <!--(reasons)-->
-          <div class="w3-container"> 
-                 <div class="row">
-                     <div class="col-md">
-                      <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="icon" style="width:50px">
-                      <br>
-                      <p class="why-text"><b>Cardless payments after this Big bundle</b></p>
-                     </div>
-     
-                     <div class="col-md">
-                      <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="icon" style="width:50px">
-                      <br>
-                      <p class="why-text"><b>24/7 customer service</b></p>                  
-                       </div>
-                       
-                     <div class="col-md">
-                      <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="icon" style="width:50px">
-                      <br>
-                      <p class="why-text"><b>No contracts, flexible sim</b></p>
-                         </div>
-                     </div> 
-            </div>  
-    
-            <br>
-            <div class="headline"></div>
-
-
-<!--Section 6: FAQS-->
-      <!--(eader)) -->
-      <div class="w3-container">
-            <div class="row">
-              <h3 class="heading">FAQs</h3>
-            </div>
-            <br>
-            <br>
-
-
-
-    <!-- Section 5 - FAQs -->
-    <div class="w3-container" id="faq-section">
-            <div class="row">
-              <h1 class="heading-5">FAQs</h1>
-            </div>
-            <br>
-            <br>
-        
-          </div>
-
-        <div class="w3-container" id="faq-section">
-            <div class="row">
-            
-
-                    
-                
-                   
-                    <input type="button" value="How do I buy Big Bundles?" class="accordion"></input>
-                    <div class="panel">
-                        <p class='product-small'>Buying Big Bundles is now simple. ‘Select’ your Big Bundle & follow the instructions. Once you register your phone number and payment information, we’ll deliver your Big Bundle SIM pre-loaded. Then you can easily message us at 21300 and re-order at new Big Bundle at your convenience (your account information is saved). We're available anytime.</p>
-                    </div>
-
-                    <input type="button" value="Why do I have to enter my payment info?" class="accordion"></input>
-                    <div class="panel">
-                        <p class='product-small'>We ask for this now to make your life easier, topping up is a thing of the past now -forget pulling your payment card and re-entering it every time. Your information is encrypted and stored with our credit card processor. You're only charged when you text us to buy a Big Bundle or a Bolt on, that's it.</p>
-                    </div>
-
-                    <input type="button" value="How do I update my payment information" class="accordion"></input>
-                    <div class="panel">
-                        <p class='product-small'>You can edit your payment details at any time by texting EDIT to 21300.</p>
-                    </div>
-
-                    <input type="button" value="How much does shipping my SIM card cost?" class="accordion"></input>
-                    <div class="panel">
-                        <p class='product-small'>Shipping is Free</p>
-                    </div>
-
-                    <input type="button" value="When will my SIM ship" class="accordion"></input>
-                    <div class="panel">
-                        <p class='product-small'>Your SIM with your Big Bundle arrives between 2 -3 days upon ordering</p>
-                    </div>-->
-                    
-                    
-        
-
-
-
-        
           
+          <!--Section 2: Pay-as-you-go Banner-->
+            <!--desktop-->
+            <div class="row" id="banner-title-ec">
+                <br>
+                <h1 class="heading-ec">Existing Customer</h1>
+                <br>
+                <br>
+              </div>
 
-            <style>
-                    /* Style the buttons that are used to open and close the accordion panel */
-                    .accordion {
-                          background-color: transparent;
-                          color: #11A3B5;
-                          font-family: 'Avenir', sans-serif;
-                          font-weight: 800; 
-                          cursor: pointer;
-                          padding: 20px;
-                          width: 100%;
-                          border: none;
-                          text-align: left;
-                          outline: none;
-                          font-size: 15px;
-                          transition: 0.4s;
-                          border-radius: 0px;
-                        }
-              
-                        .active, .accordion:hover {
-                          background-color:#EFEFEF;
-                          border-left-width: 10px;
-                          border-left-style: solid;
-                          border-left-color: #589AD2 ;
-                          border-radius: 0px;
-                        }
-              
-                        .panel {
-                          padding: 0 10px;
-                          margin: 0px;
-                          background-color: transparent;
-                          max-height: 0;
-                          overflow: hidden;
-                          transition: max-height 0.2s ease-out;
-                          border-radius: 0px;
-              
-                        }
-              
-                        .accordion:after {
-                          content: '\02795'; /* Unicode character for "plus" sign (+) */
-                          font-size: 13px;
-                          color: #EDEDEB;
-                          float: right;
-                          margin-left: 5px;
-                          border-radius: 0px;
-                        }
-              
-                        .active:after {
-                          content: "\2796"; /* Unicode character for "minus" sign (-) */
-                          border-radius: 0px;
-                        }
-                    </style>
-              
-                    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-                      var acc = document.getElementsByClassName("accordion");
-                      var i;
-                      
-                      for (i = 0; i < acc.length; i++) {
-                        acc[i].addEventListener("click", function() {
-                          this.classList.toggle("active");
-                          var panel = this.nextElementSibling;
-                          if (panel.style.maxHeight){
-                            panel.style.maxHeight = null;
-                          } else {
-                            panel.style.maxHeight = panel.scrollHeight + "px";
-                          } 
-                        });
-                      }
-                      </script>
-              
-            
-                
-    
-            </div>  
-          </div>  
-
-    </body>
-
-  </html>   
+  </body>
