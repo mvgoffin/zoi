@@ -1,26 +1,33 @@
 <!-- Hi there, curious developer!-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content= "width=device-width, user-scalable=no">
-    <meta name="description" content="Gubel is a line of functional chocolates infused with plant extracts to help people feel better">
+    <meta name="description" content="Marco for Telefonica UK">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xdp3ien.css">
     
+    <!--Mobile Bubble Menu-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    
+
+    <!--lightbox-->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!--favicon-->
-    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/u5xin0z8jwunsn8/Gubel-favicon.png?dl=0">
-    <title>
-    PAYG+| Calls & Texts
-    </title>
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/n7vjp3exjhsmzqx/Favicon.png?dl=0">
     
+    <title>
+      Pay-as-you-go Plus
+    </title>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267999-1"></script>
     <script>
@@ -31,567 +38,378 @@
       gtag('config', 'UA-141267999-1');
     </script>
 
+
+
     <!--PAYG+ CSS Account-->
     <style media="screen">
 
-      body, html {
-        height: 100%;
-        background-color: white;
-        color: #000000;
-      }
-      
-      * {
-        font-family: 'Avenir', sans-serif;
-        font-size: 16px;
-        font-variant: normal;
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-        -webkit-font-smoothing: antialiased;
-        box-sizing: border-box;
-      }
-
-      /**classes**/
-        .row{
-            padding-left: 55px;
-            padding-right: 55px;
+          * {
+            font-family: 'Avenir', sans-serif;
+            font-size: 16px;
+            font-variant: normal;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+          }
+          
+          body, html { /**body=p**/
+            margin: 0px;
+            height: 100%;
+            background-color: transparent;
+            color: #1E2671;
+          }
+        
+        /**classes**/
+          .row{
+              padding-left: 150px;
+              padding-right: 150px;
+            }
+  
+          .home-heading{
+            font-family: 'Avenir', sans-serif;
+            text-align: left;
+            font-weight: 800;
+            display:block;
+            margin: 0;
+            }
+  
+          .header{
+            background-color: #000031;
+            padding: 25px;
           }
 
-        .home-heading{
+          .heading{
+          font-family: 'Avenir', sans-serif;
+          padding-bottom: 15px;
           text-align: left;
-          font-family: 'titling-gothic-fb', sans-serif;
+          font-weight: 800;
+          display:block;
+          margin: 0;
         }
 
-        .container-fluid {
-        height: 600px;
-        }
+          .heading-ec{
+          color:white;
+          font-family: 'Avenir', sans-serif;
+          padding-top: 35px;
+          padding-bottom: 15px;
+          text-align: left;
+          font-weight: 800;
+          display:block;
+          margin: 0;
+            }
+  
+          .hr{        
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 0.5px;
+            border-color:gray;
+          } 
+  
+          .small{
+            display: inline-block;
+            font-weight: 400;
+            color: black;
+            text-align:left;
+            line-height: 25px;
+            font-size: medium;
+            margin: 0px;
+            }
+  
+          .form-control {
+            box-sizing: border-box;
+            margin-top: 5px;
+            width: 100%;
+            height: 40px;
+            padding: 10px 12px;
+            border: 1px solid black;
+            border-radius: 0px;
+            background-color: white;
+            /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+            -webkit-appearance: none !important;
+          }
+  
+          .form-control:focus {
+            box-shadow: 0 1px 3px 0 #FCF9F7;
+            border: 2px solid black;
+          }
+  
+  
+      /**ids**/
 
-        .heading-footer{
-        font-family: 'titling-gothic-fb', sans-serif;
-        color: white;
-        margin-bottom:10px;   
-        text-align: left;
-        }
-
-        .header{
-          background-color: white;
-        }
-
-        .center { 
-          float:left;
-          padding-top: 25px !important;
-          padding-left: 20px !important;
-          display: block;
-          margin-left:10px;
-          margin: auto!important;
-          text-align:center;
-          size:20px;
+          #banner-title-ec {
+            background-image: linear-gradient(to bottom, #1E2671, #589AD2);
+            padding-top:19px;
           }
 
-        .hr{        
-          display: block;
-          margin-top: 10px;
-          margin-bottom: 10px;
-          margin-left: auto;
-          margin-right: auto;
-          border-style: inset;
-          border-width: 0.5px;
-          border-color:gray;
-        } 
-
-        .small{
-          display: inline-block;
-          font-weight: 400;
-          color: black;
-          text-align:left;
-          line-height: 25px;
-          font-size: medium;
-          margin: 0px;
+          #banner-intro-payg {
+            background: #EFEFEF;
           }
 
+          #product-img {
+            width: 80%;
+            background-color: #FCF9F7;
+            margin: auto;
+            box-shadow: 0 5px 10px 0 gray;
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+            border-radius: 5px;
+
+          }
+  
+          #register-progressbar {
+            box-sizing: border-box;
+            display: block;
+            margin-left:  180px;
+            margin-right:  180px;
+            padding-bottom: 50px;
+          }
+  
+          #register-form {
+            box-sizing: border-box;
+            margin-left:  auto;
+            margin-right:  auto;
+          }
+  
+    /**Other assets**/
+  
+    button {
+            background: transparent;
+            border-radius: 4px;
+            display:block;
+            width:100%;
+            border: 1px solid transparent;
+            color: white;
+            background: #3498CD;
+            padding: 10px 20px;
+            margin: .618em 0.01em;  
+            font-family: 'Avenir', sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            animation-delay: 2400ms;
+            font-size: medium;
+            letter-spacing: .01em;
+            text-transform: normal;
+            transition: background-color 170ms  ease-out,color 170ms ease-out;
+          }
+  
+          button:focus{
+            background-color: #D1D1D1;
+            border: 1px solid #D1D1D1;
+            color: #1E2671;
+            border-color: transparent;
+            border-width: 1px;
+          }
+  
+          button:hover {
+            border-color: transparent;
+            border-width: 1px;
+          }
         
-        .headline {
-          box-sizing: border-box;
-          margin: 0;
-          width: 100%;
-          border-top: 5px solid black;
-          border-bottom: white;
-          border-left: white;
-          border-right: white;
-          -webkit-appearance: none !important;
+        ::placeholder{
+          color: gray;
+          font-size: small;
         }
-
-        .cart-headline {
-          box-sizing: border-box;
-          margin: 0;
-          width: 100%;
-          border-top: 5px solid #ffdd44;;
-          border-bottom: white;
-          border-left: white;
-          border-right: white;
-          -webkit-appearance: none !important;
+  
+        a{
+          color: gray;
+          font-size: small;
         }
-
-        .headline-thin {
-          box-sizing: border-box;
-          margin: 0;
-          width: 100%;
-          border-top: 1px solid lightgray;
-          border-bottom: white;
-          border-left: white;
-          border-right: white;
-          -webkit-appearance: none !important;
+  
+        #card-errors {
+          height: 20px;
+          padding: 4px 0;
+          color: #fa755a;
         }
-
-        .form-control {
-          box-sizing: border-box;
-          margin-top: 5px;
-          width: 100%;
-          height: 40px;
-          padding: 10px 12px;
-          border: 1px solid black;
-          border-radius: 0px;
-          background-color: white;
-          /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
-          -webkit-transition: box-shadow 150ms ease;
-          transition: box-shadow 150ms ease;
-          -webkit-appearance: none !important;
-        }
-
-        .form-control:focus {
-          box-shadow: 0 1px 3px 0 #FCF9F7;
-          border: 2px solid black;
-        }
-
-
-    /**ids**/
-
-        #headerow{
-          padding-left: 55px;
-          padding-right: 55px;
-          background: #FCF9F7;
-        }
-
-        #product-img {
-          width: 80%;
-          background-color: #FCF9F7;
-          margin: auto;
-        }
-
-        #header-logo {
-          width: 150px;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          background-color: white;
-        }
-
-        #register-progressbar {
-          box-sizing: border-box;
-          display: block;
-          margin-left:  360px;
-          margin-right:  360px;
-          padding-bottom: 50px;
-        }
-
-        #register-form {
-          box-sizing: border-box;
-          margin-left:  auto;
-          margin-right:  auto;
-        }
-
-  /**Other assets**/
-
-      button {
-        background: transparent;
-        display:block;
-        width:100%;
-        border: 1px solid #ffdd44;
-        color: black;
-        background: #FFdd44;
-        padding: 15px 40px;
-        margin: .618em 0.01em;  
-        font-family: 'soleil', sans-serif;
-        font-weight:700;
-        font-style: normal;
-        animation-delay: 2400ms;
-        font-size: 18px;
-        letter-spacing: .01em;
-        text-transform: normal;
-        transition: background-color 170ms  ease-out,color 170ms ease-out;
-      }
-
-
-      button:focus{
-        background-color: #64D7AE;
-        border: 1px solid #64D7AE;
-        color: #FFFFFF;
-        border-color: black;
-        border-width: 1px;
-      }
-
-      button:hover {
-        border-color: black;
-        border-width: 1px;
-      }
-      
-      label {
-        font-weight: 500;
-        font-size: 14px;
-        display: block;
-        margin-bottom: 8px;
-      }
-      
-      ::placeholder{
-        color: gray;
-        font-size: small;
-      }
-
-      a{
-        color: gray;
-        font-size: small;
-      }
-
-      #card-errors {
-        height: 20px;
-        padding: 4px 0;
-        color: #fa755a;
-      }
-      
-    
-    /**Bootstrap Sections**/
-      
-      .col-md-12{
-        padding-left:  200px;
-        padding-right:  200px;
-      }
-
-      .col-md-3{
-        padding: 20px;
-        background-color: black;
-      }
         
-      .col-sm-6{
-          padding: 0px;
-      }
-
-      .col-sm-5{
-          padding: 0px;
-      }
-
-      @media only screen and (max-width: 990px) {
-                
-                .home-small-1, .col-sm-4, li, .heading, #register-form, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
+      
+      /**Bootstrap Sections**/
+        .col-md-3{
+          padding: 20px;
+          
+        }
+          
+        .col-sm-6{
+            padding: 0px;
+        }
+  
+        .col-sm-5{
+            padding: 0px;
+        }
+  
+        @media only screen and (max-width: 990px) {
+                  
+                  .home-small-1, .col-sm-4, li, .heading, .heading-ec, #register-form, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
+                      margin-left:0 !important;
+                      margin-right:0 !important;
+                      padding-left: 15px !important;
+                      padding-right: 15px !important;
+                  }
+       
+                  *, .html {
                     margin-left:0 !important;
                     margin-right:0 !important;
-                    padding-left: 15px !important;
-                    padding-right: 15px !important;
-                }
-     
-                *, .html {
-                  margin-left:0 !important;
-                  margin-right:0 !important;
-                  padding-left: 0 !important;
-                  padding-right: 0 !important;
-                }
-
-                #product-img {
-                    width: 100%;
-                    display: block;
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                  }
+  
+                  #product-img {
+                      width: 100%;
+                      display: block;
+                      margin: auto;
+                    }
+  
+                  #security-badge{
                     margin: auto;
-                  }
+                    display: block;
+                    }
+           }
+  
+      
+      </style>
+  
+      <!--PAYG+ CSS Checkout Progress Bar-->
+      <style type="text/css">
+  
+      .containerbar {
+        width:100%;
+        background: #F8F8F8;
+      }
 
-                #security-badge{
-                  margin: auto;
-                  display: block;
-                  }
-         }
+      .cart-headline {
+            width: 100%;
+            box-shadow: 0 10px 5px -5px  #D1D1D1;
+            padding: 10px;
+            background: #F8F8F8;
+      }
+  
+      .progressbar{
+        counter-reset: step;    
+        padding: 20px;
+      }
+  
+      /**register number + text**/
+      .progressbar li {
+        list-style-type: none;
+        float: left;
+        width: 33%;
+        position: relative;
+        font-family: 'Avenir', sans-serif;
+        font-weight:800;
+        text-align: center;  
+        color: gray;
+        font-size: medium;
+      }
+  
+      /**letra y font actia**/
+      .progressbar li.account {
+        color:#8BB255;;
+        font-family: 'Avenir', sans-serif;
+        font-weight:800;
+        font-size: medium;
+      }
+  
+      .progressbar li.box {
+        color:#8BB255;
+        font-family: 'Avenir', sans-serif;
+        font-weight:800;
+        font-size: medium;
+        border: #8BB255;
+      }
+  
+      /**pelota 1**/
+      .progressbar li.box::before {
+        line-height: 20px;
+        border: 4px solid #8BB255;
+      }
+  
+  
+      /**all number cirle**/
+      .progressbar li:before {
+        content: counter(step);
+        counter-increment: step;
+        width: 30px;
+        height: 30px;
+        line-height: 20px;
+        border: 4px solid #8BB255;;
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        border-radius: 50%;
+        background-color: white;  
+        position: relative;
+        z-index: 100;
+      }
+  
+      /**whole line**TURNED TOP to 14px***/ 
+      .progressbar li:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #8BB255;
+        top: 14px;
+        left: -50%;
+        z-index: 50;
+      }
+  
+      /**barra antes del 1, none**/
+      .progressbar li:first-child:after {
+        content: none; 
+      }
+  
+      /**barra despues del activo**/
+      .progressbar li.account:after {
+        border-color: #8BB255;
+      }
+  
+      /**current line**/
+      .progressbar li.account + li:after {
+        background-color: #8BB255;;
+        height: 4px;
+      }
+      /**register area**/
+      .progressbar li.account + li::before{
+        border: 4px solid gray;
+      }
+  
+      </style>
+
+  </head>
+
+  <body>
+
 
     
-    </style>
-
-    <!--PAYG+ CSS Checkout Progress Bar-->
-    <style type="text/css">
-
-    .containerbar {
-      width:100%;
-      background: #FCF9F7;
-    }
-
-    .progressbar{
-      counter-reset: step;    
-      padding: 20px;
-    }
-
-    /**register number + text**/
-    .progressbar li {
-      list-style-type: none;
-      float: left;
-      width: 33%;
-      position: relative;
-      font-family: 'titling-gothic-fb', sans-serif;
-      font-weight:400;
-      text-align: center;  
-      color: gray;
-      font-size: medium;
-    }
-
-    /**letra y font actia**/
-    .progressbar li.account {
-      color:gray;
-      font-family: 'titling-gothic-fb', sans-serif;
-      font-weight:400;
-      font-size: medium;
-    }
-
-    .progressbar li.box {
-      color:#22D59E;
-      font-family: 'titling-gothic-fb', sans-serif;
-      font-weight:400;
-      font-size: medium;
-      border: #22D59E;
-    }
-
-    /**pelota 1**/
-    .progressbar li.box::before {
-      line-height: 20px;
-      border: 4px solid #22D59E;
-    }
-
-
-    /**all number cirle**/
-    .progressbar li:before {
-      content: counter(step);
-      counter-increment: step;
-      width: 30px;
-      height: 30px;
-      line-height: 20px;
-      border: 4px solid gray;
-      display: block;
-      text-align: center;
-      margin: 0 auto 10px auto;
-      border-radius: 50%;
-      background-color: #F5F0EE;  
-      position: relative;
-      z-index: 100;
-    }
-
-    /**whole line**TURNED TOP to 14px***/ 
-    .progressbar li:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 4px;
-      background-color: #22D59E;
-      top: 14px;
-      left: -50%;
-      z-index: 50;
-    }
-
-    /**barra antes del 1, none**/
-    .progressbar li:first-child:after {
-      content: none; 
-    }
-
-    /**barra despues del activo**/
-    .progressbar li.account:after {
-      border-color: #22D59E;
-    }
-
-    /**current line**/
-    .progressbar li.account + li:after {
-      background-color: gray;
-      height: 4px;
-    }
-    /**register area**/
-    .progressbar li.account + li::before{
-      border: 4px solid gray;
-    }
-
-    </style>
-</head>
-
-<body>
-
-    <div class="headline"></div>
-  
-    <!--Section 1: Navigation Bar-->
-    <header class='header' id="topbar">
-        <div class="row">
-          <div class="col-md-4"> 
-              <a href="https://www.gubel.co.uk"><img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="header-logo" class="center"></a>
-              </div>
-              
-          <div class="col-md-4" id="center-navbar">
-            </div>
-              
-          <div class="col-md-4">
-            <nav class="navbar">
-                <span class="open-slide">
-                  <a href="#" onclick="openSlideMenu()">
-                    <svg width="25" height="25">
-                      <path d="M0,5 30,5" stroke="#000" stroke-width="4"></path>
-                      <path d="M0,14 30,14" stroke="#000" stroke-width="4"></path>
-                      <path d="M0,23 30,23" stroke="#000" stroke-width="4"></path>
-                    </svg>
-                  </a>
-                </span>
-              </nav>
-
-            <div id="side-menu" class="side-nav">
-              <div class="row">
-                <a href="#" class="btn-close" onclick="closeSlideMenu()">×</a>
-                <a href="/calm_jar">calm</a>
-                <a href="/skincare_jar">skincare</a>
-                <a href='/register_calm_skincare_jar'>calm + skincare</a>
-              </div>
-            </div>
-
-            <script>
-              function openSlideMenu(){
-                  document.getElementById('side-menu').style.width
-                  = '500px';
-                  document.getElementById('main').style.marginLeft
-                  = '500px';
-              }
-
-              function closeSlideMenu(){
-                    document.getElementById('side-menu').style.width
-                    = '0';
-                    document.getElementById('main').style.marginLeft
-                    = '0';
-              }
-            </script>
-
-            <style>
-              #topbar {
-                position: fixed;
-                top: 0;
-                width: 100%;
-                z-index: 3000;;
-                background-color:white;
-              }
-              body{
-                overflow-x: hidden;
-                
-              }
-              
-              .navbar{
-                background-color:white;
-                overflow: hidden;
-                height: 63;
-                margin:0;
-              }
-
-              .navbar a{
-                float:right;
-                padding: 20px 15px;
-                margin-right: 10px;
-              }
-
-              .navbar ul{
-                padding: 8px 0 0 0;
-                list-style: none;
-              }
-
-              .side-nav{
-                height:100%;
-                width:0;
-                position: fixed;
-                z-index: 200;
-                top:0;
-                right:0;
-
-                box-sizing: border-box;
-                border-top: 5px solid black;
-                -webkit-appearance: none !important;
-
-                background-color: black;
-                overflow-x: hidden;
-                padding-top:60px;
-                transition: 0.9s;
-              }
-
-              .side-nav a{
-                padding: 10px 10px 10px 30px;
-                margin-right: 10px;
-                text-decoration: none;
-                font-family: 'titling-gothic-fb', sans-serif;
-                font-size:30px;
-                color:white;
-                text-align: right;
-                display: block;
-                top:0;
-                right: 0;
-                transition: 0.7s;
-              }
-
-              .side-nav .btn-close{
-                position:absolute;
-                padding: 0px 60px 20px 0px;
-                color: white;
-                top:0;
-                right: 0;
-                font-size: 60px;
-              }
-
-              #main {
-                transition: margin-left 0.5s;
-                padding:20px;
-                overflow: hidden;
-                width: 100%;
-              }
-
-              @media only screen and (max-width: 990px) {
-                .navbar a{
-                float:right;
-                padding-right: 20px !important;
-              }
-
-              .center { /*mbile*/
-                float:left;
-                padding-top: 25px !important;
-                padding-left: 20px !important;
-                display: block;
-                margin-left:10px;
-                margin: auto!important;
-                text-align:center;
-                size:20px;
-              }
-
-              .side-nav .btn-close{
-                padding-right: 10px !important;
-              }
-
-              .side-nav a{
-                padding-right: 10px !important;
-              }
-
-              #center-navbar{
-                padding: 0 !important;
-                margin: 0 !important;
-              }
-              }
-
-              </style>
-            </div>
-
-          </div>
+    <!--Section 1: Header-->
+    <header class='header'>
       </header>
+    
+    <!--Section 2: Pay-as-you-go Banner-->
+      <!--desktop-->
+      <div class="row" id="banner-title-ec">
+          <br>
+          <h1 class="heading-ec">Existing Customer</h1>
+        </div>
 
-    <!--Checkout Progress Bar -->
+            <!--Checkout Progress Bar -->
     <div class="containerbar">
-        <div class="row" style="padding-top:71px;">
-      <br>
-      <br>
+        <div class="row">
             <ul class="progressbar" id="register-progressbar">
-               <li class="box">Bundle</li>
-                 <li class="account">Shipping</li>
+               <li class="box">Calls & Texts</li>
+                 <li class="account">Phone Confirmation</li>
                  <li class='payment'>Payment</li>           
-               </ul>
-        <br>
-        <br>  
+               </ul> 
       </div>  
       </div>
+    
+      <label class="cart-headline"></label>
 
     <!--Section 1: Account Registration--> 
     <section>
@@ -599,32 +417,31 @@
   
           <!--Checkout Section-->
   
-          <div class="row" style="padding-left:100px;padding-right:100px;background: #FCF9F7">
-            
-            <h1 class='heading'>Your cart</h1>
+          <div class="row" style="padding-left:100px;padding-right:100px;background: white">
+            <br>
+            <h3 class='heading'>Checkout</h3>
             <div class='col-sm-12'>
-                <label class="cart-headline">
             </div>
     
                 <!--Checkout Big Bundle Selected-->
                 <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
                     <h1 class="home-heading">Calls & Texts</h1>
-                    <p class="home-heading"><b>all you can talk</b></p>
+                    <p class="home-heading"><b>Unlimited mins and texts</b></p>
                     <br>
                         
                         <div class="col-sm-6" >
-                            <img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="product-img">
+                            <img src="https://dl.dropboxusercontent.com/s/2j4nxwhjx1w1h3i/simcard%20pluspayg.png?dl=0" id="product-img">
                           </div>
       
                           <div class='col-sm-6' style="padding: 0px">
                             <br>
                             <p class="small" style="font-weight: bold; font-size:large">Description of the bundle</p>
                             <label class='hr'></label>
-                            <p class="price" style="text-align:left;">1x Jar (7 chocolates)<span style="float:right;">£5.50</span></p>
-                            <p class="price" style="text-align:left;">1x Week Eco-Refill (7 chocolates)<span style="float:right;">£4.50</span></p>
+                            <p class="price" style="text-align:left;">Item 1<span style="float:right;">£5.50</span></p>
+                            <p class="price" style="text-align:left;">Item 2<span style="float:right;">£4.50</span></p>
                             <label class='hr'></label>
                             <p class="price" style="text-align:left;font-weight: bold">Subtotal<span style="float:right;">£10.00</span></p>
-                            <p class="price" style="text-align:left;">UK Shipping<span style="float:right;display: inline;color:#64D7AE;font-weight: bold;">FREE</span></p>
+                            <p class="price" style="text-align:left;">UK Shipping<span style="float:right;display: inline;color:#8BB255;font-weight: bold;">FREE</span></p>
                             <label class='hr'></label>
                             <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£10.00</b></span></p>
                             <div class='shipping-status'>
@@ -655,14 +472,14 @@
                                               text-align:right;
                                             }
                                             .date{
-                                              color:#22D59E;
+                                              color:#8BB255;
                                               display:inline-block;
                                               font-size: 10px;
                                               font-weight: bold;
                                             }
         
                                             .status{
-                                              background-color: #22D59E;
+                                              background-color: #8BB255;
                                               border-radius: 50%;
                                               width: 20px;
                                               height: 20px;
@@ -697,102 +514,94 @@
                 <!--Checkout Divider-->
                 <div class="col-sm-1" id='divider' style="padding-top:30px"></div>
                 
-                <!--Checkout Account Form-->
-                <form method="POST" action="{% url 'payg_plus_nc_success' %}">{% csrf_token %}
-                <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
-                  
-                  <br>
-                    <label class="home-heading" for="card-name"><b>Name on card</b></label>
-                    <input type="text" name="card-name" class="form-control" id="card-name" placeholder="">
-                    <br>
-        
-                    <div class="form-row">
-                    <label class="home-heading" for="card-element"><b>Credit or debit card</b></label>
-                    <div id="card-element" class="form-control">
-                  </div>
-                  
-                  <div class="form-group">  
-                    <button type="submit">BUY NOW</button>
-                  </div>
-                  <p class="terms">
-                      By continuing, you agree to our Terms of service, Privacy policy and SMS policy.      
-                  <p class="terms">
-                      All transactions are secure and encrypted</p>
-                      <div class="row">
-                          <img src="https://dl.dropboxusercontent.com/s/o9lt1h8x2wanmwp/payment-security-support%20copy.png?dl=0" id='security-badge' style="width:250px;">
-                        </div>
-                    <style>
-                        .terms {
-                          text-align: center;
-                          font-size: 12px;
-                          color: gray;
-                          padding-bottom: 15px;
-                        }
 
-                        #security-badge{
-                          margin: auto;
-                          display: block;
-                        }
-                  
-                      </style>
-                    </p>
-                  </div>
-                 </form>
+                <!--Checkout Account Form-->
+                <form method="POST" action="{% url 'payg_plus_ec_success' %}">{% csrf_token %}
+                    <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
+                      
+                      <br>
+                        <label class="home-heading" for="card-name"><b>Name on card</b></label>
+                        <input type="text" name="card-name" class="form-control" id="card-name" placeholder="">
+                        <br>
+
+                        <div class="form-row">
+                        <label class="home-heading" for="card-element"><b>Credit or debit card</b></label>
+                        <div id="card-element" class="form-control">
+                      </div>
+                      
+                      <div class="form-group">  
+                        <button type="submit">BUY NOW</button>
+                      </div>
+                      <p class="terms">
+                          By continuing, you agree to our Terms of service, Privacy policy and SMS policy.      
+                      <p class="terms">
+                          All transactions are secure and encrypted</p>
+                          <div class="row">
+                              <img src="https://dl.dropboxusercontent.com/s/o9lt1h8x2wanmwp/payment-security-support%20copy.png?dl=0" id='security-badge' style="width:250px;">
+                            </div>
+                        <style>
+                            .terms {
+                              text-align: center;
+                              font-size: 12px;
+                              color: gray;
+                              padding-bottom: 15px;
+                            }
+
+                            #security-badge{
+                              margin: auto;
+                              display: block;
+                            }
+                      
+                          </style>
+                        </p>
+                      </div>
+                    </form>
 
             </div>
 
             <!--Seperation between Registration Form and Footer-->
-            <div class="two-spacer" style="background: #FCF9F7">
+            
             <br>
             <br>
           </div>
           </div>
         </section>
 
-    <!-- Footer --> 
-  <footer class="w3-container" id='footer'>
+
+
+
+    <!-- Section 7: Footer-->
+   <footer class="w3-container" id='footer'>
       <style>
         #footer{
           padding: 0px;
         }
         </style>
   
-        <div class="row" id='footer'>
+        <div class="row">
             <div class="col-md-3">
-              <p><a href='https://www.gubel.co.uk'><img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" src="blank.gif" style="width:100px"></a></p>
-              <img src="https://dl.dropboxusercontent.com/s/6utcleyzpvluwtn/madeUK-ppp.png?dl=0" src="blank.gif" style="width:65px">
-              <p id="trust">© Gubel Ltd 2019. All Rights Reserved. London, NW2 2DT</p>         
+                <img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" src="blank.gif" style="width:50px"></a>     
             </div>
            
           <div class="col-md-3">
-              <p class="heading-footer">PRODUCTS</p></a>
-              <a href='https://www.gubel.co.uk/calm_jar'><p id="trust">calm</p></a>
-              <a href='https://www.gubel.co.uk/skincare_jar'><p id="trust">skincare</p></a>
-              <a href='https://www.gubel.co.uk/register_calm_skincare_jar'><p id="trust">calm + skincare</p></a>
             </div>
   
-          <div class="col-md-3">
-                <p class="heading-footer">CONTACT</p></a>
-                <a href='sms:+447480803557'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
-                <a href='https://www.instagram.com/gubel.uk' target="_blank"><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@gubel.UK</p></a>
-                <a href='mailto:hi@gubel.co.uk'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@gubel.co.uk</p></a>
+          <div class="col-md-3"> 
              </div>
-  
+
           <div class="col-md-3">
-            <p class="heading-footer">INFORMATION</p></a>
-            <a href='https://www.gubel.co.uk/about'><p id="trust">About</p></a>
-            <a href='https://www.gubel.co.uk/terms-of-service'><p id="trust">Terms of Service</p></a>
-            <a href='https://www.gubel.co.uk/privacy-policy'><p id="trust">Privacy Policy</p></a>
-            <a href='https://www.gubel.co.uk/sms-policy'><p id="trust">SMS Policy</p></a>  
+              <br>
+              <p id="trust">Terms of Service</p></a>
+              <p id="trust">Privacy Policy</p></a>
            </div>
-  
+
                 <style>         
                   
                   #footer {
-                    background-color: #000000;
+                    background-image: linear-gradient(to bottom, #1E2671, #589AD2);
                     padding: 25px;
-  
                   }
+
                   .footer-links{
                     text-align:left;
                     font-size: 12px;
@@ -804,6 +613,16 @@
                     margin: 0;
                   }
   
+                  #trust-tc{
+                    text-align:left;
+                    font-size: 12px;
+                    color: white;
+                    margin: 0;
+                    border-style: solid;
+                    border-width: thin;
+                    border-color: white;
+                    }
+  
                   #vsu-trust {
                     text-align:center;
                   }
@@ -811,15 +630,10 @@
   
           </div>
         </footer>
-        
-          
 
-  
-      
-</div>
+        <div class="col-lg">
+            <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Made by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
+          </div>
 
-  
-
-</body>
-      
+  </body>
 </html>
