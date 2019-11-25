@@ -137,9 +137,9 @@
         }
 
         .customer-text{
-        text-align:center;
+        text-align:left;
         margin-bottom: 0px;
-        font-size:small;
+        font-size:medium;
         }
 
         .product-price{
@@ -184,9 +184,24 @@
 
     
     /**ids**/
+        #banner-intro-payg {
+          background: #F8F8F8;
+        }
+        
         #new-customer-container {
           background-image:url(https://dl.dropboxusercontent.com/s/0alnwf1lxe2s3jo/banner.png?dl=0);
-          box-shadow: 0 1px 10px 0 #D1D1D1;
+          box-shadow: 0 5px 10px 0 gray;
+          -webkit-transition: box-shadow 150ms ease;
+          transition: box-shadow 150ms ease;
+          border-radius: 5px;
+          margin:10px;
+          padding: 20px;
+          text-align: center;
+        }
+
+        #ext-customer-container {
+          background-image:url(https://dl.dropboxusercontent.com/s/mvge8qvwxh6re11/banner-ext-2.png?dl=0);
+          box-shadow: 0 5px 10px 0 gray;
           -webkit-transition: box-shadow 150ms ease;
           transition: box-shadow 150ms ease;
           border-radius: 5px;
@@ -198,6 +213,11 @@
         #new-customer-image {
           max-width: 100%;
           padding: 20px;
+        }
+
+        #new-customer-container-button {
+          padding-left: 150px;
+          padding-right: 150px;
         }
         
         #why-set-desktop{ 
@@ -336,7 +356,7 @@
         **/
 
     @media only screen and (max-width: 990px) {
-      .col-sm, .col-sm-3, .col-md, .col-md-4, .centered, #icon {
+      .col-sm, .col-sm-3, .col-md, .col-md-4, .centered, .customer-text {
         margin-left:20px !important;
         margin-right:20px !important;
         padding-left: 0px !important;
@@ -585,16 +605,16 @@
       <!--desktop-->
       <div >
           <div class='web' >
-              <img src="https://dl.dropboxusercontent.com/s/1piihzn9novyoe9/banner-no-copy.png?dl=0" id="hero-image" class="product">
-              <div class="payg">Pay-as-you-go +</div>
+              <img src="https://dl.dropboxusercontent.com/s/az4mncieb156grx/banner-2.png?dl=0" id="hero-image" class="product">
+              <!--<div class="payg">Pay-as-you-go +</div>
               <br>
-              <div class="centered">Never waste time topping up again</div>
+              <div class="centered">Never waste time topping up again</div>-->
             </div>
       </div>
       <!--mobile-->
       <div >
             <div class='mob' style="padding-top:71px;">
-              <img src="https://dl.dropboxusercontent.com/s/bcb14s1v13jk7ph/banner-m-1.png?dl=0" id="hero-image" class="product">
+              <img src="https://dl.dropboxusercontent.com/s/sfgwjd8txeui3pg/banner-m-2.png?dl=0" id="hero-image" class="product">
             </div>
       </div>
         <style>
@@ -642,9 +662,9 @@
 
     <!--Section 3: What is Pay-as-you-go Plus-->
     <div class="w3-container">   
-        <div class="row">
-            <h3 class="heading">Pay As You Go Plus</h3>
-            <p class="customer-text">Choose a Pay As You Go Plus sim for your phone. More flexibility and time. If you already have a Pay As You Go, you can upgrade to Plus to enjoy more flexibility</p>
+        <div class="row" id='banner-intro-payg'>
+            <h2 class="heading">Pay As You Go +</h2>
+            <p class="customer-text">Pay As You Go + is a new plan that lets you directly pay for your favourite Big Bundle with as little as one text, that's. it. Say no to time-consuming top-ups and yes to more time. If you already have a Pay As You Go sim, you can upgrade to Plus Plan to enjoy more flexibility.</p>
             <br>
             <br>
           </div>
@@ -652,25 +672,26 @@
 
     
     <!-- Section 4: Shop Pay-as-you-go Plus-->
-      <div class="w3-container">
+    <br>  
+    <div class="w3-container">
           <div class="row">
-                  <!--6GB-->
+                  <!--New Customer Portal-->
                   <div class="col-sm">
                   <form method="POST" id='new-customer-container' action="{% url 'payg_plus_nc' %}">{% csrf_token %}
                       <img src="https://dl.dropboxusercontent.com/s/6e7bpfgnry0v6zh/new%20customer-1.png?dl=0" id='new-customer-image' style="width:400px">  
-                      <br>
+                      <div id="new-customer-container-button">
                       <button type="submit">Select</button> 
-                      <br>
+                      </div>
                   </form>
                   </div>
 
-                  <!--Calls&Text-->
+                  <!--Existing Customer Portal-->
                   <div class="col-sm">
-                      <form method="POST" id='new-customer-container' action="{% url 'payg_plus_ec' %}">{% csrf_token %}
+                      <form method="POST" id='ext-customer-container' action="{% url 'payg_plus_ec' %}">{% csrf_token %}
                       <img src="https://dl.dropboxusercontent.com/s/0f6ptdu1a4qrom5/existing%20customer-1.png?dl=0" id='new-customer-image' style="width:400px">  
-                      <br>
-                      <button type="submit">Select</button> 
-                      <br>
+                      <div id="new-customer-container-button">
+                          <button type="submit">Upgrade</button> 
+                          </div>
                       </form>
                       </div>
             </div>
@@ -718,8 +739,8 @@
 
   
     
-    <!--Section 6: FAQS-->
-      <!--(eader)) -->
+    <!--Section 6: FAQS
+      <!--(eader)) 
       <div class="w3-container">
           <div class="row">
             <h3 class="heading">FAQs</h3>
@@ -728,7 +749,7 @@
           <br>
 
         </div>
-      <!--(questions)-->
+      <!--(questions)
        <div class="w3-container">
           <div class="row">
           
@@ -831,7 +852,7 @@
 
           </div>  
         </div>  
-
+      -->
 
 
     <!-- Section 7: Footer-->
