@@ -55,21 +55,47 @@ urlpatterns = [
     #path('terms-of-service/', views.termsofservice, name='terms-of-service'),
     #path('privacy-policy/', views.privacypolicy, name='privacy-policy'),
     #path('sms-policy/', views.smspolicy, name='sms-policy'),
+    
+#Pay-as-you-go Plus Homepage
     path('payg_plus/', views.payg_plus, name='payg_plus'),
-    path('checkout_account_0/', views.checkout_account_0, name='checkout_account_0'),
-    path('checkout_account_3/', views.checkout_account_3, name='checkout_account_3'),
-    path('checkout_account_6/', views.checkout_account_6, name='checkout_account_6'),
-    path('checkout_account_10/', views.checkout_account_10, name='checkout_account_10'),
-    path('ccheckout_account_20/', views.checkout_account_20, name='checkout_account_20'),
-    path('checkout_payment_0/', views.checkout_payment_0, name='checkout_payment_0'),
-    path('checkout_payment_3/', views.checkout_payment_3, name='checkout_payment_3'),
-    path('checkout_payment_6/', views.checkout_payment_6, name='checkout_payment_6'),
-    path('checkout_payment_10/', views.checkout_payment_10, name='checkout_payment_10'),
-    path('checkout_payment_20/', views.checkout_payment_20, name='checkout_payment_20'),
-    path('payg_plus_success/', views.payg_plus_success, name='payg_plus_success'),
+
+#Exiting Customers
+    path('payg_plus_ec/', views.payg_plus_ec, name='payg_plus_ec'),
+
+    path('checkout_ec_account_0/', views.checkout_ec_account_0, name='checkout_ec_account_0'),
+    path('checkout_ec_account_3/', views.checkout_ec_account_3, name='checkout_ec_account_3'),
+    path('checkout_ec_account_6/', views.checkout_ec_account_6, name='checkout_ec_account_6'),
+    path('checkout_ec_account_10/', views.checkout_ec_account_10, name='checkout_ec_account_10'),
+    path('checkout_ec_account_20/', views.checkout_ec_account_20, name='checkout_ec_account_20'),
+   
+    path('checkout_ec_payment_0/', views.checkout_ec_payment_0, name='checkout_ec_payment_0'),
+    path('checkout_ec_payment_3/', views.checkout_ec_payment_3, name='checkout_ec_payment_3'),
+    path('checkout_ec_payment_6/', views.checkout_ec_payment_6, name='checkout_ec_payment_6'),
+    path('checkout_ec_payment_10/', views.checkout_ec_payment_10, name='checkout_ec_payment_10'),
+    path('checkout_ec_payment_20/', views.checkout_ec_payment_20, name='checkout_ec_payment_20'),
+
+    path('payg_plus_ec_success/', views.payg_plus_ec_success, name='payg_plus_ec_success'),
+
+#New Customers
+    path('payg_plus_nc/', views.payg_plus_nc, name='payg_plus_nc'),
+
+    path('checkout_nc_account_0/', views.checkout_nc_account_0, name='checkout_nc_account_0'),
+    path('checkout_nc_account_3/', views.checkout_nc_account_3, name='checkout_nc_account_3'),
+    path('checkout_nc_account_6/', views.checkout_nc_account_6, name='checkout_nc_account_6'),
+    path('checkout_nc_account_10/', views.checkout_nc_account_10, name='checkout_nc_account_10'),
+    path('checkout_nc_account_20/', views.checkout_nc_account_20, name='checkout_nc_account_20'),
+    
+    path('checkout_nc_payment_0/', views.checkout_nc_payment_0, name='checkout_nc_payment_0'),
+    path('checkout_nc_payment_3/', views.checkout_nc_payment_3, name='checkout_nc_payment_3'),
+    path('checkout_nc_payment_6/', views.checkout_nc_payment_6, name='checkout_nc_payment_6'),
+    path('checkout_nc_payment_10/', views.checkout_nc_payment_10, name='checkout_nc_payment_10'),
+    path('checkout_nc_payment_20/', views.checkout_nc_payment_20, name='checkout_nc_payment_20'),
+    
+    path('payg_plus_nc_success/', views.payg_plus_nc_success, name='payg_plus_nc_success'),
+
+#Test Page
     path('test/', views.test, name='test'),
-    #path('hometest/', views.hometest, name='hometest'),
-    #path('code_granted/', views.code_granted, name='code_granted'),
+    
     
 #if settings.DEBUG:
 #    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
