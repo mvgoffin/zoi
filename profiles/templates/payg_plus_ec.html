@@ -68,6 +68,17 @@
           padding-right: 150px;
         }
 
+        .heading-ec{
+          color:white;
+          font-family: 'Avenir', sans-serif;
+          padding-top: 35px;
+          padding-bottom: 15px;
+          text-align: left;
+          font-weight: 800;
+          display:block;
+          margin: 0;
+        }
+
         .heading{
           font-family: 'Avenir', sans-serif;
           padding-top: 35px;
@@ -88,7 +99,7 @@
         .why-text {
           font-weight: 400;
           margin: 0px;
-          text-align:center;
+          text-align:left;
           line-height:normal;
         }
 
@@ -184,6 +195,15 @@
 
     
     /**ids**/
+        #banner-intro-payg {
+          background: #EFEFEF;
+        }
+
+        #banner-title-ec {
+          background-image: linear-gradient(to bottom, #1E2671, #589AD2);
+          padding-top:89px;
+        }
+
         #why-set-desktop{ 
         padding-top: 35px;
         padding-bottom: 35px;
@@ -335,7 +355,7 @@
     }
 
     @media only screen and (max-width: 990px) {
-                form, .page-text, .vertical-center, .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle {
+                form, .page-text, .vertical-center, .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #banner-intro-ec{
                 margin-left:0 !important;
                 margin-right:0 !important;
                 padding-left: 15px !important;
@@ -408,7 +428,7 @@
           <div class="col-lg-10" id='center-navbar'>
             </div>
               
-          <div class="col-lg-1">
+          <!--<div class="col-lg-1">
             <nav class='navbar'>
                 <span class="open-slide" style="text-align: right;">
                   <a href="#" onclick='openSlideMenu()'>
@@ -449,7 +469,7 @@
               }
             </script>
 
-            </div>
+            </div>-->
         
           </div>
         </div>
@@ -460,7 +480,7 @@
             top: 0;
             width: 100%;
             z-index: 2;
-            background-color:#1E2671;
+            background-color:#000031;
           }
 
         body{
@@ -573,26 +593,27 @@
 
     
     <!--Section 2: Pay-as-you-go Banner-->
-    <div class='w3-container'>
-        <div style="padding-top:71px;">
-            <img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="hero-image" class="product">
+      <!--desktop-->
+      <div class="row" id="banner-title-ec">
+          <br>
+          <h1 class="heading-ec">Existing Customer</h1>
+          <br>
+          <br>
         </div>
-      </div>
-    
 
     <!--Section 3: What is Pay-as-you-go Plus-->
-    <div class="w3-container">   
+    <div class="w3-container" id="banner-intro-payg">   
         <div class="row">
-            <h3 class="heading">Start with a Big Bundle that suits you best</h3>
+            <h3 class="heading">Select your favourite Big Bundle to start upgrade</h3>
             <p class='page-text'>Whether you're looking for data or just mins, there's a Big Bundle for everyone. All Big Bundles include Priority, so you can enjoy the full experience.</p> 
             <br>
             <br>
           </div>
       </div>
-
     
     <!-- Section 4: Shop Pay-as-you-go Plus-->
       <div class="w3-container">
+          <br>
           <div class="row">
                   <!--6GB-->
                   <div class="col-sm">
@@ -604,7 +625,7 @@
                       <p class="product-text">Unlimited texts</p>
                       <br>
                       <p class="product-text">Our sims fit all devices</p>    
-                      <p class="product-price">£15 + Free Shipping</p>
+                      <p class="product-price">£15</p>
                       <button type="submit">Select</button> 
                       <br>
                   </form>
@@ -620,7 +641,7 @@
                           <p class="product-text">Unlimited texts</p>
                           <br>
                           <p class="product-text">Our sims fit all devices</p>    
-                          <p class="product-price">£5 + Free Shipping</p>
+                          <p class="product-price">£5</p>
                           <button type="submit">Select</button> 
                           <br>
                       </form>
@@ -636,7 +657,7 @@
                           <p class="product-text">Unlimited texts</p>
                           <br>
                           <p class="product-text">Our sims fit all devices</p>    
-                          <p class="product-price">£10 + Free Shipping</p>
+                          <p class="product-price">£10</p>
                           <button type="submit">Select</button> 
                           <br>
                       </form>
@@ -656,7 +677,7 @@
                           <p class="product-text">Unlimited texts</p>
                           <br>
                           <p class="product-text">Our sims fit all devices</p>    
-                          <p class="product-price">£20 + Free Shipping</p>
+                          <p class="product-price">£20</p>
                           <button type="submit">Select</button> 
                           <br>
                       </form>
@@ -672,7 +693,7 @@
                             <p class="product-text">Unlimited texts</p>
                             <br>
                             <p class="product-text">Our sims fit all devices</p>    
-                            <p class="product-price">£30 + Free Shipping</p>
+                            <p class="product-price">£30</p>
                             <button type="submit">Select</button> 
                             <br>
                           </form>
@@ -689,36 +710,39 @@
     <!--Section 5: Why choose PAY-GO plus template-->
       <!--(title)-->
       <div class="w3-container"> 
-        <br> 
-          <div class="row"> 
-              <h3 class="heading">Why choose Pay-as-you-go +</h3>
-            </div>
-        </div>
-      <!--(reasons)-->
-      <div class="w3-container"> 
-             <div class="row">
-                 <div class="col-md">
-                  <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="icon" style="width:50px">
-                  <br>
-                  <p class="why-text"><b>Cardless payments after this Big bundle</b></p>
-                 </div>
- 
-                 <div class="col-md">
-                  <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="icon" style="width:50px">
-                  <br>
-                  <p class="why-text"><b>24/7 customer service</b></p>                  
+          <br> 
+            <div class="row"> 
+                <h3 class="heading">Why choose Pay As You Go +</h3>
+              </div>
+          </div>
+        <!--(reasons)-->
+        <div class="w3-container"> 
+               <div class="row">
+                   <div class="col-md">
+                    <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="icon" style="width:50px">
+                    <br>
+                    <p class="why-text"><b>Cardless payments</b></p>
+                    <p class="why-text">Never waste time topping up again. Just text to buy your favourite Big Bundle and Bolt ons.</p>
                    </div>
-                   
-                 <div class="col-md">
-                  <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="icon" style="width:50px">
-                  <br>
-                  <p class="why-text"><b>No contracts, flexible sim</b></p>
+   
+                   <div class="col-md">
+                    <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="icon" style="width:50px">
+                    <br>
+                    <p class="why-text"><b>24/7 customer service</b></p>  
+                    <p class="why-text">Need to update you payment info? Have a question about your sim? Just text us and we're happy to help.</p>                
                      </div>
-                 </div> 
-        </div>  
-
-        <br>
-        <div class="headline"></div>
+                     
+                   <div class="col-md">
+                    <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="icon" style="width:50px">
+                    <br>
+                    <p class="why-text"><b>Flexible sim</b></p>
+                    <p class="why-text">No need to sign contracts when you upgrade to Pay As You Go Plus.</p>
+                       </div>
+                   </div> 
+          </div>  
+  
+          <br>
+          <div class="headline"></div>
 
   
     
