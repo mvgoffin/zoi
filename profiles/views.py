@@ -48,7 +48,7 @@ def checkout_ec_account_3(request):
     template = 'checkout_ec_account_3.html'
     return render(request,template,context)
 
-def ccheckout_ec_account_6(request):
+def checkout_ec_account_6(request):
     context = locals()
     template = 'checkout_ec_account_6.html'
     return render(request,template,context)
@@ -74,7 +74,7 @@ def checkout_nc_account_3(request):
     template = 'checkout_nc_account_3.html'
     return render(request,template,context)
 
-def ccheckout_nc_account_6(request):
+def checkout_nc_account_6(request):
     context = locals()
     template = 'checkout_nc_account_6.html'
     return render(request,template,context)
