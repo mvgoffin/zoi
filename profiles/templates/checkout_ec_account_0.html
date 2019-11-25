@@ -79,6 +79,15 @@
             padding: 25px;
           }
 
+          .heading{
+          font-family: 'Avenir', sans-serif;
+          padding-bottom: 15px;
+          text-align: left;
+          font-weight: 800;
+          display:block;
+          margin: 0;
+        }
+
           .heading-ec{
           color:white;
           font-family: 'Avenir', sans-serif;
@@ -111,12 +120,6 @@
             margin: 0px;
             }
   
-          .cart-headline {
-            width: 100%;
-            box-shadow: 0 10px 5px -5px  #D1D1D1;
-            padding: 10px;
-          }
-  
           .form-control {
             box-sizing: border-box;
             margin-top: 5px;
@@ -140,15 +143,24 @@
   
       /**ids**/
 
-      #banner-title-ec {
-          background-image: linear-gradient(to bottom, #1E2671, #589AD2);
-          padding-top:19px;
-        }
+          #banner-title-ec {
+            background-image: linear-gradient(to bottom, #1E2671, #589AD2);
+            padding-top:19px;
+          }
+
+          #banner-intro-payg {
+            background: #EFEFEF;
+          }
 
           #product-img {
             width: 80%;
             background-color: #FCF9F7;
             margin: auto;
+            box-shadow: 0 5px 10px 0 gray;
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+            border-radius: 5px;
+
           }
   
           #register-progressbar {
@@ -220,7 +232,7 @@
       /**Bootstrap Sections**/
         .col-md-3{
           padding: 20px;
-          background-color: black;
+          
         }
           
         .col-sm-6{
@@ -233,7 +245,7 @@
   
         @media only screen and (max-width: 990px) {
                   
-                  .home-small-1, .col-sm-4, li, .heading, #register-form, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
+                  .home-small-1, .col-sm-4, li, .heading, .heading-ec, #register-form, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
                       margin-left:0 !important;
                       margin-right:0 !important;
                       padding-left: 15px !important;
@@ -267,7 +279,14 @@
   
       .containerbar {
         width:100%;
-        background: #FCF9F7;
+        background: #F8F8F8;
+      }
+
+      .cart-headline {
+            width: 100%;
+            box-shadow: 0 10px 5px -5px  #D1D1D1;
+            padding: 10px;
+            background: #F8F8F8;
       }
   
       .progressbar{
@@ -281,8 +300,8 @@
         float: left;
         width: 33%;
         position: relative;
-        font-family: 'titling-gothic-fb', sans-serif;
-        font-weight:400;
+        font-family: 'Avenir', sans-serif;
+        font-weight:800;
         text-align: center;  
         color: gray;
         font-size: medium;
@@ -291,23 +310,23 @@
       /**letra y font actia**/
       .progressbar li.account {
         color:gray;
-        font-family: 'titling-gothic-fb', sans-serif;
-        font-weight:400;
+        font-family: 'Avenir', sans-serif;
+        font-weight:800;
         font-size: medium;
       }
   
       .progressbar li.box {
-        color:#22D59E;
-        font-family: 'titling-gothic-fb', sans-serif;
-        font-weight:400;
+        color:#8BB255;
+        font-family: 'Avenir', sans-serif;
+        font-weight:800;
         font-size: medium;
-        border: #22D59E;
+        border: #8BB255;
       }
   
       /**pelota 1**/
       .progressbar li.box::before {
         line-height: 20px;
-        border: 4px solid #22D59E;
+        border: 4px solid #8BB255;
       }
   
   
@@ -323,7 +342,7 @@
         text-align: center;
         margin: 0 auto 10px auto;
         border-radius: 50%;
-        background-color: #F5F0EE;  
+        background-color: white;  
         position: relative;
         z-index: 100;
       }
@@ -334,7 +353,7 @@
         position: absolute;
         width: 100%;
         height: 4px;
-        background-color: #22D59E;
+        background-color: #8BB255;
         top: 14px;
         left: -50%;
         z-index: 50;
@@ -347,7 +366,7 @@
   
       /**barra despues del activo**/
       .progressbar li.account:after {
-        border-color: #22D59E;
+        border-color: #8BB255;
       }
   
       /**current line**/
@@ -382,51 +401,36 @@
             <!--Checkout Progress Bar -->
     <div class="containerbar">
         <div class="row">
-      <br>
-      <br>
             <ul class="progressbar" id="register-progressbar">
-               <li class="box">Bundle</li>
-                 <li class="account">Shipping</li>
+               <li class="box">Calls & Texts</li>
+                 <li class="account">Phone Confirmation</li>
                  <li class='payment'>Payment</li>           
-               </ul>
-        <br>
-        <br>  
+               </ul> 
       </div>  
       </div>
-
-
-    <!--Section 3: What is Pay-as-you-go Plus-->
-    <div class="w3-container" id="banner-intro-payg">   
-        <div class="row">
-            <h3 class="heading">Checkout</h3>
-            <p class='page-text'>Whether you're looking for data or just mins, there's a Big Bundle for everyone. All Big Bundles include Priority, so you can enjoy the full experience.</p> 
-            <br>
-            <br>
-          </div>
-      </div>
     
-    
+      <label class="cart-headline"></label>
+
     <!--Section 1: Account Registration--> 
     <section>
         <div class="w3-container">
   
           <!--Checkout Section-->
   
-          <div class="row" style="padding-left:100px;padding-right:100px;background: #FCF9F7">
-            
-            <h1 class='heading'>Your cart</h1>
+          <div class="row" style="padding-left:100px;padding-right:100px;background: white">
+            <br>
+            <h3 class='heading'>Checkout</h3>
             <div class='col-sm-12'>
-                <label class="cart-headline">
             </div>
     
                 <!--Checkout Big Bundle Selected-->
                 <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
                     <h1 class="home-heading">Calls & Texts</h1>
-                    <p class="home-heading"><b>all you can talk</b></p>
+                    <p class="home-heading"><b>Unlimited mins and texts</b></p>
                     <br>
                         
                         <div class="col-sm-6" >
-                            <img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="product-img">
+                            <img src="https://dl.dropboxusercontent.com/s/2j4nxwhjx1w1h3i/simcard%20pluspayg.png?dl=0" id="product-img">
                           </div>
       
                           <div class='col-sm-6' style="padding: 0px">
@@ -437,7 +441,7 @@
                             <p class="price" style="text-align:left;">Item 2<span style="float:right;">£4.50</span></p>
                             <label class='hr'></label>
                             <p class="price" style="text-align:left;font-weight: bold">Subtotal<span style="float:right;">£10.00</span></p>
-                            <p class="price" style="text-align:left;">UK Shipping<span style="float:right;display: inline;color:#64D7AE;font-weight: bold;">FREE</span></p>
+                            <p class="price" style="text-align:left;">UK Shipping<span style="float:right;display: inline;color:#8BB255;font-weight: bold;">FREE</span></p>
                             <label class='hr'></label>
                             <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£10.00</b></span></p>
                             <div class='shipping-status'>
@@ -468,14 +472,14 @@
                                               text-align:right;
                                             }
                                             .date{
-                                              color:#22D59E;
+                                              color:#8BB255;
                                               display:inline-block;
                                               font-size: 10px;
                                               font-weight: bold;
                                             }
         
                                             .status{
-                                              background-color: #22D59E;
+                                              background-color: #8BB255;
                                               border-radius: 50%;
                                               width: 20px;
                                               height: 20px;
@@ -563,7 +567,7 @@
             </div>
 
             <!--Seperation between Registration Form and Footer-->
-            <div class="two-spacer" style="background: #FCF9F7">
+            
             <br>
             <br>
           </div>
