@@ -326,7 +326,7 @@
         **/
 
     @media only screen and (max-width: 990px) {
-      .col-sm, .col-sm-3, .col-md, .col-md-4 {
+      .col-sm, .col-sm-3, .col-md, .col-md-4, .centered{
         margin-left:20px !important;
         margin-right:20px !important;
         padding-left: 0px !important;
@@ -573,11 +573,33 @@
 
     
     <!--Section 2: Pay-as-you-go Banner-->
-    <div class='w3-container'>
-        <div style="padding-top:71px;">
-            <img src="https://dl.dropboxusercontent.com/s/70e41poe1btsfw6/image.png?dl=0" id="hero-image" class="product">
-        </div>
+      <!--desktop-->
+      <div >
+          <div class='web' style="padding-top:71px;">
+              <img src="https://dl.dropboxusercontent.com/s/0hyckmer893a0w7/banner-1.png?dl=0" id="hero-image" class="product">
+            </div>
       </div>
+      <!--mobile-->
+      <div >
+            <div class='mob' style="padding-top:71px;">
+              <img src="https://dl.dropboxusercontent.com/s/bcb14s1v13jk7ph/banner-m-1.png?dl=0" id="hero-image" class="product">
+            </div>
+      </div>
+
+        <style>
+        /* For width larger than 990px: */
+          .mob {
+            display: none; 
+          }
+
+          @media only screen and (max-width: 890px) {
+            .web {display: none;}
+            .mob {display: inline;}
+            }
+          
+        </style>
+
+    
     
 
     <!--Section 3: What is Pay-as-you-go Plus-->
