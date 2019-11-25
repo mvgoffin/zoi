@@ -1035,8 +1035,8 @@
 
           
           <div class="return-homepage">  
-            <form action="https://www.marcofortelefonica.com/payg_plus" id="home-form">
-              <button type="submit">RETURN HOMEPAGE</button>
+              <form method="POST" id='register-form' action="{% url 'payg_plus' %}">{% csrf_token %}
+                  <button type="submit">Return Homepage</button>
             </form>
            </div>      
           
