@@ -13,9 +13,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
 
     <!--lightbox-->
     <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
@@ -74,11 +80,6 @@
             margin: 0;
             }
   
-          .header{
-            background-color: #000031;
-            padding: 25px;
-          }
-
           .heading{
           font-family: 'Avenir', sans-serif;
           padding-bottom: 15px;
@@ -143,9 +144,16 @@
   
       /**ids**/
 
+          #header-logo {
+            width: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            /**background-color: white;**/
+            }
           #banner-title-ec {
             background-image: linear-gradient(to bottom, #1E2671, #589AD2);
-            padding-top:19px;
+            padding-top:89px;
           }
 
           #banner-intro-payg {
@@ -342,7 +350,7 @@
         text-align: center;
         margin: 0 auto 10px auto;
         border-radius: 50%;
-        background-color: white;  
+        background-color: #F8F8F8;  
         position: relative;
         z-index: 100;
       }
@@ -387,9 +395,185 @@
 
 
     
-    <!--Section 1: Header-->
-    <header class='header'>
-      </header>
+    <!--Section 1: Navigation Bar-->
+    
+    <style> 
+        @media only screen and (max-width: 990px) {
+            .navbar {display: none;}
+        }
+      </style>
+      <header class='header' id="topbar">
+        <div class="w3-container">
+          <div class='row' style='padding: 0px;' id='topbar-desktop'>
+            <div class="col-lg-1"> 
+                <a href='https://www.marcofortelefonicauk.com'><img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" id="header-logo" class="center"></a>
+                </div>
+                
+            <div class="col-lg-10" id='center-navbar'>
+              </div>
+                
+            <!--<div class="col-lg-1">
+              <nav class='navbar'>
+                  <span class="open-slide" style="text-align: right;">
+                    <a href="#" onclick='openSlideMenu()'>
+                      <svg width="25" height='25'>
+                        <path d='M0,5 30,5' stroke='#FFFFFF' 
+                        stroke-width='4'/>
+                        <path d='M0,14 30,14' stroke='#FFFFFF' 
+                        stroke-width='4'/>
+                        <path d='M0,23 30,23' stroke='#FFFFFF' 
+                        stroke-width='4'/>
+                      </svg>
+                    </a>
+                  </span>
+                </nav>
+  
+              <div id="side-menu" class="side-nav">
+                <div class=''>
+                  <a href='#' class='btn-close' onclick='closeSlideMenu()'>&times;</a>
+                  <a href='/home'>Home</a>
+                  <a href='https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0' target="_blank">Unlock Value Report</a>
+                  <a href='/payg_plus'>Visit PAYG+</a>
+                </div>
+              </div>
+  
+              <script>
+                function openSlideMenu(){
+                    document.getElementById('side-menu').style.width
+                    = '1500px';
+                    document.getElementById('main').style.marginLeft
+                    = '1500px';
+                }
+  
+                function closeSlideMenu(){
+                      document.getElementById('side-menu').style.width
+                      = '0';
+                      document.getElementById('main').style.marginLeft
+                      = '0';
+                }
+              </script>
+  
+              </div>-->
+          
+            </div>
+          </div>
+        <style>
+  
+          #topbar {
+              position:absolute;
+              top: 0;
+              width: 100%;
+              z-index: 2;
+              background-color:#000031;
+            }
+  
+          body{
+          overflow-x: hidden;
+           }
+  
+          .navbar{
+            overflow: hidden;
+            height: 63;
+            margin:0;
+          }
+  
+          .navbar a{
+              float:right;
+              padding: 20px 15px;
+              margin-right: 10px;
+          }
+  
+          .navbar ul{
+              padding: 8px 0 0 0;
+              list-style: none;
+          }
+  
+          .side-nav{
+              height:100%;
+              width:0;
+              position: fixed;
+              z-index: 1;
+              top:0;
+              right:0;
+  
+              box-sizing: border-box;
+              border-top: 0px solid black;
+              -webkit-appearance: none !important;
+  
+              background-color: #F8F8F8;
+              overflow-x: hidden;
+              padding-top:70px;
+              transition: 0.0s;
+          }
+  
+          .side-nav a{
+              padding: 10px 20px 10px 30px;
+              margin-right: 10px;
+              text-decoration: none;
+              font-family: 'Avenir', sans-serif;
+              font-size:30px;
+              font-weight: bold;
+              color:#1E2671;
+              text-align: right;
+              display: block;
+              top:0;
+              right: 0;
+              transition: 0.1s;
+          }
+  
+          .side-nav .btn-close{
+              position:absolute;
+              padding: 0px 20px 0px 0px;
+              color: #1E2671;
+              top:0;
+              right: 0;
+              font-size: 60px;
+          }
+  
+          #main {
+              transition: margin-left 0.5s;
+              padding:20px;
+              overflow: hidden;
+              width: 100%;
+          }
+  
+          @media only screen and (max-width: 990px) {
+              .navbar a{
+              float:right;
+              padding-right: 20px !important;
+                  }
+              
+              .center { /*mbile*/
+                float:left;
+                padding-top: 25px !important;
+                padding-left: 20px !important;
+                display: block;
+                margin-left:10px;
+                margin: auto!important;
+                text-align:center;
+                size:20px;
+                  }
+  
+              .side-nav .btn-close{
+                padding-right: 10px !important;
+                  }
+  
+              .side-nav a{
+                padding-right: 10px !important;
+                  }
+  
+              #center-navbar{
+                padding: 0 !important;
+                margin: 0 !important;
+                }
+  
+              .navbar {
+                  display: none;
+                }
+            }
+            </style>
+  
+        </header>
     
     <!--Section 2: Pay-as-you-go Banner-->
       <!--desktop-->
@@ -399,13 +583,15 @@
         </div>
 
             <!--Checkout Progress Bar -->
-    <div class="containerbar">
+    <div class="w3-container" style="background: #F8F8F8;">
         <div class="row">
+          <div class="col-lg" style="padding:20px">
             <ul class="progressbar" id="register-progressbar">
                <li class="box">Calls & Texts</li>
                  <li class="account">Phone Confirmation</li>
                  <li class='payment'>Payment</li>           
                </ul> 
+              </div>
       </div>  
       </div>
     
@@ -416,19 +602,24 @@
         <div class="w3-container">
   
           <!--Checkout Section-->
-  
-          <div class="row" style="padding-left:100px;padding-right:100px;background: white">
-            <br>
+          <br>
+          <div class="row" >
             <h1 class='heading'>Checkout</h1>
-            <div class='col-sm-12'>
-            </div>
-    
+            <br>
+          </div>
+        </div>
+    </section>
+
+
+<section>
+        <div class="w3-container">
+            <div class="row" >
                 <!--Checkout Big Bundle Selected-->
                 <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
                     <h3 class="home-heading">Calls & Texts</h3>
                     <p class="home-heading"><b>Unlimited mins and texts</b></p>
                     <br>
-                        
+                    
                         <div class="col-sm-6" >
                             <img src="https://dl.dropboxusercontent.com/s/2j4nxwhjx1w1h3i/simcard%20pluspayg.png?dl=0" id="product-img">
                           </div>
@@ -511,11 +702,12 @@
                   </div>
 
                 <!--Checkout Divider-->
-                <div class="col-sm-1" id='divider' style="padding-top:30px"></div>
+                <div class="col-sm-1" id='divider' style="padding-top:30px">
+                </div>
                 
                 <!--Checkout Account Form-->
-                <form method="POST" id='register-form' action="{% url 'checkout_ec_payment_0' %}">{% csrf_token %}
-                <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
+                <form class="col-sm-5" method="POST" id='register-form' action="{% url 'checkout_ec_payment_0' %}">{% csrf_token %}
+                <div  id='shipping-register-form' style="padding-top:30px;">
                   
                   <br>
                   <label class="home-heading" for="id_phone"><b>Phone Number</b></label>
@@ -551,6 +743,8 @@
                  </form>
 
             </div>
+
+          </div>
 
             <!--Seperation between Registration Form and Footer-->
             
