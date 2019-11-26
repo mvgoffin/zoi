@@ -133,6 +133,13 @@
             box-shadow: 0 1px 3px 0 rgb(236, 236, 236);
             border: 1px solid #000031;
           }
+
+          .why-text {
+          font-size:medium;
+          padding-top: 5px;
+          text-align:center;
+          line-height:normal;
+        }
   
   
       /**ids**/
@@ -490,91 +497,110 @@
 <section>
         <div class="w3-container">
             <div class="row" >
-<!--Checkout Big Bundle Selected-->
-<div class="col-md-6" id='cart-list-wrapper'>
-    <h3 class="home-heading">Calls & Texts</h3>
-    <div class="row" style="padding:0px;margin:0px;">
-        <div class="col-sm-4">
-          <br>
-            <img src="https://dl.dropboxusercontent.com/s/2j4nxwhjx1w1h3i/simcard%20pluspayg.png?dl=0" id="product-img">
-          </div>
-          <div class='col-sm-8'>
-              <br>
-              <p>4G ready sim with Unlimited minutes and Unlimited texts</p>
-              <label class='hr'></label>
-              <p class="price" style="text-align:left;">Big Bundle<span style="float:right;">£5.00</span></p>
-              <label class='hr'></label>
-              <p class="price" style="text-align:left;font-weight: bold">Subtotal<span style="float:right;">£5.00</span></p>
-              <p class="price" style="text-align:left;">UK Shipping<span style="float:right;display: inline;color:#8BB255;font-weight: bold;">FREE</span></p>
-              <label class='hr'></label>
-              <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£5.00</b></span></p>
-              <div class='shipping-status'>
-                  <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
-                    <!--Estimated Delivery Date SCRIPT + STYLE-->
-                              <!--SCRIPT-->
-                              <script>
-                                  var months = ["Jan", "Febr", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-                                  n =  new Date();
-                                  n.setDate(n.getDate() + 5);
-                                  y = n.getFullYear();
-                                  m = n.getMonth();
-                                  d = n.getDate();
-                                  document.getElementById("date").innerHTML = d + " " + months[m] + " " + y;
-                                </script>
-                              <!--STYLE-->
-                                <style>
-                                  .shipping-status{
-                                    text-align:right;
-                                  }
+              <!--Checkout Big Bundle Selected-->
+              <div class="col-md-6" id='cart-list-wrapper'>
+                  <h3 class="home-heading">Calls & Texts</h3>
+                  <div class="row" style="padding:0px;margin:0px;">
+                      <div class="col-sm-4">
+                        <br>
+                          <img src="https://dl.dropboxusercontent.com/s/2j4nxwhjx1w1h3i/simcard%20pluspayg.png?dl=0" id="product-img">
+                        </div>
+                        <div class='col-sm-8'>
+                            <br>
+                            <p>4G ready sim with Unlimited minutes and Unlimited texts</p>
+                            <label class='hr'></label>
+                            <p class="price" style="text-align:left;">Big Bundle<span style="float:right;">£5.00</span></p>
+                            <label class='hr'></label>
+                            <p class="price" style="text-align:left;font-weight: bold">Subtotal<span style="float:right;">£5.00</span></p>
+                            <p class="price" style="text-align:left;">UK Shipping<span style="float:right;display: inline;color:#8BB255;font-weight: bold;">FREE</span></p>
+                            <label class='hr'></label>
+                            <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£5.00</b></span></p>
+                            <div class='shipping-status'>
+                                <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
+                                  <!--Estimated Delivery Date SCRIPT + STYLE-->
+                                            <!--SCRIPT-->
+                                            <script>
+                                                var months = ["Jan", "Febr", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                                                n =  new Date();
+                                                n.setDate(n.getDate() + 5);
+                                                y = n.getFullYear();
+                                                m = n.getMonth();
+                                                d = n.getDate();
+                                                document.getElementById("date").innerHTML = d + " " + months[m] + " " + y;
+                                              </script>
+                                            <!--STYLE-->
+                                              <style>
+                                                .shipping-status{
+                                                  text-align:right;
+                                                }
 
-                                  .text-date{
-                                    color:gray;
-                                    display:inline-block;
-                                    font-size: 10px;
-                                    font-weight: bold;
-                                    text-align:right;
-                                  }
-                                  .date{
-                                    color:#8BB255;
-                                    display:inline-block;
-                                    font-size: 10px;
-                                    font-weight: bold;
-                                  }
+                                                .text-date{
+                                                  color:gray;
+                                                  display:inline-block;
+                                                  font-size: 10px;
+                                                  font-weight: bold;
+                                                  text-align:right;
+                                                }
+                                                .date{
+                                                  color:#8BB255;
+                                                  display:inline-block;
+                                                  font-size: 10px;
+                                                  font-weight: bold;
+                                                }
 
-                                  .status{
-                                    background-color:#8BB255;
-                                    border-radius: 50%;
-                                    width: 20px;
-                                    height: 20px;
-                                    text-align:right;
-                                  }
+                                                .status{
+                                                  background-color:#8BB255;
+                                                  border-radius: 50%;
+                                                  width: 20px;
+                                                  height: 20px;
+                                                  text-align:right;
+                                                }
 
-                                  @-webkit-keyframes pulse {
-                                      0%{transform:scale(.1);opacity: 0;}
-                                      50%{ opacity: .4;}
-                                      100%{transform: scale(1.6); opacity: 0;}
-                                    }
+                                                @-webkit-keyframes pulse {
+                                                    0%{transform:scale(.1);opacity: 0;}
+                                                    50%{ opacity: .4;}
+                                                    100%{transform: scale(1.6); opacity: 0;}
+                                                  }
 
-                                    #status {
-                                      position:absolute;
-                                      -webkit-animation: pulse 2s infinite;
-                                    }
-                                    #status:nth-child(2) {
-                                      position:absolute;
-                                      -webkit-animation: pulse 2s infinite .3s;
-                                    }
-                                    #status:nth-child(3) {
-                                      position:absolute;
-                                      -webkit-animation: pulse 2s infinite .6s;
-                                    }
-                                </style> 
+                                                  #status {
+                                                    position:absolute;
+                                                    -webkit-animation: pulse 2s infinite;
+                                                  }
+                                                  #status:nth-child(2) {
+                                                    position:absolute;
+                                                    -webkit-animation: pulse 2s infinite .3s;
+                                                  }
+                                                  #status:nth-child(3) {
+                                                    position:absolute;
+                                                    -webkit-animation: pulse 2s infinite .6s;
+                                                  }
+                                              </style> 
+                              </div>
+                            <br>
+
+                          </div>
+                    </div>
+                      
+                    <!--(reasons)-->
+                    <div class="row" style="padding: 0;">
+                        <div class="col-md" style="text-align: center;">
+                        <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="why-icon" style="width:25px">
+                        <p class="why-text">Cardless payments after this purchase</p>
+                        
+                        </div>
+                        <div class="col-md" style="text-align: center;">
+                        <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="why-icon" style="width:25px">
+                        <p class="why-text">24/7 customer service</p>  
+                                        
+                          </div> 
+                        <div class="col-md" style="text-align: center;">
+                        <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="why-icon" style="width:25px">
+                        <p class="why-text">No contract</p>
+                        
+                            </div>
+                        </div>
+
                 </div>
-              <br>
-
-            </div>
-      </div>
-          
-  </div>
 
                 <!--Checkout Divider-->
                 <div class="col-md-1" id='divider'>
