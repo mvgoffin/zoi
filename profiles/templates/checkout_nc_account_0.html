@@ -13,9 +13,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!--lightbox-->
     <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
@@ -74,11 +74,6 @@
             margin: 0;
             }
   
-          .header{
-            background-color: #000031;
-            padding: 25px;
-          }
-
           .heading{
           font-family: 'Avenir', sans-serif;
           padding-bottom: 15px;
@@ -142,15 +137,6 @@
   
   
       /**ids**/
-
-          #banner-title-ec {
-            background-image: linear-gradient(to bottom, #1E2671, #589AD2);
-            padding-top:19px;
-          }
-
-          #banner-intro-payg {
-            background: #EFEFEF;
-          }
 
           #product-img {
             width: 80%;
@@ -230,9 +216,10 @@
         
       
       /**Bootstrap Sections**/
-        .col-md-3{
+        .col-md-6{
+          padding: 0;
+        }.col-md-3{
           padding: 20px;
-          
         }
           
         .col-sm-6{
@@ -242,10 +229,13 @@
         .col-sm-5{
             padding: 0px;
         }
+
+        .col-sm {
+          padding: 0px;
+        }
   
         @media only screen and (max-width: 990px) {
-                  
-                  .home-small-1, .col-sm-4, li, .heading, .heading-ec, #register-form, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
+          .row, .col-sm, #header-logo, .open-slide, .home-small-1, .col-sm-4, li, .heading, .heading-ec, #register-form, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
                       margin-left:0 !important;
                       margin-right:0 !important;
                       padding-left: 15px !important;
@@ -263,11 +253,6 @@
                       width: 100%;
                       display: block;
                       margin: auto;
-                    }
-  
-                  #security-badge{
-                    margin: auto;
-                    display: block;
                     }
            }
   
@@ -342,7 +327,7 @@
         text-align: center;
         margin: 0 auto 10px auto;
         border-radius: 50%;
-        background-color: white;  
+        background-color: #F8F8F8;  
         position: relative;
         z-index: 100;
       }
@@ -387,9 +372,84 @@
 
 
     
-    <!--Section 1: Header-->
-    <header class='header'>
-      </header>
+  <!--Section 1: Navigation Menu-->
+  <header>
+      <div style="padding:5px;margin:0px;">
+          <p style="margin:0px;text-align:center">announcement</p>
+        </div>
+      
+        <nav class="navbar">
+            <a href='https://www.marcofortelefonicauk.com' class="navbar-brand"><img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" id="header-logo"></a>
+            
+            <button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;">
+                <span class="open-slide" style="text-align:right; background:transparent;">
+                    <a href="#" onclick='openSlideMenu()'>
+                      <svg width="25" height='25'>
+                        <path d='M0,5 30,5' stroke='#FFFFFF' 
+                        stroke-width='4'/>
+                        <path d='M0,14 30,14' stroke='#FFFFFF' 
+                        stroke-width='4'/>
+                        <path d='M0,23 30,23' stroke='#FFFFFF' 
+                        stroke-width='4'/>
+                      </svg>
+                    </a>
+                  </span>
+            </button2>
+            
+            <div class="navbar-collapse collapse" id="collapsingNavbar4">
+                <ul class="navbar-nav">
+                    <li class="nav-item active2">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Unlock Value Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pay As You Go +</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <style>
+            .navbar {
+              background: #000031;
+              padding: 0;
+            }
+            
+            .nav-link {
+              margin-left: 30px;
+              font-family: 'Avenir', sans-serif;
+              font-size: 24px;
+              font-weight: bold;
+              color: white;
+            }
+
+            .nav-link:hover {
+              color:#3498CD;
+            }
+    
+            button2 {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-right: 30px;
+            }
+            #header-logo {
+            width: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            }
+    
+            #banner-intro-payg {
+              background: #EFEFEF;
+            }
+    
+            #banner-title-ec {
+              background-image: linear-gradient(to bottom, #1E2671, #589AD2);
+            }
+            </style>
+        </nav>
+        </header>
     
     <!--Section 2: Pay-as-you-go Banner-->
       <!--desktop-->
@@ -399,13 +459,15 @@
         </div>
 
             <!--Checkout Progress Bar -->
-    <div class="containerbar">
+    <div class="w3-container" style="background: #F8F8F8;">
         <div class="row">
+          <div class="col-lg" style="padding:20px">
             <ul class="progressbar" id="register-progressbar">
                <li class="box">Calls & Texts</li>
                  <li class="account">Phone Confirmation</li>
                  <li class='payment'>Payment</li>           
                </ul> 
+              </div>
       </div>  
       </div>
     
@@ -416,35 +478,37 @@
         <div class="w3-container">
   
           <!--Checkout Section-->
-  
-          <div class="row" style="padding-left:100px;padding-right:100px;background: white">
+          <br>
+          <div class="row" >
+            <h2 class='heading' style="padding-bottom: 30px;">Checkout</h2>
             <br>
-            <h1 class='heading'>Checkout</h1>
-            <div class='col-sm-12'>
-            </div>
-    
+          </div>
+        </div>
+    </section>
+
+
+<section>
+        <div class="w3-container">
+            <div class="row" >
                 <!--Checkout Big Bundle Selected-->
-                <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
+                <div class="col-md-6" id='cart-list-wrapper'>
                     <h3 class="home-heading">Calls & Texts</h3>
-                    <p class="home-heading"><b>Unlimited mins and texts</b></p>
-                    <br>
-                        
-                        <div class="col-sm-6" >
+                    <div class="row" style="padding:0px;margin:0px;">
+                        <div class="col-sm-4">
+                          <br>
                             <img src="https://dl.dropboxusercontent.com/s/2j4nxwhjx1w1h3i/simcard%20pluspayg.png?dl=0" id="product-img">
                           </div>
-      
-                          <div class='col-sm-6' style="padding: 0px">
-                            <br>
-                            <p class="small" style="font-weight: bold; font-size:large">Description of the bundle</p>
-                            <label class='hr'></label>
-                            <p class="price" style="text-align:left;">Item 1<span style="float:right;">£5.50</span></p>
-                            <p class="price" style="text-align:left;">Item 2<span style="float:right;">£4.50</span></p>
-                            <label class='hr'></label>
-                            <p class="price" style="text-align:left;font-weight: bold">Subtotal<span style="float:right;">£10.00</span></p>
-                            <p class="price" style="text-align:left;">UK Shipping<span style="float:right;display: inline;color:#8BB255;font-weight: bold;">FREE</span></p>
-                            <label class='hr'></label>
-                            <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£10.00</b></span></p>
-                            <div class='shipping-status'>
+                          <div class='col-sm-8'>
+                              <br>
+                              <p>4G ready sim with Unlimited minutes and Unlimited texts</p>
+                              <label class='hr'></label>
+                              <p class="price" style="text-align:left;">Big Bundle<span style="float:right;">£5.00</span></p>
+                              <label class='hr'></label>
+                              <p class="price" style="text-align:left;font-weight: bold">Subtotal<span style="float:right;">£5.00</span></p>
+                              <p class="price" style="text-align:left;">UK Shipping<span style="float:right;display: inline;color:#8BB255;font-weight: bold;">FREE</span></p>
+                              <label class='hr'></label>
+                              <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£5.00</b></span></p>
+                              <div class='shipping-status'>
                             <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
                               </div>
                                 <!--Estimated Delivery Date SCRIPT + STYLE-->
@@ -508,63 +572,48 @@
                           <br>
         
                         </div>
+                      </div>
                           
                   </div>
 
                 <!--Checkout Divider-->
-                <div class="col-sm-1" id='divider' style="padding-top:30px"></div>
+                <div class="col-md-1" id='divider'>
+                </div>
                 
                 <!--Checkout Account Form-->
-                <form method="POST" id='register-form' action="{% url 'checkout_ec_payment_0' %}">{% csrf_token %}
-                <div class="col-sm-5" id='shipping-register-form' style="padding-top:30px;">
-                  
-                  <br>
-                  <label class="home-heading" for="id_phone"><b>Phone Number</b></label>
-                  <small class='small'>For customer service and take reorders.</small>
-                  <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" id="id_phone" placeholder="🇬🇧 +44">
-                  <br> 
-                  <label class="home-heading" for="id_name"><b>Full Name</b></label>
-                  <input type="text" name="name" class="form-control" maxlength="100"  id="id_name">
-                  <br>
-                  <label class="home-heading" for="id_email"><b>Email</b></label>
-                  <small class='small'>For order updates, new deals and offers.</small>
-                  <input type="email" name="email" class="form-control" maxlength="100" id="id_email">
-                  <br>
-                  <label class="home-heading" for="id_address"><b>Shipping Address</b></label>
-                  <small class='small'> We only ship to the UK. For orders outside of the UK, please send us an email to hi@gubel.co.uk to handle your case. </small>
-                  <input type="text" name="address" class="form-control" maxlength="100" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
-                  <br>
-                  <label class="home-heading" for="id_postcode"><b>Postcode</b></label><input type="text" name="postcode" class="form-control" maxlength="7" id="id_postcode"placeholder="NW1 6DB">
-                  <br>
-                  <div class="form-group">  
-                    <button type="submit">NEXT</button>
-                  </div>
-                  <p class="terms">
-                      By continuing, you agree to our Terms of service, Privacy policy and SMS policy.      
-                  <p class="terms">
-                      All transactions are secure and encrypted</p>
-                      <div class="row">
-                          <img src="https://dl.dropboxusercontent.com/s/o9lt1h8x2wanmwp/payment-security-support%20copy.png?dl=0" id='security-badge' style="width:250px;">
-                        </div>
-                    <style>
-                        .terms {
-                          text-align: center;
-                          font-size: 12px;
-                          color: gray;
-                          padding-bottom: 15px;
-                        }
-
-                        #security-badge{
-                          margin: auto;
-                          display: block;
-                        }
-                  
-                      </style>
-                    </p>
-                  </div>
+                <form class="col-sm-5"method="POST" action="{% url 'checkout_ec_payment_0' %}">{% csrf_token %}
+                    <div id='shipping-register-form'>
+                    
+              
+                    <label class="home-heading" for="id_phone"><b>Phone Number</b></label>
+                    <small class='small'>Please confirm your phone number. You'll be able to buy Big Bundles by text exclusively. It’s quick, easy and allows you to reach us anytime with questions.</small>
+                    <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" id="id_phone" placeholder="🇬🇧 +44">
+                    <br> 
+                    <div class="form-group">  
+                      <button type="submit">NEXT</button>
+                    </div>
+                    <p class="terms">
+                        By continuing, you agree to our Terms of service, Privacy policy and SMS policy.      
+                    <p class="terms">
+                        All transactions are secure and encrypted</p>
+                        <div style="text-align: center;">
+                            <img src="https://dl.dropboxusercontent.com/s/73j0uv374gn9y32/payment-icons-1.png?dl=0" style="width:250px;">
+                          </div>
+                      <style>
+                          .terms {
+                            text-align: center;
+                            font-size: 12px;
+                            color: gray;
+                            padding-bottom: 10px;
+                          }                    
+                        </style>
+                      </p>
+                    </div>
                  </form>
 
             </div>
+
+          </div>
 
             <!--Seperation between Registration Form and Footer-->
             
