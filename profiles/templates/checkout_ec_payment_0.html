@@ -13,15 +13,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!--lightbox-->
     <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
@@ -144,22 +138,6 @@
   
       /**ids**/
 
-          #header-logo {
-            width: 50px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-left: 10px;
-            /**background-color: white;**/
-            }
-          #banner-title-ec {
-            background-image: linear-gradient(to bottom, #1E2671, #589AD2);
-            padding-top:89px;
-          }
-
-          #banner-intro-payg {
-            background: #EFEFEF;
-          }
-
           #product-img {
             width: 80%;
             background-color: #FCF9F7;
@@ -238,9 +216,10 @@
         
       
       /**Bootstrap Sections**/
-        .col-md-3{
+        .col-md-6{
+          padding: 0;
+        }.col-md-3{
           padding: 20px;
-          
         }
           
         .col-sm-6{
@@ -249,6 +228,10 @@
   
         .col-sm-5{
             padding: 0px;
+        }
+
+        .col-sm {
+          padding: 0px;
         }
   
         @media only screen and (max-width: 990px) {
@@ -282,112 +265,113 @@
       
       </style>
   
-      <!--PAYG+ CSS Checkout Progress Bar-->
-      <style type="text/css">
+  <!--PAYG+ CSS Checkout Progress Bar-->
+  <style type="text/css">
   
-      .containerbar {
-        width:100%;
-        background: #F8F8F8;
-      }
+    .containerbar {
+      width:100%;
+      background: #F8F8F8;
+    }
 
-      .cart-headline {
-            width: 100%;
-            box-shadow: 0 10px 5px -5px  #D1D1D1;
-            padding: 10px;
-            background: #F8F8F8;
-      }
-  
-      .progressbar{
-        counter-reset: step;    
-        padding: 20px;
-      }
-  
-      /**register number + text**/
-      .progressbar li {
-        list-style-type: none;
-        float: left;
-        width: 33%;
-        position: relative;
-        font-family: 'Avenir', sans-serif;
-        font-weight:800;
-        text-align: center;  
-        color: gray;
-        font-size: medium;
-      }
-  
-      /**letra y font actia**/
-      .progressbar li.account {
-        color:#8BB255;
-        font-family: 'Avenir', sans-serif;
-        font-weight:800;
-        font-size: medium;
-      }
-  
-      .progressbar li.box {
-        color:#8BB255;
-        font-family: 'Avenir', sans-serif;
-        font-weight:800;
-        font-size: medium;
-        border: #8BB255;
-      }
-  
-      /**pelota 1**/
-      .progressbar li.box::before {
-        line-height: 20px;
-        border: 4px solid #8BB255;
-      }
-  
-  
-      /**all number cirle**/
-      .progressbar li:before {
-        content: counter(step);
-        counter-increment: step;
-        width: 30px;
-        height: 30px;
-        line-height: 20px;
-        border: 4px solid #8BB255;
-        display: block;
-        text-align: center;
-        margin: 0 auto 10px auto;
-        border-radius: 50%;
-        background-color: #F8F8F8;  
-        position: relative;
-        z-index: 100;
-      }
-  
-      /**whole line**TURNED TOP to 14px***/ 
-      .progressbar li:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background-color: #8BB255;
-        top: 14px;
-        left: -50%;
-        z-index: 50;
-      }
-  
-      /**barra antes del 1, none**/
-      .progressbar li:first-child:after {
-        content: none; 
-      }
-  
-      /**barra despues del activo**/
-      .progressbar li.account:after {
-        border-color: #8BB255;
-      }
-  
-      /**current line**/
-      .progressbar li.account + li:after {
-        background-color: #8BB255;
-        height: 4px;
-      }
-      /**register area**/
-      .progressbar li.account + li::before{
-        border: 4px solid gray;
-      }
-  
-      </style>
+    .cart-headline {
+          width: 100%;
+          box-shadow: 0 10px 5px -5px  #D1D1D1;
+          padding: 10px;
+          background: #F8F8F8;
+    }
+
+    .progressbar{
+      counter-reset: step;    
+      padding: 20px;
+    }
+
+    /**register number + text**/
+    .progressbar li {
+      list-style-type: none;
+      float: left;
+      width: 33%;
+      position: relative;
+      font-family: 'Avenir', sans-serif;
+      font-weight:800;
+      text-align: center;  
+      color: gray;
+      font-size: medium;
+    }
+
+    /**letra y font actia**/
+    .progressbar li.account {
+      color:#8BB255;
+      font-family: 'Avenir', sans-serif;
+      font-weight:800;
+      font-size: medium;
+    }
+
+    .progressbar li.box {
+      color:#8BB255;
+      font-family: 'Avenir', sans-serif;
+      font-weight:800;
+      font-size: medium;
+      border: #8BB255;
+    }
+
+    /**pelota 1**/
+    .progressbar li.box::before {
+      line-height: 20px;
+      border: 4px solid #8BB255;
+    }
+
+
+    /**all number cirle**/
+    .progressbar li:before {
+      content: counter(step);
+      counter-increment: step;
+      width: 30px;
+      height: 30px;
+      line-height: 20px;
+      border: 4px solid #8BB255;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      background-color: #F8F8F8;  
+      position: relative;
+      z-index: 100;
+    }
+
+    /**whole line**TURNED TOP to 14px***/ 
+    .progressbar li:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: #8BB255;
+      top: 14px;
+      left: -50%;
+      z-index: 50;
+    }
+
+    /**barra antes del 1, none**/
+    .progressbar li:first-child:after {
+      content: none; 
+    }
+
+    /**barra despues del activo**/
+    .progressbar li.account:after {
+      border-color: #8BB255;
+    }
+
+    /**current line**/
+    .progressbar li.account + li:after {
+      background-color: #8BB255;
+      height: 4px;
+    }
+    /**register area**/
+    .progressbar li.account + li::before{
+      border: 4px solid gray;
+    }
+
+    </style>
+
 
   </head>
 
@@ -395,26 +379,17 @@
 
 
     
-    <!--Section 1: Navigation Bar-->
-    
-    <style> 
-        @media only screen and (max-width: 990px) {
-            .navbar {display: none;}
-        }
-      </style>
-      <header class='header' id="topbar">
-        <div class="w3-container">
-          <div class='row' style='padding: 0px;' id='topbar-desktop'>
-            <div class="col-lg-1"> 
-                <a href='https://www.marcofortelefonicauk.com'><img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" id="header-logo" class="center"></a>
-                </div>
-                
-            <div class="col-lg-10" id='center-navbar'>
-              </div>
-                
-            <!--<div class="col-lg-1">
-              <nav class='navbar'>
-                  <span class="open-slide" style="text-align: right;">
+  <!--Section 1: Navigation Menu-->
+  <header>
+      <div style="padding:5px;margin:0px;">
+          <p style="margin:0px;text-align:center">announcement</p>
+        </div>
+      
+        <nav class="navbar">
+            <a href='https://www.marcofortelefonicauk.com' class="navbar-brand"><img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" id="header-logo"></a>
+            
+            <button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;">
+                <span class="open-slide" style="text-align:right; background:transparent;">
                     <a href="#" onclick='openSlideMenu()'>
                       <svg width="25" height='25'>
                         <path d='M0,5 30,5' stroke='#FFFFFF' 
@@ -426,153 +401,57 @@
                       </svg>
                     </a>
                   </span>
-                </nav>
-  
-              <div id="side-menu" class="side-nav">
-                <div class=''>
-                  <a href='#' class='btn-close' onclick='closeSlideMenu()'>&times;</a>
-                  <a href='/home'>Home</a>
-                  <a href='https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0' target="_blank">Unlock Value Report</a>
-                  <a href='/payg_plus'>Visit PAYG+</a>
-                </div>
-              </div>
-  
-              <script>
-                function openSlideMenu(){
-                    document.getElementById('side-menu').style.width
-                    = '1500px';
-                    document.getElementById('main').style.marginLeft
-                    = '1500px';
-                }
-  
-                function closeSlideMenu(){
-                      document.getElementById('side-menu').style.width
-                      = '0';
-                      document.getElementById('main').style.marginLeft
-                      = '0';
-                }
-              </script>
-  
-              </div>-->
-          
+            </button2>
+            
+            <div class="navbar-collapse collapse" id="collapsingNavbar4">
+                <ul class="navbar-nav">
+                    <li class="nav-item active2">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Unlock Value Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pay As You Go +</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-        <style>
-  
-          #topbar {
-              position:absolute;
-              top: 0;
-              width: 100%;
-              z-index: 2;
-              background-color:#000031;
+    
+            <style>
+            .navbar {
+              background: #000031;
+              padding: 0;
             }
-  
-          body{
-          overflow-x: hidden;
-           }
-  
-          .navbar{
-            overflow: hidden;
-            height: 63;
-            margin:0;
-          }
-  
-          .navbar a{
-              float:right;
-              padding: 20px 15px;
-              margin-right: 10px;
-          }
-  
-          .navbar ul{
-              padding: 8px 0 0 0;
-              list-style: none;
-          }
-  
-          .side-nav{
-              height:100%;
-              width:0;
-              position: fixed;
-              z-index: 1;
-              top:0;
-              right:0;
-  
-              box-sizing: border-box;
-              border-top: 0px solid black;
-              -webkit-appearance: none !important;
-  
-              background-color: #F8F8F8;
-              overflow-x: hidden;
-              padding-top:70px;
-              transition: 0.0s;
-          }
-  
-          .side-nav a{
-              padding: 10px 20px 10px 30px;
-              margin-right: 10px;
-              text-decoration: none;
+            
+            .nav-link {
+              margin-left: 30px;
               font-family: 'Avenir', sans-serif;
-              font-size:30px;
+              font-size: 24px;
               font-weight: bold;
-              color:#1E2671;
-              text-align: right;
-              display: block;
-              top:0;
-              right: 0;
-              transition: 0.1s;
-          }
-  
-          .side-nav .btn-close{
-              position:absolute;
-              padding: 0px 20px 0px 0px;
-              color: #1E2671;
-              top:0;
-              right: 0;
-              font-size: 60px;
-          }
-  
-          #main {
-              transition: margin-left 0.5s;
-              padding:20px;
-              overflow: hidden;
-              width: 100%;
-          }
-  
-          @media only screen and (max-width: 990px) {
-              .navbar a{
-              float:right;
-              padding-right: 20px !important;
-                  }
-              
-              .center { /*mbile*/
-                float:left;
-                padding-top: 25px !important;
-                padding-left: 20px !important;
-                display: block;
-                margin-left:10px;
-                margin: auto!important;
-                text-align:center;
-                size:20px;
-                  }
-  
-              .side-nav .btn-close{
-                padding-right: 10px !important;
-                  }
-  
-              .side-nav a{
-                padding-right: 10px !important;
-                  }
-  
-              #center-navbar{
-                padding: 0 !important;
-                margin: 0 !important;
-                }
-  
-              .navbar {
-                  display: none;
-                }
+              color: white;
+            }
+    
+            button2 {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-right: 30px;
+            }
+            #header-logo {
+            width: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            }
+    
+            #banner-intro-payg {
+              background: #EFEFEF;
+            }
+    
+            #banner-title-ec {
+              background-image: linear-gradient(to bottom, #1E2671, #589AD2);
             }
             </style>
-  
+        </nav>
         </header>
     
     <!--Section 2: Pay-as-you-go Banner-->
@@ -604,7 +483,7 @@
           <!--Checkout Section-->
           <br>
           <div class="row" >
-            <h1 class='heading'>Checkout</h1>
+            <h1 class='heading' style="padding-bottom: 30px;">Checkout</h1>
             <br>
           </div>
         </div>
@@ -615,16 +494,14 @@
         <div class="w3-container">
             <div class="row" >
                 <!--Checkout Big Bundle Selected-->
-                <div class="col-sm-6" id='cart-list-wrapper' style="padding-top:30px">
+                <div class="col-md-6" id='cart-list-wrapper'>
                     <h3 class="home-heading">Calls & Texts</h3>
-                    <p class="home-heading"><b>Unlimited mins and texts</b></p>
-                    <br>
-                    
-                        <div class="col-sm-6" >
+                    <div class="row" style="padding:0px;margin:0px;">
+                        <div class="col-sm-4">
+                          <br>
                             <img src="https://dl.dropboxusercontent.com/s/2j4nxwhjx1w1h3i/simcard%20pluspayg.png?dl=0" id="product-img">
                           </div>
-      
-                          <div class='col-sm-6' style="padding: 0px">
+                          <div class='col-sm-8'>
                               <br>
                               <p>4G ready sim with Unlimited minutes and Unlimited texts</p>
                               <label class='hr'></label>
@@ -698,23 +575,25 @@
                           <br>
         
                         </div>
+                      </div>
                           
                   </div>
 
                 <!--Checkout Divider-->
-                <div class="col-sm-1" id='divider' style="padding-top:30px">
+                <div class="col-md-1" id='divider'>
                 </div>
                 
+               
                 <!--Checkout Account Form-->
                 <form class="col-sm-5"method="POST" action="{% url 'payg_plus_ec_success' %}">{% csrf_token %}
-                    <div id='shipping-register-form' style="padding-top:30px;">
+                    <div id='shipping-register-form'>
                       
-                      <br>
+                      
                         <label class="home-heading" for="card-name"><b>Name on card</b></label>
                         <input type="text" name="card-name" class="form-control" id="card-name" placeholder="">
                         <br>
 
-                       
+                      
                         <label class="home-heading" for="card-element"><b>Credit or debit card</b></label>
                         <div id="card-element" class="form-control">
                       </div>
@@ -723,30 +602,22 @@
                         <button type="submit">BUY NOW</button>
                       </div>
                       <p class="terms">
-                          By continuing, you agree to our Terms of service, Privacy policy and SMS policy.      
-                      <p class="terms">
                           All transactions are secure and encrypted</p>
-                          <div class="row">
-                              <img src="https://dl.dropboxusercontent.com/s/o9lt1h8x2wanmwp/payment-security-support%20copy.png?dl=0" id='security-badge' style="width:250px;">
+                          <div style="text-align: center;">
+                              <img src="https://dl.dropboxusercontent.com/s/73j0uv374gn9y32/payment-icons-1.png?dl=0" style="width:250px;">
                             </div>
                         <style>
                             .terms {
                               text-align: center;
                               font-size: 12px;
                               color: gray;
-                              padding-bottom: 15px;
-                            }
-
-                            #security-badge{
-                              margin: auto;
-                              display: block;
-                            }
-                      
+                              padding-bottom: 10px;
+                            }                    
                           </style>
                         </p>
-                 
+                
                     </form>
-              
+
             </div>
 
           </div>
