@@ -233,8 +233,6 @@
           width: 100%;
           height: 100%;
           background-color: transparent;
-          border-style: solid;
-          border-color:#FCF9F7;
           margin: auto;
         }
 
@@ -344,7 +342,7 @@
         **/
 
     @media only screen and (max-width: 990px) {
-      .col-sm, .col-sm-3, .col-md, .col-md-4, .centered, .customer-text {
+      .col-sm-3, .col-md, .col-md-4, .centered, .customer-text {
         margin-left:20px !important;
         margin-right:20px !important;
         padding-left: 0px !important;
@@ -353,7 +351,7 @@
     }
 
     @media only screen and (max-width: 990px) {
-                form, .page-text, .vertical-center, .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #new-customer-container  {
+    .row, .col-sm, #header-logo, .open-slide, form, .page-text, .vertical-center, .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #new-customer-container  {
                 margin-left:0 !important;
                 margin-right:0 !important;
                 padding-left: 15px !important;
@@ -369,8 +367,6 @@
                 #hero-image{
                   width: 100%;
                   background-position: center bottom;
-                  border-style: solid;
-                  border-color:#FCF9F7;
                   margin: auto;
                   display: block;
                 }
@@ -428,13 +424,13 @@
             <div class="navbar-collapse collapse" id="collapsingNavbar4">
                 <ul class="navbar-nav">
                     <li class="nav-item active2">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Unlock Value Report</a>
+                        <a class="nav-link" href="https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0" target="_blank">Unlock Value Report</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pay As You Go +</a>
+                        <a class="nav-link" href="/payg_plus">Pay As You Go +</a>
                     </li>
                 </ul>
             </div>
@@ -452,12 +448,17 @@
               font-weight: bold;
               color: white;
             }
-    
+
+            .nav-link:hover {
+              color:#3498CD;
+            }
+
             button2 {
               padding-top: 10px;
               padding-bottom: 10px;
               padding-right: 30px;
             }
+
             #header-logo {
             width: 50px;
             padding-top: 10px;
@@ -481,7 +482,7 @@
       <!--desktop-->
       <div >
           <div class='web' >
-              <img src="https://dl.dropboxusercontent.com/s/aqp8mrzufpl0uwa/banner-3.png?dl=0" id="hero-image" class="product">
+              <img src="https://dl.dropboxusercontent.com/s/aqp8mrzufpl0uwa/banner-3.png?dl=0" id="hero-image">
               <!--<div class="payg">Pay-as-you-go +</div>
               <br>
               <div class="centered">Never waste time topping up again</div>-->
@@ -489,8 +490,8 @@
       </div>
       <!--mobile-->
       <div >
-            <div class='mob' style="padding-top:71px;">
-              <img src="https://dl.dropboxusercontent.com/s/sfgwjd8txeui3pg/banner-m-2.png?dl=0" id="hero-image" class="product">
+            <div class='mob'>
+              <img src="https://dl.dropboxusercontent.com/s/sfgwjd8txeui3pg/banner-m-2.png?dl=0" id="hero-image">
             </div>
       </div>
         <style>
@@ -581,7 +582,7 @@
       <div class="w3-container"> 
           <br> 
             <div class="row"> 
-                <h3 class="heading">Why choose Pay As You Go +</h3>
+                <h2 class="heading">Why choose Pay As You Go +</h2>
               </div>
           </div>
         <!--(reasons)-->

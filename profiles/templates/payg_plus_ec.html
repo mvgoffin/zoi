@@ -302,18 +302,17 @@
         }
         **/
 
-    @media only screen and (max-width: 990px) {
-      .col-sm, .col-sm-3, .col-md, .col-md-4, {
-        margin-left: 20px !important;
-        margin-right: 20px !important;
+        @media only screen and (max-width: 990px) {
+      .col-sm-3, .col-md, .col-md-4, .centered, .customer-text {
+        margin-left:20px !important;
+        margin-right:20px !important;
         padding-left: 0px !important;
         padding-right: 0px !important;
-
       }
     }
 
     @media only screen and (max-width: 990px) {
-                form, .page-text, .vertical-center, .heading-ec , .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #banner-intro-ec{
+      .row, .col-sm, #header-logo, .open-slide, form, .page-text, .vertical-center, .heading-ec , .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #banner-intro-ec{
                 margin-left:0 !important;
                 margin-right:0 !important;
                 padding-left: 15px !important;
@@ -414,6 +413,10 @@
           color: white;
         }
 
+        .nav-link:hover {
+              color:#3498CD;
+            }
+
         button2 {
           padding-top: 10px;
           padding-bottom: 10px;
@@ -451,7 +454,7 @@
     <!--Section 3: What is Pay-as-you-go Plus-->
     <div class="w3-container" id="banner-intro-payg">   
         <div class="row">
-            <h3 class="heading">Select your favourite Big Bundle to start upgrade</h3>
+            <h2 class="heading">Select your favourite Big Bundle to start upgrade</h2>
             <p class='page-text'>Whether you're looking for data or just mins, there's a Big Bundle for everyone. All Big Bundles include Priority, so you can enjoy the full experience.</p> 
             <br>
             <br>
@@ -546,7 +549,12 @@
                           </form>
                       </div>
                     <!--Extra Column-->
-                   <div class="col-sm" style="background: transparent;box-shadow: 0 1px 5px 0 #F8F8F8;;-webkit-transition: box-shadow 150ms ease;">
+                   <div class="col-sm" id='column' style="background: transparent;box-shadow: 0 1px 5px 0 #F8F8F8;;-webkit-transition: box-shadow 150ms ease;">
+                    <style>
+                      @media only screen and (max-width: 890px) {
+                          #column {display: none;}
+                      }
+                    </style>
                     </div>
             </div>
         </div>
@@ -559,7 +567,7 @@
       <div class="w3-container"> 
           <br> 
             <div class="row"> 
-                <h3 class="heading">Why choose Pay As You Go +</h3>
+                <h2 class="heading">Why choose Pay As You Go +</h2>
               </div>
           </div>
         <!--(reasons)-->
@@ -594,9 +602,7 @@
           <div class="row">
             <h3 class="heading">FAQs</h3>
           </div>
-          <br>
-          <br>
-
+          
         </div>
       <!--(questions)-->
        <div class="w3-container">
