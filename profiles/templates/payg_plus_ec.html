@@ -63,6 +63,8 @@
         .row{
           padding-left: 150px;
           padding-right: 150px;
+          margin-right:0px;
+          margin-left:0px;
         }
 
         .heading-ec{
@@ -78,7 +80,6 @@
 
         .heading{
           font-family: 'Avenir', sans-serif;
-          padding-top: 35px;
           padding-bottom: 15px;
           text-align: left;
           font-weight: 800;
@@ -356,6 +357,120 @@
                   }
       }
       </style>
+    
+          <!--PAYG+ CSS Checkout Progress Bar-->
+          <style type="text/css">
+            #register-progressbar {
+                  box-sizing: border-box;
+                  display: block;
+                  margin-left:  180px;
+                  margin-right:  180px;
+                  padding-bottom: 50px;
+                }
+      
+            .containerbar {
+              width:100%;
+              background: #F8F8F8;
+            }
+      
+            .cart-headline {
+                  width: 100%;
+                  box-shadow: 0 10px 5px -5px  #D1D1D1;
+                  padding: 10px;
+                  background: #F8F8F8;
+            }
+        
+            .progressbar{
+              counter-reset: step;    
+              padding: 20px;
+            }
+        
+            /**register number + text**/
+            .progressbar li {
+              list-style-type: none;
+              float: left;
+              width: 33%;
+              position: relative;
+              font-family: 'Avenir', sans-serif;
+              font-weight:800;
+              text-align: center;  
+              color: gray;
+              font-size: medium;
+            }
+        
+            /**letra y font actia**/
+            .progressbar li.account {
+              color:gray;
+              font-family: 'Avenir', sans-serif;
+              font-weight:800;
+              font-size: medium;
+            }
+        
+            .progressbar li.box {
+              color:gray;
+              font-family: 'Avenir', sans-serif;
+              font-weight:800;
+              font-size: medium;
+              border: gray;
+            }
+        
+            /**pelota 1**/
+            .progressbar li.box::before {
+              line-height: 20px;
+              border: 4px solid gray;
+            }
+        
+        
+            /**all number cirle**/
+            .progressbar li:before {
+              content: counter(step);
+              counter-increment: step;
+              width: 30px;
+              height: 30px;
+              line-height: 20px;
+              border: 4px solid gray;
+              display: block;
+              text-align: center;
+              margin: 0 auto 10px auto;
+              border-radius: 50%;
+              background-color: #F8F8F8;  
+              position: relative;
+              z-index: 100;
+            }
+        
+            /**whole line**TURNED TOP to 14px***/ 
+            .progressbar li:after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 4px;
+              background-color: gray;
+              top: 14px;
+              left: -50%;
+              z-index: 50;
+            }
+        
+            /**barra antes del 1, none**/
+            .progressbar li:first-child:after {
+              content: none; 
+            }
+        
+            /**barra despues del activo**/
+            .progressbar li.account:after {
+              border-color: gray;
+            }
+        
+            /**current line**/
+            .progressbar li.account + li:after {
+              background-color: gray;
+              height: 4px;
+            }
+            /**register area**/
+            .progressbar li.account + li::before{
+              border: 4px solid gray;
+            }
+        
+            </style>
 
   </head>
 
@@ -451,16 +566,34 @@
           <br>
         </div>
 
-    <!--Section 3: What is Pay-as-you-go Plus-->
-    <div class="w3-container" id="banner-intro-payg">   
-        <div class="row">
-            <h2 class="heading">Select your favourite Big Bundle to start upgrade</h2>
-            <p class='page-text'>Whether you're looking for data or just mins, there's a Big Bundle for everyone. All Big Bundles include Priority, so you can enjoy the full experience.</p> 
-            <br>
+            <!--Checkout Progress Bar -->
+            <div class="w3-container" style="background: #F8F8F8;">
+                <div class="row">
+                  <div class="col-lg" style="padding:20px">
+                    <ul class="progressbar" id="register-progressbar">
+                       <li class="box">Big Bundle</li>
+                         <li class="account">Phone Confirmation</li>
+                         <li class='payment'>Payment</li>           
+                       </ul> 
+                      </div>
+              </div>  
+              </div>
+            
+              <label class="cart-headline"></label>
+
+        <!--Section 3: Account Registration--> 
+    <section>
+        <div class="w3-container">
+          <br>
+          <div class="row" >
+              <h2 class="heading">Select your favourite Big Bundle to start upgrade</h2>
+              <p class='page-text'>Whether you're looking for data or just mins, there's a Big Bundle for everyone. All Big Bundles include Priority, so you can enjoy the full experience.</p> 
             <br>
           </div>
-      </div>
+        </div>
+    </section>
     
+  
     <!-- Section 4: Shop Pay-as-you-go Plus-->
       <div class="w3-container">
           <br>
@@ -610,9 +743,14 @@
           
       <input type="button" value="How do I buy Big Bundles?" class="accordion"></input>
       <div class="panel">
-      <p class='product-small'>Buying Big Bundles is now simple. ‘Select’ your Big Bundle & follow the instructions. Once you register your phone number and payment information, we’ll deliver your Big Bundle SIM pre-loaded. Then you can easily message us at 21300 and re-order at new Big Bundle at your convenience (your account information is saved). We're available anytime.</p>
+      <p class='product-small'>Buying Big Bundles is now simple. 'Select' your Big Bundle & follow the instructions. Once you register your phone number and payment information, we’ll deliver your Big Bundle SIM pre-loaded. Then you can easily message us at 21300 and re-order at new Big Bundle at your convenience (your account information is saved). We're available anytime.</p>
       </div>
 
+      <input type="button" value="What happens to my data upon upgrading?" class="accordion"></input>
+      <div class="panel">
+      <p class='product-small'>If you already have a Big Bundle activated, we’ll add remaining data to the new Big Bundle.</p>
+      </div>
+      
       <input type="button" value="Why do I have to enter my payment info?" class="accordion"></input>
       <div class="panel">
       <p class='product-small'>We ask for this now to make your life easier, topping-up is a thing of the past — forget pulling out your payment card and re-entering it every time. Your information is encrypted and stored with our credit card processor — we do not have access to your credit card data. You're only charged when you text us to buy a Big Bundle or a Bolt on. </p>
@@ -626,11 +764,6 @@
       <input type="button" value="Will I be charged upon registering?" class="accordion"></input>
       <div class="panel">
       <p class='product-small'>No. You won't be charged until you text to confirm your Big Bundle purchase.</p>
-      </div>
-
-      <input type="button" value="When will my PAYG+ SIM ship?" class="accordion"></input>
-      <div class="panel">
-      <p class='product-small'>Your SIM will arrive between 2 to 3 days to your address.</p>
       </div>
 
 <br>
