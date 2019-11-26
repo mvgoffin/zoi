@@ -64,6 +64,8 @@
           .row{
               padding-left: 150px;
               padding-right: 150px;
+              margin-right:0px;
+              margin-left:0px;
             }
   
           .home-heading{
@@ -108,10 +110,10 @@
           .small{
             display: inline-block;
             font-weight: 400;
-            color: black;
+            color: #1E2671;
             text-align:left;
             line-height: 25px;
-            font-size: medium;
+            font-size: small;
             margin: 0px;
             }
   
@@ -121,18 +123,15 @@
             width: 100%;
             height: 40px;
             padding: 10px 12px;
-            border: 1px solid black;
+            border:transparent;
+            border-bottom: 1px solid #000031;
             border-radius: 0px;
-            background-color: white;
-            /**box-shadow: 0 1px 3px 0 #e6ebf1;**/
-            -webkit-transition: box-shadow 150ms ease;
-            transition: box-shadow 150ms ease;
-            -webkit-appearance: none !important;
+            background-color: #F8F8F8;
           }
   
           .form-control:focus {
-            box-shadow: 0 1px 3px 0 #FCF9F7;
-            border: 2px solid black;
+            box-shadow: 0 1px 3px 0 rgb(236, 236, 236);
+            border: 1px solid #000031;
           }
   
   
@@ -147,14 +146,6 @@
             transition: box-shadow 150ms ease;
             border-radius: 5px;
 
-          }
-  
-          #register-progressbar {
-            box-sizing: border-box;
-            display: block;
-            margin-left:  180px;
-            margin-right:  180px;
-            padding-bottom: 50px;
           }
   
           #register-form {
@@ -261,7 +252,14 @@
   
       <!--PAYG+ CSS Checkout Progress Bar-->
       <style type="text/css">
-  
+      #register-progressbar {
+            box-sizing: border-box;
+            display: block;
+            margin-left:  180px;
+            margin-right:  180px;
+            padding-bottom: 50px;
+          }
+
       .containerbar {
         width:100%;
         background: #F8F8F8;
@@ -375,7 +373,7 @@
   <!--Section 1: Navigation Menu-->
   <header>
       <div style="padding:5px;margin:0px;">
-          <p style="margin:0px;text-align:center">announcement</p>
+          <p style="margin:0px;text-align:center">This is a customer journey demo with no integrations (database, payment gateway, etc.). Thanks for your time.</p>
         </div>
       
         <nav class="navbar">
@@ -399,13 +397,13 @@
             <div class="navbar-collapse collapse" id="collapsingNavbar4">
                 <ul class="navbar-nav">
                     <li class="nav-item active2">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Unlock Value Report</a>
+                        <a class="nav-link" href="https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0" target="_blank">Unlock Value Report</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pay As You Go +</a>
+                        <a class="nav-link" href="/payg_plus">Pay As You Go +</a>
                     </li>
                 </ul>
             </div>
@@ -445,7 +443,8 @@
             }
     
             #banner-title-ec {
-              background-image: linear-gradient(to bottom, #1E2671, #589AD2);
+              background-image:url(https://dl.dropboxusercontent.com/s/b85r86o2x6f7i5e/banner-new-customers.png?dl=0);
+          /**background-image: linear-gradient(to bottom, #1E2671, #589AD2); **/
             }
             </style>
         </nav>
@@ -455,7 +454,7 @@
       <!--desktop-->
       <div class="row" id="banner-title-ec">
           <br>
-          <h1 class="heading-ec">Existing Customer</h1>
+          <h1 class="heading-ec">New Customer</h1>
         </div>
 
             <!--Checkout Progress Bar -->
@@ -463,8 +462,8 @@
         <div class="row">
           <div class="col-lg" style="padding:20px">
             <ul class="progressbar" id="register-progressbar">
-               <li class="box">Calls & Texts</li>
-                 <li class="account">Phone Confirmation</li>
+               <li class="box">Big Bunlde</li>
+                 <li class="account">Account</li>
                  <li class='payment'>Payment</li>           
                </ul> 
               </div>
@@ -480,11 +479,43 @@
           <!--Checkout Section-->
           <br>
           <div class="row" >
-            <h2 class='heading' style="padding-bottom: 30px;">Checkout</h2>
+            <h2 class='heading' style="padding-bottom: 30px;">Checkout<span style="float:right;"><a href="#" data-featherlight="#nutri-facts-gubel"class='product-small-lightbox'>Info?</a></span></h2> 
             <br>
           </div>
         </div>
     </section>
+    <div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1554472144065_8906"><div class="sqs-block-content"> <div style="display:none;">
+      <div id="nutri-facts-gubel">
+        <br>
+        <img src="" alt="calm-nutri-facts" style="width:200px;height:31.598 pxpx;">
+        <br>
+        <br>
+        <p class='sub-heading'>TEST</p>
+        <p class='product-small'>test</p>
+        <br>
+        <br>
+        </div>
+        <style>
+        .product-small-lightbox{
+          text-align:left;
+          padding-bottom: 1px;
+          padding-top: 2px;
+          font-size:smaller;
+          font-weight: 200;
+          color:gray;
+          line-height: 1.4;
+          text-decoration-line: underline;
+             }
+             .sub-heading{
+              font-family: 'titling-gothic-fb', sans-serif;
+              margin: 0px;
+              text-align: left;
+              font-weight: 400;
+              display:block
+            }
+             </style>
+    </div></div></div>
+        
 
 
 <section>
@@ -509,69 +540,69 @@
                               <label class='hr'></label>
                               <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£5.00</b></span></p>
                               <div class='shipping-status'>
-                            <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
-                              </div>
-                                <!--Estimated Delivery Date SCRIPT + STYLE-->
-                                        <!--SCRIPT-->
-                                          <script>
-                                            var months = ["Jan", "Febr", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-                                            n =  new Date();
-                                            n.setDate(n.getDate() + 5);
-                                            y = n.getFullYear();
-                                            m = n.getMonth();
-                                            d = n.getDate();
-                                            document.getElementById("date").innerHTML = d + " " + months[m] + " " + y;
-                                          </script>
-                                        <!--STYLE-->
-                                          <style>
-                                            .shipping-status{
-                                              text-align:right;
-                                            }
-        
-                                            .text-date{
-                                              color:gray;
-                                              display:inline-block;
-                                              font-size: 10px;
-                                              font-weight: bold;
-                                              text-align:right;
-                                            }
-                                            .date{
-                                              color:#8BB255;
-                                              display:inline-block;
-                                              font-size: 10px;
-                                              font-weight: bold;
-                                            }
-        
-                                            .status{
-                                              background-color: #8BB255;
-                                              border-radius: 50%;
-                                              width: 20px;
-                                              height: 20px;
-                                              text-align:right;
-                                            }
-        
-                                            @-webkit-keyframes pulse {
-                                                0%{transform:scale(.1);opacity: 0;}
-                                                50%{ opacity: .4;}
-                                                100%{transform: scale(1.6); opacity: 0;}
-                                              }
-        
-                                              #status {
-                                                position:absolute;
-                                                -webkit-animation: pulse 2s infinite;
-                                              }
-                                              #status:nth-child(2) {
-                                                position:absolute;
-                                                -webkit-animation: pulse 2s infinite .3s;
-                                              }
-                                              #status:nth-child(3) {
-                                                position:absolute;
-                                                -webkit-animation: pulse 2s infinite .6s;
-                                              }
-                                          </style> 
-                          <br>
-        
-                        </div>
+                                  <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
+                                    <!--Estimated Delivery Date SCRIPT + STYLE-->
+                                              <!--SCRIPT-->
+                                              <script>
+                                                  var months = ["Jan", "Febr", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                                                  n =  new Date();
+                                                  n.setDate(n.getDate() + 5);
+                                                  y = n.getFullYear();
+                                                  m = n.getMonth();
+                                                  d = n.getDate();
+                                                  document.getElementById("date").innerHTML = d + " " + months[m] + " " + y;
+                                                </script>
+                                              <!--STYLE-->
+                                                <style>
+                                                  .shipping-status{
+                                                    text-align:right;
+                                                  }
+              
+                                                  .text-date{
+                                                    color:gray;
+                                                    display:inline-block;
+                                                    font-size: 10px;
+                                                    font-weight: bold;
+                                                    text-align:right;
+                                                  }
+                                                  .date{
+                                                    color:#8BB255;
+                                                    display:inline-block;
+                                                    font-size: 10px;
+                                                    font-weight: bold;
+                                                  }
+              
+                                                  .status{
+                                                    background-color:#8BB255;
+                                                    border-radius: 50%;
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    text-align:right;
+                                                  }
+              
+                                                  @-webkit-keyframes pulse {
+                                                      0%{transform:scale(.1);opacity: 0;}
+                                                      50%{ opacity: .4;}
+                                                      100%{transform: scale(1.6); opacity: 0;}
+                                                    }
+              
+                                                    #status {
+                                                      position:absolute;
+                                                      -webkit-animation: pulse 2s infinite;
+                                                    }
+                                                    #status:nth-child(2) {
+                                                      position:absolute;
+                                                      -webkit-animation: pulse 2s infinite .3s;
+                                                    }
+                                                    #status:nth-child(3) {
+                                                      position:absolute;
+                                                      -webkit-animation: pulse 2s infinite .6s;
+                                                    }
+                                                </style> 
+                                </div>
+                              <br>
+
+                            </div>
                       </div>
                           
                   </div>
@@ -584,11 +615,32 @@
                 <form class="col-sm-5"method="POST" action="{% url 'checkout_ec_payment_0' %}">{% csrf_token %}
                     <div id='shipping-register-form'>
                     
-                    <p class='page-text' style="color: #8BB255;font-weight: bold;">Phone number verified!</p>
-                    <label class="home-heading" for="id_phone"><b>Phone Number</b></label>
-                    <small class='small'>Please confirm your phone number. You'll be able to buy Big Bundles by text exclusively. It’s quick, easy and allows you to reach us anytime with questions.</small>
-                    <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" id="id_phone" placeholder="🇬🇧 +44">
-                    <br> 
+                  <label class="home-heading" for="id_phone"><b>Phone Number</b></label>
+                  <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" id="id_phone" placeholder="🇬🇧 +44">
+                  <small class='small'>For customer service and buy Big Bundles/Bolt Ons.</small>
+                  <br> 
+                  
+                  <br> 
+                  <label class="home-heading" for="id_name"><b>Full Name</b></label>
+                  <input type="text" name="name" class="form-control" maxlength="100" id="id_name">
+                  <br>
+                  
+                  
+                  <label class="home-heading" for="id_email"><b>Email</b></label>
+                  <input type="email" name="email" class="form-control" maxlength="100" id="id_email">
+                  <small class='small'>For order updates, new deals and offers.</small>
+                  <br> 
+                  
+                  <br> 
+                  <label class="home-heading" for="id_address"><b>Shipping Address</b></label>
+                  <input type="text" name="address" class="form-control" maxlength="100" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
+                  <small class='small'>We'll deliver your preloaded Pay As You Go + sim to this address.</small>
+                  <br> 
+                  
+                  <br> 
+                  <label class="home-heading" for="id_postcode"><b>Postcode</b></label><input type="text" name="postcode" class="form-control" maxlength="7" id="id_postcode"placeholder="NW1 6DB">
+                  <br>
+
                     <div class="form-group">  
                       <button type="submit">NEXT</button>
                     </div>
