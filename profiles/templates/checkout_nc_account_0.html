@@ -135,7 +135,7 @@
           }
 
           .why-text {
-          font-size:medium;
+          font-size:small;
           padding-top: 5px;
           text-align:center;
           line-height:normal;
@@ -465,7 +465,7 @@
         </div>
 
             <!--Checkout Progress Bar -->
-    <div class="w3-container" style="background: #F8F8F8;">
+    <div class="w3-container sticky-top" style="background: #F8F8F8;">
         <div class="row">
           <div class="col-lg" style="padding:20px">
             <ul class="progressbar" id="register-progressbar">
@@ -530,7 +530,82 @@
 <section>
         <div class="w3-container">
             <div class="row" >
-                <!--Checkout Big Bundle Selected-->
+
+                <!--Checkout Account Form-->
+                <form class="col-sm-5"method="POST" action="{% url 'checkout_nc_payment_0' %}">{% csrf_token %}
+                    <div id='shipping-register-form'>
+                    
+                  <br> 
+                  <label class="home-heading" for="id_name"><b>Full Name</b></label>
+                  <input type="text" name="name" class="form-control" maxlength="100" id="id_name">
+                  <br>
+                  
+                  
+                  <label class="home-heading" for="id_email"><b>Email</b></label>
+                  <input type="email" name="email" class="form-control" maxlength="100" id="id_email">
+                  <small class='small'>For order updates, new deals and offers.</small>
+                  <br> 
+                  
+                  <br> 
+                  <label class="home-heading" for="id_address"><b>Address</b></label>
+                  <input type="text" name="address" class="form-control" maxlength="100" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
+                  <small class='small'>We'll deliver your preloaded Pay As You Go + sim to this address.</small>
+                  <br> 
+                  
+                  <br> 
+                  <label class="home-heading" for="id_postcode"><b>Postcode</b></label><input type="text" name="postcode" class="form-control" maxlength="7" id="id_postcode"placeholder="NW1 6DB">
+                  <br>
+
+                    <div class="form-group">  
+                      <button type="submit">NEXT</button>
+                    </div>
+                    <p class="terms">
+                        By continuing, you agree to our Terms of service, Privacy policy and SMS policy.      
+                    <p class="terms">
+                        All transactions are secure and encrypted</p>
+                        <div style="text-align: center;">
+                            <img src="https://dl.dropboxusercontent.com/s/73j0uv374gn9y32/payment-icons-1.png?dl=0" style="width:250px;">
+                          </div>
+                      <style>
+                          .terms {
+                            text-align: center;
+                            font-size: 12px;
+                            color: gray;
+                            padding-bottom: 10px;
+                          }                    
+                        </style>
+                      </p>
+
+                      <!--(reasons)-->
+                      <br>
+                      <div class="row" style="padding: 0;">
+                          <div class="col-md" style="text-align: center;">
+                          <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="why-icon" style="width:30px">
+                          <p class="why-text">Cardless payments after this purchase</p>
+                          
+                          </div>
+                          <div class="col-md" style="text-align: center;">
+                          <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="why-icon" style="width:30px">
+                          <p class="why-text">24/7 customer service</p>  
+                                          
+                            </div> 
+                          <div class="col-md" style="text-align: center;">
+                          <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="why-icon" style="width:30px">
+                          <p class="why-text">No contract</p>
+                          
+                              </div>
+                          </div>
+
+                    </div>
+                 </form>
+
+
+                 <!--Checkout Divider-->
+                <div class="col-md-1" id='divider'>
+                  </div>
+
+                
+                   <!--Checkout Big Bundle Selected-->
                 <div class="col-md-6" id='cart-list-wrapper'>
                     <h3 class="home-heading">Calls & Texts</h3>
                     <div class="row" style="padding:0px;margin:0px;">
@@ -613,79 +688,8 @@
 
                             </div>
                       </div>
-                          
-                        <!--(reasons)-->
-                        <div class="row" style="padding: 0;">
-                            <div class="col-md" style="text-align: center;">
-                            <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="why-icon" style="width:25px">
-                            <p class="why-text">Cardless payments after this purchase</p>
-                            
-                            </div>
-                            <div class="col-md" style="text-align: center;">
-                            <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="why-icon" style="width:25px">
-                            <p class="why-text">24/7 customer service</p>  
-                                            
-                              </div> 
-                            <div class="col-md" style="text-align: center;">
-                            <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="why-icon" style="width:25px">
-                            <p class="why-text">No contract</p>
-                            
-                                </div>
-                            </div>
-
-
-                  </div>
-
-                <!--Checkout Divider-->
-                <div class="col-md-1" id='divider'>
-                </div>
                 
-                <!--Checkout Account Form-->
-                <form class="col-sm-5"method="POST" action="{% url 'checkout_nc_payment_0' %}">{% csrf_token %}
-                    <div id='shipping-register-form'>
-                    
-                  <br> 
-                  <label class="home-heading" for="id_name"><b>Full Name</b></label>
-                  <input type="text" name="name" class="form-control" maxlength="100" id="id_name">
-                  <br>
-                  
-                  
-                  <label class="home-heading" for="id_email"><b>Email</b></label>
-                  <input type="email" name="email" class="form-control" maxlength="100" id="id_email">
-                  <small class='small'>For order updates, new deals and offers.</small>
-                  <br> 
-                  
-                  <br> 
-                  <label class="home-heading" for="id_address"><b>Address</b></label>
-                  <input type="text" name="address" class="form-control" maxlength="100" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
-                  <small class='small'>We'll deliver your preloaded Pay As You Go + sim to this address.</small>
-                  <br> 
-                  
-                  <br> 
-                  <label class="home-heading" for="id_postcode"><b>Postcode</b></label><input type="text" name="postcode" class="form-control" maxlength="7" id="id_postcode"placeholder="NW1 6DB">
-                  <br>
-
-                    <div class="form-group">  
-                      <button type="submit">NEXT</button>
-                    </div>
-                    <p class="terms">
-                        By continuing, you agree to our Terms of service, Privacy policy and SMS policy.      
-                    <p class="terms">
-                        All transactions are secure and encrypted</p>
-                        <div style="text-align: center;">
-                            <img src="https://dl.dropboxusercontent.com/s/73j0uv374gn9y32/payment-icons-1.png?dl=0" style="width:250px;">
-                          </div>
-                      <style>
-                          .terms {
-                            text-align: center;
-                            font-size: 12px;
-                            color: gray;
-                            padding-bottom: 10px;
-                          }                    
-                        </style>
-                      </p>
-                    </div>
-                 </form>
+                  </div>
 
             </div>
 
