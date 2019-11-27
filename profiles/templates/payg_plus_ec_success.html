@@ -501,9 +501,18 @@
     <div class="w3-container">   
         <div class="row" id='banner-intro-payg'>
             <h2 class="heading">Thanks for choosing us.</h2>
-            <p class="customer-text"></p>
-            <br>
-            <br>
+        </div>
+    </div>
+            
+            <form method="POST" style="width: 100%;padding-left:300px;padding-right:300px;background:#EFEFEF;" action="{% url '/home' %}">{% csrf_token %}
+                <!--<img src="https://dl.dropboxusercontent.com/s/0f6ptdu1a4qrom5/existing%20customer-1.png?dl=0" id='new-customer-image' style="width:400px">--> 
+                <div id="new-customer-container-button">
+                    <button type="submit" style="text-align: center;" >Return Homepage</button> 
+                    </div>
+                    <br>
+                </form>
+              
+        
           </div>
       </div>
 
