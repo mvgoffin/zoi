@@ -479,63 +479,18 @@
     
       <label class="cart-headline"></label>
 
-    <!--Section 1: Account Registration--> 
-    <section>
-        <div class="w3-container">
-  
-          <!--Checkout Section-->
-          <br>
-          <div class="row" >
-            <h2 class='heading' style="padding-bottom: 30px;">Checkout</h2> 
-            <br>
-          </div>
-        </div>
-    </section>
-
-      <!--<span style="float:right;"><a href="#" data-featherlight="#nutri-facts-gubel"class='product-small-lightbox'>Info?</a></span>
-        <div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1554472144065_8906"><div class="sqs-block-content"> <div style="display:none;">
-        <div id="nutri-facts-gubel">
-        <br>
-        <img src="" alt="calm-nutri-facts" style="width:200px;height:31.598 pxpx;">
-        <br>
-        <br>
-        <p class='sub-heading'>TEST</p>
-        <p class='product-small'>test</p>
-        <br>
-        <br>
-        </div>
-        <style>
-        .product-small-lightbox{
-          text-align:left;
-          padding-bottom: 1px;
-          padding-top: 2px;
-          font-size:smaller;
-          font-weight: 200;
-          color:gray;
-          line-height: 1.4;
-          text-decoration-line: underline;
-             }
-             .sub-heading{
-              font-family: 'titling-gothic-fb', sans-serif;
-              margin: 0px;
-              text-align: left;
-              font-weight: 400;
-              display:block
-            }
-             </style>
-    </div></div></div>-->
-        
-
-
+    
+<!--Section 3: Checkout Form-->
 <section>
         <div class="w3-container">
             <div class="row" >
 
                 <!--Checkout Account Form-->
                 <form class="col-sm-5"method="POST" action="{% url 'checkout_nc_payment_0' %}">{% csrf_token %}
-                    <div id='shipping-register-form'>
-                    
-                  <br> 
+                  <div id='shipping-register-form'>
+                  <br>
+                  <h3 class="home-heading">Checkout</h3>
+                  <br>
                   <label class="home-heading" for="id_name"><b>Full Name</b></label>
                   <input type="text" name="name" class="form-control" maxlength="100" id="id_name">
                   <br>
@@ -607,6 +562,7 @@
                 
                    <!--Checkout Big Bundle Selected-->
                 <div class="col-md-6" id='cart-list-wrapper'>
+                    <br>
                     <h3 class="home-heading">Calls & Texts</h3>
                     <div class="row" style="padding:0px;margin:0px;">
                         <div class="col-sm-4">

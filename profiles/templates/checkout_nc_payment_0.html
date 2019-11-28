@@ -480,20 +480,7 @@
     
       <label class="cart-headline"></label>
 
-    <!--Section 1: Account Registration--> 
-    <section>
-        <div class="w3-container">
-  
-          <!--Checkout Section-->
-          <br>
-          <div class="row" >
-            <h2 class='heading' style="padding-bottom: 30px;">Checkout</h2>
-            <br>
-          </div>
-        </div>
-    </section>
-
-
+<!--Section 3: Checkout Form-->
 <section>
         <div class="w3-container">
             <div class="row" >
@@ -501,7 +488,9 @@
                 <!--Checkout Account Form-->
                 <form class="col-sm-5"method="POST" action="{% url 'payg_plus_nc_success' %}">{% csrf_token %}
                     <div id='shipping-register-form'>
-                      
+                        <br>
+                        <h3 class="home-heading">Checkout</h3>
+                        <br>
                         <label class="home-heading" for="card-name"><b>Name on card</b></label>
                         <input type="text" name="card-name" class="form-control" id="card-name" placeholder="">
                         <br>
@@ -560,6 +549,7 @@
 
                 <!--Checkout Big Bundle Selected-->
                 <div class="col-md-6" id='cart-list-wrapper'>
+                    <br>
                     <h3 class="home-heading">Calls & Texts</h3>
                     <div class="row" style="padding:0px;margin:0px;">
                         <div class="col-sm-4">
