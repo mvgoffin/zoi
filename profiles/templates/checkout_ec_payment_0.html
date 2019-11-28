@@ -480,18 +480,16 @@
     
       <label class="cart-headline"></label>
 
-    <!--Section 1: Account Registration--> 
+    <!--Section 1: Account Registration
     <section>
         <div class="w3-container">
-  
-          <!--Checkout Section-->
           <br>
           <div class="row" >
             <h2 class='heading' style="padding-bottom: 30px;">Checkout</h2>
             <br>
           </div>
         </div>
-    </section>
+    </section>--> 
 
 
 <section>
@@ -501,7 +499,8 @@
                  <!--Checkout Account Form-->
                  <form class="col-sm-5"method="POST" action="{% url 'payg_plus_ec_success' %}">{% csrf_token %}
                     <div id='shipping-register-form'>
-                      
+                        <br>
+                        <h3 class="home-heading">Checkout</h3>
                         <p class='page-text' style="color: #8BB255;font-weight: bold;">Phone number verified!</p>
                         <label class="home-heading" for="card-name"><b>Name on card</b></label>
                         <input type="text" name="card-name" class="form-control" id="card-name" placeholder="">

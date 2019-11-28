@@ -479,19 +479,6 @@
     
       <label class="cart-headline"></label>
 
-    <!--Section 1: Account Registration
-    <section>
-        <div class="w3-container">
-  
-          <!--Checkout Section-->
-          <br>
-          <div class="row" >
-            <h2 class='heading' style="padding-bottom: 30px;">Checkout</h2>
-            <br>
-          </div>
-        </div>
-    </section>--> 
-
 
 <section>
         <div class="w3-container">
@@ -500,6 +487,7 @@
                 <!--Checkout Account Form-->
                 <form class="col-sm-5"method="POST" action="{% url 'checkout_ec_payment_0' %}">{% csrf_token %}
                     <div id='shipping-register-form'>
+                      <br>
                       <h3 class="home-heading">Checkout</h3>
               
                     <label class="home-heading" for="id_phone"><b>Phone Number</b></label>
