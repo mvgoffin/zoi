@@ -88,13 +88,6 @@
           margin: 0;
             }
 
-        .page-text {
-          font-weight: 400;
-          margin: 0px;
-          text-align:left;
-          line-height:normal;
-        }
-
         .why-text {
           font-weight: 400;
           margin: 0px;
@@ -146,10 +139,11 @@
         text-decoration: none;
         }
 
-        .customer-text{
+        .page-text{
         text-align:left;
         margin-bottom: 0px;
         font-size:medium;
+        margin-bottom: 20px;
         }
 
         .product-price{
@@ -198,8 +192,8 @@
           background: #EFEFEF;
         }
         
-        #new-customer-container {
-          background-image:url(https://dl.dropboxusercontent.com/s/0alnwf1lxe2s3jo/banner.png?dl=0);
+        #report-container {
+          background-image:url(https://dl.dropboxusercontent.com/s/0zi5g4s0e3h8fca/banner-marco-report.png?dl=0);
           box-shadow: 0 5px 10px 0 gray;
           -webkit-transition: box-shadow 150ms ease;
           transition: box-shadow 150ms ease;
@@ -209,8 +203,8 @@
           text-align: center;
         }
 
-        #ext-customer-container {
-          background-image:url(https://dl.dropboxusercontent.com/s/mvge8qvwxh6re11/banner-ext-2.png?dl=0);
+        #payg-container {
+          background-image:url(https://dl.dropboxusercontent.com/s/lujx1m8oznqts3g/banner-marco-paygplus.png?dl=0);
           box-shadow: 0 5px 10px 0 gray;
           -webkit-transition: box-shadow 150ms ease;
           transition: box-shadow 150ms ease;
@@ -220,12 +214,12 @@
           text-align: center;
         }
 
-        #new-customer-image {
+        #report-image {
           max-width: 100%;
           padding: 20px;
         }
 
-        #new-customer-container-button {
+        #report-container-button {
           padding-left: 150px;
           padding-right: 150px;
         }
@@ -355,7 +349,7 @@
         **/
 
     @media only screen and (max-width: 990px) {
-      .col-sm-3, .col-md, .col-md-4, .centered, .customer-text {
+      .col-sm-3, .col-md, .col-md-4, .centered, .page-text {
         margin-left:20px !important;
         margin-right:20px !important;
         padding-left: 0px !important;
@@ -364,7 +358,7 @@
     }
 
     @media only screen and (max-width: 990px) {
-    .row, .col-sm, #header-logo, .open-slide, form, .page-text, .vertical-center, .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #new-customer-container  {
+    .row, .col-sm, #header-logo, .open-slide, form, .vertical-center, .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #report-container  {
                 margin-left:0 !important;
                 margin-right:0 !important;
                 padding-left: 15px !important;
@@ -488,7 +482,7 @@
         </nav>
         </header>
     
-<!--Section 2: Marco for Telefonica UK Banner-->
+<!--Section 2: Banner a more connected UK-->
 <div class="w3-container">      
       <!--desktop-->
       <div class='web' >
@@ -541,21 +535,51 @@
         </div>
     </div>
 
-      
-      
 
-    
-    
 
-    <!--Section 3: What is Pay-as-you-go Plus-->
+    <!--Section 3: Introduction-->
     <div class="w3-container">   
         <div class="row" id='banner-intro-payg'>
-            <h2 class="heading">Pay As You Go+</h2>
-            <p class="customer-text">Don’t waste time topping up. We designed Pay As You Go+ to make it simple and convenient to buy the data, mins and texts you need. Buy your favourite Big Bundles by sending as little as one text, that’s it. If you already have a Pay As You Go sim, you can upgrade to Plus Plan to enjoy more flexibility.</p>
-            <br>
-            <br>
+            <div class='col-md-6'>
+              <h2 class="heading">Title</h2>
+              <p class="page-text">who are you and what is this website</p>
+            </div>
+            <div class='col-md-6'>
+              <h2 class="heading">Title</h2>
+              <p class="page-text">start introducing what to expect, from choosing to read the report to a experience our new product</p>
+            </div>
           </div>
       </div>
+
+
+
+    <!-- Section 4: Report & Customer Journey-->
+    <br>  
+    <div class="w3-container">
+          <div class="row">
+                  <!--New Customer Portal-->
+                  <div class="col-sm">
+                  <form method="POST" id='report-container' action="{% url 'payg_plus_nc' %}">{% csrf_token %}
+                      <img src="https://dl.dropboxusercontent.com/s/go5o8j28u82e413/banner-marco-report-text.png?dl=0" id='report-image' style="width:400px">  
+                      <div id="new-customer-container-button">
+                      <button type="submit">Select</button> 
+                      </div>
+                  </form>
+                  </div>
+
+                  <!--Existing Customer Portal-->
+                  <div class="col-sm">
+                      <form method="POST" id='payg-container' action="{% url 'payg_plus_ec' %}">{% csrf_token %}
+                      <img src="https://dl.dropboxusercontent.com/s/33arwi7iap2w812/banner-marco-paygplus-text.png?dl=0" id='report-image' style="width:400px">  
+                      <div id="new-customer-container-button">
+                          <button type="submit">Select</button> 
+                          </div>
+                      </form>
+                      </div>
+            </div>
+      </div>
+      <br>
+
 
 
     <!-- Section 4: Footer-->
