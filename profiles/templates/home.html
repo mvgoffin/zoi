@@ -186,8 +186,32 @@
           padding: 10px;
         }
 
+        .hr{        
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 0.5px;
+            border-color:gray;
+          } 
+
     
     /**ids**/
+
+          #photo {
+            width: 50%;
+            text-align: center;
+            background-color: #FCF9F7;
+            margin: 10px;
+            box-shadow: 0 5px 10px 0 gray;
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+            border-radius: 5px;
+
+          }
+
         #banner-intro-payg {
           background: #EFEFEF;
         }
@@ -321,14 +345,12 @@
           padding: 20px;
         }
 
-        /**
+        
         .col-sm-4 {
-          padding-bottom: 10px;
-          padding-left: 50px;
-          padding-right: 50px;
-          margin: 0px;
           text-align: center;
-        }**/
+          padding: 0;
+          margin: 0;
+        }
   
         .col-md-3{
         padding: 20px;
@@ -406,8 +428,8 @@
     <!--Something great is happening... -->
 
     <!--REAL-->
-  <!--Section 1: Navigation Menu-->
-  <header>
+<!--Section 1: Navigation Menu-->
+<header>
         <nav class="navbar">
             <a href='https://www.marcofortelefonicauk.com' class="navbar-brand"><img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" id="header-logo"></a>
             
@@ -480,7 +502,9 @@
             }
             </style>
         </nav>
-        </header>
+  </header>
+
+
     
 <!--Section 2: Banner a more connected UK-->
 <div class="w3-container">      
@@ -537,25 +561,55 @@
 
 
 
-    <!--Section 3: Introduction-->
-    <div class="w3-container">   
+<!--Section 3: Introduction-->
+<div class="w3-container">   
         <div class="row" id='banner-intro-payg'>
-            <div class='col-md-6'>
-              <h2 class="heading">Title</h2>
-              <p class="page-text">who are you and what is this website</p>
-            </div>
-            <div class='col-md-6'>
-              <h2 class="heading">Title</h2>
-              <p class="page-text">start introducing what to expect, from choosing to read the report to a experience our new product</p>
-            </div>
+          
+            <div class='row' style="padding: 0;">
+              <div class=col-sm-4 style="text-align: center;">
+                  <img src="https://dl.dropboxusercontent.com/s/p3llr8rfoc0igg4/photo.png?dl=0" id="photo">
+                </div>
+              <div class=col-sm-8>
+                  <h2 class="heading">Hi I'm Marco</h2>
+                  <p class="page-text">London, United Kingdom</p>
+                </div>
+              </div>
+
+                <p class="page-text">I want to work at O2 Telefonica UK. I started my career in Telefonica back in 2010. And after an MBA, work experience in payment industry and a stint in entrepreneurship, I decided to continue my career in the only company I’ve had the most fun and inspiration. So to give the kind of value I can bring to the team, I’d decided to do an analysis of the company and proposed a new innovative product to drive revenue and serve better today’s customer our mission to help people live better with tech, showing my passion for the company and some my skills.</p>
+                <p class="page-text">Please scroll to read an executive summary of my report. Alternatively, you can read the full report and experience the customer journey of my new product proposal.</p>
+              
+              </div>
+
+            <!--<div class='col-md-1'>
+              </div>
+
+              <div class="col-md-6" id='cart-list-wrapper'>
+                  <br>
+                  
+                  <div class="row" style="padding:0px;margin:0px;">
+                            <br>
+                            <img src="https://dl.dropboxusercontent.com/s/2j4nxwhjx1w1h3i/simcard%20pluspayg.png?dl=0" id="product-img">
+                            <p>4G ready sim with Unlimited minutes and Unlimited texts</p>
+                            <label class='hr'></label>
+                            <p class="price" style="text-align:left;">Big Bundle<span style="float:right;">£5.00</span></p>
+                            <label class='hr'></label>
+                            <p class="price" style="text-align:left;font-weight: bold">Subtotal<span style="float:right;">£5.00</span></p>
+                            <p class="price" style="text-align:left;">UK Shipping<span style="float:right;display: inline;color:#8BB255;font-weight: bold;">FREE</span></p>
+                            <label class='hr'></label>
+                            <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£5.00</b></span></p>
+                            <br>
+                    </div>
+              
+                </div>-->
+
           </div>
-      </div>
+  </div>
 
 
 
-    <!-- Section 4: Report & Customer Journey-->
-    <br>  
-    <div class="w3-container">
+<!-- Section 4: Report & Customer Journey-->
+<br>  
+<div class="w3-container">
           <div class="row">
                   <!--New Customer Portal-->
                   <div class="col-sm">
@@ -577,11 +631,13 @@
                       </form>
                       </div>
             </div>
-      </div>
-      <br>
+  </div>
+<br>
 
-    <!-- Section 5: Executive summary-->
-    <div class="w3-container">
+
+
+<!-- Section 5: Executive summary-->
+<div class="w3-container">
         <div class="row">
           <h2 class="heading">Executive Summary</h2>
           <li class="page-text">
@@ -604,7 +660,7 @@
           <br>
           <div class="headline-middle"></div>
 
-      </div>
+  </div>
 
 
 
@@ -636,10 +692,10 @@
                  </div> 
         </div>  
 
+  
         
-
-    <!-- Section 4: Footer-->
-   <footer class="w3-container" id='footer'>
+<!-- Section 7: Footer-->
+<footer class="w3-container" id='footer'>
       <style>
         #footer{
           padding: 0px;
@@ -697,11 +753,13 @@
                   </style> 
   
           </div>
-        </footer>
+  </footer>
 
-        <div class="col-lg">
+<div class="col-lg">
             <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Made by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
-          </div>
+  </div>
+
+
 
   </body>
 </html>
