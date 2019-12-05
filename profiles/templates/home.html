@@ -57,7 +57,7 @@
           margin: 0px;
           height: 100%;
           background-color: transparent;
-          color: #1E2671;
+          color:black;
         }
 
         .row{
@@ -444,8 +444,8 @@
 
     <!--Something great is happening... -->
 
-    <!--REAL-->
-<!--Section 1: Navigation Menu-->
+<!--Navigation Bar-->
+<section> 
 <header>
         <nav class="navbar">
             <a href='https://www.marcofortelefonicauk.com' class="navbar-brand"><img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" id="header-logo"></a>
@@ -481,7 +481,7 @@
     
             <style>
             .navbar {
-              background: #000031;
+              background: black;
               padding: 0;
             }
             
@@ -520,65 +520,58 @@
             </style>
         </nav>
   </header>
+  </section>
+<!--Banner-->
+<section>
+    <div class="w3-container" id='banner'>    
+              <h2 class="banner-text">A better and more connected UK starts here</h2>      
+      </div>
+      <style>
+          /* For width larger than 990px: */
+          #banner {
+            padding-top: 250px;
+            padding-bottom: 250px;
+            padding-left: 150px;
+            background-image:url(https://dl.dropboxusercontent.com/s/vg7gsp875yhgko1/banner-better-uk.png?dl=0);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
 
-
-    
-<!--Section 2: Banner a more connected UK-->
-<div class="w3-container">      
-      <!--desktop-->
-      <div class='web' >
-              <img src="https://dl.dropboxusercontent.com/s/wdx27b3jezttqt2/banner-better-uk-1.png?dl=0" id="hero-image">
-              <!--<div class="payg">A stronger and more connected Britain starts here</div>-->
-              <style>
-                  /* For width larger than 990px: */
-                    .mob {
-                      display: none; 
-                    }
-          
-                    .payg {
-                      position: absolute;
-                      top: 50%;
-                      left: 36.5%;
-                      transform: translate(-50%, -50%);
-                      font-family: 'Avenir', sans-serif;
-                      font-size: 50px;
-                      font-weight: 800;
-                      margin: 0;
-                      color:white;
-                      text-align: left;
-                    }
-          
-                    .centered {
-                      position: absolute;
-                      top: 70%;
-                      left: 40%; /**aligning to left**/
-                      transform: translate(-50%, -50%);
-                      font-family: 'Avenir', sans-serif;
-                      font-size: 50px;
-                      font-weight: 800;
-                      margin: 0;
-                      color:#3498CD;
-                      text-align: left;
-                    }
-          
-                    @media only screen and (max-width: 890px) {
-                      .web {display: none;}
-                      .centered {display: none;}
-                      .mob {display: inline;}
-                      }
-                    
-                  </style>
-        </div>
-
-      <!--mobile-->
-      <div class='mob'>
-          <img src="https://dl.dropboxusercontent.com/s/07qsotehhmal2v5/banner-m-better-uk-1.png?dl=0" id="hero-image">
-        </div>
-    </div>
-
-
-
-<!--Section 3: Introduction-->
+          }
+      
+          .banner-text {
+                color:white;
+                font-size: 5vw;
+                font-family: 'Avenir', sans-serif;
+                padding-top: 35px;
+                padding-bottom: 15px;
+                text-align: left;
+                font-weight: 800;
+                display:block;
+                margin: 0;
+            
+          }
+          @media only screen and (max-width: 890px) {
+          #banner {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            padding-left: 150px;
+            background-image:url(https://dl.dropboxusercontent.com/s/z06j7ji3fp5895w/banner-better-uk-m.png?dl=0);
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+          .banner-text{
+              font-size: 50px;
+              margin-left:20px !important;
+              margin-right:20px !important;
+              padding-left: 0px !important;
+              padding-right: 0px !important;
+            }
+          }
+          </style>
+  </section>
+<!--Introduction-->
+<section>
 <div class="w3-container">   
         <div class="row" id='banner-intro-payg'>
           
@@ -601,10 +594,38 @@
 
           </div>
   </div>
-
-
-
-<!-- Section 4: Report & Customer Journey-->
+  </section>
+<!--Executive summary-->
+<section>
+    <div class="w3-container" id='executive-summary'>
+    
+            <div class="row">
+              <h2 class="heading">Executive Summary</h2>
+              <li class="page-text">
+                Since 2016, Telefonica UK has been growing revenue, projected to surpass £6b in 2019, and number of customers, thanks to O2 brand recognition, customer loyalty and innovative commercial strategies. (add service generating growth).
+                </li>
+              <li class="page-text">
+                However, generating enough funding is critical for ongoing 5G investments and realise Telefonica UK’s digital growth opportunities. 
+                <b>add OCF and CAPEX</b>
+              </li>  
+              <li class="page-text">
+                What can Telefonica UK do to drive revenue to fund future investments, solidify customer loyalty and enlarge gap to competition?
+                </li>
+              <li class="page-text">
+                Telefonica UK can scrap top ups and simplify its Pay As You Go service via an AI and payment chatbot to capture revenue instantly, whilst providing an easier and quicker service that suits today’s consumers.              
+                </li>
+              </div>
+    
+              <br>
+            <div class="row">
+              <p>seamless customer journey (customer + AI bot + payment int + Big Bundle</p>
+              <p>add images and diagrams</p>
+              </div>
+          
+      </div>
+  </section>
+<!--Report & Customer Journey-->
+<section>
 <br>  
 <div class="w3-container">
           <div class="row">
@@ -630,40 +651,9 @@
             </div>
   </div>
 <br>
-
-
-
-<!-- Section 5: Executive summary-->
-<div class="w3-container" id='executive-summary'>
-
-        <div class="row">
-          <h2 class="heading">Executive Summary</h2>
-          <li class="page-text">
-            Since 2016, Telefonica UK has been growing revenue, projected to surpass £6b in 2019, and number of customers, thanks to O2 brand recognition, customer loyalty and innovative commercial strategies. (add service generating growth).
-            </li>
-          <li class="page-text">
-            However, generating enough funding is critical for ongoing 5G investments and realise Telefonica UK’s digital growth opportunities. 
-            <b>add OCF and CAPEX</b>
-          </li>  
-          <li class="page-text">
-            What can Telefonica UK do to drive revenue to fund future investments, solidify customer loyalty and enlarge gap to competition?
-            </li>
-          <li class="page-text">
-            Telefonica UK can scrap top ups and simplify its Pay As You Go service via an AI and payment chatbot to capture revenue instantly, whilst providing an easier and quicker service that suits today’s consumers.              
-            </li>
-          </div>
-
-          <br>
-        <div class="row">
-          <p>seamless customer journey (customer + AI bot + payment int + Big Bundle</p>
-          <p>add images and diagrams</p>
-          </div>
-      
-  </div>
-
-
-
-<!--Section 6: Why a perfect match-->
+  </section>
+<!--Why Telefonica UK-->
+<section>
     <!--(title)-->
     <div class="w3-container"> 
           <div class="row"> 
@@ -690,13 +680,40 @@
                      </div>
                  </div> 
         </div>  
-    
-<!-- Section 7: Footer-->
+  </section>
+<!--Footer-->
+<section>
 <footer class="col-lg">
             <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Made by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
   </footer>
+</section>
 
 
+<section id="intro" class="wrapper style1 fullscreen fade-up">
+    <div class="inner">
+
+      <span style="max-width:50%" class="image right"><img src="https://dl.dropboxusercontent.com/s/p3llr8rfoc0igg4/photo.png?dl=0" alt=""></span>
+      <h1>alexandr wang</h1>
+      <p>CEO, cofounder @ <a href="http://www.scaleapi.com">Scale</a></p>
+      <ul class="icons" style="font-size:35px;">
+        <li><a target="_blank" href="https://twitter.com/alexandr_wang" class="fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/alexandrwang1" class="fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a target="_blank" href="https://github.com/alexandrwang" class="fa-github"><span class="label">GitHub</span></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/alexanddeer/" class="fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/alexandrwang" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+      </ul>
+      <ul class="actions">
+        <li><a href="#one" class="button scrolly">Meet me</a></li>
+      </ul>
+
+    </div>
+    <style>
+    @import url(font-awesome.min.css);
+
+
+
+    </style>
+  </section>
 
   </body>
 </html>
