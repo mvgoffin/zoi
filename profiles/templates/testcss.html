@@ -1,70 +1,812 @@
-<html>
-    <head>
-
-
-    </head>
-
-    <body>
-            <div id="container">
+<!-- Hi there, curious developer!-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <meta name="description" content="Marco for Telefonica UK">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xdp3ien.css">
     
-                    <div id="monster">Hello</div>
-                    <div>Hello</div>
-                    <div class="hideme">Fade In</div>
-                    <div class="hideme">Fade In</div>
-                    <div class="hideme">Fade In</div>
-                    <div class="hideme">Fade In</div>
-                    <div class="hideme">Fade In</div>
-                    
-                </div>
+    <!--Mobile Bubble Menu-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<script>
-$(function(){  // $(document).ready shorthand
-  $('.monster').fadeIn('slow');
-});
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-$(document).ready(function() {
+    <!--lightbox-->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/n7vjp3exjhsmzqx/Favicon.png?dl=0">
     
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
+    <title>
+      Marco for Telefonica UK | Home
+    </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267999-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141267999-1');
+    </script>
+
+    <!-- CSS Marco For Telefonica UK Homepage -->
+    <style media="screen">
+      
+    /**classes**/
+
+        * {
+          font-family: 'Avenir', sans-serif;
+          font-size: 16px;
+          font-variant: normal;
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        body, html { 
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          background-color: transparent;
+          color:black;
+        }
+
+        .row{
+          padding-left: 100px;
+          padding-right: 100px;
+          margin-right:0px;
+          margin-left:0px;
+        }
+
+        .heading{
+          font-family: 'Avenir', sans-serif;
+          padding-top: 35px;
+          padding-bottom: 15px;
+          text-align: left;
+          font-weight: 800;
+          display:block;
+          margin: 0;
+        }
+
+        .heading-ec{
+          color:white;
+          font-family: 'Avenir', sans-serif;
+          padding-top: 35px;
+          padding-bottom: 15px;
+          text-align: left;
+          font-weight: 800;
+          display:block;
+          margin: 0;
+            }
+
+        .why-text {
+          font-weight: 400;
+          margin: 0px;
+          text-align:center;
+          line-height:normal;
+        }
+
+        .contact-text {
+          font-size:small;
+          text-align:left;
+          line-height:normal;
+          margin: 0px;
+        }
+
+        .section-heading{
+        margin-top: 10px;
+        font-weight: 600;
+        color: black;
+        text-align: left;
+        line-height: 25px;
+        font-size: large;
+        }
+
+        .section-text{
+        font-weight: 400;
+        color: black;
+        text-align:left;
+        line-height: 25px;
+        font-size: medium;
+        }
+
+        .heading-footer{
+          font-family: 'Avenir', sans-serif;
+          color: white;
+          margin-bottom:10px;
+          text-align: left;
+        }
+        
+        .why-icon{
+          margin-top: 10px;
+          font-weight: 400;
+          color: black;
+          text-align: center;
+          font-size: medium;
+        }
+
+        .customer-title{
+        font-family: 'Avenir', sans-serif;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin: 0px;
+        font-weight: 800;
+        text-align: center;
+        line-height: 25px;
+        font-size:x-large;
+        text-decoration: none;
+        }
+
+        .page-text{
+          margin: 0;
+        font-size:medium;
+        }
+
+        .product-price{
+        font-family: 'Avenir', sans-serif;
+        font-size:x-large;
+        margin-top: 10px;
+        font-weight: 800;
+        text-align: left;
+        line-height: 25px;
+        font-size: large;
+        text-decoration: none;
+        }
+
+        .headline-middle {
+          box-sizing: border-box;
+          padding-top: 25px;
+          margin: auto;
+          width: 100%;
+          border-bottom: 1px solid #D1D1D1;
+          -webkit-appearance: none !important;
+        }
+
+        .dot {
+          height: 90px;
+          width: 90px;
+          border-radius: 50%;
+          display: inline-block;
+          font-size: 10px;
+          font-weight: bolder;
+          color: #fff;
+          line-height: 90px;
+          text-align: center;
+          background: violet; 
+          /*background: linear-gradient(to bottom right, purple , violet);*/
+        }
+
+        .headline {
+          width: 100%;
+          box-shadow: 0 10px 5px -5px  #D1D1D1;
+          padding: 10px;
+        }
+
+        .hr{        
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 0.5px;
+            border-color:gray;
+          } 
+
+          /*****/
+
+          .image {
+		border-radius: 0.25em;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+  .wrapper {
+		position: relative;
+	}
+
+  .wrapper > .inner {
+			padding: 5em 5em 3em 5em ;
+			max-width: 100%;
+			width: 75em;
+		}
+
+          
+    /**ids**/
+
+        #photo {
+            width: 100%;
+            margin-top: 35px;
+        }
+
+        #banner-intro-payg {
+          background: #EFEFEF;
+        }
+        
+        #report-container {
+          background-image:url(https://dl.dropboxusercontent.com/s/0zi5g4s0e3h8fca/banner-marco-report.png?dl=0);
+          box-shadow: 0 5px 10px 0 gray;
+          -webkit-transition: box-shadow 150ms ease;
+          transition: box-shadow 150ms ease;
+          border-radius: 5px;
+          margin:10px;
+          padding: 20px;
+          text-align: center;
+        }
+
+        #payg-container {
+          background-image:url(https://dl.dropboxusercontent.com/s/lujx1m8oznqts3g/banner-marco-paygplus.png?dl=0);
+          box-shadow: 0 5px 10px 0 gray;
+          -webkit-transition: box-shadow 150ms ease;
+          transition: box-shadow 150ms ease;
+          border-radius: 5px;
+          margin:10px;
+          padding: 20px;
+          text-align: center;
+        }
+
+        #report-image {
+          max-width: 100%;
+          padding: 20px;
+        }
+
+        #report-container-button {
+          padding-left: 150px;
+          padding-right: 150px;
+        }
+        
+        #why-icon{
+          padding-bottom: 20px;
+        }
+
+        #header-logo {
+        width: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        /**background-color: white;**/
+        }
+
+        #hero-image {
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          margin: auto;
+        }
+
+        #icon {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          background: transparent;
+        }
+
+        #product-image {
+          width: 100%;
+          height: 100%;
+          padding: 35px;
+          background-color: transparent;
+          border-style: solid;
+          /**border-color:#FCF9F7;
+          border-width: 10px;**/
+          margin: auto;
+          margin: 0px;
+        }
+
+        #executive-summary{
+            background-color:#EFEFEF;
+          }
+        
+        #fade{
+            opacity:0;      
+        }
+
+    /**Other assets**/
+
+
+        button {
+          background: transparent;
+          border-radius: 4px;
+          display:block;
+          width:100%;
+          border: 1px solid transparent;
+          color: white;
+          background: #3498CD;
+          padding: 10px 20px;
+          margin: .618em 0.01em;  
+          font-family: 'Avenir', sans-serif;
+          font-weight: 800;
+          font-style: normal;
+          animation-delay: 2400ms;
+          font-size: medium;
+          letter-spacing: .01em;
+          text-transform: normal;
+          transition: background-color 170ms  ease-out,color 170ms ease-out;
+        }
+
+        button:focus{
+          background-color: #D1D1D1;
+          border: 1px solid #D1D1D1;
+          color: #1E2671;
+          border-color: transparent;
+          border-width: 1px;
+        }
+
+        button:hover {
+          border-color: transparent;
+          border-width: 1px;
+        }
+        
+        ::placeholder{
+          color: gray;
+          font-size: small;
+        }
+
+        a{
+          color: gray;
+          font-size: small;
+        }
+  
+  /**Bootstrap Columns and Sections**/
+        
+        .col-sm { /**Product offer**/
+        }
+        
+        .col-md { /**Why Choose PAYG+**/
+          /*border-radius: 16px;*/
+          background: transparent;
+          margin:10px;
+          padding: 20px;
+        }
+
+        
+        .col-3 {
+          text-align: center;
+          margin-top: 35px;
+          padding: 0px;
+          margin: 0px;
+          margin-bottom: 35px;
+          
+        }
+  
+        .col-md-3{
+        padding: 20px;
+        }
+
+        /**
+        .col-sm-3{
+        padding: 0px;
+        margin: 0px;
+        }
+
+        .col-sm-6{
+          padding-left:  100px;
+          padding-right:  100px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        **/
+
+    @media only screen and (max-width: 990px) {
+      .col-md, .col-md-4, .centered {
+        margin-left:20px !important;
+        margin-right: 20px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+    }
     
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
+
+    @media only screen and (max-width: 990px) {
+    .row, .col-sm, #header-logo, .open-slide, form, .vertical-center, .home-small-1, .heading, .page-text, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #report-container  {
+                margin-left:0 !important;
+                margin-right:0 !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+                }
+
+                #icon {
+                display: block;
+                margin: auto;
+                width: 100%;
+                }
+
+                #hero-image{
+                  width: 100%;
+                  background-position: center bottom;
+                  margin: auto;
+                  display: block;
+                }
+
+                *, .html {
+                  margin-left:0 !important;
+                  margin-right:0 !important;
+                  padding-left: 0 !important;
+                  padding-right: 0 !important;
+                }
+
+                #hero-logo.product{
+                  padding: 0;
+                  margin-left: auto;
+                  margin-right: auto;
+                }
                 
-                $(this).animate({'opacity':'1'},1500);
-                    
+                #hero-logo.product, #reason {
+                    width: 100%;
+                    display: block;
+                    margin: auto;
+                  }
+      }
+
+      @media only screen and (max-width: 990px) {
+                #fade {
+                  margin-left:0px !important;
+                  margin-right: 0px !important;
+                  padding-left: 0px !important;
+                  padding-right: 0px !important;
+                  opacity:0;
+                }
+        }
+      </style>
+
+  </head>
+<body>
+
+    <!--Something great is happening... -->
+
+<!--Navigation Bar-->
+<section> 
+<header>
+        <nav class="navbar">
+            <a href='https://www.marcofortelefonicauk.com' class="navbar-brand"><img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" id="header-logo"></a>
+            
+            <button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;">
+                <span class="open-slide" style="text-align:right; background:transparent;">
+                    <a href="#" onclick='openSlideMenu()'>
+                      <svg width="25" height='25'>
+                        <path d='M0,5 30,5' stroke='#FFFFFF' 
+                        stroke-width='4'/>
+                        <path d='M0,14 30,14' stroke='#FFFFFF' 
+                        stroke-width='4'/>
+                        <path d='M0,23 30,23' stroke='#FFFFFF' 
+                        stroke-width='4'/>
+                      </svg>
+                    </a>
+                  </span>
+            </button2>
+            
+            <div class="navbar-collapse collapse" id="collapsingNavbar4">
+                <ul class="navbar-nav">
+                    <li class="nav-item active2">
+                        <a class="nav-link" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0" target="_blank">Unlock Value Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/payg_plus">Pay As You Go +</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <style>
+            .navbar {
+              background: black;
+              padding: 0;
             }
             
-        }); 
+            .nav-link {
+              margin-left: 30px;
+              font-family: 'Avenir', sans-serif;
+              font-size: 24px;
+              font-weight: bold;
+              color: white;
+            }
+
+            .nav-link:hover {
+              color:#3498CD;
+            }
     
+            button2 {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-right: 30px;
+            }
+            #header-logo {
+            width: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            }
+    
+            #banner-intro-payg {
+              background: #EFEFEF;
+            }
+    
+            #banner-title-ec {
+              background-image:url(https://dl.dropboxusercontent.com/s/b85r86o2x6f7i5e/banner-new-customers.png?dl=0);
+          /**background-image: linear-gradient(to bottom, #1E2671, #589AD2); **/
+            }
+            </style>
+        </nav>
+  </header>
+  </section>
+<!--Banner-->
+<section>
+    <div class="w3-container" id='banner'>    
+              <h2 class="banner-text">Helping people live easier, better lives</h2>      
+      </div>
+      <style>
+          /* For width larger than 990px: */
+          #banner {
+            padding-top: 250px;
+            padding-bottom: 150px;
+            padding-left: 150px;
+            padding-right: 150px;
+            background-image:url(https://dl.dropboxusercontent.com/s/vg7gsp875yhgko1/banner-better-uk.png?dl=0);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+          }
+      
+          .banner-text {
+                color:white;
+                font-size: 6vw;
+                font-family: 'Avenir', sans-serif;
+                padding-top: 100px;
+                padding-bottom: 0px;
+                text-align: left;
+                font-weight: 800;
+                display:block;
+                margin: 0;
+            
+          }
+          @media only screen and (max-width: 890px) {
+          #banner {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            padding-left: 150px;
+            background-image:url(https://dl.dropboxusercontent.com/s/z06j7ji3fp5895w/banner-better-uk-m.png?dl=0);
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+          .banner-text{
+              font-size: 50px;
+              margin-left:20px !important;
+              margin-right:20px !important;
+              padding-left: 0px !important;
+              padding-right: 0px !important;
+            }
+          }
+          </style>
+  </section>
+<!--Introduction-->
+<section>
+<div class="w3-container">   
+        <div class="row" id='banner-intro-payg'>
+          
+            <div class='row' style="padding: 0;">
+              <div class=col-3>
+                  <img src="https://dl.dropboxusercontent.com/s/p3llr8rfoc0igg4/photo.png?dl=0" id="photo">
+                </div>
+              <div class=col-9>
+                  <h2 class="heading">Hi I'm Marco</h2>
+                  <p class="page-text">London, United Kingdom</p>
+                </div>
+              </div>
+
+              <div class='row' style="padding: 0;">
+                <p>I want to work at O2 Telefonica UK. I started my career in Telefonica in 2010, where I honed my business skills and fell in love of the company and industry for 5 years. And after reading my MBA and working in payments and entrepreneurship, I decided to continue my career in Telefonica, the only company I love and inspires me. So, to give the kind of value I can bring to the team, I’d decided to do an analysis of the company and recommendations to help its digital transformation efforts.</p>
+                <p>Please scroll to read an executive summary of my report. Alternatively, you can read the full report and experience the customer journey of my new product proposal. Hopefully this pique your interest and get in touch.</p>
+              </div>
+
+              </div>
+
+          </div>
+  </div>
+  </section>
+<!--Executive summary-->
+<section>
+    <div class="w3-container" id='executive-summary'>
+    
+            <div class="row">
+              <h2 class="heading">Executive Summary</h2>
+              <li class="page-text">
+                Since 2016, Telefonica UK has been growing revenue, projected to surpass £6b in 2019, and number of customers, thanks to O2 brand recognition, customer loyalty and innovative commercial strategies. (add service generating growth).
+                </li>
+              <li class="page-text">
+                However, generating enough funding is critical for ongoing 5G investments and realise Telefonica UK’s digital growth opportunities. 
+                <b>add OCF and CAPEX</b>
+              </li>  
+              <li class="page-text">
+                What can Telefonica UK do to drive revenue to fund future investments, solidify customer loyalty and enlarge gap to competition?
+                </li>
+              <li class="page-text">
+                Telefonica UK can scrap top ups and simplify its Pay As You Go service via an AI and payment chatbot to capture revenue instantly, whilst providing an easier and quicker service that suits today’s consumers.              
+                </li>
+              </div>
+    
+              <br>
+            <div class="row">
+              <p>seamless customer journey (customer + AI bot + payment int + Big Bundle</p>
+              <p>add images and diagrams</p>
+              </div>
+          
+      </div>
+  </section>
+<!--Report & PAYG+ customer Journey-->
+<section>
+<br>  
+<div class="w3-container">
+          <div class="row">
+                  <!--New Customer Portal-->
+                  <div class="col-sm">
+                  <form id='report-container' action="https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0" target="_blank"><!--{% csrf_token %}--> 
+                      <p class="banner-text">Report</p>     
+                      <div id="new-customer-container-button">
+                      <button type="submit">Read on</button> 
+                      </div>
+                  </form>
+                  </div>
+
+                  <!--Existing Customer Portal-->
+                  <div class="col-sm">
+                      <form id='payg-container' action="{% url 'payg_plus' %}"><!--{% csrf_token %}-->
+                        <p class="banner-text">PAYG+</p>     
+                        <div id="new-customer-container-button">
+                        <button type="submit">Visit</button> 
+                        </div>
+                      </form>
+                      </div>
+            </div>
+  </div>
+<br>
+  </section>
+<!--Why Telefonica UK-->
+<section>
+    <!--(title)-->
+    <div class="w3-container"> 
+          <div class="row"> 
+              <h2 class="heading">Why a match</h2>
+            </div>
+        </div>
+      <!--(reasons)-->
+      <div class="w3-container"> 
+             <div class="row">
+                 <div class="col-md" style="text-align: center;">
+                  <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="why-icon" style="width:50px">
+                  <p class="why-text"><b>Wokr experience</b></p>
+                  <p class="why-text">abcdef</p>
+                 </div>
+                 <div class="col-md" style="text-align: center;">
+                  <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="why-icon" style="width:50px">
+                  <p class="why-text"><b>Inspirational mission brand</b></p>  
+                  <p class="why-text">Love for the brand and mission, inspired by our Blueprint</p>                
+                   </div> 
+                 <div class="col-md" style="text-align: center;">
+                  <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="why-icon" style="width:50px">
+                  <p class="why-text"><b>Passionate about technology</b></p>
+                  <p class="why-text">A feel a sense of purpose to help contribute for the betterment of people and businesses in the UK.</p>
+                     </div>
+                 </div> 
+        </div>  
+  </section>
+<!--Work experience-->
+<section>
+    <!--(title)-->
+    <div class="w3-container"> 
+          <div class="row"> 
+              <h2 class="heading">Work experience</h2>
+            </div>
+        </div>
+      <!--(reasons)-->
+      <div class="w3-container"> 
+             <div class="row">
+                 <div class="col-md" style="text-align: center;">
+                  <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="why-icon" style="width:50px">
+                  <p class="why-text"><b>Telefonica</b></p>
+                  <p class="why-text">2010 - 2014</p>
+                  <p class="why-text">Led prepay product by monitoring performance indicators and conceptualising and launching revenue growth initiatives.</p>
+                 </div>
+                 <div class="col-md" style="text-align: center;">
+                  <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="why-icon" style="width:50px">
+                  <p class="why-text"><b>University of Manchester</b></p>
+                  <p class="why-text">2015 - 2016</p>
+                  <p class="why-text">Full-time MBA with a focus in Marketing. Conducted consulting projects with real-clients in Pharma.</p>
+                 </div>
+                 <div class="col-md" style="text-align: center;">
+                  <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="why-icon" style="width:50px">
+                  <p class="why-text"><b>American Express</b></p>
+                  <p class="why-text">2015 - 2017</p>
+                  <p class="why-text">Worked in acquisition and lending teams, creating product loyalty initiatives and a new product development project.</p>
+                 </div>
+                 <div class="col-md" style="text-align: center;">
+                    <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="why-icon" style="width:50px">
+                    <p class="why-text"><b>Entrepreneurship</b></p>
+                    <p class="why-text">2018 - 2019</p>
+                    <p class="why-text">Launched two digital-native functional food brands from conceptualisation to implementation.</p>
+                   </div>
+                </div> 
+        </div>  
+  </section>
+<!--Gallery-->
+<section>
+  <div class="row" id="fade" style="padding: 0; margin: 0;">
+      <div class="col-sm-3" style="padding:0;">          
+        <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" width="100%">
+        </div>
+      <div class="col-sm-3" style="padding:0;">       
+        <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" width="100%">
+        </div>
+      <div class="col-sm-3" style="padding:0;">         
+        <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" width="100%">
+        </div>
+      <div class="col-sm-3" style="padding:0;">          
+        <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" width="100%">          </div>
+        </div>
+    </div>
+    </section>
+<!--Footer-->
+<section>
+<footer>
+    <div class="w3-container" id='executive-summary'>
+        <div class="row">
+          <h2 class="heading">Contact me</h2>
+          <p class="contact-text">I’m committed to building my career at Telefonica, so whether you’ll want to discuss this project or want me doing a similar role of what I’ve been doing in the past, or starting in a new vertical and working from the ground up, I’m open to exploring all roles.</p>
+          </div>
+
+            <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Made by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
+  </footer>
+</section>
+
+<script>
+
+/* FADE GALLERY */
+    $(function(){  // $(document).ready shorthand
+      $('.monster').fadeIn('slow')
     });
     
-});
-</script>
-
-<style>
-        #container
-        {
-            height:2000px;    
-        }
+    $(document).ready(function() {
         
-        #container DIV
-        { 
-            margin:50px; 
-            padding:50px; 
-            background-color:pink; 
-        }
+        /* Every time the window is scrolled ... */
+        $(window).scroll( function(){
         
-        .hideme
-        {
-            opacity:0;
-        }
-        </style>
+            /* Check the location of each desired element */
+            $('#fade').each( function(i){
+                
+                var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+                    
+                    $(this).animate({'opacity':'1'},1500);
+                        
+                }
+                
+            }); 
+        
+        });
+        
+    });
+/* FADE GALLERY */
 
-    </body>
+
+    </script>
+
+
+  </body>
 </html>
