@@ -250,22 +250,22 @@
         }
         
         #report-container {
-          background-image:url(https://dl.dropboxusercontent.com/s/0zi5g4s0e3h8fca/banner-marco-report.png?dl=0);
+          background-image:linear-gradient(-90deg, #194CFA,#22F0C1, #FFCDFF);
+          border-radius: 10px;
           box-shadow: 0 5px 10px 0 gray;
           -webkit-transition: box-shadow 150ms ease;
           transition: box-shadow 150ms ease;
-          border-radius: 5px;
           margin:10px;
           padding: 20px;
           text-align: center;
         }
 
         #payg-container {
-          background-image:url(https://dl.dropboxusercontent.com/s/lujx1m8oznqts3g/banner-marco-paygplus.png?dl=0);
+          background-image:linear-gradient(90deg, #194CFA , #22F0C1 , #FFCDFF );
+          border-radius: 10px;
           box-shadow: 0 5px 10px 0 gray;
           -webkit-transition: box-shadow 150ms ease;
           transition: box-shadow 150ms ease;
-          border-radius: 5px;
           margin:10px;
           padding: 20px;
           text-align: center;
@@ -326,8 +326,8 @@
 
         #divider {
             box-sizing: border-box;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             width: 100%;
             border-top: 1px solid #194CFA;;
             border-bottom: white;
@@ -342,12 +342,11 @@
 
         button {
           background: transparent;
-          border-radius: 4px;
           display:block;
           width:100%;
           border: 1px solid transparent;
           color: white;
-          background: #3498CD;
+          background: #194CFA;
           padding: 10px 20px;
           margin: .618em 0.01em;  
           font-family: 'Avenir', sans-serif;
@@ -518,21 +517,21 @@
             
             <div class="navbar-collapse collapse" id="collapsingNavbar4">
                 <ul class="navbar-nav">
-                    <li class="nav-item active2">
+                    <li2 class="nav-item active2">
                         <a class="nav-link" href="/home">Home</a>
-                    </li>
-                    <li class="nav-item">
+                    </li2>
+                    <li2 class="nav-item">
                         <a class="nav-link" href="https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0" target="_blank">Unlock Value Report</a>
-                    </li>
-                    <li class="nav-item">
+                    </li2>
+                    <li2 class="nav-item">
                         <a class="nav-link" href="/payg_plus">Pay As You Go +</a>
-                    </li>
+                    </li2>
                 </ul>
             </div>
     
             <style>
             .navbar {
-              background: black;
+              background: #194CFA;
               padding: 0;
             }
             
@@ -563,11 +562,7 @@
             #banner-intro {
               background: white;
             }
-    
-            #banner-title-ec {
-              background-image:url(https://dl.dropboxusercontent.com/s/b85r86o2x6f7i5e/banner-new-customers.png?dl=0);
-          /**background-image: linear-gradient(to bottom, #1E2671, #589AD2); **/
-            }
+            
             </style>
         </nav>
   </header>
@@ -601,8 +596,20 @@
                 font-weight: 800;
                 display:block;
                 margin: 0;
-            
           }
+
+          .container-text {
+                color:white;
+                font-size: 4vw;
+                font-family: 'Avenir', sans-serif;
+                padding-top: 100px;
+                padding-bottom: 0px;
+                text-align: center;
+                font-weight: 800;
+                display:block;
+                margin: 0;
+          }
+
           @media only screen and (max-width: 890px) {
           #banner {
             padding-top: 150px;
@@ -634,7 +641,7 @@
             <div class='col-lg-1'></div>
             <div class='col-lg-8'>
                 <h2 class="heading-gradient">Hi, I'm Marco</h2>
-                <p>I'm a digital marketer blending skills in strategy, analytics and design thinking and I want to work at O2 Telefonica UK.</p>
+                <p>I'm a digital marketer blending skills in strategy, analytics and design thinking, and I want to work at O2 Telefonica UK.</p>
                 <p>I started my career in Telefonica in 2010, where I honed my business skills and build my passion for the company and industry. After reading my MBA and working in payments and entrepreneurship, I decided to continue and dedicate my career at Telefonica and contribute to its digital transformation efforts. So, to give the kind of value I can bring to the team, I’d decided to do an analysis of the company and revenue growth recommendations.</p>
                 <p>Please scroll to read an executive summary of my report. Alternatively, you can read the full report and experience the customer journey of my new product proposal. Hopefully this pique your interest and get in touch.</p>
                 </div>
@@ -642,50 +649,52 @@
               
 
             </div>
-        <div class="col-sm-1" style="padding-top:30px"></div>
+        <div class="row" style="padding-top:80px"></div>
           </div>
   </div>
   </section>
 <!--Executive summary-->
 <section>
     <div class="w3-container" style="background-color: #EFEFEF;">
+        <div class="row" style="padding-top:45px"></div>
         <div class="row">
-            <h2 class="heading">Executive Summary</h2>
-        </div>
-            <div class="row">
-                <div class='col-lg-5'>
-                        <img src="https://dl.dropboxusercontent.com/s/k3cu42tdyqf4x51/Exec%20Summary.png?dl=0" id="photo" style="padding: 0;">
+            <h2 class="heading">Executive Summary.</h2>
+            </div>
+        <div class="row">
+            <div class='col-lg-5'>
+                <div class="row" style="padding: 0;margin: 0;">
+                    <img src="https://dl.dropboxusercontent.com/s/lo97jvbnhg6a727/Exec%20Summary-1.png?dl=0" id="photo" style="margin-top: 10px;">
                     </div>
-                <div class='col-lg-7' style="padding-left: 20px;">
-                <ol>
-                <li class="page-text" id='page-table'>
-                    Since 2016, Telefonica UK has been growing revenue, projected to surpass £6b in 2019, and number of customers, thanks to O2 brand recognition, customer loyalty and innovative commercial strategies. (add service generating growth).
-                    </li>
-                    <div id="divider"></div>
-                <li class="page-text">
-                    However, generating enough funding is critical for ongoing 5G investments and realise Telefonica UK’s digital growth opportunities. 
-                </li>  
+                <div class="row" style="padding: 0;margin: 0;">
+                        <img src="https://dl.dropboxusercontent.com/s/xgcreiqiyr7i99g/Exec%20Summary-2.png?dl=0" id="photo" style="margin-top: 10px;">
+                    </div>
+                <div class="row" style="padding: 0;margin: 0;">
+                        <img src="https://dl.dropboxusercontent.com/s/ssi5uoxt2rlg3vj/Exec%20Summary-4.png?dl=0" id="photo" style="margin-top: 10px;">
+                    </div>
+            </div>
+            <div class='col-lg-7' style="padding-left: 20px;">
+            <ol>
+            <li class="page-text" id='page-table'>
+                Since 2016, Telefonica UK has been growing revenue and number of customers, thanks to O2 brand recognition, customer loyalty and innovative commercial strategies.
+                </li>
                 <div id="divider"></div>
-                <li class="page-text">
-                    What can Telefonica UK do to drive revenue to fund future investments, solidify customer loyalty and enlarge gap to competition?
-                    </li>
-                    <div id="divider"></div>
-                <li class="page-text">
-                    Telefonica UK can scrap top ups and simplify its Pay As You Go service via an AI and payment chatbot to capture revenue instantly, whilst providing an easier and quicker service that suits today’s consumers.              
-                    </li>
-                    <div id="divider"></div>
-                    </ol>
-                    </div>
-                
-
-              </div>
-    
-              <br>
-            <div class="row">
-              <p>seamless customer journey (customer + AI bot + payment int + Big Bundle</p>
-              <p>add images and diagrams</p>
-              </div>
-          
+            <li class="page-text">
+                However, generating enough funding is critical for ongoing 5G investments and realise Telefonica UK’s digital transformation.  
+            </li>  
+            <div id="divider"></div>
+            <li class="page-text">
+                What can Telefonica UK do to drive revenue to fund future investments, solidify customer loyalty and enlarge gap to competition?
+                </li>
+                <div id="divider"></div>
+            <li class="page-text">
+                Telefonica UK can simplify its Pay As You Go service by scrapping top ups altogether and integrating payment capabilities to existing AI chatbot to capture revenue instantly and provide an easier and quicker service that suits today’s customer expectations.                        
+                </li>
+                <div id="divider"></div>
+                </ol>
+                </div>
+            </div>  
+            <div class="row" style="padding-top:50px"></div>
+            </div>  
       </div>
       <style>
         ol {
@@ -712,15 +721,14 @@
   </section>
 <!--Report & PAYG+ customer Journey-->
 <section>
-<br>  
-<div class="w3-container">
+<div class="w3-container" style="background-color: #EFEFEF;">
           <div class="row">
                   <!--New Customer Portal-->
                   <div class="col-sm">
                   <form id='report-container' action="https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0" target="_blank"><!--{% csrf_token %}--> 
-                      <p class="banner-text">Report</p>     
-                      <div id="new-customer-container-button">
-                      <button type="submit">Read on</button> 
+                      <p class="container-text">Report</p>     
+                      <div class="row">
+                      <button type="submit">Read on ></button> 
                       </div>
                   </form>
                   </div>
@@ -728,21 +736,23 @@
                   <!--Existing Customer Portal-->
                   <div class="col-sm">
                       <form id='payg-container' action="{% url 'payg_plus' %}"><!--{% csrf_token %}-->
-                        <p class="banner-text">PAYG+</p>     
-                        <div id="new-customer-container-button">
-                        <button type="submit">Visit</button> 
+                        <p class="container-text">PAYG+</p>     
+                        <div class="row">
+                        <button type="submit">Visit ></button> 
                         </div>
                       </form>
                       </div>
             </div>
+            <div class="row" style="padding-top:80px"></div>
   </div>
-<br>
+
   </section>
 <!--Why Telefonica UK-->
 <section>
     <!--(title)-->
     <div class="w3-container"> 
-          <div class="row"> 
+        <div class="row" style="padding-top:45px"></div>
+        <div class="row"> 
               <h2 class="heading">Why a match</h2>
             </div>
         </div>
@@ -771,7 +781,8 @@
 <section>
     <!--(title)-->
     <div class="w3-container"> 
-          <div class="row"> 
+        <div class="row" style="padding-top:45px"></div>
+        <div class="row"> 
               <h2 class="heading">Work experience</h2>
             </div>
         </div>
