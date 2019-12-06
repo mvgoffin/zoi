@@ -78,6 +78,20 @@
           margin: 0;
         }
 
+        .heading-gradient{
+          font-family: 'Avenir', sans-serif;
+          padding-top: 35px;
+          padding-bottom: 15px;
+          text-align: left;
+          font-weight: 800;
+          display:block;
+          margin: 0;
+          font-size: 35px;
+          background: -webkit-linear-gradient(left, #194CFA, #22F0C1, #FFCDFF);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
         .heading-ec{
           color:white;
           font-family: 'Avenir', sans-serif;
@@ -227,11 +241,11 @@
 
         #photo {
             width: 100%;
-            margin-top: 35px;
+            margin-top: 45px;
         }
 
-        #banner-intro-payg {
-          background: #EFEFEF;
+        #banner-intro {
+          background: white;
         }
         
         #report-container {
@@ -410,7 +424,7 @@
     
 
     @media only screen and (max-width: 990px) {
-    .row, .col-sm, #header-logo, .open-slide, form, .vertical-center, .home-small-1, .heading, .page-text, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #report-container  {
+    .row, .col-sm, #header-logo, .open-slide, form, #photo, .vertical-center, .home-small-1, .heading, .page-text, li, .col-xs-1, .col-xs-4, .col-md-6, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #report-container  {
                 margin-left:0 !important;
                 margin-right:0 !important;
                 padding-left: 15px !important;
@@ -451,6 +465,11 @@
       }
 
       @media only screen and (max-width: 990px) {
+                #photo {
+                  margin-top: 25px !important;
+                  margin-bottom: 25px !important;
+
+                }
                 #fade {
                   margin-left:0px !important;
                   margin-right: 0px !important;
@@ -516,7 +535,7 @@
             }
 
             .nav-link:hover {
-              color:#3498CD;
+              color:#22F0C1;
             }
     
             button2 {
@@ -531,8 +550,8 @@
             padding-left: 30px;
             }
     
-            #banner-intro-payg {
-              background: #EFEFEF;
+            #banner-intro {
+              background: white;
             }
     
             #banner-title-ec {
@@ -596,25 +615,22 @@
 <!--Introduction-->
 <section>
 <div class="w3-container">   
-        <div class="row" id='banner-intro-payg'>
-          
-            <div class='row' style="padding: 0;">
-              <div class=col-3>
-                  <img src="https://dl.dropboxusercontent.com/s/p3llr8rfoc0igg4/photo.png?dl=0" id="photo">
+        <div class="row" id='banner-intro'>
+              <div class='col-lg-3'>
+                  <img src="https://dl.dropboxusercontent.com/s/u2a3b28eb7er2y3/MVG_1.jpeg?dl=0" id="photo">
                 </div>
-              <div class=col-9>
-                  <h2 class="heading">Hi I'm Marco</h2>
-                  <p class="page-text">London, United Kingdom</p>
-                </div>
-              </div>
-
-              <div class='row' style="padding: 0;">
-                <p>I want to work at O2 Telefonica UK. I started my career in Telefonica in 2010, where I honed my business skills and fell in love of the company and industry for 5 years. And after reading my MBA and working in payments and entrepreneurship, I decided to continue my career in Telefonica, the only company I love and inspires me. So, to give the kind of value I can bring to the team, I’d decided to do an analysis of the company and recommendations to help its digital transformation efforts.</p>
+            <div class='col-lg-1'></div>
+            <div class='col-lg-8'>
+                <h2 class="heading-gradient">Hi, I'm Marco</h2>
+                <p>I'm a digital marketer blending skills in strategy, analytics and design thinking and I want to work at O2 Telefonica UK.</p>
+                <p>I started my career in Telefonica in 2010, where I honed my business skills and build my passion for the company and industry. After reading my MBA and working in payments and entrepreneurship, I decided to continue and dedicate my career at Telefonica and contribute to its digital transformation efforts. So, to give the kind of value I can bring to the team, I’d decided to do an analysis of the company and recommendations.</p>
                 <p>Please scroll to read an executive summary of my report. Alternatively, you can read the full report and experience the customer journey of my new product proposal. Hopefully this pique your interest and get in touch.</p>
-              </div>
+                </div>
+      
+              
 
-              </div>
-
+            </div>
+        
           </div>
   </div>
   </section>
