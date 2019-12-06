@@ -62,8 +62,8 @@
         }
 
         .row{
-          padding-left: 150px;
-          padding-right: 150px;
+          padding-left: 100px;
+          padding-right: 100px;
           margin-right:0px;
           margin-left:0px;
         }
@@ -94,6 +94,13 @@
           margin: 0px;
           text-align:center;
           line-height:normal;
+        }
+
+        .contact-text {
+          font-size:small;
+          text-align:left;
+          line-height:normal;
+          margin: 0px;
         }
 
         .section-heading{
@@ -594,8 +601,8 @@
               </div>
 
               <div class='row' style="padding: 0;">
-                <p>I want to work at O2 Telefonica UK. I started my career in Telefonica back in 2010. And after an MBA, work experience in payment industry and a stint in entrepreneurship, I decided to continue my career in the only company I’ve had the most fun and inspiration. So to give the kind of value I can bring to the team, I’d decided to do an analysis of the company and proposed a new innovative product to drive revenue and serve better today’s customer our mission to help people live better with tech, showing my passion for the company and some my skills.</p>
-                <p>Please scroll to read an executive summary of my report. Alternatively, you can read the full report and experience the customer journey of my new product proposal.</p>
+                <p>I want to work at O2 Telefonica UK. I started my career in Telefonica in 2010, where I honed my business skills and fell in love of the company and industry for 5 years. And after reading my MBA and working in payments and entrepreneurship, I decided to continue my career in Telefonica, the only company I love and inspires me. So, to give the kind of value I can bring to the team, I’d decided to do an analysis of the company and recommendations to help its digital transformation efforts.</p>
+                <p>Please scroll to read an executive summary of my report. Alternatively, you can read the full report and experience the customer journey of my new product proposal. Hopefully this pique your interest and get in touch.</p>
               </div>
 
               </div>
@@ -639,10 +646,10 @@
           <div class="row">
                   <!--New Customer Portal-->
                   <div class="col-sm">
-                  <form id='report-container' action="https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0" target="_blank"><!--{% csrf_token %}-->
-                      <img src="https://dl.dropboxusercontent.com/s/go5o8j28u82e413/banner-marco-report-text.png?dl=0" id='report-image' style="width:200px">  
+                  <form id='report-container' action="https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0" target="_blank"><!--{% csrf_token %}--> 
+                      <p class="banner-text">Report</p>     
                       <div id="new-customer-container-button">
-                      <button type="submit">Select</button> 
+                      <button type="submit">Read on</button> 
                       </div>
                   </form>
                   </div>
@@ -650,10 +657,10 @@
                   <!--Existing Customer Portal-->
                   <div class="col-sm">
                       <form id='payg-container' action="{% url 'payg_plus' %}"><!--{% csrf_token %}-->
-                      <img src="https://dl.dropboxusercontent.com/s/33arwi7iap2w812/banner-marco-paygplus-text.png?dl=0" id='report-image' style="width:200px">  
-                      <div id="new-customer-container-button">
-                          <button type="submit">Select</button> 
-                          </div>
+                        <p class="banner-text">PAYG+</p>     
+                        <div id="new-customer-container-button">
+                        <button type="submit">Visit</button> 
+                        </div>
                       </form>
                       </div>
             </div>
@@ -727,29 +734,16 @@
                 </div> 
         </div>  
   </section>
-  <!--Contact me-->
-<section>
-    <div class="w3-container" id='executive-summary'>
-    
-            <div class="row">
-              <h2 class="heading">Contact me</h2>
-              <li class="page-text">
-                contact me
-                </li>
-              </div>
-    
-              <br>
-            <div class="row">
-              <p>seamless customer journey (customer + AI bot + payment int + Big Bundle</p>
-              <p>add images and diagrams</p>
-              </div>
-          
-      </div>
-  </section>
 <!--Footer-->
 <section>
 <footer class="col-lg">
-            <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Made by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
+    <div class="w3-container" id='executive-summary'>
+        <div class="row">
+          <h2 class="heading">Contact me</h2>
+          <p class="contact-text">I’m committed to building my career at Telefonica, so whether you’ll want to discuss this project or want me doing a similar role of what I’ve been doing in the past, or starting in a new vertical and working from the ground up, I’m open to exploring all roles.</p>
+          </div>
+
+            <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Developed by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
   </footer>
 </section>
 
