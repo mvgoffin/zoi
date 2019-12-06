@@ -380,7 +380,8 @@
         }
 
         button:hover {
-          border-color: transparent;
+          background-color: #22F0C1;
+          color: #1E2671;
           border-width: 1px;
         }
         
@@ -762,7 +763,7 @@
                   <form id='report-container' action="https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0" target="_blank"><!--{% csrf_token %}--> 
                       <p class="container-text">Report</p>     
                       <div class="row">
-                      <button type="submit">Read on ></button> 
+                      <button type="submit">READ</button> 
                       </div>
                   </form>
                   </div>
@@ -772,7 +773,7 @@
                       <form id='payg-container' action="{% url 'payg_plus' %}"><!--{% csrf_token %}-->
                         <p class="container-text">PAYG+</p>     
                         <div class="row">
-                        <button type="submit">Visit ></button> 
+                        <button type="submit">VISIT</button> 
                         </div>
                       </form>
                       </div>
