@@ -58,7 +58,7 @@
           padding: 0;
           height: 100%;
           background-color: transparent;
-          color:black;
+          color:#202022;
         }
 
         .row{
@@ -70,6 +70,7 @@
 
         .heading{
           font-family: 'Avenir', sans-serif;
+          color: #000068;
           padding-top: 35px;
           padding-bottom: 15px;
           text-align: left;
@@ -318,14 +319,23 @@
           margin: auto;
           margin: 0px;
         }
-
-        #executive-summary{
-            background-color:#EFEFEF;
-          }
         
         #fade{
             opacity:0;      
         }
+
+        #divider {
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            border-top: 1px solid #194CFA;;
+            border-bottom: white;
+            border-left: white;
+            border-right: white;
+            -webkit-appearance: none !important;
+        }
+    
 
     /**Other assets**/
 
@@ -612,6 +622,8 @@
           }
           </style>
   </section>
+ 
+
 <!--Introduction-->
 <section>
 <div class="w3-container">   
@@ -630,29 +642,42 @@
               
 
             </div>
-        <div class="col-sm-1" id='divider' style="padding-top:30px"></div>
+        <div class="col-sm-1" style="padding-top:30px"></div>
           </div>
   </div>
   </section>
 <!--Executive summary-->
 <section>
-    <div class="w3-container" id='executive-summary'>
-    
+    <div class="w3-container" style="background-color: #EFEFEF;">
+        <div class="row">
+            <h2 class="heading">Executive Summary</h2>
+        </div>
             <div class="row">
-              <h2 class="heading">Executive Summary</h2>
-              <li class="page-text">
-                Since 2016, Telefonica UK has been growing revenue, projected to surpass £6b in 2019, and number of customers, thanks to O2 brand recognition, customer loyalty and innovative commercial strategies. (add service generating growth).
-                </li>
-              <li class="page-text">
-                However, generating enough funding is critical for ongoing 5G investments and realise Telefonica UK’s digital growth opportunities. 
-                <b>add OCF and CAPEX</b>
-              </li>  
-              <li class="page-text">
-                What can Telefonica UK do to drive revenue to fund future investments, solidify customer loyalty and enlarge gap to competition?
-                </li>
-              <li class="page-text">
-                Telefonica UK can scrap top ups and simplify its Pay As You Go service via an AI and payment chatbot to capture revenue instantly, whilst providing an easier and quicker service that suits today’s consumers.              
-                </li>
+                <div class='col-lg-5'>
+                        <img src="https://dl.dropboxusercontent.com/s/k3cu42tdyqf4x51/Exec%20Summary.png?dl=0" id="photo" style="padding: 0;">
+                    </div>
+                <div class='col-lg-7' style="padding-left: 20px;">
+                <ol>
+                <li class="page-text" id='page-table'>
+                    Since 2016, Telefonica UK has been growing revenue, projected to surpass £6b in 2019, and number of customers, thanks to O2 brand recognition, customer loyalty and innovative commercial strategies. (add service generating growth).
+                    </li>
+                    <div id="divider"></div>
+                <li class="page-text">
+                    However, generating enough funding is critical for ongoing 5G investments and realise Telefonica UK’s digital growth opportunities. 
+                </li>  
+                <div id="divider"></div>
+                <li class="page-text">
+                    What can Telefonica UK do to drive revenue to fund future investments, solidify customer loyalty and enlarge gap to competition?
+                    </li>
+                    <div id="divider"></div>
+                <li class="page-text">
+                    Telefonica UK can scrap top ups and simplify its Pay As You Go service via an AI and payment chatbot to capture revenue instantly, whilst providing an easier and quicker service that suits today’s consumers.              
+                    </li>
+                    <div id="divider"></div>
+                    </ol>
+                    </div>
+                
+
               </div>
     
               <br>
@@ -662,6 +687,28 @@
               </div>
           
       </div>
+      <style>
+        ol {
+            list-style: none;
+            counter-reset: my-awesome-counter;
+            }
+        li {
+            counter-increment: my-awesome-counter;
+            margin: 0.25rem;
+            }
+        li::before {
+            content: counter(my-awesome-counter);
+            background: #194CFA;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: inline-block;
+            line-height: 2rem;
+            color: white;
+            text-align: center;
+            margin-right: 0.5rem;
+        }
+      </style>
   </section>
 <!--Report & PAYG+ customer Journey-->
 <section>
