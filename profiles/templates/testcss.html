@@ -220,22 +220,34 @@
 
           /*****/
 
-          .image {
-		border-radius: 0.25em;
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
+        .image {
+            border-radius: 0.25em;
+            border: 0;
+            display: inline-block;
+            position: relative;
+	    }
 
-  .wrapper {
-		position: relative;
-	}
+        .wrapper {
+            position: relative;
+        }
 
-  .wrapper > .inner {
+        .wrapper > .inner {
 			padding: 5em 5em 3em 5em ;
 			max-width: 100%;
 			width: 75em;
 		}
+
+        .container-text {
+            color:white;
+            font-size: 4vw;
+            font-family: 'Avenir', sans-serif;
+            padding-top: 100px;
+            padding-bottom: 0px;
+            text-align: center;
+            font-weight: 800;
+            display:block;
+            margin: 0;
+        }
 
           
     /**ids**/
@@ -471,6 +483,41 @@
                     display: block;
                     margin: auto;
                   }
+
+                .container-text {
+                    color:white;
+                    font-size: 10vw;
+                    font-family: 'Avenir', sans-serif;
+                    padding-top: 100px;
+                    padding-bottom: 0px;
+                    text-align: center;
+                    font-weight: 800;
+                    display:block;
+                    margin: 0;
+                }
+        
+
+                #report-container {
+                    background-image:linear-gradient(to top, #194CFA,#22F0C1, #FFCDFF);
+                    border-radius: 10px;
+                    box-shadow: 0 5px 10px 0 gray;
+                    -webkit-transition: box-shadow 150ms ease;
+                    transition: box-shadow 150ms ease;
+                    margin:10px;
+                    padding: 20px;
+                    text-align: center;
+                }
+
+                #payg-container {
+                    background-image:linear-gradient(to bottom, #194CFA , #22F0C1 , #FFCDFF );
+                    border-radius: 10px;
+                    box-shadow: 0 5px 10px 0 gray;
+                    -webkit-transition: box-shadow 150ms ease;
+                    transition: box-shadow 150ms ease;
+                    margin:10px;
+                    padding: 20px;
+                    text-align: center;
+                }
       }
 
       @media only screen and (max-width: 990px) {
@@ -598,18 +645,7 @@
                 margin: 0;
           }
 
-          .container-text {
-                color:white;
-                font-size: 4vw;
-                font-family: 'Avenir', sans-serif;
-                padding-top: 100px;
-                padding-bottom: 0px;
-                text-align: center;
-                font-weight: 800;
-                display:block;
-                margin: 0;
-          }
-
+          
           @media only screen and (max-width: 890px) {
           #banner {
             padding-top: 150px;
@@ -658,7 +694,7 @@
     <div class="w3-container" style="background-color: #EFEFEF;">
         <div class="row" style="padding-top:45px"></div>
         <div class="row">
-            <h2 class="heading">Executive Summary.</h2>
+            <h2 class="heading">Executive Summary</h2>
             </div>
         <div class="row">
             <div class='col-lg-5'>
@@ -672,7 +708,7 @@
                         <img src="https://dl.dropboxusercontent.com/s/ssi5uoxt2rlg3vj/Exec%20Summary-4.png?dl=0" id="photo" style="margin-top: 10px;">
                     </div>
             </div>
-            <div class='col-lg-7' style="padding-left: 20px;">
+            <div class='col-lg-7' style="padding-left: 20px;margin-top: 10px;">
             <ol>
             <li class="page-text" id='page-table'>
                 Since 2016, Telefonica UK has been growing revenue and number of customers, thanks to O2 brand recognition, customer loyalty and innovative commercial strategies.
