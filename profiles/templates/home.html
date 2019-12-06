@@ -225,10 +225,10 @@
           
     /**ids**/
 
-          #photo {
+        #photo {
             width: 100%;
             margin-top: 35px;
-          }
+        }
 
         #banner-intro-payg {
           background: #EFEFEF;
@@ -308,6 +308,10 @@
         #executive-summary{
             background-color:#EFEFEF;
           }
+        
+        #gallery{
+            opacity:0;      
+        }
 
     /**Other assets**/
 
@@ -396,7 +400,7 @@
         **/
 
     @media only screen and (max-width: 990px) {
-      .col-sm-3, .col-md, .col-md-4, .centered {
+      .col-md, .col-md-4, .centered {
         margin-left:20px !important;
         margin-right: 20px !important;
         padding-left: 0px !important;
@@ -445,6 +449,16 @@
                     margin: auto;
                   }
       }
+
+      @media only screen and (max-width: 990px) {
+                #gallery {
+                  margin-left:0px !important;
+                  margin-right: 0px !important;
+                  padding-left: 0px !important;
+                  padding-right: 0px !important;
+                  opacity:0;
+                }
+        }
       </style>
 
   </head>
@@ -736,47 +750,20 @@
   </section>
 <!--Gallery-->
 <section>
-    <div class="hideme" style="padding: 0;margin: 0;text-align: center;"> 
-                <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" style="width: 24%;">
-                <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" style="width: 24%;">
-                <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" style="width: 24%;">
-                <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" style="width: 24%;">
-                </div>
-              </div>
-              <style>
-                .hideme{
-                    opacity:0;
-                }
-              </style>
-              <script>
-                  $(function(){  // $(document).ready shorthand
-                    $('.monster').fadeIn('slow');
-                  });
-                  
-                  $(document).ready(function() {
-                      
-                      /* Every time the window is scrolled ... */
-                      $(window).scroll( function(){
-                      
-                          /* Check the location of each desired element */
-                          $('.hideme').each( function(i){
-                              
-                              var bottom_of_object = $(this).position().top + $(this).outerHeight();
-                              var bottom_of_window = $(window).scrollTop() + $(window).height();
-                              
-                              /* If the object is completely visible in the window, fade it it */
-                              if( bottom_of_window > bottom_of_object ){
-                                  
-                                  $(this).animate({'opacity':'1'},1500);
-                                      
-                              }
-                              
-                          }); 
-                      
-                      });
-                      
-                  });
-                  </script>
+  <div class="row" id="gallery" style="padding: 0; margin: 0;">
+      <div class="col-sm-3" style="padding: 0;" >          
+        <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" width="100%">
+        </div>
+      <div class="col-sm-3" style="padding: 0;" >       
+        <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" width="100%">
+        </div>
+      <div class="col-sm-3" style="padding: 0;" >         
+        <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" width="100%">
+        </div>
+      <div class="col-sm-3" style="padding: 0;" >          
+        <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" width="100%">          </div>
+        </div>
+    </div>
     </section>
 <!--Footer-->
 <section>
@@ -791,7 +778,40 @@
   </footer>
 </section>
 
+<script>
 
+/* FADE GALLERY */
+    $(function(){  // $(document).ready shorthand
+      $('.monster').fadeIn('slow');
+    });
+    
+    $(document).ready(function() {
+        
+        /* Every time the window is scrolled ... */
+        $(window).scroll( function(){
+        
+            /* Check the location of each desired element */
+            $('#gallery').each( function(i){
+                
+                var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+                    
+                    $(this).animate({'opacity':'1'},1500);
+                        
+                }
+                
+            }); 
+        
+        });
+        
+    });
+/* FADE GALLERY */
+
+
+    </script>
 
 
   </body>
