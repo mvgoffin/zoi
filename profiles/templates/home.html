@@ -734,16 +734,60 @@
                 </div> 
         </div>  
   </section>
+<!--Gallery-->
+<section>
+    <div class="hideme" style="padding: 0;margin: 0;text-align: center;"> 
+                <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" style="width: 24%;">
+                <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" style="width: 24%;">
+                <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" style="width: 24%;">
+                <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" style="width: 24%;">
+                </div>
+              </div>
+              <style>
+                .hideme{
+                    opacity:0;
+                }
+              </style>
+              <script>
+                  $(function(){  // $(document).ready shorthand
+                    $('.monster').fadeIn('slow');
+                  });
+                  
+                  $(document).ready(function() {
+                      
+                      /* Every time the window is scrolled ... */
+                      $(window).scroll( function(){
+                      
+                          /* Check the location of each desired element */
+                          $('.hideme').each( function(i){
+                              
+                              var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                              var bottom_of_window = $(window).scrollTop() + $(window).height();
+                              
+                              /* If the object is completely visible in the window, fade it it */
+                              if( bottom_of_window > bottom_of_object ){
+                                  
+                                  $(this).animate({'opacity':'1'},1500);
+                                      
+                              }
+                              
+                          }); 
+                      
+                      });
+                      
+                  });
+                  </script>
+    </section>
 <!--Footer-->
 <section>
-<footer class="col-lg">
+<footer>
     <div class="w3-container" id='executive-summary'>
         <div class="row">
           <h2 class="heading">Contact me</h2>
           <p class="contact-text">I’m committed to building my career at Telefonica, so whether you’ll want to discuss this project or want me doing a similar role of what I’ve been doing in the past, or starting in a new vertical and working from the ground up, I’m open to exploring all roles.</p>
           </div>
 
-            <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Developed by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
+            <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Made by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
   </footer>
 </section>
 
