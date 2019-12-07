@@ -44,7 +44,7 @@
     /**classes**/
 
         * {
-          font-family: 'Avenir', sans-serif;
+          font-family: 'Europa', sans-serif;
           font-size: 16px;
           font-variant: normal;
           box-sizing: border-box;
@@ -69,7 +69,6 @@
         }
 
         .heading{
-          font-family: 'Avenir', sans-serif;
           color: #000068;
           padding-top: 35px;
           padding-bottom: 15px;
@@ -80,7 +79,6 @@
         }
 
         .heading-gradient{
-          font-family: 'Avenir', sans-serif;
           padding-top: 35px;
           padding-bottom: 15px;
           text-align: left;
@@ -93,16 +91,13 @@
           -webkit-text-fill-color: transparent;
         }
 
-        .heading-ec{
-          color:white;
-          font-family: 'Avenir', sans-serif;
-          padding-top: 35px;
-          padding-bottom: 15px;
-          text-align: left;
-          font-weight: 800;
-          display:block;
-          margin: 0;
-            }
+        .executive-question {
+            font-size:35px;
+            color: #194CFA;
+            text-align: center;
+            padding-top: 20px;
+            font-weight: bold;
+        }
 
         .why-text {
           font-weight: 400;
@@ -136,7 +131,6 @@
         }
 
         .heading-footer{
-          font-family: 'Avenir', sans-serif;
           color: white;
           margin-bottom:10px;
           text-align: left;
@@ -151,7 +145,6 @@
         }
 
         .customer-title{
-        font-family: 'Avenir', sans-serif;
         padding-top: 30px;
         padding-bottom: 10px;
         margin: 0px;
@@ -163,13 +156,12 @@
         }
 
         .page-text{
-        margin: 0;
+        margin-bottom: 5px;
         padding: 0;
         font-size:medium;
         }
 
         .product-price{
-        font-family: 'Avenir', sans-serif;
         font-size:x-large;
         margin-top: 10px;
         font-weight: 800;
@@ -234,7 +226,6 @@
         .container-text {
             color:white;
             font-size: 4vw;
-            font-family: 'Avenir', sans-serif;
             padding-top: 100px;
             padding-bottom: 0px;
             text-align: center;
@@ -249,6 +240,12 @@
         #photo {
             width: 100%;
             margin-top: 45px;
+            padding: 10px;
+        }
+        #executive-photo {
+            width: 100%;
+            margin-top: 45px;
+            box-shadow: 5px 5px 7px 0 #194CFA;
         }
 
         #banner-intro {
@@ -257,8 +254,8 @@
         
         #report-container {
             background-image:url(https://dl.dropboxusercontent.com/s/5j60qe550j92rwh/ifriends-taking-selfie_600x.jpg?dl=0);/**(-90deg, #194CFA,#22F0C1, #FFCDFF);**/
-            border-radius: 10px;
-            box-shadow: 0 5px 10px 0 #194CFA;;
+            /**border-radius: 10px;**/
+            box-shadow: 5px 5px 7px 0 #194CFA;
             -webkit-transition: box-shadow 150ms ease;
             transition: box-shadow 150ms ease;
             margin:10px;
@@ -268,8 +265,8 @@
 
         #payg-container {
             background-image:url(https://dl.dropboxusercontent.com/s/4vj0ap9k5lqayhk/success-friends-happy-home.jpg?dl=0);/**(90deg, #194CFA , #22F0C1 , #FFCDFF );**/
-            border-radius: 10px;
-            box-shadow: 0 5px 10px 0 #194CFA;;
+            /**border-radius: 10px;**/
+            box-shadow: 5px 5px 7px 0 #194CFA;
             -webkit-transition: box-shadow 150ms ease;
             transition: box-shadow 150ms ease;
             margin:10px;
@@ -332,8 +329,8 @@
 
         #divider {
             box-sizing: border-box;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
             width: 100%;
             border-top: 1px solid #194CFA;;
             border-bottom: white;
@@ -341,6 +338,17 @@
             border-right: white;
             -webkit-appearance: none !important;
         }
+
+        #executive-heading {
+            font-size:18px;
+            color: #194CFA;
+            text-align: left;
+            padding: 0;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        
     
 
     /**Other assets**/
@@ -355,7 +363,6 @@
           background: #194CFA;
           padding: 10px 20px;
           margin: .618em 0.01em;  
-          font-family: 'Avenir', sans-serif;
           font-weight: 800;
           font-style: normal;
           animation-delay: 2400ms;
@@ -440,7 +447,7 @@
     
 
     @media only screen and (max-width: 990px) {
-    .row, .col-sm, #header-logo, .open-slide, form, #photo, .home-small-1, .heading, li, .col-xs-1, .col-xs-4, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #report-container  {
+    .row, .col-sm, #header-logo, .open-slide, form, .home-small-1, li, .col-xs-1, .col-xs-4, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #report-container  {
                 margin-left:0 !important;
                 margin-right:0 !important;
                 padding-left: 15px !important;
@@ -482,7 +489,6 @@
                 .container-text {
                     color:white;
                     font-size: 10vw;
-                    font-family: 'Avenir', sans-serif;
                     padding-top: 100px;
                     padding-bottom: 0px;
                     text-align: center;
@@ -490,12 +496,11 @@
                     display:block;
                     margin: 0;
                 }
-        
 
                 #report-container {
                     background-image:url(https://dl.dropboxusercontent.com/s/ok87gc35uehq6et/ifriends-taking-selfie_600x-m.jpg?dl=0);
-                    border-radius: 10px;
-                    box-shadow: 0 5px 10px 0 #194CFA;
+                    /**border-radius: 10px;**/
+                    box-shadow: 5px 5px 7px 0 #194CFA;
                     -webkit-transition: box-shadow 150ms ease;
                     transition: box-shadow 150ms ease;
                     margin:10px;
@@ -505,30 +510,24 @@
 
                 #payg-container {
                     background-image:url(https://dl.dropboxusercontent.com/s/wmv571ytt03a3iw/success-friends-happy-home-m.jpg?dl=0);
-                    border-radius: 10px;
-                    box-shadow: 0 5px 10px 0 #194CFA;;
+                    /**border-radius: 10px;**/
+                    box-shadow: 5px 5px 7px 0 #194CFA;
                     -webkit-transition: box-shadow 150ms ease;
                     transition: box-shadow 150ms ease;
                     margin:10px;
                     padding: 20px;
                     text-align: center;
                 }
+
+                .executive-question {
+                    font-size:25px;
+                    color: #194CFA;
+                    text-align: left;
+                    padding-top: 20px;
+                    font-weight: bold;
+                }
       }
 
-      @media only screen and (max-width: 990px) {
-                #photo {
-                  margin-top: 25px !important;
-                  margin-bottom: 25px !important;
-
-                }
-                #fade {
-                  margin-left:0px !important;
-                  margin-right: 0px !important;
-                  padding-left: 0px !important;
-                  padding-right: 0px !important;
-                  opacity:0;
-                }
-        }
       </style>
 
     </head>
@@ -579,7 +578,6 @@
             
             .nav-link {
               margin-left: 30px;
-              font-family: 'Avenir', sans-serif;
               font-size: 24px;
               font-weight: bold;
               color: white;
@@ -630,7 +628,6 @@
           .banner-text {
                 color:white;
                 font-size: 6vw;
-                font-family: 'Avenir', sans-serif;
                 padding-top: 100px;
                 padding-bottom: 0px;
                 text-align: left;
@@ -670,7 +667,7 @@
             <div class='col-lg-8'>
                 <h2 class="heading-gradient">Hi, I'm Marco</h2>
                 <p>I'm a digital marketer blending skills in strategy, analytics and design thinking, and I want to work at O2 Telefonica UK.</p>
-                <p>In 2010, I started my career in Telefonica, where I honed my business skills and built my passion for the company and industry. After reading my MBA and working in payments and entrepreneurship, I decided to continue and dedicate my career at Telefonica to contribute to its digital transformation efforts. So, to give the kind of value I can bring to the team, I’d decided to analyse the company and propose a revenue growth strategy.</p>
+                <p>In 2010, I started my career in Telefonica, where I honed my business skills and built my passion for the company and industry. After reading my MBA and working in payments and entrepreneurship, I decided to continue and dedicate my career at Telefonica to contribute to its digital transformation efforts. So, to give the kind of value I can bring to the team, I’d decided to analyse the company and give my two cents to redesign our Pay As You Go product to drive revenue growth and customer loyalty.</p>
                 <p>Please scroll to read an executive summary of my report. Alternatively, you can read the full report and experience the customer journey of my product proposal. Hopefully this pique your interest and get in touch.</p>
                 </div>
       
@@ -688,89 +685,102 @@
         <div class="row">
             <h2 class="heading">Executive Summary</h2>
             </div>
-       
-
-            <section>
                     <!--1-->
-                    <div class="w3-container">
-                            <div class="row">      
-                                <div class="col-md-6 vertical-center">                    
-                                                
-                                        <p class="page-text">
-                                                Since 2016, Telefonica UK has been growing revenue and number of customers, thanks to O2 brand recognition, customer loyalty and innovative commercial strategies.  
-                                            </p>  
-                                        
-                                    </div>
-                                <div class="col-md-6 vertical-center">  
-                                     <img src="https://dl.dropboxusercontent.com/s/lo97jvbnhg6a727/Exec%20Summary-1.png?dl=0" id="photo" style="margin-top: 10px;">
-                                    </div>     
-                            </div>         
-                            <style>
-                            .vertical-center {
-                                margin-top: 50px;  /* Fallback for browsers do NOT support vh unit */
-                                margin-bottom: 10px;  /* These two lines are counted as one :-)       */
-                                display: flex;
-                                align-items: center;
-                              }
-                            .row2 { 
-                                display: flex; 
-                                padding-left: 55px;
-                                padding-right: 55px;
-                                margin: -15px;
-                              }
-                
-                            @media only screen and (max-width: 768px) {
-                              .row2 { display: flex; flex-flow: column; }
-                              .vertical-center  { 
-                                  order: 1; 
-                                  margin-top: 0;
-                                  }
-                             }
-                            </style>
-                        </div>
-                    <!--2-->
-                     <div class="w3-container">
-                        <div class="row">
-                                <div class="col-sm-6 vertical-center">  
-                                        <img src="https://dl.dropboxusercontent.com/s/xgcreiqiyr7i99g/Exec%20Summary-2.png?dl=0" id="photo" style="margin-top: 10px;">
+                        <div class="row">      
+                            <div class="col-md-6 vertical-center">                             
+                                    <div class="row" style="padding: 10px;">
+                                        <p id="executive-heading">Telefonica UK has been delivering revenue and customer growth since 2017</p>
+                                        <div id="divider"></div>
+                                        <p class="page-text">Telefonica UK is projected to eclipse £6b in revenue in 2019 and is one of 4 key markets to focus in the company’s 5-point plan. These consistent results are driven by its O2 brand recognition, strong customer service, and innovative commercial strategies such as Custom Plans in Contract and Big Bundles, a simple PAYG offer with no tariffs.</p> 
+                                        <p class="page-text"></p> 
+                                        <p class="page-text">Moreover, with the advent of 5G technology, O2 is positioned to expand its product portfolio to create and diversify new revenue stream from customers and businesses.</p>
+                                      </div>                                                                   
+                                </div>
+                            <div class="col-md-6 vertical-center" style="padding: 20px;">
+                              <div class="row" style="padding: 10px;">  
+                                    <img src="https://dl.dropboxusercontent.com/s/gzrjemzmn246j7t/Exec%20Summary-11.png?dl=0" id="executive-photo" style="margin-top: 10px;">
                                   </div>
-                                <div class="col-md-6" style="margin-top: 50px; margin-bottom: 10px;display: flex;align-items: center;">             
-                                    <p class="page-text">
-                                        However, generating enough funding is critical for ongoing 5G investments and realise Telefonica UK’s digital transformation.  
+                                  </div>
+                                <style>
+                                        .vertical-center {
+                                            margin-top: 0px;  /* Fallback for browsers do NOT support vh unit */
+                                            margin-bottom: 10px;  /* These two lines are counted as one :-)       */
+                                            display: flex;
+                                            align-items: center;
+                                            padding: 0;
+                                            }
+                                        .row2 { 
+                                            display: flex; 
+                                            padding-left: 55px;
+                                            padding-right: 55px;
+                                            margin: -15px;
+                                            }
+                            
+                                        @media only screen and (max-width: 768px) {
+                                            .row2 { display: flex; flex-flow: column; }
+                                            .vertical-center  { 
+                                                order: 1; 
+                                                margin-top: 0;
+                                                }
+                                            }
+                                    </style>     
+                        </div>         
+                    <!--2-->
+                        <div class="row">
+                                <div class="col-md-6 vertical-center" style="padding: 20px;">  
+                                  <div class="row" style="padding: 10px;"> 
+                                    <img src="https://dl.dropboxusercontent.com/s/kf6ls6ljznkecot/Exec%20Summary-22.png?dl=0" id="executive-photo" style="margin-top: 10px;">
+                                  </div>
+                                </div>
+                                <div class="col-md-6" style="margin-bottom: 10px;padding: 0;display: flex;align-items: center;">             
+                                        <div class="row" style="padding: 10px;">
+                                        <p id="executive-heading">However, generating enough funding is critical for 5G investments and realise future growth</p>
+                                        <div id="divider"></div>
+                                        <p class="page-text">The market is more competitive than ever; customers can easily switch companies and major carriers are already offering unlimited data plans. Companies need to find other ways to stand out and differentiate themselves.</p> 
+                                        <p class="page-text">Although in decline and low in ARPU, PAYG can still unlock more value, because is a source of contract customers and it offers the flexibility that today’s customer wants. However, the top-up experience is time-consuming, hampering the opportunity to capture more revenue and build direct relationship with each customer, two important factors that ensure funding for ongoing investments. </p>    
                                         </p>  
+                                        </div>  
                                     </div>
                            </div>
+                    <!--Question & Recommendation-->
+                    <div class="row" style="padding-left: 100px;padding-right: 100px;padding-top: 25px;">
+                    <h3 class="executive-question" style="padding: 10px;">How can Telefonica UK drive revenue to fund future investments and solidify customer loyalty?</h3>
+                    <div id="divider"></div>
+                    <div class="row" style="padding: 10px;"> 
+                    <p class="page-text" style="padding: 10px;">Telefonica UK can simplify its Pay As You Go service one step further: scarp top ups altogether and integrate payment capabilities in existing AI conversational chatbot to capture revenue instantly and provide an easier and quicker service that suits today’s customer expectations. We call it <b><i>Pay As You Go+</i></b></p> 
+                        <div style="padding-top: 10px;padding-bottom: 10px;padding-left: 160px; padding-right: 160px;margin: 0;" >
+                                <img src="https://dl.dropboxusercontent.com/s/yzvtgjo4m49ox4r/Exec%20Summary-44.png?dl=0" id="executive-photo" style="margin-top: 10px;">
+                            </div>
+                            </div>  
                         </div>
-                </section>
-
-
-            <div class="row" style="padding-top:50px"></div>
-            </div>  
-      </div>
-    
+                <div class="row" style="padding-top:50px"></div>
+        </div>  
     </section>
 <!--Report & PAYG+ customer Journey-->
 <section>
 <div class="w3-container" style="background-color: #EFEFEF;">
           <div class="row">
+              <h3 class="executive-question" style="padding: 10px;">Read the report for more information about PAYG+ or visit PAYG+ onboarding demo website</h3>
                   <!--New Customer Portal-->
                   <div class="col-sm">
                   <form id='report-container' action="https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0" target="_blank"><!--{% csrf_token %}--> 
-                      <p class="container-text">Report</p>     
-                      <div class="row">
-                      <button type="submit">READ</button> 
-                      </div>
-                  </form>
+                        <p class="container-text"></p> 
+                        <p class="container-text"></p>         
+                        <div class="row">
+                        <button type="submit">READ REPORT</button> 
+                        </div>
+                    </form>
                   </div>
 
                   <!--Existing Customer Portal-->
                   <div class="col-sm">
                       <form id='payg-container' action="{% url 'payg_plus' %}"><!--{% csrf_token %}-->
-                        <p class="container-text">PAYG+</p>     
+                        <p class="container-text"></p> 
+                        <p class="container-text"></p>       
                         <div class="row">
-                        <button type="submit">VISIT</button> 
+                        <button type="submit">VISIT PAYG+</button> 
                         </div>
-                      </form>
+                        </form>
                       </div>
             </div>
             <div class="row" style="padding-top:80px"></div>
@@ -849,7 +859,7 @@
     </section>
 <!--Gallery-->
 <section>
-  <div class="row" id="fade" style="padding: 0; margin: 0;">
+  <div class="row" style="padding: 0; margin: 0;">
       <div class="col-sm-3" style="padding:0;">          
         <img src="https://dl.dropboxusercontent.com/s/xp7ogku9z0b187y/gallery-square.png?dl=0" width="100%">
         </div>
