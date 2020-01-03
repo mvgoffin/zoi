@@ -16,6 +16,12 @@ def home(request):
     template = 'home.html'
     return render(request,template,context)
 
+#Marco for Telefonica Test
+def home2(request):
+    context = locals()
+    template = 'home2.html'
+    return render(request,template,context)
+
 #(3 pages) PAYG+ + EC + NC Product Views
 
 def payg_plus(request):

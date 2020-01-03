@@ -56,6 +56,9 @@ urlpatterns = [
     #path('privacy-policy/', views.privacypolicy, name='privacy-policy'),
     #path('sms-policy/', views.smspolicy, name='sms-policy'),
     
+#Test Homepage
+    path('home2/', views.home2, name='home2'),
+
 #Pay-as-you-go Plus Homepage
     path('payg_plus/', views.payg_plus, name='payg_plus'),
 
