@@ -847,7 +847,7 @@
       <div class="w3-container"> 
              <div class="row">
                  <div class="col-md" style="text-align: center;">
-                  <img src="https://dl.dropboxusercontent.com/s/fw9oaqfxfyud0vo/about-me-Telefonica.png?dl=0" id="why-icon" style="width:100%">
+                  <img class="bottom" src="https://dl.dropboxusercontent.com/s/8qrr2tgyseji06h/Tef-top.png?dl=0" id="why-icon" style="width:100%">
                   <p class="why-text"><b>Telefonica</b></p>
                   <p class="why-text">2010 - 2014</p>
                   <p class="why-text">Led prepay product by monitoring performance indicators and conceptualising and launching revenue growth initiatives.</p>
@@ -949,6 +949,55 @@
 
 
     </script>
+
+
+<div id="cf">
+    <img class="bottom" src="https://dl.dropboxusercontent.com/s/2qmqivx4py90bcd/Tef-bottom.png?dl=0" />
+    <img class="top" src="https://dl.dropboxusercontent.com/s/8qrr2tgyseji06h/Tef-top.png?dl=0" />
+  </div>
+
+
+
+<style>
+    #cf {
+  position:absolute;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf3 img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+}
+</style>
 
 
   </body>
