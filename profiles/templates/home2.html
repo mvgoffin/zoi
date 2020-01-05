@@ -403,7 +403,7 @@
         .col-sm { /**Product offer**/
         }
         
-        .col-md { /**Why Choose PAYG+**/
+        .col-md { /**Why Choose PAYG Prime**/
           /*border-radius: 16px;*/
           background: transparent;
           margin:10px;
@@ -572,7 +572,7 @@
                         <a class="nav-link" href="https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0" target="_blank">Unlock Value Report</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/payg_plus">Pay As You Go +</a>
+                        <a class="nav-link" href="/payg_plus">Pay As You Go Prime</a>
                     </li>
                 </ul>
             </div>
@@ -775,7 +775,7 @@
                 <div class="row" style="padding-top:20px"></div>
         </div>  
     </section>
-<!--Report & PAYG+ onboarding journey-->
+<!--Report & PAYG Prime onboarding journey-->
 <section>
 <div class="w3-container" style="background-color: #EFEFEF;">
           <div class="row">
@@ -844,34 +844,70 @@
               <p class="heading">Work experience</p>
         </div>
       <!--(reasons)-->
+      <style>
+                  
+          #cf {
+              position: relative;
+            }
+
+          #cf img {
+            animation-name: fade;
+            -webkit-transition: opacity 1s ease-in-out;
+            -moz-transition: opacity 1s ease-in-out;
+            -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+          }
+          
+          @keyframes cf3FadeInOut {
+            0% {
+            opacity:1;
+          }
+          25% {
+          opacity:1;
+          }
+          75% {
+          opacity:0;
+          }
+          100% {
+          opacity:0;
+          }
+          }
+          
+          #cf img.top {
+          animation-name: cf3FadeInOut;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          animation-duration: 3s;
+          animation-direction: alternate;
+          }
+          </style>
       <div class="w3-container"> 
              <div class="row">
                  <div class="col-md" style="text-align: center;">
-                  <img class="bottom" src="https://dl.dropboxusercontent.com/s/8qrr2tgyseji06h/Tef-top.png?dl=0" id="why-icon" style="width:100%">
+                  <img src="https://dl.dropboxusercontent.com/s/8qrr2tgyseji06h/Tef-top.png?dl=0" id="why-icon" style="width:100%">
                   <p class="why-text"><b>Telefonica</b></p>
                   <p class="why-text">2010 - 2014</p>
                   <p class="why-text">Led prepay product by monitoring performance indicators and conceptualising and launching revenue growth initiatives.</p>
                  </div>
                  <div class="col-md" style="text-align: center;">
-                  <img src="https://dl.dropboxusercontent.com/s/6fnime0tmmc6g3e/about-me-UoM.png?dl=0" id="why-icon" style="width:100%">
+                  <img src="https://dl.dropboxusercontent.com/s/nvvt57ywe6g0f54/AMBS-top.png?dl=0" id="why-icon" style="width:100%">
                   <p class="why-text"><b>University of Manchester</b></p>
                   <p class="why-text">2015 - 2016</p>
                   <p class="why-text">Full-time MBA with a focus in Marketing. Conducted consulting projects with real-clients across Europe, USA and Asia.</p>
                  </div>
                  <div class="col-md" style="text-align: center;">
-                  <img src="https://dl.dropboxusercontent.com/s/wclwpj6gangdsz5/about-me-amex.png?dl=0" id="why-icon" style="width:100%">
+                  <img src="https://dl.dropboxusercontent.com/s/7ld8n3csoack3wa/Amex-top.png?dl=0" id="why-icon" style="width:100%">
                   <p class="why-text"><b>American Express</b></p>
                   <p class="why-text">2015 - 2017</p>
                   <p class="why-text">Worked in acquisition and lending teams, creating product loyalty initiatives and a new product development project.</p>
                  </div>
                  <div class="col-md" style="text-align: center;">
-                    <img src="https://dl.dropboxusercontent.com/s/l2yff1ay730sg3g/about-me-Gubel.png?dl=0" id="why-icon" style="width:100%">
+                    <img src="https://dl.dropboxusercontent.com/s/xaput1auhmwd5jo/PLNTProtein-top.png?dl=0" id="why-icon" style="width:100%">
                     <p class="why-text"><b>Entrepreneurship</b></p>
                     <p class="why-text">2018 - 2019</p>
                     <p class="why-text">Launched a digital-native functional food brand from concept to reality.</p>
                    </div>
-                </div> 
-                
+            </div>  
         </div>  
         <div class="row" style="padding-top:45px"></div>
               <div id="divider"></div>
@@ -952,11 +988,9 @@
 
 
 <div id="cf">
-    <img class="bottom" src="https://dl.dropboxusercontent.com/s/2qmqivx4py90bcd/Tef-bottom.png?dl=0" />
-    <img class="top" src="https://dl.dropboxusercontent.com/s/8qrr2tgyseji06h/Tef-top.png?dl=0" />
+    <img class="bottom" src="https://dl.dropboxusercontent.com/s/8qrr2tgyseji06h/Tef-top.png?dl=0" />
+    <img class="top" src="https://dl.dropboxusercontent.com/s/2qmqivx4py90bcd/Tef-bottom.png?dl=0" />
   </div>
-
-
 
 <style>
     #cf {
@@ -965,6 +999,8 @@
   width:450px;
   margin:0 auto;
 }
+
+
 
 #cf img {
   position:absolute;
@@ -979,8 +1015,11 @@
   0% {
   opacity:1;
 }
-45% {
+25% {
 opacity:1;
+}
+45% {
+opacity:0;
 }
 55% {
 opacity:0;
@@ -990,11 +1029,11 @@ opacity:0;
 }
 }
 
-#cf3 img.top {
+#cf img.top {
 animation-name: cf3FadeInOut;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
-animation-duration: 10s;
+animation-duration: 3s;
 animation-direction: alternate;
 }
 </style>
