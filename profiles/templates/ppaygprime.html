@@ -432,7 +432,7 @@
                         <a class="nav-link" href="https://www.dropbox.com/s/vyztj6eaesfkc44/Unlocking%20Value%20Report.pdf?dl=0" target="_blank">Unlock Value Report</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/payg_plus">Pay As You Go+</a>
+                        <a class="nav-link" href="/paygprime">Pay As You Go Prime</a>
                     </li>
                 </ul>
             </div>
@@ -556,7 +556,7 @@
           <div class="row">
                   <!--New Customer Portal-->
                   <div class="col-sm">
-                  <form method="POST" id='new-customer-container' action="{% url 'payg_plus_nc' %}">{% csrf_token %}
+                  <form method="POST" id='new-customer-container' action="{% url 'paygprime_nc' %}">{% csrf_token %}
                       <img src="https://dl.dropboxusercontent.com/s/6e7bpfgnry0v6zh/new%20customer-1.png?dl=0" id='new-customer-image' style="width:400px">  
                       <div id="new-customer-container-button">
                       <button type="submit">Select</button> 
@@ -566,7 +566,7 @@
 
                   <!--Existing Customer Portal-->
                   <div class="col-sm">
-                      <form method="POST" id='ext-customer-container' action="{% url 'payg_plus_ec' %}">{% csrf_token %}
+                      <form method="POST" id='ext-customer-container' action="{% url 'paygprime_ec' %}">{% csrf_token %}
                       <img src="https://dl.dropboxusercontent.com/s/0f6ptdu1a4qrom5/existing%20customer-1.png?dl=0" id='new-customer-image' style="width:400px">  
                       <div id="new-customer-container-button">
                           <button type="submit">Upgrade</button> 

@@ -60,10 +60,10 @@ urlpatterns = [
     path('home2/', views.home2, name='home2'),
 
 #Pay-as-you-go Plus Homepage
-    path('payg_plus/', views.payg_plus, name='payg_plus'),
+    path('paygprime/', views.paygprime, name='paygprime'),
 
 #Exiting Customers
-    path('payg_plus_ec/', views.payg_plus_ec, name='payg_plus_ec'),
+    path('paygprime_ec/', views.paygprime_ec, name='paygprime_ec'),
 
     path('checkout_ec_account_0/', views.checkout_ec_account_0, name='checkout_ec_account_0'),
     path('checkout_ec_account_3/', views.checkout_ec_account_3, name='checkout_ec_account_3'),
@@ -77,10 +77,10 @@ urlpatterns = [
     path('checkout_ec_payment_10/', views.checkout_ec_payment_10, name='checkout_ec_payment_10'),
     path('checkout_ec_payment_20/', views.checkout_ec_payment_20, name='checkout_ec_payment_20'),
 
-    path('payg_plus_ec_success/', views.payg_plus_ec_success, name='payg_plus_ec_success'),
+    path('paygprime_ec_success/', views.paygprime_ec_success, name='paygprime_ec_success'),
 
 #New Customers
-    path('payg_plus_nc/', views.payg_plus_nc, name='payg_plus_nc'),
+    path('paygprime_nc/', views.paygprime_nc, name='paygprime_nc'),
 
     path('checkout_nc_account_0/', views.checkout_nc_account_0, name='checkout_nc_account_0'),
     path('checkout_nc_account_3/', views.checkout_nc_account_3, name='checkout_nc_account_3'),
@@ -94,7 +94,7 @@ urlpatterns = [
     path('checkout_nc_payment_10/', views.checkout_nc_payment_10, name='checkout_nc_payment_10'),
     path('checkout_nc_payment_20/', views.checkout_nc_payment_20, name='checkout_nc_payment_20'),
     
-    path('payg_plus_nc_success/', views.payg_plus_nc_success, name='payg_plus_nc_success'),
+    path('paygprime_nc_success/', views.paygprime_nc_success, name='paygprime_nc_success'),
 
 #Test Page
     path('test/', views.test, name='test'),

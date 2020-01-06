@@ -24,19 +24,19 @@ def home2(request):
 
 #(3 pages) PAYG+ + EC + NC Product Views
 
-def payg_plus(request):
+def paygprime(request):
     context = locals()
-    template = 'payg_plus.html'
+    template = 'paygprime.html'
     return render(request,template,context)
 
-def payg_plus_ec(request):
+def paygprime_ec(request):
     context = locals()
-    template = 'payg_plus_ec.html'
+    template = 'paygprime_ec.html'
     return render(request,template,context)
 
-def payg_plus_nc(request):
+def paygprime_nc(request):
     context = locals()
-    template = 'payg_plus_nc.html'
+    template = 'paygprime_nc.html'
     return render(request,template,context)
 
 
@@ -154,14 +154,14 @@ def checkout_nc_payment_20(request):
 
 
 #(2 pages) Success New and Existing Customers
-def payg_plus_ec_success(request):
+def paygprime_ec_success(request):
     context = locals()
-    template = 'payg_plus_ec_success.html'
+    template = 'paygprime_ec_success.html'
     return render(request,template,context)
 
-def payg_plus_nc_success(request):
+def paygprime_nc_success(request):
     context = locals()
-    template = 'payg_plus_nc_success.html'
+    template = 'paygprime_nc_success.html'
     return render(request,template,context)
 
 
