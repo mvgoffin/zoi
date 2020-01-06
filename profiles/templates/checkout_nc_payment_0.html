@@ -25,7 +25,7 @@
     <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/n7vjp3exjhsmzqx/Favicon.png?dl=0">
     
     <title>
-        Pay As You Go+ | Checkout
+        Pay As You Go Prime | Checkout
     </title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -374,11 +374,9 @@
 
   </head>
 
-  <body>
-
-
-    
-  <!--Section 1: Navigation Menu-->
+<body> 
+<!--Navigation Menu-->
+<section>
   <header>
       <div style="padding:5px;margin:0px;">
           <p style="margin:0px;text-align:center">This is a customer journey demo with no integrations (database, payment gateway, etc.). Thanks for your time.</p>
@@ -457,12 +455,14 @@
             </style>
         </nav>
         </header>
-    
-    <!--Section 2: Pay-as-you-go Banner-->
+</section>
+
+<!--Pay-as-you-go Banner-->
+<section>
       <!--desktop-->
       <div class="row" id="banner-title-ec">
           <br>
-          <h1 class="heading-ec">New Customer</h1>
+          <h1 class="heading-ec">I'm a New Customer</h1>
         </div>
 
             <!--Checkout Progress Bar -->
@@ -479,14 +479,15 @@
       </div>
     
       <label class="cart-headline"></label>
+</section>
 
-<!--Section 3: Checkout Form-->
+<!--Checkout Form-->
 <section>
         <div class="w3-container">
             <div class="row" >
                
                 <!--Checkout Account Form-->
-                <form class="col-sm-5"method="POST" action="{% url 'payg_plus_nc_success' %}">{% csrf_token %}
+                <form class="col-sm-5"method="POST" action="{% url 'paygprime_nc_success' %}">{% csrf_token %}
                     <div id='shipping-register-form'>
                         <br>
                         <h3 class="home-heading">Checkout</h3>
@@ -558,7 +559,7 @@
                           </div>
                           <div class='col-sm-8'>
                               <br>
-                              <p>4G ready sim with Unlimited minutes and Unlimited texts</p>
+                              <p>4G ready SIM with Unlimited minutes and Unlimited texts</p>
                               <label class='hr'></label>
                               <p class="price" style="text-align:left;">Big Bundle<span style="float:right;">£5.00</span></p>
                               <label class='hr'></label>
@@ -628,32 +629,21 @@
                                                 </style> 
                                 </div>
                               <br>
-
                             </div>
                       </div>
-                
                   </div>
-
-                
-                
-
             </div>
-
           </div>
-
             <!--Seperation between Registration Form and Footer-->
-            
             <br>
             <br>
           </div>
           </div>
         </section>
 
-
-
-
-    <!-- Section 7: Footer-->
-   <footer class="w3-container" id='footer'>
+<!--Footer-->
+<section>
+  <footer class="w3-container" id='footer'>
       <style>
         #footer{
           padding: 0px;
@@ -716,6 +706,6 @@
         <div class="col-lg">
             <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Made by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
           </div>
-
+</section>
   </body>
 </html>
