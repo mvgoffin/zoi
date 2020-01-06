@@ -25,7 +25,7 @@
     <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/n7vjp3exjhsmzqx/Favicon.png?dl=0">
     
     <title>
-      Pay As You Go+ | Checkout
+        Pay As You Go Prime | Checkout
     </title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -110,10 +110,10 @@
           .small{
             display: inline-block;
             font-weight: 400;
-            color: #1E2671;
+            color: black;
             text-align:left;
             line-height: 25px;
-            font-size: small;
+            font-size: medium;
             margin: 0px;
             }
   
@@ -374,11 +374,9 @@
 
   </head>
 
-  <body>
-
-
-    
-  <!--Section 1: Navigation Menu-->
+<body> 
+<!--Navigation Menu-->
+<section>
   <header>
       <div style="padding:5px;margin:0px;">
           <p style="margin:0px;text-align:center">This is a customer journey demo with no integrations (database, payment gateway, etc.). Thanks for your time.</p>
@@ -451,18 +449,20 @@
             }
     
             #banner-title-ec {
-            background-image:url(https://dl.dropboxusercontent.com/s/eww0aptkrvx3sej/banner-existing-customers.png?dl=0);
+              background-image:url(https://dl.dropboxusercontent.com/s/eww0aptkrvx3sej/banner-existing-customers.png?dl=0);
             /**background-image: linear-gradient(to bottom, #1E2671, #589AD2); **/
              }
             </style>
         </nav>
         </header>
-    
-    <!--Section 2: Pay-as-you-go Banner-->
+</section>
+
+<!--Pay-as-you-go Banner-->
+<section>
       <!--desktop-->
       <div class="row" id="banner-title-ec">
           <br>
-          <h1 class="heading-ec">Existing Customer</h1>
+          <h1 class="heading-ec">I'm an Existing Customer</h1>
         </div>
 
             <!--Checkout Progress Bar -->
@@ -479,20 +479,20 @@
       </div>
     
       <label class="cart-headline"></label>
+</section>
 
-    
-<!--Section 3: Checkout Form-->
+<!--Checkout Form-->
 <section>
         <div class="w3-container">
             <div class="row" >
-              
-                 <!--Checkout Account Form-->
-                 <form class="col-sm-5"method="POST" action="{% url 'payg_plus_ec_success' %}">{% csrf_token %}
+               
+                <!--Checkout Account Form-->
+                <form class="col-sm-5"method="POST" action="{% url 'paygprime_ec_success' %}">{% csrf_token %}
                     <div id='shipping-register-form'>
                         <br>
                         <h3 class="home-heading">Checkout</h3>
                         <br>
-                        <p class='page-text' style="color: #8BB255;font-weight: bold;">Phone number verified!</p>
+                        <p class="page-text" style="color: #8BB255;font-weight: bold;">Phone number verified!</p>
                         <label class="home-heading" for="card-name"><b>Name on card</b></label>
                         <input type="text" name="card-name" class="form-control" id="card-name" placeholder="">
                         <br>
@@ -508,7 +508,7 @@
                       <p class="terms">
                           All transactions are secure and encrypted</p>
                           <div style="text-align: center;">
-                              <img src="https://dl.dropboxusercontent.com/s/73j0uv374gn9y32/payment-icons-1.png?dl=0" style="width:250px;">
+                              <img src="https://dl.dropboxusercontent.com/s/73j0uv374gn9y32/payment-icons-1.png?dl=0" style="width:100px;">
                             </div>
                         <style>
                             .terms {
@@ -519,38 +519,37 @@
                             }                    
                           </style>
                         </p>
-                
-                    
-                     <!--(reasons)-->
-                     <br>
-                     <div class="row" style="padding: 0;">
-                        <div class="col-sm" style="text-align: center;">
-                        <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="why-icon" style="width:30px">
-                        <p class="why-text">Cardless payments after this purchase</p>
-                        
+
+                        <!--(reasons)-->
+                      <br>
+                      <div class="row" style="padding: 0;">
+                          <div class="col-md" style="text-align: center;">
+                          <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="why-icon" style="width:30px">
+                          <p class="why-text">Cardless payments after this purchase</p>
+                          
+                          </div>
+                          <div class="col-md" style="text-align: center;">
+                          <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="why-icon" style="width:30px">
+                          <p class="why-text">24/7 customer service</p>  
+                                          
+                            </div> 
+                          <div class="col-md" style="text-align: center;">
+                          <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="why-icon" style="width:30px">
+                          <p class="why-text">No contract</p>
+                          
+                              </div>
+                          </div>
+
                         </div>
-                        <div class="col-sm" style="text-align: center;">
-                        <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="why-icon" style="width:30px">
-                        <p class="why-text">24/7 customer service</p>  
-                                        
-                          </div> 
-                        <div class="col-sm" style="text-align: center;">
-                        <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="why-icon" style="width:30px">
-                        <p class="why-text">No contract</p>
-                        
-                            </div>
-                        </div>
-                    
-                    
-                    
-                      </div>
-                      </form>
+                    </form>
+
 
                 <!--Checkout Divider-->
                 <div class="col-md-1" id='divider'>
-                </div>
-                
-                       <!--Checkout Big Bundle Selected-->
+                  </div>
+                  
+
+                <!--Checkout Big Bundle Selected-->
                 <div class="col-md-6" id='cart-list-wrapper'>
                     <br>
                     <h3 class="home-heading">Calls & Texts</h3>
@@ -561,50 +560,91 @@
                           </div>
                           <div class='col-sm-8'>
                               <br>
-                              <p>4G ready sim with Unlimited minutes and Unlimited texts</p>
+                              <p>4G ready SIM with Unlimited minutes and Unlimited texts</p>
                               <label class='hr'></label>
                               <p class="price" style="text-align:left;">Big Bundle<span style="float:right;">£5.00</span></p>
                               <label class='hr'></label>
                               <p class="price" style="text-align:left;font-weight: bold">Subtotal<span style="float:right;">£5.00</span></p>
+                              <p class="price" style="text-align:left;">UK Shipping<span style="float:right;display: inline;color:#8BB255;font-weight: bold;">FREE</span></p>
                               <label class='hr'></label>
                               <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£5.00</b></span></p>
-                              <div class='big-bundle-status'>
-                                  <p class='text-date'>If you already have a Big Bundle, we’ll add remaining data.<p class='date' id="date"></p>
-                                  <style>
-                                      .big-bundle-status{
-                                        text-align:left;
-                                      }
-  
-                                      .text-date{
-                                        color:gray;
-                                        display:inline-block;
-                                        font-size: 10px;
-                                        font-weight: bold;
-                                        text-align:left;
-                                      }
-                                    </style>
-                                </div> 
-                              
-                           </div>
+                              <div class='shipping-status'>
+                                  <div id='status' class="status"></div><div id='status' class="status"></div><div id='status' class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class='text-date'>Estimated Delivery Date:&nbsp;&nbsp;<p class='date' id="date"></p></p>
+                                    <!--Estimated Delivery Date SCRIPT + STYLE-->
+                                              <!--SCRIPT-->
+                                              <script>
+                                                  var months = ["Jan", "Febr", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                                                  n =  new Date();
+                                                  n.setDate(n.getDate() + 2);
+                                                  y = n.getFullYear();
+                                                  m = n.getMonth();
+                                                  d = n.getDate();
+                                                  document.getElementById("date").innerHTML = d + " " + months[m] + " " + y;
+                                                </script>
+                                              <!--STYLE-->
+                                                <style>
+                                                  .shipping-status{
+                                                    text-align:right;
+                                                  }
+              
+                                                  .text-date{
+                                                    color:gray;
+                                                    display:inline-block;
+                                                    font-size: 10px;
+                                                    font-weight: bold;
+                                                    text-align:right;
+                                                  }
+                                                  .date{
+                                                    color:#8BB255;
+                                                    display:inline-block;
+                                                    font-size: 10px;
+                                                    font-weight: bold;
+                                                  }
+              
+                                                  .status{
+                                                    background-color:#8BB255;
+                                                    border-radius: 50%;
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    text-align:right;
+                                                  }
+              
+                                                  @-webkit-keyframes pulse {
+                                                      0%{transform:scale(.1);opacity: 0;}
+                                                      50%{ opacity: .4;}
+                                                      100%{transform: scale(1.6); opacity: 0;}
+                                                    }
+              
+                                                    #status {
+                                                      position:absolute;
+                                                      -webkit-animation: pulse 2s infinite;
+                                                    }
+                                                    #status:nth-child(2) {
+                                                      position:absolute;
+                                                      -webkit-animation: pulse 2s infinite .3s;
+                                                    }
+                                                    #status:nth-child(3) {
+                                                      position:absolute;
+                                                      -webkit-animation: pulse 2s infinite .6s;
+                                                    }
+                                                </style> 
+                                </div>
+                              <br>
+                            </div>
                       </div>
                   </div>
-
             </div>
           </div>
-
             <!--Seperation between Registration Form and Footer-->
-            
             <br>
             <br>
           </div>
           </div>
         </section>
 
-
-
-
-    <!-- Section 7: Footer-->
-   <footer class="w3-container" id='footer'>
+<!--Footer-->
+<section>
+  <footer class="w3-container" id='footer'>
       <style>
         #footer{
           padding: 0px;
@@ -667,6 +707,6 @@
         <div class="col-lg">
             <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Made by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
           </div>
-
+</section>
   </body>
 </html>

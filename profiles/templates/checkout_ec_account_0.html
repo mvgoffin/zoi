@@ -25,7 +25,7 @@
     <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/n7vjp3exjhsmzqx/Favicon.png?dl=0">
     
     <title>
-      Pay As You Go+ | Checkout
+        Pay As You Go Prime | Checkout
     </title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -117,7 +117,7 @@
             margin: 0px;
             }
   
-            .form-control {
+          .form-control {
             box-sizing: border-box;
             margin-top: 5px;
             width: 100%;
@@ -373,11 +373,9 @@
 
   </head>
 
-
-
-  <body>
-
-  <!--Section 1: Navigation Menu-->
+<body>
+<!--Navigation Menu-->
+<section>
   <header>
       <div style="padding:5px;margin:0px;">
           <p style="margin:0px;text-align:center">This is a customer journey demo with no integrations (database, payment gateway, etc.). Thanks for your time.</p>
@@ -450,19 +448,23 @@
             }
     
             #banner-title-ec {
-          background-image:url(https://dl.dropboxusercontent.com/s/eww0aptkrvx3sej/banner-existing-customers.png?dl=0);
+              background-image:url(https://dl.dropboxusercontent.com/s/eww0aptkrvx3sej/banner-existing-customers.png?dl=0);
           /**background-image: linear-gradient(to bottom, #1E2671, #589AD2); **/
             }
             </style>
         </nav>
         </header>
-    
-    <!--Section 2: Pay-as-you-go Banner-->
-      <!--desktop-->
-      <div class="row" id="banner-title-ec">
-          <br>
-          <h1 class="heading-ec">Existing Customer</h1>
-        </div>
+</section>
+
+<!--Pay As You Go Banner-->
+<section>
+            <!--desktop-->
+            <div class="row" id="banner-title-ec">
+                <br>
+                <h1 class="heading-ec">I'm an Existing Customer</h1>
+                <br>
+                <br>
+              </div>
 
             <!--Checkout Progress Bar -->
     <div class="w3-container sticky-top" style="background: #F8F8F8;">
@@ -478,125 +480,124 @@
       </div>
     
       <label class="cart-headline"></label>
-
+</section>
+    
 <!--Section 3: Checkout Form-->
 <section>
-        <div class="w3-container">
-            <div class="row" >
-        
-                <!--Checkout Account Form-->
-                <form class="col-sm-5"method="POST" action="{% url 'checkout_ec_payment_0' %}">{% csrf_token %}
-                    <div id='shipping-register-form'>
-                    <br>
-                    <h3 class="home-heading">Checkout</h3>
-                    <br>
-                    <label class="home-heading" for="id_phone"><b>Phone Number</b></label>
-                    <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" id="id_phone" placeholder="🇬🇧 +44">
-                    <small class='small'>Please enter your phone number to confirm your account. You'll be able to buy Big Bundles exclusively via text. It’s quick, easy and allows you to reach us anytime with questions.</small>
-                    <br> 
-                    <div class="form-group">  
-                      <button type="submit">NEXT</button>
-                    </div>
-                    <p class="terms">
-                        By continuing, you agree to our Terms of service, Privacy policy and SMS policy.      
-                    <p class="terms">
-                        All transactions are secure and encrypted</p>
-                        <div style="text-align: center;">
-                            <img src="https://dl.dropboxusercontent.com/s/73j0uv374gn9y32/payment-icons-1.png?dl=0" style="width:250px;">
-                          </div>
-                      <style>
-                          .terms {
-                            text-align: center;
-                            font-size: 12px;
-                            color: gray;
-                            padding-bottom: 10px;
-                          }                    
-                        </style>
-                      </p>
-                       <!--(reasons)-->
-                     <br>
-                     <div class="row" style="padding: 0;">
-                        <div class="col-sm" style="text-align: center;">
-                        <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="why-icon" style="width:30px">
-                        <p class="why-text">Cardless payments after this purchase</p>
-                        
-                        </div>
-                        <div class="col-sm" style="text-align: center;">
-                        <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="why-icon" style="width:30px">
-                        <p class="why-text">24/7 customer service</p>  
-                                        
-                          </div> 
-                        <div class="col-sm" style="text-align: center;">
-                        <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="why-icon" style="width:30px">
-                        <p class="why-text">No contract</p>
-                        
-                            </div>
-                        </div>
+    <div class="w3-container">
+        <div class="row" >
+    
+            <!--Checkout Account Form-->
+            <form class="col-sm-5"method="POST" action="{% url 'checkout_ec_payment_0' %}">{% csrf_token %}
+                <div id='shipping-register-form'>
+                <br>
+                <h3 class="home-heading">Checkout</h3>
+                <br>
+                <label class="home-heading" for="id_phone"><b>Phone Number</b></label>
+                <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" id="id_phone" placeholder="🇬🇧 +44">
+                <small class='small'>Please enter your phone number to confirm your account. You'll be able to buy Big Bundles exclusively via text. It’s quick, easy and allows you to reach us anytime with questions.</small>
+                <br> 
+                <div class="form-group">  
+                  <button type="submit">NEXT</button>
+                </div>
+                <p class="terms">
+                    By continuing, you agree to our Terms of service, Privacy policy and SMS policy.      
+                <p class="terms">
+                    All transactions are secure and encrypted</p>
+                    <div style="text-align: center;">
+                        <img src="https://dl.dropboxusercontent.com/s/73j0uv374gn9y32/payment-icons-1.png?dl=0" style="width:100px;">
+                      </div>
+                  <style>
+                      .terms {
+                        text-align: center;
+                        font-size: 12px;
+                        color: gray;
+                        padding-bottom: 10px;
+                      }                    
+                    </style>
+                  </p>
+                   <!--(reasons)-->
+                 <br>
+                 <div class="row" style="padding: 0;">
+                    <div class="col-sm" style="text-align: center;">
+                    <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="why-icon" style="width:30px">
+                    <p class="why-text">Cardless payments after this purchase</p>
                     
                     </div>
-                 </form>
-
-
-              <!--Checkout Divider-->
-              <div class="col-md-1" id='divider'>
-                </div>
+                    <div class="col-sm" style="text-align: center;">
+                    <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="why-icon" style="width:30px">
+                    <p class="why-text">24/7 customer service</p>  
+                                    
+                      </div> 
+                    <div class="col-sm" style="text-align: center;">
+                    <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="why-icon" style="width:30px">
+                    <p class="why-text">No contract</p>
+                    
+                        </div>
+                    </div>
                 
+                </div>
+             </form>
 
-              <!--Checkout Big Bundle Selected-->
-                <div class="col-md-6" id='cart-list-wrapper'>
-                    <br>
-                    <h3 class="home-heading">Calls & Texts</h3>
-                    <div class="row" style="padding:0px;margin:0px;">
-                        <div class="col-sm-4">
-                          <br>
-                            <img src="https://dl.dropboxusercontent.com/s/2j4nxwhjx1w1h3i/simcard%20pluspayg.png?dl=0" id="product-img">
-                          </div>
-                          <div class='col-sm-8'>
-                              <br>
-                              <p>4G ready sim with Unlimited minutes and Unlimited texts</p>
-                              <label class='hr'></label>
-                              <p class="price" style="text-align:left;">Big Bundle<span style="float:right;">£5.00</span></p>
-                              <label class='hr'></label>
-                              <p class="price" style="text-align:left;font-weight: bold">Subtotal<span style="float:right;">£5.00</span></p>
-                              <label class='hr'></label>
-                              <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£5.00</b></span></p>
-                              <div class='big-bundle-status'>
-                                  <p class='text-date'>If you already have a Big Bundle, we’ll add remaining data.<p class='date' id="date"></p>
-                                  <style>
-                                      .big-bundle-status{
-                                        text-align:left;
-                                      }
-  
-                                      .text-date{
-                                        color:gray;
-                                        display:inline-block;
-                                        font-size: 10px;
-                                        font-weight: bold;
-                                        text-align:left;
-                                      }
-                                    </style>
-                                </div> 
-                              
-                           </div>
-                      </div>
-                  </div>
 
+          <!--Checkout Divider-->
+          <div class="col-md-1" id='divider'>
             </div>
-
-          </div>
-
-            <!--Seperation between Registration Form and Footer-->
             
-            <br>
-            <br>
-          </div>
-          </div>
-        </section>
 
+          <!--Checkout Big Bundle Selected-->
+            <div class="col-md-6" id='cart-list-wrapper'>
+                <br>
+                <h3 class="home-heading">Calls & Texts</h3>
+                <div class="row" style="padding:0px;margin:0px;">
+                    <div class="col-sm-4">
+                      <br>
+                        <img src="https://dl.dropboxusercontent.com/s/2j4nxwhjx1w1h3i/simcard%20pluspayg.png?dl=0" id="product-img">
+                      </div>
+                      <div class='col-sm-8'>
+                          <br>
+                          <p>4G ready sim with Unlimited minutes and Unlimited texts</p>
+                          <label class='hr'></label>
+                          <p class="price" style="text-align:left;">Big Bundle<span style="float:right;">£5.00</span></p>
+                          <label class='hr'></label>
+                          <p class="price" style="text-align:left;font-weight: bold">Subtotal<span style="float:right;">£5.00</span></p>
+                          <label class='hr'></label>
+                          <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£5.00</b></span></p>
+                          <div class='big-bundle-status'>
+                              <p class='text-date'>If you already have a Big Bundle, we’ll add remaining data.<p class='date' id="date"></p>
+                              <style>
+                                  .big-bundle-status{
+                                    text-align:left;
+                                  }
 
+                                  .text-date{
+                                    color:gray;
+                                    display:inline-block;
+                                    font-size: 10px;
+                                    font-weight: bold;
+                                    text-align:left;
+                                  }
+                                </style>
+                            </div> 
+                          
+                       </div>
+                  </div>
+              </div>
 
+        </div>
 
-    <!-- Section 7: Footer-->
+      </div>
+
+        <!--Seperation between Registration Form and Footer-->
+        
+        <br>
+        <br>
+      </div>
+      </div>
+</section>
+
+<!--Footer-->
+<section>
    <footer class="w3-container" id='footer'>
       <style>
         #footer{
@@ -660,6 +661,6 @@
         <div class="col-lg">
             <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Made by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
           </div>
-
+</section>
   </body>
 </html>
