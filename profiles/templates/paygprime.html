@@ -397,10 +397,9 @@
   </head>
 
   <body>
-
-
-  <!--Section 1: Navigation Menu-->
-  <header>
+<!--Navigation Menu-->
+<section>
+<header>
       <div style="padding:5px;margin:0px;">
           <p style="margin:0px;text-align:center;font-size: small;">This is a demo with no integrations (database, payment gateway, etc.). Click through to pages to continue. Thanks for your time.</p>
         </div>
@@ -477,80 +476,73 @@
             }
             </style>
         </nav>
-        </header>
+</header>
+</section>
 
-    
-    <!--Section 2: Pay-as-you-go Banner-->
-      <!--desktop-->
-      <div >
-          <div class='web' >
-              <img src="https://dl.dropboxusercontent.com/s/uj6axzdkk88f2mz/banner-girl-friends-happy.png?dl=0" id="hero-image">
-              <!--<div class="payg">Pay-as-you-go +</div>
-              <br>
-              <div class="centered">Never waste time topping up again</div>-->
-            </div>
-      </div>
-      <!--mobile-->
-      <div >
-            <div class='mob'>
-              <img src="https://dl.dropboxusercontent.com/s/33ighxx6uvx9bk0/banner-m-girl-friends-happy.png?dl=0" id="hero-image">
-            </div>
-      </div>
-        <style>
-        /* For width larger than 990px: */
-          .mob {
-            display: none; 
+<!--Banner-->
+<section>
+    <div class="w3-container" id='banner'>    
+        <h2 class="banner-text">Get data, while binging</h2>      
+        </div>
+      <style>
+          /* For width larger than 990px: */
+          #banner {
+            padding-top: 250px;
+            padding-bottom: 150px;
+            padding-left: 150px;
+            padding-right: 150px;
+            background-image:url(https://dl.dropboxusercontent.com/s/c5uw8homi5eq8pz/Hero-banner-prime.png?dl=0);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+      
+          .banner-text {
+                color:white;
+                font-size: 6vw;
+                padding-top: 100px;
+                padding-bottom: 0px;
+                text-align: left;
+                font-weight: 800;
+                display:block;
+                margin: 0;
           }
 
-          .payg {
-            position: absolute;
-            top: 50%;
-            left: 36.5%;
-            transform: translate(-50%, -50%);
-            font-family: 'Avenir', sans-serif;
-            font-size: 80px;
-            font-weight: 800;
-            margin: 0;
-            color:white;
-            text-align: left;
-          }
-
-          .centered {
-            position: absolute;
-            top: 70%;
-            left: 40%; /**aligning to left**/
-            transform: translate(-50%, -50%);
-            font-family: 'Avenir', sans-serif;
-            font-size: 50px;
-            font-weight: 800;
-            margin: 0;
-            color:#3498CD;
-            text-align: left;
-          }
-
-          @media only screen and (max-width: 890px) {
-            .web {display: none;}
-            .centered {display: none;}
-            .mob {display: inline;}
-            }
           
-        </style>
+          @media only screen and (max-width: 890px) {
+          #banner {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 150px;
+            background-image:url(https://dl.dropboxusercontent.com/s/8vhmsu6ceq0h6te/Hero-banner-prime-mobile.png?dl=0);
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+          .banner-text{
+              font-size: 50px;
+              margin-left:20px !important;
+              margin-right:20px !important;
+              padding-left: 0px !important;
+              padding-right: 0px !important;
+            }
+          }
+          </style>
+    </section>
 
-    
-    
-
-    <!--Section 3: What is Pay-as-you-go Plus-->
-    <div class="w3-container">   
+<!--What is Pay As You Go Prime-->
+<section>
+<div class="w3-container">   
         <div class="row" id='banner-intro-payg'>
-            <h2 class="heading">Pay As You Go+</h2>
-            <p class="customer-text">Don’t waste time topping up. We designed Pay As You Go+ to make it simple and convenient to buy the data, mins and texts you need. Buy your favourite Big Bundles by sending as little as one text, that’s it. If you already have a Pay As You Go sim, you can upgrade to Plus Plan to enjoy more flexibility.</p>
+            <h2 class="heading">Pay As You Go Prime</h2>
+            <p class="customer-text">Don’t waste time topping up. We designed Pay As You Go Prime to make it simple and convenient to buy the data, mins and texts you need. Buy your favourite Big Bundles by sending as little as one text, that’s it. If you already have a Pay As You Go sim, you can upgrade to Prime Tariff to enjoy more flexibility.</p>
             <br>
             <br>
           </div>
-      </div>
+  </div>
+</section>
 
-    
-    <!-- Section 4: Shop Pay-as-you-go Plus-->
+<!--Select Pay As You Go Prime-->
+<section>
     <br>  
     <div class="w3-container">
           <div class="row">
@@ -578,13 +570,15 @@
 
         <br>
         <div class="headline-middle"></div>
+</section>
 
- <!--Section 5: Why choose PAY-GO plus template-->
+ <!--Why choose Pay As You Go Prime-->
+ <section>
       <!--(title)-->
       <div class="w3-container"> 
           <br> 
             <div class="row"> 
-                <h2 class="heading">Why choose Pay As You Go+</h2>
+                <h2 class="heading">Why choose Pay As You Go Prime</h2>
               </div>
           </div>
         <!--(reasons)-->
@@ -593,26 +587,26 @@
                    <div class="col-md" style="text-align: center;">
                     <img src="https://dl.dropboxusercontent.com/s/n3yui3bf9regh44/contactless.png?dl=0" id="why-icon" style="width:50px">
                     <p class="why-text"><b>Cardless payments</b></p>
-                    <p class="why-text">Never waste time topping up again. Just text to buy your favourite Big Bundle and Bolt ons.</p>
+                    <p class="why-text">Never waste time topping up again. Just text to buy your favourite Big Bundles and Bolt ons.</p>
                    </div>
                    <div class="col-md" style="text-align: center;">
                     <img src="https://dl.dropboxusercontent.com/s/1qdgtzgko2icpvj/24-7%20service.png?dl=0" id="why-icon" style="width:50px">
                     <p class="why-text"><b>24/7 customer service</b></p>  
-                    <p class="why-text">Need to update you payment info? Have questions about your sim? Just text us and we're happy to help.</p>                
+                    <p class="why-text">Need to update you payment info? Have questions about your SIM? Just text us and we're happy to help.</p>                
                      </div> 
                    <div class="col-md" style="text-align: center;">
                     <img src="https://dl.dropboxusercontent.com/s/lowdi3nj1viq4tj/flexible.png?dl=0" id="why-icon" style="width:50px">
                     <p class="why-text"><b>No contract</b></p>
-                    <p class="why-text">Stay flexible and enjoy Pay As You Go+ experience without signing a contract.</p>
+                    <p class="why-text">Stay more flexible and enjoy Prime experience without signing a contract.</p>
                        </div>
                    </div> 
           </div>  
-
         <br>
         <div class="headline"></div>
-
+</section>
   
-    <!-- Section 7: Footer-->
+<!-- Footer-->
+<section>
    <footer class="w3-container" id='footer'>
       <style>
         #footer{
@@ -676,6 +670,6 @@
         <div class="col-lg">
             <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Made by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
           </div>
-
+</section>
   </body>
 </html>
