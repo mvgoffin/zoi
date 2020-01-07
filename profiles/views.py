@@ -16,4 +16,9 @@ def home(request):
     template = 'home.html'
     return render(request,template,context)
 
+def test(request):
+    context = locals()
+    template = 'test.html'
+    return render(request,template,context)
+
 
