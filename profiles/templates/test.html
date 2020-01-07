@@ -1,4 +1,3 @@
-<!-- Hi there, curious developer!-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +43,7 @@
     /**classes**/
 
         * {
-          font-family: 'Avenir', sans-serif;
+          font-family: 'Europa', sans-serif;
           font-size: 16px;
           font-variant: normal;
           box-sizing: border-box;
@@ -58,53 +57,14 @@
           padding: 0;
           height: 100%;
           background-color: transparent;
-          color:#202022;
+          color:black;
         }
 
         .row{
-          padding-left: 100px;
-          padding-right: 100px;
+          padding-left: 0px;
+          padding-right: 0px;
           margin-right:0px;
           margin-left:0px;
-        }
-
-        .heading{
-          font-size:40px;
-          text-align: center;
-          color: #000068;
-          padding-top: 35px;
-          padding-bottom: 15px;
-          font-weight: 800;
-          margin: 0;
-        }
-
-        .heading-gradient{
-          padding-top: 35px;
-          padding-bottom: 15px;
-          text-align: left;
-          font-weight: 800;
-          display:block;
-          margin: 0;
-          font-size: 35px;
-          background: -webkit-linear-gradient(left, #194CFA, #22F0C1, #FFCDFF);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-
-        .executive-question {
-            font-size:20px;
-            color: #000068;
-            text-align: left;
-            padding-top: 20px;
-            font-weight: bold;
-        }
-
-        .work-experience-header {
-            font-size:20px;
-            color: #000068;
-            text-align: center;
-            padding-top: 20px;
-            font-weight: bold;
         }
 
         .why-text {
@@ -138,8 +98,9 @@
         font-size: medium;
         }
 
-        .heading-footer{
+        .heading-f{
           color: white;
+          font-weight: bold;
           margin-bottom:10px;
           text-align: left;
         }
@@ -188,20 +149,6 @@
           -webkit-appearance: none !important;
         }
 
-        .dot {
-          height: 90px;
-          width: 90px;
-          border-radius: 50%;
-          display: inline-block;
-          font-size: 10px;
-          font-weight: bolder;
-          color: #fff;
-          line-height: 90px;
-          text-align: center;
-          background: violet; 
-          /*background: linear-gradient(to bottom right, purple , violet);*/
-        }
-
         .headline {
           width: 100%;
           box-shadow: 0 10px 5px -5px  #D1D1D1;
@@ -226,10 +173,10 @@
         }
 
         .wrapper > .inner {
-			padding: 5em 5em 3em 5em ;
-			max-width: 100%;
-			width: 75em;
-		}
+          padding: 5em 5em 3em 5em ;
+          max-width: 100%;
+          width: 75em;
+        }
 
         .container-text {
             color:white;
@@ -242,126 +189,25 @@
             margin: 0;
         }
 
+        .a{
+          text-decoration: none;
+          
+        }
+
           
     /**ids**/
-
-        #photo {
-            width: 100%;
-            margin-top: 45px;
-            padding: 10px;
-        }
-        #executive-photo {
-            width: 100%;
-            margin-top: 45px;
-            box-shadow: 5px 5px 7px 0 #194CFA;
+        #image{
+          width: 100%; 
+          border-style:solid;
+          border-color: black;
+          border-width: 10px;
         }
 
-        #banner-intro {
-          background: white;
+        #trust {
+          color: white;
         }
-        
-        #report-container {
-            background-image:url(https://dl.dropboxusercontent.com/s/5j60qe550j92rwh/ifriends-taking-selfie_600x.jpg?dl=0);/**(-90deg, #194CFA,#22F0C1, #FFCDFF);**/
-            /**border-radius: 10px;**/
-            box-shadow: 5px 5px 7px 0 #194CFA;
-            -webkit-transition: box-shadow 150ms ease;
-            transition: box-shadow 150ms ease;
-            margin:10px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        #payg-container {
-            background-image:url(https://dl.dropboxusercontent.com/s/4vj0ap9k5lqayhk/success-friends-happy-home.jpg?dl=0);/**(90deg, #194CFA , #22F0C1 , #FFCDFF );**/
-            /**border-radius: 10px;**/
-            box-shadow: 5px 5px 7px 0 #194CFA;
-            -webkit-transition: box-shadow 150ms ease;
-            transition: box-shadow 150ms ease;
-            margin:10px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        #report-image {
-          max-width: 100%;
-          padding: 20px;
-        }
-
-        #report-container-button {
-          padding-left: 150px;
-          padding-right: 150px;
-        }
-        
-        #why-icon{
-          margin-bottom: 20px;
-          box-shadow: 0 10px 5px -5px  #D1D1D1;
-        }
-
-        #header-logo {
-        width: 50px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 10px;
-        /**background-color: white;**/
-        }
-
-        #hero-image {
-          width: 100%;
-          height: 100%;
-          background-color: transparent;
-          margin: auto;
-        }
-
-        #icon {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 100%;
-          background: transparent;
-        }
-
-        #product-image {
-          width: 100%;
-          height: 100%;
-          padding: 35px;
-          background-color: transparent;
-          border-style: solid;
-          /**border-color:#FCF9F7;
-          border-width: 10px;**/
-          margin: auto;
-          margin: 0px;
-        }
-        
-        #fade{
-            opacity:0;      
-        }
-
-        #divider {
-            box-sizing: border-box;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            width: 100%;
-            border-top: 1px solid #194CFA;;
-            border-bottom: white;
-            border-left: white;
-            border-right: white;
-            -webkit-appearance: none !important;
-        }
-
-        #executive-heading {
-            font-size:20px;
-            color: #000068;
-            text-align: left;
-            padding: 0;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        
-    
 
     /**Other assets**/
-
 
         button {
           background: transparent;
@@ -369,7 +215,7 @@
           width:100%;
           border: 1px solid transparent;
           color: white;
-          background: #194CFA;
+          background:#FFEF00;
           padding: 10px 20px;
           margin: .618em 0.01em;  
           font-weight: 800;
@@ -384,14 +230,14 @@
         button:focus{
           background-color: #D1D1D1;
           border: 1px solid #D1D1D1;
-          color: #1E2671;
+          color: black;
           border-color: transparent;
           border-width: 1px;
         }
 
         button:hover {
-          background-color: #22F0C1;
-          color: #1E2671;
+          background-color:blanchedalmond;
+          color: black;
           border-width: 1px;
         }
         
@@ -407,60 +253,27 @@
   
   /**Bootstrap Columns and Sections**/
         
-        .col-sm { /**Product offer**/
-        }
-        
-        .col-md { /**Why Choose PAYG Prime**/
-          /*border-radius: 16px;*/
+        .col-md { /**Why Choose PLNT PROTEIN**/
           background: transparent;
           margin:10px;
           padding: 20px;
         }
 
-        
-        .col-3 {
-          text-align: center;
-          margin-top: 35px;
-          padding: 0px;
-          margin: 0px;
-          margin-bottom: 35px;
-          
-        }
-  
-        .col-md-3{
-        padding: 20px;
-        }
-
-        /**
-        .col-sm-3{
-        padding: 0px;
-        margin: 0px;
-        }
-
-        .col-sm-6{
-          padding-left:  100px;
-          padding-right:  100px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        **/
-
     @media only screen and (max-width: 990px) {
-      .col-md, .col-md-4, .centered {
-        margin-left:20px !important;
-        margin-right: 20px !important;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-      }
-    }
-    
-
-    @media only screen and (max-width: 990px) {
-    .row, .col-sm, .heading, #header-logo, .open-slide, form, .home-small-1, li, .col-xs-1, .col-xs-4, .col-sm-6, .col-md-3, .accordion, .panel, .featherlight-content, .headline-middle, #report-container  {
+    .row , .w3-container {
                 margin-left:0 !important;
                 margin-right:0 !important;
+                margin-top:0 !important;
                 padding-left: 15px !important;
                 padding-right: 15px !important;
+                }
+
+                #header-logo {
+                  width: 100%;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  padding-left: 00px;
+                  text-align: center;
                 }
 
                 #icon {
@@ -469,129 +282,45 @@
                 width: 100%;
                 }
 
-                #hero-image{
-                  width: 100%;
-                  background-position: center bottom;
-                  margin: auto;
-                  display: block;
-                }
-
                 *, .html {
                   margin-left:0 !important;
                   margin-right:0 !important;
                   padding-left: 0 !important;
                   padding-right: 0 !important;
                 }
-
-                #hero-logo.product{
-                  padding: 0;
-                  margin-left: auto;
-                  margin-right: auto;
-                }
-                
-                #hero-logo.product, #reason {
-                    width: 100%;
-                    display: block;
-                    margin: auto;
-                  }
-
-                .container-text {
-                    color:white;
-                    font-size: 10vw;
-                    padding-top: 100px;
-                    padding-bottom: 0px;
-                    text-align: center;
-                    font-weight: 800;
-                    display:block;
-                    margin: 0;
-                }
-
-                #report-container {
-                    background-image:url(https://dl.dropboxusercontent.com/s/ok87gc35uehq6et/ifriends-taking-selfie_600x-m.jpg?dl=0);
-                    /**border-radius: 10px;**/
-                    box-shadow: 5px 5px 7px 0 #194CFA;
-                    -webkit-transition: box-shadow 150ms ease;
-                    transition: box-shadow 150ms ease;
-                    margin:10px;
-                    padding: 20px;
-                    text-align: center;
-                }
-
-                #payg-container {
-                    background-image:url(https://dl.dropboxusercontent.com/s/wmv571ytt03a3iw/success-friends-happy-home-m.jpg?dl=0);
-                    /**border-radius: 10px;**/
-                    box-shadow: 5px 5px 7px 0 #194CFA;
-                    -webkit-transition: box-shadow 150ms ease;
-                    transition: box-shadow 150ms ease;
-                    margin:10px;
-                    padding: 20px;
-                    text-align: center;
-                }
-
-                .executive-question {
-                    font-size:20px;
-                    color: #000068;
-                    text-align: left;
-                    padding-top: 20px;
-                    font-weight: bold;
-                }
-
-                .work-experience-header {
-                    font-size:20px;
-                    color: #000068;
-                    text-align: center;
-                    padding-top: 20px;
-                    font-weight: bold;
-                }
- 
       }
 
       </style>
 
     </head>
-<body>
 
-<!--Something great is happening... -->
+<body>
 
 <!--Navigation Bar-->
 <section> 
 <header>
+  <div class='announcement'>
+      Last month was amazing for the team, because we listened what you loved and what can be improved -we're learning as we go. We’re hard at work making delicious snacks with benefits available in very soon. Drop us a line on hi@plntprotein.com if you would like to be alerted when it's available again :) 
+  </div>
         <nav class="navbar">
-            <a href='https://www.marcofortelefonicauk.com' class="navbar-brand"><img src="https://dl.dropboxusercontent.com/s/sjzi6n1l10e59d4/Favicon-white.png?dl=0" id="header-logo"></a>
+            <a href='https://www.plntprotein.com'><img src="https://dl.dropboxusercontent.com/s/ky0673esgrjfmmv/1.%20Logo_PLNT_Black-FINAL-noTM.png?dl=0" id="header-logo"></a>
             
-            <button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;">
-                <span class="open-slide" style="text-align:right; background:transparent;">
-                    <a href="#" onclick='openSlideMenu()'>
-                      <svg width="25" height='25'>
-                        <path d='M0,5 30,5' stroke='#FFFFFF' 
-                        stroke-width='4'/>
-                        <path d='M0,14 30,14' stroke='#FFFFFF' 
-                        stroke-width='4'/>
-                        <path d='M0,23 30,23' stroke='#FFFFFF' 
-                        stroke-width='4'/>
-                      </svg>
-                    </a>
-                  </span>
-            </button2>
-            
-            <div class="navbar-collapse collapse" id="collapsingNavbar4">
-                <ul class="navbar-nav">
-                    <li class="nav-item active2">
-                        <a class="nav-link" href="/home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.dropbox.com/s/odxdo355gntuv1k/Full%20Report.pdf?dl=0" target="_blank">Full Report</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/paygprime">Pay As You Go Prime</a>
-                    </li>
-                </ul>
-            </div>
-    
             <style>
+            .announcement{
+              background:purple;
+              color: white;
+              font-size: smaller;
+              font-style: italic;
+              padding-top:10px;
+              padding-bottom: 10px;
+              padding-left: 100px;
+              padding-right: 100px;
+              text-align: center;
+            }
             .navbar {
-              background: #194CFA;
+              background:#FFEF00;
               padding: 0;
+              text-align: center;
             }
             
             .nav-link {
@@ -602,7 +331,7 @@
             }
 
             .nav-link:hover {
-              color:#22F0C1;
+              color:slategray;
             }
     
             button2 {
@@ -610,11 +339,14 @@
               padding-bottom: 10px;
               padding-right: 30px;
             }
+            
             #header-logo {
-            width: 50px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 30px;
+            width: 25%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 0px;
+            padding-right: 0px;
+            text-align: center;
             }
     
             #banner-intro {
@@ -628,8 +360,8 @@
 
 <!--Banner-->
 <section>
-    <div class="w3-container" id='banner'>    
-        <h2 class="banner-text">Helping people live easier, better lives</h2>      
+    <div class="w3-container" id='banner' style="margin:30px">    
+        <h2 class="banner-text">Good Clean Food Delivered</h2>      
         </div>
       <style>
           /* For width larger than 990px: */
@@ -638,10 +370,10 @@
             padding-bottom: 150px;
             padding-left: 150px;
             padding-right: 150px;
-            background-image:url(https://dl.dropboxusercontent.com/s/vxq8xys40r47m8l/Hero-banner.png?dl=0);
+            background-image:url(https://dl.dropboxusercontent.com/s/54y43qb9zv4cymi/web-m-banner-3.png?dl=0);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 100% 100%;
+            background-size: 100%;
           }
       
           .banner-text {
@@ -655,13 +387,13 @@
                 margin: 0;
           }
 
-          
           @media only screen and (max-width: 990px) {
           #banner {
-            padding-top: 50px;
+            margin-top:0px;
+            padding-top: 0px;
             padding-bottom: 50px;
             padding-left: 150px;
-            background-image:url(https://dl.dropboxusercontent.com/s/8sdlrefpesmws0x/Hero-banner-mobile.png?dl=0);
+            background-image:url(https://dl.dropboxusercontent.com/s/54y43qb9zv4cymi/web-m-banner-3.png?dl=0);
             background-position: center;
             background-repeat: no-repeat;
           }
@@ -679,279 +411,49 @@
 <!--Introduction-->
 <section>
 <div class="w3-container">   
-        <div class="row" id='banner-intro'>
-              <div class='col-lg-3'>
-                  <img src="https://dl.dropboxusercontent.com/s/u2a3b28eb7er2y3/MVG_1.jpeg?dl=0" id="photo">
-                </div>
-            <div class='col-lg-1'></div>
-            <div class='col-lg-8'>
-                <h2 class="heading-gradient">Hi</h2>
-                <p>I'm Marco Valle Goffin, a digital marketer blending skills in strategy, product management and design thinking, and I want to work at O2 Telefonica UK.</p>
-                <p>In 2010, I started my career in Telefonica, where I honed my business skills and built my passion for the company and industry. After reading my MBA and working in payments and entrepreneurship, I decided to continue and dedicate my career at Telefonica to contribute to its digital transformation ambitions. So, to show the kind of value I can bring to the team, I analysed the company and gave my two cents on where Telefonica UK can focus to drive revenue growth and customer loyalty.</p>
-                <p>Please scroll to read an executive summary of my report, visit a demo website of my proposal and more about my work experience.</p>
-                </div>
-      
-              
-
+        <div class="row">
+              <div class='col-md'>
+                <img src="https://dl.dropboxusercontent.com/s/3p3wdz1nur9cfcu/web-ingredients-5.png?dl=0" id='image'>
+              </div>
+              <div class='col-md'>
+                <img src="https://dl.dropboxusercontent.com/s/qt5r2x1z5g0w4wp/web-lifestyle-2.png?dl=0" id='image'>
+              </div>
             </div>
-        <div class="row" style="padding-top:50px"></div>
           </div>
   </div>
     </section>
-    
-<!--Executive summary-->
-<section>
-    <div class="w3-container" style="background-color: #EFEFEF;">
-        <div class="row" style="padding-top:45px"></div>
-            <p class="heading">Data on-demand: The key to unlock value for the telco of the future</p>
-                    <!--1-->
-                        <div class="row">      
-                            <div class="col-md-6 vertical-center">                             
-                                    <div class="row" style="padding: 10px;">
-                                        <p id="executive-heading">Telefonica UK has been delivering revenue and customer growth since 2017</p>
-                                        <div id="divider"></div>
-                                        <p class="page-text">Telefonica UK drives consistent revenue and customer growth, is projected to eclipse £6b in revenue in 2019 and is one of 4 key markets to focus in the new company’s 5-point plan. These results are driven by its O2 brand recognition, strong customer service, and innovative commercial strategies such as Custom Plans in Contract.</p> 
-                                        <p class="page-text"></p> 
-                                        <p class="page-text">Moreover, with the advent of 5G technology, O2 is positioned to expand its product portfolio to create and diversify new revenue stream from customers and businesses, so significant funding is necessary to sustain 5G network deployment and realise its future plan.</p>
-                                      </div>                                                                   
-                                </div>
-                            <div class="col-md-6 vertical-center">
-                              <div style="padding: 10px;">  
-                                    <img src="https://dl.dropboxusercontent.com/s/bfqqahj4fjkqvm5/Exec%20Summary-111.png?dl=0" id="executive-photo" style="margin-top: 10px;">
-                                    <p style="text-align: justify;color: gray;font-size:x-small;padding-top: 10px;font-style: italic;">Source: Telefonica corporate financial statements 2016-18 / Exchange Rate: Statista EUR to GBP average annual rate from 1999 to 2018</p>
-                                  </div>
-                                  </div>
-                                <style>
-                                        .vertical-center {
-                                            margin-top: 0px;  /* Fallback for browsers do NOT support vh unit */
-                                            margin-bottom: 10px;  /* These two lines are counted as one :-)       */
-                                            display: flex;
-                                            align-items: center;
-                                            padding: 0;
-                                            padding: 20px;
-                                            }
-                                        .row2 { 
-                                            display: flex; 
-                                            padding-left: 55px;
-                                            padding-right: 55px;
-                                            margin: -15px;
-                                            }
-                                        .mobile{
-                                          display: none;
-                                        }
-                            
-                                        @media only screen and (max-width: 990px) {
-                                            .row2 { display: flex; flex-flow: column; }
-                                            .vertical-center  { 
-                                                order: 1; 
-                                                margin: 0;
-                                                padding: 0;
-                                                align-items: center;
-                                                }
-                                            .mobile{
-                                              display:flex;
-                                            }
-                                            }
-                                    </style>     
-                        </div>         
-                    <!--2-->
-                    <div class="mobile" style="padding-top:50px"></div>
-                        <div class="row">
-                                <div class="col-md-6 vertical-center">  
-                                  <div style="padding: 10px;"> 
-                                    <img src="https://dl.dropboxusercontent.com/s/yqgj3z6i7rc0up2/Exec%20Summary-222.png?dl=0" id="executive-photo" style="margin-top: 10px;">
-                                    <p style="text-align: justify;color: gray;font-size:x-small;padding-top: 10px;font-style: italic;">Source: Telefonica corporate financial statements 2016-18 / Exchange Rate: Statista EUR to GBP average annual rate from 1999 to 2018</p>
-                                  </div>
-                                </div>
-                                <div class="col-md-6" style="margin-bottom: 10px;padding: 0;display: flex;align-items: center;">             
-                                        <div class="row" style="padding: 10px;">
-                                        <p id="executive-heading">However, while Contracts drive results, PAYG top-ups are limiting revenue growth</p>
-                                        <div id="divider"></div>
-                                        <p class="page-text">Top-ups are time-consuming and don’t meet the needs of today’s customer, who seeks quick, easy and convenient services. Most top-up user journeys involve up to 4 steps, becoming a real barrier to sell to customers, who are relying more on data and that's set to continue.</p>
-                                        <p class="page-text"></p> 
-                                        <p class="page-text">But, although in decline and low in ARPU, PAYG can still unlock growth for the business, because is a source of Contracts and offers the flexibility that customers want. So, there’s still an opportunity to redefine PAYG product to work in our and customers favour.</p> 
-                                      </div>  
-                                    </div>
-                           </div>
-                    <!--Question & Recommendation-->
-                    <div class="row" style="padding-left: 100px;padding-right: 100px;padding-top: 15px;">
-                    <div class="row" style="padding: 10px;">
-                      <h3 class="executive-question" style="padding: 10px;">So how can Telefonica UK drive revenue to fund future investments and solidify customer loyalty?</h3>
-                    <div id="divider"></div>
-                    
-                    <p class="page-text" style="padding: 10px;">Telefonica UK can simplify its Pay As You Go one step further: scrap top ups altogether and integrate an SMS chatbot with payment capabilities to provide an easier and quicker way for customers to buy data. This is <b>data on-demand</b>, a new business model that not only can now capture revenue on the spot, but also can develop direct relationships with customers, meeting their expectations and building a competitive moat to fund and realise Telefonica’s digital transformation. For the purpose of this report, I named this initiative <b style="color:#194CFA;"><i>Pay As You Go Prime</i></b>.</p> 
-                        <div style="padding-top: 10px;padding-bottom: 10px;padding-left: 160px; padding-right: 160px;margin: 0;" >
-                                <img src="https://dl.dropboxusercontent.com/s/hesjsmnnycuhoiu/Exec%20Summary-444.png?dl=0" id="executive-photo" style="margin-top: 10px;">
-                                <br>
-                                <br>
-                                <img src="https://dl.dropboxusercontent.com/s/8omiyv8qmnou039/PAYG-Prime-website.png?dl=0" id="executive-photo" style="margin-top: 10px;">
-                              </div>
-                            </div>  
-                        </div>
-                <div class="row" style="padding-top:20px"></div>
-        </div>  
-    </section>
-<!--Report & PAYG Prime onboarding journey-->
-<section>
-<div class="w3-container" style="background-color: #EFEFEF;">
-          <div class="row">
-              <h3 class="executive-question" style="padding: 10px;">Read the full PAYG Prime report for more information and implementation guide or visit Prime's onboarding demo.</h3>
-                  <!--New Customer Portal-->
-                  <div class="col-sm">
-                  <form id='report-container' action="https://www.dropbox.com/s/odxdo355gntuv1k/Full%20Report.pdf?dl=0" target="_blank"><!--{% csrf_token %}--> 
-                        <p class="container-text"></p> 
-                        <p class="container-text"></p>         
-                        <div class="row">
-                        <button type="submit">READ REPORT</button> 
-                        </div>
-                    </form>
-                  </div>
 
-                  <!--Existing Customer Portal-->
-                  <div class="col-sm">
-                      <form id='payg-container'><!--{% csrf_token %}-->
-                        <p class="container-text"></p> 
-                        <p class="container-text"></p>       
-                        <div class="row">
-                        <button type="submit">VISIT PAYG PRIME</button> 
-                        </div>
-                        </form>
-                      </div>
-            </div>
-            <div class="row" style="padding-top:50px"></div>
-  </div>
-
-    </section>
-<!--Why Telefonica UK-->
-<section>
-    <!--(title)-->
-    <div class="w3-container"> 
-        <div class="row" style="padding-top:45px"></div>
-              <p class="heading">Why I love Telefonica</p>
-        </div>
-      <!--(reasons)-->
-      <div class="w3-container"> 
-             <div class="row">
-                 <div class="col-md" style="text-align: center;">
-                  <img src="https://dl.dropboxusercontent.com/s/tu2g7pk4px876o3/tef-mission.png?dl=0" style="width:60px">
-                  <h3 class="work-experience-header">Mission</h3>
-                  <p class="why-text">I believe in Telefonica UK's mission to help people live easier, better lives with tech.</p>
-                 </div>
-                 <div class="col-md" style="text-align: center;">
-                  <img src="https://dl.dropboxusercontent.com/s/1c05kd56lthrqyp/tef-society.png?dl=0" style="width:60px">
-                  <h3 class="work-experience-header">Impact</h3>  
-                  <p class="why-text">I love how our work can impact not only our customers, but businesses, our natural environment and society at large.</p>                
-                   </div> 
-                 <div class="col-md" style="text-align: center;">
-                  <img src="https://dl.dropboxusercontent.com/s/mridnnl4pv0ks6s/tef-DNA.png?dl=0" style="width:60px">
-                  <h3 class="work-experience-header">DNA</h3>
-                  <p class="why-text">Telefonica’s DNA for test and learn fosters a culture of openness, constant learning and innovation.</p>
-                     </div>
-                 </div> 
-                 <div class="row" style="padding-top:45px"></div>
-              <div id="divider"></div>
-        </div>   
-    </section>
-<!--Work experience-->
-<section>
-    <!--(title)-->
-    <div class="w3-container"> 
-        <div class="row" style="padding-top:45px"></div>
-              <p class="heading">Work experience</p>
-        </div>
-      <!--(reasons)-->
-      <div class="w3-container"> 
-             <div class="row">
-                 <div class="col-md" style="text-align: center;">
-                  <img src="https://dl.dropboxusercontent.com/s/8qrr2tgyseji06h/Tef-top.png?dl=0" id="why-icon" style="width:100%">
-                  <p class="why-text"><b>Telefonica</b></p>
-                  <p class="why-text">2010 - 2014</p>
-                  <p class="why-text">Led prepaid product with a focus on customer needs and strategic goals, conceptualising and launching revenue growth initiatives.</p>
-                </div>
-                 <div class="col-md" style="text-align: center;">
-                  <img src="https://dl.dropboxusercontent.com/s/nvvt57ywe6g0f54/AMBS-top.png?dl=0" id="why-icon" style="width:100%">
-                  <p class="why-text"><b>University of Manchester</b></p>
-                  <p class="why-text">2015</p>
-                  <p class="why-text">Full-time MBA with a specialisation in Marketing. Conducted consulting projects with real-clients across Europe, USA and Asia.</p>
-                 </div>
-                 <div class="col-md" style="text-align: center;">
-                  <img src="https://dl.dropboxusercontent.com/s/7ld8n3csoack3wa/Amex-top.png?dl=0" id="why-icon" style="width:100%">
-                  <p class="why-text"><b>American Express</b></p>
-                  <p class="why-text">2015 - 2017</p>
-                  <p class="why-text">Worked in acquisition and product teams, creating loyalty initiatives and leading new product development projects.</p>
-                 </div>
-                 <div class="col-md" style="text-align: center;">
-                    <img src="https://dl.dropboxusercontent.com/s/xaput1auhmwd5jo/PLNTProtein-top.png?dl=0" id="why-icon" style="width:100%">
-                    <p class="why-text"><b>Entrepreneurship</b></p>
-                    <p class="why-text">2018 - 2019</p>
-                    <p class="why-text">Launched a digital-native functional food brand from concept to reality.</p>
-                   </div>
-            </div>  
-        </div>  
-        <div class="row" style="padding-top:45px"></div>
-              
-    </section>
-            
 <!--Footer-->
 <section>
-<footer>
-    <div class="w3-container" style="background-color: #EFEFEF;" id="executive-summary">
-      <div class="row" style="padding-top:45px"></div>
-          <h2 class="heading">Get in touch</h2>
-          <div class="row">
-              <div class="col-md" style="text-align: center;">
-                <a href="mailto:marco.valgof@gmail.com" target ='_blank' style="color:inherit;text-decoration:none;">
-                  <p class="why-text" style="color: #1E2671;text-align: center;"><img src="https://dl.dropboxusercontent.com/s/yqpl4w84v32tyds/email-icon.png?dl=0" style="width:25px;">&nbsp;&nbsp;marco.valgof@gmail.com</p>
-                 </a> 
-                </div>
-              <div class="col-md" style="text-align: center;">
-                <a href="sms:+447476580355" target ='_blank' style="color:inherit;text-decoration:none;">
-                  <p class="why-text" style="color: #1E2671;text-align: center;"><img src="https://dl.dropboxusercontent.com/s/5tbn0eg7hu0ccwo/phone-icon.png?dl=0" style="width:25px;">&nbsp;&nbsp;07476 580355</p>
-                </a> 
-              </div> 
-              <div class="col-md" style="text-align: center;">
-                  <a href="https://www.linkedin.com/in/mvallegoffin/" target ='_blank' style="color:inherit;text-decoration:none;"><img src="https://dl.dropboxusercontent.com/s/anlxdh1e3iooat2/linkedin-icon.png?dl=0" style="width:25px;"></a>   
-                </div> 
-              <br>
-            </div>
-            <p style="text-align:center; color:#1E2671;font-size: small;font-weight:700;padding: 15px;margin: 0px;">Made by Marco Valle Goffin for&nbsp;&nbsp;<img src="https://dl.dropboxusercontent.com/s/gxj3feo56sknnkm/Telefonica%20UK%20O2.png?dl=0" src="blank.gif" style="width:100px"></a></p>  
-        </div>
-      </footer>
-    </section>
+  <div class="w3-container" style="background: black;">
+      <div class="row">
+    <div class="col-md">
+      <a href="https://www.plntprotein.com"><img src="https://dl.dropboxusercontent.com/s/og4tswbdort41kf/1.%20Logo_PLNT-TopBox_white.png?dl=0" style="width:150px"></a>  
+   </div>
+   
+   <div class="col-md">
+      <p class="heading-f">CHAT</p>
+      <a href="sms:+447480803557" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
+      <a href="https://www.instagram.com/plntprotein" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@plntprotein</p></a>
+      <a href="mailto:hi@plntprotein.com" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@plntprotein.com</p></a>  
+        
+    </div>
 
-<script>
-
-/* FADE GALLERY */
-    $(function(){  // $(document).ready shorthand
-      $('.monster').fadeIn('slow')
-    });
+ <div class="col-md">
+    <p class="heading-f">INFORMATION</p>
+    <p id="trust">Terms of Service</p></a>
+    <p id="trust">Privacy Policy</p></a>
     
-    $(document).ready(function() {
-        
-        /* Every time the window is scrolled ... */
-        $(window).scroll( function(){
-        
-            /* Check the location of each desired element */
-            $('#fade').each( function(i){
-                
-                var bottom_of_object = $(this).position().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
-                
-                /* If the object is completely visible in the window, fade it it */
-                if( bottom_of_window > bottom_of_object ){
-                    
-                    $(this).animate({'opacity':'1'},1500);
-                        
-                }
-                
-            }); 
-        
-        });
-        
-    });
-/* FADE GALLERY */
+</div>
+<div class="col-md">
+  <p id="trust">London, UK, NW2</p>
+  <p id="trust">© PLNT Ltd 2019. All Rights Reserved</p> 
+  <p id="trust">*This product is not intended to diagnose, treat, cure or prevent any disease.</p>
+</div>
+</div>
+</div>
 
+</section>
 
-    </script>
-  </body>
+</body>
 </html>
