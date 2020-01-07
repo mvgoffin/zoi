@@ -2,7 +2,7 @@ from django.http import HttpResponseRedirect
 from django.conf import settings
 from django.shortcuts import render
 from django.shortcuts import redirect
-from thecheckout import urls
+from plntprotein import urls
 
 from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods

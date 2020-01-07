@@ -1,4 +1,4 @@
-#!/Users/marco/Desktop/thecheckout/bin/python3
+#!/Users/marco/Desktop/plntprotein/bin/python3
 from django.core import management
 
 if __name__ == "__main__":
