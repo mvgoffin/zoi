@@ -26,10 +26,10 @@ SECRET_KEY = 'lzonf2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-# True - Env // False - production
+# True - Env // False - Production
 
 # TEST on MOBILE MARCO VG MAC -> ALLOWED_HOSTS = ['192.168.0.158']
-ALLOWED_HOSTS = ['134.209.17.228', 'localhost', 'www.plntprotein.com', 'plntprotein.com']
+ALLOWED_HOSTS = ['157.245.136.56', 'localhost', 'www.plntprotein.com', 'plntprotein.com']
 # Digital Ocean Droplet for thecheckout 3.0: 159.65.110.251
 # Digital Ocean Droplet for thecheckout: 206.189.224.30 
 # Digital Ocean Droplet for Droplet: 209.97.140.222
