@@ -21,5 +21,31 @@ def lemon(request):
     template = 'lemon.html'
     return render(request,template,context)
 
+def hazelnutcacao(request):
+    context = locals()
+    template = 'hazelnutcacao.html'
+    return render(request,template,context)
+
+def termsofservice(request):
+    context = locals()
+    template = 'termsofservice.html'
+    return render(request,template,context)
+
+def privacypolicy(request):
+    context = locals()
+    template = 'privacypolicy.html'
+    return render(request,template,context)
+
+def textpolicy(request):
+    context = locals()
+    template = 'textpolicy.html'
+    return render(request,template,context)
+
+def thankyou(request):
+    context = locals()
+    template = 'thankyou.html'
+    return render(request,template,context)
+
+
 
 
