@@ -13,8 +13,8 @@ from django.conf import settings
 
 # Create your views here.
 
-#Register CALM Gubel
-def register_calm_jar(request):
+#Register Lemon
+def register_lemon(request):
     form = AccountForm(request.POST)
 
     name = request.POST.get('name')
@@ -30,23 +30,23 @@ def register_calm_jar(request):
         'A New Account',
         'From our servers, a new account has been created. Please check it out in the administration console details are as follows' +
         ': name: {}, phone: {}, email: {}, address: {}, postcode: {}'.format(name, phone, email, address, postcode),
-        'hi@gubel.co.uk',
-        ['marco@gubel.co.uk'],
+        'marco.valgof@gmail.com',
+        ['marco.valgof@gmail.com'], #either this or above email is sender
         #fail_silently=False,
         )
 
         form.save()
         
-        response = redirect('checkout_calm_jar')
+        response = redirect('checkout_lemon')
         return response
     else:
         form = AccountForm()
     
-    return render(request, 'register_calm_jar.html', {'form': form}) #this is render on HTML
+    return render(request, 'register_lemon.html', {'form': form}) #this is render on HTML
 
 
-#Reorder SKINCARE Gubel
-def register_skincare_jar(request):
+#Register hazelnutcacao
+def register_hazelnutcacao(request):
     form = AccountForm(request.POST)
 
     name = request.POST.get('name')
@@ -62,19 +62,19 @@ def register_skincare_jar(request):
         'A New Account',
         'From our servers, a new account has been created. Please check it out in the administration console details are as follows' +
         ': name: {}, phone: {}, email: {}, address: {}, postcode: {}'.format(name, phone, email, address, postcode),
-        'hi@gubel.co.uk',
-        ['marco@gubel.co.uk'],
+        'marco.valgof@gmail.com',
+        ['marco.valgof@gmail.com'], #either this or above email is sender
         #fail_silently=False,
         )
 
         form.save()
         
-        response = redirect('checkout_skincare_jar')
+        response = redirect('checkout_hazelnutcacao')
         return response
     else:
         form = AccountForm()
 
-    return render(request, 'register_skincare_jar.html', {'form': form}) #this is render on HTML
+    return render(request, 'register_hazelnutcacao.html', {'form': form}) #this is render on HTML
 
 
 #Reorder CALM+SKINCARE Gubel
