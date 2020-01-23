@@ -16,5 +16,10 @@ def home(request):
     template = 'home.html'
     return render(request,template,context)
 
+def lemon(request):
+    context = locals()
+    template = 'lemon.html'
+    return render(request,template,context)
+
 
 
