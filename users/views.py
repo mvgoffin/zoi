@@ -163,7 +163,7 @@ def register_le(request):
         'From our servers, a new account has been created. Please check it out in the administration console details are as follows' +
         ': name: {}, phone: {}, email: {}, address: {}, postcode: {}'.format(name, phone, email, address, postcode),
         'hi@plntprotein.com',
-        ['marco@plntprotein.com'],
+        ['marco.valgof@gmail.com'],
         #fail_silently=False,
         )
 
@@ -193,7 +193,7 @@ def register_hc(request):
         'From our servers, a new account has been created. Please check it out in the administration console details are as follows' +
         ': name: {}, phone: {}, email: {}, address: {}, postcode: {}'.format(name, phone, email, address, postcode),
         'hi@plntprotein.com',
-        ['marco@plntprotein.com'],
+        ['marco.valgof@gmail.com'],
         #fail_silently=False,
         )
 

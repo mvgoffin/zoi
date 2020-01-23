@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <meta name="description" content="Plant-based Snacks">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xdp3ien.css">
+    
+    <!--Mobile Bubble Menu-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+    <!--lightbox-->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/vsfq4gstae2o3mo/Icon-PLNTlemon.png?dl=0">
+    
+    <title>
+      Plant-Based Snacks
+    </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267999-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141267999-1');
+    </script>
+
+    <!--CSS PLNTS-->
+    <style media="screen">
+      
+    /**classes**/
+
+        * {
+          font-family: 'Europa', sans-serif;
+          font-size: 16px;
+          font-variant: normal;
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        body, html { 
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          background-color: transparent;
+          color:black;
+        }
+
+        .row{
+          padding-left: 30px;
+          padding-right: 30px;
+          margin-right:0px;
+          margin-left:0px;
+        }
+
+        .banner-text {
+              padding-top: 30px;
+              color:black;
+              font-size: 40px;
+              text-align: center;
+              font-weight: 800;
+              display:block;
+              margin: 0;
+              
+        }
+    
+        .why-text {
+          font-weight: 400;
+          margin: 0px;
+          text-align:center;
+          line-height:normal;
+        }
+
+        .contact-text {
+          font-size:small;
+          text-align:left;
+          line-height:normal;
+          margin: 0px;
+        }
+
+        .section-heading{
+        margin-top: 10px;
+        font-weight: 600;
+        color: black;
+        text-align: left;
+        line-height: 25px;
+        font-size: large;
+        }
+
+        .section-text{
+        font-weight: 400;
+        color: black;
+        text-align:left;
+        line-height: 25px;
+        font-size: medium;
+        }
+
+        .heading-f{
+          color: white;
+          font-weight: bold;
+          margin-bottom:10px;
+          text-align: left;
+        }
+        
+        .why-icon{
+          margin-top: 10px;
+          font-weight: 400;
+          color: black;
+          text-align: center;
+          font-size: medium;
+        }
+
+        .customer-title{
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin: 0px;
+        font-weight: 800;
+        text-align: center;
+        line-height: 25px;
+        font-size:x-large;
+        text-decoration: none;
+        }
+
+        .page-text{
+        margin-bottom: 2px;
+        padding: 0;
+        font-size: 17px;
+        text-align: center;;
+        }
+
+        .product-price{
+        font-size:x-large;
+        margin-top: 10px;
+        font-weight: 800;
+        text-align: left;
+        line-height: 25px;
+        font-size: large;
+        text-decoration: none;
+        }
+
+        .headline-middle {
+          box-sizing: border-box;
+          padding-top: 25px;
+          margin: auto;
+          width: 30%;
+          border-bottom: 7px solid black;
+          -webkit-appearance: none !important;
+        }
+
+        .headline {
+          width: 100%;
+          box-shadow: 0 10px 5px -5px  #D1D1D1;
+          padding: 10px;
+        }
+
+        .hr{        
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 0.5px;
+            border-color:gray;
+          } 
+
+          /*****/
+
+        .wrapper {
+            position: relative;
+        }
+
+        .wrapper > .inner {
+          padding: 5em 5em 3em 5em ;
+          max-width: 100%;
+          width: 75em;
+        }
+
+        .container-text {
+            color:white;
+            font-size: 4vw;
+            padding-top: 100px;
+            padding-bottom: 0px;
+            text-align: center;
+            font-weight: 800;
+            display:block;
+            margin: 0;
+        }
+
+        .a{
+          text-decoration: none;
+          
+        }
+
+        .block {
+          padding-top: 60px;
+        }
+          
+    /**ids**/
+
+           #banner {
+            padding-top: 250px;
+            padding-bottom: 150px;
+            padding-left: 150px;
+            padding-right: 150px;
+            background-image:url(https://dl.dropboxusercontent.com/s/7h7i2ktl49fdv8f/web-banner-3.png?dl=0);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+          }
+
+          
+
+        #topbar {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 2;
+          background-color:white;
+        }
+
+        #image{
+          width: 100%; 
+          border-style:solid;
+          border-color: black;
+          border-width: 10px;
+        }
+
+        #hc-container {
+            background-image:url(https://dl.dropboxusercontent.com/s/5j60qe550j92rwh/ifriends-taking-selfie_600x.jpg?dl=0);/**(-90deg, #194CFA,#22F0C1, #FFCDFF);**/
+            /**border-radius: 10px;**/
+            box-shadow: 5px 5px 7px 0 gray;
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+            margin:10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #le-container {
+            background-image:url(https://dl.dropboxusercontent.com/s/5j60qe550j92rwh/ifriends-taking-selfie_600x.jpg?dl=0);/**(-90deg, #194CFA,#22F0C1, #FFCDFF);**/
+            /**border-radius: 10px;**/
+            box-shadow: 5px 5px 7px 0 gray;
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+            margin:10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #product-image {
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border-style: solid;
+          color: transparent;
+          border-width: 5px;
+          margin: auto;
+          margin: 0px;
+        }
+
+        #trust {
+          color: white;
+        }
+
+    /**Other assets**/
+
+        button {
+          background: transparent;
+          display:block;
+          width:100%;
+          border: 7px black solid;
+          color: white;
+          background:black;
+          padding: 10px 20px;
+          margin: .618em 0.01em;  
+          font-weight: 800;
+          font-style: normal;
+          animation-delay: 2400ms;
+          font-size: 25px;
+          letter-spacing: .01em;
+          text-transform: normal;
+          transition: background-color 170ms  ease-out,color 170ms ease-out;
+        }
+
+        button:focus{
+          background-color:#22D59E;;
+          border: 7px solid ;
+          color: black;
+          border-width: 1px;
+        }
+
+        button:hover {
+          background-color:white;
+          border: 7px solid ;
+          color: black;
+        }
+        
+        ::placeholder{
+          color: gray;
+          font-size: small;
+        }
+
+        a{
+          color: gray;
+          font-size: small;
+        }
+  
+  /**Bootstrap Columns and Sections**/
+        
+        .col-md { /**Why Choose PLNTS**/
+          background: transparent;
+          margin:10px;
+          padding: 20px;
+        }
+
+    @media only screen and (max-width: 990px) {
+    .row , .w3-container, #header-logo, .open-slide, .nav-link {
+                margin-left:0 !important;
+                margin-right:0 !important;
+                margin-top:0 !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+                }
+
+                #header-logo {
+                  width: 100%;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  padding-left: 00px;
+                  text-align: center;
+                }
+
+                #icon {
+                display: block;
+                margin: auto;
+                width: 100%;
+                }
+
+                *, .html {
+                  margin-left:0 !important;
+                  margin-right:0 !important;
+                  padding-left: 0 !important;
+                  padding-right: 0 !important;
+                }
+
+                #banner {
+                  background-image:url(https://dl.dropboxusercontent.com/s/54y43qb9zv4cymi/web-m-banner-3.png?dl=0);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                }
+                .banner-text{
+                    padding-top: 30px;
+                    font-size: 30px;
+                    margin-left:20px !important;
+                    margin-right:20px !important;
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
+                    text-align: center;
+                  }
+          }
+      
+
+      </style>
+
+
+    <!--CSS-->
+    <style media="screen">
+        
+        /**classes**/
+        
+
+          .heading-lemon{
+          color:white;
+          font-family: 'Avenir', sans-serif;
+          padding-top: 35px;
+          padding-bottom: 15px;
+          text-align: left;
+          font-weight: 800;
+          display:block;
+          margin: 0;
+            }
+  
+          .hr{        
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 0.5px;
+            border-color:gray;
+          } 
+  
+          .small{
+            display: inline-block;
+            font-weight: 400;
+            color: gray;
+            text-align:left;
+            line-height: 25px;
+            font-size: small;
+            margin: 0px;
+            }
+  
+          .form-control {
+            box-sizing: border-box;
+            margin-top: 5px;
+            width: 100%;
+            height: 40px;
+            padding: 10px 12px;
+            border:transparent;
+            /*border: 3px solid black;*/
+            border-radius: 0px;
+            background-color:#EFEFEF;
+          }
+  
+          .form-control:focus {
+            box-shadow: 0 1px 3px 0 rgb(236, 236, 236);
+            border: 1px solid #000031;
+          }
+
+          .why-text {
+          font-size:small;
+          padding-top: 5px;
+          text-align:center;
+          line-height:normal;
+        }
+  
+  
+      /**ids**/
+
+          #product-img {
+            width: 80%;
+            background-color: #FCF9F7;
+            margin: auto;
+            box-shadow: 0 5px 10px 0 gray;
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+            border-radius: 5px;
+
+          }
+  
+          #register-form {
+            box-sizing: border-box;
+            margin-left:  auto;
+            margin-right:  auto;
+          }
+  
+    /**Other assets**/
+      
+        ::placeholder{
+          color: gray;
+          font-size: small;
+        }
+  
+        a{
+          color: gray;
+          font-size: small;
+        }
+  
+        #card-errors {
+          height: 20px;
+          padding: 4px 0;
+          color: #fa755a;
+        }
+        
+      
+      /**Bootstrap Sections**/
+        .col-md-6{
+          padding: 0;
+        }.col-md-3{
+          padding: 20px;
+        }
+          
+        .col-sm-6{
+            padding: 0px;
+        }
+  
+        .col-sm-5{
+            padding: 0px;
+        }
+
+        .col-sm {
+          padding: 0px;
+        }
+  
+        @media only screen and (max-width: 990px) {
+          .row, .col-sm, #header-logo, .open-slide, .home-small-1, .col-sm-4, li, .heading, .heading-lemon, #register-form, .col-xs-1, .col-xs-4, .col-sm-4, .col-md-6, .col-sm-6, .col-sm-12, .col-md-12-f, .col-md-3, .accordion, .panel, .featherlight-content {
+                      margin-left:0 !important;
+                      margin-right:0 !important;
+                      padding-left: 15px !important;
+                      padding-right: 15px !important;
+                  }
+       
+                  *, .html {
+                    margin-left:0 !important;
+                    margin-right:0 !important;
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                  }
+  
+                  #product-img {
+                      width: 100%;
+                      display: block;
+                      margin: auto;
+                    }
+           }
+  
+      
+      </style>
+  
+      <!--CSS Checkout Progress Bar-->
+      <style type="text/css">
+      #register-progressbar {
+            box-sizing: border-box;
+            display: block;
+            margin-left:  180px;
+            margin-right:  180px;
+            padding-bottom: 50px;
+          }
+
+      .containerbar {
+        width:100%;
+        background: #F8F8F8;
+      }
+
+      .cart-headline {
+            width: 100%;
+            box-shadow: 0 10px 5px -5px  #D1D1D1;
+            padding: 10px;
+            background: #F8F8F8;
+      }
+  
+      .progressbar{
+        counter-reset: step;    
+        padding: 20px;
+      }
+  
+      /**register number + text**/
+      .progressbar li {
+        list-style-type: none;
+        float: left;
+        width: 33%;
+        position: relative;
+        font-family: 'Avenir', sans-serif;
+        font-weight:800;
+        text-align: center;  
+        color: gray;
+        font-size: medium;
+      }
+  
+      /**letra y font actia**/
+      .progressbar li.account {
+        color:gray;
+        font-family: 'Avenir', sans-serif;
+        font-weight:800;
+        font-size: medium;
+      }
+  
+      .progressbar li.box {
+        color:#22D59E;;
+        font-family: 'Avenir', sans-serif;
+        font-weight:800;
+        font-size: medium;
+        border: #22D59E;;
+      }
+  
+      /**pelota 1**/
+      .progressbar li.box::before {
+        line-height: 20px;
+        border: 4px solid #22D59E;;
+      }
+  
+  
+      /**all number cirle**/
+      .progressbar li:before {
+        content: counter(step);
+        counter-increment: step;
+        width: 30px;
+        height: 30px;
+        line-height: 20px;
+        border: 4px solid gray;
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        border-radius: 50%;
+        background-color: #F8F8F8;  
+        position: relative;
+        z-index: 100;
+      }
+  
+      /**whole line**TURNED TOP to 14px***/ 
+      .progressbar li:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #22D59E;;
+        top: 14px;
+        left: -50%;
+        z-index: 50;
+      }
+  
+      /**barra antes del 1, none**/
+      .progressbar li:first-child:after {
+        content: none; 
+      }
+  
+      /**barra despues del activo**/
+      .progressbar li.account:after {
+        border-color: #22D59E;;
+      }
+  
+      /**current line**/
+      .progressbar li.account + li:after {
+        background-color: gray;
+        height: 4px;
+      }
+      /**register area**/
+      .progressbar li.account + li::before{
+        border: 4px solid gray;
+      }
+  
+      </style>
+
+</head>
+<body>
+<!--Navigation Menu-->
+<section>
+      <header>
+        <nav class="navbar">
+            <a href="https://www.plntprotein.com" class="navbar-brand"><img src="https://dl.dropboxusercontent.com/s/mw3c30fbjjjdlzc/1.%20Logo_PLNT_White-FINAL-noTM.png?dl=0" id="header-logo"></a>
+            
+            <button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;" class="collapsed" aria-expanded="false">
+                <span class="open-slide" style="text-align:right; background:transparent;">
+                    <a href="#" onclick="openSlideMenu()">
+                      <svg width="25" height="25">
+                        <path d="M0,5 30,5" stroke="#FFFFFF" stroke-width="4"></path>
+                        <path d="M0,14 30,14" stroke="#FFFFFF" stroke-width="4"></path>
+                        <path d="M0,23 30,23" stroke="#FFFFFF" stroke-width="4"></path>
+                      </svg>
+                    </a>
+                  </span>
+            </button2>
+            
+            <div class="navbar-collapse collapse" id="collapsingNavbar4" style="">
+                <ul class="navbar-nav">
+                    <li class="nav-item active2">
+                        <a class="nav-link" href="/hazelnutcacao">Hazelnut + Cacao</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lemon">Lemon</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <style>
+            .navbar {
+              background-color: black;
+              padding: 0;
+            }
+            
+            .nav-link {
+              margin-left: 30px;
+              font-family: 'Avenir', sans-serif;
+              font-size: 24px;
+              font-weight: bold;
+              color: white;
+            }
+    
+            .nav-link:hover {
+                  color:gray;
+                }
+    
+            button2 {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-right: 30px;
+            }
+    
+            #header-logo {
+              width: 150px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-left: 30px;
+              }
+    
+            #banner-intro {
+              background: #EFEFEF;
+            }
+    
+            #banner-title-lemon {
+              background-image:url(https://dl.dropboxusercontent.com/s/eww0aptkrvx3sej/banner-existing-customers.png?dl=0);
+              /**background-image: linear-gradient(to bottom, #1E2671, #589AD2); **/
+            }
+            </style>
+        </nav>
+        </header>
+</section>
+<!--Banner-->
+<section>
+    <!--desktop-->
+    <div class="row" id="banner-title-lemon">
+        <br>
+        <h1 class="heading-lemon">Lemon</h1>
+        <br>
+        <br>
+      </div>
+
+    <!--Checkout Progress Bar -->
+<div class="w3-container sticky-top" style="background: #F8F8F8;">
+<div class="row">
+  <div class="col-lg" style="padding:20px">
+    <ul class="progressbar" id="register-progressbar">
+       <li class="box">Flavour</li>
+         <li class="account">Account</li>
+         <li class="payment">Payment</li>           
+       </ul> 
+      </div>
+</div>  
+</div>
+
+<label class="cart-headline"></label>
+</section>
+<!--Register Form-->
+<section>
+    <div class="w3-container" style="padding-left: 100px;padding-right: 100px;">
+        <div class="row">
+
+            <!--Checkout Account Form-->
+            <form class="col-sm-5" method="POST" action="{% url 'checkout_lemon' %}">{% csrf_token %}
+              <div id="shipping-register-form">
+              <br>
+              <h3 class="banner-text" style="text-align: left;">Checkout</h3>
+              <br>
+              <label class="home-heading" for="id_name"><b>Full Name</b></label>
+              <input type="text" name="name" class="form-control" maxlength="100" id="id_name">
+              <small class="small">We take reorders and offer customer service exclusively via text message ―it's quick, easy and you can reach us anytime.</small>
+              <br>
+              
+              
+              <label class="home-heading" for="id_email"><b>Email</b></label>
+              <input type="email" name="email" class="form-control" maxlength="100" id="id_email">
+              <small class="small">For order updates, new deals and offers.</small>
+              <br> 
+              
+              <br> 
+              <label class="home-heading" for="id_address"><b>Address</b></label>
+              <input type="text" name="address" class="form-control" maxlength="100" id="id_address" placeholder="30 Huntsworth Mews, London, UK">
+              <small class="small">We'll deliver your orders to this address.</small>
+              <br> 
+              
+              <br> 
+              <label class="home-heading" for="id_postcode"><b>Postcode</b></label><input type="text" name="postcode" class="form-control" maxlength="7" id="id_postcode" placeholder="NW1 6DB">
+              <br>
+
+                <div class="form-group">  
+                  <button type="submit">NEXT ></button>
+                </div>
+                <p class="terms">
+                    By continuing, you agree to our Terms of service, Privacy policy and Text policy.      
+                </p><p class="terms">
+                    All transactions are secure and encrypted</p>
+                    <div style="text-align: center;">
+                        <img src="https://dl.dropboxusercontent.com/s/73j0uv374gn9y32/payment-icons-1.png?dl=0" style="width:100px;">
+                      </div>
+                  <style>
+                      .terms {
+                        text-align: center;
+                        font-size: 12px;
+                        color: gray;
+                        padding-bottom: 10px;
+                      }                    
+                    </style>
+                  <p></p>
+
+                  <!--(reasons)-->
+                  <br>
+                  <div class="row" style="padding: 0;">
+                      <div class="col-md" style="text-align: center;">
+                      <img src="https://dl.dropboxusercontent.com/s/end3r3o2c3top5z/contactless.png?dl=0" id="why-icon" style="width:30px">
+                      <p class="why-text">Cardless payments after this purchase</p>
+                      
+                      </div>
+                      <div class="col-md" style="text-align: center;">
+                      <img src="https://dl.dropboxusercontent.com/s/2th7a3q4z2ytnxt/24-7%20service.png?dl=0" id="why-icon" style="width:30px">
+                      <p class="why-text">Text to reorder after this order</p>  
+                                      
+                        </div> 
+                      <div class="col-md" style="text-align: center;">
+                      <img src="https://dl.dropboxusercontent.com/s/hehlh92dagbk6l1/free%20shipping.png?dl=0" id="why-icon" style="width:30px">
+                      <p class="why-text">Free shipping always</p>
+                      
+                          </div>
+                      </div>
+
+                </div>
+             </form>
+
+
+             <!--Checkout Divider-->
+            <div class="col-md-1" id="divider">
+              </div>
+
+            
+               <!--Register Flavour Selected-->
+            <div class="col-md-6" id="cart-list-wrapper">
+                <br>
+                <h3 class="home-heading"></h3>
+                <div class="row" style="padding:0px;margin:0px;">
+                    <div class="col-sm-4">
+                      <br>
+                        <img src="https://dl.dropboxusercontent.com/s/2j4nxwhjx1w1h3i/simcard%20pluspayg.png?dl=0" id="product-img">
+                      </div>
+                      <div class="col-sm-8">
+                          <br>
+                          <p>First box with 12 lemon bags. Each bag contains 3 balls.</p>
+                          <label class="hr"></label>
+                          <p class="price" style="text-align:left;">1 Box<span style="float:right;">£19.99</span></p>
+                          <label class="hr"></label>
+                          <p class="price" style="text-align:left;font-weight: bold">Subtotal<span style="float:right;">£19.99</span></p>
+                          <p class="price" style="text-align:left;">UK Shipping<span style="float:right;display: inline;color:#22D59E;;font-weight: bold;">FREE</span></p>
+                          <label class="hr"></label>
+                          <p class="price" style="text-align:left;"><b>Total</b><span style="float:right;"><b>£19.99</b></span></p>
+                          <div class="shipping-status">
+                              <div id="status" class="status"></div><div id="status" class="status"></div><div id="status" class="status"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="text-date">Estimated Delivery Date:&nbsp;&nbsp;</p><p class="date" id="date">25 Jan 2020</p><p></p>
+                                <!--Estimated Delivery Date SCRIPT + STYLE-->
+                                          <!--SCRIPT-->
+                                          <script>
+                                              var months = ["Jan", "Febr", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                                              n =  new Date();
+                                              n.setDate(n.getDate() + 2);
+                                              y = n.getFullYear();
+                                              m = n.getMonth();
+                                              d = n.getDate();
+                                              document.getElementById("date").innerHTML = d + " " + months[m] + " " + y;
+                                            </script>
+                                          <!--STYLE-->
+                                            <style>
+                                              .shipping-status{
+                                                text-align:right;
+                                              }
+          
+                                              .text-date{
+                                                color:gray;
+                                                display:inline-block;
+                                                font-size: 10px;
+                                                font-weight: bold;
+                                                text-align:right;
+                                              }
+                                              .date{
+                                                color:#22D59E;;
+                                                display:inline-block;
+                                                font-size: 10px;
+                                                font-weight: bold;
+                                              }
+          
+                                              .status{
+                                                background-color:#22D59E;;
+                                                border-radius: 50%;
+                                                width: 20px;
+                                                height: 20px;
+                                                text-align:right;
+                                              }
+          
+                                              @-webkit-keyframes pulse {
+                                                  0%{transform:scale(.1);opacity: 0;}
+                                                  50%{ opacity: .4;}
+                                                  100%{transform: scale(1.6); opacity: 0;}
+                                                }
+          
+                                                #status {
+                                                  position:absolute;
+                                                  -webkit-animation: pulse 2s infinite;
+                                                }
+                                                #status:nth-child(2) {
+                                                  position:absolute;
+                                                  -webkit-animation: pulse 2s infinite .3s;
+                                                }
+                                                #status:nth-child(3) {
+                                                  position:absolute;
+                                                  -webkit-animation: pulse 2s infinite .6s;
+                                                }
+                                            </style> 
+                            </div>
+                          <br>
+
+                        </div>
+                  </div>
+            
+              </div>
+
+        </div>
+
+      </div>
+
+        <!--Seperation between Registration Form and Footer-->
+        
+        <br>
+        <br>
+      
+      
+</section>
+<!--Footer-->
+<section>
+    <div class="w3-container" style="background: black;">
+        <div class="row">
+      <div class="col-md">
+        <p style="color: white;">Brands by</p>
+        <a href="https://www.plntprotein.com"><img src="https://dl.dropboxusercontent.com/s/hrve8zln9e4mlbi/PLNTS-logo.png?dl=0" style="width:150px"></a>  
+     </div>
+     
+     <div class="col-md">
+        <p class="heading-f">CHAT</p>
+        <a href="sms:+447480803557" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
+        <a href="https://www.instagram.com/plntprotein" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@plntprotein</p></a>
+        <a href="mailto:hi@plntprotein.com" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@plntprotein.com</p></a>  
+          
+      </div>
+  
+   <div class="col-md">
+      <p class="heading-f">INFORMATION</p>
+      <a href="https://www.plntprotein.com/termsofservice"><p id="trust">Terms of Service</p></a>
+      <a href="https://www.plntprotein.com/privacypolicy"><p id="trust">Privacy Policy</p></a>
+      <a href="https://www.plntprotein.com/textpolicy"><p id="trust">Text Policy</p></a>
+      
+  </div>
+  <div class="col-md">
+    <p id="trust">London, UK, NW2</p>
+    <p id="trust">© PLNTS Ltd 2019. All Rights Reserved</p> 
+    <p id="trust">*This product is not intended to diagnose, treat, cure or prevent any disease.</p>
+  </div>
+  </div>
+  </div>
+  
+</section>
+</body>
+</html>

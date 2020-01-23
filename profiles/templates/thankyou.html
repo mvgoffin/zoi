@@ -510,7 +510,7 @@ ___
         }
         </style>
 </section>
-<!--Introduction-->
+<!--Thank you-->
 <section>
 <div class="w3-container">   
         <div style="text-align: center;">
@@ -523,239 +523,38 @@ ___
 </div>
 <!--<div class="headline-middle"></div>-->
 </section>
-<!--Select a Flavour-->
-<section>
-  <div class="w3-container" style="background-color:#EFEFEF;">
-    <br>
-    <h3 class="banner-text">Choose your favourite flavour</h3>
-    <br>
-    <br>
-            <div class="row">
-                    <!--Hazelnut Cacao Portal-->
-                    <div class="col-sm">
-                    <form id="hc-container" action="{% url 'hazelnutcacao' %}">{% csrf_token %}
-                          <p class="container-text"></p> 
-                          <p class="container-text"></p>         
-                          <div class="row">
-                          <button type="submit">Hazelnut + Cacao</button> 
-                          </div>
-                      </form>
-                    </div>
-  
-                    <!--Lemon Portal-->
-                    <div class="col-sm">
-                        <form id="le-container" action="{% url 'lemon' %}">{% csrf_token %}
-                          <p class="container-text"></p> 
-                          <p class="container-text"></p>       
-                          <div class="row">
-                          <button type="submit">Lemon</button> 
-                          </div>
-                          </form>
-                        </div>
-              </div>
-            <div class="row" style="padding-top:50px"></div>
-    </div>
-  
-</section>
-<!--Why-->
-<section>
-  <div class="w3-container">   
-    <br>
-    <div style="text-align: center;">
-      <h2 class="banner-text">Why our snacks</h2> 
-      <br>
-      <br>
-    </div>
-  <div class="row" style="padding-left:250px;padding-right: 250px;">
-    <div class="col-md-6">
-          <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0" style="width:18px;">
-          &nbsp;&nbsp;Vegan, gluten free and palm oil free
-          <br>
-          <br>
-          <img src="https://dl.dropboxusercontent.com/s/6ovw47cgrjt0hdq/icon-natural-ingredients.png?dl=0" style="width:18px;">
-          &nbsp;&nbsp;Finest natural ingredients only
-          <br>
-          <br>
-          <img src="https://dl.dropboxusercontent.com/s/wnwd6uzhrtsvyjv/icon-cacao-1.png?dl=0" style="width:18px;">
-          &nbsp;&nbsp;Ethically sourced cocoa
-          <br>
-          <br>
-          </div>
-      <div class="col-md-6">
-        <img src="https://dl.dropboxusercontent.com/s/1gatpp7wzwrsuko/icon-handcrafted-1.png?dl=0" style="width:18px;">
-        &nbsp;&nbsp;Handcrafted in the UK
-          <br>
-          <br>
-          <img src="https://dl.dropboxusercontent.com/s/nh5bqq9ausnrvx4/icon-1-sugar.png?dl=0" style="width:18px;">
-          &nbsp;&nbsp;Delicious and healthy
-          <br>
-          <br>
-          <img src="https://dl.dropboxusercontent.com/s/zh7l7b4fkq6hxyz/icon-calm-2.png?dl=0" style="width:18px;">
-          &nbsp;&nbsp;Great for recovery*
-          <br>
-          <br>
-          <br>
-      </div> 
-          
-    </div>  
-</section>
-<!--FAQS-->
-<section>
-  <!--(Header) -->
-  <div class="w3-container" style="background-color:#EFEFEF;">
-    <br>
-    <h3 class="banner-text">FAQs</h3>
-      <div class="row">
-        
-        <br>
-        <br>
-      </div>
-      
-    </div>
-  <!--(questions)-->
-   <div class="w3-container" style="background-color:#EFEFEF;">
-      <div class="row" style="padding-left:200px;padding-right: 200px;">
-
-  <input type="button" value="How do I buy PLNT PROTEIN?" class="accordion">
-  <div class="panel">
-  <p class="product-small">Buying our snacks is now simple. 'Select' your favourite &amp; follow the instructions. Once you register your existing phone number and payment information, you’ll receive an activation message. Next time you want snacks, you can easily message us at 0748.080.3557 at your convenience. We're available anytime.</p>
-  </div>
-
-  <input type="button" value="How can I reorder?" class="accordion">
-  <div class="panel">
-          <div class="row">
-            <form>
-              <p class="product-small">Simply text <b>refill</b> on <b>0748.080.3557</b> to get monthly refills.</p>
-              <p class="product-small">1-Month <b>Eco-Refill bag</b> costs <b>£19.99</b> and includes <b>12 bags</b>.</p>
-              <p class="product-small">Remember to save our number. We're available anytime you want a new order or have questions 🙋‍♀‍</p>
-            </form>
-            </div>
-  </div>
-  
-  <input type="button" value="Why do I have to enter my payment info?" class="accordion">
-  <div class="panel">
-  <p class="product-small">We ask for this now to make your life easier — forget pulling out your payment card and re-entering it every time to buy. Your information is encrypted and stored with our credit card processor — we do not have access to your credit card data. You're only charged when you text us to buy our snacks. </p>
-  </div>
-
-  
-
-  <input type="button" value="How do I update my payment information?" class="accordion">
-  <div class="panel">
-  <p class="product-small">You can edit your payment details at any time by texting EDIT to 0748.080.3557.</p>
-  </div>
-
-  <input type="button" value="Will I be charged upon registering?" class="accordion">
-  <div class="panel">
-  <p class="product-small">No. You won't be charged until you text to confirm your snacks purchase.</p>
-  </div>
-
-<br>
-
-  <style>
-  /* Style the buttons that are used to open and close the accordion panel */
-  .accordion {
-        background-color: transparent;
-        color:black;
-        font-family: 'Avenir', sans-serif;
-        font-weight: 800; 
-        cursor: pointer;
-        padding: 20px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-        border-radius: 0px;
-      }
-
-      .active, .accordion:hover {
-        background-color:#EFEFEF;
-        border-left-width: 10px;
-        border-left-style: solid;
-        border-left-color:black ;
-        border-radius: 0px;
-      }
-
-      .panel {
-        padding: 0 10px;
-        margin: 0px;
-        background-color: transparent;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        border-radius: 0px;
-
-      }
-
-      .accordion:after {
-        content: '\02795'; /* Unicode character for "plus" sign (+) */
-        font-size: 13px;
-        color: #EDEDEB;
-        float: right;
-        margin-left: 5px;
-        border-radius: 0px;
-      }
-
-      .active:after {
-        content: "\2796"; /* Unicode character for "minus" sign (-) */
-        border-radius: 0px;
-      }
-  </style>
-
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight){
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        } 
-      });
-    }
-    </script>
-
-
-      </div>  
-    </div>  
-</section>
 <!--Footer-->
 <section>
-  <div class="w3-container" style="background: black;">
-      <div class="row">
-    <div class="col-md">
-      <p style="color: white;">Brands by</p>
-      <a href="https://www.plntprotein.com"><img src="https://dl.dropboxusercontent.com/s/hrve8zln9e4mlbi/PLNTS-logo.png?dl=0" style="width:150px"></a>  
-   </div>
-   
+    <div class="w3-container" style="background: black;">
+        <div class="row">
+      <div class="col-md">
+        <p style="color: white;">Brands by</p>
+        <a href="https://www.plntprotein.com"><img src="https://dl.dropboxusercontent.com/s/hrve8zln9e4mlbi/PLNTS-logo.png?dl=0" style="width:150px"></a>  
+     </div>
+     
+     <div class="col-md">
+        <p class="heading-f">CHAT</p>
+        <a href="sms:+447480803557" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
+        <a href="https://www.instagram.com/plntprotein" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@plntprotein</p></a>
+        <a href="mailto:hi@plntprotein.com" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@plntprotein.com</p></a>  
+          
+      </div>
+  
    <div class="col-md">
-      <p class="heading-f">CHAT</p>
-      <a href="sms:+447480803557" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
-      <a href="https://www.instagram.com/plntprotein" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@plntprotein</p></a>
-      <a href="mailto:hi@plntprotein.com" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@plntprotein.com</p></a>  
-        
-    </div>
-
- <div class="col-md">
-    <p class="heading-f">INFORMATION</p>
-    <a href="https://www.plntprotein.com/termsofservice"><p id="trust">Terms of Service</p></a>
-    <a href="https://www.plntprotein.com/privacypolicy"><p id="trust">Privacy Policy</p></a>
-    <a href="https://www.plntprotein.com/textpolicy"><p id="trust">Text Policy</p></a>
-    
-</div>
-<div class="col-md">
-  <p id="trust">London, UK, NW2</p>
-  <p id="trust">© PLNTS Ltd 2019. All Rights Reserved</p> 
-  <p id="trust">*This product is not intended to diagnose, treat, cure or prevent any disease.</p>
-</div>
-</div>
-</div>
-
+      <p class="heading-f">INFORMATION</p>
+      <a href="https://www.plntprotein.com/termsofservice"><p id="trust">Terms of Service</p></a>
+      <a href="https://www.plntprotein.com/privacypolicy"><p id="trust">Privacy Policy</p></a>
+      <a href="https://www.plntprotein.com/textpolicy"><p id="trust">Text Policy</p></a>
+      
+  </div>
+  <div class="col-md">
+    <p id="trust">London, UK, NW2</p>
+    <p id="trust">© PLNTS Ltd 2019. All Rights Reserved</p> 
+    <p id="trust">*This product is not intended to diagnose, treat, cure or prevent any disease.</p>
+  </div>
+  </div>
+  </div>
+  
 </section>
 </body>
 </html>
