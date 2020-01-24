@@ -26,10 +26,10 @@ SECRET_KEY = 'lzonf2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-# True - Env // False - Production
+# True - Environment // False - Production
 
 # TEST on MOBILE MARCO VG MAC -> ALLOWED_HOSTS = ['192.168.0.158']
-ALLOWED_HOSTS = ['157.245.136.56', 'localhost', 'www.plntprotein.com', 'plntprotein.com']
+ALLOWED_HOSTS = ['localhost', '208.68.37.142']
 
 # Application definition
 
