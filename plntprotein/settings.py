@@ -29,7 +29,7 @@ DEBUG = True
 # True - Environment // False - Production
 
 # TEST on MOBILE MARCO VG MAC -> ALLOWED_HOSTS = ['192.168.0.158']
-ALLOWED_HOSTS = ['localhost', '208.68.37.142']
+ALLOWED_HOSTS = ['localhost', '157.245.136.56', 'www.plntprotein.com', 'plntprotein.com']
 
 # Application definition
 
