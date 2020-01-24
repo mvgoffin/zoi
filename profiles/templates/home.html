@@ -533,12 +533,14 @@ ___
             <div class="row">
                     <!--Hazelnut Cacao Portal-->
                     <div class="col-sm">
-                    <form id="hc-container" action="{% url 'hazelnutcacao' %}">
-                      {% csrf_token %}
+                    <form id="hc-container">
+                      
                           <p class="container-text"></p> 
                           <p class="container-text"></p>         
                           <div class="row">
+                          <a class="nav-link" href="/hazelnutcacao">
                           <button type="submit">Hazelnut + Cacao</button> 
+                            </a>
                           </div>
                       </form>
                     </div>
