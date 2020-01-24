@@ -48,4 +48,27 @@ def thankyou(request):
 
 
 
+def register_lemon(request):
+    context = locals()
+    template = 'register_lemon.html'
+    return render(request,template,context)
+
+def register_hazelnutcacao(request):
+    context = locals()
+    template = 'register_hazelnutcacao.html'
+    return render(request,template,context)
+
+
+def checkout_lemon(request):
+    context = locals()
+    template = 'checkout_lemon.html'
+    return render(request,template,context)
+
+def checkout_hazelnutcacao(request):
+    context = locals()
+    template = 'checkout_hazelnutcacao.html'
+    return render(request,template,context)
+
+
+
 
