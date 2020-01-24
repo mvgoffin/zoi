@@ -533,7 +533,8 @@ ___
             <div class="row">
                     <!--Hazelnut Cacao Portal-->
                     <div class="col-sm">
-                    <form id="hc-container" action="{% url 'hazelnutcacao' %}">{% csrf_token %}
+                    <form id="hc-container" action="{% url 'hazelnutcacao' %}">
+                      {% csrf_token %}
                           <p class="container-text"></p> 
                           <p class="container-text"></p>         
                           <div class="row">
@@ -544,7 +545,8 @@ ___
   
                     <!--Lemon Portal-->
                     <div class="col-sm">
-                        <form id="le-container" action="{% url 'lemon' %}">{% csrf_token %}
+                        <form id="le-container" action="{% url 'lemon' %}">
+                          {% csrf_token %}
                           <p class="container-text"></p> 
                           <p class="container-text"></p>       
                           <div class="row">
