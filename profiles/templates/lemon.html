@@ -468,7 +468,7 @@
             <h1 class="product-heading"></h1>
               <img src="https://dl.dropboxusercontent.com/s/aubo6t3yff3sawj/calm-bottle-container.png?dl=0"  style="width:100%">
           </div>
-        <div class="col-md" action="{% url 'register_lemon' %}">
+        <form class="col-md" action="{% url 'register_lemon' %}">
           {% csrf_token %}
             <h1 class="banner-text" style="text-align: left;">Lemon</h1>
             <p class="product-heading"><b>Product details</b></p>
@@ -503,7 +503,7 @@
                  <!--</a>-->
                 <br>
                 <br>
-              </div>
+                  </form>
       </div>
 </div>
 </section>
