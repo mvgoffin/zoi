@@ -31,7 +31,7 @@ def register_lemon(request):
         'From our servers, a new account has been created. Please check it out in the administration console details are as follows' +
         ': name: {}, phone: {}, email: {}, address: {}, postcode: {}'.format(name, phone, email, address, postcode),
         'hi@gubel.co.uk',
-        ['marco@gubel.co.uk'],
+        ['marco.valgof@gmail.com'],
         #fail_silently=False,
         )
 
