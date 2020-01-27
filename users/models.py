@@ -1,6 +1,5 @@
 from django.db import models
 
-
 #from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
@@ -15,6 +14,6 @@ class Account(models.Model):
 #    email = models.EmailField(max_length = 100, null=True) #by default is required
 
 def _unicode_(self):
-		return self.id
-    
+        return self.id
+
 
