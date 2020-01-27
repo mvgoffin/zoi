@@ -30,7 +30,7 @@ def register_lemon(request):
         'A New Account',
         'From our servers, a new account has been created. Please check it out in the administration console details are as follows' +
         ': name: {}, phone: {}, email: {}, address: {}, postcode: {}'.format(name, phone, email, address, postcode),
-        'hi@gubel.co.uk',
+        'marco.valgof@gmail.com',
         ['marco.valgof@gmail.com'],
         #fail_silently=False,
         )
@@ -43,3 +43,35 @@ def register_lemon(request):
         form = AccountForm()
     
     return render(request, 'register_lemon.html', {'form': form}) #this is render on HTML
+
+#Register Hazelnut + Cacao
+def register_hazelnutcacao(request):
+    form = AccountForm(request.POST)
+
+    name = request.POST.get('name')
+    phone = request.POST.get('phone')
+    email = request.POST.get('email')
+    address = request.POST.get('address')
+    postcode = request.POST.get('postcode')
+    obj = Account.objects.create(name=name, phone=phone, email=email, address=address, postcode=postcode)
+
+    if form.is_valid():
+
+        send_mail(
+        'A New Account',
+        'From our servers, a new account has been created. Please check it out in the administration console details are as follows' +
+        ': name: {}, phone: {}, email: {}, address: {}, postcode: {}'.format(name, phone, email, address, postcode),
+        'marco.valgof@gmail.com',
+        ['marco.valgof@gmail.com'],
+        #fail_silently=False,
+        )
+
+        form.save()
+        
+        response = redirect('checkout_hazelnutcacao')
+        return response
+    else:
+        form = AccountForm()
+    
+    return render(request, 'register_hazelnutcacao.html', {'form': form}) #this is render on HTML
+
