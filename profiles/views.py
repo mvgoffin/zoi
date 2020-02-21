@@ -9,7 +9,7 @@ from django.conf import settings
 
 # Create your views here.
 
-#PLNT PROTEIN - PLNTS Views
+#Altered.ai - Views
 
 def home(request):
     context = locals()
