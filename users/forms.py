@@ -20,12 +20,3 @@ class AccountForm(forms.ModelForm):
             'postcode': TextInput(attrs={'class': 'form-control', }),
         }
 
-#class AccessForm(forms.ModelForm):
-#    class Meta:
-#        model = Access
-#        fields = ('email',)
-#        widgets = {
-#            'email': EmailInput(attrs={'class': 'form-control', }),
-#        }
-        
-

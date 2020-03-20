@@ -28,7 +28,6 @@ SECRET_KEY = 'lzonf2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 DEBUG = True
 # True - Environment // False - Production
 
-# TEST on MOBILE MARCO VG MAC -> ALLOWED_HOSTS = ['192.168.0.158']
 ALLOWED_HOSTS = ['localhost', '157.245.136.56']
 
 # Application definition
@@ -79,9 +78,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'alteredai.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 if DEBUG:
         DATABASES = {
@@ -152,34 +148,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 
 
-#BEfore DATABASE, changed for JustDjango application
-#STATIC_URL = '/static/'
-
-#if DEBUG:
-#    MEDIA_URL = '/media/'
-#    STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR), 'static', 'static'),
-#    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_root', 'static-only', 'static')
-#    MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static', 'media_root')
-#    STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-#)
-
-
-# Stripe Keys
-
-#test keys Uncomment to go LIVE!
-#STRIPE_PUBLIC_KEY = 'pk_test_BDcILuPUX13SXoMVLNxOojyt'
-#STRIPE_SECRET_KEY = 'sk_test_p2vTfVUyXWWQtDTAxpP5M3Av'
-
-#live keys
-STRIPE_PUBLIC_KEY = 'pk_live_dqYcQQrsiKP9wOLLJTWnvpPc'
-STRIPE_SECRET_KEY = 'sk_live_Kixpch8yverbNokj34AhO5VG'
-
-#Django AllAuth Settings
-
-#SENDING EMAIL NOTIFICATION NAA
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'hi@gubel.co.uk'
-EMAIL_HOST_PASSWORD = 'gubel1234'

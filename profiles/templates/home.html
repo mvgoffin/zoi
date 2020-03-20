@@ -16,26 +16,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-
     <!--lightbox-->
     <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!--favicon-->
-    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/vsfq4gstae2o3mo/Icon-PLNTlemon.png?dl=0">
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/j143fkkdvxxax43/favicon-1.png?dl=0">
     
     <title>
-      Plant-Based Snacks
+      Home | Altered
     </title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267999-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GOOGLE ANALYTICS CODE"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-141267999-1');
+      gtag('config', 'GOOGLE ANALYTICS CODE');
     </script>
 
     <!-- CSS-->
@@ -67,18 +66,17 @@
           margin-right:0px;
           margin-left:0px;
         }
-
-        .banner-text {
+        
+        .section-heading{
               padding-top: 30px;
               color:black;
               font-size: 40px;
               text-align: center;
               font-weight: 800;
               display:block;
-              margin: 0;
-              
+              margin: 0;  
         }
-    
+        
         .why-text {
           font-weight: 400;
           margin: 0px;
@@ -93,14 +91,14 @@
           margin: 0px;
         }
 
-        .section-heading{
+        /**.section-heading{
         margin-top: 10px;
         font-weight: 600;
         color: black;
         text-align: left;
         line-height: 25px;
         font-size: large;
-        }
+        }**/
 
         .section-text{
         font-weight: 400;
@@ -179,6 +177,11 @@
             border-color:gray;
           } 
 
+        .contact-form{
+          padding-left: 350px;
+          padding-right: 350px;
+          padding-bottom: 50px;
+        }
           /*****/
 
         .wrapper {
@@ -191,15 +194,24 @@
           width: 75em;
         }
 
-        .container-text {
-            color:white;
-            font-size: 4vw;
-            padding-top: 100px;
-            padding-bottom: 0px;
+        .container-heading {
+            color:black;
+            font-size: 20px;
+            padding-top: 25px;
+            padding-bottom: 25px;
             text-align: center;
             font-weight: 800;
             display:block;
             margin: 0;
+        }
+
+        .container-text {
+            color:black;
+            font-size: 15px;
+            padding-bottom: 25px;
+            font-size: 15px;
+            font-weight: 100;
+            text-align: center;
         }
 
         .a{
@@ -252,30 +264,17 @@ ___
           border-width: 10px;
         }
 
-        #hc-container {
-            background-image:url(https://dl.dropboxusercontent.com/s/m4mni2ywf9jfp8s/home.hc.png?dl=0);/**(-90deg, #194CFA,#22F0C1, #FFCDFF);**/
+        #container {
+            background-color: #FFF8F8;
             background-repeat: no-repeat;
             background-position: center;
-            /**border-radius: 10px;**/
-            box-shadow: 5px 5px 7px 0 #D1D1D1;
+            box-shadow: 0 5px 15px 0 #D1D1D1;
             -webkit-transition: box-shadow 150ms ease;
             transition: box-shadow 150ms ease;
             margin:10px;
             padding: 20px;
             text-align: center;
-        }
-
-        #le-container {
-            background-image:url(https://dl.dropboxusercontent.com/s/ii8ie9jrh59hu1t/home.lemon.png?dl=0);/**(-90deg, #194CFA,#22F0C1, #FFCDFF);**/
-            background-repeat: no-repeat;
-            background-position: center;
-            /**border-radius: 10px;**/
-            box-shadow: 5px 5px 7px 0 #D1D1D1;
-            -webkit-transition: box-shadow 150ms ease;
-            transition: box-shadow 150ms ease;
-            margin:10px;
-            padding: 20px;
-            text-align: center;
+            border-radius: 10px;
         }
 
         #product-image {
@@ -299,7 +298,7 @@ ___
           background: transparent;
           display:block;
           width:100%;
-          border: 7px black solid;
+          border: 0px black solid;
           color: white;
           background:black;
           padding: 10px 20px;
@@ -307,7 +306,7 @@ ___
           font-weight: 800;
           font-style: normal;
           animation-delay: 2400ms;
-          font-size: 25px;
+          font-size: 15px;
           letter-spacing: .01em;
           text-transform: normal;
           transition: background-color 170ms  ease-out,color 170ms ease-out;
@@ -315,15 +314,15 @@ ___
 
         button:focus{
           background-color:#22D59E;;
-          border: 7px solid ;
+          border: 0px solid ;
           color: black;
           border-width: 1px;
         }
 
         button:hover {
-          background-color:white;
-          border: 7px solid ;
-          color: black;
+          background-color:slategrey;
+          border: 0px solid ;
+          color: white;
         }
         
         ::placeholder{
@@ -338,14 +337,14 @@ ___
   
   /**Bootstrap Columns and Sections**/
         
-        .col-md { /**Why Choose PLNTS**/
+        .col-md { 
           background: transparent;
           margin:10px;
           padding: 20px;
         }
 
     @media only screen and (max-width: 990px) {
-    .row , .w3-container, #header-logo, .open-slide, .nav-link {
+    .row , .w3-container, #header-logo, .open-slide, .nav-link, .container-heading, .container-text, .contact-form {
                 margin-left:0 !important;
                 margin-right:0 !important;
                 margin-top:0 !important;
@@ -398,20 +397,17 @@ ___
 <!--Navigation Menu-->
 <section>
   <header>
-  <div style="padding:5px;margin:0px;background-color: #FFF000;">
-      <p style="margin:0px;text-align:center;font-size: smaller;">Last month was amazing for the team, because we listened what you loved and what can be improved ―we're learning as we go. We’re hard at work making delicious snacks with benefits available in very soon. Drop us a line on hi@plntprotein.com if you would like to be alerted when it's available again!</p>
-    </div>
   
     <nav class="navbar">
-        <a href="https://www.plntprotein.com" class="navbar-brand"><img src="https://dl.dropboxusercontent.com/s/mw3c30fbjjjdlzc/1.%20Logo_PLNT_White-FINAL-noTM.png?dl=0" id="header-logo"></a>
+        <a href="https://www.SITE.com" class="navbar-brand"><img src="https://dl.dropboxusercontent.com/s/oaikomsrtma1te6/altered-logo-1.png?dl=0" id="header-logo"></a>
         
         <button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;" class="collapsed" aria-expanded="false">
             <span class="open-slide" style="text-align:right; background:transparent;">
                 <a href="#" onclick="openSlideMenu()">
                   <svg width="25" height="25">
-                    <path d="M0,5 30,5" stroke="#FFFFFF" stroke-width="4"></path>
-                    <path d="M0,14 30,14" stroke="#FFFFFF" stroke-width="4"></path>
-                    <path d="M0,23 30,23" stroke="#FFFFFF" stroke-width="4"></path>
+                    <path d="M0,5 30,5" stroke="#000000" stroke-width="4"></path>
+                    <path d="M0,14 30,14" stroke="#000000" stroke-width="4"></path>
+                    <path d="M0,23 30,23" stroke="#000000" stroke-width="4"></path>
                   </svg>
                 </a>
               </span>
@@ -420,18 +416,20 @@ ___
         <div class="navbar-collapse collapse" id="collapsingNavbar4" style="">
             <ul class="navbar-nav">
                 <li class="nav-item active2">
-                    <a class="nav-link" href="/hazelnutcacao">Hazelnut + Cacao</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/lemon">Lemon</a>
+                    <a class="nav-link" href="/jobs">Jobs</a>
                 </li>
             </ul>
         </div>
 
         <style>
         .navbar {
-          background-color: black;
+          background-color: white;
           padding: 0;
+          box-sizing: border-box;
+          margin: auto;
+          width: 100%;
+          box-shadow: 0 10px 5px -5px  #D1D1D1;
+          -webkit-appearance: none !important;
         }
         
         .nav-link {
@@ -440,6 +438,11 @@ ___
           font-size: 24px;
           font-weight: bold;
           color: white;
+          background-color: black;
+        }
+
+        .nav-item.active2 {
+          background: black;
         }
 
         .nav-link:hover {
@@ -453,7 +456,7 @@ ___
         }
 
         #header-logo {
-          width: 150px;
+          width: 130px;
           padding-top: 10px;
           padding-bottom: 10px;
           padding-left: 30px;
@@ -469,294 +472,183 @@ ___
 </section>
 <!--Banner-->
 <section>
-  <div class="w3-container" id="banner" style="margin:30px">         
+  <div class="w3-container" id="banner" style="margin:30px">     
+    <h2 class="banner-heading">Empowering voices</h2>   
+    <br> 
+    <p class="banner-text">Altered is a disruptive, well-funded, stealth-mode startup that uses Artificial Intelligence to democratize Digital Audio Content Creation.</p>
       </div>
     <style>
         /* For width larger than 990px: */
         #banner {
           padding-top: 250px;
-          padding-bottom: 150px;
+          padding-bottom: 100px;
           padding-left: 150px;
           padding-right: 150px;
-          background-image:url(https://dl.dropboxusercontent.com/s/7h7i2ktl49fdv8f/web-banner-3.png?dl=0);
+          background-image:url(https://dl.dropboxusercontent.com/s/eg4gnf57uctuz66/banner-web-1.png?dl=0);
           background-position: center;
           background-repeat: no-repeat;
           background-size: 100%;
-          
         }
     
-        .banner-text {
+        .banner-heading {
               padding-top: 30px;
               color:black;
               font-size: 40px;
-              text-align: center;
+              text-align: left;
               font-weight: 800;
               display:block;
-              margin: 0;
-              
+              margin: 0;  
+        }
+
+        .banner-text {
+              margin-bottom: 2px;
+              padding: 0;
+              font-size: 15px;
+              font-weight: 100;
+              text-align: left;
+              padding-right: 500px;
         }
 
         @media only screen and (max-width: 990px) {
         #banner {
-          background-image:url(https://dl.dropboxusercontent.com/s/54y43qb9zv4cymi/web-m-banner-3.png?dl=0);
+          background-image:url(https://dl.dropboxusercontent.com/s/9jek1vzmjh9ko99/banner-m-1.png?dl=0);
           background-position: center;
           background-repeat: no-repeat;
+          padding-bottom: 10px;
         }
-        .banner-text{
+        .banner-heading{
             padding-top: 30px;
             font-size: 40px;
             margin-left:20px !important;
             margin-right:20px !important;
             padding-left: 0px !important;
             padding-right: 0px !important;
-            text-align: center;
+            text-align: left;
           }
         }
         </style>
 </section>
-<!--Introduction-->
+<!--Select Role-->
 <section>
-<div class="w3-container">   
-        <div style="text-align: center;">
-          <h2 class="banner-text">Good Clean Food Delivered</h2> 
-        </div>
-        <div class="col-md" style="padding-left:250px;padding-right: 250px;">
-          <p class="page-text">Did you ever have to decide between eating healthy and the satisfaction of a cheat meal? We believe you can have both. We like things when they are simple. Like a daily protein boost that suits your life. </p> 
-          <br>
-          <p class="page-text">Our plant protein snacks are formulated with chickpea protein which benefits lean muscle recovery, dried plums help maintain healthy skin and chicory fibre improves body’s digestive health. Available in two full flavoured options, our products are made to help you look and feel your best.</p>
-        </div>
-</div>
-<!--<div class="headline-middle"></div>-->
-</section>
-<!--Select a Flavour-->
-<section>
-  <div class="w3-container" style="background-color:#EFEFEF;">
+  <div class="w3-container" style="background-color:white;">
     <br>
-    <h3 class="banner-text">Start with your favourite flavour</h3>
+    <h2 class="section-heading">Find your perfect role.</h2>
     <br>
     <br>
             <div class="row">
-                    <!--Hazelnut Cacao Portal-->
-                    <div class="col-sm">
-                    <form id="hc-container" action="{% url 'hazelnutcacao' %}">{% csrf_token %}
-                          <p class="container-text"></p> 
-                          <p class="container-text"></p>         
+                    <!--Lead/Senior Full-Stack Developer Portal-->
+                    <div class="col-md">
+                    <form id="container" action="{% url 'ROLE HTML' %}">{% csrf_token %}
+                          <p class="container-heading">Lead/Senior Full-Stack Developer</p> 
+                          <p class="container-text">Make a difference developing excellent products with Electron, TypeScript and React.</p>         
                           <div class="row">
-                          <button type="submit">Hazelnut + Cacao</button> 
+                          <button type="submit">Learn More</button> 
                           </div>
                       </form>
                     </div>
   
-                    <!--Lemon Portal-->
-                    <div class="col-sm">
-                        <form id="le-container" action="{% url 'lemon' %}">{% csrf_token %}
-                          <p class="container-text"></p> 
-                          <p class="container-text"></p>       
-                          <div class="row">
-                          <button type="submit">Lemon</button> 
-                          </div>
-                          </form>
-                        </div>
-              </div>
-            <div class="row" style="padding-top:50px"></div>
+                    <!--Lead/Senior Back-End Developer Portal-->
+                    <div class="col-md">
+                      <form id="container" action="{% url 'ROLE HTML' %}">{% csrf_token %}
+                            <p class="container-heading">Lead/Senior Back-End Developer</p> 
+                            <p class="container-text">Align the planets between a stellar Research team and a fantastic Product team.</p>         
+                            <div class="row">
+                            <button type="submit">Learn More</button> 
+                            </div>
+                        </form>
+                      </div>
+                    
+                    <!--Lead/Senior Full-Stack Developer Portal-->
+                    <div class="col-md">
+                      <form id="container" action="{% url 'ROLE HTML' %}">{% csrf_token %}
+                            <p class="container-heading">Lead/Senior Deep Learning Engineer</p> 
+                            <p class="container-text">The Model is the Code. Build the Model.</p>    
+                            <br>     
+                            <div class="row">
+                            <button type="submit">Learn More</button> 
+                            </div>
+                        </form>
+                      </div>
+
+                    <!--Lead/Senior Full-Stack Developer Portal-->
+                    <div class="col-md">
+                      <form id="container" action="{% url 'ROLE HTML' %}">{% csrf_token %}
+                            <p class="container-heading">Graphics & User Interface Designer</p> 
+                            <p class="container-text">The Beauty is in your Eyes. Make it Pretty. Make it Usable. Make it Desirable.</p>         
+                            <div class="row">
+                            <button type="submit">Learn More</button> 
+                            </div>
+                        </form>
+                      </div>
+              </div> 
     </div>
-  
 </section>
-<!--Why-->
-<section>
-  <div class="w3-container">   
-    <br>
-    <div style="text-align: center;">
-      <h2 class="banner-text">Why our snacks</h2> 
-      <br>
-      <br>
-    </div>
-  <div class="row" style="padding-left:250px;padding-right: 250px;">
-    <div class="col-md-6">
-          <img src="https://dl.dropboxusercontent.com/s/xwu4p2b4s5thsji/icon-vegan-1.png?dl=0" style="width:18px;">
-          &nbsp;&nbsp;Vegan, gluten free and palm oil free
-          <br>
-          <br>
-          <img src="https://dl.dropboxusercontent.com/s/6ovw47cgrjt0hdq/icon-natural-ingredients.png?dl=0" style="width:18px;">
-          &nbsp;&nbsp;Finest natural ingredients only
-          <br>
-          <br>
-          <img src="https://dl.dropboxusercontent.com/s/wnwd6uzhrtsvyjv/icon-cacao-1.png?dl=0" style="width:18px;">
-          &nbsp;&nbsp;Ethically sourced cocoa
-          <br>
-          <br>
-          </div>
-      <div class="col-md-6">
-        <img src="https://dl.dropboxusercontent.com/s/1gatpp7wzwrsuko/icon-handcrafted-1.png?dl=0" style="width:18px;">
-        &nbsp;&nbsp;Handcrafted in the UK
-          <br>
-          <br>
-          <img src="https://dl.dropboxusercontent.com/s/nh5bqq9ausnrvx4/icon-1-sugar.png?dl=0" style="width:18px;">
-          &nbsp;&nbsp;Delicious and healthy
-          <br>
-          <br>
-          <img src="https://dl.dropboxusercontent.com/s/zh7l7b4fkq6hxyz/icon-calm-2.png?dl=0" style="width:18px;">
-          &nbsp;&nbsp;Great for recovery*
-          <br>
-          <br>
-          <br>
-      </div> 
-    </div>
-    <div class="headline-middle"></div>  
-</section>
-<!--FAQS-->
+<!--Contact Form-->
 <section>
   <!--(Header) -->
-  <div class="w3-container" >
+  <div class="w3-container">
     <br>
-    <h3 class="banner-text">FAQs</h3>
-      <div class="row">
-        
-        <br>
-        <br>
-      </div>
-      
+    <h3 class="section-heading">Get in touch</h3>
     </div>
-  <!--(questions)-->
-   <div class="w3-container">
-      <div class="row" style="padding-left:200px;padding-right: 200px;">
+   
+     <!--Checkout Account Form-->
+     <form class="contact-form" method="POST" action="{% url 'Home' %}">{% csrf_token %}
+      <div id="contact-form">
+      <br>
+      <label class="home-heading" for="id_name"><b>Name</b></label>
+      <input type="text" name="name" class="form-control" id="card-name" placeholder="">
+      <br>
 
-  <input type="button" value="How do I buy PLNT PROTEIN?" class="accordion">
-  <div class="panel">
-  <p class="product-small">Buying our snacks is now simple. 'Select' your favourite &amp; follow the instructions. Once you register your existing phone number and payment information, you’ll receive an activation message. Next time you want snacks, you can easily message us at 0748.080.3557 at your convenience. We're available anytime.</p>
-  </div>
+      <label class="home-heading" for="id_name"><b>Phone</b></label>
+      <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" required="" id="id_phone" placeholder="🇬🇧 +44">
+      <small class="small"></small>
+      <br>
+      
+      <label class="home-heading" required="" for="id_email"><b>Email</b></label>
+      <input type="email" name="email" class="form-control" maxlength="100" id="id_email">
+      <small class="small"></small>
+      <br> 
+      
+      <label class="home-heading" required="" for="id_address"><b>Address</b></label>
+      <input type="text" name="address" class="form-control" maxlength="100" id="id_address" placeholder="">
+      <small class="small"></small>
+      <br> 
+  
+      <label class="home-heading" required="" for="id-message"><b>Message</b></label><input type="text" name="message" class="form-control" maxlength="1000" id="id_message" placeholder="">
+      <br>
 
-  <input type="button" value="How can I reorder?" class="accordion">
-  <div class="panel">
-          <div class="row">
-            <form>
-              <p class="product-small">Simply text <b>refill</b> on <b>0748.080.3557</b> to get monthly refills.</p>
-              <p class="product-small">1-Month <b>Eco-Refill bag</b> costs <b>£19.99</b> and includes <b>12 bags</b>.</p>
-              <p class="product-small">Remember to save our number. We're available anytime you want a new order or have questions 🙋‍♀‍</p>
+        <div class="form-group">  
+          <button type="submit">Submit</button>
+        </div>
             </form>
-            </div>
-  </div>
-  
-  <input type="button" value="Why do I have to enter my payment info?" class="accordion">
-  <div class="panel">
-  <p class="product-small">We ask for this now to make your life easier — forget pulling out your payment card and re-entering it every time to buy. Your information is encrypted and stored with our credit card processor — we do not have access to your credit card data. You're only charged when you text us to buy our snacks. </p>
-  </div>
-
-  
-
-  <input type="button" value="How do I update my payment information?" class="accordion">
-  <div class="panel">
-  <p class="product-small">You can edit your payment details at any time by texting EDIT to 0748.080.3557.</p>
-  </div>
-
-  <input type="button" value="Will I be charged upon registering?" class="accordion">
-  <div class="panel">
-  <p class="product-small">No. You won't be charged until you text to confirm your snacks purchase.</p>
-  </div>
-
-<br>
-
-  <style>
-  /* Style the buttons that are used to open and close the accordion panel */
-  .accordion {
-        background-color: transparent;
-        color:black;
-        font-family: 'Avenir', sans-serif;
-        font-weight: 800; 
-        cursor: pointer;
-        padding: 20px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-        border-radius: 0px;
-      }
-
-      .active, .accordion:hover {
-        background-color:#EFEFEF;
-        border-left-width: 10px;
-        border-left-style: solid;
-        border-left-color:black ;
-        border-radius: 0px;
-      }
-
-      .panel {
-        padding: 0 10px;
-        margin: 0px;
-        background-color: transparent;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        border-radius: 0px;
-
-      }
-
-      .accordion:after {
-        content: '\02795'; /* Unicode character for "plus" sign (+) */
-        font-size: 13px;
-        color: #EDEDEB;
-        float: right;
-        margin-left: 5px;
-        border-radius: 0px;
-      }
-
-      .active:after {
-        content: "\2796"; /* Unicode character for "minus" sign (-) */
-        border-radius: 0px;
-      }
-  </style>
-
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight){
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        } 
-      });
-    }
-    </script>
-
-
-      </div>  
-    </div>  
+          </div>
+        </div>
 </section>
 <!--Footer-->
 <section>
   <div class="w3-container" style="background: black;">
       <div class="row">
     <div class="col-md">
-      <p style="color: white;">Brands by</p>
-      <a href="https://www.plntprotein.com"><img src="https://dl.dropboxusercontent.com/s/hrve8zln9e4mlbi/PLNTS-logo.png?dl=0" style="width:150px"></a>  
+      <p class="heading-f">Empowering voices</p>
+      <a href="https://www.altered.ai"><img src="" style="width:150px"></a>  
    </div>
    
    <div class="col-md">
-      <p class="heading-f">CHAT</p>
-      <a href="sms:+447480803557" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p></a>
-      <a href="https://www.instagram.com/plntprotein" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@plntprotein</p></a>
-      <a href="mailto:hi@plntprotein.com" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hi@plntprotein.com</p></a>  
-        
+      <p class="heading-f">CONNECT</p>
+      <a href="sms:+447810241772" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/dce13un38oscaoc/Icon-phone.png?dl=0" style="width:12px;">&nbsp;&nbsp;0781.024.1772</p></a>
+      <a href="mailto:hi@altered.ai" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/f4zpbxdaeb70uuy/Icon-email.png?dl=0" style="width:12px;">&nbsp;&nbsp;info@altered.ai</p></a>
+      <a href="https://www.linkedin.com/alteredai" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/vouccy31hfhunkt/Icon-linkedin.png?dl=0" style="width:12px;">&nbsp;&nbsp;@altered.ai</p></a>
     </div>
 
  <div class="col-md">
     <p class="heading-f">INFORMATION</p>
-    <a href="https://www.plntprotein.com/termsofservice"><p id="trust">Terms of Service</p></a>
-    <a href="https://www.plntprotein.com/privacypolicy"><p id="trust">Privacy Policy</p></a>
-    <a href="https://www.plntprotein.com/textpolicy"><p id="trust">Text Policy</p></a>
+    <a href="https://www.altered.ai/termsofservice"><p id="trust">Terms of Service</p></a>
+    <a href="https://www.altered.ai/privacypolicy"><p id="trust">Privacy Policy</p></a>
     
 </div>
 <div class="col-md">
-  <p id="trust">London, UK, NW2</p>
-  <p id="trust">© PLNTS Ltd 2019. All Rights Reserved</p> 
-  <p id="trust">*This product is not intended to diagnose, treat, cure or prevent any disease.</p>
+  <p id="trust">London, UK.</p>
+  <p id="trust">© Altered Ltd 2020. All Rights Reserved</p> 
 </div>
 </div>
 </div>
