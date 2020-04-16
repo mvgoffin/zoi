@@ -1,4 +1,4 @@
-"""alteredai URL Configuration
+"""dak URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -22,7 +22,7 @@ from profiles import views
 from checkout import views as checkout_views
 from users import views as user_views
 
-#from alteredai.views import home, send_push #web-push
+#from dak.views import home, send_push #web-push
 
 
 urlpatterns = [
