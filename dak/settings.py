@@ -25,10 +25,10 @@ SECRET_KEY = 'lzonf2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 # SECURITY 'lzon%f2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 # True - Environment // False - Production
 
-ALLOWED_HOSTS = ['localhost', '157.245.136.56']
+ALLOWED_HOSTS = ['localhost', '198.199.123.95']
 
 # Application definition
 
