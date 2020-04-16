@@ -21,10 +21,10 @@
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!--favicon-->
-    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/j143fkkdvxxax43/favicon-1.png?dl=0">
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0">
     
     <title>
-      Home | Altered
+      Home | DAK
     </title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -43,7 +43,7 @@
     /**classes**/
 
         * {
-          font-family: 'Europa', sans-serif;
+          font-family: 'Bento Sans', sans-serif;
           font-size: 16px;
           font-variant: normal;
           box-sizing: border-box;
@@ -57,7 +57,7 @@
           padding: 0;
           height: 100%;
           background-color: transparent;
-          color:black;
+          color:white;
         }
 
         .row{
@@ -223,6 +223,10 @@
           padding-top: 60px;
         }
 
+        .form-control {
+            border-radius: 0%;
+        }
+
 
 __
 
@@ -298,9 +302,9 @@ ___
           background: transparent;
           display:block;
           width:100%;
-          border: 0px black solid;
+          border: 0px #3D8FCE solid;
           color: white;
-          background:black;
+          background:#3D8FCE;
           padding: 10px 20px;
           margin: .618em 0.01em;  
           font-weight: 800;
@@ -313,16 +317,16 @@ ___
         }
 
         button:focus{
-          background-color:#22D59E;;
+          background-color:gold;;
           border: 0px solid ;
           color: black;
           border-width: 1px;
         }
 
         button:hover {
-          background-color:slategrey;
+          background-color:gold;
           border: 0px solid ;
-          color: white;
+          color: black;
         }
         
         ::placeholder{
@@ -393,7 +397,7 @@ ___
       </style>
 
 </head>
-<body>
+<body style="background-color: black;">
 <!--Navigation Menu-->
 <section>
     <header>
@@ -476,17 +480,15 @@ ___
             <form style="margin-left:450px;margin-right: 450px;" method="POST" action="{% url 'paygprime_ec_success' %}">{% csrf_token %}
                 <div id="shipping-register-form">
                     <br>
-                    <h3 class="home-heading">Enter your credentials</h3>
+                    <h3>Enter your credentials</h3>
                     <br>
-                    <label class="home-heading" for="card-name"><b>Email</b></label>
+                    <label for="card-name">Email</label>
                     <input type="text" name="card-name" class="form-control" id="card-name" placeholder="">
                     <br>
-            
-                  
-                    <label class="home-heading" for="card-element"><b>Password</b></label>
+                    <label for="card-element">Password</label>
                     <div id="card-element" class="form-control">
                   </div>
-                  
+                    <br>
                   <div class="form-group">  
                     <button type="submit">ENTER</button>
                   </div>
