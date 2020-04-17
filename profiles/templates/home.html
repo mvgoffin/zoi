@@ -484,10 +484,10 @@ ___
     <div class="w3-container" >
         <div class="col-sm-4" style="margin-left: 100px;margin-top: 40px;">
             <h3 class='login-header'>Enter Your Credentials</h3>
-            <p class='login-text'>SAP helps forward-thinking businesses like Vodafone to run at their best. Enter your credentials to know how we're helping you.</p>                <br>
+            <p class='login-text'>SAP helps forward-thinking businesses like Vodafone to run at their best. Enter your credentials to know how we're helping you.</p>
         </div>
         <div class="col-sm-3" style="margin-left:100px;">
-            <form method="POST" action="{% url 'vodafone' %}">"{% csrf_token %}"
+            <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
                 <div id="shipping-register-form">
                     <label for="card-name"></label>
                     <input type="text" name="card-name" class="form-control" id="card-name" placeholder="Email">
