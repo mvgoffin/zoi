@@ -499,7 +499,7 @@
         <div class="row">
                 <!--Analytics Demo-->
                 <div class="col-sm">
-                <form method="POST">
+                    <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
                     <p class='product-title'>Solution Demo<span class="dot" style='float:right;'>NEW</span></p>
                     <p class="product-text">Feature 1</p>
                     <p class="product-text">Feature 2</p>
@@ -515,7 +515,7 @@
 
                 <!--White paper 1-->
                 <div class="col-sm">
-                    <form method="POST">
+                    <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
                         <p class='product-title'>White Paper 1</p>
                         <br>
                         <p class="product-text">Description</p>
@@ -531,7 +531,7 @@
 
                 <!--White paper 2-->
                 <div class="col-sm">
-                    <form method="POST">
+                    <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
                         <p class='product-title'>White Paper 2</p>
                         <br>
                         <p class="product-text">Description</p>
