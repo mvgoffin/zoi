@@ -21,7 +21,7 @@
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!--favicon-->
-    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0">
+    <link href="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0">
     
     <title>
       Home | DAK
@@ -224,7 +224,9 @@
         }
 
         .form-control {
-            border-radius: 0%;
+            border-radius: 5px;
+            border-color: gray;
+            background-color:white;
         }
 
 
@@ -302,9 +304,9 @@ ___
           background: transparent;
           display:block;
           width:100%;
-          border: 0px #3D8FCE solid;
+          border: 0px #3D9AD3 solid;
           color: white;
-          background:#3D8FCE;
+          background:#3D9AD3;
           padding: 10px 20px;
           margin: .618em 0.01em;  
           font-weight: 800;
@@ -402,9 +404,9 @@ ___
 <section>
     <header>
       <nav class="navbar">
-          <a href="https://www.SITE.com" class="navbar-brand"><img src="https://dl.dropboxusercontent.com/s/1z8sl2z34qydcsw/vodafone-sap.png?dl=0" id="header-logo"></a>
+          <a href="https://www.SITE.com" ><img src="https://dl.dropboxusercontent.com/s/1z8sl2z34qydcsw/vodafone-sap.png?dl=0" id="header-logo"></a>
           
-          <button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;" class="collapsed" aria-expanded="false">
+          <!--<button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;" class="collapsed" aria-expanded="false">
               <span class="open-slide" style="text-align:right; background:transparent;">
                   <a href="#" onclick="openSlideMenu()">
                     <svg width="25" height="25">
@@ -414,12 +416,12 @@ ___
                     </svg>
                   </a>
                 </span>
-          </button2>
+          </button2>-->
           
           <div class="navbar-collapse collapse" id="collapsingNavbar4" style="">
               <ul class="navbar-nav">
                   <li class="nav-item active2">
-                      <a class="nav-link" href="/jobs">Jobs</a>
+                      <a class="nav-link" href="/jobs">ABC</a>
                   </li>
               </ul>
           </div>
@@ -464,6 +466,12 @@ ___
             padding-bottom: 10px;
             padding-left: 30px;
             }
+
+         #banner-logo {
+            width: 130px;
+            padding-top: 10px;
+            
+            }
   
           #banner-title-ec {
             background-image:url(https://dl.dropboxusercontent.com/s/eww0aptkrvx3sej/banner-existing-customers.png?dl=0);
@@ -476,11 +484,12 @@ ___
 <!--Login Form-->
 <section>
     <div class="w3-container">
-        <div style="margin: 50px;text-align: center;">
-            <form style="margin-left:450px;margin-right: 450px;" method="POST" action="{% url 'paygprime_ec_success' %}">{% csrf_token %}
+        <div style="margin-left:550px;margin-right: 550px;margin-top:50px; text-align: center;">
+            <form method="POST" action="{% url 'paygprime_ec_success' %}">
+                <img src="https://dl.dropboxusercontent.com/s/pu42w0k9woors79/login-icon.png?dl=0" id="banner-logo">
                 <div id="shipping-register-form">
                     <br>
-                    <h3>Enter your credentials</h3>
+                    <h3>Enter Your Credentials</h3>
                     <br>
                     <label for="card-name">Email</label>
                     <input type="text" name="card-name" class="form-control" id="card-name" placeholder="">
@@ -490,9 +499,11 @@ ___
                   </div>
                     <br>
                   <div class="form-group">  
-                    <button type="submit">ENTER</button>
+                    <button type="submit">Enter</button>
                   </div>
-                  
+                  <p>
+                    We ensure forward-thinking businesses run at their best around the world.
+                  </p>
                 </div>
                 </div>
             
