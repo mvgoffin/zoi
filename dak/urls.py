@@ -29,22 +29,9 @@ urlpatterns = [
     path('', views.home),
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
-    path('search/', views.search, name='search'),
+    path('login/', views.login, name='login'),
+    path('vodafone/', views.vodafone, name='vodafone'),
     
-    path('thankyou/', views.thankyou, name='thankyou'),
-    
-    path('lemon/', views.lemon, name='lemon'),
-    path('hazelnutcacao/', views.hazelnutcacao, name='hazelnutcacao'),
-    
-    path('termsofservice/', views.termsofservice, name='termsofservice'),
-    path('privacypolicy/', views.privacypolicy, name='privacypolicy'),
-    path('textpolicy/', views.textpolicy, name='textpolicy'),
-
-    path('register_lemon/', views.register_lemon, name='register_lemon'),
-    path('register_hazelnutcacao/', views.register_hazelnutcacao, name='register_hazelnutcacao'),
-
-    path('checkout_lemon/', views.checkout_lemon, name='checkout_lemon'),
-    path('checkout_hazelnutcacao/', views.checkout_hazelnutcacao, name='checkout_hazelnutcacao'),
    
     
 ]
