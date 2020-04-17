@@ -194,29 +194,27 @@
           width: 75em;
         }
 
-        .container-heading {
-            color:black;
-            font-size: 20px;
-            padding-top: 25px;
+        .login-header {
+            color:white;
+            font-size: 40px;
+            padding-top: 55px;
             padding-bottom: 25px;
-            text-align: center;
-            font-weight: 800;
+            text-align: left;
+            font-weight: 500;
             display:block;
             margin: 0;
         }
 
-        .container-text {
-            color:black;
-            font-size: 15px;
-            padding-bottom: 25px;
-            font-size: 15px;
+        .login-text {
+            color:white;
+            font-size: 25px;
             font-weight: 100;
-            text-align: center;
+            text-align: left;
+            margin: 0px;
         }
 
         .a{
           text-decoration: none;
-          
         }
 
         .block {
@@ -404,7 +402,7 @@ ___
 <section>
     <header>
       <nav class="navbar">
-          <a href="https://www.SITE.com" ><img src="https://dl.dropboxusercontent.com/s/1z8sl2z34qydcsw/vodafone-sap.png?dl=0" id="header-logo"></a>
+          <a href="https://www..com" ><img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" id="header-logo"></a>
           
           <!--<button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;" class="collapsed" aria-expanded="false">
               <span class="open-slide" style="text-align:right; background:transparent;">
@@ -428,7 +426,7 @@ ___
   
           <style>
           .navbar {
-            background-color: white;
+            background-color: black;
             padding: 0;
             box-sizing: border-box;
             margin: auto;
@@ -461,10 +459,10 @@ ___
           }
   
           #header-logo {
-            width: 230px;
+            width: 150px;
             padding-top: 10px;
             padding-bottom: 10px;
-            padding-left: 30px;
+            padding-left: 80px;
             }
 
          #banner-logo {
@@ -484,33 +482,28 @@ ___
 <!--Login Form-->
 <section>
     <div class="w3-container">
-        <div style="margin-left:550px;margin-right: 550px;margin-top:50px; text-align: center;">
+        <div class="col-sm-4" style="margin-left: 100px;margin-top: 40px;">
+            <h3 class='login-header'>Enter Your Credentials</h3>
+            <p class='login-text'>SAP helps forward-thinking businesses run at their best. Enter your credentials to know how we're helping you.</p>                <br>
+        </div>
+        <div class="col-sm-3" style="margin-left:100px;">
             <form method="POST" action="{% url 'paygprime_ec_success' %}">
-                <img src="https://dl.dropboxusercontent.com/s/pu42w0k9woors79/login-icon.png?dl=0" id="banner-logo">
                 <div id="shipping-register-form">
-                    <br>
-                    <h3>Enter Your Credentials</h3>
-                    <br>
-                    <label for="card-name">Email</label>
-                    <input type="text" name="card-name" class="form-control" id="card-name" placeholder="">
-                    <br>
-                    <label for="card-element">Password</label>
-                    <div id="card-element" class="form-control">
+                    <label for="card-name"></label>
+                    <input type="text" name="card-name" class="form-control" id="card-name" placeholder="Email">
+                    <label for="card-element" placeholder="Password"></label>
+                    <input type="text" name="card-name" class="form-control" id="card-name" placeholder="Password">
                   </div>
                     <br>
                   <div class="form-group">  
                     <button type="submit">Enter</button>
                   </div>
                   <p>
-                    We ensure forward-thinking businesses run at their best around the world.
+                    Forgot your User ID or Password?
                   </p>
-                </div>
-                </div>
-            
-                </div>
-                </form>
+                  </form>   
+            </div>
         </div>
-    </div>
 </section>
 <!--Sub-Banner
 <section class="case-study__hero ">
