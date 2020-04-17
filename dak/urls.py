@@ -30,8 +30,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
     path('login/', views.login, name='login'),
-    path('vodafone/', views.vodafone, name='vodafone'),
-    
-   
-    
+    path('vodafone/', views.vodafone, name='vodafone'), 
 ]

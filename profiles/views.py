@@ -16,64 +16,15 @@ def home(request):
     template = 'home.html'
     return render(request,template,context)
 
-def search(request):
+def login(request):
     context = locals()
-    template = 'search.html'
+    template = 'login.html'
     return render(request,template,context)
 
-def lemon(request):
+def vodafone(request):
     context = locals()
-    template = 'lemon.html'
+    template = 'vodafone.html'
     return render(request,template,context)
-
-def hazelnutcacao(request):
-    context = locals()
-    template = 'hazelnutcacao.html'
-    return render(request,template,context)
-
-def termsofservice(request):
-    context = locals()
-    template = 'termsofservice.html'
-    return render(request,template,context)
-
-def privacypolicy(request):
-    context = locals()
-    template = 'privacypolicy.html'
-    return render(request,template,context)
-
-def textpolicy(request):
-    context = locals()
-    template = 'textpolicy.html'
-    return render(request,template,context)
-
-def thankyou(request):
-    context = locals()
-    template = 'thankyou.html'
-    return render(request,template,context)
-
-
-
-def register_lemon(request):
-    context = locals()
-    template = 'register_lemon.html'
-    return render(request,template,context)
-
-def register_hazelnutcacao(request):
-    context = locals()
-    template = 'register_hazelnutcacao.html'
-    return render(request,template,context)
-
-
-def checkout_lemon(request):
-    context = locals()
-    template = 'checkout_lemon.html'
-    return render(request,template,context)
-
-def checkout_hazelnutcacao(request):
-    context = locals()
-    template = 'checkout_hazelnutcacao.html'
-    return render(request,template,context)
-
 
 
 
