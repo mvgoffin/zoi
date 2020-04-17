@@ -21,10 +21,10 @@
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!--favicon-->
-    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/to9z32n9y40kzqu/00000001564.png?dl=0">
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/446ayfnw614fdal/favicon1.png?dl=0">
     
     <title>
-      DAK
+      Home | Membership Portal
     </title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -43,7 +43,7 @@
     /**classes**/
 
         * {
-          font-family: 'Europa', sans-serif;
+          font-family: 'Bento Sans', sans-serif;
           font-size: 16px;
           font-variant: normal;
           box-sizing: border-box;
@@ -57,7 +57,7 @@
           padding: 0;
           height: 100%;
           background-color: transparent;
-          color:black;
+          color:white;
         }
 
         .row{
@@ -194,33 +194,37 @@
           width: 75em;
         }
 
-        .container-heading {
+        .login-header {
             color:black;
-            font-size: 20px;
-            padding-top: 25px;
+            font-size: 40px;
+            padding-top: 55px;
             padding-bottom: 25px;
-            text-align: center;
-            font-weight: 800;
+            text-align: left;
+            font-weight: 500;
             display:block;
             margin: 0;
         }
 
-        .container-text {
+        .login-text {
             color:black;
-            font-size: 15px;
-            padding-bottom: 25px;
-            font-size: 15px;
+            font-size: 25px;
             font-weight: 100;
-            text-align: center;
+            text-align: left;
+            margin: 0px;
         }
 
         .a{
           text-decoration: none;
-          
         }
 
         .block {
           padding-top: 60px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            border-color: gray;
+            background-color:white;
         }
 
 
@@ -298,9 +302,9 @@ ___
           background: transparent;
           display:block;
           width:100%;
-          border: 0px black solid;
+          border: 0px #3D9AD3 solid;
           color: white;
-          background:black;
+          background:#3D9AD3;
           padding: 10px 20px;
           margin: .618em 0.01em;  
           font-weight: 800;
@@ -313,16 +317,16 @@ ___
         }
 
         button:focus{
-          background-color:#22D59E;;
+          background-color:goldenrod;;
           border: 0px solid ;
           color: black;
           border-width: 1px;
         }
 
         button:hover {
-          background-color:slategrey;
+          background-color:goldenrod;
           border: 0px solid ;
-          color: white;
+          color: black;
         }
         
         ::placeholder{
@@ -393,265 +397,124 @@ ___
       </style>
 
 </head>
-<body>
+<body style="background-image: url(https://dl.dropboxusercontent.com/s/dh090b94bixor5i/banner-2.png?dl=0); background-color: #cccccc;background-size: cover;">
 <!--Navigation Menu-->
 <section>
-  <header>
+    <header>
+      <nav class="navbar">
+          <a href="https://www..com" ><img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" id="header-logo"></a>
+          
+          <!--<button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;" class="collapsed" aria-expanded="false">
+              <span class="open-slide" style="text-align:right; background:transparent;">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="25" height="25">
+                      <path d="M0,5 30,5" stroke="#000000" stroke-width="4"></path>
+                      <path d="M0,14 30,14" stroke="#000000" stroke-width="4"></path>
+                      <path d="M0,23 30,23" stroke="#000000" stroke-width="4"></path>
+                    </svg>
+                  </a>
+                </span>
+          </button2>-->
+          
+          <div class="navbar-collapse collapse" id="collapsingNavbar4" style="">
+              <ul class="navbar-nav">
+                  <li class="nav-item active2">
+                      <a class="nav-link" href="/jobs">ABC</a>
+                  </li>
+              </ul>
+          </div>
   
-    <nav class="navbar">
-        <a href="https://www.SITE.com" class="navbar-brand"><img src="https://dl.dropboxusercontent.com/s/oaikomsrtma1te6/altered-logo-1.png?dl=0" id="header-logo"></a>
-        
-        <button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;" class="collapsed" aria-expanded="false">
-            <span class="open-slide" style="text-align:right; background:transparent;">
-                <a href="#" onclick="openSlideMenu()">
-                  <svg width="25" height="25">
-                    <path d="M0,5 30,5" stroke="#000000" stroke-width="4"></path>
-                    <path d="M0,14 30,14" stroke="#000000" stroke-width="4"></path>
-                    <path d="M0,23 30,23" stroke="#000000" stroke-width="4"></path>
-                  </svg>
-                </a>
-              </span>
-        </button2>
-        
-        <div class="navbar-collapse collapse" id="collapsingNavbar4" style="">
-            <ul class="navbar-nav">
-                <li class="nav-item active2">
-                    <a class="nav-link" href="/jobs">Jobs</a>
-                </li>
-            </ul>
-        </div>
-
-        <style>
-        .navbar {
-          background-color: white;
-          padding: 0;
-          box-sizing: border-box;
-          margin: auto;
-          width: 100%;
-          box-shadow: 0 10px 5px -5px  #D1D1D1;
-          -webkit-appearance: none !important;
-        }
-        
-        .nav-link {
-          margin-left: 30px;
-          font-family: 'Avenir', sans-serif;
-          font-size: 24px;
-          font-weight: bold;
-          color: white;
-          background-color: black;
-        }
-
-        .nav-item.active2 {
-          background: black;
-        }
-
-        .nav-link:hover {
-              color: gray;
+          <style>
+          .navbar {
+            background-color: black;
+            padding: 0;
+            box-sizing: border-box;
+            margin: auto;
+            width: 100%;
+            /**box-shadow: 0 10px 5px -5px  #D1D1D1;**/
+            -webkit-appearance: none !important;
+          }
+          
+          .nav-link {
+            margin-left: 30px;
+            font-family: 'Avenir', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+          }
+  
+          .nav-item.active2 {
+            background: black;
+          }
+  
+          .nav-link:hover {
+                color: gray;
+              }
+  
+          button2 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 30px;
+          }
+  
+          #header-logo {
+            width: 150px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 80px;
             }
 
-        button2 {
-          padding-top: 10px;
-          padding-bottom: 10px;
-          padding-right: 30px;
-        }
-
-        #header-logo {
-          width: 130px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          padding-left: 30px;
-          }
-
-        #banner-title-ec {
-          background-image:url(https://dl.dropboxusercontent.com/s/eww0aptkrvx3sej/banner-existing-customers.png?dl=0);
-          /**background-image: linear-gradient(to bottom, #1E2671, #589AD2); **/
-        }
-        </style>
-    </nav>
-    </header>
-</section>
-<!--Banner-->
-<section>
-  <div class="w3-container" id="banner" style="margin:30px">     
-    <h2 class="banner-heading">Empowering voices</h2>   
-    <br> 
-    <p class="banner-text">Altered is a disruptive, well-funded, stealth-mode startup that uses Artificial Intelligence to democratize Digital Audio Content Creation.</p>
-      </div>
-    <style>
-        /* For width larger than 990px: */
-        #banner {
-          padding-top: 250px;
-          padding-bottom: 100px;
-          padding-left: 150px;
-          padding-right: 150px;
-          background-image:url(https://dl.dropboxusercontent.com/s/eg4gnf57uctuz66/banner-web-1.png?dl=0);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 100%;
-        }
-    
-        .banner-heading {
-              padding-top: 30px;
-              color:black;
-              font-size: 40px;
-              text-align: left;
-              font-weight: 800;
-              display:block;
-              margin: 0;  
-        }
-
-        .banner-text {
-              margin-bottom: 2px;
-              padding: 0;
-              font-size: 15px;
-              font-weight: 100;
-              text-align: left;
-              padding-right: 500px;
-        }
-
-        @media only screen and (max-width: 990px) {
-        #banner {
-          background-image:url(https://dl.dropboxusercontent.com/s/9jek1vzmjh9ko99/banner-m-1.png?dl=0);
-          background-position: center;
-          background-repeat: no-repeat;
-          padding-bottom: 10px;
-        }
-        .banner-heading{
-            padding-top: 30px;
-            font-size: 40px;
-            margin-left:20px !important;
-            margin-right:20px !important;
-            padding-left: 0px !important;
-            padding-right: 0px !important;
-            text-align: left;
-          }
-        }
-        </style>
-</section>
-<!--Select Role-->
-<section>
-  <div class="w3-container" style="background-color:white;">
-    <br>
-    <h2 class="section-heading">Find your perfect role.</h2>
-    <br>
-    <br>
-            <div class="row">
-                    <!--Lead/Senior Full-Stack Developer Portal-->
-                    <div class="col-md">
-                    <form id="container" action="{% url 'ROLE HTML' %}">{% csrf_token %}
-                          <p class="container-heading">Lead/Senior Full-Stack Developer</p> 
-                          <p class="container-text">Make a difference developing excellent products with Electron, TypeScript and React.</p>         
-                          <div class="row">
-                          <button type="submit">Learn More</button> 
-                          </div>
-                      </form>
-                    </div>
+         #banner-logo {
+            width: 130px;
+            padding-top: 10px;
+            
+            }
   
-                    <!--Lead/Senior Back-End Developer Portal-->
-                    <div class="col-md">
-                      <form id="container" action="{% url 'ROLE HTML' %}">{% csrf_token %}
-                            <p class="container-heading">Lead/Senior Back-End Developer</p> 
-                            <p class="container-text">Align the planets between a stellar Research team and a fantastic Product team.</p>         
-                            <div class="row">
-                            <button type="submit">Learn More</button> 
-                            </div>
-                        </form>
-                      </div>
-                    
-                    <!--Lead/Senior Full-Stack Developer Portal-->
-                    <div class="col-md">
-                      <form id="container" action="{% url 'ROLE HTML' %}">{% csrf_token %}
-                            <p class="container-heading">Lead/Senior Deep Learning Engineer</p> 
-                            <p class="container-text">The Model is the Code. Build the Model.</p>    
-                            <br>     
-                            <div class="row">
-                            <button type="submit">Learn More</button> 
-                            </div>
-                        </form>
-                      </div>
-
-                    <!--Lead/Senior Full-Stack Developer Portal-->
-                    <div class="col-md">
-                      <form id="container" action="{% url 'ROLE HTML' %}">{% csrf_token %}
-                            <p class="container-heading">Graphics & User Interface Designer</p> 
-                            <p class="container-text">The Beauty is in your Eyes. Make it Pretty. Make it Usable. Make it Desirable.</p>         
-                            <div class="row">
-                            <button type="submit">Learn More</button> 
-                            </div>
-                        </form>
-                      </div>
-              </div> 
-    </div>
-</section>
-<!--Contact Form-->
+          #banner-title-ec {
+            background-image:url(https://dl.dropboxusercontent.com/s/eww0aptkrvx3sej/banner-existing-customers.png?dl=0);
+            /**background-image: linear-gradient(to bottom, #1E2671, #589AD2); **/
+          }
+          </style>
+      </nav>
+      </header>
+  </section>
+<!--Login Form-->
 <section>
-  <!--(Header) -->
-  <div class="w3-container">
-    <br>
-    <h3 class="section-heading">Get in touch</h3>
-    </div>
-   
-     <!--Checkout Account Form-->
-     <form class="contact-form" method="POST" action="{% url 'Home' %}">{% csrf_token %}
-      <div id="contact-form">
-      <br>
-      <label class="home-heading" for="id_name"><b>Name</b></label>
-      <input type="text" name="name" class="form-control" id="card-name" placeholder="">
-      <br>
-
-      <label class="home-heading" for="id_name"><b>Phone</b></label>
-      <input type="number" name="phone" class="form-control" min="-9223372036854775808" max="9223372036854775807" required="" id="id_phone" placeholder="🇬🇧 +44">
-      <small class="small"></small>
-      <br>
-      
-      <label class="home-heading" required="" for="id_email"><b>Email</b></label>
-      <input type="email" name="email" class="form-control" maxlength="100" id="id_email">
-      <small class="small"></small>
-      <br> 
-      
-      <label class="home-heading" required="" for="id_address"><b>Address</b></label>
-      <input type="text" name="address" class="form-control" maxlength="100" id="id_address" placeholder="">
-      <small class="small"></small>
-      <br> 
-  
-      <label class="home-heading" required="" for="id-message"><b>Message</b></label><input type="text" name="message" class="form-control" maxlength="1000" id="id_message" placeholder="">
-      <br>
-
-        <div class="form-group">  
-          <button type="submit">Submit</button>
+    <div class="w3-container" >
+        <div class="col-sm-4" style="margin-left: 100px;margin-top: 40px;">
+            <h3 class='login-header'>Enter Your Credentials</h3>
+            <p class='login-text'>SAP helps forward-thinking businesses like Vodafone to run at their best. Enter your credentials to know how we're helping you.</p>                <br>
         </div>
-            </form>
-          </div>
+        <div class="col-sm-3" style="margin-left:100px;">
+            <form method="POST" action="{% url 'paygprime_ec_success' %}">
+                <div id="shipping-register-form">
+                    <label for="card-name"></label>
+                    <input type="text" name="card-name" class="form-control" id="card-name" placeholder="Email">
+                    <label for="card-element" placeholder="Password"></label>
+                    <input type="text" name="card-name" class="form-control" id="card-name" placeholder="Password">
+                  </div>
+                    <br>
+                  <div class="form-group">  
+                    <button type="submit">Enter</button>
+                  </div>
+                  <p style="color: deepskyblue;">
+                    Forgot your User ID or Password?
+                  </p>
+                  </form>   
+            </div>
         </div>
 </section>
-<!--Footer-->
+<!--Sub-Banner
+<section class="case-study__hero ">
+        <div class="case-study__hero-media-container">
+                                        <video playsinline="" autoplay="" muted="" loop="" class="case-study__hero-media">
+                    <source src="https://www.siegelgale.com/app/uploads/2015/05/SAP-Header.mp4">
+                </video>
+                                </div>
+</section>-->
+<!--login-->
 <section>
-  <div class="w3-container" style="background: black;">
-      <div class="row">
-    <div class="col-md">
-      <p class="heading-f">Empowering voices</p>
-      <a href="https://www.altered.ai"><img src="" style="width:150px"></a>  
-   </div>
-   
-   <div class="col-md">
-      <p class="heading-f">CONNECT</p>
-      <a href="sms:+447810241772" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/dce13un38oscaoc/Icon-phone.png?dl=0" style="width:12px;">&nbsp;&nbsp;0781.024.1772</p></a>
-      <a href="mailto:hi@altered.ai" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/f4zpbxdaeb70uuy/Icon-email.png?dl=0" style="width:12px;">&nbsp;&nbsp;info@altered.ai</p></a>
-      <a href="https://www.linkedin.com/dak" target='_blank'><p id="trust"><img src="https://dl.dropboxusercontent.com/s/vouccy31hfhunkt/Icon-linkedin.png?dl=0" style="width:12px;">&nbsp;&nbsp;@altered.ai</p></a>
-    </div>
-
- <div class="col-md">
-    <p class="heading-f">INFORMATION</p>
-    <a href="https://www.altered.ai/termsofservice"><p id="trust">Terms of Service</p></a>
-    <a href="https://www.altered.ai/privacypolicy"><p id="trust">Privacy Policy</p></a>
-    
-</div>
-<div class="col-md">
-  <p id="trust">London, UK.</p>
-  <p id="trust">© Altered Ltd 2020. All Rights Reserved</p> 
-</div>
-</div>
-</div>
 
 </section>
 </body>
