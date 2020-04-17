@@ -22,7 +22,7 @@
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!--favicon-->
-    <link href="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0">
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/446ayfnw614fdal/favicon1.png?dl=0">
     
     <title>
         Home | Vodafone
@@ -185,7 +185,7 @@
           color: #fff;
           line-height: 90px;
           text-align: center;
-          background: violet; 
+          background: gold; 
           /*background: linear-gradient(to bottom right, purple , violet);*/
         }
 
@@ -232,36 +232,35 @@
 
     /**Other assets**/
 
-        button {
+    button {
           background: transparent;
-          border-radius: 4px;
           display:block;
           width:100%;
-          border: 1px solid transparent;
+          border: 0px #3D9AD3 solid;
           color: white;
-          background: #589AD2;
+          background:#3D9AD3;
           padding: 10px 20px;
           margin: .618em 0.01em;  
           font-weight: 800;
           font-style: normal;
           animation-delay: 2400ms;
-          font-size: medium;
+          font-size: 15px;
           letter-spacing: .01em;
           text-transform: normal;
           transition: background-color 170ms  ease-out,color 170ms ease-out;
         }
 
         button:focus{
-          background-color: #D1D1D1;
-          border: 1px solid #D1D1D1;
-          color: #1E2671;
-          border-color: transparent;
+          background-color:goldenrod;;
+          border: 0px solid ;
+          color: black;
           border-width: 1px;
         }
 
         button:hover {
-          border-color: transparent;
-          border-width: 1px;
+          background-color:goldenrod;
+          border: 0px solid ;
+          color: black;
         }
         
         ::placeholder{
@@ -496,102 +495,58 @@
     <div class="w3-container">
         <br>
         <div class="row">
-                <!--6GB-->
+                <!--Analytics Demo-->
                 <div class="col-sm">
                 <form method="POST" action="{% url '' %}">
-                    <p class='product-title'>6GB data<span class="dot" style='float:right;'>RECOMMENDED</span></p>
-                    <p class="product-text">Includes data rollover</p>
-                    <p class="product-text">4G ready</p>
-                    <p class="product-text">Unlimited minutes</p>
-                    <p class="product-text">Unlimited texts</p>
+                    <p class='product-title'>Analytics Demo<span class="dot" style='float:right;'>NEW</span></p>
+                    <p class="product-text">Feature 1</p>
+                    <p class="product-text">Feature 2</p>
+                    <p class="product-text"></p>
+                    <p class="product-text"></p>
                     <br>
-                    <p class="product-text">Our sims fit all devices</p>    
-                    <p class="product-price">£15</p>
-                    <button type="submit">Select</button> 
+                    <p class="product-text"></p>    
+                    <p class="product-price"></p>
+                    <button type="submit">Launch</button> 
                     <br>
                 </form>
                 </div>
 
-                <!--Calls&Text-->
+                <!--White paper 1-->
                 <div class="col-sm">
                     <form method="POST" action="{% url '' %}">
-                        <p class='product-title'>Calls & Texts</p>
+                        <p class='product-title'>White Paper 1</p>
                         <br>
-                        <p class="product-text">4G ready</p>
-                        <p class="product-text">Unlimited minutes</p>
-                        <p class="product-text">Unlimited texts</p>
+                        <p class="product-text">Description</p>
+                        <p class="product-text"></p>
+                        <p class="product-text"></p>
                         <br>
-                        <p class="product-text">Our sims fit all devices</p>    
-                        <p class="product-price">£5</p>
-                        <button type="submit">Select</button> 
+                        <p class="product-text"></p>    
+                        <p class="product-price"></p>
+                        <button type="submit">Read</button> 
                         <br>
                     </form>
                     </div>
 
-                <!--3GB-->
+                <!--White paper 2-->
                 <div class="col-sm">
                     <form method="POST" action="{% url '' %}">
-                        <p class='product-title'>3GB data</p></a>
-                        <p class="product-text">Includes data rollover</p>
-                        <p class="product-text">4G ready</p>
-                        <p class="product-text">Unlimited minutes</p>
-                        <p class="product-text">Unlimited texts</p>
+                        <p class='product-title'>White Paper 2</p>
                         <br>
-                        <p class="product-text">Our sims fit all devices</p>    
-                        <p class="product-price">£10</p>
-                        <button type="submit">Select</button> 
+                        <p class="product-text">Description</p>
+                        <p class="product-text"></p>
+                        <p class="product-text"></p>
+                        <br>
+                        <p class="product-text"></p>    
+                        <p class="product-price"></p>
+                        <button type="submit">Read</button> 
                         <br>
                     </form>
-                </div>
+                    </div>
           </div>
     </div>
 
-    <div class="w3-container">
-        <div class="row">
-                <!--10GB-->
-                <div class="col-sm">
-                    <form method="POST" action="{% url '' %}">
-                        <p class='product-title'>10GB data</p></a>
-                        <p class="product-text">Includes data rollover</p>
-                        <p class="product-text">4G ready</p>
-                        <p class="product-text">Unlimited minutes</p>
-                        <p class="product-text">Unlimited texts</p>
-                        <br>
-                        <p class="product-text">Our sims fit all devices</p>    
-                        <p class="product-price">£20</p>
-                        <button type="submit">Select</button> 
-                        <br>
-                    </form>
-                    </div>
-  
-                  <!--20GB-->
-                 <div class="col-sm">
-                      <form method="POST" action="{% url 'checkout_nc_account_20' %}">{% csrf_token %}
-                          <p class='product-title'>20GB data</p></a>
-                          <p class="product-text">Includes data rollover</p>
-                          <p class="product-text">4G ready</p>
-                          <p class="product-text">Unlimited minutes</p>
-                          <p class="product-text">Unlimited texts</p>
-                          <br>
-                          <p class="product-text">Our sims fit all devices</p>    
-                          <p class="product-price">£30</p>
-                          <button type="submit">Select</button> 
-                          <br>
-                        </form>
-                    </div>
-                  <!--Extra Column-->
-                 <div class="col-sm" id='column' style="background: transparent;box-shadow: 0 1px 5px 0 #F8F8F8;;-webkit-transition: box-shadow 150ms ease;">
-                  <style>
-                    @media only screen and (max-width: 890px) {
-                        #column {display: none;}
-                    }
-                  </style>
-                  </div>
-          </div>
-      </div>
-
       <br>
-      <div class="headline-middle"></div>
+      <br>
 </section>
 
 <!--Footer-->
