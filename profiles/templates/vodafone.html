@@ -278,12 +278,13 @@
   /**Bootstrap Columns and Sections**/
         
         .col-sm { /**Product offer**/
-          background: #EFEFEF;
+          background: white;
           box-shadow: 0 1px 5px 0 #D1D1D1;
           -webkit-transition: box-shadow 150ms ease;
           transition: box-shadow 150ms ease;
           margin:10px;
           padding: 20px;
+          border-radius: 0%;
         }
         
         .col-md { /**Why Choose PAYG+**/
@@ -469,7 +470,7 @@
     <div class="w3-container">
     <div class="row" style="background-color: #e00201;">
         <div class="col-md" >
-         <h1 class="account-header">Hi John Smith</h1>
+         <h1 class="account-header">Hi, John Smith</h1>
             </div>
         </div>
     </div>
@@ -477,7 +478,7 @@
 
 <!--Introduction-->
 <section>
-    <div class="w3-container">
+    <div class="w3-container" style="background-color: white;">
       <br>
       <div class="col-lg">
           <h2 class="heading">Business opportunities</h2>
@@ -491,8 +492,9 @@
 </section>
 
 <!--Select -->
-<section>
-    <div class="w3-container">
+<section style="background-color: #EDEDED;">
+    <div class="w3-container" >
+        <br>
         <br>
         <div class="row">
                 <!--Analytics Demo-->
@@ -549,7 +551,7 @@
       <br>
 </section>
 <!--Return-->
-<div class="row" id="banner-intro-payg">
+<div class="row" style="background-color: #EDEDED;" id="banner-intro-payg">
         
     <form method="POST" style="width: 100%;padding-left:350px;padding-right:350px;" action="{% url 'home' %}">
         <!--<img src="https://dl.dropboxusercontent.com/s/0f6ptdu1a4qrom5/existing%20customer-1.png?dl=0" id='new-customer-image' style="width:400px">--> 
