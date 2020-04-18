@@ -195,7 +195,7 @@
         }
 
         .login-header {
-            color:black;
+            color:white;
             font-size: 40px;
             padding-top: 55px;
             padding-bottom: 25px;
@@ -206,7 +206,7 @@
         }
 
         .login-text {
-            color:black;
+            color:white;
             font-size: 25px;
             font-weight: 100;
             text-align: left;
@@ -222,7 +222,7 @@
         }
 
         .form-control {
-            border-radius: 5px;
+            border-radius: 0px;
             border-color: gray;
             background-color:white;
         }
@@ -397,12 +397,12 @@ ___
       </style>
 
 </head>
-<body style="background-image: url(https://dl.dropboxusercontent.com/s/dh090b94bixor5i/banner-2.png?dl=0); background-color: #cccccc;background-size: cover;">
+<body style="background-image: url(https://dl.dropboxusercontent.com/s/exjcj0k5q95epf9/banner-3.jpg?dl=0); background-color: #cccccc;background-size: cover;">
 <!--Navigation Menu-->
 <section>
     <header>
       <nav class="navbar">
-          <a href="https://www..com" ><img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" id="header-logo"></a>
+        <p style="text-align:left; color:white;font-size: medium;font-weight:700;padding-left: 65px;padding-top:5px;padding-bottom:5px; margin: 0px;"><a href="https://www..com" ><img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" id="header-logo"></a>&nbsp;&nbsp;Membership Portal</p>
           
           <!--<button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;" class="collapsed" aria-expanded="false">
               <span class="open-slide" style="text-align:right; background:transparent;">
@@ -482,12 +482,21 @@ ___
 <!--Login Form-->
 <section>
     <div class="w3-container" >
-        <div class="col-sm-4" style="margin-left: 100px;margin-top: 40px;">
+      <div class="row">
+        <div class="col-sm-5" style="margin-left: 100px;margin-top: 40px;">
             <h3 class='login-header'>Enter Your Credentials</h3>
-            <p class='login-text'>SAP helps forward-thinking businesses like Vodafone to run at their best. Enter your credentials to know how we're helping you.</p>                <br>
+            <p class='login-text'>SAP helps forward-thinking businesses to run at their best to delight their customers. Enter your credentials to know how we're helping you.</p>
         </div>
+        <div class="col-sm-4" >
+        </div>
+        <div class="col-sm-1" style="margin-left: 100px;margin-top: 40px;">
+          <img src="https://dl.dropboxusercontent.com/s/nzuooqkuno8zd8a/vodafone-logo-2.png?dl=0" width="70px">
+        </div>
+
+      </div>
+      <div class="row">
         <div class="col-sm-3" style="margin-left:100px;">
-            <form method="POST" action="{% url 'paygprime_ec_success' %}">
+            <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
                 <div id="shipping-register-form">
                     <label for="card-name"></label>
                     <input type="text" name="card-name" class="form-control" id="card-name" placeholder="Email">
@@ -503,6 +512,7 @@ ___
                   </p>
                   </form>   
             </div>
+          </div>
         </div>
 </section>
 <!--Sub-Banner
