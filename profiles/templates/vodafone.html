@@ -314,6 +314,11 @@
           padding: 20px;
           border-radius: 0%;
         }
+
+        #demo {
+          background-image: url(https://dl.dropboxusercontent.com/s/16zgfswpopbjooy/demo.jpg?dl=0);
+
+        }
         
         .col-md { /**Why Choose PAYG+**/
           text-align: right;
@@ -507,12 +512,12 @@
         <div class="w3-container">
           <div class="col-lg">
             <br>
-            <div class="alert alert-dismissible alert-neutral anim-fade in" role="alert">
+            <div class="alert anim-fade in">
               <div class="">
                 <span class="message-copy pad-r" aria-live="assertive">
                   <p class="page-text">Hi John,</p>
                   <br>
-                  <p class="page-text">Welcome to your portal. Here you'll find all the necessary information about the project, objectives and supporting documents, so we can collectivelly make the best business decision. My team and I are constantly updating your portal. If you have any questions, please contact me anytime.</p> 
+                  <p class="page-text">Welcome to your portal. Here you'll find all the necessary information about <b>Project Peake</b>, objectives and supporting documents, so we can collectivelly make the best business decision. Each DMU member has it's account. My team and I are constantly updating your portal, so if you have any questions, please contact me anytime.</p> 
                   <br>
                   <p class="page-text">Marco Valle - Account Manager</p>
                   <br>
@@ -532,7 +537,7 @@
     <div class="w3-container">
       <div class="col-lg">
         <br>
-          <h2 class="heading">Business objectives</h2>
+          <h2 class="heading">Project Peake Objectives</h2>
           <br>
       </div>
       <div class="row">
@@ -561,10 +566,10 @@
                 <!--Analytics Demo-->
                 <div class="col-sm" id='demo'>
                     <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                    <p class='page-header'>Solution Demo<span class="dot" style='float:right;'>JUST ADDED</span></p>
+                    <p class='page-header' style="color: white;">Solution Demo<span class="dot" style='float:right;'>JUST ADDED</span></p>
                     <br>
-                    <p class="page-text">Feature 1</p>
-                    <p class="page-text">Feature 2</p>
+                    <p class="page-text" style="color: white;">Feature 1</p>
+                    <p class="page-text" style="color: white;">Feature 2</p>
                     <br>
                     <p class="page-text"></p>    
                     <button type="submit">Launch</button> 
