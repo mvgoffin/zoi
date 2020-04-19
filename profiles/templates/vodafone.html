@@ -298,7 +298,14 @@
 
         #demo {
           background-image: url(https://dl.dropboxusercontent.com/s/16zgfswpopbjooy/demo.jpg?dl=0);
+        }
 
+        #wp1 {
+          background-image: url(https://dl.dropboxusercontent.com/s/lbzhb3rn1gt1dgq/white-paper-1.jpg?dl=0);
+        }
+
+        #wp2 {
+          background-image: url(https://dl.dropboxusercontent.com/s/vqsi51g2aojke9s/white-paper-2.jpg?dl=0);
         }
         
         .col-md { /**Why Choose PAYG+**/
@@ -516,33 +523,32 @@
                     <p class="page-text" style="color: white;">Feature 1</p>
                     <p class="page-text" style="color: white;">Feature 2</p>
                     <br>
-                    <p class="page-text"></p>    
-                    <button type="submit">Launch</button> 
+                    <button type="submit">Test</button> 
                     <br>
                 </form>
                 </div>
 
                 <!--White paper 1-->
-                <div class="col-sm">
+                <div class="col-sm" id='wp1'>
                   <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                      <p class='page-header'>White Paper 1</p>
+                      <p class='page-header' style="color: white;">White Paper 1</p>
                       <br>
-                      <p class="page-text">Description</p>
+                      <p class="page-text" style="color: white;">Description</p>
                       <br> 
-                      <p class="page-text"></p>
+                      <br>
                       <button type="submit">Read</button> 
                       <br>
                   </form>
                   </div>
 
                 <!--White paper 2-->
-                <div class="col-sm">
+                <div class="col-sm" id='wp2'>
                     <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                        <p class='page-header'>White Paper 2</p>
+                        <p class='page-header' style="color: white;">White Paper 2</p>
                         <br>
-                        <p class="page-text">Description</p>
+                        <p class="page-text" style="color: white;">Description</p>
                         <br> 
-                        <p class="page-text"></p>
+                        <br>
                         <button type="submit">Read</button> 
                         <br>
                     </form>
