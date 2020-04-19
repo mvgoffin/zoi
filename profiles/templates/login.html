@@ -239,20 +239,6 @@ ___
           
     /**ids**/
 
-           #banner {
-            padding-top: 250px;
-            padding-bottom: 150px;
-            padding-left: 150px;
-            padding-right: 150px;
-            background-image:url(https://dl.dropboxusercontent.com/s/7h7i2ktl49fdv8f/web-banner-3.png?dl=0);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            
-          }
-
-          
-
         #topbar {
           position: fixed;
           top: 0;
@@ -354,7 +340,6 @@ ___
                 margin-top:0 !important;
                 padding-left: 15px !important;
                 padding-right: 15px !important;
-                background-image: url(https://dl.dropboxusercontent.com/s/b0xlk2ojgwb55bt/banner-3-mobile.png?dl=0); background-color: #cccccc;background-size: cover;
                 }
 
                 #header-logo {
@@ -379,10 +364,11 @@ ___
                 }
 
                 #banner {
-                  background-image:url(https://dl.dropboxusercontent.com/s/54y43qb9zv4cymi/web-m-banner-3.png?dl=0);
+                  background-image:url(https://dl.dropboxusercontent.com/s/b0xlk2ojgwb55bt/banner-3-mobile.png?dl=0);
                   background-position: center;
                   background-repeat: no-repeat;
                 }
+
                 .banner-text{
                     padding-top: 30px;
                     font-size: 30px;
@@ -398,8 +384,9 @@ ___
       </style>
 
 </head>
-<body style="background-image: url(https://dl.dropboxusercontent.com/s/exjcj0k5q95epf9/banner-3.jpg?dl=0); background-color: #cccccc;background-size: cover;">
-<!--Navigation Menu-->
+<!--<body style="background-image: url(https://dl.dropboxusercontent.com/s/exjcj0k5q95epf9/banner-3.jpg?dl=0); background-color: #cccccc;background-size: cover;">-->
+<body>
+  <!--Navigation Menu-->
 <section>
     <header>
       <nav class="navbar">
@@ -482,7 +469,60 @@ ___
   </section>
 <!--Login Form-->
 <section>
-    <div class="w3-container" >
+    <div class="w3-container" id='banner'>
+
+      <style>
+        /* For width larger than 990px: */
+        #banner {
+          padding-top: 250px;
+          padding-bottom: 100px;
+          padding-left: 150px;
+          padding-right: 150px;
+          background-image:url(https://dl.dropboxusercontent.com/s/exjcj0k5q95epf9/banner-3.jpg?dl=0);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-size: cover;
+        }
+    
+        .banner-heading {
+              padding-top: 30px;
+              color:black;
+              font-size: 40px;
+              text-align: left;
+              font-weight: 800;
+              display:block;
+              margin: 0;  
+        }
+
+        .banner-text {
+              margin-bottom: 2px;
+              padding: 0;
+              font-size: 15px;
+              font-weight: 100;
+              text-align: left;
+              padding-right: 500px;
+        }
+
+        @media only screen and (max-width: 990px) {
+       /** #banner {
+          background-image:url(https://dl.dropboxusercontent.com/s/9jek1vzmjh9ko99/banner-m-1.png?dl=0);
+          background-position: center;
+          background-repeat: no-repeat;
+          padding-bottom: 10px;
+        }
+        .banner-heading{
+            padding-top: 30px;
+            font-size: 40px;
+            margin-left:20px !important;
+            margin-right:20px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            text-align: left;
+          }
+        }**/
+        </style>
+
       <div class="row">
         <div class="col-sm-5" style="margin-left: 100px;margin-top: 40px;">
             <h3 class='login-header'>Enter Your Credentials</h3>
