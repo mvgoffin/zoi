@@ -123,7 +123,8 @@
           font-weight: 400;
           padding-left: 10px;
           text-align:left;
-          line-height:normal;
+          padding-bottom: 10px;
+          margin: 0;
         }
 
         .why-text {
@@ -218,6 +219,18 @@
                   padding: 10px;
                   background: white;
             }
+        
+            p.welcome-message{
+          border-style: solid;
+          border-color: #D1D1D1;
+          padding: 20px;
+        }
+
+        a.welcome-message{
+          border-style: solid;
+          border-color: #D1D1D1;
+          padding: 20px;
+        }
 
     
     /**ids**/
@@ -300,7 +313,7 @@
         }
 
         @media only screen and (max-width: 990px) {
-      .col-sm-3, .col-md, .contact-header {
+      .col-sm-3, .col-md, .contact-header, .contact-text, p.welcome-message {
         margin-left:10px !important;
         margin-right:10px !important;
         padding-left: 0px !important;
@@ -376,7 +389,7 @@
 
         @media only screen and (max-width: 990px) {
           #mySidenav a {
-            z-index:-1000;
+            display: none;
             }
           }
 </style>
@@ -405,29 +418,18 @@
       <nav class="navbar">
           <a href="https://www.demodap.com" ><img src="https://dl.dropboxusercontent.com/s/tuifudcs7jm10bj/vodafone.png?dl=0" id="header-logo"></a>
           
-         <!--<button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;" class="collapsed" aria-expanded="false">
+         <button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;" class="collapsed" aria-expanded="false">
               <span class="open-slide" style="text-align:right; background:transparent;">
-                  <a href="#" onclick="openSlideMenu()">
-                    <svg width="25" height="25">
-                      <path d="M0,5 30,5" stroke="#FFFFFF" stroke-width="4"></path>
-                      <path d="M0,14 30,14" stroke="#FFFFFF" stroke-width="4"></path>
-                      <path d="M0,23 30,23" stroke="#FFFFFF" stroke-width="4"></path>
-                    </svg>
+                  <a href="https://www.demodap.com">
+                      <button>logout</button>
                   </a>
                 </span>
-          </button2>-->
-
-          <form method="POST" action="{% url 'login' %}"> {% csrf_token %}
-            <button2>Logout</button2>
-          </form>
-
+          </button2>
           
           <div class="navbar-collapse collapse" id="collapsingNavbar4" style="">
               <ul class="navbar-nav">
                   <li class="nav-item active2">
-                      <a class="nav-link" href="/jobs"></a>
-                      <a class="nav-link" href="/jobs"></a>
-                      <a class="nav-link" href="/jobs"></a>
+                      <a class="nav-link" href="#"></a>
                   </li>
               </ul>
           </div>
@@ -495,6 +497,31 @@
     </div>
 </section>
 
+<!--Welcome message-->
+<section>
+
+  <div class="w3-container" style="background-color: white;">
+    <div class="col-lg">
+      <a href="#" data-featherlight="#nutri-facts-gubel" class="welcome-message">Welcome Message</a>
+        <div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1554472144065_8906"><div class="sqs-block-content"> <div style="display:none;">
+          <div id="nutri-facts-gubel">
+            <br>
+            <p class="sub-heading">Welcome John</p>
+            <p class="home-small">Hi John, welcome to your portal. Here you'll find all the necessary information about the project, objectives and supporting documents, so we can collectivelly make the best business decision. My team and I are constantly updating your portal. If you have any questions, please contact me anytime. Marco Valle - Account Manager</p>
+            <br>
+        </div>
+        </div>
+    </div>
+    </div>  
+
+
+  <!--<div class="w3-container" style="background-color: white;">
+    <br>
+    <div class="col-lg">
+      <p class='welcome-message'>Hi John, welcome to your portal. Here you'll find all the necessary information about the project, objectives and supporting documents, so we can collectivelly make the best business decision. My team and I are constantly updating your portal. If you have any questions, please contact me anytime. Marco Valle - Account Manager</p>
+    </div>
+  </div>
+</section>-->
 <!--Introduction-->
 <section>
     <div class="w3-container" style="background-color: white;">
@@ -516,8 +543,7 @@
         <br>
         <br>
         <div class="col-lg">
-            <h2 class="heading">Documentation</h2>
-            <p>List of demos, white papers and solution documentation to help you inform. We'll constantly update your portal to help you make a better decision.</p>
+            <h2 class="heading">Your documentation</h2>
         </div>
         <div class="row">
                 <!--Analytics Demo-->
@@ -573,29 +599,17 @@
       <br>
       <br>
 </section>
-<!--Return-->
-<div class="row" style="background-color: #EDEDED;" id="banner-intro-payg">
-        
-    <form method="POST" style="width: 100%;padding-left:350px;padding-right:350px;" action="{% url 'home' %}">
-        <!--<img src="https://dl.dropboxusercontent.com/s/0f6ptdu1a4qrom5/existing%20customer-1.png?dl=0" id='new-customer-image' style="width:400px">--> 
-        <div id="new-customer-container-button">
-            <button type="submit" style="text-align: center;">Return</button> {% csrf_token %}
-            </div>
-            <br>
-        </form>
-      </div>
-
 <!--Get in Touch Mobile-->
 <section>
       <div class="w3-container" id='mobile-contact'>
         <div class="col-lg">
             <h2 class="contact-header">Contact</h2>
-                <div class="col-md" style="text-align: center;">
-                  <a href="mailto:marco.valle@sap.com" target="_blank" style="color:inherit;text-decoration:none;">
-                    <p class="contact-text"><img src="https://dl.dropboxusercontent.com/s/w20dmc8213t82ww/icon-email.png?dl=0" style="width:25px;">&nbsp;&nbsp;marco.valle@sap.com</p>
+                <div style="text-align: center;">
+                  <a href="mailto:marco.valle@sap.com" target="_blank" style="color:inherit;text-decoration:none;"></a>
+                    <p class="contact-text"><img src="https://dl.dropboxusercontent.com/s/w20dmc8213t82ww/icon-email.png?dl=0" style="width:25px">&nbsp;&nbsp;marco.valle@sap.com</p>
                    </a> 
                   </div>
-                <div class="col-md" style="text-align: center;">
+                <div style="text-align: center;">
                   <a href="sms:+447476580355" target="_blank" style="color:inherit;text-decoration:none;">
                     <p class="contact-text"><img src="https://dl.dropboxusercontent.com/s/1xr4s3uj8vwsrh8/icon-call.png?dl=0" style="width:25px;">&nbsp;&nbsp;07476 580355</p>
                   </a> 
