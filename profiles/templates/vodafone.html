@@ -119,6 +119,14 @@
           line-height:normal;
         }
 
+        .page-header {
+          font-weight: 800;
+          margin: 0px;
+          text-align:left;
+          line-height:normal;
+        }
+        }
+
         .welcome-text {
           color: white;
           font-weight: 400;
@@ -195,25 +203,6 @@
           width: 100%;
           box-shadow: 0 10px 5px -5px  #D1D1D1;
           padding: 10px;
-        }
-
-        .cart-headline {
-                  width: 100%;
-                  box-shadow: 0 10px 5px -5px  #D1D1D1;
-                  padding: 10px;
-                  background: white;
-            }
-        
-            p.welcome-message{
-          border-style: solid;
-          border-color: #D1D1D1;
-          padding: 20px;
-        }
-
-        a.welcome-message{
-          border-style: solid;
-          border-color: #D1D1D1;
-          padding: 20px;
         }
 
         .alert {
@@ -549,11 +538,11 @@
       <div class="row">
               <!--Objective 1-->
               <div class="col-sm">
-                  <p class="account-text" style="text-align: center;">Empower contract teams with 24x7 access to the X and Y tools to make faster, more informed decisions.</p>
+                  <p class="page-text" style="text-align: center;">Empower contract teams with 24x7 access to the X and Y tools to make faster, more informed decisions.</p>
                </div>
               <!--Objective 2-->
                <div class="col-sm">
-                <p class="account-text" style="text-align: center;">Improve collaborative planning between Marketing and Finance team forecasts.</p>
+                <p class="page-text" style="text-align: center;">Improve collaborative planning between Marketing and Finance team forecasts.</p>
              </div>
       </div>
       <br>
@@ -572,12 +561,12 @@
                 <!--Analytics Demo-->
                 <div class="col-sm" id='demo'>
                     <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                    <p class='account-text'>Solution Demo<span class="dot" style='float:right;'>JUST ADDED</span></p>
+                    <p class='page-header'>Solution Demo<span class="dot" style='float:right;'>JUST ADDED</span></p>
                     <br>
-                    <p class="account-text">Feature 1</p>
-                    <p class="account-text">Feature 2</p>
+                    <p class="page-text">Feature 1</p>
+                    <p class="page-text">Feature 2</p>
                     <br>
-                    <p class="account-text"></p>    
+                    <p class="page-text"></p>    
                     <button type="submit">Launch</button> 
                     <br>
                 </form>
@@ -586,11 +575,11 @@
                 <!--White paper 1-->
                 <div class="col-sm">
                   <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                      <p class='account-text'>White Paper 1</p>
+                      <p class='page-header'>White Paper 1</p>
                       <br>
-                      <p class="account-text">Description</p>
+                      <p class="page-text">Description</p>
                       <br> 
-                      <p class="account-text"></p>
+                      <p class="page-text"></p>
                       <button type="submit">Read</button> 
                       <br>
                   </form>
@@ -599,16 +588,56 @@
                 <!--White paper 2-->
                 <div class="col-sm">
                     <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                        <p class='account-text'>White Paper 2</p>
+                        <p class='page-header'>White Paper 2</p>
                         <br>
-                        <p class="account-text">Description</p>
+                        <p class="page-text">Description</p>
                         <br> 
-                        <p class="account-text"></p>
+                        <p class="page-text"></p>
                         <button type="submit">Read</button> 
                         <br>
                     </form>
                     </div>
           </div>
+          <div class="row">
+            <!--White paper 3-->
+            <div class="col-sm">
+              <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
+                  <p class='page-header'>White Paper 3</p>
+                  <br>
+                  <p class="page-text">Description</p>
+                  <br> 
+                  <p class="page-text"></p>
+                  <button type="submit">Read</button> 
+                  <br>
+              </form>
+              </div>
+
+            <!--Webinar-->
+            <div class="col-sm">
+              <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
+                  <p class='page-header'>Webinar 1</p>
+                  <br>
+                  <p class="page-text">Description</p>
+                  <br> 
+                  <p class="page-text"></p>
+                  <button type="submit">Launch</button> 
+                  <br>
+              </form>
+              </div>
+
+            <!--Webinar-->
+            <div class="col-sm">
+                <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
+                    <p class='page-header'>Webinar 2</p>
+                    <br>
+                    <p class="page-text">Description</p>
+                    <br> 
+                    <p class="page-text"></p>
+                    <button type="submit">Launch</button> 
+                    <br>
+                </form>
+                </div>
+      </div>
     </div>
 
       <br>
