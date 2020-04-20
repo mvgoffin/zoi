@@ -563,17 +563,24 @@
                   </div>
 
                 <!--White paper 2-->
-                <div class="col-sm" id='wp2'>
+                <style>
+                  a.col-sm {
+                    text-decoration: none;
+                  }
+                  
+                </style>
+                <a href="https://www.demodap.com/vodafone" class="col-sm" id='wp2'>
+                <div >
                     <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
                         <p class='page-header' style="color: white;">White Paper 2</p>
                         <br>
                         <p class="page-text" style="color: white;">Description</p>
                         <br> 
                         <br>
-                        <button type="submit">Read</button> 
                         <br>
                     </form>
                     </div>
+                  </a>
           </div>
           <div class="row">
             <!--White paper 3-->
