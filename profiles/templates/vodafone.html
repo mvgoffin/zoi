@@ -248,6 +248,11 @@
           border: 0px solid ;
           color: black;
         }
+
+        a.col-sm {
+                    text-decoration: none;
+                  }
+                  
         
         #alert {
           display:block;
@@ -537,38 +542,34 @@
         <br>
         <div class="row">
                 <!--Analytics Demo-->
-                <div class="col-sm" id='demo'>
+                <a href="https://www.demodap.com/vodafone" class="col-sm" id='demo'>
+                <div>
                     <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
                     <p class='page-header' style="color: white;">Solution Demo<span class="dot" style='float:right;'>Coming Soon</span></p>
                     <br>
                     <p class="page-text" style="color: white;">Feature 1</p>
                     <p class="page-text" style="color: white;">Feature 2</p>
                     <br>
-                    <button type="submit">Test</button> 
                     <br>
                 </form>
                 </div>
+              </a>
 
                 <!--White paper 1-->
-                <div class="col-sm" id='wp1'>
-                  <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                      <p class='page-header' style="color: white;">White Paper 1</p>
-                      <br>
-                      <p class="page-text" style="color: white;">Description</p>
-                      <br> 
-                      <br>
-                      <button type="submit">Read</button> 
-                      <br>
-                  </form>
-                  </div>
+                <a href="https://www.demodap.com/vodafone" class="col-sm" id='wp1'>
+                  <div >
+                      <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
+                          <p class='page-header' style="color: white;">White Paper 1</p>
+                          <br>
+                          <p class="page-text" style="color: white;">Description</p>
+                          <br> 
+                          <br>
+                          <br>
+                      </form>
+                      </div>
+                    </a>
 
                 <!--White paper 2-->
-                <style>
-                  a.col-sm {
-                    text-decoration: none;
-                  }
-                  
-                </style>
                 <a href="https://www.demodap.com/vodafone" class="col-sm" id='wp2'>
                 <div >
                     <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
@@ -584,43 +585,46 @@
           </div>
           <div class="row">
             <!--White paper 3-->
-            <div class="col-sm">
-              <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                  <p class='page-header'>White Paper 3</p>
-                  <br>
-                  <p class="page-text">Description</p>
-                  <br> 
-                  <p class="page-text"></p>
-                  <button type="submit">Read</button> 
-                  <br>
-              </form>
-              </div>
+            <a href="https://www.demodap.com/vodafone" class="col-sm" id=''>
+              <div >
+                  <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
+                      <p class='page-header'>White Paper 3</p>
+                      <br>
+                      <p class="page-text">Description</p>
+                      <br> 
+                      <br>
+                      <br>
+                  </form>
+                  </div>
+                </a>
 
-            <!--Webinar-->
-            <div class="col-sm">
-              <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                  <p class='page-header'>Webinar 1</p>
-                  <br>
-                  <p class="page-text">Description</p>
-                  <br> 
-                  <p class="page-text"></p>
-                  <button type="submit">Launch</button> 
-                  <br>
-              </form>
-              </div>
+            <!--Webinar 1-->
+            <a href="https://www.demodap.com/vodafone" class="col-sm" id=''>
+              <div >
+                  <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
+                      <p class='page-header'>Webinar 1</p>
+                      <br>
+                      <p class="page-text">Description</p>
+                      <br> 
+                      <br>
+                      <br>
+                  </form>
+                  </div>
+                </a>
 
-            <!--Webinar-->
-            <div class="col-sm" id='welcome-video'>
+            <!--Welcome message-->
+            <a href="https://www.demodap.com/vodafone" class="col-sm" id='welcome-video'>
+            <div>
                 <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
                     <p class='page-header' style="color: white;">Welcome Video</p>
                     <br>
                     <p class="page-text" style="color: white;">Welcome John</p>
                     <br> 
                     <p class="page-text"></p>
-                    <button type="submit">Watch</button> 
                     <br>
                 </form>
                 </div>
+              </a>
       </div>
     </div>
 
