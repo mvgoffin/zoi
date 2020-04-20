@@ -311,6 +311,10 @@
         #wp2 {
           background-image: url(https://dl.dropboxusercontent.com/s/vqsi51g2aojke9s/white-paper-2.jpg?dl=0);
         }
+
+        #welcome-video {
+          background-image: url(https://dl.dropboxusercontent.com/s/clum8x6drgbiuu5/icon-welcome.png?dl=0);
+        }
         
         .col-md { /**Why Choose PAYG+**/
           text-align: right;
@@ -598,14 +602,14 @@
               </div>
 
             <!--Webinar-->
-            <div class="col-sm">
+            <div class="col-sm" id='welcome-video'>
                 <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                    <p class='page-header'>Webinar 2</p>
+                    <p class='page-header' style="color: white;">Welcome Video</p>
                     <br>
-                    <p class="page-text">Description</p>
+                    <p class="page-text" style="color: white;">Welcome John</p>
                     <br> 
                     <p class="page-text"></p>
-                    <button type="submit">Launch</button> 
+                    <button type="submit">Watch</button> 
                     <br>
                 </form>
                 </div>
