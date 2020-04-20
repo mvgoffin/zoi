@@ -28,7 +28,7 @@ SECRET_KEY = 'lzonf2g-*0*244y@zh45x^jkszou13^+2bm*y)$o23kb&ur-_'
 DEBUG = False
 # True - Environment // False - Production
 
-ALLOWED_HOSTS = ['localhost', '198.199.123.95', 'www.dakdemo.com', 'dakdemo.com', 'www.demodap.com', 'demodap.com']
+ALLOWED_HOSTS = ['localhost', '198.199.123.95', 'www.demodap.com', 'demodap.com']
 
 # Application definition
 
