@@ -16,9 +16,9 @@ def home(request):
     template = 'home.html'
     return render(request,template,context)
 
-def login(request):
+def login_vf(request):
     context = locals()
-    template = 'login.html'
+    template = 'login_vf.html'
     return render(request,template,context)
 
 def vodafone(request):
