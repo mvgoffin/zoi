@@ -86,7 +86,7 @@
           color:white;
           padding-top: 35px;
           padding-bottom: 15px;
-          text-align: left;
+          text-align: center;
           font-weight: 500;
           display:block;
           margin: 0;
@@ -121,6 +121,13 @@
           font-weight: 400;
           margin: 0px;
           text-align:left;
+          line-height:normal;
+        }
+
+        .text-header {
+          font-weight: 400;
+          margin: 0px;
+          text-align:center;
           line-height:normal;
         }
 
@@ -311,7 +318,7 @@
         }
 
         #wp1 {
-          background-image: url(https://dl.dropboxusercontent.com/s/lbzhb3rn1gt1dgq/white-paper-1.jpg?dl=0);
+          background-image: url(https://dl.dropboxusercontent.com/s/lfvlnr8pr72shg4/banner-4.jpg?dl=0);
         }
 
         #wp2 {
@@ -466,10 +473,13 @@
 <!--Account Name Banner-->
 <section class="account-background">
   <div class="w3-container">
-    <div class="" style="background-color: #e00201;">
+    <div class="" style="background-image: url(https://dl.dropboxusercontent.com/s/uhnm4v7c2f3vq2v/banner-5.jpg?dl=0);">
         <div class="col-lg">
+          <br>
+          <br>
           <h1 class="account-header">John Smith</h1>
-            <p class="page-text" style="color: white;">Head of Analytics - Contracts LOB</p>
+            <p class="text-header" style="color: white;">Head of Analytics - Contracts LOB</p>
+            <br>
             <br>
           </div>
         </div>
@@ -485,16 +495,16 @@
                 <span class="message-copy pad-r" aria-live="assertive">
                   <p class="page-text">Hi John,</p>
                   <br>
-                  <p class="page-text">Welcome to your <b>Project Peake</b> portal. These are your updates for this week:</p>
+                  <p class="page-text">Welcome to your <b>Project Agile</b> portal. These are your updates for this week:</p>
                   <br>
                   <ul>
-                    <il> · White paper 1 and white paper 2 now available.</il>
+                    <il> · White paper 1 and white paper 2 now available in your opportunity tab.</il>
                   </ul>
                   <ul>
                     <il> · Solution Demo will be available on Thursday 23rd April.</il>
                   </ul>
                   <p class="page-text">I'll see you next Friday for our meeting. Any questions, just text me hitting the "help" widget.</p>
-                  <!--<p class="page-text">Welcome to your <b>Project Peake</b> portal. Here you'll find all the necessary information about the project, objectives and supporting documents, so we can collectivelly make the best business decision. Each DMU member has access to its own portal and share similar documents. My team and I are constantly updating it.</p> 
+                  <!--<p class="page-text">Welcome to your <b>Project Agile</b> portal. Here you'll find all the necessary information about the project, objectives and supporting documents, so we can collectivelly make the best business decision. Each DMU member has access to its own portal and share similar documents. My team and I are constantly updating it.</p> 
                   <p class="page-text">Last but not least, we're finishing the demo that we discussed last week, you'll receive an email notification when is up and running so you can have a look. If you have any questions, please contact me anytime on the blue tag.</p>
                   <br>-->
                   <br>
@@ -511,22 +521,22 @@
       </div>
     </div>
 </section>
-<!--Projects-->
+<!--Project Objective-->
 <section class="account-background">
     <div class="w3-container">
       <div class="col-lg">
         <br>
-          <h2 class="heading">Project Peake Objectives</h2>
+          <h2 class="heading">Business Objectives</h2>
           <br>
       </div>
       <div class="row">
               <!--Objective 1-->
               <div class="col-sm">
-                  <p class="page-text" style="text-align: center;">Empower contract teams with 24x7 access to the X and Y tools to make faster, more informed decisions.</p>
+                  <p class="page-text" style="text-align: center;">1. Empower contract teams with 24x7 access to the X and Y tools to make faster, more informed decisions.</p>
                </div>
               <!--Objective 2-->
                <div class="col-sm">
-                <p class="page-text" style="text-align: center;">Improve collaborative planning between Marketing and Finance team forecasts.</p>
+                <p class="page-text" style="text-align: center;">2. Improve collaborative planning between Marketing and Finance team forecasts.</p>
              </div>
       </div>
       <br>
@@ -535,21 +545,100 @@
 
 <!--Select -->
 <section style="background-color: #EDEDED;">
+  <div class="w3-container" >
+      <br>
+      <div class="col-lg">
+          <h2 class="heading">Business Opportunity</h2>
+      </div>
+      <br>
+      <div class="row">
+                  <!--Business Case-->
+                  <a href="https://www.demodap.com/vodafone" class="col-sm" id=''>
+                    <div >
+                        <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
+                            <p class='page-header' style="color: black;">Business Case</p>
+                            <br>
+                            <p class="page-text" style="color: black;">Reduce task times by 4x with real-time access to data.</p>
+                            <p class="page-text" style="color: black;">Drive innovation by 50% with improved team collaboration.</p>
+                            <br> 
+                            <br>
+                            <br>
+                        </form>
+                        </div>
+                      </a>    
+
+              <!--Analytics Demo-->
+                  <a href="https://www.demodap.com/vodafone" class="col-sm" id='demo'>
+                    <div>
+                        <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
+                        <p class='page-header' style="color: white;">Solution Demo<span class="dot" style='float:right;'>Coming Soon</span></p>
+                        <br>
+                        <p class="page-text" style="color: white;">Feature 1</p>
+                        <p class="page-text" style="color: white;">Feature 2</p>
+                        <br>
+                        <br>
+                    </form>
+                    </div>
+                  </a>
+
+             
+        </div>
+        <div class="row">
+           <!--White paper 1-->
+           <a href="https://www.demodap.com/vodafone" class="col-sm" id='wp1'>
+            <div >
+                <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
+                    <p class='page-header' style="color: white;">Custom Thought Leadership</p>
+                    <br>
+                    <p class="page-text" style="color: white;">Description of white paper 1</p>
+                    <br> 
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </form>
+                </div>
+              </a>
+
+          <!--White paper 2-->
+          <a href="https://www.demodap.com/vodafone" class="col-sm" id='wp2'>
+          <div >
+              <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
+                  <p class='page-header' style="color: white;">Custom Thought Leadership</p>
+                  <br>
+                  <p class="page-text" style="color: white;">Description white paper 2</p>
+                  <br> 
+                  <br>
+                  <br>
+              </form>
+              </div>
+            </a>
+
+
+    </div>
+  </div>
+
+    <br>
+    <br>
+</section>
+
+<!--Select -->
+<section style="background-color: #EDEDED;">
     <div class="w3-container" >
         <br>
         <div class="col-lg">
-            <h2 class="heading">Your documentation</h2>
+            <h2 class="heading">Supporting Resources</h2>
         </div>
         <br>
         <div class="row">
-                <!--Analytics Demo-->
-                <a href="https://www.demodap.com/vodafone" class="col-sm" id='demo'>
+                <!--SAP Analytics-->
+                <a href="https://www.demodap.com/vodafone" class="col-sm" >
                 <div>
                     <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                    <p class='page-header' style="color: white;">Solution Demo<span class="dot" style='float:right;'>Coming Soon</span></p>
+                    <p class='page-header' style="color: black;">Implementation Roadmap<span class="" style='float:right;'></span></p>
                     <br>
-                    <p class="page-text" style="color: white;">Feature 1</p>
-                    <p class="page-text" style="color: white;">Feature 2</p>
+                    <p class="page-text" style="color: black;">Decription</p>
+                    <p class="page-text" style="color: black;"></p>
                     <br>
                     <br>
                 </form>
@@ -557,12 +646,12 @@
               </a>
 
                 <!--White paper 1-->
-                <a href="https://www.demodap.com/vodafone" class="col-sm" id='wp1'>
+                <a href="https://www.demodap.com/vodafone" class="col-sm" id=''>
                   <div >
                       <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                          <p class='page-header' style="color: white;">White Paper 1</p>
+                          <p class='page-header' style="color: black;">SAP Analytics Cloud in Telecom</p>
                           <br>
-                          <p class="page-text" style="color: white;">Description</p>
+                          <p class="page-text" style="color: black;">Description</p>
                           <br> 
                           <br>
                           <br>
@@ -573,69 +662,41 @@
                     </a>
 
                 <!--White paper 2-->
-                <a href="https://www.demodap.com/vodafone" class="col-sm" id='wp2'>
+                <a href="https://www.demodap.com/vodafone" class="col-sm" id=''>
                 <div >
                     <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                        <p class='page-header' style="color: white;">White Paper 2</p>
+                        <p class='page-header' style="color: black;">How SAP Analytics Cloud helped discovered a £5m business opportunities to Client Y</p>
                         <br>
-                        <p class="page-text" style="color: white;">Description</p>
+                        <p class="page-text" style="color: black;">Description</p>
                         <br> 
                         <br>
                         <br>
                     </form>
                     </div>
                   </a>
+
+                <!--Welcome message-->
+                <a href="https://www.demodap.com/vodafone" class="col-sm" id='welcome-video'>
+                <div>
+                    <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
+                        <p class='page-header' style="color: white;">Welcome John</p>
+                        <br>
+                        <p class="page-text" style="color: white;">Introduction to your portal</p>
+                        <br> 
+                        <p class="page-text"></p>
+                        <br>
+                    </form>
+                    </div>
+                  </a>
           </div>
           <div class="row">
-            <!--White paper 3-->
-            <a href="https://www.demodap.com/vodafone" class="col-sm" id=''>
-              <div >
-                  <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                      <p class='page-header'>White Paper 3</p>
-                      <br>
-                      <p class="page-text">Description</p>
-                      <br> 
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                  </form>
-                  </div>
-                </a>
-
-            <!--Webinar 1-->
-            <a href="https://www.demodap.com/vodafone" class="col-sm" id=''>
-              <div >
-                  <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                      <p class='page-header'>Webinar 1</p>
-                      <br>
-                      <p class="page-text">Description</p>
-                      <br> 
-                      <br>
-                      <br>
-                  </form>
-                  </div>
-                </a>
-
-            <!--Welcome message-->
-            <a href="https://www.demodap.com/vodafone" class="col-sm" id='welcome-video'>
-            <div>
-                <form method="POST" action="{% url 'vodafone' %}"> {% csrf_token %}
-                    <p class='page-header' style="color: white;">Welcome John</p>
-                    <br>
-                    <p class="page-text" style="color: white;">Introduction to your portal</p>
-                    <br> 
-                    <p class="page-text"></p>
-                    <br>
-                </form>
-                </div>
-              </a>
       </div>
     </div>
 
       <br>
       <br>
 </section>
+
 <!--Get in Touch Mobile-->
 <section>
       <div class="w3-container" id='mobile-contact'>
@@ -691,8 +752,8 @@
  
            <div class="col-md-3">
                <br>
-               <p id="trust">Terms of Service</p></a>
-               <p id="trust">Privacy Policy</p></a>
+               <p id="trust"></p></a>
+               <p id="trust"></p></a>
             </div>
  
                  <style>         
