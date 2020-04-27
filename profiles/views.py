@@ -26,5 +26,10 @@ def pagevf_john(request):
     template = 'pagevf_john.html'
     return render(request,template,context)
 
+def pagevf_ariana(request):
+    context = locals()
+    template = 'pagevf_ariana.html'
+    return render(request,template,context)
+
 
 
