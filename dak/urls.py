@@ -29,6 +29,6 @@ urlpatterns = [
     path('', views.home),
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
-    path('login/', views.login, name='login'),
-    path('page_vf_john/', views.page_vf_john, name='page_vf_john'), 
+    path('loginvf_john/', views.loginvf_john, name='loginvf_john'),
+    path('pagevf_john/', views.pagevf_john, name='pagevf_john'), 
 ]

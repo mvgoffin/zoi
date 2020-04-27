@@ -16,14 +16,14 @@ def home(request):
     template = 'home.html'
     return render(request,template,context)
 
-def login(request):
+def loginvf_john(request):
     context = locals()
-    template = 'login.html'
+    template = 'loginvf_john.html'
     return render(request,template,context)
 
-def page_vf_john(request):
+def pagevf_john(request):
     context = locals()
-    template = 'page_vf_john.html'
+    template = 'pagevf_john.html'
     return render(request,template,context)
 
 
