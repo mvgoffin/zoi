@@ -16,9 +16,9 @@ def home(request):
     template = 'home.html'
     return render(request,template,context)
 
-def login_vf_john(request):
+def login(request):
     context = locals()
-    template = 'login_vf_john.html'
+    template = 'login.html'
     return render(request,template,context)
 
 def page_vf_john(request):
