@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <meta name="description" content="Plant-Based Snacks">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xdp3ien.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oca5evh.css">
+    
+    <!--Mobile Bubble Menu-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!--lightbox-->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/446ayfnw614fdal/favicon1.png?dl=0">
+    
+    <title>
+      Home | Membership Portal
+    </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GOOGLE ANALYTICS CODE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'GOOGLE ANALYTICS CODE');
+    </script>
+
+<!-- CSS-->
+<style media="screen">
+      
+    /**classes**/
+
+        * {
+          font-family: 'benton-sans', sans-serif;
+          font-size: 16px;
+          font-variant: normal;
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        body, html { 
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          background-color: transparent;
+          color:white;
+        }
+
+        .row{
+          padding-left: 30px;
+          padding-right: 30px;
+          margin-right:0px;
+          margin-left:0px;
+        }
+        
+        .section-heading{
+              padding-top: 30px;
+              color:black;
+              font-size: 40px;
+              text-align: center;
+              font-weight: 800;
+              display:block;
+              margin: 0;  
+        }
+        
+        .why-text {
+          font-weight: 400;
+          margin: 0px;
+          text-align:center;
+          line-height:normal;
+        }
+
+        .contact-text {
+          font-size:small;
+          text-align:left;
+          line-height:normal;
+          margin: 0px;
+        }
+
+        /**.section-heading{
+        margin-top: 10px;
+        font-weight: 600;
+        color: black;
+        text-align: left;
+        line-height: 25px;
+        font-size: large;
+        }**/
+
+        .section-text{
+        font-weight: 400;
+        color: black;
+        text-align:left;
+        line-height: 25px;
+        font-size: medium;
+        }
+
+        .heading-f{
+          color: white;
+          font-weight: bold;
+          margin-bottom:10px;
+          text-align: left;
+        }
+        
+        .why-icon{
+          margin-top: 10px;
+          font-weight: 400;
+          color: black;
+          text-align: center;
+          font-size: medium;
+        }
+
+        .customer-title{
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin: 0px;
+        font-weight: 800;
+        text-align: center;
+        line-height: 25px;
+        font-size:x-large;
+        text-decoration: none;
+        }
+
+        .page-text{
+        margin-bottom: 2px;
+        padding: 0;
+        font-size: 17px;
+        text-align: center;;
+        }
+
+        .contact-form{
+          padding-left: 350px;
+          padding-right: 350px;
+          padding-bottom: 50px;
+        }
+          /*****/
+
+        .wrapper {
+            position: relative;
+        }
+
+        .wrapper > .inner {
+          padding: 5em 5em 3em 5em ;
+          max-width: 100%;
+          width: 75em;
+        }
+
+        .login-header {
+            color:gold;
+            font-size: 40px;
+            padding-top: 55px;
+            padding-bottom: 25px;
+            text-align: left;
+            font-weight: 500;
+            display:block;
+            margin: 0;
+        }
+
+        .login-text {
+            color:white;
+            font-size: 25px;
+            font-weight: 100;
+            text-align: left;
+            margin: 0px;
+        }
+
+        .a{
+          text-decoration: none;
+        }
+
+        .form-control {
+            border-radius: 0px;
+            border-color: gray;
+            background-color:white;
+        }
+
+
+__
+
+          
+    /**ids**/
+
+        #topbar {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 2;
+          background-color:white;
+        }
+
+        #image{
+          width: 100%; 
+          border-style:solid;
+          border-color: black;
+          border-width: 10px;
+        }
+
+        #container {
+            background-color: #FFF8F8;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 0 5px 15px 0 #D1D1D1;
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+            margin:10px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+    /**Other assets**/
+
+        button {
+          background: transparent;
+          display:block;
+          width:100%;
+          border: 0px #3D9AD3 solid;
+          color: white;
+          background:#3D9AD3;
+          padding: 10px 20px;
+          margin: .618em 0.01em;  
+          font-weight: 800;
+          font-style: normal;
+          animation-delay: 2400ms;
+          font-size: 15px;
+          letter-spacing: .01em;
+          text-transform: normal;
+          transition: background-color 170ms  ease-out,color 170ms ease-out;
+        }
+
+        button:focus{
+          background-color:gold;;
+          border: 0px solid ;
+          color: black;
+          border-width: 1px;
+        }
+
+        button:hover {
+          background-color:gold;
+          border: 0px solid ;
+          color: black;
+        }
+        
+        ::placeholder{
+          color: gray;
+          font-size: small;
+        }
+
+        a{
+          color: gray;
+          font-size: small;
+        }
+  
+  /**Bootstrap Columns and Sections**/
+        
+        .col-md { 
+          background: transparent;
+          margin:10px;
+          padding: 20px;
+        }
+
+    @media only screen and (max-width: 990px) {
+    .row , .w3-container, #header-logo, .open-slide, .nav-link, .container-heading, .container-text, .contact-form {
+                margin-left:0 !important;
+                margin-right:0 !important;
+                margin-top:0 !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+                }
+
+                #header-logo {
+                  width: 100%;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  padding-left: 00px;
+                  text-align: center;
+                }
+
+                #icon {
+                display: block;
+                margin: auto;
+                width: 100%;
+                }
+
+                .login-header {
+                    color:white;
+                    font-size: 30px;
+                    padding-top: 55px;
+                    padding-bottom: 25px;
+                    text-align: left;
+                    font-weight: 500;
+                    display:block;
+                    margin: 0;
+                }
+
+                .login-text {
+                    color:white;
+                    font-size: 20px;
+                    font-weight: 100;
+                    text-align: left;
+                    margin: 0px;
+                }
+
+                *, .html {
+                  margin-left:0 !important;
+                  margin-right:0 !important;
+                  padding-left: 0 !important;
+                  padding-right: 0 !important;
+                }
+          }
+</style>
+</head>
+<body>
+<!--Navigation Menu-->
+<section>
+      <header>
+        <nav class="navbar">
+          <p style="padding-left: 65px;padding-top:5px;padding-bottom:5px; margin: 0px;"><a href="https://www..com" ><img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" id="header-logo"></a>&nbsp;&nbsp;</p>
+            
+            <!--<button2 type="button2" data-toggle="collapse" data-target="#collapsingNavbar4" style="background: transparent;border-color: transparent;" class="collapsed" aria-expanded="false">
+                <span class="open-slide" style="text-align:right; background:transparent;">
+                    <a href="#" onclick="openSlideMenu()">
+                      <svg width="25" height="25">
+                        <path d="M0,5 30,5" stroke="#000000" stroke-width="4"></path>
+                        <path d="M0,14 30,14" stroke="#000000" stroke-width="4"></path>
+                        <path d="M0,23 30,23" stroke="#000000" stroke-width="4"></path>
+                      </svg>
+                    </a>
+                  </span>
+            </button2>-->
+            
+            <div class="navbar-collapse collapse" id="collapsingNavbar4" style="">
+                <ul class="navbar-nav">
+                    <li class="nav-item active2">
+                        <a class="nav-link" href="/jobs">ABC</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <style>
+            .navbar {
+              background-color: black;
+              padding: 0;
+              box-sizing: border-box;
+              margin: auto;
+              width: 100%;
+              /**box-shadow: 0 10px 5px -5px  #D1D1D1;**/
+              -webkit-appearance: none !important;
+            }
+            
+            .nav-link {
+              margin-left: 30px;
+              font-family: 'Avenir', sans-serif;
+              font-size: 24px;
+              font-weight: bold;
+              color: white;
+              background-color: black;
+            }
+    
+            .nav-item.active2 {
+              background: black;
+            }
+    
+            .nav-link:hover {
+                  color: gray;
+                }
+    
+            button2 {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-right: 30px;
+            }
+    
+            #header-logo {
+              width: 150px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-left: 80px;
+              }
+            </style>
+        </nav>
+        </header>
+</section>
+<!--Login Form-->
+<section>
+      <div class="w3-container" id='banner'>
+       <style>
+        #banner {
+          background-image:url(https://dl.dropboxusercontent.com/s/oq6zq6gx947xo00/lseg-banner-4.jpg?dl=0);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-size: cover;
+          padding-top: 30px;
+        }
+      </style>
+
+        <div class="row">
+          <div class="col-sm-5" style="margin-left: 100px;margin-top: 40px;">
+              <h3 class='login-header'>SAP Engage</h3>
+              <p class='login-text'>SAP helps forward-thinking businesses to run at their best to delight their customers and drive growth. Enter your credentials to know how we're helping you.</p>
+          </div>
+          <div class="col-sm-4" >
+          </div>
+          <div class="col-sm-1" style="margin-right: 100px;margin-top: 40px;">
+            <img src="https://dl.dropboxusercontent.com/s/k7iy5vm3obp2cly/LSEG_logo.png?dl=0" width="120px">
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-sm-3" style="margin-left:100px;">
+              <form method="POST" action="{% url 'pagevf_john' %}"> {% csrf_token %}
+                  <div id="shipping-register-form">
+                      <label for="card-name"></label>
+                      <!--<input type="text" name="card-name" class="form-control" id="card-name" placeholder="Email">-->
+                      <label for="card-element" placeholder="Password"></label>
+                      <input type="text" name="card-name" class="form-control" id="card-name" placeholder="Enter Password">
+                    </div>
+                      <br>
+                    <div class="form-group">  
+                      <button type="submit">Login</button>
+                    </div>
+                    <br>
+                    <br>
+                    </form>   
+              </div>
+            </div>
+          </div>
+</section>
+<!--Footer-->
+<section>
+  <footer class="w3-container" id='footer'>
+     <style>
+       #footer{
+         padding: 0px;
+       }
+       </style>
+ 
+       <div class="row">
+           <div class="col-md-3">
+            <p style="padding-top:5px;padding-bottom:5px; margin: 0px;"><a href="https://www..com" ><img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" id="header-logo"></a>&nbsp;&nbsp;</p>   
+           </div>
+          
+         <div class="col-md-3">
+           </div>
+ 
+         <div class="col-md-3"> 
+            </div>
+
+         <div class="col-md-3">
+             <br>
+             <p id="trust"></p></a>
+             <p id="trust"></p></a>
+          </div>
+
+               <style>         
+                 
+                 #footer {
+                   background-image: linear-gradient(to bottom, black, black);
+                   padding-right: 25px;
+                   padding-left: 25px;
+                   padding-top: 25px;
+                   padding-bottom: 120px;
+                 }
+
+                 .footer-links{
+                   text-align:left;
+                   font-size: 12px;
+                   color: white;
+                 }
+                 #trust {
+                   text-align:left;
+                   color: white;
+                   margin: 0;
+                 }
+ 
+                 #trust-tc{
+                   text-align:left;
+                   font-size: 12px;
+                   color: white;
+                   margin: 0;
+                   border-style: solid;
+                   border-width: thin;
+                   border-color: white;
+                   }
+ 
+                 #vsu-trust {
+                   text-align:center;
+                 }
+                 </style> 
+ 
+         </div>
+       </footer>
+</section>
+</body>
+</html>
