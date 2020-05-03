@@ -16,6 +16,19 @@ def home(request):
     template = 'home.html'
     return render(request,template,context)
 
+#LSEG
+def loginlseg(request):
+    context = locals()
+    template = 'loginlseg.html'
+    return render(request,template,context)
+
+def pagelseg(request):
+    context = locals()
+    template = 'pagelseg.html'
+    return render(request,template,context)
+
+
+
 def loginvf_john(request):
     context = locals()
     template = 'loginvf_john.html'

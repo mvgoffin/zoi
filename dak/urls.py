@@ -29,6 +29,8 @@ urlpatterns = [
     path('', views.home),
     path('admin/', admin.site.urls),
     #path('home/', views.home, name='home'),
+    
+    #LSEG
     #path('loginlseg/', views.loginlseg, name='loginlseg'),
     #path('pagelseg/', views.pagelseg, name='pagelseg'),
 
