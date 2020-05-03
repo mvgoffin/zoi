@@ -29,6 +29,9 @@ urlpatterns = [
     path('', views.home),
     path('admin/', admin.site.urls),
     #path('home/', views.home, name='home'),
+    #path('loginlseg/', views.loginlseg, name='loginlseg'),
+    #path('pagelseg/', views.pagelseg, name='pagelseg'),
+
     #path('loginvf_john/', views.loginvf_john, name='loginvf_john'),
     #path('pagevf_john/', views.pagevf_john, name='pagevf_john'), 
     #path('pagevf_ariana/', views.pagevf_ariana, name='pagevf_ariana'), 

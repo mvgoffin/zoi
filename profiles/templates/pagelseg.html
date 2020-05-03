@@ -296,7 +296,6 @@
 
         .contact-container {
           text-align: center;
-          padding:10px
         }
 
         #alert {
@@ -521,8 +520,8 @@
             <div class="alert anim-fade in" style="background-color: whitesmoke; border-radius: 3px;">
               <div class="">
                 <span class="message-copy pad-r" aria-live="assertive">
-                  <p class="page-text">Hi John,</p>
-                  <br>
+                  <!--<p class="page-text">Hi John,</p>
+                  <br>-->
                   <p class="page-text">Welcome to your portal.</p>
                   <br>
                   <p class="page-text">These are your updates for this week:</p>
@@ -739,6 +738,9 @@
 <!--Contact Banner-->
 <section>
     <div class="contact-us-side-widget">
+      <div class="contact-container">
+        <p class="contact-us-side-widget__questions">Questions?</p>
+      </div>
     <a href="mailto:marco.valgof@gmail.com" target="_blank"><p class="contact-us-side-widget__title">Contact Mark</p></a>
     </div>
     <style>
@@ -756,16 +758,21 @@
           font-weight: 500;
           font-size: medium;
         }
+      
+        .contact-us-side-widget__questions{
+        padding-top: 20px;
+        color: white;
+        margin: 0px;
+      }
 
       .contact-us-side-widget__title{
         text-align: center;
         color: white;
         padding-left: 30px;
         padding-right: 20px;
-        padding-top: 30px;
+        padding-top: 0px;
         padding-bottom: 30px;
         margin: 0px;
-
       }
     </style>
 </section>
