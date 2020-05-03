@@ -24,9 +24,9 @@
     <!--favicon-->
     <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/446ayfnw614fdal/favicon1.png?dl=0">
     
-    <!-- Start of  Zendesk Widget script -->
+    <!-- Start of  Zendesk Widget script
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=921e6fa2-24ce-4785-a160-0cbdca17a4bb"> </script>
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=921e6fa2-24ce-4785-a160-0cbdca17a4bb"> </script>-->
 
     <title>
         Home | LSEG
@@ -280,13 +280,23 @@
           }
         
         #banner-logo {
-          width: 200px;
+          width: 25%;
+          }
+        
+        #contact-logo {
+          width: 5%;
+          display: inline-block;
           }
         
         .logo-container {
           padding-top: 80px;
           padding-bottom: 60px;
           text-align: center;
+        }
+
+        .contact-container {
+          text-align: center;
+          padding:10px
         }
 
         #alert {
@@ -437,37 +447,78 @@
 </style>
 </head>
 <body>
+
 <!--SAP Header-->
 <section>
   <nav class="navbar">
     <p style="padding-left: 65px;padding-top:5px;padding-bottom:5px; margin: 0px;"><a href="https://www..com" ><img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" id="header-logo"></a>&nbsp;&nbsp;</p>
     </nav>
 </section>
-<!--Account Name Banner-->
-<section class="account-background">
-  <div class="w3-container">
-    <div class="" style="background-image: url(https://dl.dropboxusercontent.com/s/s9p5myri9detru0/lseg-banner-10.jpg?dl=0);">
-      <div class='logo-container'>
-        <img src="https://dl.dropboxusercontent.com/s/k7iy5vm3obp2cly/LSEG_logo.png?dl=0" id="banner-logo">
+
+<!--Banner-->
+<section>
+  <div class="w3-container" id="banner">    
+    <div class='logo-container'>
+      <img src="https://dl.dropboxusercontent.com/s/k7iy5vm3obp2cly/LSEG_logo-w.png?dl=0" id="banner-logo">
+    </div>
+      <div class="">
+        <h1 class="account-header" style="text-align: center;padding-left: 150px;padding-right: 150px;">The Global Financial Markets Infrastructure Leader</h1>
+        <script>document.getElementById('greeting').innerHTML = new Date().getHours() >= 12 ? 'Good Afternoon,' : 'Good Morning,';</script>
+          <br>
+          <br>
+        </div>    
       </div>
-        <div class="col-lg">
-          <!--<h1 class="account-header" id='greeting'></h1>-->
-          <h1 class="account-header" style="text-align: left;">Helping LSEG Become The Global Financial Markets Infrastructure Leader</h1>
-          <script>document.getElementById('greeting').innerHTML = new Date().getHours() >= 12 ? 'Good Afternoon,' : 'Good Morning,';</script>
-            <!--<p class="text-header" style="color: white;">Chief Financial Officer</p>-->
-            <br>
-            <br>
-          </div>
-        </div>
-      </div>
-</section>
+    <style>
+        /* For width larger than 990px: */
+        #banner {
+          padding-top: 100px;
+          padding-bottom: 100px;
+          padding-left: 150px;
+          padding-right: 150px;
+          background-image:url(https://dl.dropboxusercontent.com/s/x9tk3otch1tn0sn/lseg-banner-10.png?dl=0);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+    
+        .banner-text {
+              color:white;
+              font-size: 6vw;
+              padding-top: 100px;
+              padding-bottom: 0px;
+              text-align: left;
+              font-weight: 800;
+              display:block;
+              margin: 0;
+        }
+
+        
+        @media only screen and (max-width: 990px) {
+        #banner {
+          padding-top: 50px;
+          padding-bottom: 50px;
+          padding-left: 150px;
+          background-image:url(https://dl.dropboxusercontent.com/s/u7d8iyixqhll7f8/lseg-banner-10-m.png?dl=0);
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .banner-text{
+            font-size: 50px;
+            margin-left:20px !important;
+            margin-right:20px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+          }
+        }
+        </style>
+  </section>
 
 <!--Account Welcome Message-->
 <section class="account-background">
-        <div class="w3-container">
+        <div class="w3-container" style="background-color: black">
           <div class="col-lg">
             <br>
-            <div class="alert anim-fade in">
+            <div class="alert anim-fade in" style="background-color: whitesmoke; border-radius: 3px;">
               <div class="">
                 <span class="message-copy pad-r" aria-live="assertive">
                   <p class="page-text">Hi John,</p>
@@ -482,12 +533,12 @@
                   <ul>
                     <il> · Workshop Notes with Luka are available.</il>
                   </ul>
-                  <p class="page-text">I'll see you next Friday for our meeting with Mary. Any questions, just text me hitting the "help" widget.</p>
+                  <p class="page-text">I'll see you next Friday for our meeting with Mary. Any questions, just text me hitting the "Contact" blue widget.</p>
                   <!--<p class="page-text">Welcome to your <b>Project Agile</b> portal. Here you'll find all the necessary information about the project, objectives and supporting documents, so we can collectivelly make the best business decision. Each DMU member has access to its own portal and share similar documents. My team and I are constantly updating it.</p> 
                   <p class="page-text">Last but not least, we're finishing the demo that we discussed last week, you'll receive an email notification when is up and running so you can have a look. If you have any questions, please contact me anytime on the blue tag.</p>
                   <br>-->
                   <br>
-                  <p class="page-text">Marco Valle - Account Manager</p>
+                  <p class="page-text">Mark - Account Manager</p>
                   <br>
                 </span>
               </div>
@@ -503,26 +554,26 @@
 
 <!--Project Objective-->
 <section class="account-background">
-    <div class="w3-container">
+    <div class="w3-container" style="background-color: black">
       <div class="col-lg">
         <br>
         <br>
-          <h2 class="heading">Objectives</h2>
         </div>
         <br>
         <div class="row">
-          <div class="col-sm">
-            <ul>
-              <p class="page-text"><b>1.</b>&nbsp;&nbsp;Simplify processes.</li>
-            </ul>
-            <ul>
-              <p class="page-text"><b>2.</b>&nbsp;&nbsp;Reduce complexity in core data and analytics capabilities migration</li>
-            </ul>
+          <div class="row">
+            <p class="heading" style="color: white; font-style: italic;">Business value</p>
+          </div>
+          <div class="row">
+              <h2 class="heading" style="color: white; font-style: italic;">Simplifying processes and reducing complexity in core data and analytics capabilities migration </h2>
             </div>
         </div>
       <br>
+      <br>
+      <br>
     </div>
 </section>
+
 <!--Select -->
 <section class="account-background">
   <div class="w3-container" style="background-color:white">
@@ -530,13 +581,13 @@
         <br>
         <br>
         <br>
-          <h2 class="heading">Documents Hub</h2>
+          <h2 class="heading">Value proposition</h2>
       </div>
       <br>
       <div class="row">
                   <!--Business Case-->
                     <div class="col-sm">
-                          <img src="https://dl.dropboxusercontent.com/s/9qis8btscf0jhie/hub-image4.png?dl=0" id="hub-image">
+                          <img src="https://dl.dropboxusercontent.com/s/m5pbclpju5v13ut/hub-image6.png?dl=0" id="hub-image">
                           <p class='page-header' style="color: black;">PoV (PDF)</p>
                             <p class="page-text" style="color: black;">Potential upside:</p>
                             <p class="page-text" style="color: black;"><b> · Reduce task times by 4x </b> with real-time access to data.</p>
@@ -549,6 +600,7 @@
                 <img src="https://dl.dropboxusercontent.com/s/c0027pq9xmn92kz/hub-image3.png?dl=0" id="hub-image">
                   <p class='page-header' style="color: black;">Custom Thought Leadership 1 (PDF)</p>
                       <p class="page-text" style="color: black;">Above All, Businesses Struggle to Integrate Systems, Databases, and Applications Fast Enough to Get the Companies Running in Synchronization.</p>
+                      <p class="page-text" style="color: black;">By Jane.</p>
                       <br>
                       <a href="https://www.demodap.com/pagelseg" id='link'>Learn More</a>
                   </div>
@@ -558,6 +610,7 @@
                 <img src="https://dl.dropboxusercontent.com/s/398awip1gzkb7r2/hub-image5.png?dl=0" id="hub-image">
                       <p class='page-header' style="color: black;">Custom Thought Leadership 2 (PDF)</p>
                       <p class="page-text" style="color: black;">A lack of Security during an acquisition can be nerve-racking. But it doesn't have to be this way.</p>
+                      <p class="page-text" style="color: black;">By Jane.</p>
                       <br>
                       <a href="https://www.demodap.com/pagelseg" id='link'>Learn More</a>
                 </div>
@@ -573,7 +626,7 @@
           <br>
           <br>
           <br>
-            <h2 class="heading">Supporting resources</h2>
+            <h2 class="heading">Solution documentation</h2>
           </div>
         <br>
         <div class="row">
@@ -618,40 +671,6 @@
       <br>
 </section>
 
-<!--Get in Touch Mobile
-<section>
-      <div class="w3-container" id='mobile-contact'>
-        <div class="col-lg">
-            <h2 class="contact-header">Contact</h2>
-                <div style="text-align: center;">
-                  <a href="mailto:marco.valle@sap.com" target="_blank" style="color:inherit;text-decoration:none;"></a>
-                    <p class="contact-text"><img src="https://dl.dropboxusercontent.com/s/w20dmc8213t82ww/icon-email.png?dl=0" style="width:25px">&nbsp;&nbsp;marco.valle@sap.com</p>
-                   </a> 
-                  </div>
-                <div style="text-align: center;">
-                  <a href="sms:+447476580355" target="_blank" style="color:inherit;text-decoration:none;">
-                    <p class="contact-text"><img src="https://dl.dropboxusercontent.com/s/1xr4s3uj8vwsrh8/icon-call.png?dl=0" style="width:25px;">&nbsp;&nbsp;07476 580355</p>
-                  </a> 
-                </div>  
-                <br>
-            </div>
-          </div>
-        <style>
-          #mobile-contact {
-              background-color: #589AD2;
-              display: block;
-          }
-          @media only screen and (max-width: 990px) {
-            #mobile-contact {
-              padding-left: 0px !important;
-              padding-right: 0px !important;
-              display: block;
-              background-color: #589AD2;
-            }
-          }
-        </style>
-      </section>-->
-      
 <!--Footer-->
 <section>
     <footer class="w3-container" id='footer'>
@@ -716,6 +735,40 @@
            </div>
          </footer>
  </section>
+
+<!--Contact Banner-->
+<section>
+    <div class="contact-us-side-widget">
+    <a href="mailto:marco.valgof@gmail.com" target="_blank"><p class="contact-us-side-widget__title">Contact Mark</p></a>
+    </div>
+    <style>
+      .contact-us-side-widget {
+        background-color: #3D9AD3;
+        margin: 0px;
+        position: fixed;
+        top: 50%;
+        right: 0;
+        z-index: 1000;
+      }
+
+      a:link {
+          color: white;
+          font-weight: 500;
+          font-size: medium;
+        }
+
+      .contact-us-side-widget__title{
+        text-align: center;
+        color: white;
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: 0px;
+
+      }
+    </style>
+</section>
 
    </body>
  </html>
