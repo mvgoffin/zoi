@@ -27,9 +27,9 @@ def pagelseg(request):
     template = 'pagelseg.html'
     return render(request,template,context)
 
-def pagelseg_john(request):
+def pagelseg_mike(request):
     context = locals()
-    template = 'pagelseg_john.html'
+    template = 'pagelseg_mike.html'
     return render(request,template,context)
 
 
