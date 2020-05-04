@@ -33,7 +33,7 @@ urlpatterns = [
     #LSEG
     path('loginlseg/', views.loginlseg, name='loginlseg'),
     path('pagelseg/', views.pagelseg, name='pagelseg'),
-    #path('pagelseg_mike/', views.pagelseg_mike, name='pagelseg_mike'),
+    path('pagelseg_mike/', views.pagelseg_mike, name='pagelseg_mike'),
 
     path('loginvf_john/', views.loginvf_john, name='loginvf_john'),
     #path('pagevf_john/', views.pagevf_john, name='pagevf_john'), 
