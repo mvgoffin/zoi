@@ -42,8 +42,8 @@ urlpatterns = [
 
     #Vodafone
     path('loginvf/', views.loginvf, name='loginvf'),
-    #path('pagelseg/', views.pagelseg, name='pagelseg'),
-    #path('pagelseg_mike/', views.pagelseg_mike, name='pagelseg_mike'),
+    path('pagevf/', views.pagevf, name='pagevf'),
+    #path('pagevf_mike/', views.pagevf_mike, name='pagevf_mike'),
     
     #BP
     #path('loginbp/', views.loginbp, name='loginbp'),
