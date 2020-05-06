@@ -32,6 +32,22 @@ def pagelseg_mike(request):
     template = 'pagelseg_mike.html'
     return render(request,template,context)
 
+#BP
+def loginbp(request):
+    context = locals()
+    template = 'loginbp.html'
+    return render(request,template,context)
+
+def pagelseg(request):
+    context = locals()
+    template = 'pagebp.html'
+    return render(request,template,context)
+
+def pagelseg_mike(request):
+    context = locals()
+    template = 'pagebp_mike.html'
+    return render(request,template,context)
+
 
 
 def loginvf_john(request):
