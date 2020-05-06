@@ -39,9 +39,14 @@ urlpatterns = [
     #path('loginlseg/', views.loginlseg, name='loginlseg'),
     #path('pagelseg/', views.pagelseg, name='pagelseg'),
     #path('pagelseg_mike/', views.pagelseg_mike, name='pagelseg_mike'),
+
+    #Vodafone
+    path('loginvf/', views.loginvf, name='loginvf'),
+    #path('pagelseg/', views.pagelseg, name='pagelseg'),
+    #path('pagelseg_mike/', views.pagelseg_mike, name='pagelseg_mike'),
     
     #BP
-    path('loginbp/', views.loginbp, name='loginbp'),
-    path('pagebp/', views.pagebp, name='pagebp'),
+    #path('loginbp/', views.loginbp, name='loginbp'),
+    #path('pagebp/', views.pagebp, name='pagebp'),
     #path('pagebp_mike/', views.pagebp_mike, name='pagebp_mike'),
 ]

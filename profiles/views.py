@@ -32,6 +32,22 @@ def pagelseg_mike(request):
     template = 'pagelseg_mike.html'
     return render(request,template,context)
 
+#Vodafone
+def loginvf(request):
+    context = locals()
+    template = 'loginvf.html'
+    return render(request,template,context)
+
+def pagevf(request):
+    context = locals()
+    template = 'pagevf.html'
+    return render(request,template,context)
+
+def pagevf_mike(request):
+    context = locals()
+    template = 'pagevf_mike.html'
+    return render(request,template,context)
+
 #BP
 def loginbp(request):
     context = locals()
@@ -50,20 +66,10 @@ def pagelseg_mike(request):
 
 
 
-def loginvf_john(request):
-    context = locals()
-    template = 'loginvf_john.html'
-    return render(request,template,context)
-
-def pagevf_john(request):
-    context = locals()
-    template = 'pagevf_john.html'
-    return render(request,template,context)
-
-def pagevf_ariana(request):
-    context = locals()
-    template = 'pagevf_ariana.html'
-    return render(request,template,context)
+#def pagevf_ariana(request):
+ #   context = locals()
+  #  template = 'pagevf_ariana.html'
+   # return render(request,template,context)
 
 
 
