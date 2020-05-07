@@ -32,6 +32,22 @@ def pagelseg_mike(request):
     template = 'pagelseg_mike.html'
     return render(request,template,context)
 
+#BT
+def btlogin(request):
+    context = locals()
+    template = 'btlogin.html'
+    return render(request,template,context)
+
+def btpage(request):
+    context = locals()
+    template = 'btpage.html'
+    return render(request,template,context)
+
+def btpage_mike(request):
+    context = locals()
+    template = 'btpage_mike.html'
+    return render(request,template,context)
+
 #Vodafone
 def loginvf(request):
     context = locals()
