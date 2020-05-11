@@ -48,6 +48,22 @@ def btpage_mike(request):
     template = 'btpage_mike.html'
     return render(request,template,context)
 
+#BP
+def bplogin(request):
+    context = locals()
+    template = 'bplogin.html'
+    return render(request,template,context)
+
+def bppage(request):
+    context = locals()
+    template = 'bppage.html'
+    return render(request,template,context)
+
+def bppage_mike(request):
+    context = locals()
+    template = 'bppage_mike.html'
+    return render(request,template,context)
+
 #Vodafone
 def loginvf(request):
     context = locals()
@@ -64,21 +80,6 @@ def pagevf_mike(request):
     template = 'pagevf_mike.html'
     return render(request,template,context)
 
-#BP
-def loginbp(request):
-    context = locals()
-    template = 'loginbp.html'
-    return render(request,template,context)
-
-def pagelseg(request):
-    context = locals()
-    template = 'pagebp.html'
-    return render(request,template,context)
-
-def pagelseg_mike(request):
-    context = locals()
-    template = 'pagebp_mike.html'
-    return render(request,template,context)
 
 
 

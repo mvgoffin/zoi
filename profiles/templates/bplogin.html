@@ -25,7 +25,7 @@
     <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/446ayfnw614fdal/favicon1.png?dl=0">
     
     <title>
-      Home | Engage
+      Home | BP
     </title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -400,7 +400,7 @@ __
       <div class="w3-container" id='banner'>
        <style>
         #banner {
-          background-image:url(https://dl.dropboxusercontent.com/s/m4wdue8k1peqh8c/lseg-banner-11.png?dl=0);
+          background-image:url(https://dl.dropboxusercontent.com/s/w17539oamef6q9z/bp-banner-2.jpg?dl=0);
           background-position: center;
           background-repeat: no-repeat;
           background-size: 100%;
@@ -411,19 +411,19 @@ __
 
         <div class="row">
           <div class="col-sm-5" style="margin-left: 100px;margin-top: 40px;">
-              <h3 class='login-header'>The Connected Upstream</h3>
+              <h3 class='login-header'>Delivering differentiated customer experience</h3>
               <p class='login-text'>SAP helps forward-thinking businesses to run at their best to delight their customers and drive growth.</p>
           </div>
           <div class="col-sm-3">
           </div>
           <div class="col-sm-1" style="margin-right: 80px;margin-top: 40px;">
-            <img src="https://dl.dropboxusercontent.com/s/k7iy5vm3obp2cly/LSEG_logo.png?dl=0" width="160px">
+            <img src="https://dl.dropboxusercontent.com/s/hd9xhfjsjnwrbyw/BP-logo.png?dl=0" width="70px">
           </div>
 
         </div>
         <div class="row">
           <div class="col-sm-3" style="margin-left:100px;">
-              <form> {% csrf_token %}
+            <form method="POST" action="{% url 'bppage' %}">{% csrf_token %}
                   <div id="shipping-register-form">
                       <label for="card-name"></label>
                       <!--<input type="text" name="card-name" class="form-control" id="card-name" placeholder="Email">-->
