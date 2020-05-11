@@ -41,8 +41,8 @@ urlpatterns = [
     #path('pagelseg_mike/', views.pagelseg_mike, name='pagelseg_mike'),
 
     #BP
-    #path('bplogin/', views.bplogin, name='bplogin'),
-    #path('bppage/', views.bppage, name='bppage'),
+    path('bplogin/', views.bplogin, name='bplogin'),
+    path('bppage/', views.bppage, name='bppage'),
     #path('bppage_mike/', views.bppage_mike, name='bppage_mike'),
 
     #Vodafone
