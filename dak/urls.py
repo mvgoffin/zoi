@@ -46,7 +46,11 @@ urlpatterns = [
     #path('bppage_mike/', views.bppage_mike, name='bppage_mike'),
 
     #Vodafone
-    path('loginvf/', views.loginvf, name='loginvf'),
-    path('pagevf/', views.pagevf, name='pagevf'),
+    #path('loginvf/', views.loginvf, name='loginvf'),
+    #path('pagevf/', views.pagevf, name='pagevf'),
     #path('pagevf_mike/', views.pagevf_mike, name='pagevf_mike'),
+
+    #----greencourt----#
+    path('gclogin/', views.gclogin, name='gclogin'),
+    path('gcpage/', views.gcpage, name='gcpage'),
 ]

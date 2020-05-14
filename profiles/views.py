@@ -80,7 +80,21 @@ def pagevf_mike(request):
     template = 'pagevf_mike.html'
     return render(request,template,context)
 
+#greencourt technologies
+def gclogin(request):
+    context = locals()
+    template = 'gclogin.html'
+    return render(request,template,context)
 
+def gcpage(request):
+    context = locals()
+    template = 'gcpage.html'
+    return render(request,template,context)
+
+def pagevf_mike(request):
+    context = locals()
+    template = 'pagevf_mike.html'
+    return render(request,template,context)
 
 
 #def pagevf_ariana(request):
