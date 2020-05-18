@@ -228,9 +228,10 @@ __
           background: transparent;
           display:block;
           width:100%;
-          border: 0px  solid;
-          color: white;
-          background:#22b573;
+          border:#D1D1D1 2px  solid;
+          border-radius: 20px;
+          color: black;
+          background:white;
           padding: 10px 20px;
           margin: .618em 0.01em;  
           font-weight: 800;
@@ -240,6 +241,7 @@ __
           letter-spacing: .01em;
           text-transform: normal;
           transition: background-color 170ms  ease-out,color 170ms ease-out;
+          
         }
 
         button:focus{
@@ -250,10 +252,17 @@ __
         }
 
         button:hover {
-          background-color:#FFF8F8;
-          border: 0px solid ;
+          /*background-color:#FFF8F8;
+          border: 0px solid ;*/
+          border: white 2px solid;
+          border-radius: 20px;
+          padding: 11px 21px;
           color: black;
+          box-shadow: 0 3px 10px 0 #D1D1D1;
+          -webkit-transition: box-shadow 150ms ease;
+          transition: box-shadow 150ms ease;
         }
+
         
         ::placeholder{
           color: gray;
