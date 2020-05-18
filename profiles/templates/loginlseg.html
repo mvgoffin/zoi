@@ -423,7 +423,7 @@ __
         </div>
         <div class="row">
           <div class="col-sm-3" style="margin-left:100px;">
-              <form> {% csrf_token %}
+              <form method="POST" action="{% url 'pagelseg' %}">{% csrf_token %}
                   <div id="shipping-register-form">
                       <label for="card-name"></label>
                       <!--<input type="text" name="card-name" class="form-control" id="card-name" placeholder="Email">-->
