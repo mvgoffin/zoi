@@ -31,8 +31,8 @@ urlpatterns = [
     #path('home/', views.home, name='home'),
     
     #LSEG
-    #path('loginlseg/', views.loginlseg, name='loginlseg'),
-    #path('pagelseg/', views.pagelseg, name='pagelseg'),
+    path('loginlseg/', views.loginlseg, name='loginlseg'),
+    path('pagelseg/', views.pagelseg, name='pagelseg'),
     #path('pagelseg_mike/', views.pagelseg_mike, name='pagelseg_mike'),
 
     #BT
