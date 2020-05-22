@@ -9,12 +9,37 @@ from django.conf import settings
 
 # Create your views here.
 
-#Altered.ai - Views
-
 def home(request):
     context = locals()
     template = 'home.html'
     return render(request,template,context)
+
+#1BLives - Rockstar
+def rockstar_home(request):
+    context = locals()
+    template = 'rockstar_home.html'
+    return render(request,template,context)
+
+def rockstar_registration(request):
+    context = locals()
+    template = 'rockstar_registration.html'
+    return render(request,template,context)
+
+def rockstar_product(request):
+    context = locals()
+    template = 'rockstar_product.html'
+    return render(request,template,context)
+
+def rockstar_checkout(request):
+    context = locals()
+    template = 'rockstar_checkout.html'
+    return render(request,template,context)
+
+def rockstar_thankyou(request):
+    context = locals()
+    template = 'rockstar_thankyou.html'
+    return render(request,template,context)
+
 
 #LSEG
 def loginlseg(request):

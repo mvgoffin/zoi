@@ -50,6 +50,13 @@ urlpatterns = [
     path('pagevf/', views.pagevf, name='pagevf'),
     #path('pagevf_mike/', views.pagevf_mike, name='pagevf_mike'),
 
+    #----Rockstar Marketplace----#
+    path('rockstar_home/', views.rockstar_home, name='rockstar_home'),
+    path('rockstar_registration/', views.rockstar_registration, name='rockstar_registration'),
+    path('rockstar_product/', views.rockstar_product, name='rockstar_product'),
+    path('rockstar_checkout/', views.rockstar_checkout, name='rockstar_checkout'),
+    path('rockstar_thankyou/', views.rockstar_thankyou, name='rockstar_thankyou'),
+
     #----greencourt----#
     path('gclogin/', views.gclogin, name='gclogin'),
     path('gcpage/', views.gcpage, name='gcpage'),
