@@ -22,7 +22,7 @@
         <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
         <!--favicon-->
-        <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/pfb78baffcfp8z4/GCT%20logo%20favicon.jpg?dl=0">
+        <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/hcqtfczlwp0hkeu/favicon-rockstar.png?dl=0">
 
         <title>
         Rockstar | Reuse and thrive
@@ -44,6 +44,7 @@
         * {
         font-family: 'avenir', sans-serif;
         font-size: 16px;
+        font-weight: 500;
         font-variant: normal;
         box-sizing: border-box;
         padding: 0;
@@ -110,7 +111,7 @@
         }
 
         button:hover {
-        background-color:darkseagreen;
+        background-color:aquamarine;
         border: 0px solid ;
         color: black;
         }
@@ -118,6 +119,15 @@
         #row-sub-title.row{
         padding-bottom: 10px;
         }
+
+        @media only screen and (max-width: 990px) {
+        .row, #banner.w3-container {
+        margin-left:0px !important;
+        margin-right:0px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+    }
 
 
 </style>
@@ -186,7 +196,7 @@
         }
 
         .button:hover{
-        background-color:darkseagreen;
+        background-color:aquamarine;
         border: 0px solid ;
         color: black;
         } 
@@ -212,7 +222,7 @@
 <!--Style - Hero Banner-->
 <style>
         #banner.w3-container {
-        padding-bottom: 50px;
+        padding-bottom: 75px;
         }
             
         #banner {
@@ -220,10 +230,11 @@
         padding-bottom: 150px;
         padding-left: 150px;
         padding-right: 150px;
-        background-image:url(https://dl.dropboxusercontent.com/s/lfzy2cb8ab72w64/rockstar.jpg?dl=0);
+        background-image:url(https://dl.dropboxusercontent.com/s/pfzvqw9nm5a4yq9/rockstar-banner-1.png?dl=0);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
+        color: white;
         }  
 
         .search {
@@ -245,7 +256,7 @@
         }
 
         .search:hover{
-        background-color:darkseagreen;
+        background-color:aquamarine;
         border: 0px solid ;
         color: black;
         } 
@@ -307,7 +318,15 @@
     }
 
     #portfolio-tab.col-md{
-    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+    #portfolio-tab.col-md:hover{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0px 6px 8px #02d9cb;
+    -webkit-appearance: none !important;
     }
 
     #row-portfolio-tab.row{
@@ -320,7 +339,6 @@
             #testimonial-image{
             text-align: center;
             width: 100%;
-            padding: 10px;
             }
 
             #testimonial-text {
@@ -348,31 +366,52 @@
 <!--Get started-->
 <style>
         #get-started.w3-container {
-            background-color: transparent;
+            background-color:#02d9cb;
+            color: white;
         }
+
+        .access{
+        background: transparent;
+        display:block;border: 0px  solid;
+        color:#02d9cb;
+        background:white;  
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        padding: 5px 30px;
+        border-radius: 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        }
+
+        .access:hover{
+        background-color:aquamarine;
+        border: 0px solid ;
+        color: black;
+        } 
+        
         
 </style>
 <!--Style - Footer-->
 <style>
-        /**#footer {
-        background-image:url(https://dl.dropboxusercontent.com/s/110uf4bptkzaxp0/Artboard%201.png?dl=0);
+        #footer {
+        /**:url(https://dl.dropboxusercontent.com/s/110uf4bptkzaxp0/Artboard%201.png?dl=0);**/
         background-position: center;
         background-repeat: no-repeat;
-        }**/
-        svg {
-            z-index: -100;
-            float: right;
-            margin-top: -15%; 
+        padding-top: 25px;
         }
-
+        
         .footer-title{
         font-weight: 800;
         font-size: large;
-        color: white;
+        color: black;
         }
 
         #footer-text.col-md{
-            color: white;
+            color: black;
         }
 
         .headline-middle {
@@ -433,17 +472,17 @@
             <div class="w3-container">
                 <div class="row">
                     <div class="col-md" id="impact">
-                    <img src="https://dl.dropboxusercontent.com/s/77xmnk6srsesfvy/flexible.png?dl=0" id="impact-icon" style="width:50px">
+                    <img src="https://dl.dropboxusercontent.com/s/754g6e8n6gz2bra/better-envornment.jpg?dl=0" id="impact-icon" style="width:70px">
                     <h3 class="impact-title">Better environment</h3>
                     <p>X electronics and office furniture donated to social programmes.</p>
                     </div>
                     <div class="col-md" id="impact">
-                    <img src="https://dl.dropboxusercontent.com/s/woy7rzmvsnzwq3w/contactless.png?dl=0" id="impact-icon" style="width:50px">
+                    <img src="https://dl.dropboxusercontent.com/s/ufbujewt6rvpxvd/better-education.jpg?dl=0" id="impact-icon" style="width:70px">
                     <h3 class="impact-title">Better education</h3>
                     <p>X number of schools digitized and learning quality improved </p>  
                     </div>
                     <div class="col-md" id="impact">
-                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="impact-icon" style="width:50px">
+                    <img src="https://dl.dropboxusercontent.com/s/77ai1i86dposr4q/better-economy.jpg?dl=0" id="impact-icon" style="width:70px">
                     <h3 class="impact-title">Better local economies</h3>
                     <p>X small and medium enterprises benefited from training, support and digitalisation</p>             
                     </div> 
@@ -458,32 +497,46 @@
                     </div>
                 <div class="row" id="row-portfolio-tab"> 
                     <div class="col-md" id='portfolio-tab'>
-                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                        <p>Laptops</p>
+                        <img src="https://dl.dropboxusercontent.com/s/07nfmwnzxvqsr7g/laptops.jpg?dl=0" id="why-icon" style="width:50px">
+                        <br>
+                        <br>
+                        <p><b>Laptops</b></p>
                     </div>
                     <div class="col-md" id='portfolio-tab'>
-                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                        <p>Monitors</p>
+                        <img src="https://dl.dropboxusercontent.com/s/7hnqe2uwsfvfqre/monitors.jpg?dl=0" id="why-icon" style="width:50px">
+                        <br>
+                        <br>
+                        <p><b>Monitors</b></p>
                     </div>
                     <div class="col-md" id='portfolio-tab'>
-                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                        <p>Headphones</p>
+                        <img src="https://dl.dropboxusercontent.com/s/9qxl9drjqq4kk2m/headphones.jpg?dl=0" id="why-icon" style="width:50px">
+                        <br>
+                        <br>
+                        <p><b>Headphones</b></p>
                     </div>
                     <div class="col-md" id='portfolio-tab'>
-                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                        <p>Tablets</p>
+                        <img src="https://dl.dropboxusercontent.com/s/h3027eitqq3iwqk/tablets.jpg?dl=0" id="why-icon" style="width:50px">
+                        <br>
+                        <br>
+                        <p><b>Tablets</b></p>
                     </div>
                     <div class="col-md" id='portfolio-tab'>
-                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                        <p>Smartphones</p>
+                        <img src="https://dl.dropboxusercontent.com/s/45d7m8g7awwvqm4/smartphones.jpg?dl=0" id="why-icon" style="width:50px">
+                        <br>
+                        <br>
+                        <p><b>Smartphones</b></p>
                     </div>
                     <div class="col-md" id='portfolio-tab'>
-                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                        <p>Chairs</p>
+                        <img src="https://dl.dropboxusercontent.com/s/i67dvi3zw8bml6o/chairs.jpg?dl=0" id="why-icon" style="width:50px">
+                        <br>
+                        <br>
+                        <p><b>Chairs</b></p>
                     </div>
                     <div class="col-md" id='portfolio-tab'>
-                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                        <p>Tables</p>
+                        <img src="https://dl.dropboxusercontent.com/s/gzej8pytdbwejhu/table.jpg?dl=0" id="why-icon" style="width:50px">
+                        <br>
+                        <br>
+                        <p><b>Tables</b></p>
                     </div>
                 </div>
             </div>
@@ -491,16 +544,15 @@
         <!--6. Customer Testimonials-->
         <section>
             <div class="w3-container">
-                <div>
-                    <svg class="web-space" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 322.01"><defs><style>.cls-1{fill:#40c1b1;}.cls-2{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="750.03" y1="148.73" x2="750" y2="351.37" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5fe0d5"/><stop offset="0.17" stop-color="#4ee0d3"/><stop offset="0.48" stop-color="#24e0cf"/><stop offset="0.88" stop-color="#02d9cb"/></linearGradient></defs><path class="cls-1" d="M1500,147" transform="translate(0 -97.99)"/><path class="cls-2" d="M0,420c80.6-18.48,807.82-80.93,1007-100.24a776,776,0,0,1,109.09-2.87c169.38,7.5,283.55,32.2,383.93,80.74v-252h0c-59.63-50.32-144.07-61.89-215.67-29.56l-46.55,21a171.84,171.84,0,0,1-93.68,13.6L921.27,120.56A137.83,137.83,0,0,0,849.46,130L568.9,247.82a230,230,0,0,1-198.71-10l-30.58-16.69a162,162,0,0,0-128.45-11.39L0,279.92V420" transform="translate(0 -97.99)"/></svg><div class="row">
+                <div class="row">
                     <div class="col-md-6">               
-                        <img src="https://dl.dropboxusercontent.com/s/lfzy2cb8ab72w64/rockstar.jpg?dl=0" id="testimonial-image">
+                        <img src="https://dl.dropboxusercontent.com/s/gq2tzk7neh9b0l8/education%20digital.jpg?dl=0" id="testimonial-image">
                     </div>
                     
                     <div class="col-md-6 vertical-center">  
                         <form>             
                         <p id="testimonial-text">"Rockstar has helped us connect with a network of enterprises that are willing to look beyond their bottom line and actually drive and lead for a better future for the people and the planet."</p>
-                        <p >Catherine Jones, Head of Partnerships, NGO ABC</p>
+                        <p>Catherine Jones, Head of Partnerships, NGO ABC</p>
                         </form>
                     </div>    
                 </div>         
@@ -510,15 +562,15 @@
                     <div class="col-sm-6 vertical-center">  
                         <form>             
                         <p id="testimonial-text">"We are dedicated to driving environmental and social innovation to ensure that we fulfil our responsibilities to the planet and improving people’s lives. We partner with social businesses that share our values and we feel Rockstar is an ideal fit. We are both committed to facilitating charities and NGOs the means to move forward in their social programmes and to promote our shared initiatives to reduce e-waste."</p>
-                        <p >Rebecca Oliver, Sustainability, SAP</p>    
+                        <p>Rebecca Oliver, Sustainability, SAP</p>    
                         </form>
                     </div>
                     <div class="col-md-6">               
-                        <img src="https://dl.dropboxusercontent.com/s/lfzy2cb8ab72w64/rockstar.jpg?dl=0" id="testimonial-image">
+                        <img src="https://dl.dropboxusercontent.com/s/z0o558rii3909tk/rebecca-oliver.jpg?dl=0" id="testimonial-image">
                     </div>
             </div>
             </div>
-        </section>  
+        </div></section>
         <!--7. Suppliers-->
         <section>
             <div class="w3-container">  
@@ -526,32 +578,31 @@
                     </div>
                       <div class="row">
                         <div class="col-md" id='supplier-tab'>
-                            <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                            <p>Monitors</p>
+                            <img src="https://dl.dropboxusercontent.com/s/qjkdgvtat8w7se5/web-SAP-logo.jpg?dl=0" id="why-icon" style="width:40%">
                         </div>
                         <div class="col-md" id='supplier-tab'>
-                            <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                            <p>Monitors</p>
+                            <img src="https://dl.dropboxusercontent.com/s/cbwtq7v2knk5yq3/web-accenture-logo.jpg?dl=0" id="why-icon" style="width:40%">
                         </div>
                         <div class="col-md" id='supplier-tab'>
-                            <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                            <p>Monitors</p>
+                            <img src="https://dl.dropboxusercontent.com/s/2eb437kc1opgq26/web-ey%20logo.jpg?dl=0" id="why-icon" style="width:40%">
                         </div>
                         <div class="col-md" id='supplier-tab'>
-                            <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                            <p>Monitors</p>
+                            <img src="https://dl.dropboxusercontent.com/s/d9xerxw6of19fw3/web-deloitte-logo.jpg?dl=0" id="why-icon" style="width:40%">
                         </div>
               </div>
         </section>
         <!--8. Get Started-->
         <section>
-            <div class="w3-container" id="get-started">
-                <div class="col-md" style="padding-top: 50px;text-align: center;">
+            <div class="w3-container" id="get-started"> 
+                <div class="col-md" style="text-align: center;color:white">
+                    <div class="row" style="padding-left: 350px;padding-right: 350px;padding-bottom: 20px;text-align: center;">    
+                        <p>We’re Rockstar. We help you make the right choice about the technology you need to make your social programmes thrive. Our innovative way gives you access to donations of re-used electronics and office furniture in great condition from global environmentally-friendly companies.</p>
+                        </div> 
                     <h3>Get access now</h3>
                 </div>
-                <div class="col-md" style="padding-bottom: 25px;text-align: center;">
+                <div class="col-md" style="padding-bottom: 50px;text-align: center;">
                     <div class="btn"><a href="">
-                        <input type="button" class="button" value="Register">
+                        <input type="button" class="access" value="Register">
                         </a>
                     </div>
                 </div>        
@@ -559,11 +610,8 @@
         </section>
         <!--8. Footer-->
         <section>        
-        <footer class="w3-container" >
-            <div class="row" style="padding-left: 300px;padding-right: 300px;padding-top:150px;padding-bottom:0px;text-align: center;color:white">    
-            <p>We’re Rockstar. We help you make the right choice about the technology you need to make your social programmes thrive. Our innovative way gives you access to donations of re-used electronics and office furniture in great condition from global environmentally-friendly companies.</p>
-            </div> 
-            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 240.35"><defs><style>.cls-1{fill:#40c1b1;}.cls-2{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="750.03" y1="247.57" x2="750.01" y2="398.81" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5fe0d5"/><stop offset="0.17" stop-color="#4ee0d3"/><stop offset="0.48" stop-color="#24e0cf"/><stop offset="0.88" stop-color="#02d9cb"/></linearGradient></defs><path class="cls-1" d="M1500,147" transform="translate(0 -209.65)"/><path class="cls-2" d="M0,427C583,161,1148,159,1500,314V450H0Z" transform="translate(0 -209.65)"/></svg><div class="row" style="background-color: #02d9cb;">  
+        <footer class="w3-container" id="footer">
+            <div class="row">  
                 <div class="col-md" id="footer-text">
                 <p class="footer-title">Company</p>
                 <br>
@@ -586,10 +634,8 @@
                 <p>Office furniture</p> 
                 </div>
                 </div>
-            
         </footer>
-        
-               
+                <label class="headline-middle"> </label>
                 <div class="row"style="padding-top:20px;padding-bottom:5px;">
                 <p>© Rockstar Technologies 2020. All rights reserved. Technology by SAP SE. </p>
                 </div>
@@ -601,7 +647,7 @@
                 
                 <div class="row"style="padding-top:10px;padding-bottom:10px;text-align:center">
                 <div class="col-md">
-                <a style="font-weight: 800;color: color: #D1D1D1">Terms and conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="font-weight: 800;color: color: #D1D1D1">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a style="font-weight: 800;color: color: #D1D1D1;">Privacy policy</a>
                 </div>
                 </div>
