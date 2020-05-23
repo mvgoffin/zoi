@@ -43,7 +43,7 @@
             /**classes**/
 
             * {
-            font-family: 'benton-sans', sans-serif;
+            font-family: 'avenir', sans-serif;
             font-size: 16px;
             font-variant: normal;
             box-sizing: border-box;
@@ -72,156 +72,129 @@
             margin-left:0px;
             }
 
-            #top-menu{
-            padding-top: 10px;
-            padding-bottom: 10px;
+            .col-md{
+            padding: 0;
+            margin: 0;
             }
 
-
-
-
+            h3{
+            font-weight:800;
+            }
+    
+            #row-sub-title.row{
+            padding-bottom: 10px;
+            }
         </style>
-<!--Style - Top Menu-->
+<!--Style - Nav Bar-->
 <style>
-            #navbar {
-            overflow: hidden;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            }
+        #navbar {
+        background-color:white;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        z-index: 100;
+        }
 
-            #navbar a {
-            float: left;
-            display: block;
-            text-align: center;
-            text-decoration: none;
-            }
+        #navbar.row{
+        padding: 15px;
+        margin: 0px;
+        }
 
-            #navbar a.active {
-            background-color: #4CAF50;
-            color: white;
-            }
-            #navbar a.active {
-            background-color: #4CAF50;
-            color: white;
-            }
+        #logo-nav-bar{
+        padding: 0px;
+        width: 100%;
+        margin: 0px;
+        }
+            
+        #text-nav-bar{
+        font-size: medium;
+        font-weight: bold;
+        padding: 5px;
+        }
 
-            .sticky {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            }
-
-            .sticky + .content {
-            padding-top: 60px;
-            }
+        #button-nav-bar{
+        padding:0px;
+        margin: 0px;
+        }
 
 </style>
-<!--Style - Banner-->
+<!--Style - Hero Banner-->
 <style>
-        
+        #banner.w3-container {
+        padding-bottom: 50px;
+        }
+            
         #banner {
         padding-top: 250px;
         padding-bottom: 150px;
         padding-left: 150px;
         padding-right: 150px;
-        background-image:url(https://dl.dropboxusercontent.com/s/c5uw8homi5eq8pz/Hero-banner-prime.png?dl=0);
+        background-image:url(https://dl.dropboxusercontent.com/s/lfzy2cb8ab72w64/rockstar.jpg?dl=0);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
-        }
+        }  
 
-        .banner-text {
-        color:white;
-        font-size: 6vw;
-        padding-top: 100px;
-        padding-bottom: 0px;
-        text-align: left;
-        font-weight: 800;
-        display:block;
-        margin: 0;
-        }
-
-        .banner-heading {
-        color:deepskyblue;
-        font-size: 5vw;
-        padding-top: 100px;
-        padding-bottom: 0px;
-        text-align: left;
-        font-weight: 800;
-        display:block;
-        margin: 0;
-        }
-
-        .banner-subheading {
-        color:white;
-        font-size: 4vw;
+        #search-bar{
         padding-top: 20px;
-        padding-bottom: 0px;
+        padding-bottom: 15px;
+        padding-left: 0px;
+        padding-right: 300px;  
+        }
+
+        #search-button{
+        margin-left: 10px;
+        }
+
+</style>
+<!--Style - About-->
+<style>
+    #about{
+        padding-left: 300px;
+        padding-right: 300px;
         text-align: left;
-        font-weight: 800;
-        display:block;
-        margin: 0;
-        }
+    }
 
-        .banner-subheading-2 {
-        color:aquamarine;
-        font-size: 35px;
-        margin-left:20px !important;
-        margin-right:20px !important;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-        }
+    #about-image{
+    width: 100%;
+    padding-right: 50px;
+    }
+</style>
+<!--Style - Impact-->
+<style>
+    #impact{
+    text-align: left;
+    }
+    #impact-icon{
+    padding-bottom: 10px;
+    }
+</style>
+<!--Style - Explore Portfolio-->
+<style>    
+    
+    #portfolio-tab{
+    text-align: center;
+    border-style: solid;
+    border-color: gray 1px;
+    margin: 10px;
+    }
 
-        @media only screen and (max-width: 990px) {
-        #banner {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 150px;
-        background-image:url(https://dl.dropboxusercontent.com/s/8vhmsu6ceq0h6te/Hero-banner-prime-mobile.png?dl=0);
-        background-position: center;
-        background-repeat: no-repeat;
-        }
-        .banner-text{
-        font-size: 50px;
-        margin-left:20px !important;
-        margin-right:20px !important;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-        }
+    #row-portfolio-tab.row{
+    padding-top: 10px;
+    }
 
-        .banner-heading {
-        color:deepskyblue;
-        font-size: 45px;
-        font-size: 50px;
-        margin-left:20px !important;
-        margin-right:20px !important;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-        }
-
-        .banner-subheading {
-        color:white;
-        font-size: 35px;
-        margin-left:20px !important;
-        margin-right:20px !important;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-        }
-
-        .banner-subheading-2 {
-        color:aquamarine;
-        font-size: 35px;
-        margin-left:20px !important;
-        margin-right:20px !important;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-        }
-        }
-              
-                        
 </style>
 <!--Style - Customer Testimonials-->
 <style>
+            #testimonial-image{
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            }
+
             .vertical-center {
                 margin-top: 50px;  /* Fallback for browsers do NOT support vh unit */
                 margin-bottom: 10px;  /* These two lines are counted as one :-)       */
@@ -234,191 +207,154 @@
             .vertical-center  { order: 1; }
             }
 </style>  
+<!--Style - 7. Suppliers-->
+<style>
+    #supplier-tab{
+    text-align: center;
+    margin: 10px;
+    }
+</style>
 <!--Style - Footer-->
 <style>
-    #footer.w3-container{
-      padding-top: 50px;
-      padding-bottom: 100px;
-    }
-
-    #footer-logo{
-      width: 15%;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 50px;
-      }
-
-      #footer {
-        background-color: white;
-        padding: 25px;
-
-    }
-    .footer-links{
-        text-align:left;
-        font-size: 12px;
-        color: white;
+        
+        
+        
+        #footer-logo{
+        width: 15%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
         }
-    #trust {
-        text-align:left;
-        color: white;
-        margin: 0;
-    }
-    #trustsap{
-        padding-top: 25px;
-        padding-bottom: 5px;
-        text-align:left;
-        color: white;
-        font-weight: bold;
-        margin: 0;
-    }
 
-    #trust-tc{
-        text-align:left;
-        font-size: 12px;
-        color: white;
-        margin: 0;
-        border-style: solid;
-        border-width: thin;
-        border-color: white;
-    }
+        #footer {
+        background-image:url(https://dl.dropboxusercontent.com/s/lfzy2cb8ab72w64/rockstar.jpg?dl=0);
+        background-position: center;
+        background-repeat: no-repeat;
+       
+        padding: 25px;
+        }
 
+        .headline-middle {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: auto;
+        width: 100%;
+        border-bottom: 1px solid #EFEFEF;
+        -webkit-appearance: none !important;
+        }
 </style> 
-
 </head>
 <body>
-        <!--1. Top Menu-->
+        <!--1. Nav Bar-->
         <section>
             <header>
                 <div class="w3-container">
                     <div class="row" id='navbar'>
-                        <div class="col-md-1">
-                            <p>LOGO</p>
+                        <div class="col-md-2">
+                            <img src="https://dl.dropboxusercontent.com/s/rorcaol43yzzoac/GCT%20logo%20white.png?dl=0" id="logo-nav-bar">
                           </div>
-                          <div class="col-md-1">
-                            <p>Our mission</p>
+                          <div class="col-md-4">
+                            <a id="text-nav-bar">Our mission</a>
+                            <a id="text-nav-bar">How it works</a>
+                            <a id="text-nav-bar">Top products</a>
                           </div>
-                          <div class="col-md-1">
-                            <p>How it works</p>
+                          <div class="col-md-3" id="space">
                           </div>
-                          <div class="col-md-1">
-                            <p>Top products</p>
-                          </div>
-                          <div class="col-md-6" id="space">
-                          </div>
-                          <div class="col-md-1">
-                            <p>Log in</p>
-                          </div>
-                          <div class="col-md-1">
-                            <p>Register</p>
+                          <div class="col-md-2">
+                            <a id="text-nav-bar">Log in</a>
+                            <button id="button-nav-bar">Register</button>
                           </div>
                         </div>
                     </div>
             </header>
         </section>
-        <!--2. Search Bar-->
-        <section>
-            <div class="w3-container">
-                <div class="row" style="padding-top:10px;padding-bottom:10px">
-                      <div class="col-md-1" id="space"> 
-                        </div>
-                      <div class="col-md-9">
-                        <input type="text" name="card-name" class="form-control" placeholder="Search for laptops, office chairs..."></input>
-                      </div>
-                      <div class="col-md-2">
-                      <button>Search</button>
-                        </div>
-                </div>
-            </div>
-        </section>
-        <!--3. Hero Banner-->
+        <!--2. Hero Banner-->
         <section>
         <div class="w3-container" id="banner"> 
                 <h1>A better planet starts here</h1>
                 <p>Convenient access to electronic and office furniture donations from forward-thinking companies</p>   
-                <button>Start Now</button> 
+                <div class="w3-container">
+                    <div class="row" id="search-bar">
+                        <div class="col-md">
+                        <input type="text" name="card-name" class="form-control" placeholder="Search for laptops, office chairs..."></input>
+                        </div>
+                        <button id="search-button">Search</button>
+                        </div>
+                    </div>
+                </div>
         </div>
         </section>
-        <!--4. Rockstar Presentation-->
+        <!--3. Impact-->
         <section>
-            <div class="w3-container">   
-                    <div class="row">
-                    <p>We’re Rockstar. We help you make the right choice about the technology you need to make your social programmes thrive. Our innovative way gives you access to donations of re-used electronics and office furniture in great condition from global environmentally-friendly companies.
-                    </div>
-                    <div class="row">
-                    <div class="col-md" style="text-align: center;">
-                    <img src="https://dl.dropboxusercontent.com/s/woy7rzmvsnzwq3w/contactless.png?dl=0" id="why-icon" style="width:50px">
+            <div class="w3-container">
+                <div class="row">
+                    <div class="col-md" id="impact">
+                    <img src="https://dl.dropboxusercontent.com/s/woy7rzmvsnzwq3w/contactless.png?dl=0" id="impact-icon" style="width:50px">
                     <p>Better education</p>  
                     <p>X number of schools digitized and learning quality improved </p>  
                     </div>
-                    <div class="col-md" style="text-align: center;">
-                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                    <div class="col-md" id="impact">
+                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="impact-icon" style="width:50px">
                     <p>Better businesses</p>
                     <p>X small and medium enterprises benefited from training, support and digitalisation</p>             
                     </div> 
-                    <div class="col-md" style="text-align: center;">
-                    <img src="https://dl.dropboxusercontent.com/s/77xmnk6srsesfvy/flexible.png?dl=0" id="why-icon" style="width:50px">
+                    <div class="col-md" id="impact">
+                    <img src="https://dl.dropboxusercontent.com/s/77xmnk6srsesfvy/flexible.png?dl=0" id="impact-icon" style="width:50px">
                     <p>Better environment</p>
                     <p>Xk electronics and office furniture donated to social programmes.</p>
                     </div>
                     </div>
-                    <div class="row">
-                    <p>charities and NGOs logos</p>
-                    </div>
               </div>
         </section>
-        <!--5. Explore Portfolio-->
+        <!--4. Explore Portfolio-->
         <section>
-        <div class="w3-container"> 
-            <div class="row"> 
-                <h2>Find what you need</h2>
-                </div>
-            <div class="row"> 
-                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
-                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                    <p>Laptops</p>
-                </div>
-                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
-                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                    <p>Monitors</p>
-                </div>
-                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
-                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                    <p>Headphones</p>
-                </div>
-                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
-                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                    <p>Tablets</p>
-                </div>
-                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
-                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                    <p>Smartphones</p>
-                </div>
-                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
-                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                    <p>Chairs</p>
-                </div>
-                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
-                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                    <p>Tables</p>
+            <div class="w3-container"> 
+                <div class="row" id="row-sub-title"> 
+                    <h3>Find what you need</h3>
+                    </div>
+                <div class="row" id="row-portfolio-tab"> 
+                    <div class="col-md" id='portfolio-tab'>
+                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                        <p>Laptops</p>
+                    </div>
+                    <div class="col-md" id='portfolio-tab'>
+                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                        <p>Monitors</p>
+                    </div>
+                    <div class="col-md" id='portfolio-tab'>
+                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                        <p>Headphones</p>
+                    </div>
+                    <div class="col-md" id='portfolio-tab'>
+                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                        <p>Tablets</p>
+                    </div>
+                    <div class="col-md" id='portfolio-tab'>
+                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                        <p>Smartphones</p>
+                    </div>
+                    <div class="col-md" id='portfolio-tab'>
+                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                        <p>Chairs</p>
+                    </div>
+                    <div class="col-md" id='portfolio-tab'>
+                        <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                        <p>Tables</p>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
         <!--6. Customer Testimonials-->
         <section>
             <div class="w3-container">
                 <div class="row">
-                    <div class="col-md-6"> 
-                        <form>                        
-                        <p>PHOTO</p>
-                        </form>
+                    <div class="col-md-6">               
+                        <img src="https://dl.dropboxusercontent.com/s/lfzy2cb8ab72w64/rockstar.jpg?dl=0" id="testimonial-image">
                     </div>
-                    <div class="col-sm-6 vertical-center">  
+                    <div class="col-md-6 vertical-center">  
                         <form>             
-                        <h2>Beneficiary</h2>
-                        <p>Name, last name, position at company</p>
-                        <p>"Rockstar has helped us connect with a network of enterprises that are willing to look beyond bottom line and actually drive and lead for a better future for the people and the planet."</p>
-                        </form>
+                        <p>"Rockstar has helped us connect with a network of enterprises that are willing to look beyond their bottom line and actually drive and lead for a better future for the people and the planet."</p>
+                        <p>Catherine Jones, Head of Partnerships, NGO ABC</p>
                         </form>
                     </div>    
                 </div>         
@@ -427,69 +363,87 @@
             <div class="row">
                     <div class="col-sm-6 vertical-center">  
                         <form>             
-                        <h2>Supporter</h2>
-                        <p>Name, last name, position at company</p>
-                        <p>"We are dedicated to driving environmental and social innovation to ensure that we fulfil our responsibilities to the planet and improving people’s lives. We only partner with social businesses that share our values and we feel Rockstar is an ideal fit. We are both committed to facilitating charities and NGOs the means to move forward in their social programmes and to promote our shared initiatives to reduce e-waste. Not many others are doing what Rockstar is doing, and we are very excited to be a part of it."</p>
+                        <p>"We are dedicated to driving environmental and social innovation to ensure that we fulfil our responsibilities to the planet and improving people’s lives. We partner with social businesses that share our values and we feel Rockstar is an ideal fit. We are both committed to facilitating charities and NGOs the means to move forward in their social programmes and to promote our shared initiatives to reduce e-waste."</p>
+                        <p>Rebecca Oliver, Sustainability, SAP</p>    
                         </form>
                     </div>
-                    <div class="col-md-6">
-                        <form>
-                        <p>PHOTO</p>
-                        </form>
-                        </div>
+                    <div class="col-md-6">               
+                        <img src="https://dl.dropboxusercontent.com/s/lfzy2cb8ab72w64/rockstar.jpg?dl=0" id="testimonial-image">
+                    </div>
             </div>
             </div>
         </section>  
-        <!--7. Customer Testimonials-->
+        <!--7. Suppliers-->
         <section>
             <div class="w3-container">   
-                    <div class="row">
-                        <h2>Benefit from a rockstar group</h2>
-                      </div>
+                <div class="row" id="row-sub-title"> 
+                    <h3>Our rockstar partners</h3>
+                    </div>
                       <div class="row">
-                      <p>Our network of partners and you make sure that we all contribute to circular economy.</p>
-                      </div>
-                      <div class="row">
-                        <div class="col-md" style="text-align: center;">
-                         <img src="https://dl.dropboxusercontent.com/s/woy7rzmvsnzwq3w/contactless.png?dl=0" id="why-icon" style="width:50px">
-                         <p>Partner Logo 1</p>  
+                        <div class="col-md" id='supplier-tab'>
+                            <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                            <p>Monitors</p>
                         </div>
-                        <div class="col-md" style="text-align: center;">
-                        <img src="https://dl.dropboxusercontent.com/s/woy7rzmvsnzwq3w/contactless.png?dl=0" id="why-icon" style="width:50px">
-                        <p>Partner Logo 1</p>  
-                       </div>
-                       <div class="col-md" style="text-align: center;">
-                        <img src="https://dl.dropboxusercontent.com/s/woy7rzmvsnzwq3w/contactless.png?dl=0" id="why-icon" style="width:50px">
-                        <p>Partner Logo 1</p>  
+                        <div class="col-md" id='supplier-tab'>
+                            <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                            <p>Monitors</p>
                         </div>
+                        <div class="col-md" id='supplier-tab'>
+                            <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                            <p>Monitors</p>
                         </div>
               </div>
         </section>
         <!--8. Footer-->
         <section>
         <footer class="w3-container" id="footer">
+           <div class="row" style="padding-left: 300px;padding-right: 300px;text-align: center;">
+                <p>We’re Rockstar. We help you make the right choice about the technology you need to make your social programmes thrive. Our innovative way gives you access to donations of re-used electronics and office furniture in great condition from global environmentally-friendly companies.</p>
+            </div> 
             <div class="row">
-                LOGO <img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" style="width:70px"> 
+            <img src="https://dl.dropboxusercontent.com/s/rorcaol43yzzoac/GCT%20logo%20white.png?dl=0" style="width:20%"> 
             </div>
             <div class="row">  
                 <div class="col-md">
                 <p class="heading-f">Company</p>
-                <p>About</p></a>
+                <p>Mission</p></a>
+                <p>How it works</p>
+                <p>Contact us</p>
                 <p>Terms of Service</p></a>
                 <p>Privacy Policy</p></a>
                 </div>
           
                 <div class="col-md">
-                <p>Contact</p>
-                <p><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p>
-                <p><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@greencourt</p>                  <p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hello@greencourt.io</p>
+                <p>Account</p>
+                <p>Log in</p>
+                <p>Register</p>                  
+                </div>
+
+                <div class="col-md">
+                <p>Products</p>
+                <p>Technology</p>
+                <p>Office furniture</p> 
                 </div>
                 </div>
 
-                <div class="row">
-                    <p>© Rockstar Technologies 2020. All rights reserved.</p> 
-                    <p>Technology by</p><img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" style="width:70px"> 
-                    </div>
+                <label class="headline-middle"> </label>
+
+                <div class="row"style="padding-top:15px;padding-bottom:5px;">
+                <p>© Rockstar Technologies 2020. All rights reserved. Technology by SAP SE. </p>
+                </div>
+                <div class="row" style="padding-top:0px;padding-bottom:15px;">
+                <img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" style="width:5%">
+                </div>
+
+                <label class="headline-middle"> </label>
+                
+                <div class="row"style="padding-top:5px;padding-bottom:5px;text-align:center">
+                <div class="col-md">
+                <a id="text-nav-bar">Terms and conditions</a>
+                <a id="text-nav-bar">Privacy policy</a>
+                </div>
+                </div>
+
         </footer>
         </section>
     </body>
