@@ -25,6 +25,11 @@ def rockstar_registration(request):
     template = 'rockstar_registration.html'
     return render(request,template,context)
 
+def rockstar_laptops(request):
+    context = locals()
+    template = 'rockstar_laptops.html'
+    return render(request,template,context)
+    
 def rockstar_product(request):
     context = locals()
     template = 'rockstar_product.html'
