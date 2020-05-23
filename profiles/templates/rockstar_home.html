@@ -136,7 +136,7 @@
         }
 
         #logo-nav-bar{
-        padding: 0px;
+        padding: 10px 10px;
         width: 60%;
         margin: 0px;
         text-align: right;
@@ -158,6 +158,46 @@
         margin: 0px;
         }
 
+        .button {
+        background: transparent;
+        display:block;border: 0px  solid;
+        color: black;
+        background:#02d9cb;  
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        padding: 10px 32px;
+        border-radius: 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        }
+
+        .button:hover{
+        background-color:darkseagreen;
+        border: 0px solid ;
+        color: black;
+        } 
+
+        .login {
+        background: transparent;
+        display:block;border: 0px  solid;
+        color: black;
+        background:white;  
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        padding: 10px 5px;
+        border-radius: 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        }
+
 </style>
 <!--Style - Hero Banner-->
 <style>
@@ -175,6 +215,30 @@
         background-repeat: no-repeat;
         background-size: 100%;
         }  
+
+        .search {
+        background: transparent;
+        display:block;border: 0px  solid;
+        color: black;
+        background:#02d9cb;  
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        padding: 5px 30px;
+        margin-left: 15px;
+        border-radius: 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        }
+
+        .search:hover{
+        background-color:darkseagreen;
+        border: 0px solid ;
+        color: black;
+        } 
 
         #search-bar{
         padding-top: 20px;
@@ -269,37 +333,31 @@
 <!--Get started-->
 <style>
         #get-started.w3-container {
-            background-color: blanchedalmond;
+            background-color: transparent;
         }
-
-        .button {
-        background: transparent;
-        display:block;border: 0px  solid;
-        color: black;
-        background:#22b573;  
-        font-weight: 600;
-        font-style: normal;
-        font-size: 15px;
-        padding: 10px 32px;
-        border-radius: 50px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
-        }
+        
 </style>
 <!--Style - Footer-->
 <style>
-        #footer {
-        background-image:url(https://dl.dropboxusercontent.com/s/lfzy2cb8ab72w64/rockstar.jpg?dl=0);
+        /**#footer {
+        background-image:url(https://dl.dropboxusercontent.com/s/110uf4bptkzaxp0/Artboard%201.png?dl=0);
         background-position: center;
         background-repeat: no-repeat;
+        }**/
+        svg {
+            z-index: -100;
+            float: right;
+            margin-top: -15%; 
         }
 
         .footer-title{
         font-weight: 800;
         font-size: large;
+        color: white;
+        }
+
+        #footer-text.col-md{
+            color: white;
         }
 
         .headline-middle {
@@ -307,7 +365,7 @@
         padding: 0px;
         margin: auto;
         width: 100%;
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid lightgray;
         -webkit-appearance: none !important;
         }
 </style> 
@@ -323,17 +381,17 @@
                             <img src="https://dl.dropboxusercontent.com/s/4eagi9px8sk8bb7/logo-b-rockstar.png?dl=0" id="logo-nav-bar">
                           </div>
                           <div class="col-md-4">
-                            <a id="text-nav-bar"><span>Our mission</span></a>
-                            <a id="text-nav-bar"><span>How it works</span></a>
-                            <a id="text-nav-bar"><span>Top products</span></a>
+                            <input type="button" class="login" value="Ou mission">
+                            <input type="button" class="login" value="How it works">
+                            <input type="button" class="login" value="Top products">
                           </div>
                           <div class="col-md-3" id="space">
                           </div>
                           <div class="col-md-1" style="text-align: right;padding-right: 10px;">
-                            <a id="text-nav-bar"><span>Log in</span></a>
+                            <input type="button" class="login" value="Log in">
                           </div>
                           <div class="col-md-1" style="padding: 0px;">
-                            <button id="button-nav-bar">Register</button>
+                            <input type="button" class="button" value="Register">
                           </div>
                         </div>
                     </div>
@@ -349,7 +407,7 @@
                         <div class="col-md">
                         <input type="text" name="card-name" class="form-control" placeholder="Search for laptops, office chairs..."></input>
                         </div>
-                        <button id="search-button">Search</button>
+                        <input type="button" class="search" value="Search">
                         </div>
                     </div>
                 </div>
@@ -475,7 +533,7 @@
                 <div class="col-md" style="padding-top: 50px;text-align: center;">
                     <h3>Get access now</h3>
                 </div>
-                <div class="col-md" style="padding-bottom: 50px;text-align: center;">
+                <div class="col-md" style="padding-bottom: 25px;text-align: center;">
                     <div class="btn"><a href="">
                         <input type="button" class="button" value="Register">
                         </a>
@@ -484,13 +542,13 @@
             </div>
         </section>
         <!--8. Footer-->
-        <section>
-        <footer class="w3-container" id="footer">
-           <div class="row" style="padding-left: 300px;padding-right: 300px;padding-bottom:0px;text-align: center;">    
+        <section>        
+        <footer class="w3-container" >
+            <div class="row" style="padding-left: 300px;padding-right: 300px;padding-top:150px;padding-bottom:0px;text-align: center;color:white">    
             <p>We’re Rockstar. We help you make the right choice about the technology you need to make your social programmes thrive. Our innovative way gives you access to donations of re-used electronics and office furniture in great condition from global environmentally-friendly companies.</p>
             </div> 
-            <div class="row">  
-                <div class="col-md">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 240.35"><defs><style>.cls-1{fill:#40c1b1;}.cls-2{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="750.03" y1="247.57" x2="750.01" y2="398.81" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5fe0d5"/><stop offset="0.17" stop-color="#4ee0d3"/><stop offset="0.48" stop-color="#24e0cf"/><stop offset="0.88" stop-color="#02d9cb"/></linearGradient></defs><path class="cls-1" d="M1500,147" transform="translate(0 -209.65)"/><path class="cls-2" d="M0,427C583,161,1148,159,1500,314V450H0Z" transform="translate(0 -209.65)"/></svg><div class="row" style="background-color: #02d9cb;">  
+                <div class="col-md" id="footer-text">
                 <p class="footer-title">Company</p>
                 <br>
                 <p>Mission</p></a>
@@ -498,24 +556,25 @@
                 <p>Contact us</p>
                 </div>
           
-                <div class="col-md">
+                <div class="col-md" id="footer-text">
                 <p class="footer-title">Account</p>
                 <br>
                 <p>Log in</p>
                 <p>Register</p>                  
                 </div>
 
-                <div class="col-md">
+                <div class="col-md" id="footer-text">
                 <p class="footer-title">Products</p>
                 <br>
                 <p>Technology</p>
                 <p>Office furniture</p> 
                 </div>
                 </div>
-
-                <label class="headline-middle"> </label>
-
-                <div class="row"style="padding-top:15px;padding-bottom:5px;">
+            
+        </footer>
+        
+               
+                <div class="row"style="padding-top:20px;padding-bottom:5px;">
                 <p>© Rockstar Technologies 2020. All rights reserved. Technology by SAP SE. </p>
                 </div>
                 <div class="row" style="padding-top:0px;padding-bottom:15px;">
@@ -526,12 +585,13 @@
                 
                 <div class="row"style="padding-top:10px;padding-bottom:10px;text-align:center">
                 <div class="col-md">
-                <a style="font-weight: 800;color: #EFEFEF;">Terms and conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a style="font-weight: 800;color: #EFEFEF;">Privacy policy</a>
+                <a style="font-weight: 800;color: color: #D1D1D1">Terms and conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="font-weight: 800;color: color: #D1D1D1;">Privacy policy</a>
                 </div>
                 </div>
 
         </footer>
         </section>
+        
     </body>
     </html>
