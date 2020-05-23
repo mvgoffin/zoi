@@ -80,6 +80,10 @@
         margin: 0;
         }
 
+        .web-space{
+        padding-top: 180px;
+        }
+
         h3{
         font-weight:800;
         }
@@ -136,7 +140,7 @@
         }
 
         #logo-nav-bar{
-        padding: 10px 10px;
+        padding: 10px 5px;
         width: 60%;
         margin: 0px;
         text-align: right;
@@ -161,7 +165,7 @@
         .button {
         background: transparent;
         display:block;border: 0px  solid;
-        color: black;
+        color: white;
         background:#02d9cb;  
         font-weight: 600;
         font-style: normal;
@@ -184,7 +188,7 @@
         .login {
         background: transparent;
         display:block;border: 0px  solid;
-        color: black;
+        color: white;
         background:white;  
         font-weight: 600;
         font-style: normal;
@@ -219,7 +223,7 @@
         .search {
         background: transparent;
         display:block;border: 0px  solid;
-        color: black;
+        color: white;
         background:#02d9cb;  
         font-weight: 600;
         font-style: normal;
@@ -311,6 +315,11 @@
             text-align: center;
             width: 100%;
             padding: 10px;
+            }
+
+            #testimonial-text {
+            font-size: 20px;
+            font-weight: 800;
             }
 
             .vertical-center {
@@ -476,14 +485,16 @@
         <!--6. Customer Testimonials-->
         <section>
             <div class="w3-container">
-                <div class="row">
+                <div>
+                    <svg class="web-space" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 322.01"><defs><style>.cls-1{fill:#40c1b1;}.cls-2{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="750.03" y1="148.73" x2="750" y2="351.37" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5fe0d5"/><stop offset="0.17" stop-color="#4ee0d3"/><stop offset="0.48" stop-color="#24e0cf"/><stop offset="0.88" stop-color="#02d9cb"/></linearGradient></defs><path class="cls-1" d="M1500,147" transform="translate(0 -97.99)"/><path class="cls-2" d="M0,420c80.6-18.48,807.82-80.93,1007-100.24a776,776,0,0,1,109.09-2.87c169.38,7.5,283.55,32.2,383.93,80.74v-252h0c-59.63-50.32-144.07-61.89-215.67-29.56l-46.55,21a171.84,171.84,0,0,1-93.68,13.6L921.27,120.56A137.83,137.83,0,0,0,849.46,130L568.9,247.82a230,230,0,0,1-198.71-10l-30.58-16.69a162,162,0,0,0-128.45-11.39L0,279.92V420" transform="translate(0 -97.99)"/></svg><div class="row">
                     <div class="col-md-6">               
                         <img src="https://dl.dropboxusercontent.com/s/lfzy2cb8ab72w64/rockstar.jpg?dl=0" id="testimonial-image">
                     </div>
+                    
                     <div class="col-md-6 vertical-center">  
                         <form>             
-                        <p>"Rockstar has helped us connect with a network of enterprises that are willing to look beyond their bottom line and actually drive and lead for a better future for the people and the planet."</p>
-                        <p>Catherine Jones, Head of Partnerships, NGO ABC</p>
+                        <p id="testimonial-text">"Rockstar has helped us connect with a network of enterprises that are willing to look beyond their bottom line and actually drive and lead for a better future for the people and the planet."</p>
+                        <p >Catherine Jones, Head of Partnerships, NGO ABC</p>
                         </form>
                     </div>    
                 </div>         
@@ -492,8 +503,8 @@
             <div class="row">
                     <div class="col-sm-6 vertical-center">  
                         <form>             
-                        <p>"We are dedicated to driving environmental and social innovation to ensure that we fulfil our responsibilities to the planet and improving people’s lives. We partner with social businesses that share our values and we feel Rockstar is an ideal fit. We are both committed to facilitating charities and NGOs the means to move forward in their social programmes and to promote our shared initiatives to reduce e-waste."</p>
-                        <p>Rebecca Oliver, Sustainability, SAP</p>    
+                        <p id="testimonial-text">"We are dedicated to driving environmental and social innovation to ensure that we fulfil our responsibilities to the planet and improving people’s lives. We partner with social businesses that share our values and we feel Rockstar is an ideal fit. We are both committed to facilitating charities and NGOs the means to move forward in their social programmes and to promote our shared initiatives to reduce e-waste."</p>
+                        <p >Rebecca Oliver, Sustainability, SAP</p>    
                         </form>
                     </div>
                     <div class="col-md-6">               
@@ -504,9 +515,8 @@
         </section>  
         <!--7. Suppliers-->
         <section>
-            <div class="w3-container">   
-                <div> 
-                    <h3 style="font-size:medium;font-weight: 800;color: gray;text-align: center;">Our rockstar partners</h3>
+            <div class="w3-container">  
+                <h3 style="font-size:medium;font-weight: 800;color: gray;text-align: center;">Our rockstar partners</h3>
                     </div>
                       <div class="row">
                         <div class="col-md" id='supplier-tab'>
