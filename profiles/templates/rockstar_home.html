@@ -58,6 +58,10 @@
             background-color: transparent;
             }
 
+            p{
+            margin-bottom: 5px;
+            }
+
             .w3-container {
             margin: 0px;
             padding: 0px;
@@ -165,9 +169,12 @@
 </style>
 <!--Style - Impact-->
 <style>
-    #impact{
+    #impact.col-md{
     text-align: left;
+    padding-left:30px;
+    padding-right:30px;
     }
+
     #impact-icon{
     padding-bottom: 10px;
     }
@@ -216,22 +223,14 @@
 </style>
 <!--Style - Footer-->
 <style>
-        
-        
-        
-        #footer-logo{
-        width: 15%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 50px;
-        }
-
         #footer {
         background-image:url(https://dl.dropboxusercontent.com/s/lfzy2cb8ab72w64/rockstar.jpg?dl=0);
         background-position: center;
         background-repeat: no-repeat;
-       
-        padding: 25px;
+        }
+
+        .footer-title{
+        font-weight: 800;
         }
 
         .headline-middle {
@@ -289,6 +288,11 @@
             <div class="w3-container">
                 <div class="row">
                     <div class="col-md" id="impact">
+                    <img src="https://dl.dropboxusercontent.com/s/77xmnk6srsesfvy/flexible.png?dl=0" id="impact-icon" style="width:50px">
+                    <p>Better environment</p>
+                    <p>Xk electronics and office furniture donated to social programmes.</p>
+                    </div>
+                    <div class="col-md" id="impact">
                     <img src="https://dl.dropboxusercontent.com/s/woy7rzmvsnzwq3w/contactless.png?dl=0" id="impact-icon" style="width:50px">
                     <p>Better education</p>  
                     <p>X number of schools digitized and learning quality improved </p>  
@@ -298,11 +302,6 @@
                     <p>Better businesses</p>
                     <p>X small and medium enterprises benefited from training, support and digitalisation</p>             
                     </div> 
-                    <div class="col-md" id="impact">
-                    <img src="https://dl.dropboxusercontent.com/s/77xmnk6srsesfvy/flexible.png?dl=0" id="impact-icon" style="width:50px">
-                    <p>Better environment</p>
-                    <p>Xk electronics and office furniture donated to social programmes.</p>
-                    </div>
                     </div>
               </div>
         </section>
@@ -376,8 +375,8 @@
         <!--7. Suppliers-->
         <section>
             <div class="w3-container">   
-                <div class="row" id="row-sub-title"> 
-                    <h3>Our rockstar partners</h3>
+                <div> 
+                    <h3 style="font-size:medium;font-weight: 800;color: gray;text-align: center;">Our rockstar partners</h3>
                     </div>
                       <div class="row">
                         <div class="col-md" id='supplier-tab'>
@@ -392,35 +391,45 @@
                             <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
                             <p>Monitors</p>
                         </div>
+                        <div class="col-md" id='supplier-tab'>
+                            <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                            <p>Monitors</p>
+                        </div>
               </div>
+        </section>
+        <!--8. Get Started-->
+        <section>
+            <div class="w3-container">
+                <div class="row" style="background-color:beige;">
+                <p style="text-align: center;">Get access now</p><button id="search-button">Register</button>
+                </div>
+            </div>
         </section>
         <!--8. Footer-->
         <section>
         <footer class="w3-container" id="footer">
-           <div class="row" style="padding-left: 300px;padding-right: 300px;text-align: center;">
-                <p>We’re Rockstar. We help you make the right choice about the technology you need to make your social programmes thrive. Our innovative way gives you access to donations of re-used electronics and office furniture in great condition from global environmentally-friendly companies.</p>
+           <div class="row" style="padding-left: 300px;padding-right: 300px;padding-bottom:0px;padding-top:100px;text-align: center;">    
+            <p>We’re Rockstar. We help you make the right choice about the technology you need to make your social programmes thrive. Our innovative way gives you access to donations of re-used electronics and office furniture in great condition from global environmentally-friendly companies.</p>
             </div> 
             <div class="row">
             <img src="https://dl.dropboxusercontent.com/s/rorcaol43yzzoac/GCT%20logo%20white.png?dl=0" style="width:20%"> 
             </div>
             <div class="row">  
                 <div class="col-md">
-                <p class="heading-f">Company</p>
+                <p class="footer-title">Company</p>
                 <p>Mission</p></a>
                 <p>How it works</p>
                 <p>Contact us</p>
-                <p>Terms of Service</p></a>
-                <p>Privacy Policy</p></a>
                 </div>
           
                 <div class="col-md">
-                <p>Account</p>
+                <p class="footer-title">Account</p>
                 <p>Log in</p>
                 <p>Register</p>                  
                 </div>
 
                 <div class="col-md">
-                <p>Products</p>
+                <p class="footer-title">Products</p>
                 <p>Technology</p>
                 <p>Office furniture</p> 
                 </div>
@@ -437,10 +446,10 @@
 
                 <label class="headline-middle"> </label>
                 
-                <div class="row"style="padding-top:5px;padding-bottom:5px;text-align:center">
+                <div class="row"style="padding-top:10px;padding-bottom:10px;text-align:center">
                 <div class="col-md">
-                <a id="text-nav-bar">Terms and conditions</a>
-                <a id="text-nav-bar">Privacy policy</a>
+                <a style="font-weight: 800;color: #EFEFEF;">Terms and conditions</a>
+                <a style="font-weight: 800;color: #EFEFEF;">Privacy policy</a>
                 </div>
                 </div>
 
