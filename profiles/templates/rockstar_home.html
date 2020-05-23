@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content= "width=device-width, user-scalable=no">
@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/xdp3ien.css">
         <link rel="stylesheet" href="https://use.typekit.net/oca5evh.css">
-        
+
         <!--Mobile Bubble Menu-->
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
@@ -23,9 +23,9 @@
 
         <!--favicon-->
         <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/pfb78baffcfp8z4/GCT%20logo%20favicon.jpg?dl=0">
-        
+
         <title>
-            Rockstar | Reuse and thrive
+        Rockstar | Reuse and thrive
         </title>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -38,57 +38,85 @@
         gtag('config', 'UA-141267999-1');
         </script>
 
-        <!-- CSS for BP-->
-        <style media="screen">
-            /**classes**/
+<!-- CSS-->
+<style media="screen">
 
-            * {
-            font-family: 'avenir', sans-serif;
-            font-size: 16px;
-            font-variant: normal;
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            -webkit-font-smoothing: antialiased;
-            }
+        * {
+        font-family: 'avenir', sans-serif;
+        font-size: 16px;
+        font-variant: normal;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        }
 
-            body, html {
-            margin: 0px;
-            height: 100%;
-            background-color: transparent;
-            }
+        body, html {
+        margin: 0px;
+        height: 100%;
+        background-color: transparent;
+        }
 
-            p{
-            margin-bottom: 5px;
-            }
+        p{
+        margin-bottom: 5px;
+        }
 
-            .w3-container {
-            margin: 0px;
-            padding: 0px;
-            }
-            
-            .row{
-            padding-top: 50px;
-            padding-bottom: 50px;
-            padding-left: 150px;
-            padding-right: 150px;
-            margin-right:0px;
-            margin-left:0px;
-            }
+        .w3-container {
+        margin: 0px;
+        padding: 0px;
+        }
 
-            .col-md{
-            padding: 0;
-            margin: 0;
-            }
+        .row{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 150px;
+        padding-right: 150px;
+        margin-right:0px;
+        margin-left:0px;
+        }
 
-            h3{
-            font-weight:800;
-            }
-    
-            #row-sub-title.row{
-            padding-bottom: 10px;
-            }
-        </style>
+        .col-md{
+        padding: 0;
+        margin: 0;
+        }
+
+        h3{
+        font-weight:800;
+        }
+
+        button {
+        background: transparent;
+        display:block;border: 0px  solid;
+        color: black;
+        background:#22b573;  
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        text-transform: normal;
+        transition: background-color 170ms  ease-out,color 170ms ease-out;
+        border-radius: 50px;
+        width: 100px;
+        }
+
+        button:focus{
+        background-color:#FFF8F8;
+        border: 0px solid ;
+        color: black;
+        border-width: 1px;
+        }
+
+        button:hover {
+        background-color:darkseagreen;
+        border: 0px solid ;
+        color: black;
+        }
+
+        #row-sub-title.row{
+        padding-bottom: 10px;
+        }
+
+
+</style>
 <!--Style - Nav Bar-->
 <style>
         #navbar {
@@ -109,14 +137,20 @@
 
         #logo-nav-bar{
         padding: 0px;
-        width: 100%;
+        width: 60%;
         margin: 0px;
+        text-align: right;
         }
-            
+         
         #text-nav-bar{
         font-size: medium;
         font-weight: bold;
-        padding: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        }
+
+        #text-nav-bar :hover{
+        text-decoration: underline;
         }
 
         #button-nav-bar{
@@ -132,7 +166,7 @@
         }
             
         #banner {
-        padding-top: 250px;
+        padding-top: 300px;
         padding-bottom: 150px;
         padding-left: 150px;
         padding-right: 150px;
@@ -178,15 +212,28 @@
     #impact-icon{
     padding-bottom: 10px;
     }
+
+    .impact-title{
+        font-weight: 800;
+        font-size: large;
+        }
+    
 </style>
 <!--Style - Explore Portfolio-->
 <style>    
     
     #portfolio-tab{
     text-align: center;
-    border-style: solid;
-    border-color: gray 1px;
+    border-style: 1px solid;
+    border-color: #D1D1D1;
+    border-radius: 10px;
     margin: 10px;
+    box-shadow: 0px 4px 6px #D1D1D1;
+    -webkit-appearance: none !important;
+    }
+
+    #portfolio-tab.col-md{
+    padding: 20px;
     }
 
     #row-portfolio-tab.row{
@@ -203,8 +250,6 @@
             }
 
             .vertical-center {
-                margin-top: 50px;  /* Fallback for browsers do NOT support vh unit */
-                margin-bottom: 10px;  /* These two lines are counted as one :-)       */
                 display: flex;
                 align-items: center;
             }
@@ -221,6 +266,29 @@
     margin: 10px;
     }
 </style>
+<!--Get started-->
+<style>
+        #get-started.w3-container {
+            background-color: blanchedalmond;
+        }
+
+        .button {
+        background: transparent;
+        display:block;border: 0px  solid;
+        color: black;
+        background:#22b573;  
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        padding: 10px 32px;
+        border-radius: 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        }
+</style>
 <!--Style - Footer-->
 <style>
         #footer {
@@ -231,6 +299,7 @@
 
         .footer-title{
         font-weight: 800;
+        font-size: large;
         }
 
         .headline-middle {
@@ -238,29 +307,32 @@
         padding: 0px;
         margin: auto;
         width: 100%;
-        border-bottom: 1px solid #EFEFEF;
+        border-bottom: 1px solid gray;
         -webkit-appearance: none !important;
         }
 </style> 
 </head>
+
 <body>
         <!--1. Nav Bar-->
         <section>
             <header>
                 <div class="w3-container">
                     <div class="row" id='navbar'>
-                        <div class="col-md-2">
-                            <img src="https://dl.dropboxusercontent.com/s/rorcaol43yzzoac/GCT%20logo%20white.png?dl=0" id="logo-nav-bar">
+                        <div class="col-md-2" style="text-align: center;">
+                            <img src="https://dl.dropboxusercontent.com/s/4eagi9px8sk8bb7/logo-b-rockstar.png?dl=0" id="logo-nav-bar">
                           </div>
                           <div class="col-md-4">
-                            <a id="text-nav-bar">Our mission</a>
-                            <a id="text-nav-bar">How it works</a>
-                            <a id="text-nav-bar">Top products</a>
+                            <a id="text-nav-bar"><span>Our mission</span></a>
+                            <a id="text-nav-bar"><span>How it works</span></a>
+                            <a id="text-nav-bar"><span>Top products</span></a>
                           </div>
                           <div class="col-md-3" id="space">
                           </div>
-                          <div class="col-md-2">
-                            <a id="text-nav-bar">Log in</a>
+                          <div class="col-md-1" style="text-align: right;padding-right: 10px;">
+                            <a id="text-nav-bar"><span>Log in</span></a>
+                          </div>
+                          <div class="col-md-1" style="padding: 0px;">
                             <button id="button-nav-bar">Register</button>
                           </div>
                         </div>
@@ -289,17 +361,17 @@
                 <div class="row">
                     <div class="col-md" id="impact">
                     <img src="https://dl.dropboxusercontent.com/s/77xmnk6srsesfvy/flexible.png?dl=0" id="impact-icon" style="width:50px">
-                    <p>Better environment</p>
-                    <p>Xk electronics and office furniture donated to social programmes.</p>
+                    <h3 class="impact-title">Better environment</h3>
+                    <p>X electronics and office furniture donated to social programmes.</p>
                     </div>
                     <div class="col-md" id="impact">
                     <img src="https://dl.dropboxusercontent.com/s/woy7rzmvsnzwq3w/contactless.png?dl=0" id="impact-icon" style="width:50px">
-                    <p>Better education</p>  
+                    <h3 class="impact-title">Better education</h3>
                     <p>X number of schools digitized and learning quality improved </p>  
                     </div>
                     <div class="col-md" id="impact">
                     <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="impact-icon" style="width:50px">
-                    <p>Better businesses</p>
+                    <h3 class="impact-title">Better local economies</h3>
                     <p>X small and medium enterprises benefited from training, support and digitalisation</p>             
                     </div> 
                     </div>
@@ -399,24 +471,28 @@
         </section>
         <!--8. Get Started-->
         <section>
-            <div class="w3-container">
-                <div class="row" style="background-color:beige;">
-                <p style="text-align: center;">Get access now</p><button id="search-button">Register</button>
+            <div class="w3-container" id="get-started">
+                <div class="col-md" style="padding-top: 50px;text-align: center;">
+                    <h3>Get access now</h3>
                 </div>
+                <div class="col-md" style="padding-bottom: 50px;text-align: center;">
+                    <div class="btn"><a href="">
+                        <input type="button" class="button" value="Register">
+                        </a>
+                    </div>
+                </div>        
             </div>
         </section>
         <!--8. Footer-->
         <section>
         <footer class="w3-container" id="footer">
-           <div class="row" style="padding-left: 300px;padding-right: 300px;padding-bottom:0px;padding-top:100px;text-align: center;">    
+           <div class="row" style="padding-left: 300px;padding-right: 300px;padding-bottom:0px;text-align: center;">    
             <p>We’re Rockstar. We help you make the right choice about the technology you need to make your social programmes thrive. Our innovative way gives you access to donations of re-used electronics and office furniture in great condition from global environmentally-friendly companies.</p>
             </div> 
-            <div class="row">
-            <img src="https://dl.dropboxusercontent.com/s/rorcaol43yzzoac/GCT%20logo%20white.png?dl=0" style="width:20%"> 
-            </div>
             <div class="row">  
                 <div class="col-md">
                 <p class="footer-title">Company</p>
+                <br>
                 <p>Mission</p></a>
                 <p>How it works</p>
                 <p>Contact us</p>
@@ -424,12 +500,14 @@
           
                 <div class="col-md">
                 <p class="footer-title">Account</p>
+                <br>
                 <p>Log in</p>
                 <p>Register</p>                  
                 </div>
 
                 <div class="col-md">
                 <p class="footer-title">Products</p>
+                <br>
                 <p>Technology</p>
                 <p>Office furniture</p> 
                 </div>
@@ -448,7 +526,7 @@
                 
                 <div class="row"style="padding-top:10px;padding-bottom:10px;text-align:center">
                 <div class="col-md">
-                <a style="font-weight: 800;color: #EFEFEF;">Terms and conditions</a>
+                <a style="font-weight: 800;color: #EFEFEF;">Terms and conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a style="font-weight: 800;color: #EFEFEF;">Privacy policy</a>
                 </div>
                 </div>
