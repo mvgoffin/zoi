@@ -147,6 +147,11 @@
         #navbar.row{
         padding: 15px;
         margin: 0px;
+        border-style: solid;
+        border-color:#02d9cb;
+        border-top-style:hidden;
+        border-left-style: hidden;
+        border-right-style: hidden;
         }
 
         #logo-nav-bar{
@@ -165,12 +170,12 @@
         text-decoration: none;
         }
 
-        .col-md-4{
-        padding-top: 10px;
-        }
-
         #text-nav-bar :hover{
         text-decoration: underline;
+        }
+
+        .col-md-4{
+        padding-top: 10px;
         }
 
         #button-nav-bar{
@@ -226,11 +231,31 @@
         }
             
         #registration {
-        padding-top: 300px;
-        padding-bottom: 150px;
+        padding-top: 0px;
+        padding-bottom: 50px;
         padding-left: 150px;
         padding-right: 150px;
         }  
+
+        #registration.row{
+        padding:50px
+        }
+
+        .terms {
+        text-align: center;
+        font-size: 12px;
+        color: gray;
+        padding-bottom: 10px;
+        }    
+
+        .form-group{
+        text-align: center;
+        }
+
+        #register-form{
+        padding-top:50px;
+        }
+
 </style>
 <!--Style - Footer-->
 <style>
@@ -290,12 +315,92 @@
         <!--2. Registration-->
         <section>
             <div class="w3-container" id="registration">
-                <div class="row">
-                <p>registration form</p>
+                <div class="row" id="registration">
+
+            <!--Registration Form-->
+            <!--Checkout Account Form-->
+            <form class="col-md"method="POST" action="{% url 'rockstar_home' %}">{% csrf_token %}
+                <div id='register-form'>
+                <h3 class="home-heading">Create your account</h3>
+                <br>
+                
+                <label class="home-heading" for="id_name"><b>First Name</b></label>
+                <input type="text" name="name" class="form-control" maxlength="100" id="id_name">
+                <br>
+
+                <label class="home-heading" for="id_name"><b>Last Name</b></label>
+                <input type="text" name="name" class="form-control" maxlength="100" id="id_name">
+                <br>
+                
+                <label class="home-heading" for="id_email"><b>Password</b></label>
+                <input type="email" name="email" class="form-control" maxlength="100" id="id_email">
+                <br>
+                <label class="home-heading" for="id_email"><b>Confirm Password</b></label>
+                <input type="email" name="email" class="form-control" maxlength="100" id="id_email">
+                <br>
+
+                <label class="home-heading" for="id_email"><b>Email</b></label>
+                <input type="email" name="email" class="form-control" maxlength="100" id="id_email">
+                <br>
+
+                <label class="home-heading" for="id_email"><b>Country</b></label>
+                <select class="form-control" id="country" name="country">
+                  <option value="Australia">Australia</option>
+                  <option value="Canada">Canada</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="United States">United States</option>
+                </select>
+                <br>
+
+                <label class="home-heading" for="id_name"><b>I am</b></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Supplier</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Beneficiary</label>
+                <br>
+    
+                <br> 
+                <label class="home-heading" for="id_address"><b>Company Name</b></label>
+                <input type="text" name="address" class="form-control" maxlength="100" id="id_address" placeholder="">
+                <small class='small'>Must be a legally registered company</small>
+                <br> 
+                
+                <br> 
+                <label class="home-heading" for="id_postcode"><b>Company Registration Number</b></label><input type="text" name="company-number" class="form-control" maxlength="7" id="id_postcode"placeholder="">
+                <br>
+
+                  <div class="form-group">  
+                    <a href="https://www.demodap.com/rockstar_home"><input type="button" class="button" value="Confirm"></a>
+                  </div>
+                  <p class="terms">
+                    By continuing, you agree to our Terms of Use and Privacy Policy.
+                    </p>     
+                  <p class="terms">
+                    All transactions are secure and encrypted
+                    </p>    
+
+                    <!--(reasons)-->
+                    <br>
+                    <div class="row" style="padding: 0;">
+                      <div class="col-md" style="text-align: center;">
+                      <img src="https://dl.dropboxusercontent.com/s/754g6e8n6gz2bra/better-envornment.jpg?dl=0" id="why-icon" style="width:50px">
+                      <p class="why-text">Donate electronics and office furniture to reduce e-waste</p>
+                      
+                      </div>
+                      <div class="col-md" style="text-align: center;">
+                      <img src="https://dl.dropboxusercontent.com/s/ufbujewt6rvpxvd/better-education.jpg?dl=0" id="why-icon" style="width:50px">
+                      <p class="why-text">Access tech to digitise schools and improve education</p>  
+                                      
+                        </div> 
+                      <div class="col-md" style="text-align: center;">
+                      <img src="https://dl.dropboxusercontent.com/s/77ai1i86dposr4q/better-economy.jpg?dl=0" id="why-icon" style="width:50px">
+                      <p class="why-text">Boost economic conditions with technology and training</p>
+                          </div>
+                      </div>
+                  </div>
+               </form>
             </div>
             </div>
+            <label class="headline-middle"> </label>
         </section>
-        
         <!--3. Footer-->
         <section>        
         <footer class="w3-container" id="footer">
