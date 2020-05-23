@@ -58,121 +58,169 @@
             background-color: transparent;
             }
 
+            .w3-container {
+            margin: 0px;
+            padding: 0px;
+            }
+            
             .row{
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 150px;
+            padding-right: 150px;
             margin-right:0px;
             margin-left:0px;
+            }
+
+            #top-menu{
+            padding-top: 10px;
+            padding-bottom: 10px;
             }
 
 
 
 
         </style>
-                <style>
-                            /* For width larger than 990px: */
-                            #banner {
-                            padding-top: 250px;
-                            padding-bottom: 150px;
-                            padding-left: 150px;
-                            padding-right: 150px;
-                            background-image:url(https://dl.dropboxusercontent.com/s/c5uw8homi5eq8pz/Hero-banner-prime.png?dl=0);
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: 100%;
-                            }
-                    
-                        .banner-text {
-                              color:white;
-                              font-size: 6vw;
-                              padding-top: 100px;
-                              padding-bottom: 0px;
-                              text-align: left;
-                              font-weight: 800;
-                              display:block;
-                              margin: 0;
-                        }
+<!--Style - Top Menu-->
+<style>
+            #navbar {
+            overflow: hidden;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            }
+
+            #navbar a {
+            float: left;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            }
+
+            #navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+            }
+            #navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+            }
+
+            .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            }
+
+            .sticky + .content {
+            padding-top: 60px;
+            }
+
+</style>
+<!--Style - Banner-->
+<style>
+        
+        #banner {
+        padding-top: 250px;
+        padding-bottom: 150px;
+        padding-left: 150px;
+        padding-right: 150px;
+        background-image:url(https://dl.dropboxusercontent.com/s/c5uw8homi5eq8pz/Hero-banner-prime.png?dl=0);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        }
+
+        .banner-text {
+        color:white;
+        font-size: 6vw;
+        padding-top: 100px;
+        padding-bottom: 0px;
+        text-align: left;
+        font-weight: 800;
+        display:block;
+        margin: 0;
+        }
+
+        .banner-heading {
+        color:deepskyblue;
+        font-size: 5vw;
+        padding-top: 100px;
+        padding-bottom: 0px;
+        text-align: left;
+        font-weight: 800;
+        display:block;
+        margin: 0;
+        }
+
+        .banner-subheading {
+        color:white;
+        font-size: 4vw;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        text-align: left;
+        font-weight: 800;
+        display:block;
+        margin: 0;
+        }
+
+        .banner-subheading-2 {
+        color:aquamarine;
+        font-size: 35px;
+        margin-left:20px !important;
+        margin-right:20px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        }
+
+        @media only screen and (max-width: 990px) {
+        #banner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 150px;
+        background-image:url(https://dl.dropboxusercontent.com/s/8vhmsu6ceq0h6te/Hero-banner-prime-mobile.png?dl=0);
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+        .banner-text{
+        font-size: 50px;
+        margin-left:20px !important;
+        margin-right:20px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        }
+
+        .banner-heading {
+        color:deepskyblue;
+        font-size: 45px;
+        font-size: 50px;
+        margin-left:20px !important;
+        margin-right:20px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        }
+
+        .banner-subheading {
+        color:white;
+        font-size: 35px;
+        margin-left:20px !important;
+        margin-right:20px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        }
+
+        .banner-subheading-2 {
+        color:aquamarine;
+        font-size: 35px;
+        margin-left:20px !important;
+        margin-right:20px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        }
+        }
               
-                        .banner-heading {
-                              color:deepskyblue;
-                              font-size: 5vw;
-                              padding-top: 100px;
-                              padding-bottom: 0px;
-                              text-align: left;
-                              font-weight: 800;
-                              display:block;
-                              margin: 0;
-                        }
-              
-                        .banner-subheading {
-                              color:white;
-                              font-size: 4vw;
-                              padding-top: 20px;
-                              padding-bottom: 0px;
-                              text-align: left;
-                              font-weight: 800;
-                              display:block;
-                              margin: 0;
-                        }
-              
-                        .banner-subheading-2 {
-                              color:aquamarine;
-                              font-size: 35px;
-                              margin-left:20px !important;
-                              margin-right:20px !important;
-                              padding-left: 0px !important;
-                              padding-right: 0px !important;
-                            }
                         
-                        @media only screen and (max-width: 990px) {
-                        #banner {
-                          padding-top: 50px;
-                          padding-bottom: 50px;
-                          padding-left: 150px;
-                          background-image:url(https://dl.dropboxusercontent.com/s/8vhmsu6ceq0h6te/Hero-banner-prime-mobile.png?dl=0);
-                          background-position: center;
-                          background-repeat: no-repeat;
-                        }
-                        .banner-text{
-                            font-size: 50px;
-                            margin-left:20px !important;
-                            margin-right:20px !important;
-                            padding-left: 0px !important;
-                            padding-right: 0px !important;
-                          }
-              
-                          .banner-heading {
-                              color:deepskyblue;
-                              font-size: 45px;
-                              font-size: 50px;
-                              margin-left:20px !important;
-                              margin-right:20px !important;
-                              padding-left: 0px !important;
-                              padding-right: 0px !important;
-                            }
-              
-                            .banner-subheading {
-                              color:white;
-                              font-size: 35px;
-                              margin-left:20px !important;
-                              margin-right:20px !important;
-                              padding-left: 0px !important;
-                              padding-right: 0px !important;
-                            }
-              
-                            .banner-subheading-2 {
-                              color:aquamarine;
-                              font-size: 35px;
-                              margin-left:20px !important;
-                              margin-right:20px !important;
-                              padding-left: 0px !important;
-                              padding-right: 0px !important;
-                            }
-                        }
-              
-                        
-                        </style>
-<!--Style Customer Testimonials-->
+</style>
+<!--Style - Customer Testimonials-->
 <style>
             .vertical-center {
                 margin-top: 50px;  /* Fallback for browsers do NOT support vh unit */
@@ -185,25 +233,75 @@
             .row2 { display: flex; flex-flow: column; }
             .vertical-center  { order: 1; }
             }
-            </style>    
-    </head>
-    <body>
+</style>  
+<!--Style - Footer-->
+<style>
+    #footer.w3-container{
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+
+    #footer-logo{
+      width: 15%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 50px;
+      }
+
+      #footer {
+        background-color: white;
+        padding: 25px;
+
+    }
+    .footer-links{
+        text-align:left;
+        font-size: 12px;
+        color: white;
+        }
+    #trust {
+        text-align:left;
+        color: white;
+        margin: 0;
+    }
+    #trustsap{
+        padding-top: 25px;
+        padding-bottom: 5px;
+        text-align:left;
+        color: white;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    #trust-tc{
+        text-align:left;
+        font-size: 12px;
+        color: white;
+        margin: 0;
+        border-style: solid;
+        border-width: thin;
+        border-color: white;
+    }
+
+</style> 
+
+</head>
+<body>
         <!--1. Top Menu-->
         <section>
             <header>
                 <div class="w3-container">
-                    <div class="row">
+                    <div class="row" id='navbar'>
                         <div class="col-md-1">
                             <p>LOGO</p>
                           </div>
                           <div class="col-md-1">
-                            <p>ABC</p>
+                            <p>Our mission</p>
                           </div>
                           <div class="col-md-1">
-                            <p>ABC</p>
+                            <p>How it works</p>
                           </div>
                           <div class="col-md-1">
-                            <p>ABC</p>
+                            <p>Top products</p>
                           </div>
                           <div class="col-md-6" id="space">
                           </div>
@@ -224,7 +322,7 @@
                       <div class="col-md-1" id="space"> 
                         </div>
                       <div class="col-md-9">
-                        <input type="text" name="card-name" class="form-control" id="card-name" placeholder="Search Skip or Container">
+                        <input type="text" name="card-name" class="form-control" placeholder="Search for laptops, office chairs..."></input>
                       </div>
                       <div class="col-md-2">
                       <button>Search</button>
@@ -234,67 +332,74 @@
         </section>
         <!--3. Hero Banner-->
         <section>
-            <div class="w3-container" id="banner"> 
-                <h2>Title</h2>
-                <p>Description</p>   
+        <div class="w3-container" id="banner"> 
+                <h1>A better planet starts here</h1>
+                <p>Convenient access to electronic and office furniture donations from forward-thinking companies</p>   
                 <button>Start Now</button> 
-                </div>
+        </div>
         </section>
         <!--4. Rockstar Presentation-->
         <section>
             <div class="w3-container">   
                     <div class="row">
-                        <p>We’re Rockstar. We help you make the right choice about the technology you need to make your social programmes thrive. Our innovative way gives you access to donations of re-used electronics and office furniture in great condition from global environmentally-friendly companies.
-                      </div>
-                      <div class="row">
-                        <div class="col-md" style="text-align: center;">
-                         <img src="https://dl.dropboxusercontent.com/s/woy7rzmvsnzwq3w/contactless.png?dl=0" id="why-icon" style="width:50px">
-                         <p>Better education</p>  
-                         <p>X number of schools digitized and learning quality improved </p>  
-                        </div>
-                        <div class="col-md" style="text-align: center;">
-                         <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
-                         <p>Better businesses</p>
-                         <p>X small and medium enterprises benefited from training, support and digitalisation</p>             
-                          </div> 
-                        <div class="col-md" style="text-align: center;">
-                         <img src="https://dl.dropboxusercontent.com/s/77xmnk6srsesfvy/flexible.png?dl=0" id="why-icon" style="width:50px">
-                         <p>Better environment</p>
-                         <p>Xk electronics and office furniture donated to social programmes.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <p>charities and NGOs logos</p>
-                        </div>
+                    <p>We’re Rockstar. We help you make the right choice about the technology you need to make your social programmes thrive. Our innovative way gives you access to donations of re-used electronics and office furniture in great condition from global environmentally-friendly companies.
+                    </div>
+                    <div class="row">
+                    <div class="col-md" style="text-align: center;">
+                    <img src="https://dl.dropboxusercontent.com/s/woy7rzmvsnzwq3w/contactless.png?dl=0" id="why-icon" style="width:50px">
+                    <p>Better education</p>  
+                    <p>X number of schools digitized and learning quality improved </p>  
+                    </div>
+                    <div class="col-md" style="text-align: center;">
+                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                    <p>Better businesses</p>
+                    <p>X small and medium enterprises benefited from training, support and digitalisation</p>             
+                    </div> 
+                    <div class="col-md" style="text-align: center;">
+                    <img src="https://dl.dropboxusercontent.com/s/77xmnk6srsesfvy/flexible.png?dl=0" id="why-icon" style="width:50px">
+                    <p>Better environment</p>
+                    <p>Xk electronics and office furniture donated to social programmes.</p>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <p>charities and NGOs logos</p>
+                    </div>
               </div>
         </section>
         <!--5. Explore Portfolio-->
         <section>
         <div class="w3-container"> 
             <div class="row"> 
-                <h1>Find what you need</h1>
+                <h2>Find what you need</h2>
                 </div>
             <div class="row"> 
-                <div class="col-md">
-                    Laptops
+                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
+                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                    <p>Laptops</p>
                 </div>
-                <div class="col-md">
-                    Monitors
+                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
+                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                    <p>Monitors</p>
                 </div>
-                <div class="col-md">
-                    Headphones
+                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
+                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                    <p>Headphones</p>
                 </div>
-                <div class="col-md">
-                    Tablets
+                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
+                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                    <p>Tablets</p>
                 </div>
-                <div class="col-md">
-                    Smartphones
+                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
+                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                    <p>Smartphones</p>
                 </div>
-                <div class="col-md">
-                    Chairs
+                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
+                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                    <p>Chairs</p>
                 </div>
-                <div class="col-md">
-                    Tables
+                <div class="col-md" style="text-align: center;" id='portfolio-thumbnail'>
+                    <img src="https://dl.dropboxusercontent.com/s/csmpaz5cg3apnva/service.png?dl=0" id="why-icon" style="width:50px">
+                    <p>Tables</p>
                 </div>
             </div>
         </div>
@@ -310,7 +415,7 @@
                     </div>
                     <div class="col-sm-6 vertical-center">  
                         <form>             
-                        <h1>Beneficiary</h1>
+                        <h2>Beneficiary</h2>
                         <p>Name, last name, position at company</p>
                         <p>"Rockstar has helped us connect with a network of enterprises that are willing to look beyond bottom line and actually drive and lead for a better future for the people and the planet."</p>
                         </form>
@@ -322,7 +427,7 @@
             <div class="row">
                     <div class="col-sm-6 vertical-center">  
                         <form>             
-                        <h1>Supporter</h1>
+                        <h2>Supporter</h2>
                         <p>Name, last name, position at company</p>
                         <p>"We are dedicated to driving environmental and social innovation to ensure that we fulfil our responsibilities to the planet and improving people’s lives. We only partner with social businesses that share our values and we feel Rockstar is an ideal fit. We are both committed to facilitating charities and NGOs the means to move forward in their social programmes and to promote our shared initiatives to reduce e-waste. Not many others are doing what Rockstar is doing, and we are very excited to be a part of it."</p>
                         </form>
@@ -339,7 +444,7 @@
         <section>
             <div class="w3-container">   
                     <div class="row">
-                        <h1>Benefit from a rockstar group</h1>
+                        <h2>Benefit from a rockstar group</h2>
                       </div>
                       <div class="row">
                       <p>Our network of partners and you make sure that we all contribute to circular economy.</p>
@@ -361,5 +466,31 @@
               </div>
         </section>
         <!--8. Footer-->
+        <section>
+        <footer class="w3-container" id="footer">
+            <div class="row">
+                LOGO <img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" style="width:70px"> 
+            </div>
+            <div class="row">  
+                <div class="col-md">
+                <p class="heading-f">Company</p>
+                <p>About</p></a>
+                <p>Terms of Service</p></a>
+                <p>Privacy Policy</p></a>
+                </div>
+          
+                <div class="col-md">
+                <p>Contact</p>
+                <p><img src="https://dl.dropboxusercontent.com/s/85h4jp0791ux9rw/footer-text-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;0748.080.3557</p>
+                <p><img src="https://dl.dropboxusercontent.com/s/o9yqw6f54325iz5/footer-ig-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;@greencourt</p>                  <p id="trust"><img src="https://dl.dropboxusercontent.com/s/4njs8tusx2or08p/footer-email-1.png?dl=0" style="width:12px;">&nbsp;&nbsp;hello@greencourt.io</p>
+                </div>
+                </div>
+
+                <div class="row">
+                    <p>© Rockstar Technologies 2020. All rights reserved.</p> 
+                    <p>Technology by</p><img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" style="width:70px"> 
+                    </div>
+        </footer>
+        </section>
     </body>
     </html>
