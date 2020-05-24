@@ -89,6 +89,14 @@
         font-weight:800;
         }
 
+        h2 {
+          margin: 0px;
+        }
+
+        .col-md-2{
+          margin: 0px;
+        }
+
         button {
         background: transparent;
         display:block;border: 0px  solid;
@@ -209,14 +217,15 @@
         .login {
         background: transparent;
         display:block;border: 0px  solid;
-        color: white;
+        color: black;
         background:white;  
         font-weight: 600;
         font-style: normal;
         font-size: 15px;
-        padding: 10px 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         border-radius: 50px;
-        text-align: center;
+        text-align: left;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
@@ -225,18 +234,107 @@
 
 </style>
 
-<!--Style - Product page-->
+<!--Style - Laptops page-->
 <style>
-  #banner.w3-container {
-  padding-bottom: 75px;
-  }
-      
-  #product-page {
-  padding-top: 300px;
-  padding-bottom: 150px;
-  padding-left: 150px;
-  padding-right: 150px;
-  }  
+
+    .card-text{
+    font-size: small;
+    text-align: left;
+    }
+    .card-features{
+    font-size: small;
+    text-align: left;
+    font-weight: 800;
+    margin-bottom: 0px;
+    }
+
+    .card-body{
+    padding: 10px;
+    } 
+    #card{
+    width: 18rem;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align:center;
+    border-width: thin;
+    box-shadow: 0px 1px 6px #D1D1D1;
+    -webkit-appearance: none !important;
+    }
+
+    #laptops-page {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    }  
+
+    #laptops-image {
+    width: 100%;
+    padding-bottom: 10px;
+    }
+
+    .laptops-row{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right:0px;
+    margin-left:0px;
+    }
+
+    #laptops-listings.row{
+    padding: 0px;
+    }
+
+    .search {
+    background: transparent;
+    display:block;border: 0px  solid;
+    color: white;
+    background:#02d9cb;  
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    padding: 5px 30px;
+    margin-left: 15px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    }
+
+    .search:hover{
+    background-color:aquamarine;
+    border: 0px solid ;
+    color: black;
+    } 
+
+    #search-bar{
+    padding-top: 120px; 
+    padding-right: 50px;
+    padding-left: 50px;
+    }
+
+    #search-button{
+    margin-left: 10px;
+    }
+
+    ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    }
+
+    #product-status{
+    display:inline;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: lightgray;
+    border-width:2px;
+    padding:2px;
+    }
+
+
 </style>
 
 <!--Style - Footer-->
@@ -294,18 +392,285 @@
                   </div>
           </header>
       </section>
-        <!--2. Product page-->
-        <section>
-            <div class="w3-container" id="product-page">
-                <div class="row">
-                <p>Product page</p>
+      <!--2. Search Bar-->
+      <section>
+        <div class="w3-container">
+          <div class="row" id="search-bar">
+            <div class="col-md-2">
+              <h2>Laptops</h2>
             </div>
+            <div class="col-md-8">
+            <input type="text" name="card-name" class="form-control" placeholder="Search for laptops..."></input>
+              </div>
+              <input type="button" class="search" value="Search">
+              </div>
+          </div>
+        </div>
+      </section>
+      <!--3. Laptops page-->
+      <section>
+        <div class="w3-container">
+          <div class="row">
+            <div class="col-md-2" id='laptops-categories'>
+              <label class="home-heading" for="id_name"><b>Categories</b></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <ul>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Laptops</label></li>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Monitors</label></li>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Headphones</label></li>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Tablets</label></li>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Smartphones</label></li>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Chiars</label></li>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Tables</label></li>
+                </ul>
+                <label class="home-heading" for="id_name"><b>Conditions</b></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <ul>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Like New</label></li>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Very Good</label></li>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Good</label></li>
+                </ul>
+                <label class="home-heading" for="id_name"><b>Suppliers</b></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <ul>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;SAP</label></li>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Accenture</label></li>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;Delloite</label></li>
+                  <li><label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">&nbsp;EY</label></li>
+                </ul>
+              <br>
             </div>
-        </section>
-        
+            <div class="col-md-10">
+              <!--ROW 1-->
+                <div class="row" id="laptops-listings">
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/tf8rez607k50a2d/1.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">HP 15.6" Laptop - Black (AMD A6-9225 Processor/1TB HDD/8GB RAM/Windows 10) - English</p>
+                      <p class="card-features">Supplier: SAP</p>
+                      <p class="card-features">Usage: 3 years</p>
+                      <p class="card-features">Condition: Good</p>
+                      <p class="card-features">Available: 540</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/hfqr32qlu2trvez/2.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">HP 15.6" Touchscreen Laptop - Natural Silver (Intel Core i5-1035G1/1TB HDD/8GBRAM/Win10)</p>
+                      <p class="card-features">Supplier: SAP</p>
+                      <p class="card-features">Usage: 2 years</p>
+                      <p class="card-features">Condition: Very Good</p>
+                      <p class="card-features">Available: 135</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/vjvm1rvu4j71tm2/3.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">HP 15.6" Laptop - Silver (Intel Core i5-1035G1/512GB SSD/8GB RAM/Windows 10)</p>
+                      <p class="card-features">Supplier: EY</p>
+                      <p class="card-features">Usage: 5 years</p>
+                      <p class="card-features">Condition: Good</p>
+                      <p class="card-features">Available: 1460</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                  </div>
+                  <br>
+                  <!--ROW 2-->
+                <div class="row" id="laptops-listings">
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/dpakb9gbtc8d72i/4.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">ASUS VivoBook 15.6" Laptop - Grey (AMD Quad Core R5-3500U/512 GBSSD/12GB RAM/Win 10)</p>
+                      <p class="card-features">Supplier: SAP</p>
+                      <p class="card-features">Usage: 6 years</p>
+                      <p class="card-features">Condition: Good</p>
+                      <p class="card-features">Available: 26</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                    <div class="card" id="card">
+                      <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/aeuar5own02id72/5.jpg?dl=0" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text">ASUS VivoBook 15.6" Laptop - Grey (AMD Quad Core R5-3500U/512GB SSD/12GB RAM/Windows 10)</p>
+                        <p class="card-features">Supplier: SAP</p>
+                        <p class="card-features">Usage: 7 years</p>
+                      <p class="card-features">Condition: Good</p>
+                        <p class="card-features">Available: 890</p>
+                        <br>
+                        <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                      </div>
+                    </div>
+                    <div class="card" id="card">
+                      <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/cyr7e10ib3hsgex/6.jpg?dl=0" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text">HP 15.6" Laptop - Silver (Intel Core i5-1035G1/256GB SSD/8GB RAM/Windows 10)</p>
+                        <p class="card-features">Supplier: Deloitte</p>
+                        <p class="card-features">Usage: 2 years</p>
+                      <p class="card-features">Condition: Like New</p>
+                        <p class="card-features">Available: 340</p>
+                        <br>
+                        <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                      </div>
+                    </div>
+                </div>
+                <br>
+                <!--Row 3-->
+                <div class="row" id="laptops-listings">
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/7m2eaddxe87u3sl/7.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">ASUS 15.6" Laptop - Slate Grey (Intel Pentium Silver N5000/256GB SSD/8GB RAM/Win 10)</p>
+                      <p class="card-features">Supplier: Accenture</p>
+                      <p class="card-features">Usage: 1 years</p>
+                      <p class="card-features">Condition: Very Good</p>
+                      <p class="card-features">Available: 128</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/b98u6u3u1ml09zc/8.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Acer Aspire 5 15.6" Laptop - Silver (Intel Core i5-10210U/512GB SSD/12GB RAM/Windows 10)</p>
+                      <p class="card-features">Supplier: SAP</p>
+                      <p class="card-features">Usage: 4 years</p>
+                      <p class="card-features">Condition: Good</p>
+                      <p class="card-features">Available: 500</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/1bnwhq4tdnmunw6/9.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">ASUS VivoBook 15.6" Laptop - Grey (AMD Dual Core R3-3200U/512GB SSD/8GB RAM/Windows 10)</p>
+                      <p class="card-features">Supplier: SAP</p>
+                      <p class="card-features">Usage: 1 years</p>
+                      <p class="card-features">Condition: Like New</p>
+                      <p class="card-features">Available: 59</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <!--ROW 4-->
+                <div class="row" id="laptops-listings">
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/t3c7y7idwhxqw79/10.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">HP 15.6" Laptop - Silver (Intel Core i7-1065G7/512GB SSD/8GB RAM/Windows 10)</p>
+                      <p class="card-features">Supplier: EY</p>
+                      <p class="card-features">Usage: 4 years</p>
+                      <p class="card-features">Condition: Very Good</p>
+                      <p class="card-features">Available: 270</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/4k4do262wo9ilmu/11.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Microsoft Surface 3 15" Touchscreen Laptop - Matte Black (AMD Ryzen 5 3580U/256GB SSD/8GB RAM) - En</p>
+                      <p class="card-features">Supplier: Delloite</p>
+                      <p class="card-features">Usage: 7 years</p>
+                      <p class="card-features">Condition: Good</p>
+                      <p class="card-features">Available: 460</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/il0q6y7zsqas6x4/12.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Acer Aspire 3 15.6" Laptop - Black (AMD A9-9420e/1TB HDD/8GB RAM/Windows 10)</p>
+                      <p class="card-features">Supplier: Delloite</p>
+                      <p class="card-features">Usage: 10 years</p>
+                      <p class="card-features">Condition: Good</p>
+                      <p class="card-features">Available: 1020</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <!--ROW 5-->
+                <div class="row" id="laptops-listings">
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/c8su9bn197diknx/13.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">13. Lenovo 15.6" Laptop - Platinum Grey (Intel Core i7-1065G7/512GB SSD/8GB RAM/Windows 10)</p>
+                      <p class="card-features">Supplier: EY</p>
+                      <p class="card-features">Usage: 2 years</p>
+                      <p class="card-features">Condition: Very Good</p>
+                      <p class="card-features">Available: 60</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/pt58zsq0r96ddzz/14.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Lenovo IdeaPad 330S 15.6" Laptop - Blue (Intel Core i3-8130U/128GB SSD/4GB RAM/Win 10 S) - English</p>
+                      <p class="card-features">Supplier: Accenture</p>
+                      <p class="card-features">Usage: 3 years</p>
+                      <p class="card-features">Condition: Good</p>
+                      <p class="card-features">Available: 46</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/pqu4ly4zyxq7skn/15.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Acer Aspire 5 15.6" Laptop - Silver (Intel Core i5-10210U/512GB SSD/8GB RAM/Windows 10)</p>
+                      <p class="card-features">Supplier: Accenture</p>
+                      <p class="card-features">Usage: 5 years</p>
+                      <p class="card-features">Condition: Good</p>
+                      <p class="card-features">Available: 572</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <!--ROW 6-->
+                <div class="row" id="laptops-listings">
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/0k5ocev2brea259/16.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Dell G3 15.6" Laptop - Black (Intel Core i5-9300H/512GB SSD/8GB RAM/Windows 10)</p>
+                      <p class="card-features">Supplier: SAP</p>
+                      <p class="card-features">Usage: 1 years</p>
+                      <p class="card-features">Condition: Like New</p>
+                      <p class="card-features">Available: 123</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                  <div class="card" id="card">
+                    <img class="card-img-top" src="https://dl.dropboxusercontent.com/s/4k4do262wo9ilmu/11.jpg?dl=0" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Microsoft Surface 3 15" Touchscreen Laptop - Matte Black (AMD Ryzen 5 3580U/256GB SSD/8GB RAM) - En</p>
+                      <p class="card-features">Supplier: EY</p>
+                      <p class="card-features">Usage: 2 years</p>
+                      <p class="card-features">Condition: Very Good</p>
+                      <p class="card-features">Available: 89</p>
+                      <br>
+                      <a href="https://www.demodap.com/rockstar_product"><input type="button" class="button" value="Select"></a>
+                    </div>
+                  </div>
+                </div>
+    </section>
+
         <!--3. Footer-->
         <section>        
           <footer class="w3-container" id="footer">
+            <label class="headline-middle"> </label>
               <div class="row">  
                   <div class="col-md" id="footer-text">
                   <p class="footer-title">Company</p>
@@ -349,5 +714,15 @@
   
           </footer>
           </section>
+          <!--JS-->
+          <script>
+            var checkboxes = document.getElementsByTagName('input');
+
+            for (var i=0; i<checkboxes.length; i++)  {
+              if (checkboxes[i].type == 'checkbox')   {
+                checkboxes[i].checked = false;
+              }
+            }
+          </script>
 </body>
 </html>

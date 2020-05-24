@@ -209,14 +209,15 @@
         .login {
         background: transparent;
         display:block;border: 0px  solid;
-        color: white;
+        color: black;
         background:white;  
         font-weight: 600;
         font-style: normal;
         font-size: 15px;
-        padding: 10px 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         border-radius: 50px;
-        text-align: center;
+        text-align: left;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
@@ -405,11 +406,11 @@
                </form>
             </div>
             </div>
-            <label class="headline-middle"> </label>
         </section>
         <!--3. Footer-->
         <section>        
         <footer class="w3-container" id="footer">
+          <label class="headline-middle"> </label>
             <div class="row">  
                 <div class="col-md" id="footer-text">
                 <p class="footer-title">Company</p>
@@ -453,5 +454,15 @@
 
         </footer>
         </section>
+        <!--JS-->
+        <script>
+          var checkboxes = document.getElementsByTagName('input');
+
+          for (var i=0; i<checkboxes.length; i++)  {
+            if (checkboxes[i].type == 'checkbox')   {
+              checkboxes[i].checked = false;
+            }
+          }
+        </script>
 </body>
 </html>
