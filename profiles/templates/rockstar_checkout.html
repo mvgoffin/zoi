@@ -250,215 +250,12 @@
         }
 
 </style>
-<!--Style - Hero Banner-->
+<!--Style - Checkout-->
 <style>
-        #banner.w3-container {
-        padding-bottom: 75px;
-        }
-            
-        #banner {
-        padding-top: 300px;
-        padding-bottom: 150px;
-        padding-left: 150px;
-        padding-right: 150px;
-        background-image:url(https://dl.dropboxusercontent.com/s/5miur5p8oej1wrc/X5TyA8uvkGXoNyjFzxcowS.jpg?dl=0);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        color: white;
+        #checkout-space {
+        padding-top: 100px;
         }  
 
-        .search {
-        background: transparent;
-        display:block;border: 0px  solid;
-        color: white;
-        background:#296cf6;  
-        font-weight: 600;
-        font-style: normal;
-        font-size: 15px;
-        padding: 5px 30px;
-        margin-left: 15px;
-        border-radius: 50px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
-        }
-
-        .search:hover{
-        background-color:midnightblue;
-        border: 0px solid ;
-        color: white;
-        } 
-
-        #search-bar{
-        padding-top: 20px;
-        padding-bottom: 15px;
-        padding-left: 0px;
-        padding-right: 300px;  
-        }
-
-        #search-button{
-        margin-left: 10px;
-        }
-
-</style>
-<!--Style - About-->
-<style>
-    #about{
-        padding-left: 300px;
-        padding-right: 300px;
-        text-align: left;
-    }
-
-    #about-image{
-    width: 100%;
-    padding-right: 50px;
-    }
-</style>
-<!--Style - Impact-->
-<style>
-    #impact.col-md{
-    text-align: left;
-    padding-left:30px;
-    padding-right:30px;
-    }
-
-    #impact-icon{
-    padding-bottom: 10px;
-    }
-
-    .impact-title{
-        font-weight: 800;
-        font-size: large;
-        }
-    
-</style>
-<!--Style - Explore Portfolio-->
-<style>    
-    
-    #portfolio-tab{
-    text-align: center;
-    border-style: 1px solid;
-    border-color: #D1D1D1;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 0px 4px 6px #D1D1D1;
-    -webkit-appearance: none !important;
-    }
-
-    #portfolio-tab-demo{
-    text-align: center;
-    border-style: 1px solid;
-    border-color: #D1D1D1;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 0px 4px 6px gold;
-    -webkit-appearance: none !important;
-    }
-
-    #portfolio-tab-demo.col-md{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    }
-
-
-    #portfolio-tab.col-md{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    }
-
-    #portfolio-tab.col-md:hover{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    box-shadow: 0px 6px 8px #296cf6;
-    -webkit-appearance: none !important;
-    }
-
-    #row-portfolio-tab.row{
-    padding-top: 10px;
-    }
-
-    #text-portfolio-tab{
-    color:black;
-    font-size: medium;
-    font-weight: bold;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-decoration: none;
-    }
-
-    #text-portfolio-tab:ho{
-    color:black;
-    font-size: medium;
-    font-weight: bold;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-decoration: none;
-    }
-
-
-
-</style>
-<!--Style - Customer Testimonials-->
-<style>
-            #testimonial-image{
-            text-align: center;
-            width: 100%;
-            }
-
-            #testimonial-text {
-            font-size: 20px;
-            font-weight: 800;
-            }
-
-            .vertical-center {
-                display: flex;
-                align-items: center;
-            }
-            
-            @media only screen and (max-width: 768px) {
-            .row2 { display: flex; flex-flow: column; }
-            .vertical-center  { order: 1; }
-            }
-</style>  
-<!--Style - 7. Suppliers-->
-<style>
-    #supplier-tab{
-    text-align: center;
-    margin: 10px;
-    }
-</style>
-<!--Get started-->
-<style>
-        #get-started.w3-container {
-            background-color:#296cf6;
-            color: white;
-        }
-
-        .access{
-        background: transparent;
-        display:block;border: 0px  solid;
-        color:#296cf6;
-        background:white;  
-        font-weight: 600;
-        font-style: normal;
-        font-size: 15px;
-        padding: 5px 30px;
-        border-radius: 50px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
-        }
-
-        .access:hover{
-        background-color:midnightblue;
-        border: 0px solid ;
-        color: white;
-        }    
 </style>
 <!--Style - Footer-->
 <style>
@@ -490,15 +287,36 @@
 </style> 
 </head>
 <body class="bg-light">
-
-    <div class="container">
-      <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-        <h2>Checkout form</h2>
-        <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
-      </div>
-
-      <div class="row">
+  <body>
+    <!--1. Nav Bar-->
+    <section>
+        <header>
+            <div class="w3-container">
+                <div class="row" id='navbar'>
+                    <div class="col-md-2" style="text-align: center;">
+                        <a href="https://www.demodap.com/rockstar_home"><img src="https://dl.dropboxusercontent.com/s/4eagi9px8sk8bb7/logo-b-rockstar.png?dl=0" id="logo-nav-bar"></a>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="" id="text-nav-bar">Our mission</a>
+                        <a href="" id="text-nav-bar">How it works</a>
+                        <a href="" id="text-nav-bar">Top products</a>
+                      </div>
+                      <div class="col-md-3" id="space">
+                      </div>
+                      <div class="col-md-1" style="text-align: right;padding-right: 10px;">
+                        <input type="access" class="login" value="Log in">
+                      </div>
+                      <div class="col-md-1" style="padding: 0px;">
+                        <a href="https://www.demodap.com/rockstar_registration"><input type="button" class="demo" value="Register"></a>
+                      </div>
+                    </div>
+                </div>
+        </header>
+    </section>
+    <!--2. Checkout Page-->
+    <section>
+    <div class="w3-container">
+      <div class="row" id="checkout-space">
         <div class="col-md-4 order-md-2 mb-4">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
             <span class="text-muted">Your cart</span>
@@ -549,30 +367,12 @@
           </form>
         </div>
         <div class="col-md-8 order-md-1">
-          <h4 class="mb-3">Billing address</h4>
+          <h3 class="mb-3">Checkout</h3>
           <form class="needs-validation" novalidate="">
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstName">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="lastName">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
-              </div>
-            </div>
-
             <div class="mb-3">
-              <label for="username">Username</label>
+              <label for="username"><b>Username</b></label>
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">@</span>
                 </div>
                 <input type="text" class="form-control" id="username" placeholder="Username" required="">
                 <div class="invalid-feedback" style="width: 100%;">
@@ -582,7 +382,7 @@
             </div>
 
             <div class="mb-3">
-              <label for="email">Email <span class="text-muted">(Optional)</span></label>
+              <label for="email"><b>Email</b></label>
               <input type="email" class="form-control" id="email" placeholder="you@example.com">
               <div class="invalid-feedback">
                 Please enter a valid email address for shipping updates.
@@ -602,35 +402,14 @@
               <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
             </div>
 
-            <div class="row">
-              <div class="col-md-5 mb-3">
-                <label for="country">Country</label>
-                <select class="custom-select d-block w-100" id="country" required="">
-                  <option value="">Choose...</option>
-                  <option>United States</option>
+            <label class="mb-3" for="id_email"><b>Country</b></label>
+                <select class="form-control" id="country" name="country">
+                  <option value="Australia">Australia</option>
+                  <option value="Canada">Canada</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="United States">United States</option>
                 </select>
-                <div class="invalid-feedback">
-                  Please select a valid country.
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <label for="state">State</label>
-                <select class="custom-select d-block w-100" id="state" required="">
-                  <option value="">Choose...</option>
-                  <option>California</option>
-                </select>
-                <div class="invalid-feedback">
-                  Please provide a valid state.
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="zip">Zip</label>
-                <input type="text" class="form-control" id="zip" placeholder="" required="">
-                <div class="invalid-feedback">
-                  Zip code required.
-                </div>
-              </div>
-            </div>
+
             <hr class="mb-4">
             <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="same-address">
@@ -641,58 +420,55 @@
               <label class="custom-control-label" for="save-info">Save this information for next time</label>
             </div>
             <hr class="mb-4">
-
-            <h4 class="mb-3">Payment</h4>
-
-            <div class="d-block my-3">
-              <div class="custom-control custom-radio">
-                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-                <label class="custom-control-label" for="credit">Credit card</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                <label class="custom-control-label" for="debit">Debit card</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                <label class="custom-control-label" for="paypal">Paypal</label>
+            <br>
+            <h4 class="mb-3">Request for Donation</h4>
+            <div class="mb-3">
+              <label for="address">Why do you need this donation</label>
+              <input type="text" class="form-control" id="address" placeholder=" Please describe in a few words and include expected impact." required="">
+              <div class="invalid-feedback">
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="cc-name">Name on card</label>
-                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                <small class="text-muted">Full name as displayed on card</small>
-                <div class="invalid-feedback">
-                  Name on card is required
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="cc-number">Credit card number</label>
-                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                <div class="invalid-feedback">
-                  Credit card number is required
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 mb-3">
-                <label for="cc-expiration">Expiration</label>
-                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                <div class="invalid-feedback">
-                  Expiration date required
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="cc-expiration">CVV</label>
-                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                <div class="invalid-feedback">
-                  Security code required
-                </div>
+            <div class="mb-3">
+              <label for="address">What is your e-waste strategy?</label>
+              <input type="text" class="form-control" id="address" placeholder="Please describe how will you manage donated products have reached total usage life." required="">
+              <div class="invalid-feedback">
               </div>
             </div>
             <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+            <br>
+            <h4 class="mb-3">Payment</h4>
+
+            <div id="shipping-register-form">
+              <label class="home-heading" for="card-name"><b>Name on card</b></label>
+              <input type="text" name="card-name" class="form-control" id="card-name" placeholder="">
+              <br>
+
+              <label class="home-heading" for="card-element"><b>Credit or debit card</b></label>
+              <div id="card-element" class="form-control">
+            </div>
+            <br>
+            <p class="terms">
+              You will be charge after request for donation has been approved.</p>
+            <p class="terms">
+                All transactions are secure and encrypted</p>
+                <div style="text-align: center;">
+                    <img src="https://dl.dropboxusercontent.com/s/73j0uv374gn9y32/payment-icons-1.png?dl=0" style="width:100px;">
+                  </div>
+              <style>
+                  .terms {
+                    text-align: center;
+                    font-size: 12px;
+                    color: gray;
+                    padding-bottom: 10px;
+                  }                    
+                </style>
+              <p></p>
+
+              </div>
+            <hr class="mb-4">
+            <div class="form-group" style="text-align: center;">
+            <a href="https://www.demodap.com/rockstar_home"><input type="button" class="demo" value="Send"></a>
+          </div>
           </form>
         </div>
       </div>
@@ -706,7 +482,64 @@
         </ul>
       </footer>
     </div>
-
+</section>
+    <!--3. Footer-->
+        <section>        
+          <footer class="w3-container" id="footer">
+            <label class="headline-middle"> </label>
+              <div class="row">  
+                  <div class="col-md" id="footer-text">
+                  <p class="footer-title">Company</p>
+                  <br>
+                  <p>Mission</p></a>
+                  <p>How it works</p>
+                  <p>Contact us</p>
+                  </div>
+            
+                  <div class="col-md" id="footer-text">
+                  <p class="footer-title">Account</p>
+                  <br>
+                  <p>Log in</p>
+                  <p>Register</p>                  
+                  </div>
+  
+                  <div class="col-md" id="footer-text">
+                  <p class="footer-title">Products</p>
+                  <br>
+                  <p>Technology</p>
+                  <p>Office furniture</p> 
+                  </div>
+                  </div>
+          </footer>
+                  <label class="headline-middle"> </label>
+                  <div class="row"style="padding-top:20px;padding-bottom:5px;">
+                  <p>© Rockstar Technologies 2020. All rights reserved. Technology by SAP SE. </p>
+                  </div>
+                  <div class="row" style="padding-top:0px;padding-bottom:15px;">
+                  <img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" style="width:5%">
+                  </div>
+  
+                  <label class="headline-middle"> </label>
+                  
+                  <div class="row"style="padding-top:10px;padding-bottom:10px;text-align:center">
+                  <div class="col-md">
+                  <a style="font-weight: 800;color: #D1D1D1">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a style="font-weight: 800;color: #D1D1D1">Privacy policy</a>
+                  </div>
+                  </div>
+  
+          </footer>
+          </section>
+          <!--JS-->
+          <script>
+            var checkboxes = document.getElementsByTagName('input');
+  
+            for (var i=0; i<checkboxes.length; i++)  {
+              if (checkboxes[i].type == 'checkbox')   {
+                checkboxes[i].checked = false;
+              }
+            }
+          </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
