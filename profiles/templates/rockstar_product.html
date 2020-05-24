@@ -111,9 +111,9 @@
         }
 
         button:hover {
-        background-color:aquamarine;
+        background-color:midnightblue;
         border: 0px solid ;
-        color: black;
+        color: white;
         }
 
         #row-sub-title.row{
@@ -128,6 +128,30 @@
         padding-right: 10px !important;
       }
     }
+
+    .demo {
+        background: transparent;
+        display:block;border: 0px  solid;
+        color: white;
+        background:#296cf6;  
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        padding: 10px 32px;
+        border-radius: 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0px 1px 10px gold;
+        }
+
+        .demo:hover{
+        background-color:gold;
+        border: 0px solid ;
+        color: black;
+        } 
 
 
 </style>
@@ -147,6 +171,11 @@
         #navbar.row{
         padding: 15px;
         margin: 0px;
+        border-style: solid;
+        border-color:#296cf6;
+        border-top-style:hidden;
+        border-left-style: hidden;
+        border-right-style: hidden;
         }
 
         #logo-nav-bar{
@@ -165,12 +194,12 @@
         text-decoration: none;
         }
 
-        .col-md-4{
-        padding-top: 10px;
-        }
-
         #text-nav-bar :hover{
         text-decoration: underline;
+        }
+
+        .col-md-4{
+        padding-top: 10px;
         }
 
         #button-nav-bar{
@@ -182,7 +211,7 @@
         background: transparent;
         display:block;border: 0px  solid;
         color: white;
-        background:#02d9cb;  
+        background:#296cf6;  
         font-weight: 600;
         font-style: normal;
         font-size: 15px;
@@ -196,22 +225,23 @@
         }
 
         .button:hover{
-        background-color:aquamarine;
+        background-color:midnightblue;
         border: 0px solid ;
-        color: black;
+        color: white;
         } 
 
         .login {
         background: transparent;
         display:block;border: 0px  solid;
-        color: white;
+        color: black;
         background:white;  
         font-weight: 600;
         font-style: normal;
         font-size: 15px;
-        padding: 10px 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         border-radius: 50px;
-        text-align: center;
+        text-align: left;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
@@ -219,18 +249,129 @@
         }
 
 </style>
-<!--Style - Product page-->
+<!--Style - Product Page-->
 <style>
         #banner.w3-container {
         padding-bottom: 75px;
         }
+
+        #product-space {
+        padding-top: 20px;
+        }  
             
         #product-page {
-        padding-top: 300px;
-        padding-bottom: 150px;
+        padding-top: 150px;
+        padding-bottom: 50px;
         padding-left: 150px;
         padding-right: 150px;
         }  
+
+        .card-text{
+    font-size: small;
+    text-align: left;
+    }
+    .card-features{
+    font-size: small;
+    text-align: left;
+    font-weight: 800;
+    margin-bottom: 0px;
+    }
+
+    .card-body{
+    padding: 10px;
+    } 
+    #card{
+    width: 18rem;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align:center;
+    border-width: thin;
+    box-shadow: 0px 1px 6px #D1D1D1;
+    -webkit-appearance: none !important;
+    }
+
+    #laptops-page {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    }  
+
+    #laptops-image {
+    width: 100%;
+    padding-bottom: 10px;
+    }
+
+    .laptops-row{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right:0px;
+    margin-left:0px;
+    }
+
+    #laptops-listings.row{
+    padding: 0px;
+    }
+
+    .search {
+    background: transparent;
+    display:block;border: 0px  solid;
+    color: white;
+    background:#296cf6;  
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    padding: 5px 30px;
+    margin-left: 15px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    }
+
+    .search:hover{
+    background-color:midnightblue;
+    border: 0px solid ;
+    color: white;
+    } 
+
+    #search-bar{
+    padding-top: 100px; 
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+    }
+
+    #search-button{
+    margin-left: 10px;
+    }
+
+    ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    }
+
+    #product-status{
+    display:inline;
+    border-style: solid;
+    border-radius: 20px;
+    border-color:#02d9cb;
+    border-width:2px;
+    background-color: #02d9cb;
+    color: white;
+    padding:5px;
+    margin: 5px;
+    }
+
+    .product-heading{
+      padding-bottom: 5px;
+    }
+
+
 </style>
 <!--Style - Footer-->
 <style>
@@ -289,58 +430,137 @@
         </section>
         <!--2. Product page-->
         <section>
-            <div class="w3-container" id="product-page">
-                <div class="row">
-                <p>Product page</p>
+          <div class="w3-container">
+            <div class="row" id="product-space">
+              <p></p>
             </div>
-            </div>
+          </div>
+          
+          <div class="w3-container">
+  
+            <!-- The Jar Buy Now Section -->
+    
+              <div class="row">
+                  <div class="col-md-6" id="product-info-left">
+                      <h1 class="product-heading"></h1>
+      
+                        <div class="w3-row-padding w3-section">
+                            <div class="w3-col s3">
+                              <img class=" w3-opacity w3-hover-opacity-off" src="https://dl.dropboxusercontent.com/s/tf8rez607k50a2d/1.jpg?dl=0" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                            </div>
+                          </div>
+    
+                    </div>
+                
+                  <div class="col-md-6" id="product-info-right">
+                      <h1 class="product-heading">HP 15.6" Laptop - Black</h1>
+                      <br>
+                      <p class="product-small">Surf the web, watch movies, and carry on your daily tasks efficiently with the HP 15.6'' laptop. It features 7th generation AMD A6-9225 processor and 8GB RAM, that enable you to multi-task efficiently. The 1TB hard drive provides ample space to store a sizeable collection of your photos, music, movies, videos, and more</p>
+                      <br>
+                      <p class="product-heading"><b>Functionality</b></p>
+                      <li>Screen Size: 15.6 in</li>
+                      <li>Processor: 7th Generation AMD A6-9225 Processor, 2 cores, 2.6 GHz</li>
+                      <li>Storage & Memory: 1 TB</li>
+                      <li>Graphics: AMD Radeon R4 Graphics</li>
+                      <li>Inputs & Outputs: Multi-format SD media card reader (3x USB Ports)</li>
+                      <br>
+                      <p class="product-heading"><b>Condition</b></p>
+                      <li id='product-status'>Good</li><li id='product-status'>3 years usage</li><li id='product-status'>540 available</li>
+                      <br>
+                      <br>
+                        <a href="#" data-featherlight="#nutri-facts-gubel" class="product-small-lightbox">Learn about Rockstar condition scale</a>
+                        <div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1554472144065_8906"><div class="sqs-block-content"> <div style="display:none;">
+                          <div id="nutri-facts-gubel">
+                            <br>
+                            <img src="https://dl.dropboxusercontent.com/s/7f8f558iima9hit/calm-nutri-facts.png?dl=0" alt="calm-nutri-facts" style="width:200px;height:31.598 pxpx;">
+                            <br>
+                            <br>
+                            <p class="sub-heading">Conditions</p>
+                            <p class="product-small">Like New – Electronics and office furniture will look as if it just came out of the box. This condition usually applies to electronics that have seldom left their original box.</p>
+                            <p class="product-small">Very Good – Electronics and office furniture will show minimal wear and have a few light scratches or very minor scuffing.</p>
+                            <p class="product-small">Good – Electronics and office furniture will have scratches and/or scuffs, but nothing too severe. Most products in this condition are heavily-used.</p>
+                            <br>
+                            <br>
+                        </div>
+                        </div></div></div>
+                        <br>
+                        <label class="home-heading" for="id_email"><b>Select quantity</b></label>
+                          <select class="form-control" id="country" name="country">
+                            <option value="Australia">10</option>
+                            <option value="Canada">20</option>
+                            <option value="United Kingdom">50</option>
+                            <option value="United States">100</option>
+                          </select>
+                        <br>
+                        <p style="text-align:left;color: black;font-weight: bold;font-size:larger;">Donation&nbsp;<span style="color:#02d9cb; font-size:medium;">(Shipping calculated at checkout)</span></p>            
+                        <br>
+                        <a href="https://www.demodap.com/rockstar_checkout"><input type="button" class="demo" value="Select"></a>
+                          </a> 
+                          <br>
+                          <br>
+                        </div>
+                  </form>
+                </div>
+                
+              </div>
+
         </section>
-        
         <!--3. Footer-->
         <section>        
-        <footer class="w3-container" id="footer">
-            <div class="row">  
-                <div class="col-md" id="footer-text">
-                <p class="footer-title">Company</p>
-                <br>
-                <p>Mission</p></a>
-                <p>How it works</p>
-                <p>Contact us</p>
-                </div>
-          
-                <div class="col-md" id="footer-text">
-                <p class="footer-title">Account</p>
-                <br>
-                <p>Log in</p>
-                <p>Register</p>                  
-                </div>
-
-                <div class="col-md" id="footer-text">
-                <p class="footer-title">Products</p>
-                <br>
-                <p>Technology</p>
-                <p>Office furniture</p> 
-                </div>
-                </div>
-        </footer>
-                <label class="headline-middle"> </label>
-                <div class="row"style="padding-top:20px;padding-bottom:5px;">
-                <p>© Rockstar Technologies 2020. All rights reserved. Technology by SAP SE. </p>
-                </div>
-                <div class="row" style="padding-top:0px;padding-bottom:15px;">
-                <img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" style="width:5%">
-                </div>
-
-                <label class="headline-middle"> </label>
-                
-                <div class="row"style="padding-top:10px;padding-bottom:10px;text-align:center">
-                <div class="col-md">
-                <a style="font-weight: 800;color: #D1D1D1">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a style="font-weight: 800;color: #D1D1D1">Privacy policy</a>
-                </div>
-                </div>
-
-        </footer>
-        </section>
+          <footer class="w3-container" id="footer">
+            <label class="headline-middle"> </label>
+              <div class="row">  
+                  <div class="col-md" id="footer-text">
+                  <p class="footer-title">Company</p>
+                  <br>
+                  <p>Mission</p></a>
+                  <p>How it works</p>
+                  <p>Contact us</p>
+                  </div>
+            
+                  <div class="col-md" id="footer-text">
+                  <p class="footer-title">Account</p>
+                  <br>
+                  <p>Log in</p>
+                  <p>Register</p>                  
+                  </div>
+  
+                  <div class="col-md" id="footer-text">
+                  <p class="footer-title">Products</p>
+                  <br>
+                  <p>Technology</p>
+                  <p>Office furniture</p> 
+                  </div>
+                  </div>
+          </footer>
+                  <label class="headline-middle"> </label>
+                  <div class="row"style="padding-top:20px;padding-bottom:5px;">
+                  <p>© Rockstar Technologies 2020. All rights reserved. Technology by SAP SE. </p>
+                  </div>
+                  <div class="row" style="padding-top:0px;padding-bottom:15px;">
+                  <img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" style="width:5%">
+                  </div>
+  
+                  <label class="headline-middle"> </label>
+                  
+                  <div class="row"style="padding-top:10px;padding-bottom:10px;text-align:center">
+                  <div class="col-md">
+                  <a style="font-weight: 800;color: #D1D1D1">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a style="font-weight: 800;color: #D1D1D1">Privacy policy</a>
+                  </div>
+                  </div>
+  
+          </footer>
+          </section>
+          <!--JS-->
+          <script>
+            var checkboxes = document.getElementsByTagName('input');
+  
+            for (var i=0; i<checkboxes.length; i++)  {
+              if (checkboxes[i].type == 'checkbox')   {
+                checkboxes[i].checked = false;
+              }
+            }
+          </script>
 </body>
 </html>
