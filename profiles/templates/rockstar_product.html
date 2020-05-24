@@ -117,7 +117,10 @@
         }
 
         #row-sub-title.row{
-        padding-bottom: 10px;
+        padding-left: 150px;
+        padding-bottom: 0px;
+        padding-top: 50px;
+        
         }
 
         @media only screen and (max-width: 990px) {
@@ -454,7 +457,7 @@
                 
                   <div class="col-md-6" id="product-info-right">
                       <h1 class="product-heading">HP 15.6" Laptop - Black</h1>
-                      <br>
+                      <p class="product-heading"><b>Supplier: SAP</b></p>
                       <p class="product-small">Surf the web, watch movies, and carry on your daily tasks efficiently with the HP 15.6'' laptop. It features 7th generation AMD A6-9225 processor and 8GB RAM, that enable you to multi-task efficiently. The 1TB hard drive provides ample space to store a sizeable collection of your photos, music, movies, videos, and more</p>
                       <br>
                       <p class="product-heading"><b>Functionality</b></p>
@@ -464,11 +467,11 @@
                       <li>Graphics: AMD Radeon R4 Graphics</li>
                       <li>Inputs & Outputs: Multi-format SD media card reader (3x USB Ports)</li>
                       <br>
-                      <p class="product-heading"><b>Condition</b></p>
-                      <li id='product-status'>Good</li><li id='product-status'>3 years usage</li><li id='product-status'>540 available</li>
+                      <p class="product-heading"><b>Conditions</b></p>
+                      <li id='product-status'>Good</li><li id='product-status'>3 years usage</li><li id='product-status'>540 available</li><li id='product-status'>174g of e-waste save p/unit</li>
                       <br>
                       <br>
-                        <a href="#" data-featherlight="#condition-scale" class="product-small-lightbox">Learn about Rockstar condition scale</a>
+                        <a href="#" data-featherlight="#condition-scale" class="product-small-lightbox">Click here to learn about our condition scale</a>
                         <div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1554472144065_8906"><div class="sqs-block-content"> <div style="display:none;">
                           <div id="condition-scale">
                             <br>
@@ -499,9 +502,110 @@
                         </div>
                   </form>
                 </div>
-                
+                <label class="headline-middle"> </label>
               </div>
+        </section>
+        <!--FAQ-->
+        <section>
+          <div class="w3-container" id="faq-section">
+            <div class="row" id="row-sub-title"> 
+              <h3>Frequently asked questions</h3>
+              </div>
+            <div class="row" style="padding-top: 10px;">      
+    <input type="button" value="How does it work?" class="accordion">
+    <div class="panel">
+      <p class="product-small">Rockstar partners with environmentally conscious companies that offer electronics and office furniture that are in good condition, but redundant. We offer a convenient and easy way to get access to these devices and furniture for your social programmes.</p>
+      <p class="product-small">To get started, you need to register your beneficiary account, then select the product and quantity you'd like to receive. Finally, you need to complete the Request for Donation Form at checkout. Once reviewed and accepted by the Rockstar team, we'll let you know, so you're ready to receive the donation.</p>
+    </div>
 
+    <input type="button" value="Why reuse rather than recycling?" class="accordion">
+    <div class="panel">
+      <p class="product-small">Reusing is better than recycling because it saves the energy that comes with having to dismantle and re-manufacture products. It also significantly reduces waste and pollution because it reduces the need for raw materials, saving both forests and water supplies.</p>
+      <p class="product-small">In the UK, the market benefits from reuse thanks to an influx of quality products at reduced prices. After the Greater London Authority introduced reusing in their sustainability plan a few years ago, 12,000 tonnes of goods were reused in 2013.</p>
+    </div>
+    
+    <input type="button" value="What condition are the products in?" class="accordion">
+    <div class="panel">
+      <p class="product-small">Each product go through a detailed quality check and multi-stage processing, so that each device offered from Rockstar arrives in good condition to reuse. If the performance isn’t as expected, our customer service is happy to help.</p>
+    </div>
+
+    <input type="button" value="Do I need to pay anything?" class="accordion">
+    <div class="panel">
+      <p class="product-small">All the products listed are donation. You'll only need to pay for the shipping of the donations to your address and a commission of 1.2% of total transaction. These fee helps us maintain the costs of the portal and offer our customer service.</p>
+    </div>
+
+    <input type="button" value="What is the Request for Donation Form?" class="accordion">
+    <div class="panel">
+      <p class="product-small">At checkout, we will ask you to complete our Request for Donation Form with the objective of ensureing that the donations are suitable to your projects, and that we have an e-waste strategy after the donations leave our suppliers partners.</p>
+    </div>
+        <style>
+        /* Style the buttons that are used to open and close the accordion panel */
+        .accordion {
+              background-color: transparent;
+              color: black;
+              font-weight: 800; 
+              cursor: pointer;
+              padding: 20px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+              border-radius: 0px;
+            }
+
+            .active, .accordion:hover {
+              background-color:#f5f5f7;
+              border-left-width: 10px;
+              border-left-style: solid;
+              border-left-color:#296cf6 ;
+              border-radius: 0px;
+            }
+
+            .panel {
+              padding: 0px 10px;
+              margin: 0px;
+              background-color: white;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+              border-radius: 0px;
+
+            }
+
+            .accordion:after {
+              content: '\02795'; /* Unicode character for "plus" sign (+) */
+              font-size: 13px;
+              color: #EDEDEB;
+              float: right;
+              margin-left: 5px;
+              border-radius: 0px;
+            }
+
+            .active:after {
+              content: "\2796"; /* Unicode character for "minus" sign (-) */
+              border-radius: 0px;
+            }
+        </style>
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              } 
+            });
+          }
+        </script>
+            </div>  
+          </div>
         </section>
         <!--3. Footer-->
         <section>        
