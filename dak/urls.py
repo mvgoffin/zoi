@@ -52,6 +52,7 @@ urlpatterns = [
 
     #----Rockstar Marketplace----#
     path('rockstar_home/', views.rockstar_home, name='rockstar_home'),
+    path('rockstar_about/', views.rockstar_about, name='rockstar_about'),
     path('rockstar_registration/', views.rockstar_registration, name='rockstar_registration'),
     path('rockstar_laptops/', views.rockstar_laptops, name='rockstar_laptops'),
     path('rockstar_product/', views.rockstar_product, name='rockstar_product'),

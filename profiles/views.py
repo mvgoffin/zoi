@@ -20,6 +20,11 @@ def rockstar_home(request):
     template = 'rockstar_home.html'
     return render(request,template,context)
 
+def rockstar_about(request):
+    context = locals()
+    template = 'rockstar_about.html'
+    return render(request,template,context)
+
 def rockstar_registration(request):
     context = locals()
     template = 'rockstar_registration.html'
