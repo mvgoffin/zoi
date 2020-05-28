@@ -50,14 +50,14 @@ urlpatterns = [
     path('pagevf/', views.pagevf, name='pagevf'),
     #path('pagevf_mike/', views.pagevf_mike, name='pagevf_mike'),
 
-    #----Rockstar Marketplace----#
-    path('rockstar_home/', views.rockstar_home, name='rockstar_home'),
-    path('rockstar_about/', views.rockstar_about, name='rockstar_about'),
-    path('rockstar_registration/', views.rockstar_registration, name='rockstar_registration'),
-    path('rockstar_laptops/', views.rockstar_laptops, name='rockstar_laptops'),
-    path('rockstar_product/', views.rockstar_product, name='rockstar_product'),
-    path('rockstar_checkout/', views.rockstar_checkout, name='rockstar_checkout'),
-    path('rockstar_thankyou/', views.rockstar_thankyou, name='rockstar_thankyou'),
+    #----Zoi Marketplace----#
+    path('zoi_home/', views.zoi_home, name='zoi_home'),
+    path('zoi_about/', views.zoi_about, name='zoi_about'),
+    path('zoi_registration/', views.zoi_registration, name='zoi_registration'),
+    path('zoi_laptops/', views.zoi_laptops, name='zoi_laptops'),
+    path('zoi_product/', views.zoi_product, name='zoi_product'),
+    path('zoi_checkout/', views.zoi_checkout, name='zoi_checkout'),
+    path('zoi_thankyou/', views.zoi_thankyou, name='zoi_thankyou'),
 
     #----greencourt----#
     path('gclogin/', views.gclogin, name='gclogin'),

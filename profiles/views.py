@@ -15,39 +15,39 @@ def home(request):
     return render(request,template,context)
 
 #1BLives - Rockstar
-def rockstar_home(request):
+def zoi_home(request):
     context = locals()
-    template = 'rockstar_home.html'
+    template = 'zoi_home.html'
     return render(request,template,context)
 
-def rockstar_about(request):
+def zoi_about(request):
     context = locals()
-    template = 'rockstar_about.html'
+    template = 'zoi_about.html'
     return render(request,template,context)
 
-def rockstar_registration(request):
+def zoi_registration(request):
     context = locals()
-    template = 'rockstar_registration.html'
+    template = 'zoi_registration.html'
     return render(request,template,context)
 
-def rockstar_laptops(request):
+def zoi_laptops(request):
     context = locals()
-    template = 'rockstar_laptops.html'
+    template = 'zoi_laptops.html'
     return render(request,template,context)
     
-def rockstar_product(request):
+def zoi_product(request):
     context = locals()
-    template = 'rockstar_product.html'
+    template = 'zoi_product.html'
     return render(request,template,context)
 
-def rockstar_checkout(request):
+def zoi_checkout(request):
     context = locals()
-    template = 'rockstar_checkout.html'
+    template = 'zoi_checkout.html'
     return render(request,template,context)
 
-def rockstar_thankyou(request):
+def zoi_thankyou(request):
     context = locals()
-    template = 'rockstar_thankyou.html'
+    template = 'zoi_thankyou.html'
     return render(request,template,context)
 
 
