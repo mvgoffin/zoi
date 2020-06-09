@@ -121,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
 WEBPUSH_SETTINGS = {
    "VAPID_PUBLIC_KEY": "BK5mWm1vcpREo7_b-Qi02dGdzjkyS7Vk0I93EPiBE2atQriPBWloxbONQnNITsMQEOENRQA1CfiN9Qi4nGiJU_4",
    "VAPID_PRIVATE_KEY": "TXjfhrDmNOuh50PmbT9rFutFNi5m_LMXaYOHyozcSxw",
-   "VAPID_ADMIN_EMAIL": "marco@gubel.co.uk"
+   "VAPID_ADMIN_EMAIL": "marco.valgof@gmail.com"
 }
 
 # Internationalization
