@@ -115,6 +115,16 @@ def pagevf_mike(request):
     template = 'pagevf_mike.html'
     return render(request,template,context)
 
+def vfchapters(request):
+    context = locals()
+    template = 'vfchapters.html'
+    return render(request,template,context)
+
+def vftimeline(request):
+    context = locals()
+    template = 'vftimeline.html'
+    return render(request,template,context)
+
 #greencourt technologies
 def gclogin(request):
     context = locals()

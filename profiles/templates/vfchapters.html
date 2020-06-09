@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <meta name="description" content="Marco for Telefonica UK">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xdp3ien.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oca5evh.css">
+    
+    <!--Mobile Bubble Menu-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!--lightbox-->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/446ayfnw614fdal/favicon1.png?dl=0">
+    
+    <!-- Start of  Zendesk Widget script
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=921e6fa2-24ce-4785-a160-0cbdca17a4bb"> </script>-->
+
+    <title>
+        Home | Vodafone
+    </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267999-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141267999-1');
+    </script>
+
+    <!-- CSS For DAP-->
+    <style media="screen">
+      
+    /**classes**/
+
+        * {
+          font-family: 'benton-sans', sans-serif;
+          font-size: 16px;
+          font-variant: normal;
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        body, html { /**body=p**/
+          margin: 0px;
+          height: 100%;
+          background-color: transparent;
+        }
+
+        .row{
+          padding-left: 120px;
+          padding-right: 120px;
+          margin-right:0px;
+          margin-left:0px;
+        }
+
+        .navbar {
+          background-color: black;
+          padding: 0;
+          box-sizing: border-box;
+          margin: auto;
+          width: 100%;
+          /**box-shadow: 0 10px 5px -5px  #D1D1D1;**/
+          -webkit-appearance: none !important;
+        }
+
+        .col-lg{
+          padding-left: 150px;
+          padding-right: 150px;
+          margin-right:0px;
+          margin-left:0px;
+        }
+
+        ul{
+          padding-left: 20px;  
+        }
+
+
+        .account-header{
+          color:white;
+          padding-top: 35px;
+          padding-bottom: 15px;
+          text-align: center;
+          font-weight: 800;
+          display:block;
+          margin: 0;
+        }
+
+        .contact-header {
+          color:white;
+          padding-top: 35px;
+          padding-bottom: 15px;
+          text-align: left;
+          font-weight: 800;
+          margin-bottom: 0px;
+        }
+        
+        .account-logo{
+          padding-top: 35px;
+          padding-bottom: 15px;
+          margin: 0;
+          width: 40%;
+        }
+
+        .heading{
+          padding-left: 0px;
+          margin: 10px;
+          text-align: left;
+          font-weight: 800;
+          display:block;
+          margin: 0;
+        }
+
+        .page-text {
+          font-weight: 400;
+          margin: 0px;
+          text-align:left;
+          line-height:normal;
+        }
+
+        .text-header {
+          font-weight: 400;
+          margin: 0px;
+          text-align:center;
+          line-height:normal;
+        }
+
+        .page-header {
+          font-weight: 800;
+          margin: 0px;
+          padding-bottom: 10px;
+          text-align:left;
+          line-height:normal;
+        }
+
+        .welcome-text {
+          color: white;
+          font-weight: 400;
+          text-align:left;
+          padding-bottom: 10px;
+          margin: 0;
+        }
+
+        .contact-text {
+          color: white;
+          font-weight: 400;
+          padding-left: 10px;
+          text-align:left;
+          padding-bottom: 10px;
+          margin: 0;
+        }
+
+        .why-text {
+          font-weight: 400;
+          margin: 0px;
+          text-align:center;
+          line-height:normal;
+        }
+
+        .section-heading{
+        margin-top: 10px;
+        font-weight: 600;
+        color: black;
+        text-align: left;
+        line-height: 25px;
+        font-size: large;
+        }
+
+        .section-text{
+        font-weight: 400;
+        color: black;
+        text-align:left;
+        line-height: 25px;
+        font-size: medium;
+        }
+
+        .heading-footer{
+          color: white;
+          margin-bottom:10px;
+          text-align: left;
+        }
+        
+
+        .headline-middle {
+          box-sizing: border-box;
+          padding: 0px;
+          margin: auto;
+          width: 40%;
+          border-bottom: 20px solid #e00201;
+          -webkit-appearance: none !important;
+        }
+
+        .dot {
+          height: 90px;
+          width: 90px;
+          border-radius: 50%;
+          display: inline-block;
+          font-size: 10px;
+          font-weight: bolder;
+          color: #fff;
+          line-height: 90px;
+          text-align: center;
+          background-color: gold; 
+          color: black;
+          /*background: linear-gradient(to bottom right, purple , violet);*/
+        }
+
+        .alert {
+          background-color:white;
+          border-color: #D1D1D1;
+          border-radius: 0%;
+          margin: 0;
+          padding: 25px;
+        }
+
+    /**Other assets**/
+
+    button {
+          background: transparent;
+          display:block;
+          width:100%;
+          border: 0px #3D9AD3 solid;
+          color: white;
+          background:#3D9AD3;
+          padding: 10px 20px;
+          margin: .618em 0.01em;  
+          font-weight: 800;
+          font-style: normal;
+          animation-delay: 2400ms;
+          font-size: 15px;
+          letter-spacing: .01em;
+          text-transform: normal;
+          transition: background-color 170ms  ease-out,color 170ms ease-out;
+        }
+
+        button:focus{
+          background-color:gold;;
+          border: 0px solid ;
+          color: black;
+          border-width: 1px;
+        }
+
+        button:hover {
+          background-color:gold;
+          border: 0px solid ;
+          color: black;
+        }
+
+        a.col-sm {
+                    text-decoration: none;
+                  }
+                  
+        #header-logo {
+          width: 150px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 80px;
+          }
+        
+        #banner-logo {
+          width: 25%;
+          }
+        
+        #contact-logo {
+          width: 5%;
+          display: inline-block;
+          }
+        
+        .logo-container {
+          padding-top: 80px;
+          padding-bottom: 60px;
+          text-align: center;
+        }
+
+        .contact-container {
+          text-align: center;
+        }
+
+        #alert {
+          display:block;
+          width:20%;
+          border: 0px #3D9AD3 solid;
+          color: white;
+          background:#3D9AD3;
+          padding: 10px 20px;
+          margin: .618em 0.01em;  
+          font-weight: 800;
+          font-style: normal;
+          animation-delay: 2400ms;
+          font-size: 15px;
+          letter-spacing: .01em;
+          text-transform: normal;
+          transition: background-color 170ms  ease-out,color 170ms ease-out;
+        }
+
+        #alert:hover {
+          background-color:gold;
+          border: 0px solid ;
+          color: black;
+        }
+
+        #hub-image {
+          width: 100%;
+          padding-bottom: 10px;
+        }
+
+        ::placeholder{
+          color: gray;
+          font-size: small;
+        }
+
+        a{
+          color: gray;
+          font-size: small;
+        }
+
+        .account-background {
+          background-color: #f1f2f5;
+        }
+
+  
+  
+  /**Bootstrap Columns and Sections**/
+        
+        .col-sm { 
+          /*background: white;
+          box-shadow: 0 5px 8px 0 #D1D1D1;
+          -webkit-transition: box-shadow 150ms ease;
+          transition: box-shadow 150ms ease;*/
+          margin:10px;
+          padding: 20px;
+          border-radius: 0%;
+          border-radius: 3px;
+        }
+
+        #link {
+          color:gray;
+          font-size: medium;
+          font-weight: 800;
+        }
+
+        #link:hover {
+          color:#3D9AD3;
+          font-size: medium;
+          font-weight: 800;
+        }
+
+        #demo {
+          background-image: url(https://dl.dropboxusercontent.com/s/16zgfswpopbjooy/demo.jpg?dl=0);
+        }
+
+        #wp1 {
+          background-image: url(https://dl.dropboxusercontent.com/s/lfvlnr8pr72shg4/banner-4.jpg?dl=0);
+        }
+
+        #wp2 {
+          background-image: url(https://dl.dropboxusercontent.com/s/vqsi51g2aojke9s/white-paper-2.jpg?dl=0);
+        }
+
+        #welcome-video {
+          background-image: url(https://dl.dropboxusercontent.com/s/clum8x6drgbiuu5/icon-welcome.png?dl=0);
+        }
+        
+        .col-md { /**Why Choose PAYG+**/
+          text-align: right;
+        }
+
+        @media only screen and (max-width: 990px) {
+      .col-md, .contact-header, .contact-text, #header-logo,  .alert, .alert, ul {
+        margin-left:10px !important;
+        margin-right:10px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+    }
+
+    @media only screen and (max-width: 990px) {
+      .row, .col-sm, .navbar, .open-slide, form, .page-text, .vertical-center, .account-header , .home-small-1, .heading, li, .panel, .featherlight-content, .headline-middle, #banner-intro-ec{
+                margin-left:0 !important;
+                margin-right:0 !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+                }
+                *, .html {
+                  margin-left:0 !important;
+                  margin-right:0 !important;
+                  padding-left: 0 !important;
+                  padding-right: 0 !important;
+                }
+      }
+      </style>
+
+<!--CSS Contact Form-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+        #mySidenav a {
+          position: fixed;
+          right: -150px;
+          top: 250px;
+          transition: 0.3s;
+          padding: 20px;
+          width: 170px;
+          font-size: 20px;
+          color: white;
+          text-align: center;
+          z-index:1000;
+          
+        }
+        
+        #mySidenav a:hover {
+            right: 0;
+        }
+        
+        #contact {
+          top: 20px;
+          background-color: #589AD2;
+        }
+
+        @media only screen and (max-width: 990px) {
+          #mySidenav a {
+            display: none;
+            }
+          }
+</style>
+</head>
+<body>
+
+<!--SAP Header-->
+<section>
+  <nav class="navbar">
+    <p style="padding-left: 65px;padding-top:5px;padding-bottom:5px; margin: 0px;"><a href="https://www..com" ><img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" id="header-logo"></a>&nbsp;&nbsp;</p>
+    </nav>
+</section>
+
+<!--Banner-->
+<section>
+  <div class="w3-container" id="banner">    
+    <div class='logo-container'>
+      <img src="https://dl.dropboxusercontent.com/s/xnlqojdc4jztt7e/vodafone-logo-transparent.png?dl=0" id="banner-logo">
+    </div>
+      <div class="">
+        <h1 class="account-header" style="text-align: center;padding-left: 150px;padding-right: 150px;">Connect for a better future</h1>
+        <script>document.getElementById('greeting').innerHTML = new Date().getHours() >= 12 ? 'Good Afternoon,' : 'Good Morning,';</script>
+          <br>
+          <br>
+        </div>    
+      </div>
+    <style>
+        /* For width larger than 990px: */
+        #banner {
+          padding-top: 100px;
+          padding-bottom: 100px;
+          padding-left: 150px;
+          padding-right: 150px;
+          background-image:url(https://dl.dropboxusercontent.com/s/8ptug542t3odti5/banner-7.jpg?dl=0);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+    
+        .banner-text {
+              color:white;
+              font-size: 6vw;
+              padding-top: 100px;
+              padding-bottom: 0px;
+              text-align: left;
+              font-weight: 800;
+              display:block;
+              margin: 0;
+        }
+
+        
+        @media only screen and (max-width: 990px) {
+        #banner {
+          padding-top: 50px;
+          padding-bottom: 50px;
+          padding-left: 150px;
+          background-image:url(https://dl.dropboxusercontent.com/s/8ptug542t3odti5/banner-7.jpg?dl=0);
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .banner-text{
+            font-size: 50px;
+            margin-left:20px !important;
+            margin-right:20px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+          }
+        }
+        </style>
+  </section>
+
+<!--Account Welcome Message-->
+<section class="account-background">
+        <div class="w3-container" style="background-color: black">
+          <div class="col-lg">
+            <br>
+            <div class="alert anim-fade in" style="background-color: whitesmoke; border-radius: 3px;">
+              <div class="">
+                <span class="message-copy pad-r" aria-live="assertive">
+                  <!--<p class="page-text">Hi John,</p>
+                  <br>-->
+                  <p class="page-text">Welcome to Vodafone portal.</p>
+                  <br>
+                  <p class="page-text">These are your updates for this week:</p>
+                  <br>
+                  <ul>
+                    <il> · New blog available.</il>
+                  </ul>
+                  <p class="page-text">Any questions, just text me hitting the "Contact" blue widget.</p>
+                  <!--<p class="page-text">Welcome to your <b>Project Agile</b> portal. Here you'll find all the necessary information about the project, objectives and supporting documents, so we can collectivelly make the best business decision. Each DMU member has access to its own portal and share similar documents. My team and I are constantly updating it.</p> 
+                  <p class="page-text">Last but not least, we're finishing the demo that we discussed last week, you'll receive an email notification when is up and running so you can have a look. If you have any questions, please contact me anytime on the blue tag.</p>
+                  <br>-->
+                  <br>
+                  <p class="page-text">Mark - Account Manager</p>
+                  <br>
+                </span>
+              </div>
+              <div >
+                <button id='alert' data-dismiss="alert"  title="Close-personalization-The_Bank_o" type="button">
+                  Close Message
+                </button>
+              </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--Project Objective-->
+<section class="account-background">
+    <div class="w3-container" style="background-color: black">
+      <div class="col-lg">
+        <br>
+        <br>
+        </div>
+    </div>
+</section>
+
+<!--Select -->
+<section class="account-background">
+  <div class="w3-container" style="background-color:white">
+      <div class="col-lg">
+        <br>
+        <br>
+        <br>
+        <label class="headline-middle"> </label>
+        <h2 class="heading">Top Stories</h2>
+        </div>
+      <br>
+      <div class="row">
+                  <!--Business Case-->
+                    <div class="col-sm">
+                          <img src="https://dl.dropboxusercontent.com/s/6o2zt21x8rvq4kz/hub-image-vf-1.png?dl=0" id="hub-image">
+                          <p class='page-header' style="color: black;">Vodafone leading the way in ML</p>
+                            <p class="page-text" style="color: black;"></p>
+                            <p class="page-text" style="color: black;"><b> · Reduce task times by 4x </b> with real-time access to data.</p>
+                            <p class="page-text" style="color: black;"><b> · Drive innovation by 50% </b> with improved team collaboration.</p>
+                            <br>
+                            <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
+                        </div>
+              <!--White paper 1-->
+              <div class="col-sm">
+                <img src="https://dl.dropboxusercontent.com/s/c0027pq9xmn92kz/hub-image3.png?dl=0" id="hub-image">
+                  <p class='page-header' style="color: black;">Custom Thought Leadership 1 (PDF)</p>
+                      <p class="page-text" style="color: black;">This is an example of description of a white paper.</p>
+                      <p class="page-text" style="color: black;">By Author.</p>
+                      <br>
+                      <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
+                  </div>
+
+              <!--White paper 2-->
+              <div class="col-sm">
+                <img src="https://dl.dropboxusercontent.com/s/398awip1gzkb7r2/hub-image5.png?dl=0" id="hub-image">
+                      <p class='page-header' style="color: black;">Custom Thought Leadership 2 (PDF)</p>
+                      <p class="page-text" style="color: black;">This is an example of description of a white paper.</p>
+                      <p class="page-text" style="color: black;">By Author.</p>
+                      <br>
+                      <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
+                </div>
+        </div>
+      <br>
+      <br>
+</section>
+
+<!--Select Blog -->
+<section class="account-background">
+  <div class="w3-container" style="background-color:#f1f2f5">
+        <div class="col-lg">
+          <br>
+          <br>
+          <br>
+            <label class="headline-middle"> </label>
+            <h2 class="heading">Telco Innovation Blog</h2>
+          </div>
+        <br>
+        <div class="row">
+                <!--SAP Analytics-->
+                <div class="col-sm">
+                  <img src="https://dl.dropboxusercontent.com/s/lzh4m5s8fijbcdf/Screenshot%202020-05-06%20at%2013.31.39.png?dl=0" id="hub-image">
+                        <p class='page-header' style="color: black;">Get Ready for 5G in 2021</p>
+                        <p class="page-text" style="color: black;">Blog content</p>
+                        <br>
+                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
+                  </div>
+
+                <!--Product description-->
+                <div class="col-sm">
+                  <img src="https://dl.dropboxusercontent.com/s/3q3dp1phl6c0rds/blog-banner-covid19.png?dl=0" id="hub-image">
+                        <p class='page-header' style="color: black;">Revenue growth strategies amid Covid-19</p>
+                        <p class="page-text" style="color: black;">Blog content</p>
+                        <br>
+                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
+                  </div>
+
+                 <!--Product description-->
+                 <div class="col-sm">
+                  <img src="https://dl.dropboxusercontent.com/s/hiokpim7z60jiaz/blog-banner-deliverCX.png?dl=0" id="hub-image">
+                        <p class='page-header' style="color: black;">Leveraging data and analytics to sell "one more" service</p>
+                        <p class="page-text" style="color: black;">Blog content</p>
+                        <br>
+                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
+                  </div>
+
+                 <!--Welcome message-->
+                <div class="col-sm">
+                  <img src="https://dl.dropboxusercontent.com/s/peqtvtddn325mmv/blog-banner-sell1more.png?dl=0" id="hub-image">
+                        <p class='page-header' style="color: black;">How to adapt, and still, deliver best customer experience</p>
+                        <p class="page-text" style="color: black;">Blog content</p>
+                        <br>
+                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
+                  </div>
+          </div>
+    </div>
+      <br>
+      <br>
+</section>
+
+<!--Select 
+<section class="account-background">
+  <div class="w3-container" style="background-color:white">
+        <div class="col-lg">
+          <br>
+          <br>
+          <br>
+            <label class="headline-middle"> </label>
+            <h2 class="heading">Solutions overview</h2>
+          </div>
+        <br>
+        <div class="row">
+                <!--SAP Analytics
+                <div class="col-sm">
+                  <img src="https://dl.dropboxusercontent.com/s/9qis8btscf0jhie/hub-image4.png?dl=0" id="hub-image">
+                        <p class='page-header' style="color: black;">Implementation Roadmap</p>
+                        <p class="page-text" style="color: black;">Description</p>
+                        <br>
+                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
+                  </div>
+
+                <!--Product description
+                <div class="col-sm">
+                  <img src="https://dl.dropboxusercontent.com/s/9qis8btscf0jhie/hub-image4.png?dl=0" id="hub-image">
+                        <p class='page-header' style="color: black;">SAP S/4HANA </p>
+                        <p class="page-text" style="color: black;">Product description</p>
+                        <br>
+                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
+                  </div>
+
+                 <!--Product description
+                 <div class="col-sm">
+                  <img src="https://dl.dropboxusercontent.com/s/9qis8btscf0jhie/hub-image4.png?dl=0" id="hub-image">
+                        <p class='page-header' style="color: black;">How SAP helped X Company during Y context</p>
+                        <p class="page-text" style="color: black;">Description</p>
+                        <br>
+                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
+                  </div>
+
+                 <!--Welcome message
+                <div class="col-sm">
+                  <img src="https://dl.dropboxusercontent.com/s/9qis8btscf0jhie/hub-image4.png?dl=0" id="hub-image">
+                        <p class='page-header' style="color: black;">Welcome to your Portal</p>
+                        <p class="page-text" style="color: black;">Introduction to Portal</p>
+                        <br>
+                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
+                  </div>
+          </div>
+          <br>
+          <br>
+    </div>
+</section>-->
+
+<!--Qualtrics-->
+<section>
+  <div class="w3-container" id='mobile-contact'>
+    <br>
+    <div class="col-lg">
+        <p class="page-text" style="color: white;">This is a new service - your <a href="#" data-featherlight="#feedback-form" class="product-small-lightbox" id='feedback'>feedback</a> will help us improve it</p>
+      </div>
+      <br>
+      </div>
+      <div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1554472144065_8906"><div class="sqs-block-content"> <div style="display:none;">
+        <div id="feedback-form">
+          <p class="contact-header" style="color: black;">Rate Your Portal Experience</p>
+          <p class="sub-heading"></p>
+          <ul>
+            <li>Rate from o to 10 experience X </li>
+          </ul>
+          <ul>
+            <li>Rate from o to 10 experience Y </li>
+          </ul>
+          <ul>
+            <li>Rate from o to 10 experience Z </li>
+          </ul>
+          <br>
+          <p>Thank you for your feedback</p>
+          <br>
+          <p class="page-text" style="color: gray;font-size: small;">Powered by <a href="https://www.qualtrics.com/uk/" target="_blank"><img src="https://dl.dropboxusercontent.com/s/rr11xk4hburcp0r/logo-qualtrics.jpg?dl=0" alt="calm-nutri-facts" style="width:50px"></a></p>
+          <br>
+      </div>
+      </div></div></div>
+    <style>
+      #mobile-contact {
+          background-color: #589AD2;
+          display: block;
+      }
+      #feedback {
+        font-weight: 800;
+      }
+      @media only screen and (max-width: 990px) {
+        #mobile-contact {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+          display: block;
+          background-color: #589AD2;
+        }
+      }
+    </style>
+</section>
+
+<!--Footer-->
+<section>
+    <footer class="w3-container" id='footer'>
+       <style>
+         #footer{
+           padding: 0px;
+         }
+         </style>
+   
+         <div class="row">
+             <div class="col-md-3">
+                 <img src="https://dl.dropboxusercontent.com/s/lnzargw6rrffgnp/favicon.png?dl=0" src="blank.gif" style="width:50px"></a>     
+             </div>
+            
+           <div class="col-md-3">
+             </div>
+   
+           <div class="col-md-3"> 
+              </div>
+ 
+           <div class="col-md-3">
+               <br>
+               <p id="trust"></p></a>
+               <p id="trust"></p></a>
+            </div>
+ 
+                 <style>         
+                   
+                   #footer {
+                     background-image: linear-gradient(to bottom, black, black);
+                     padding-right: 25px;
+                     padding-top: 25px;
+                     padding-bottom: 120px;
+                   }
+ 
+                   .footer-links{
+                     text-align:left;
+                     font-size: 12px;
+                     color: white;
+                   }
+                   #trust {
+                     text-align:left;
+                     color: white;
+                     margin: 0;
+                   }
+   
+                   #trust-tc{
+                     text-align:left;
+                     font-size: 12px;
+                     color: white;
+                     margin: 0;
+                     border-style: solid;
+                     border-width: thin;
+                     border-color: white;
+                     }
+   
+                   #vsu-trust {
+                     text-align:center;
+                   }
+                   </style> 
+   
+           </div>
+         </footer>
+ </section>
+
+<!--Contact Banner-->
+<section>
+    <div class="contact-us-side-widget">
+      <div class="contact-container">
+        <p class="contact-us-side-widget__questions">Questions?</p>
+      </div>
+    <a href="mailto:marco.valgof@gmail.com" target="_blank"><p class="contact-us-side-widget__title">Contact Mark</p></a>
+    </div>
+    <style>
+      .contact-us-side-widget {
+        background-color: #3D9AD3;
+        margin: 0px;
+        position: fixed;
+        top: 50%;
+        right: 0;
+        z-index: 1000;
+      }
+
+      a:link {
+          color: white;
+          font-weight: 500;
+          font-size: medium;
+        }
+      
+        .contact-us-side-widget__questions{
+        padding-top: 20px;
+        color: white;
+        margin: 0px;
+      }
+
+      .contact-us-side-widget__title{
+        text-align: center;
+        color: white;
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-top: 0px;
+        padding-bottom: 30px;
+        margin: 0px;
+      }
+    </style>
+</section>
+
+   </body>
+ </html>

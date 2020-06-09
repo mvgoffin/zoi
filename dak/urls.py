@@ -48,6 +48,8 @@ urlpatterns = [
     #Vodafone
     path('loginvf/', views.loginvf, name='loginvf'),
     path('pagevf/', views.pagevf, name='pagevf'),
+    path('vfchapters/', views.vfchapters, name='vfchapters'),
+    path('vftimeline/', views.vftimeline, name='vftimeline'),
     #path('pagevf_mike/', views.pagevf_mike, name='pagevf_mike'),
 
     #----Zoi Marketplace----#
