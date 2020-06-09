@@ -255,6 +255,13 @@ video {
   transform: translateX(-50%) translateY(-50%);
 }
 
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
 #chapter-tile{
   text-align: center;
   margin: 20px;
@@ -265,6 +272,7 @@ video {
 #title-tile{
   padding-top: 100px;
   padding-bottom: 100px;
+  color: white;
 }
 
 button {
@@ -592,10 +600,14 @@ padding-right: 0px !important;
         <div class="video-container">
           <video autoplay muted loop>
               <source src="https://dl.dropboxusercontent.com/s/0lthgb7605fwg53/Pexels%20Videos%201721294.mp4?dl=0" type="video/mp4" />
-                <h3>CHAPTER 2</h3>
-                <p>Finance Transformation</p>
           </video>
+          <div class="overlay">
+            <div class="row" id="title-tile">
+            <h3>CHAPTER 2</h3>
+            <p>Finance Transformation</p>
+            </div>
           </div>
+          </div>  
       </div>
       <script>
         var figure = $(".video").hover( hoverVideo, hideVideo );
