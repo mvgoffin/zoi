@@ -229,8 +229,43 @@ font-size: medium;
   padding: 25px;
 }
 
+h2 {
+  margin: 0px;
+}
+
+p{
+  margin: 0px;
+}
+
     /**Other assets**/
 
+.video-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#chapter-tile{
+  text-align: center;
+  margin: 20px;
+  padding: 0px;
+  background-color: gray;
+}
+
+#title-tile{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
 button {
   background: transparent;
@@ -478,7 +513,13 @@ padding-right: 0px !important;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
           <div class="" style="padding: 0px;" id="select-nav-bar-option">
-            <a href="https://www.demodap.com/vftimeline"></a><p id="text-nav-bar">Timeline</p>
+            <a href="https://www.demodap.com/vftimeline"><p id="text-nav-bar">Timeline</p></a>  
+          </div>
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+          <div class="" style="padding: 0px;" id="select-nav-bar-option">
+            <a href="https://www.demodap.com/vfchapters"><p id="text-nav-bar">SAP for Me</p></a>  
           </div>
           <div class="col-md-6" id="space">
           </div>
@@ -543,249 +584,74 @@ padding-right: 0px !important;
         }
         </style>
   </section>
-
-<!--Account Welcome Message-->
-<section class="account-background">
-        <div class="w3-container" style="background-color: black">
-          <div class="col-lg">
-            <br>
-            <div class="alert anim-fade in" style="background-color: whitesmoke; border-radius: 3px;">
-              <div class="">
-                <span class="message-copy pad-r" aria-live="assertive">
-                  <!--<p class="page-text">Hi John,</p>
-                  <br>-->
-                  <p class="page-text">Welcome to Vodafone portal.</p>
-                  <br>
-                  <p class="page-text">These are your updates for this week:</p>
-                  <br>
-                  <ul>
-                    <il> · New blog available.</il>
-                  </ul>
-                  <p class="page-text">Any questions, just text me hitting the "Contact" blue widget.</p>
-                  <!--<p class="page-text">Welcome to your <b>Project Agile</b> portal. Here you'll find all the necessary information about the project, objectives and supporting documents, so we can collectivelly make the best business decision. Each DMU member has access to its own portal and share similar documents. My team and I are constantly updating it.</p> 
-                  <p class="page-text">Last but not least, we're finishing the demo that we discussed last week, you'll receive an email notification when is up and running so you can have a look. If you have any questions, please contact me anytime on the blue tag.</p>
-                  <br>-->
-                  <br>
-                  <p class="page-text">Mark - Account Manager</p>
-                  <br>
-                </span>
-              </div>
-              <div >
-                <button id='alert' data-dismiss="alert"  title="Close-personalization-The_Bank_o" type="button">
-                  Close Message
-                </button>
-              </div>
-        </div>
-      </div>
-    </div>
-</section>
-
-<!--Project Objective-->
-<section class="account-background">
-    <div class="w3-container" style="background-color: black">
-      <div class="col-lg">
-        <br>
-        <br>
-        </div>
-    </div>
-</section>
-
-<!--Select -->
-<section class="account-background">
-  <div class="w3-container" style="background-color:white">
-      <div class="col-lg">
-        <br>
-        <br>
-        <br>
-        <label class="headline-middle"> </label>
-        <h2 class="heading">Top Stories</h2>
-        </div>
-      <br>
-      <div class="row">
-                  <!--Business Case-->
-                    <div class="col-sm">
-                          <img src="https://dl.dropboxusercontent.com/s/6o2zt21x8rvq4kz/hub-image-vf-1.png?dl=0" id="hub-image">
-                          <p class='page-header' style="color: black;">Vodafone leading the way in ML</p>
-                            <p class="page-text" style="color: black;"></p>
-                            <p class="page-text" style="color: black;"><b> · Reduce task times by 4x </b> with real-time access to data.</p>
-                            <p class="page-text" style="color: black;"><b> · Drive innovation by 50% </b> with improved team collaboration.</p>
-                            <br>
-                            <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
-                        </div>
-              <!--White paper 1-->
-              <div class="col-sm">
-                <img src="https://dl.dropboxusercontent.com/s/c0027pq9xmn92kz/hub-image3.png?dl=0" id="hub-image">
-                  <p class='page-header' style="color: black;">Custom Thought Leadership 1 (PDF)</p>
-                      <p class="page-text" style="color: black;">This is an example of description of a white paper.</p>
-                      <p class="page-text" style="color: black;">By Author.</p>
-                      <br>
-                      <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
-                  </div>
-
-              <!--White paper 2-->
-              <div class="col-sm">
-                <img src="https://dl.dropboxusercontent.com/s/398awip1gzkb7r2/hub-image5.png?dl=0" id="hub-image">
-                      <p class='page-header' style="color: black;">Custom Thought Leadership 2 (PDF)</p>
-                      <p class="page-text" style="color: black;">This is an example of description of a white paper.</p>
-                      <p class="page-text" style="color: black;">By Author.</p>
-                      <br>
-                      <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
-                </div>
-        </div>
-      <br>
-      <br>
-</section>
-
-<!--Select Blog -->
-<section class="account-background">
-  <div class="w3-container" style="background-color:#f1f2f5">
-        <div class="col-lg">
-          <br>
-          <br>
-          <br>
-            <label class="headline-middle"> </label>
-            <h2 class="heading">Telco Innovation Blog</h2>
-          </div>
-        <br>
-        <div class="row">
-                <!--SAP Analytics-->
-                <div class="col-sm">
-                  <img src="https://dl.dropboxusercontent.com/s/lzh4m5s8fijbcdf/Screenshot%202020-05-06%20at%2013.31.39.png?dl=0" id="hub-image">
-                        <p class='page-header' style="color: black;">Get Ready for 5G in 2021</p>
-                        <p class="page-text" style="color: black;">Blog content</p>
-                        <br>
-                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
-                  </div>
-
-                <!--Product description-->
-                <div class="col-sm">
-                  <img src="https://dl.dropboxusercontent.com/s/3q3dp1phl6c0rds/blog-banner-covid19.png?dl=0" id="hub-image">
-                        <p class='page-header' style="color: black;">Revenue growth strategies amid Covid-19</p>
-                        <p class="page-text" style="color: black;">Blog content</p>
-                        <br>
-                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
-                  </div>
-
-                 <!--Product description-->
-                 <div class="col-sm">
-                  <img src="https://dl.dropboxusercontent.com/s/hiokpim7z60jiaz/blog-banner-deliverCX.png?dl=0" id="hub-image">
-                        <p class='page-header' style="color: black;">Leveraging data and analytics to sell "one more" service</p>
-                        <p class="page-text" style="color: black;">Blog content</p>
-                        <br>
-                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
-                  </div>
-
-                 <!--Welcome message-->
-                <div class="col-sm">
-                  <img src="https://dl.dropboxusercontent.com/s/peqtvtddn325mmv/blog-banner-sell1more.png?dl=0" id="hub-image">
-                        <p class='page-header' style="color: black;">How to adapt, and still, deliver best customer experience</p>
-                        <p class="page-text" style="color: black;">Blog content</p>
-                        <br>
-                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
-                  </div>
-          </div>
-    </div>
-      <br>
-      <br>
-</section>
-
-<!--Select 
-<section class="account-background">
-  <div class="w3-container" style="background-color:white">
-        <div class="col-lg">
-          <br>
-          <br>
-          <br>
-            <label class="headline-middle"> </label>
-            <h2 class="heading">Solutions overview</h2>
-          </div>
-        <br>
-        <div class="row">
-                <!--SAP Analytics
-                <div class="col-sm">
-                  <img src="https://dl.dropboxusercontent.com/s/9qis8btscf0jhie/hub-image4.png?dl=0" id="hub-image">
-                        <p class='page-header' style="color: black;">Implementation Roadmap</p>
-                        <p class="page-text" style="color: black;">Description</p>
-                        <br>
-                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
-                  </div>
-
-                <!--Product description
-                <div class="col-sm">
-                  <img src="https://dl.dropboxusercontent.com/s/9qis8btscf0jhie/hub-image4.png?dl=0" id="hub-image">
-                        <p class='page-header' style="color: black;">SAP S/4HANA </p>
-                        <p class="page-text" style="color: black;">Product description</p>
-                        <br>
-                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
-                  </div>
-
-                 <!--Product description
-                 <div class="col-sm">
-                  <img src="https://dl.dropboxusercontent.com/s/9qis8btscf0jhie/hub-image4.png?dl=0" id="hub-image">
-                        <p class='page-header' style="color: black;">How SAP helped X Company during Y context</p>
-                        <p class="page-text" style="color: black;">Description</p>
-                        <br>
-                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
-                  </div>
-
-                 <!--Welcome message
-                <div class="col-sm">
-                  <img src="https://dl.dropboxusercontent.com/s/9qis8btscf0jhie/hub-image4.png?dl=0" id="hub-image">
-                        <p class='page-header' style="color: black;">Welcome to your Portal</p>
-                        <p class="page-text" style="color: black;">Introduction to Portal</p>
-                        <br>
-                        <a href="https://www.demodap.com/pagevf" id='link'>Learn More</a>
-                  </div>
-          </div>
-          <br>
-          <br>
-    </div>
-</section>-->
-
-<!--Qualtrics-->
+<!--Chapters-->
 <section>
-  <div class="w3-container" id='mobile-contact'>
-    <br>
-    <div class="col-lg">
-        <p class="page-text" style="color: white;">This is a new service - your <a href="#" data-featherlight="#feedback-form" class="product-small-lightbox" id='feedback'>feedback</a> will help us improve it</p>
+  <div class="w3-container">
+    <div class="row">
+      <div class="col-md" id="chapter-tile">
+        <div class="video-container">
+          <video autoplay muted loop>
+              <source src="https://dl.dropboxusercontent.com/s/0lthgb7605fwg53/Pexels%20Videos%201721294.mp4?dl=0" type="video/mp4" />
+                <h3>CHAPTER 2</h3>
+                <p>Finance Transformation</p>
+          </video>
+          </div>
       </div>
-      <br>
-      </div>
-      <div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1554472144065_8906"><div class="sqs-block-content"> <div style="display:none;">
-        <div id="feedback-form">
-          <p class="contact-header" style="color: black;">Rate Your Portal Experience</p>
-          <p class="sub-heading"></p>
-          <ul>
-            <li>Rate from o to 10 experience X </li>
-          </ul>
-          <ul>
-            <li>Rate from o to 10 experience Y </li>
-          </ul>
-          <ul>
-            <li>Rate from o to 10 experience Z </li>
-          </ul>
-          <br>
-          <p>Thank you for your feedback</p>
-          <br>
-          <p class="page-text" style="color: gray;font-size: small;">Powered by <a href="https://www.qualtrics.com/uk/" target="_blank"><img src="https://dl.dropboxusercontent.com/s/rr11xk4hburcp0r/logo-qualtrics.jpg?dl=0" alt="calm-nutri-facts" style="width:50px"></a></p>
-          <br>
-      </div>
-      </div></div></div>
-    <style>
-      #mobile-contact {
-          background-color: #589AD2;
-          display: block;
-      }
-      #feedback {
-        font-weight: 800;
-      }
-      @media only screen and (max-width: 990px) {
-        #mobile-contact {
-          padding-left: 0px !important;
-          padding-right: 0px !important;
-          display: block;
-          background-color: #589AD2;
+      <script>
+        var figure = $(".video").hover( hoverVideo, hideVideo );
+
+        function hoverVideo(e) {  
+            $('video', this).get(0).play(); 
         }
+
+        function hideVideo(e) {
+            $('video', this).get(0).pause(); 
+        }
+      </script>
+      <div class="col-md" id="chapter-tile">
+        <div id="title-tile">
+          <h3>CHAPTER 2</h3>
+          <p>Finance Transformation</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <h2>CHAPTER 1</h2>
+        </p>S/4HANA</p>
+      </div>
+      <div class="col-md">
+        <h2>CHAPTER 1</h2>
+        </p>S/4HANA</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <h2>CHAPTER 1</h2>
+        </p>S/4HANA</p>
+      </div>
+      <div class="col-md">
+        <h2>CHAPTER 1</h2>
+        </p>S/4HANA</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--To Be Continued-->
+<section>
+  <div class="w3-container">
+      <div class="col-md" id="to-be-continued">
+      <h2 id="to-be-continued">TO BE CONTINUED...</h2>
+    </div> 
+    <style>
+      #to-be-continued{
+        text-align: center;
+        font-weight: 900;
+        font-size: 30px;
+        padding: 20px;
+        color: white;
+        background-color: black;
       }
     </style>
 </section>
