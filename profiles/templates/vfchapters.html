@@ -314,6 +314,7 @@ padding-left: 80px;
 
 #banner-logo {
 width: 25%;
+text-align: left;
 }
 
 #text-nav-bar{
@@ -496,6 +497,25 @@ padding-right: 0px !important;
             }
           }
 </style>
+<!--Style - Hero Banner-->
+<style>
+  #banner.w3-container {
+  padding-bottom: 75px;
+  }
+      
+  #banner {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-image:url(https://dl.dropboxusercontent.com/s/cs3o45dor5tm2pe/Banner.jpg?dl=0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  }  
+
+</style>
 </head>
 
 
@@ -530,7 +550,23 @@ padding-right: 0px !important;
   </div>
 </section>
 
-<!--Banner-->
+ <!--2. Hero Banner-->
+ <section>
+  <div class="w3-container" id="banner"> 
+    <div class='logo-container'>
+      <img src="https://dl.dropboxusercontent.com/s/xnlqojdc4jztt7e/vodafone-logo-transparent.png?dl=0" id="banner-logo">
+    </div>
+          <h1 style="font-weight: bolder;">Connect for a better future</h1>
+          <p style="font-size: large;">Convenient access to electronic and office furniture donations from forward-thinking companies</p>   
+          <div class="w3-container">
+              <div class="row" id="search-bar">
+                  </div>
+              </div>
+          </div>
+  </div>
+  </section>
+
+<!--Banner
 <section>
   <div class="w3-container" id="banner">    
     <div class='logo-container'>
@@ -586,7 +622,7 @@ padding-right: 0px !important;
           }
         }
         </style>
-  </section>
+  </section>-->
 <!--Chapters-->
 <section>
   <div class="w3-container" style="">
@@ -726,7 +762,7 @@ padding-right: 0px !important;
          </footer>
  </section>
 
-<!--Contact Banner-->
+<!--Contact Banner
 <section>
     <div class="contact-us-side-widget">
       <div class="contact-container">
@@ -766,7 +802,7 @@ padding-right: 0px !important;
         margin: 0px;
       }
     </style>
-</section>
+</section>-->
 
 <script>
   var figure = $(".video-container").hover( hoverVideo, hideVideo );
