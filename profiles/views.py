@@ -115,9 +115,9 @@ def pagevf_mike(request):
     template = 'pagevf_mike.html'
     return render(request,template,context)
 
-def vfchapters(request):
+def vfepisodes(request):
     context = locals()
-    template = 'vfchapters.html'
+    template = 'vfepisodes.html'
     return render(request,template,context)
 
 def vftimeline(request):
