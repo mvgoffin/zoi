@@ -345,7 +345,7 @@ display: inline-block;
 .logo-container {
 padding-top: 80px;
 padding-bottom: 60px;
-text-align: center;
+text-align: left;
 }
 
 .contact-container {
@@ -556,28 +556,36 @@ padding-right: 0px !important;
 
  <!--2. Hero Banner-->
  <section>
-  <div class="w3-container" id="banner"> 
-    <div class='logo-container'>
-      <img src="https://dl.dropboxusercontent.com/s/xnlqojdc4jztt7e/vodafone-logo-transparent.png?dl=0" id="banner-logo">
+  <div class="w3-container"> 
+    <div class="">
+      <div class="video-container">
+        <video autoplay muted loop>
+            <source src="https://dl.dropboxusercontent.com/s/d741e8nrh1o8iom/video-friends.mp4?dl=0" type="video/mp4" />
+        </video>
+        
+        <div class="col-md-5" style="padding-left: 120px;padding-top: 220px;">
+          <img src="https://dl.dropboxusercontent.com/s/vf15x9xv8jcmbwa/bt-logo.png?dl=0" id="banner-logo">
+          <h2 style="font-weight: bolder;line-height: 1.6;color: white;text-align: left;">Delivering differentiated customer experience</h2>
+        </div>
+        <div class="col-md-7" style="padding-left: 120px;">
+        <p style="font-size: medium;font-weight:medium;line-height: 1.6;color: white;text-align: left;padding-right: 200px;">What does it take to Commerce as the core of an integrated solution landscape</p>   
     </div>
-    <div class="col-md" style="padding: 0px;">
-          <h2 style="font-weight: bolder;line-height: 1.6;color: white;text-align: center;">Delivering differentiated customer experience</h2>
-          <!--<p style="font-size: medium;font-weight:medium;line-height: 1.6;color: white;text-align: center;padding-right: 200px;padding-left: 200px;">Vodafone is the leading technology communications company, keeping society connected and building a digital future for everyone. Explore how working with SAP, Vodafone is shaping the future of telecommunications for people around the world.</p>-->
-          <p style="font-size: medium;font-weight:medium;line-height: 1.6;color: white;text-align: center;padding-right: 200px;padding-left: 200px;">Summary CX BT</p>   
-    </div>
-        <div style="padding-left: 0px;padding-top:20px;margin-left: 0px;text-align: center;">
+        <div style="padding-left: 0px;padding-top:20px;padding-bottom: 50px;margin-left:120px;text-align: left;">
           <div class="btn"><a href="">
-              <input type="button" class="demo-in" value="EPISODES" >
+              <input type="button" class="demo-in" value="Play New Episode" >
               </a>
           </div>
             &nbsp;
           <div class="btn"><a href="">
-            <a href="https://www.demodap.com/vftimeline"><input type="button" class="demo-out" value="TIMELINE"></a>
+            <a href="https://www.demodap.com/vftimeline"><input type="button" class="demo-in" value="Play All Episodes"></a>
             </a>
         </div>
           <br>
-      </div>   
+      </div> 
+        </div>  
     </div>
+  </div>
+ 
     <style>
     .demo-in {
       background: transparent ;
@@ -621,70 +629,12 @@ padding-right: 0px !important;
       } 
       
       .btn{
-        padding-left: 20px;
+        padding-left: 0px;
         padding-right: 20px;
         margin: 0px;
       }
     </style>
   </section>
-
-<!--Banner
-<section>
-  <div class="w3-container" id="banner">    
-    <div class='logo-container'>
-      <img src="https://dl.dropboxusercontent.com/s/xnlqojdc4jztt7e/vodafone-logo-transparent.png?dl=0" id="banner-logo">
-    </div>
-      <div class="">
-        <h1 class="account-header" style="text-align: center;padding-left: 150px;padding-right: 150px;">Connect for a better future</h1>
-        <script>document.getElementById('greeting').innerHTML = new Date().getHours() >= 12 ? 'Good Afternoon,' : 'Good Morning,';</script>
-          <br>
-          <br>
-        </div>    
-      </div>
-    <style>
-        /* For width larger than 990px: */
-        #banner {
-          padding-top: 100px;
-          padding-bottom: 100px;
-          padding-left: 150px;
-          padding-right: 150px;
-          background-image:url(https://dl.dropboxusercontent.com/s/8ptug542t3odti5/banner-7.jpg?dl=0);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-        }
-    
-        .banner-text {
-              color:white;
-              font-size: 6vw;
-              padding-top: 100px;
-              padding-bottom: 0px;
-              text-align: left;
-              font-weight: 800;
-              display:block;
-              margin: 0;
-        }
-
-        
-        @media only screen and (max-width: 990px) {
-        #banner {
-          padding-top: 50px;
-          padding-bottom: 50px;
-          padding-left: 150px;
-          background-image:url(https://dl.dropboxusercontent.com/s/8ptug542t3odti5/banner-7.jpg?dl=0);
-          background-position: center;
-          background-repeat: no-repeat;
-        }
-        .banner-text{
-            font-size: 50px;
-            margin-left:20px !important;
-            margin-right:20px !important;
-            padding-left: 0px !important;
-            padding-right: 0px !important;
-          }
-        }
-        </style>
-  </section>-->
 <!--Episodes-->
 <section>
   <div class="w3-container" style="">
@@ -868,17 +818,5 @@ padding-right: 0px !important;
       }
     </style>
 </section>-->
-
-<script>
-  var figure = $(".video-container").hover( hoverVideo, hideVideo );
-
-  function hoverVideo(e) {  
-      $('video', this).get(0).play(); 
-  }
-
-  function hideVideo(e) {
-      $('video', this).get(0).pause(); 
-  }
-</script>
    </body>
  </html>
