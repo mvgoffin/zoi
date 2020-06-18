@@ -36,6 +36,7 @@ urlpatterns = [
     #path('pagelseg_mike/', views.pagelseg_mike, name='pagelseg_mike'),
 
     #BT
+    path('bt_cx/', views.bt_cx, name='bt_cx'),
     path('btlogin/', views.btlogin, name='btlogin'),
     path('btpage/', views.btpage, name='btpage'),
     #path('pagelseg_mike/', views.pagelseg_mike, name='pagelseg_mike'),

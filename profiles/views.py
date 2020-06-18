@@ -68,6 +68,11 @@ def pagelseg_mike(request):
     return render(request,template,context)
 
 #BT
+def bt_cx(request):
+    context = locals()
+    template = 'bt_cx.html'
+    return render(request,template,context)
+    
 def btlogin(request):
     context = locals()
     template = 'btlogin.html'
