@@ -244,7 +244,6 @@ p{
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding-top: 20px;
     background-image: url(https://dl.dropboxusercontent.com/s/t1smb8uc1w9xk8b/thumbnail-ep-1.jpg?dl=0);
     background-position: center;
 }
@@ -431,6 +430,13 @@ font-size: small;
 
 .account-background {
 background-color: #f1f2f5;
+}
+
+#get-started{
+  background-color: #3D9AD3;
+  color: white;
+  padding: 0px;
+  margin: 0px;
 }
 
 
@@ -682,14 +688,10 @@ padding-right: 0px !important;
     </div>-->
     <div class="row" style="padding-top: 50px;">
       <div class="col-md" id="chapter-tile">
-        <div class="video-container-ep-1">
-          <video muted loop>
-              <source src="https://dl.dropboxusercontent.com/s/g7sdz2qm2tomygq/tech.mp4?dl=0" type="video/mp4" />
-          </video>
+        <a href="#" data-featherlight="#condition-scale" class="product-small-lightbox"><div class="video-container-ep-1">
           <div id="title-tile">
-            <a href="#" data-featherlight="#condition-scale" class="product-small-lightbox"><p>EPISODE 1</p>
-            <H3>SAP Cloud Platform Extention Factory</h3></a>
           </div>
+        </a>
           <div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1554472144065_8906"><div class="sqs-block-content"> <div style="display:none;">
             <div id="condition-scale">
               <br>
@@ -699,8 +701,11 @@ padding-right: 0px !important;
               <br>
           </div>
           </div></div></div>
-          </div>  
+          </div>
+          <p>Title</p>
+          <p>Description</p>
       </div>
+      
       <div class="col-md" id="chapter-tile">
         <div class="video-container">
           <video muted loop>
@@ -759,7 +764,19 @@ padding-right: 0px !important;
       }
     </style>
 </section>
-
+<!--Contact Us-->
+<section>
+  <div class="w3-container" id="get-started">
+      <br> 
+      <div class="col-md" style="text-align: center;color:white;">
+          <h3>Contact us</h3>
+          <p>Email: first.last@sap.com</p>
+          <p>Mobile: +44 4242424242</p>
+          <p>LinkedIn</p>
+      </div>  
+      <br>  
+  </div>
+</section>
 <!--Footer-->
 <section>
     <footer class="w3-container" id='footer'>
