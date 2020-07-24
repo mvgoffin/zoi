@@ -28,31 +28,9 @@ from users import views as user_views
 urlpatterns = [
     path('', views.home),
     path('admin/', admin.site.urls),
-    #path('home/', views.home, name='home'),
+    path('home/', views.home, name='home'),
     
-    #LSEG
-    path('loginlseg/', views.loginlseg, name='loginlseg'),
-    path('pagelseg/', views.pagelseg, name='pagelseg'),
-    #path('pagelseg_mike/', views.pagelseg_mike, name='pagelseg_mike'),
-
-    #BT
-    path('bt_cx/', views.bt_cx, name='bt_cx'),
-    path('btlogin/', views.btlogin, name='btlogin'),
-    path('btpage/', views.btpage, name='btpage'),
-    #path('pagelseg_mike/', views.pagelseg_mike, name='pagelseg_mike'),
-
-    #BP
-    path('bplogin/', views.bplogin, name='bplogin'),
-    path('bppage/', views.bppage, name='bppage'),
-    #path('bppage_mike/', views.bppage_mike, name='bppage_mike'),
-
-    #Vodafone
-    path('loginvf/', views.loginvf, name='loginvf'),
-    path('pagevf/', views.pagevf, name='pagevf'),
-    path('vfepisodes/', views.vfepisodes, name='vfepisodes'),
-    path('vftimeline/', views.vftimeline, name='vftimeline'),
-    #path('pagevf_mike/', views.pagevf_mike, name='pagevf_mike'),
-
+    
     #----Zoi Marketplace----#
     path('zoi_home/', views.zoi_home, name='zoi_home'),
     path('zoi_about/', views.zoi_about, name='zoi_about'),
@@ -61,8 +39,4 @@ urlpatterns = [
     path('zoi_product/', views.zoi_product, name='zoi_product'),
     path('zoi_checkout/', views.zoi_checkout, name='zoi_checkout'),
     path('zoi_thankyou/', views.zoi_thankyou, name='zoi_thankyou'),
-
-    #----greencourt----#
-    path('gclogin/', views.gclogin, name='gclogin'),
-    path('gcpage/', views.gcpage, name='gcpage'),
 ]

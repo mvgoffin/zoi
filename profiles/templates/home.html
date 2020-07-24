@@ -64,6 +64,28 @@
 </style>
 </head>
 <body>
-This is a test
+<section>
+    <w3-container>
+        <div class="row">
+    <form method="POST" action=''>
+        {% csrf_token %}
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>Your Name</label>
+            <input type="text" class="form-control" id="name" required data-validation-required-message="Please provide your name">
+            <p class="help-block"></p>
+          </div>
+        </div>
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>Your work email address</label>
+            <input type="text" class="form-control" id="email" required data-validation-required-message="Please provide your work email">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Get in the list</button>
+      </form>
+    </div>
+    </w3-container>
+</section>
 </body>
 </html>
