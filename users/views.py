@@ -40,4 +40,4 @@ def get_name(request):
     else:
         form = NameForm()
 
-    return render(request, 'home.html', {'form': form})
+    return render(request, 'thanks.html', {'form': form})

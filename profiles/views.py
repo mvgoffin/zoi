@@ -14,6 +14,11 @@ def home(request):
     template = 'home.html'
     return render(request,template,context)
 
+def thanks(request):
+    context = locals()
+    template = 'thanks.html'
+    return render(request,template,context)
+
 #1BLives - Rockstar
 def zoi_home(request):
     context = locals()
