@@ -15,7 +15,7 @@ def Contact(request):
             contact_email = request.POST.get('contact_email')
             contact_content = request.POST.get('content')
 
-            template = get_template('profiles/templates/contact_form.text')
+            template = get_template('home.html')
             content = (
                 'contact_name' : request.POST.get('contact_name'),
                 'contact_email' : request.POST.get('contact_email'),

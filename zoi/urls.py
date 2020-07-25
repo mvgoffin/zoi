@@ -29,8 +29,8 @@ urlpatterns = [
     path('', views.home),
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
-    path('thanks/', views.thanks, name='thanks'),
-    path('contact/', views.contact, name='contact'),
+    path('thanks/', views.home, name='thanks'),
+    
     
     
     #----Zoi Marketplace----#
