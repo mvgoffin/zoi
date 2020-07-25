@@ -12,7 +12,6 @@ from users.models import Account
 
 # Create your views here.
 def contact(request):
-contactdata = contactData.objects.get()
 name = request.POST.get('name', '')
 email = request.POST.get('email', '')
 
