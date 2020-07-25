@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, HttpResponse, get_object_or_404, HttpResponseRedirect
 from django.contrib.auth.forms import UserCreationForm
-from .models import *
-from .form import *
+from models import *
+from forms import *
 
 #Contact form view
 
@@ -34,6 +34,6 @@ def Contact(request):
 
         email.send()
 
-        return redirect('thanks')
+        return redirect('thanks.html')
 
-    return render(request, 'profiles/templates/contact.html', {'form':Contact_Form })
+    return render(request, 'contact.html', {'form':Contact_Form })
