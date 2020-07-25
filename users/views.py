@@ -12,8 +12,8 @@ from users.models import Account
 
 # Create your views here.
 def contact(request):
-name = request.POST.get('name', '')
-email = request.POST.get('email', '')
+    name = request.POST.get('name', '')
+    email = request.POST.get('email', '')
 
 if request.method == 'POST' and email and name:
     send_mail(subject, content, settings.EMAIL_HOST_USER, ['marco.valgof@gmail.com'], fail_silently=False)
