@@ -1,3 +1,7 @@
+from django.shortcuts import render, redirect, HttpResponse, get_object_or_404, HttpResponseRedirect
+from django.contrib.auth.forms import UserCreationForm
+from .models import *
+from .form import *
 
 #Contact form view
 
