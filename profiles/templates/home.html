@@ -67,22 +67,12 @@
 <section>
     <w3-container>
         <div class="row">
-            <form method="POST" action=''>
+            <form method="POST" action='/home/'>
                 {% csrf_token %}
-                <div class="control-group form-group">
-                <div class="controls">
-                    <label>Your Name</label>
-                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please provide your name">
-                    <p class="help-block"></p>
-                </div>
-                </div>
-                <div class="control-group form-group">
-                <div class="controls">
-                    <label>Your work email</label>
-                    <input type="text" class="form-control" id="email" required data-validation-required-message="Please provide your work email">
-                </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Get in the list</button>
+                <label for="your_name">Your name: </label>
+                <input id="your_name" type="text" name="your_name" value="Your name">
+                <input id="your_email" type="text" name="your_email" value="Your work email">
+                <input type="submit" value="OK">
                 </form>
     </div>
     </w3-container>
