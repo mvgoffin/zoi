@@ -34,8 +34,9 @@ def home(request):
         send_mail('Contact From', 
         name, 
         settings.EMAIL_HOST_USER, 
-        'marco.valgof@gmail.com', 
+        ['marco.valgof@gmail.com'], 
         fail_silently=False)
+    return render(request, 'app/home.html')
 
 
 #def email(request):
