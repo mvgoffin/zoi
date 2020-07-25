@@ -67,11 +67,11 @@
 <section>
     <w3-container>
         <h3>Contact Form</h3>
-            <form method="POST" action="{% url 'thanks' %}">
+            <form method="POST" action="{% url 'home' %}">
                 {% csrf_token %}
                 <label >Your name</label>
-                <input name="name" placeholder="your name" value="">
-                <input type="submit" value="submit">
+                <textarea name="message" placeholder="Message..."></textarea>
+                <input type="submit">
                 </form>
     </div>
     </w3-container>

@@ -29,13 +29,13 @@ from django.conf import settings
 
 def home(request):
     if request.method == 'POST':
-        name = request.POST['name']
+        message = request.POST['message']
 
         send_mail('Contact From', 
-        name, 
-        settings.EMAIL_HOST_USER, 
-        ['marco.valgof@gmail.com'], 
-        fail_silently=False)
+         message, 
+         settings.EMAIL_HOST_USER, 
+         ['marco.valgof@gmail.com'], 
+         fail_silently=False)
     return render(request, 'app/home.html')
 
 
