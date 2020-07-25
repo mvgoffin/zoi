@@ -25,7 +25,7 @@ def Contact(request):
                 content,
                 "Creative Web" + '',
                 ['marco.valgof@gmail.com'],
-                header = {'Reply To': contact_email }
+            headers = {'Reply To': contact_email }
         )
 
         email.send()
