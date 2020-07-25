@@ -19,6 +19,11 @@ def thanks(request):
     template = 'thanks.html'
     return render(request,template,context)
 
+def contact(request):
+    context = locals()
+    template = 'contact.html'
+    return render(request,template,context)
+
 #1BLives - Rockstar
 def zoi_home(request):
     context = locals()
