@@ -66,12 +66,12 @@
 <body>
 <section>
     <w3-container>
-            <form method="POST" action='/thanks/'>
+        <h3>Contact Form</h3>
+            <form method="POST" action="{% url 'home' %}">
                 {% csrf_token %}
-                <label for="your_name">Your name: </label>
-                <input id="your_name" type="text" name="your_name" value="">
-                <input id="your_email" type="text" name="your_email" value="">
-                <input type="submit" value="OK">
+                <label >Your name</label>
+                <input name="name" placeholder="your name" value="">
+                <input type="submit" value="submit">
                 </form>
     </div>
     </w3-container>

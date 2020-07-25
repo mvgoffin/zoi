@@ -19,17 +19,29 @@
 #    send_mail(subject, content, settings.EMAIL_HOST_USER, ['marco.valgof@gmail.com'], fail_silently=False)
 
 
-from django.http import HttpResponseRedirect
+#from django.http import HttpResponseRedirect
+#from django.shortcuts import render
+#from users.forms import NameForm
+
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.conf import settings
 
-from users.forms import NameForm
+def home(request):
+    if request.method == 'POST':
+        name = request.POST['name']
 
-def email(request):
-    subject = 'Thank you for registering to our site'
-    message = ' it  means a world to us '
-    email_from = settings.EMAIL_HOST_USER
-    recipient_list = ['marco.valgof@gmail.com',]
-    send_mail( your_name, your-email )
-    return redirect('redirect to a new page')
+        send_mail('Contact From', 
+        name, 
+        settings.EMAIL_HOST_USER, 
+        'marco.valgof@gmail.com', 
+        fail_silently=False)
+
+
+#def email(request):
+#    subject = 'Thank you for registering to our site'
+#    message = ' it  means a world to us '
+#    email_from = settings.EMAIL_HOST_USER
+#    recipient_list = ['marco.valgof@gmail.com',]
+#    send_mail( your_name, your-email )
+#    return redirect('redirect to a new page')
