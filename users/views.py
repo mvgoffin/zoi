@@ -41,3 +41,6 @@ def get_name(request):
         form = NameForm()
 
     return render(request, 'thanks.html', {'form': form})
+
+    if request.method == 'POST' and your_name and your_email:
+        send_mail(subject, content, settings.EMAIL_HOST_USER, ['marco.valgof@gmail.com'], fail_silently=False)
