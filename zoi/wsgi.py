@@ -1,5 +1,5 @@
 """
-WSGI config for zoi project.
+WSGI config for django-contactform project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'zoi.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django-contactform.settings')
 
 application = get_wsgi_application()
 
