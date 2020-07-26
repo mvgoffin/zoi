@@ -30,16 +30,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
     path('thanks/', views.home, name='thanks'),
-    path('contactpage/', views.contactpage, name='contactpage'),
-    
-    
-    
-    #----Zoi Marketplace----#
-    path('zoi_home/', views.zoi_home, name='zoi_home'),
-    path('zoi_about/', views.zoi_about, name='zoi_about'),
-    path('zoi_registration/', views.zoi_registration, name='zoi_registration'),
-    path('zoi_laptops/', views.zoi_laptops, name='zoi_laptops'),
-    path('zoi_product/', views.zoi_product, name='zoi_product'),
-    path('zoi_checkout/', views.zoi_checkout, name='zoi_checkout'),
-    path('zoi_thankyou/', views.zoi_thankyou, name='zoi_thankyou'),
+
 ]
