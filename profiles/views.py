@@ -19,5 +19,10 @@ def thanks(request):
     template = 'thanks.html'
     return render(request,template,context)
 
+def contactpage(request):
+    context = locals()
+    template = 'contactpage.html'
+    return render(request,template,context)
+
 
 
