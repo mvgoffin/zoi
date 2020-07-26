@@ -44,8 +44,6 @@ INSTALLED_APPS = [
     'checkout',
     'stripe',
     'users',
-    'contactformpage',
-    'zoi',
 ]
 #'phonenumber_field', erase from above installed apps
 #webpush gone
