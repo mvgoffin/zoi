@@ -30,6 +30,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
     path('thanks/', views.home, name='thanks'),
+    path('', views.contactsendmail),
     
     
     
