@@ -1,21 +1,3 @@
-from django.shortcuts import render
-from zoi.forms import contactformemail
-from django.core.mail import send_mail
-
-def contactsendmail(request):
-    if request.method=="GET":
-        form=contactformemail()
-        return render(request,'contactpage.html',{'form':form})
-        
-
-
-
-
-
-
-
-
-
 #WEB-PUSH VIEWS.PY
 from django.http.response import HttpResponse
 from django.views.decorators.http import require_GET
